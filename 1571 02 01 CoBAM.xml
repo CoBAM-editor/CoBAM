@@ -1,0 +1,163 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15710201">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Felipe II (Madrid) a Benito Arias Montano [Amberes] - 1 de febrero de 1571 </title>
+            <author>Felipe II</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+            
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1571 02 01</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Philip II is satisfied with the progress made in the Polyglot and the first works on the liturgical books. Plantin must be given all the facilities to carry out these tasks.  
+               
+            </note>
+            <note type="incipit">Por la relación que Çayas me ha hecho de lo que le havéis ydo scriviendo...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(B) AGS, E 540/166.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               
+               
+               
+              
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 190-191.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo II (1571-1572)</title> (Madrid: Ediciones Clásicas, 2022), pp. 31-33.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 190-191;</bibl>
+            <bibl type="inextenso" n="thirdPrint"> (E2) Domínguez, <title>Correspondencia</title>, II, 31-33.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="PlantinoCristóbal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>  
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="VillalbaFranciscode">
+                  <note>Francisco de Villaba († 14 de abril de 1574), teólogo, fraile Jerónimo, predicador real. </note></person>
+               
+               </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Felipe II</persName>
+               <settlement>Madrid</settlement>
+               <date when="1571-02-01">1 de febrero de 1571</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Mano desconocida</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-12-01">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/12/AGS-E-540-166.jpg" xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/12/AGS-E-540-166-vuelto.jpg" xml:id="foto2"/>
+      
+        </facsimile>
+   <text>
+      <front>
+         <p>El borrador de esta carta es de mano de un copista. Sí es de mano de Felipe II la apostilla final escrita debajo del endoso del documento.</p>
+              </front>
+      <body>
+         <pb n="f. [1v]" ed="B" facs="#foto2"/>
+         <div type="anotation1">
+            <head>[Anotado en el margen, con escritura transversal:]</head>
+            <ab><app><lem wit="#B #E2">Al doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>. De <name type="place">Madrid</name> a <date when="1571-02-01">primero de hebrero 1571</date>.</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> </ab>
+         </div>   
+         <div type="anotation2">
+            <head>[Añadido de la mano de Felipe II:]</head>
+            <ab><add>Bien será añadir aquí que no se han de imprimir diurnales de los chiquitos ni missales hasta que se les avise, <choice><sic>venida</sic> <corr>venido</corr></choice> çierto recado de <name type="place">Roma</name>). Y embiadme las ad<expan><ex>ver</ex></expan>tencias de fray <name type="person" ref="#VillalbaFranciscode">Fran<expan><ex>cis</ex></expan>co de V<expan><ex>ill</ex></expan>alva</name>, para que pase los ojos por ellas, entre tanto que se scriben estas cartas en limpio.</add><ref target="#note1" xml:id="reference1">1</ref></ab>
+         </div>  
+         <div type="main_content">
+               <pb n="f. [1r]" ed="B" facs="#foto1"/>
+            <opener>Al doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>. 
+               El Rey
+               Doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, mi cape<expan><ex>ll</ex></expan>án:             
+               
+            </opener>
+            
+            <p>[<hi rend="bold">1</hi>] Por la relación que <name type="person" ref="#ZayasGrabrielde">Çayas</name> me ha hecho de lo que le havéis ydo scriviendo después que llegastes a essos Estados, y por los pliegos de papel y pergamino que avéis embiado, he visto el buen progreso que en la impressión de la Biblia (mediante v<expan><ex>uest</ex></expan>ra buena intelligencia y cuydado, y la diligencia de <name type="person" ref="#PlantinoCristóbal">Plantino</name>) se ha llevado, de lo qual y de que vaya tan al cabo y con tanta <app><lem wit="#B #E2">perfectión</lem> <rdg wit="#E1">perfecion</rdg></app>, he holgado mucho, y también de entender lo que avíades tratado con <name type="person" ref="#PlantinoCristóbal">Plantino</name> sobre la impressión de los nuevos breviarios, missales y diurnales que se han de traer a estos reynos, que teniendo por cierto que aý se hará con la brevedad y en la abundancia que es menester, escrivo al <name type="person" ref="#AlvarezdeToledoFernando">duque de Alva</name> lo que dél entenderéis,<ref target="#note2" xml:id="reference2">2</ref>  para que luego se ponga mano a la obra, aviendo mandado proveer que assí en lo de los dos mill florines que ha pedido <name type="person" ref="#PlantinoCristóbal">Plantino</name>,<ref target="#note3" xml:id="reference3">3</ref> como en lo de la casa o solar, se le haga la comodidad possible.<ref target="#note4" xml:id="reference4">4</ref> </p> 
+            <p>[<hi rend="bold">2</hi>] Vos haréis en ello lo que el <name type="person" ref="#AlvarezdeToledoFernando">duque</name> os dixere y ordenare, guardando en la impressión las advertencias que os embía fray <name type="person" ref="#VillalbaFranciscode">Francisco de Villalva</name>,<ref target="#note5" xml:id="reference5">5</ref> mi predicador, <del>sobre presupuesto que avéis de assistir</del> y assistiendo vos mismo a la correctión, porque salga como conviene. [<hi rend="bold">3</hi>] Y a <name type="person" ref="#PlantinoCristóbal">Plantino</name> diréis que estoy muy satisfecho del buen zelo y cuydado con que se occupa en estas cosas que son del servicio de Dios y de su Yglesia, y que assí terné con él la cuenta que meresçe. </p>
+           
+            <closer>[<hi rend="bold">4</hi>] De <name type="place">Madrid</name>, a <date when="1571-02-01"><app><lem wit="#B #E2">primero de hebrero 1571</lem> <rdg wit="#E1">1º de hebrero de 1571</rdg></app></date>.</closer>
+            
+            
+           
+            
+           
+     </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Aunque el padre Francisco de Villalba dirigía todo el proceso de edición de libros de nuevo rezado, proponiendo correcciones y advertimientos, el propio Felipe II lo supervisaba todo e incluso redactaba sus propias observaciones, como se puede comprobar en AGS E 583/166, una carpeta titulada «Advertimientos de mano de S. M. sobre los que había hecho el padre Villalba para la impresión de los breviarios, diurnales y misales romanos nuevos. Hízolos en Madrid a primero de hebrero de 1571». </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Carta del 31 de enero de 1571, publicada por Carvajal, «Elogio histórico», p. 153, doc. nº 31.   </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> «Y como para se encargar de la obra ha pedido que antemano se le presten dos mil florines para papel […] he mandado que se os envíe a vos la cédula de los dichos dos mil florines, para que concertado el negocio se los podáis hacer librar juntos o como os pareciere más convenir […]», Felipe II al duque de Alba, 31 de enero de 1571, en Carvajal, «Elogio histórico», p. 153, doc. nº 31. </note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> «[…] para se encargar de la obra [Plantino] ha pedido una de las casas confiscadas en Anvers, o algún solar en que pueda hacer las piezas necesarias para tender y enjugar lo que se fuere imprimiendo […] y juntamente con el dinero le haréis prestar alguna de las dichas casas que se confiscaron en aquella villa; y si no la hubiere como para este efecto es menester, le mandaréis señalar algún solar, donde él haga las piezas a su modo»; Felipe II al duque de Alba, 31 de enero de 1571, en Carvajal, «Elogio histórico», p. 153, doc. nº 31. En carta del duque de Alba para Zayas con fecha de Bruselas, a 23 de marzo de 1571, se puede leer: «A Arias Montano he hecho dar casa en que pueda meter también a Plantino, y atender con secreto a la impresión de los breviarios; y al dicho Plantino se han entregado los dos mil florines» (publicado en Carvajal, «Elogio histórico», p. 154, nº 32). Esta petición de un solar o local para Plantino derivó meses después en un proyecto más ambicioso que consistía en edificar una Prototipografía Regia, es decir, la sede del Prototipógrafo del Rey, que constaría de una biblioteca en la que guardar los ejemplares de libros impresos en los Países Bajos y una mansión taller para Cristóbal Plantino. Esta sede no solo facilitaría el éxito de las grandes empresas editoriales que dirigía Plantino por estas fechas (la Políglota y los libros de nuevo rezaso), sino que permitiría ejercer un mayor control de los libros publicados en Flandes para evitar la extensión de la Reforma. Sobre el lugar elegido por BAM y Plantino para esta edificio, que finalmente no llegó a construirse, hemos estudiado en otro trabajo que podría tratarse de una finca, cercana a la casa de Guillermo Paludano, donde los jesuitas de Amberes tenían asignada su sede; durante estos años, el duque de Alba reclamó continuamente a la Compañía dicha casa para la futura Prototipografía Real; cf. A. Dávila Pérez, «La correspondencia inédita de B. Arias Montano: nuevas prospecciones y estudio», en J. M. Maestre Maestre – E. Sánchez Salor, M. A. Díaz Gito – L. Charlo Brea- P. J. Galán Sánchez (eds.), <title>Benito Arias Montano y los humanistas de su tiempo</title>, 2 vols. (Mérida, 2006), I, 75-78.  </note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Francisco de Villalba (Villalba de Lampreana, Zamora – El Escorial, 1575), predicador real, profesó en el monasterio de Montamarta (Zamora) y amplió su formación en el colegio de Sigüenza. Tomó parte en la segunda etapa del Concilio de Trento, donde intervino en dos ocasiones en 1551. Fue predicador de Carlos V durante su estancia en Yuste y, más tarde, de Felipe II. Cf. <title>DHEE</title>, IV, 2760; véase nota biográfica en véase nota biográfica en la web <ref target="https://historia-hispanica.rah.es/biografias/46223-francisco-de-villalba">Historia Hispánica</ref> de la Real Academia de la Historia. El Museo Plantin-Moretus de Amberes conserva cuatro cartas del padre Francisco de Villalba a BAM en el legajo de Archivo 122, titulado «Missale et breuarium 1572-1576», pp. 261-272, introducidas por la anotación «Cartas del Padre Villalba para las impressiones para Spagna».   </note>  
+             
+            </div>
+      </back>
+   </text>
+</TEI>
