@@ -1,0 +1,143 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM1567">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano [Madrid] a Felipe II [Madrid] - 1567 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">[1567 00 00]</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">The Bible contains the treasure of the Christian doctrine and therefore every Christian prince should do as much as possible to respect, know and disclose the Sacred Text. For example, François of France financed some of the most important editions of the Bible of his time; and Ptolemy was the promoter of the Septuagint. The opportunity of publishing a Bible in five languages in accordance with the very latest biblical philology and with the cutting-edge printing technology is unique. If Philip II carries out this project, he will do a great service to God and the Catholic Church and, at the same time, he will increase his prestige and fame, for his name will spread across the world and will remain forever linked to this valuable typographic monument.</note>
+            <note type="incipit">El thesoro de la doctrina de toda la religión christiana está en la Divina Escriptura...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(C) KBS, Ms. A 902, ff. 6r-7v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 71-73.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 27-32.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 71-73; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia.</title>, I, 27-32.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Madrid</settlement>
+               <date when="1567">1567</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Felipe II</persName>
+               <settlement>Madrid</settlement>
+            </correspAction>
+                    </correspDesc>
+        
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Mano desconocida</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-02-14">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/Ms.-902-f.-6r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/Ms.-902-f.-6v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/Ms.-902-f.-7r-scaled.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/Ms.-902-f.-7v-scaled.jpg"
+         xml:id="foto4"/>
+        </facsimile>
+   <text>
+      <front>
+         <p> Aunque no queda constancia del destinatario ni de la fecha de este documento, todo parece apuntar a que se trata de la copia (no autógrafa) del parecer que Arias Montano envía a Felipe II sobre la conveniencia de reeditar la Biblia Políglota Complutense. El Rey, tras recibir la oferta de Cristóbal Plantino a finales de 1566, considera el proyecto y solicita los consejos de algunos doctores y personas diputadas para ello, entre los que se encuentra el de BAM, antes de someter el proyecto a la aprobación decisiva del Consejo General de la Inquisición y de la Facultad de Teología de la Universidad de Alcalá de Henares.</p>
+      </front>
+      <body>
+         <div type="anotation">
+            <pb n="f. 7v" ed="C" facs="#foto4"/>
+            <head>[Anotado en el margen:]</head>
+            <ab>Del doctor <name type="person" ref="#AriasMontanoBenito"> Arias Montano</name> sobre la impressión de la Biblia quinquelingüe.</ab>
+            </div>
+         
+         <div type="main_content">
+               <pb n="f. 6r" ed="C" facs="#foto1"/>
+            <opener>Del doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> sobre la impressión de la Biblia quinquelingüe.</opener>
+            <p>[<hi rend="bold">1</hi>] El thesoro de la doctrina de toda la religión christiana está en la Divina Escriptura; y el príncipe que professare christiandad y zelo de la religión deve hazer gran fundamento en que sea venerada y entendida y obedescida en sus reynos; y assí como instrumento para tanto bien la deve favorescer, zelar y adornar con su exemplo y auctoridad, procurando que se afficionen a ella los hombres, haziendo por su parte todo lo possible para este fin; y assí como por defensa della y de su auctoridad, como cosa tan excelente qual es la palabra de Dios, si fuesse menester, avía de poner su estado y persona y hazienda, haziendo de sí y de todo sacrificio a Dios, en defensa de su sancta palabra; assí también en qualquier occasión que se offresciesse de adornarla, o conservarla, o ampliar el uso della, es muy de cathólico rey ser el primero y que más favor y ayuda para tal fin ha de dar. [<hi rend="bold">2</hi>] En la misma Sagrada Escriptura están muy encomendados a los reyes los libros de la Ley de <app><lem wit="#C #E2">Dios,</lem><rdg wit="#E1"> <hi rend="italic">post</hi> Dios <hi rend="italic">imum punctum posuit</hi></rdg></app> y mandado que qualquiera rey, luego que tome la possessión de la corona, haga copiar un traslado para sí, y que él lo lea y lo haga leer todos los días de su vida; y házense grandes promessas y bendiciones al rey que desto tuviere cuydado.</p>
+            <p>[<hi rend="bold">3</hi>] Dexando aparte lo que muchos reyes zelosos de la religión y christianos, y aun gentiles, cerca desto han hecho, en nuestra memoria sabemos que el rey <name type="person">Francisco de Francia</name> buscó un famoso impressor, y le dio favor y ayuda para que se aventajasse mucho; y todo fue a fin que imprimiesse Biblias estremadas. El qual, a costa del dicho rey y a su aprovechamiento, solo imprimió seis suertes de Biblias latinas, y dos de hebreas, y tres de Testamentos Nuevos griegos; en que se pudo hazer costa de más de quinze <app><lem wit="#C #E2">mill</lem><rdg wit="#E1">mille</rdg></app> ducados al rey; y son las mejores que hasta agora tenemos.<ref target="#note1" xml:id="reference1">1</ref><pb n="f. 6v" ed="C" facs="#foto2"/></p>
+            <p>[<hi rend="bold">4</hi>] <name type="person">Ptolomeo Philadelpho</name>, rey de <name type="place">Egipto</name>, con ser gentil, por el desseo que tuvo de ver traduzido en griego el Pentateuco de <name type="person">Moysén</name>, gastó una suma excessiva de oro en la comodidad y gratificación de los Setenta intérpretes,<ref target="#note2" xml:id="reference2">2</ref> allende de la grandeza de los presentes que embió al templo y a <name type="person">Eliazar</name> sacerdote, para que le cumpliesse aquel desseo, lo qual escriven <name type="person">Eusebio</name> y <name type="person">Aristias</name>, que fue embaxador a <name type="place">Hierusalem</name> sobre este negocio.</p>
+            <p>[<hi rend="bold">5</hi>] Pues offresciéndose comodidad y occasión fácil a <rs ref="#FelipeII" type="person">Su Mag<expan><ex>esta</ex></expan>d</rs> de poner con poca costa suya la Biblia quinquelingüe en la mayor perfectión que se puede esperar, obra es digna de un tan gran nombre como el suyo, y de una professión y arreo de tan cathólico Príncipe, que muestra serle tan a cuydado y tan caro este negocio como uno de los que Su Mag<expan><ex>esta</ex></expan>d tiene por más importantes para el servicio de Dios, y augmento de la Christiandad, y honor de la Yglesia Cathólica, y aprovechamiento de los fieles della e impedimento de los heréticos; que entiendan no estar descuydados los buenos reyes de la guarda y defensa del thesoro de su religión.<ref target="#note3" xml:id="reference3">3</ref> [<hi rend="bold">6</hi>] Y demás que se terná por beneficio público de Su Mag<expan><ex>esta</ex></expan>d, como si lo hiziera él de fundamento, por haver tan pocos en la Christiandad destos libros, y ser tan desseados de <app><lem wit="#C #E1">todos,</lem><rdg wit="#E2"><hi rend="italic">imum punctum posuit</hi></rdg></app> saldrá muy más illustre esta obra por llevar tanto fundamento y tanta perfectión de characteres, y con el supplemento de una tan gran cosa que al Viejo le faltava, como era el thargum de <choice><sic><name type="person"> Jonathan</name> y el de <name type="person">Vziel</name></sic> <corr><name type="person">Johathan ben Uziel</name> y el de <name type="person">José el Ciego</name></corr> </choice>,<ref target="#note4" xml:id="reference4">4</ref> que son los dos cuerpos chaldeos, interpretados en latín, que están en <name type="place">Alcalá de Henares</name>,<ref target="#note5" xml:id="reference5">5</ref> libros ambos que antes de <name type="person">Christo</name> Nuestro Redemptor tenían auctoridad de texto entre los hebreos, y cuyas palabras están alegadas en el Evangelio y en las Epístolas de <name type="person">Sanct Pablo</name>, y es un thesoro más rico que nadie puede encarescer.<pb n="f. 7r" ed="C" facs="#foto3"/></p>
+            <p> [<hi rend="bold">7</hi>] Demás del servicio de Dios y provecho de la Yglesia universal, resulta también de aquí una gran gloria al real nombre de Su Mag<expan><ex>esta</ex></expan>d y a la estimación y reputación de su persona. La qual se estenderá por todo el mundo, y permanescerá por muchos siglos, porque este libro será comprado de <app><lem wit="#E1 #E2">christianos latinos</lem><rdg wit="#C">christianos y de latinos</rdg></app>, y de christianos griegos, y de christianos syros, que entienden las lenguas hebrea y chaldea y syriaca, y de todos los hebreos, que se han de afficionar a la mag<expan><ex>esta</ex></expan>d y gran provecho de la obra. [<hi rend="bold">8</hi>] Y sepa Su Mag<expan><ex>esta</ex></expan>d por cosa cierta que es de tanta estima este libro, que ninguno piensa que tiene librería ni que vale nada sin uno dellos, aunque no entienda las lenguas. Y se compran muy caros y faltos de algunas partes y quadernos.<ref target="#note6" xml:id="reference6">5</ref> Pues quando salgan con tal perfectión, bien se dexa entender en quanto más serán estimados y quanto de mejor gana se comprarán.</p>
+     </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Seguramente alude a los trabajos de Roberto Estienne.</note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> El nombre de los Setenta procede de una carta del pseudo-Aristeas, un estudioso hebreo del s. II a.C., que trata de darnos información acerca de cómo surgió esta versión. Se hace decir a Aristeas que Ptolomeo II Filadelfo (283-246 a.C.) deseando tener en la gran biblioteca de Alejandría la traducción de los libros sagrados hebreos, la solicitó al sacerdote Eleazaro. Tras esta petición, setenta y dos (cifra redondeada en setenta), seis por cada una de las doce tribus, fueron enviados desde Jerusalén para llevar a cabo la traducción. El relato se enriqueció con ulteriores rasgos legendarios. Según el filósofo hebreo Filón de Alejandría, los setenta y dos fueron distribuidos en celdas separadas en la isla de Faro; cada uno de ellos llevó a cabo la versión entera en setenta y dos días y, en el colmo de la leyenda, se encontró que las versiones resultaron milagrosamente idénticas. Para una versión y un comentario crítico de la carta, véase R. Tramontano, La lettera di Aristea a Filocrate (Nápoles, 1931); A. Pellentier, <title>Lettre d’Aristée a Philocrate</title>, SC 89, Du Cerf (París, 1962).</note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Con la Políglota se intentará dar una respuesta católica a la exégesis practicada en los territorios que abrazaron la Reforma.</note>     
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> El copista parece haber mezclado en uno solo el nombre de los dos Targum añadidos en la Políglota de Amberes (los de Jonathan ben Uziel y de José el Viejo); para la corrección del texto seguimos la propuesta de Domínguez, <title>Correspondencia. Tomo I</title>, p. 31 (nota 8).</note> 
+               <note type="footnote" xml:id="note">
+                  <ref target="#reference5">5</ref> Después de la cautividad de Babilonia (539 a. c.), cuando el hebreo había sido sustituido por el arameo (lengua que abusivamente ha sido llamada caldea) como lengua popular y por lo tanto el pueblo no la entendía, el lector de la sinagoga hebrea traducía directamente el texto hebreo, frecuentemente parafraseándolo con el fin de darle al texto sagrado una interpretación. Así surgieron los targumin, palabra aramea que significa «traducción«». Estas versiones arameas, en principio orales, terminaron siendo recogidas por escrito. Actualmente disponemos de diversos targumin: el targum de pseudo Jonatán (o Jerosolimitano I), el targum Jerosolimitano II, y el de Onkelos, todos ellos sobre el Pentateuco; el targum de Jonatán Ben Uzziel, sobre los libros históricos y proféticos; aparte de otros targumin sobre los libros proféticos y didácticos. La Políglota Complutense sólo recogía la paráfrasis de Onkelos, en traducción de Alfonso de Zamora. El cardenal Cisneros había mandado traducir otras paráfrasis o targumin, pero por alguna razón desconocida decidió no darlas a la imprenta y las conservó en la Biblioteca de Alcalá de Henares. Por su parte Montano incluyó, además del de Onkelos, los targumin de Jonatán Ben Uzziel sobre el libro de los Profetas; el de José el Ciego sobre el libro de Job, los Salmos y los Proverbios; y los de otros autores desconocidos sobre los restantes libros canónicos en hebreo, excepción hecha de las Crónicas, Esdras, Nehemías y Daniel.</note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Como se deduce de todo lo anterior, el proyecto de la Biblia Políglota de Amberes es concebido como una reedición de la Biblia Políglota de Francisco Jiménez de Cisneros (1436-8 noviembre 1517), muchos de cuyos 600 ejemplares publicados se perdieron en la mar al llevarlos a Italia (cf. carta de Felipe II al Duque de Alba, 25 de marzo de 1568, original en AGS Estado 537, fº 61r, publicada por Carvajal, «Elogio histórico», p. 144, doc. nº 20). La Sacra Biblia Políglota Complutense supuso la primera edición políglota de una Biblia completa, incluyendo las primeras ediciones del Nuevo Testamento en griego, la Septuaginta y el Targum Onkelos. Los trabajos de impresión se extendieron durante quince años desde el verano de 1502 hasta 1517, año de la muerte del Cardenal Cisneros, aunque no obtuvo el Motu Proprio del Papa León X hasta el 22 de marzo de 1520. Sobre la vinculación del proyecto de la Políglota de Amberes con su antecedente de la Políglota Complutense, véase Macías, <title>La Biblia Políglota de Amberes</title>, pp. XV-XX y XLIII-XLIV. Sobre Francisco Jiménez de Cisneros, Cardenal Arzobispo Primado de Toledo, de la Orden Franciscana, tercer Inquisidor General de Castilla y regente a la muerte de Fernando el Católico, pueden consultarse, entre otros trabajos, J. Sanz Díaz, <title>Biografía del cardenal Cisneros</title> (Barcelona: La Gaya Ciencia, 1983); <title>Diccionario de Historia Eclesiástica de España</title> (Madrid, 1972), II, 1238-1239; J. García Oro, <title>Cisneros: el cardenal de España</title> (Barcelona: Ariel, 2002); J. García Oro, <title>Cisneros: un cardenal reformista en el trono de España</title> (1436-1517) (Madrid: La Esfera de los Libros, 2005); K. Joseph von Hefele, <title>El Cardenal Jiménez de Cisneros y la Iglesia Española a fines del siglo XV y principios del XVI: para ilustrar la Historia crítica de la Inquisición</title> (Valencia: Librerías «París-Valencia», 2005).</note>
+            </div>
+      </back>
+   </text>
+</TEI>

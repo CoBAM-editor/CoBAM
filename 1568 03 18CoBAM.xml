@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15680318">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Cristóbal Plantino (Amberes) a Benito Arias Montano (Madrid] - 18 de marzo de 1568</title>
+            <author>Cristóbal Plantino</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 03 18</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract"> Plantin has received a letter sent by BAM on November 9th 1567. Since he has already responded to other BAM’s letter written later, the printer just repeats the main content of his previous letter, namely, he offers his full services to provide BAM with all sort of books, maps and instruments. </note>
+            <note type="incipit">Quant le 15 febvrier i’ay receu les lectres de V<expan><ex>ostre</ex></expan> S<expan><ex>gneurie</ex>i</expan> escrittes a Madrid le 9 Novembre...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Bélgica</country>
+                        <settlement>Amberes</settlement>
+                        <msName>Museum Plantin-Moretus</msName>
+                        <altIdentifier>
+                           <idno>(B) MPM Arch. 7, f. 81v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">M. Rooses - J. Denucé, <title>Correspondance de Christophe Plantin</title> 8 vols. (Antwerpen, 1883-1918, Reimpr. Nendeln, Liechtenstein, 1968), vol. I, pp. 260, nº 118.</witness>
+               <witness xml:id="E2">A. Dávila Pérez, <title>Benito Arias Montano. Correspondencia de Arias Montano conservada en el Museo Plantin-Moretus de Amberes</title> (Alcañiz-Madrid: Instituto de Estudios Humanísticos - Consejo Superior de Investigaciones Científicas, 2002), vol. I, pp. 10-11.</witness>
+               <witness xml:id="E3">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title>(Madrid: Ediciones Clásicas, 2017), pp. 37-38.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>CP</title>, I, p. 260, nº 118; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Dávila, <title>Correspondencia conservada en el Museo Plantin-Moretus</title>, I, pp. 10-11; </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E3) Domínguez, <title>Correspondencia</title>, I, 37-38.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+            
+           
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Cristóbal Plantino</persName>
+               <settlement>Amberes</settlement>
+               <date when="1568-03-18">18 de marzo de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Madrid</settlement>
+            </correspAction>
+            
+         </correspDesc>
+         <textClass>
+            <keywords>
+               <list>
+                  <item xml:id="correspondencia">Correspondencia</item>
+                  <item xml:id="comerciodelibrosyobjetoscientíficos">Comercio de libros y objetos científicos</item>
+                  <item xml:id="crédito">Crédito</item>
+               </list>
+            </keywords>
+         </textClass>
+         <langUsage>
+            <language ident="fr">Francés</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Cristóbal Plantino</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-02-21">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/MPM-Arch.-7-f.-81v-scaled.jpg"
+         xml:id="foto1"/>
+      </facsimile>
+   <text>
+      <group>
+         <text type="source">
+            
+            
+            <front>
+         <p> En el lapso de dos días Cristóbal Plantino recibe dos cartas de BAM: la primera, con fecha del 22 de diciembre de 1567, llega a la imprenta el 13 de febrero (cf. 1568 02 14); la segunda, que se cita en la carta que editamos a continuación, llega el día 15. Ninguna de ellas se ha conservado, pero de las respuestas del impresor se desprende que el humanista español estaba muy interesado por adquirir los libros e instrumentos que el prestigioso Plantino vendía por media Europa. Probablemente, la carta que editamos a continuación no llegó a tiempo a manos de BAM, quien, tras la instrucción oficial de Felipe II recibida el 25 de marzo, emprendió el camino a Flandes el último día de este mismo mes. Plantino, que repite en esta misiva el contenido de la anterior del 14 de febrero, está aún a la espera de la resolución del Rey sobre el proyecto de la Políglota. </p>
+      </front>
+      <body>
+            <pb n="f. 81v" ed="B" facs="#foto1"/>
+            <opener>Mons<expan><ex>igneu</ex></expan>r le docteur <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>:</opener>
+            <p>Quant le <date when="1568-02-15">15 febvrier</date> i’ay receu <del>le</del> les <app><lem wit="#B #E2 #E3">lectres</lem> <rdg wit="#E1"> lettres</rdg></app> de V<expan><ex>ostre</ex></expan> S<expan><ex>igneurie</ex></expan> escrittes <del>le 9</del> a <name type="place">Madrid</name> le <date when="1567-11-09">9 Novembre</date>  (qui est quasi 3 mois apres), i’avois desja respondu aux secondes d’icelle<surplus>s</surplus> <del>pour moy</del> receues par le moyen de Mons<expan><ex>igneu</ex></expan>r <app><lem wit="#B #E3"><name type="person" ref="#ZayasGrabrielde">Cayas</name></lem> <rdg wit="#E1 #E2"> Çayas</rdg></app>; par quoy ceste servira seulement pour repeter que ie m’employeray tres volontiers <del>comme a</del> a servir V<expan><ex>ostre</ex></expan> S<expan><ex>igneurie</ex></expan> en toutes choses quil luy plaira me commander <del>tant</del> et que ie m’y tiens oblige de ce faire, tant pour le devoir a quoy ie me sens oblige vers tou<del>te</del>s personnages <del>uer</del> qui ont, comme V<expan><ex>ostre</ex></expan> S<expan><ex>igneurie</ex></expan>, conioinct la vertu avec <del>les bonnes lectres</del> la <app><lem wit="#B #E2 #E3">congnoissance</lem><rdg wit="#E1">cognoissance</rdg></app> des langues et toutes autres sciences et disciplines, comme pour la faveur <subst><del>que i'entends</del><add place="above"> laquelle i’<app><lem wit="#B #E3">apercoy</lem> <rdg wit="#E1 #E2">aperçoy</rdg></app></add></subst> qu’il vous plaist de me porter. Et pourtant <del>ie vous</del> i'affirme <app><lem wit="#B #E3">derechef</lem> <rdg wit="#E1 #E2"> de rechef</rdg></app> a V<expan><ex>ostre</ex></expan> S<expan><ex>igneurie</ex></expan> que ie m’employeray en amitie et toute loyaute a <del>luy</del> luy faire tout service.</p>
+         <p>Reste seulement qu’il luy plaise me signifier et envoyer les memoires de ce qu’il luy plaist. Car <del>quant a m</del> il ne se trouvera rien par <app><lem wit="#B #E3">deca</lem> <rdg wit="#E1 #E2"> deça</rdg></app>, ni en <name type="place">France</name>, <del>de quoy</del> que ie ne luy puisse fournir et envoyer <del>que Car quant est de</del>. Parquoy <del>ie</del> il me sembleroit chose <app><lem wit="#B #E1 #E2">superflu</lem>  <rdg wit="#E3"> superflue</rdg></app> et ce nonobstant de grand travail et temps d’envoyer le cathalogue des livres <del>et</del>, cartes et instruments que ie pourrois fournir. Et pourtant ie n’en deporteray pour le present, comme d'escrire plus amplement. Qui sera l’endroict ou, me recommandant tres humblement a la bonne grace de V<expan><ex>ostre</ex></expan> S<expan><ex>igneurie</ex></expan>, ie prieray Dieu <del>luy octroyer</del> la vouloir conserver et faire prosperer.</p> <closer>D’<placeName>Anvers</placeName>, ce <date when="1568-03-18">18 Mars 1568</date>.</closer>
+                     
+      </body>
+         </text>
+         <text type="translation">
+            <body>
+               <div> 
+            <pb n="f. 75r" ed="B" facs="#foto1"/>
+            <opener>Señor doctor Arias Montano:</opener>
+            <p>Cuando el 15 de febrero recibí la carta de vuestra señoría escrita en Madrid el 9 de noviembre<ref target="#note1"
+               xml:id="reference1">1</ref>  (que es casi después de tres meses), yo ya había respondido a la segunda de las recibidas por medio del señor Zayas; por lo cual ésta servirá sólo para repetir que estoy plenamente al servicio de vuestra señoría en todas las cosas que le plazca encomendarme y que me encuentro obligado a cumplirlo, tanto por el deber al que me siento obligado hacia todas las personas que, como vuestra señoría, han unido la virtud con el conocimiento de las lenguas y todas las otras ciencias y disciplinas, como por el aprecio con que noto que os place distinguirme.  Y por tanto yo reafirmo ante vuestra señoría que me emplearé en prestarle todo servicio con amistad y plena lealtad.</p>
+            <p>Queda tan sólo que tenga a bien indicarme y enviar los memoriales de cuanto le plazca. Pues no habrá nada acá ni en Francia que no pueda yo conseguirle y enviarle. Por lo cual me parecería cosa superflua y, no obstante, de gran trabajo y tiempo, enviarle el catálogo de libros, mapas e instrumentos que yo podría suministrar.<ref target="#note2"
+               xml:id="reference2">2</ref> Y por tanto no enviaré de momento nada, como es el caso de hacer una descripción más amplia. Éste será el lugar donde, recomendándome muy humildemente a la buena gracia de vuestra señoría, suplicaré a Dios quiera conservarle y hacerle prosperar.</p> <closer>De Amberes, 18 de marzo de 1568.</closer>
+               </div>  </body>
+            <back>  
+               <div type="notes">
+            <note type="footnote" xml:id="note1">
+               <ref target="#reference1">1</ref> Esta es la carta de BAM que Plantino recibe con tanto retraso por medio de Juan Moflin. Recordemos que el impresor temía que esta misiva se hubiera perdido (cf. 1568 02 14). Según los datos de los que disponemos, la referida carta del 9 de noviembre es la segunda que escribió BAM a Plantino.</note>
+            <note type="pie" xml:id="note2">
+               <ref target="#reference2">2</ref> En cumplimiento de su palabra, Plantino comienza a remitir a España libros y otras mercancías para BAM y sus familiares. Por ejemplo, a nombre de Diego Díaz Becerril (citado en la carta 1568 02 14) se envían las siguientes importantes partidas: el 16 de noviembre de 1568, nueve cestas de libros por un valor de 466 florines; seis cestas más ese mismo día, por valor de 284 florines con 19 placas y media; el 17 de diciembre de 1568, 7 cestas de libros a 261 florines con tres placas. El 2 de septiembre de 1570 sale una cesta con un valor de 92 florines y 7 placas y, el 2 de julio de 1571, cuatro cestas a 200 florines y 18 placas. Arias Montano, como resulta habitual a partir de entonces, hace de intermediario entre cliente y librero (MPM Arch. 23, 39v-40r).  </note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
