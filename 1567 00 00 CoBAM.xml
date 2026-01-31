@@ -76,7 +76,6 @@
                <settlement>Madrid</settlement>
             </correspAction>
                     </correspDesc>
-        
          <langUsage>
             <language ident="es" ana="source">Español</language>
          </langUsage>
@@ -112,7 +111,6 @@
             <head>[Anotado en el margen:]</head>
             <ab>Del doctor <name type="person" ref="#AriasMontanoBenito"> Arias Montano</name> sobre la impressión de la Biblia quinquelingüe.</ab>
             </div>
-         
          <div type="main_content">
                <pb n="f. 6r" ed="C" facs="#foto1"/>
             <opener>Del doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> sobre la impressión de la Biblia quinquelingüe.</opener>
