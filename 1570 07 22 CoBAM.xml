@@ -1,0 +1,243 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700722">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Agustín Huneo y Cornelio Goudano (Lovaina) a Benito Arias Montano [Amberes] - 22 de junio de 1570</title>
+            <author>Agustín Huneo</author>
+            <author>Cornelio Goudano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 07 22</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">The censors of Leuven have reviewed the treatise entitled <title>De arcano sermone</title>. They consider it to be of considerable value for the interpretation of Scripture, but recommend that it be published as a separate volume so as not to overburden the Polyglot Bible. They advise that the Bible's critical apparatus include several lexica-Greek, Hebrew, and Chaldean, along with a section dedicated to observations on the principal textual variants in Hebrew, Chaldean, Syriac, Latin, and Greek. In their judgment, the prologue to the Bible is excessively long; they have composed a shorter version that preserves the essential elements of BAM’s original. They enclose this revised version with the present letter and urge BAM to relieve Plantin of the significant financial strain involved in printing the Polyglot Bible.</note>
+            <note type="incipit">Vir doctissime, recepimus priorem partem Apparatus...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 118r-119v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               
+              
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 222-227, nº 44.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 538-545.</witness>
+            </listWit>
+           
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 222-227; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 538-545.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="HuneoAgustín">
+                  <note>Agustín Huneo (1521-1578), profesor de Teología de la Universidad de Lovaina, censor de la Biblia Políglota de Amberes.</note></person>
+               <person xml:id="GoudanoCornelio">
+                  <note>Cornelio Reyniers (Reyneri) (1525-1609), nacido en 1525 en Gouda, de donde Goudanus. En 1568 es nombrado canónigo y alcanza el doctorado en Teología en la Universidad de Lovaina. Colaboró como censor de la Biblia Políglota de Amberes.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person> 
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+ 
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Agustín Huneo </persName>
+               <persName>Cornelio Goudano </persName>
+               <settlement>Lovaina</settlement>
+               
+               <date when="1570-07-22">22 de julio de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+              
+                             </correspAction>
+           
+            
+            
+            
+            
+                    </correspDesc>
+        
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Texto de la carta a cargo de copista desconocido</handNote>
+            <handNote>Firmas autógrafas al final de la carta de Huneo y Goudano</handNote>
+            <handNote>Sobrescrito a cargo de otra mano desconocida</handNote>
+            
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-04-08">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-118r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-118v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-119v.jpg"
+         xml:id="foto3"/>
+     
+      
+   </facsimile>
+       
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>Los censores de la Universidad de Lovaina cruzan una vez más correspondencia con BAM para intercambiar impresiones sobre diversos aspectos de la Biblia Regia, en cuya preparación colaboran desde el primer momento. El <title>Liber Ioseph siue de arcano sermone</title> es el primero de los diez tratados que BAM incluye en el tomo tercero del Aparato. En él se hallan explicados, según reza tras el título, más de once mil lugares de la Sagrada Escritura. Este libro va dedicado a aquel antiguo patriarca porque, como señala Carvajal, «el arcano de que aquí se trata consiste, no en entender simplemente la significación de cada palabra, sino en penetrar y descubrir lo que representa y figura aquella acción o cosa que por la palabra se expresa. Al modo que Josef, por la relación que le hizo Faraón, no solo entendió que había visto en sueños unas vacas y unas espigas; que era lo que materialmente significaban las palabras; sino que por ellas conoció también y declaró la abundancia y la esterilidad que aquellas figuras anunciaban».</p>
+         <p>Los diccionarios se agruparon todos en el tomo sexto, es decir, en el primero del Aparato. Francisco Rafelengio se encargó de preparar el diccionario hebreo, al que añadió también una gramática, a partir del <title>Thesaurus Linguae Sanctae</title> de Santes Pagnino. Fue redactado e impreso entre agosto de 1571 y el 22 de marzo de 1572. M. Rooses supone que el <title>Lexicon Graecum et Institutiones linguae Graecae</title> fueron compilados también por obra de Rafelengio, aunque finalmente no se publicaron en la Políglota de Amberes. Guy Le Fèvre se ocupó de preparar el <title>Dictionarium Syro-Chaldaicum</title>, junto con una gramática de la lengua caldea. Sabemos por una carta, con fecha 1-7 de agosto de 1572, que BAM le pidió desde Roma a Plantino una reedición del <title>Lexicon Syro-Chaldaicum</title> en la cual se eliminaran las palabras peligrosas que el propio BAM le había señalado (cf. [1572 08 01-1572 08 07]). Por su parte, Andrés Masio elaboró a instancias de Plantino una gramática de la lengua siria junto con un diccionario al que tituló <title>Syrorum peculium</title>. Estos dos trabajos de Masio fueron compuestos e impresos entre el 17 de enero de 1571 y el final de marzo de 1572.</p>
+         <p>Por lo que se refiere a esas variantes o lecturas que se apartaban del texto establecido, fueron introducidas en el último volumen a modo de aparato crítico. Francisco Rafelengio se ocupó del caldeo, BAM de las variantes del texto hebreo, Guillermo Cantero trabajó sobre el texto griego, el cardenal Sirleto sobre los Salmos, tanto en hebreo como en griego, y los doctores de Lovaina se ocuparon de las variantes de la Vulgata. En cuanto al prólogo que BAM redacta para su Políglota, los censores de Lovaina coinciden con la opinión de Roma  (cf. carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-07-20/">1570 07 20</ref>) al considerarlo excesivamente extenso.</p>
+      </front>
+            <body> 
+               <pb n="f. 119v" ed="O" facs="#foto3"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab>Doctissimo uiro <name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedicto</ex></expan> Ariae Montano</name>, S<expan><ex>acrae</ex></expan> Theol<expan><ex>ogiae</ex></expan> doctori, uariarum linguarum peritiss<expan><ex>im</ex></expan>o et <name type="person" ref="#FelipeII">Philippi</name> catholici regis in recensendis Bibliis Regiis legato.
+                  </ab>
+               </div>       
+               <div type="anotation">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> De praefatione et Apparatu t<expan><ex>om</ex></expan>o 3.</ab>
+               </div>     
+               
+               <div type="main_content">
+                  <pb n="f. 118r" ed="O" facs="#foto1"/>
+                  
+                  <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>. 
+                  </opener>
+                  
+                  <head>[Añadido por BAM en la parte superior del papel:]</head>
+                  <p><add place="margin" hand="#AriasMontanoBenito"><name type="person" ref="#HuneoAgustín">Augustini Hunei</name> et <name type="person" ref="#GoudanoCornelio">Cornelii Reinerii Goudani</name> in Louaniensi Academia Theologiae professorum.</add></p>
+                  <p>[<hi rend="bold">1</hi>] Vir doctissime, recepimus priorem partem Apparatus, cui titulus <title>De arcani sermonis interpretatione</title>; quae nobis utilis quaedam isagoge seu introductio esse uidetur ad Sacrarum Literarum intelligentiam, qualem <name type="person">Pagninus</name> olim conscripsit. [<hi rend="bold">2</hi>] Ac proinde, cum omnibus Sacrae Theologiae studiosis seruire debeat, pauci autem Bibliorum Regiorum copiam habituri sint, uidetur nobis magis in rem et utilitatem christianae rei pub<expan><ex>licae</ex></expan> futurum, si seorsim extra opus illud regium excudatur in exiguo aliquo uolumine, quod omnibus esse usui possit. Existimamus enim opus illud regium, quod in maximam molem excrescet, libris non prorsus necessariis non esse augmentandum et grauandum.	</p>
+                  <p>[<hi rend="bold">3 </hi>] Caeterum in Apparatu Sacrorum Librorum, secundum <name type="person" ref="#FelipeII">Phillippi</name> catholici regis mandatum, putamus esse collocanda tria aut 4 dictionaria: Hebraicum, cuius loco seruire poterit epitome <name type="person">Pagnini</name> cum breui quadam <app><lem wit="#O #E2">introductione</lem> <rdg wit="#E1"> <hi rend="italic">post</hi> introductione <hi rend="italic">leuiter distinxit</hi></rdg></app> grammatica et de inuentione radicum; Graecum, quod in Bibliis antiquis Complutensibus ponitur, omnia uocabula quae in Bibliis reperiuntur continens, <add place="margin" hand="#O">cum breui introductione ei praemissa ibidem</add>; et Chaldaicum, ad commodam breuitatem contractum, una cum Syriaco, adnexa quoque Syriacam scripturam legendi ratione. [<hi rend="bold">4</hi>] Quibus si accedant uariarum lectionum in Hebraeo, Chaldaeo, Graecoc, Latino et Syro ex correctissimis exemplaribus obseruationes, abunde lectori quantumuis curioso <choice><sic>satifactum</sic> <corr>satisfactum</corr></choice> iri confidimus.</p>
+                  <p>[<hi rend="bold">5</hi>] Praefationem in Biblia tuo iussu nobis missam examinauimus, et uisa fuit excedere modum praefationis, properantemque lectorem nimium remorari. Quapropter collegimus ex eadem praefatione praecipua rerum capita, ex quib<expan><ex>us</ex></expan> aliam quandam breuem <app><lem wit="#O #E2">confecimus,</lem> <rdg wit="#E1"><hi rend="italic">imum punctum posuit</hi></rdg></app> quam t<expan><ex>ua</ex></expan>e d<expan><ex>omination</ex></expan>i corrigendam mutandamque, et tuo ex cuius uerbis confecta est et contracta nomine, si placet, cum eam melius ornaueris ultimamque manum adhibueris, edendam mittimus <del>ut uideas num in hac aliquid omissum sit quod addi uolebas</del>. [<hi rend="bold">6</hi>] Videmus quidem plura posse poni, sed quandoquidem intelligimus te praeter hanc adhuc alteram meditari, cogitauimus te in illam alia dicenda reseruasse, ut sunt ea quae faciunt ad usum huius operis, ad utilitatem linguae primaeuae seu originalis, quam fontem appellamus, cum uersiones omnes non sint nisi riuuli. Multiplex autem fontis primi a riuulo utilitas ad pauca aliquot capita, quae tibi obiter delineata mittimus, reduci posse uidetur. [<hi rend="bold">7</hi>] Non dubitamus quin plura habeas ex quibus demonstrari possit quanti referat iuxta riuulos ipsum fontem collocatum esse, quod <pb n="f. 118v" ed="O"  facs="#foto2"/> in toto hoc opere obseruatur; atque adeo etiam ad puriorem et uberiorem diuinorum sensuum aquam hauriendam, ubi plures riuuli ab eodem fonte <app><lem wit="#O #E2">emanant,</lem> <rdg wit="#E1"><hi rend="italic">imum punctum posuit</hi></rdg></app> plures etiam iuxta fontem sunt collocati, si forte limpidior aqua per unius interpretis uenam fluxerit quam per alterius. [<hi rend="bold">8</hi>] Sed haec tuae prudentiae committimus, obnixe rogantes ut communibus auxiliis optimum uirum <name type="person" ref="#PlantinoCristobal">Plantinum</name>, quam breuissimo fieri poterit tempore, ab istius operis grauamine leuemus, quo non dubitamus propter infinitos <app><lem wit="#O #E2">o<expan><ex>mn</ex></expan>ino</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> sumptus eum maxime premi et fere deprimi, nisi per R<expan><ex>egi</ex></expan>ae M<expan><ex>aiestat</ex></expan>is aut ill<expan><ex>ustrissi</ex></expan>mi ducis liberalitatem et fauorem ei subueniatur. Sed haec tu melius coram cernis quam nos.  </p>
+                  <closer>[<hi rend="bold">9</hi>] <salute>His uale, uir humanissime, et nos, ut soles, amare perge</salute>. <name type="place">Louanii</name>, <date when="1570-07-22">die 22 Iulii an<expan><ex>n</ex></expan>o 1570</date>. 
+                     Tibi deditiss<expan><ex>imi</ex></expan>, 
+                     <signed><name type="person" ref="#HuneoAgustín">Augustinus Hunnaeus</name>,</signed> <signed><name type="person" ref="#GoudanoCornelio">Cornelius Reyneri Goudanus</name>.</signed></closer>
+                  
+                
+                  
+                  
+                  
+               </div>        
+               
+               
+               
+               
+            </body>
+         </text>
+         <text type="translation">
+            <body> 
+               <pb n="f. 119v" ed="O" facs="#foto3"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab>Al doctísimo varón Benito Arias Montano, doctor en Teología Sagrada, gran conocedor de distintas lenguas y legado del rey católico Felipe para la supervisión de la Biblia Regia.
+                  </ab>
+               </div>       
+               <div type="anotation">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> Sobre el prefacio y el tomo 3º del Aparato.</ab>
+               </div>     
+               
+               <div type="main_content">
+                  <pb n="f. 118r" ed="O" facs="#foto1"/>
+                  
+                  <opener>Un cordial saludo.  
+                  </opener>
+                  
+                  <head>[Añadido por BAM en la parte superior del papel:]</head>
+                  <p><add place="margin" hand="#AriasMontanoBenito">De Agustín Huneo y Cornelio Reyneri de Gouda, profesores de Teología en la Universidad de Lovaina.</add></p>
+                  <p>[<hi rend="bold">1</hi>] Doctísimo varón, recibimos la primera parte del Aparato, cuyo título es <title>Sobre la interpretación del lenguaje arcano</title>,<ref target="#note1" xml:id="reference1">1</ref> la cual nos parece una isagoge o introducción útil para la comprensión de la Sagrada Escritura, como la que Pagnino compuso antaño.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Y por ello, como está orientado al servicio de todos los estudiosos de la Teología Sagrada, y en cambio van a ser pocos los que tengan la Biblia Regia, nos parece que prestaría mejor servicio a la cristiandad si se imprimiese aparte, fuera de la obra regia, en un pequeño volumen, que podría ser útil a todos.<ref target="#note3" xml:id="reference3">3</ref> Pues consideramos que esta obra regia, que va a cobrar un volumen excesivo, no debe ser incrementada y sobrecargada con libros que no sean absolutamente necesarios.	</p>
+                  <p>[<hi rend="bold">3</hi>] Además, en el Aparato de los Libros Sagrados, conforme al mandato del rey católico Felipe, consideramos que se deben incluir tres o cuatro diccionarios: uno hebreo, en cuyo lugar podría servir el epítome de Pagnino con alguna breve introducción gramátical y sobre la localización de las raíces;<ref target="#note4" xml:id="reference4">4</ref> el diccionario griego que está puesto en la antigua Biblia Complutense, el cual contiene todos los vocablos que se hallan en la Biblia, junto on una breve introducción que allí fue colocada delante;<ref target="#note5" xml:id="reference5">5</ref> y un diccionario caldeo abreviado de forma conveniente, junto con otro siríaco, al que se le añada también una explicación sobre la forma de leer la escritura siríaca.<ref target="#note6" xml:id="reference6">6</ref> [<hi rend="bold">4</hi>] Si se le añaden a estos diccionarios unas observaciones sobre las variantes de los textos hebreo, caldeo, griego, latino y sirio, sacadas de los ejemplares más correctos, confiamos en que se le dará satisfacción sobrada al lector, por muy curioso que sea.</p>
+                  <p>[<hi rend="bold">5</hi>] El prefacio de la Biblia, que por orden tuya nos fue enviado, lo hemos examinado ya, y nos ha parecido que excede la extensión de un prefacio y que entorpece en exceso al lector que tiene prisa. Por ello, hemos entresacado los capítulos principales del argumento, con los cuales hemos redactado otro más breve, que enviamos a vuestra señoría para que lo corrija y lo modifique, y una vez que lo haya retocado y le haya dado la última mano, lo publique con el nombre de vuestra merced, si le parece bien, puesto que ha sido redactado y resumido con las palabras de vuestra merced. [<hi rend="bold">6</hi>] Vemos, en efecto, que se pueden poner muchas cosas, pero, dado que entendemos que vuestra merced tiene en mente componer otro además de este, pensamos que había reservado otras cosas para decirlas en aquel prefacio,<ref target="#note7" xml:id="reference7">7</ref> como son las que se refieren a la utilidad de la obra, al provecho de la lengua primera u originaria, a la que denominamos fuente, ya que todas las traducciones no son más que arroyuelos. Ahora bien, las múltiples utilidades que se derivan del arroyo de la fuente originaria parece que se pueden reducir a unos cuantos capítulos, los cuales enviamos a vuestra merced trazados a propósito. [<hi rend="bold">7</hi>] No nos cabe duda de que vuestra merced tendrá muchas cosas con las que se pueda demostrar la importancia de colocar la fuente junto a los arroyuelos, como se ha tenido en cuenta <pb n="f. 118v" ed="O"  facs="#foto2"/> en toda esta obra; además, para poder beber el agua de los sentidos divinos mucho más pura y más rica, allí donde muchos arroyuelos emanan de una misma fuente, muchos son también los arroyuelos colocadosjunto a la fuente, por si por ventura el agua ha fluido más pura por la vena de un intérprete que por la de otro. [<hi rend="bold">8</hi>] Pero esto lo confiamos a la prudencia de vuestra merced, y le rogamos encarecidamente que con la ayuda común libremos al excelente Plantino lo antes posible del peso de esta obra, que, sin duda, lo tiene agobiado y casi hundido por los gastos verdaderamente infinitos, a menos que reciba algún alivio de la generosidad y el favor de Su Majestad o del ilustrísimo duque. Pero de estos pormenores, vuestra merced, que está ahí, se da cuenta mejor que nosotros.<ref target="#note8" xml:id="reference8">8</ref> </p>
+                  <closer>[<hi rend="bold">9</hi>] <salute> Con esto nos despedimos, varón humanísimo, y manténganos en su amistad como suele. </salute> En Lovaina, a 22 de julio de 1570.
+                     Afectuosamente suyos, 
+                     <signed>Agustín Huneo,</signed> <signed>Cornelio Reyneri de Gouda.</signed></closer>
+                  
+                  
+                  
+                  
+                  
+               </div>        
+               
+               
+               
+               
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> <title>Liber Ioseph siue de arcano sermone</title>, publicado en el tomo VIII de la Biblia Regia. Se puede acceder a una copia digitalizada del tratado a través de la <ref target="https://bvpb.mcu.es/es/consulta/registro.cmd?id=399011">Biblioteca Virtual del Patrimonio Bibliográfico</ref>. Contamos con una traducción al español y edición facsímil a cargo de L. Gómez Canseco - Fernando Navarro Antolín - Baldomero Macías Rosendo, <title>Libro de José o sobre el lenguaje arcano</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2006).</note> 
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> <title>Santes Pagnini Lucensis... Isagogae ad Sacras Literas liber unicus. Eiusdem isagogae ad mysticos Sacrae Scripturae sensus libri XVIII</title> (Lugduni: apud Hugonem a Porta, pud Franciscum Iustum..., impensis... Thomae Guadagni..., 1536). Puede consultarse una copia digitalizada de esta edición en <ref target="https://digibug.ugr.es/handle/10481/15577">DIGIBUG</ref>.</note>   
+                  <note type="footnote" xml:id="note3">
+                     <ref target="#reference3">3</ref> El tomo octavo de la Políglota Regia conoció algunas reediciones parciales; así Phaleg, Chaleb, Nehemías, Exemplar, Aaron, Thubalcain, Jeremias y Daniel se reimprimieron en 1593, 1660, 1696 y 1698. Por otro lado, Daniel se reimprimió solo en 1576 y 1602.
+                  </note> 
+                  <note type="footnote" xml:id="note4">
+                     <ref target="#reference4">4</ref> <title>Thesauri Hebraicae linguae, olim a Sante Pagnino Lucensi conscripti, epitome. Cui accesit grammatices libellus, ex optimis quibusque grammaticis collectus</title> (Antuerpiae: excudebat Christophorus Plantinus, 1572). Véase copia digitalizada de este opúsculo en <ref target="https://digibug.ugr.es/handle/10481/4212">DIGIBUG</ref>.</note> 
+                     <note type="footnote" xml:id="note5">
+                        <ref target="#reference5">5</ref>  Este diccionario y gramática griegos no fue finalmente incluido en la Políglota de Amberes. 
+                  </note> 
+                     <note type="footnote" xml:id="note6">
+                        <ref target="#reference6">6</ref>  Sobre las dos contribuciones de Andrés Masio a la Políglota (gramática y diccionario siríaco-caldeo) véase carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-07-01/">1570 07 01</ref>.     
+                     </note> 
+                     <note type="footnote" xml:id="note7">
+                     <ref target="#reference7">7</ref> Se refiere a <title>Benedicti Ariae Montani alia ad lectorem praefatio, in qua de totius operis usu, dignitate et apparatu ex ordine differitur</title>. Esta segunda prefación, que sigue a la otra que va al frente del primer volumen, tiene fecha del 23 de julio de 1571.
+                  </note>  
+                  <note type="footnote" xml:id="note8">
+                     <ref target="#reference8">8</ref> Plantino estaba de hecho oprimido por el peso de los gastos. Ya en diciembre de 1569 escribe al cardenal Granvela informándole de que si no fuera por la venta de breviarios se habría arruinado completamente, pues sus desembolsos eran muy superiores a su patrimonio. Solo las sumas gastadas en papel fueron enormes. Compró el de mejor calidad; de los 1200 juegos de la Biblia Regia impresos en este material, 960 se tiraron sobre papel gran real de Troyes; 200, sobre papel fino real con la uva de Lyon; 30, sobre papel imperial con el águila; y 10 sobre gran papel imperial de Italia. Trece juegos, originariamente seis, hubieron de imprimirse en vitela para uso del rey. Para completar la Biblia, Plantino se endeudó seriamente y llegó un momento en que ya no halló créditos. Cuando alcanzó los dos últimos volúmenes del Aparato, solo pudo imprimir 600, la mitad de los que necesitaba. Trató de conseguir dinero para los ejemplares restantes a través de su amigo el comerciante español Luis Pérez, quien le compró 400 Biblias ya completas.
+                  </note>  
+                     
+               </div> 
+               
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
