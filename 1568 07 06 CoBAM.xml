@@ -1,0 +1,200 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15680706">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Felipe II [Madrid] - 6 de julio de 1568 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 07 06</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">The trip to the Low Countries turned out to be full of unexpected circumstances Due to inclement weather conditions, Montano was dragged to Ireland and England, where he lived civil and incivil situations. News on the new Polyglot Bible has already spread across the English catholics, who definitively express approval of this project. On May 15 Montano set foot in the Low Countries, where he met Curiel, Alba and the magistrate of Antwerp. In that city Montano delivered a speech to make known the goals of his mission. Montano suggests the King to visit the Low Countries in order to strengthen the pacification of the region. When Montano got to Antwerp, Plantin was in Paris. After his return, both visited the Univertity of Leuven, where the supervisor of the Bible delivered other speech. Montano begs the King to write a letter to Leuven in order to thank that University for the services and obedience to the Spanish Crown. Despite his attention to the public situation of the Low Countries, Montano will not deal with this issue in this letter.   
+               
+            </note>
+            <note type="incipit">Si yo huviera hecho este viage a propósito de reconocer tierras...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(0) AGS, E, 583/1</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               
+               
+               <witness xml:id="E1">T. González Carvajal, «Elogio histórico del doctor Benito Arias Montano», Memorias de la Real Academia de la Historia, 7 (Madrid, 1832), pp. 148-150, doc. 26.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 75-81.</witness>
+              </listWit>
+           <bibl type="inextenso" n="firstPrint">(E1) González Carvajal, «Elogio histórico», pp. 148-150;</bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 75-81.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="PlantinoCristóbal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+                 <person xml:id="CurielJeronimo">
+                  <note>  Jerónimo Curiel, agente de Felipe II en Flandes y residente en Amberes desde 1550. A partir de 1561 sustituye a López Gallo como agente mayor del rey para los negocios de los Países Bajos. Su función es distribuir las sumas enviadas por la corona a Flandes para pagar los más variados conceptos.</note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="SilvaGuzmande">
+                  <note>Diego Guzmán de Silva, eclesiástico y diplomático español. Fue canónigo de Toledo y caballero de la orden de Malta. Ocupó la embajada en Inglaterra entre 1564 y 1568 para pasar después a Venecia hasta su muerte en 1578. </note></person>
+               </listPerson>
+            
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1568-07-06">6 de julio de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Felipe II</persName>
+               <settlement>Madrid</settlement>
+               <date when="1568-08-02">2 de agosto de 1568</date>
+               
+            </correspAction>
+            <correspAction type="answered">
+               <persName>Felipe II</persName>
+               <settlement>Madrid</settlement>
+               <date when="1568-08-16">16 de agosto de 1568</date>
+            </correspAction>
+           
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autoógrafa de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-03-31">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/AGS-·-583-1-f.-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/AGS-·-583-1-f.-1v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/AGS-·-583-1-f.-2r-scaled.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/AGS-·-583-1-f.-2v-scaled.jpg" xml:id="foto4"/>
+              </facsimile>
+   <text>
+      <front>
+         <p> Como se ha apuntado en la correspondencia anterior, BAM embarca el día 22 de abril en el puerto de Laredo con destino a Flandes. El mal tiempo arroja al humanista español hacia las islas de Irlanda e Inglaterra, que recorre de punta a punta durante varias jornadas, hasta poner finalmente pie en los Países Bajos el 16 de mayo. En esta su primera comunicación oficial con el Rey el comisionado refiere las diligencias realizadas tras su llegada a Amberes el 18 de mayo, destacando las recepciones oficiales del Gobernador General de los Países Bajos, el duque de Alba, y la administración local de la ciudad de Amberes, así como su presentación ante la Universidad Católica de Lovaina. </p>
+      </front>
+      <body>
+                  
+         <div type="address">
+            <pb n="f. [2v]" ed="0" facs="#foto4"/>
+            <head>[Sobrescrito:]</head>
+            <ab>A la S<expan><ex>acra</ex></expan> C<expan><ex>athólica</ex></expan> R<expan><ex>eal</ex></expan> M<expan><ex>agesta</ex></expan>d el Rey.</ab>
+            
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><app><lem wit="#O #E2">De Anvers a Su M<expan><ex>agesta</ex></expan>d. Arias Montano de <date when="1568-07-06">VI de julio 1568</date>. R<expan><ex>ecibid</ex></expan>a en <date when="1568-08-02">dos de agosto</date></lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app>.</ab>
+         </div>
+         
+         <div type="main_content">
+               <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            
+            
+            <opener>S<expan><ex>acra</ex></expan> C<expan><ex>athólica</ex></expan> R<expan><ex>eal</ex></expan> M<expan><ex>agestad</ex></expan>:
+                       </opener>
+            <p>[<hi rend="bold">1</hi>] Si yo huviera hecho este viage a propósito de reconocer tierras, no sé si <app><lem wit="#O #E2">se</lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app> me huviera ordenado tan a punto para servir a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> en ello, como sin pensarlo me succedió con las peregrinaciones que he hecho echándome Dios con contrario tiempo y con enfermedad en <name type="place">Irlanda</name>,<ref target="#note1" xml:id="reference1">1</ref> cuya gran parte corrí accompañado de salvages della, y después embarcado en uno de los estremos de aquella isla,<ref target="#note2" xml:id="reference2">2</ref> apportando a <name type="place">Inglaterra</name> y travessándola de parte a parte,<ref target="#note3" xml:id="reference3">3</ref> en los quales caminos vi y passé cosas ansí naturales, como civiles e inciviles, que tengo bien de qué acordarme,<ref target="#note4" xml:id="reference4">4</ref> y no me pesa de haver passado por ellas, aunque al presente algunas me fueron trabajosas, de las quales todas Dios por su grande misericordia me sacó hasta ponerme en este lugar. [<hi rend="bold">2</hi>] Y creo cierto que me valió mucho para esto el grande desseo que yo he <app><lem wit="#O #E2">traýdo</lem> <rdg wit="#E1">trahido</rdg></app> de servir a Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y a la V<expan><ex>uest</ex></expan>ra en esta obra, de que tanto provecho se espera para la rep<expan><ex>ública</ex></expan> christiana, quanto es grande el applauso que por todas partes se haze a este santo consejo y propósito de V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan> acerca de la impressión destos saggrados libros, que no podrá hombre explicar lo que accerca desto passa, y quán publicado está ya por toda la christiandad, ansí entre cathólicos como entre los que no lo son, porque <app><lem wit="#O #E2">aun</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> hasta en <name type="place">Inglaterra</name> en la <name type="place">Universidad de Oxonio</name>, en <name type="place">Londres</name> y en otras partes me dezían muchos cómo V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> emprendía esta obra y la admiravan, aunque yo no les decubría que era embiado a servir a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> en ella. [<hi rend="bold">3</hi>] Las cosas que en aquella <name type="place">Isla</name> y en <name type="place">Irlanda</name> entendí de la opinión pública y affección secreta que a V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan> tiene un innumerable número de cathólicos no pueden caber en esta <app> <lem wit="#O #E2">carta</lem><rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> y por tanto las dexo. Y también el buen servicio que a Dios y a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> haze en aquella tierra su embaxador <name type="person" ref="SilvaGuzmande">Guzmán</name><ref target="#note5" xml:id="reference5">5</ref> (como yo lo entendí) porque a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> le es muy más notorio.</p>
+            <p>[<hi rend="bold">4</hi>] A <date when="1568-05-15">quinze de mayo</date> entré en estos Estados de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y a los <app><lem wit="#O #E2"><date when="1568-05-18">18</date></lem> <rdg wit="#E1">diez y ocho</rdg></app> llegué a <name type="place">Anvers</name>, donde me recibió <name type="person" ref="#CurielJeronimo">Genónymo de Curiel</name>, diligente y fiel criado de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>, de que soy buen testigo por el cuydado y <app><lem wit="#O #E2">affeción</lem> <rdg wit="#E1">affección</rdg></app> que en él <app><lem wit="#O #E2">he</lem> <rdg wit="#E1"> <hi rend="italic"> omisit</hi></rdg></app> visto en lo que toca al servi<expan><ex>ci</ex></expan>o de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> en sus negocios y en regalar y ayudar a sus criados quantos por esta tierra vienen. [<hi rend="bold">5</hi>] El qual accettó y obedecció las cédulas que de parte de V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan> le presenté para prosecución desta obra, y las complirá conforme a la mayor commodidad della. </p>
+            <p>[<hi rend="bold">6</hi>] Luego me partí para <name type="place">Brusselas</name> donde fui bien recibido del <name type="person" ref="#AlvarezdeToledoFernando">duque D’Alva</name>, que, por lo que ha entendido desta obra, no menos la ensalça que los que más noticia della tienen. [<hi rend="bold">7</hi>] Y entre otras cosas me lamentó una librería que aquella malaventurada gente al principio de las turbaciones destos pobres Estados (digo pobres por el trabajo que les ha venido por sus peccados) quemó en una abbadía <pb n="f. [1v]" ed="O" facs="#foto2"/> que se dize de las Dunas,<ref target="#note6" xml:id="reference6">6</ref> la qual tenía fama de más ricca de buenos libros antiguos que en estos Estados ni en otras muchas partes havía, de que yo sentí gran dolor por la affección que a los buenos estudios tengo. [<hi rend="bold">8</hi>] El <rs type="person" ref="#AlvarezdeToledoFernando">duque</rs> me dio su carta para el magistrado desta villa de <name type="place">Anvers</name>, en el qual yo hize un razonamiento en latín declarando la razón de mi venida, y fuy bien recibido con grande applauso, que todo el magistrado hizo entendiendo la qualidad de la obra que <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> emprende</lem> <rdg wit="#E1">V. M. por la grande merced que les hacía a ellos</rdg></app>, y en la respuesta que luego me hizieron en latín besavan los pies a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> por la grande m<expan><ex>erce</ex></expan>d que les hazía a ellos y a esta villa en mandar que esta obra se hiziesse en ella y por un impressor concive suyo, y que lo tenían por particular favor y  m<expan><ex>erce</ex></expan>d, y me rogaron con mucha affición que yo por mi parte diesse testimonio de grandíssima affección que este magistrado tiene al servicio de V<expan><ex>uestra</ex></expan> M<expan><ex>a</ex></expan>g<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>, porque ellos protestavan de lo mostrar para siempre jamás en púb<expan><ex>li</ex></expan>co y en secreto en toda occasión grande y pequeña que se les offreciesse. [<hi rend="bold">9</hi>] Y cierto de oýr esto se me rasgaron las entrañas de compassión del trabajo que a estas tierras les ha succedido por culpa de algunos pocos que fueron authores de su proprio mal y del púb<expan><ex>li</ex></expan>co daño y desassossiego. Y rogué a Dios y ruego siempre tenga por bien de bolver sus fazes benignas y misericordiosas sobre esta tierra, y que las de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> con grande prosperidad y commodidad suya se vean también en ella, porque tengo por averiguado sería esta vista bastante para restituir las cosas todas en su primero estado y aun aventajarlas mucho más, porque la gracia, o amenaza, o castigo del padre hazen mayor effetto en approvechamiento de la familia y accrecentamiento de su <app><lem wit="#O #E2">bien</lem> <rdg wit="#E1"> bien estar</rdg></app> y dignidad que ninguna otra cosa ni persona puede hazer.<ref target="#note7" xml:id="reference7">7</ref>  </p>
+            <p> [<hi rend="bold">10</hi>] <name type="person" ref="#PlantinoCristóbal">Plantino</name> era ido a <name type="place">París</name> quando yo llegué a procurar papel y otros apparejos para esta obra,<ref target="#note8" xml:id="reference8">8</ref> en el repartimiento y orden de la qual havemos arbitrado hasta agora que se comiença ya a componer, cuya primera muestra plaziendo a Dios embiaremos presto a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> con grandíssima ventaja sobre las que primero se havían embiado, como V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> lo verá ansí en caracteres como en lo demás, porque entiendo Dios ha criado <app><lem wit="#O #E2">a</lem> <rdg wit="#E1">a</rdg> </app> este hombre para ornamento desta arte, la qual con nombre y favor de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> espero en él, porná en el summo grado de perfección.<ref target="#note9" xml:id="reference9">9</ref> </p>
+            <p>[<hi rend="bold">11</hi>] Después de tornado <name type="person" ref="#PlantinoCristóbal">Plantino</name> de <name type="place">París</name>, fui con él a la <name type="place">Universidad de Lovayna</name>, en la qual fuy muy bien recibido,<ref target="#note10" xml:id="reference10">10</ref> y haviéndoles dado cuenta del negocio a que venía alabaron a Dios por ello y pusieron en el cielo el santo zelo y cuydado de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>. [<hi rend="bold">12</hi>] Y los theólogos della me offrecieron su diligencia y ayuda en quanto fuesse menester, y exortaron a <name type="person" ref="#PlantinoCristóbal">Plantino</name> a la priessa y cuydado de la obra, porque todo el mundo dessea verla acabada. Fuera para ellos grande m<expan><ex>erce</ex></expan>d y consuelo haverles yo traýdo alguna letra de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>, que dizen que dende antes destas turbas<ref target="#note11" xml:id="reference11">11</ref> no han visto ninguna, en las quales ya V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan> sabe quán officiosos y constantes se mostraron en servicio de Dios y de la Igl<expan><ex>es</ex></expan>ia cathólica y de V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>. [<hi rend="bold">13</hi>] Agradóme mucho el orden y frequencia de aquellos estudios y la buena manera que tienen en leer y disputar, porque me hallé a todo presente. Yo me havré de approvechar dellos en muchas cosas para <pb n="f. [2r]" ed="O" facs="#foto3"/> el ornamento y perfección desta obra. [<hi rend="bold">14</hi>] A V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan> supplico sea servido de mandar escrivirles una carta conforme a la gracia y humanidad que con todos usa, con la qual obliga y confirma en su servicio los coraçones de todos sus vassallos y atrahe a los demás a su affeción.<ref target="#note12" xml:id="reference12">12</ref></p>
+            <closer>[<hi rend="bold">15</hi>] Aunque yo tengo cuenta con considerar las cosas púb<expan><ex>li</ex></expan>cas de por acá, no tengo que escrivir agora dellas a V<expan><ex>uestra</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>, porque otros lo hazen con buena diligencia y cuydado. [<hi rend="bold">16</hi>] Si algo entendiere que yo deva escrivir, daré razón dello a <name type="person" ref="#ZayasGrabrielde">Çayas</name>, por no ocupar con cartas largas el tiempo que en provecho púb<expan><ex>li</ex></expan>co emplea V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan>, <salute>cuya real persona y reyno prospere Dios para gloria de su santo nombre</salute>. [<hi rend="bold">17</hi>] <dateline></dateline>En <name type="place">Anvers</name>, <app><lem wit="#O #E2"><date when="1568-07-06">6 de julio 1568</date></lem> <rdg wit="#E1">seis de Julio de mil quinientos sesenta y ocho</rdg></app>. 
+               S<expan><ex>acra</ex></expan> C<expan><ex>athólica</ex></expan> R<expan><ex>eal</ex></expan> M<expan><ex>agestad</ex></expan>
+               Criado y capellán de V<expan><ex>uestra</ex></expan> M<expan><ex>ages</ex></expan>t<expan><ex>ad</ex></expan>, que sus reales manos besa,
+               <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> <app><lem wit="#O #E2"><foreign>تلميد </foreign><ref target="#note13" xml:id="reference13">13</ref> </lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app> </signed>
+                          </closer>
+            
+            
+            
+           
+     </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Al puerto de Youghal, en donde puso pie Montano el 28 de abril, seis días después de que hubiese embarcado en Laredo, según relación contenida en carta de Arias Montano a Juan de Ovando, 1568 06 14. </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> «[...] la corrí por tierra desde el puerto de Yoghol hasta el de Dubling, más de cien leguas en seis días», escribe Arias Montano a Juan de Ovando en 1568 06 14. </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref>  Arias Montano embarcó de nuevo en Dublín con dirección al puerto inglés de Chester, recorrió de nuevo toda Inglaterra de Oeste a Este hasta el puerto de Dover, y allí volvió a tomar un barco con destino a Calés. Montano no pisó tierra flamenca hasta el 16 de mayo. Cf. 68 06 14, carta de Arias Montano a Juan de Ovando. </note> 
+               
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> «[...] in quibus locis plurima et cognitu dignissima obseruaui, quae maxima cum uoluptate amicis communicaturum me spero et narraturum plurima quae obierim pericula ex quibus omnibus diuino beneficio et prouidentia ereptus fuerim», relata también BAM a Juan de Ovando en 1568 06 14.</note>     
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Diego Guzmán de Silva, eclesiástico y diplomático español. Fue canónigo de Toledo y caballero de la orden de Malta. Ocupó la embajada en Inglaterra entre 1564 y 1568 para pasar después a Venecia hasta su muerte en 1578; cf. J. M. Cabañas Agrela, «Diego Guzmán de Silva», en Real Academia de la Historia, <title></title>Diccionario Biográfico electrónico>title> (en red, <ref target="https://dbe.rah.es/biografias/42920/diego-guzman-de-silva">https://dbe.rah.es/biografias/42920/diego-guzman-de-silva)</ref>. La amistad que BAM cimentó con Guzmán de Silva fue duradera: en 1572, durante su regreso de Roma tras obtener la aprobación papal de la Políglota, el teólogo español hace escala en Venecia el 22 de octubre (carta de Guzmán de Silva a Felipe II de 24 de octubre de 1572, «antier llegó aquí Arias Montano», en AGS, E 1831, f. 117). Por ese motivo, Plantino remitió dos cartas a Guzmán de Silva, para que este se las entregara al biblista español en su camino de regreso de Roma (cf. [1572 11 01] y [1572 11 05-72 11 10]). El embajador de Felipe II intercedió en la obtención del privilegio veneciano para la impresión de la Biblia Políglota (cf. carta de Arias Montano a Felipe II, 1572 12 18). En los años posteriores BAM siempre tuvo en mente solicitar destino junto a Guzmán de Silva en la ciudad de Venecia, «por ser retirada de frequencia de españoles, y de no mucho negocio que me estorvasse mis studios, y vezina la ayuda de los studiosos estrangeros, entre los quales tengo alguna autoridad y mucha amistad [...] y facilidad para haver libros de Levante, que son a mi propósito» (carta de Montano a Zayas, 1579 01 04).</note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> La abadía de las Dunas («Ter Duinen»), conocida hoy en día como el seminario episcopal de Brujas, fue fundada en 1128 en Koksijde, en la costa flamenca, y se convirtió en una de las más prestigiosas abadías cistercienses de la Europa medieval.</note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Con estas palabras, BAM propone a Felipe, quien no pisaba Flandes desde 1559, que visite la región en persona como la solución más efectiva para abortar nuevos ataques revolucionarios tras sofocarse la primera rebelión. La idea de la conveniencia de esta visita real había surgido en varias ocasiones de los consejeros más cercanos al Rey. En todo caso, una serie de problemas personales y políticos entre 1567 y 1568 hicieron imposible la presencia del monarca en los Países Bajos: el empeoramiento de la situación mental del príncipe Carlos y su fallecimiento el 24 de julio de 1568, la muerte de la reina en octubre de 1568 al dar a luz; los peligros de la travesía marítima hasta los Países Bajos; y la rebelión de los moriscos en las sierras cercanas de Granada en la navidad de 1568. Cf. Parker, <title>España y la rebelión en Flandes</title>, pp. 110-112.  </note>
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Cuatro o cinco días llevaba el impresor en Francia haciendo provisión de pergamino y otros tipos de papel para la Biblia cuando tuvo conocimiento de la llegada a Amberes de BAM (cf. carta de Plantino a Zayas del 11 de junio de 1568, en <title>CP</title>, I, 277-280, nº 127). El impresor debió de llegar, pues, a Amberes hacia el 22 de mayo, pues el 23 ya estaba acompañando a BAM en la Universidad de Lovaina.</note>
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> La afinidad entre Plantino y BAM surgió desde el primer encuentro personal de ambos. De manera paralela al elogio que BAM hace del impresor en la presente carta a Zayas, Plantino escribe al secretario real palabras muy elogiosas sobre Arias Montano: «[...] car je me sens attiré, contrainct et volontairement ravi et transporté à aimer et révérer ledict signeur Arrias Montanus, et ce comme personnage que, sans envie ni affection, j’aperçoy à la vérité estre autant bein doué et rempli de toutes grâces divines que j’en congnoisse. De manière que je m’asseure qu’il eust esté impossible à Sa Majesté et à tous autres de trouver ung personnage plus idoine, capable ou propre, voire et nécessaire pour entreprendre la charge de l’ordonnance et correction de ce tant excellent ouvrage que ledict signeur»; cf. Plantino a Zayas, 11 de junio de 1568, en <title>CP</title>, I, 288, nº 127. Otros pasajes de elogio a la figura de BAM se leen en carta de Plantino a Zayas del 27 de agosto de 1568 (en <title>CP</title>, II, 7-9, nº 154), Plantino a Zayas, del 13 de diciembre de 1568 (en <title>CP</title>, II, 23, nº 160). Una nueva alabanza de BAM a la profesionalidad, bondad y lealtad hacia el rey de Plantino puede leerse en la presente correspondencia, en carta a Zayas nº 69 02 28. 
+                  
+               </note>
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> La visita tuvo lugar el 23 de mayo de 1568, fecha del discurso de BAM ante dicha Universidad, publicado en el tomo primero de la Biblia Regia, [p. 48] con el título «Bened[icti] Ariae Montani apud Lovaniensem academiam legationis suae expositio facta X cal. Iun. An. M.D.LXVIII». Un borrador de ese discurso se conserva en Ms. Estocolmo A 902, f. 212. Sobre el alcance de las colaboraciones entre BAM y la Universidad lovaniense resulta de gran interés del trabajo de Diederik Lanoye, «Benito Arias Montano (1527-1598) and the University of Louvain. 1568-1576», <title>Lias</title>, 29 (2002), 23-44. </note>
+               <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref> La crisis política en los Países Bajos tuvo su punto de partida el día 5 de abril de 1566, cuando la pequeña nobleza presentó a Margarita de Parma, hermana de Felipe II y gobernadora de los Países Bajos, el resultado del Compromiso de Breda, en el que reclamaron la mitigación de las leyes contra la herejía y la abolición de la Inquisición. El estallido de la rebelión se produjo a mediados de agosto de 1566: los disturbios provocados por los calvinistas derivaron en el asalto de iglesias y la destrucción de imágenes. La así llamada «furia iconoclasta» se extendió como un reguero de pólvora desde Flandes occidental hacia el resto de los Países Bajos. Cf. Parker, <title>España y la rebelión en Flandes</title>, pp. 67-76.</note>
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> Carta latina que el rey remite al mismo BAM con fecha del 15 de agosto de 1568 y aparece publicada en el tomo primero de la Biblia Políglota [pp. 43 y 49] con el encabezado de «Philippus [...] rex Hispaniarum [...] rectori, decanis ac doctoribus filiae nostrae Vniversitatis Louaniensis». Carvajal publicó también esta carta en su <title>Elogio histórico</title>, pp. 150-151, doc. 29. Se conserva asimismo un borrador de esta carta, autógrafo de BAM, en AGS, E 583/5: este testimonio presenta algunas variantes con respecto al texto que apareció finalmente publicado en la Políglota.   </note>
+               <note type="footnote" xml:id="note13">
+                  <ref target="#reference13">13</ref> Las ediciones decimonónicas de las cartas de BAM conservadas en el Archivo General de Simancas omiten de forma sistemática la rúbrica con la que BAM solía firmar la mayoría de sus documentos, la palabra árabe تلميد (al-tilmid). </note>
+             
+            </div>
+      </back>
+   </text>
+</TEI>

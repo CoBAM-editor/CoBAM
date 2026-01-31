@@ -1,0 +1,197 @@
+﻿
+<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15680722">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 20 de julio de 1568 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 07 22</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM has just received Zayas’ letter. He can not reply with a longer letter because he sends his anwer with the same postman who brought Zayas’ letter. Twelve days ago BAM wrote to the king and to Zayas. He asks Zayas to write a letter to Curiel urging him to lend Plantin the first amount of money for the Bible with the bond of the printer’s houses and the Bibles already printed. He sends his regards to Luis Manrique. He has come across better and cheaper paintings, as he will tell in a later letter.     
+               
+            </note>
+            <note type="incipit">Las cartas que traxo Noncarmes passaron de aquí a Bolduq...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(O) AGS, E 583/2</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               
+               
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 127-128.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 82-85.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 127-128;</bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 75-81.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="PlantinoCristóbal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+                 <person xml:id="CurielJeronimo">
+                  <note>  Jerónimo Curiel, agente de Felipe II en Flandes y residente en Amberes desde 1550. A partir de 1561 sustituye a López Gallo como agente mayor del rey para los negocios de los Países Bajos. Su función es distribuir las sumas enviadas por la corona a Flandes para pagar los más variados conceptos.</note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="NoircarmesJeande">
+                  <note>Jean de Noircarmes, señor de Selles, soldado y diplomático leal a la corona española, casado con Caterine de Tisnaq y fallecido en enero de 1585.</note></person>
+               <person xml:id="ManriquedeLaraLuis">
+                  <note>Luis Manrique de Lara (fallecido en 1583), limosnero y capellán mayor de Felipe II.  </note></person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               
+               </listPerson>
+            
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1568-07-20">22 de julio de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+               <date when="1568-08-02">9 de agosto de 1568</date>
+               
+            </correspAction>
+            <correspAction type="answersto">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+               <date when="1568">Entre mayo y junio de 1568</date>
+            </correspAction>
+           
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autoógrafa de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-03-31">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/04/AGS-E-583-2-f-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/04/AGS-E-583-2-f-2v-scaled.jpg"
+         xml:id="foto2"/>
+     
+              </facsimile>
+   <text>
+      <front>
+         <p> Tras una negociación no exenta de vacilaciones, finalmente Felipe II acepta la garantía que Plantino presenta para la devolución del crédito español necesario para llevar a cabo las provisiones de la Biblia Políglota. BAM apremia con estas líneas a Zayas para que vayan llegando al impresor los primeros dineros.</p> 
+         <p> Esta misiva es una breve respuesta a una carta de Zayas no conservada. BAM cita también una carta suya enviada hacia el 8 de julio, de la que tampoco hemos hallado testimonios. La presente carta está fechada en el día de Santa María Magdalena, que se celebra el 22 de julio. No obstante, en el sobrescrito de la carta, cuando la misiva llega a la Corte, se anota la fecha del 20 de julio. Los folios [1v] y [2r] están en blanco.    
+         </p>
+      </front>
+      <body>
+                  
+         <div type="address">
+            <pb n="f. [2v]" ed="0" facs="#foto2"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Al ill<expan><ex>ustre</ex></expan> s<expan><ex>eñ</ex></expan>or Gabriel de Çayas, mi s<expan><ex>eñ</ex></expan>or, Secretario de Stado de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y de su <app><lem wit="#O #E2">Consejo</lem> <rdg wit="#E1"><hi rend="italic">non distinxit</hi></rdg></app>. En Corte. </ab>
+            
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><app><lem wit="#O #E2"><name type="place">Anvers</name> a <name type="person" ref="#ZayasGrabrielde">Çayas</name>. El doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> de <date when="1568-07-20">xx de julio 1568</date>. R<expan><ex>ecibid</ex></expan>a a <date when="1568-08-09">ix de agosto</date>.</lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app></ab>
+         </div>
+         
+         <div type="main_content">
+               <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            
+            
+            <opener>Ill[ustr]e S[eñ]or:
+                       </opener>
+            <p>[<hi rend="bold">1</hi>] Las cartas que traxo <name type="person" ref="#NoircarmesJeande">Noncarmes</name><ref target="#note1" xml:id="reference1">1</ref> passaron de aquí a <name type="place">Bolduq</name>,<ref target="#note2" xml:id="reference2">2</ref> donde estava el <name type="person" ref="#AlvarezdeToledoFernando">d’Alva</name>. Y las que a mí me tocavan <app><lem wit="#O #E2">no se</lem> <rdg wit="#E1">me</rdg></app> embiaron hasta esta hora que el correo que esta lleva venía por aquí, y tan deprissa que no pude hazer más que dar aviso a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> de haverlas recibido, todo el pliego <app> <lem wit="#O #E2">como</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> venía con <app> <lem wit="#O #E2">resobrescritto</lem> <rdg wit="#E1">resobre escrito</rdg></app> de <name type="person" ref="#AlbornozJuande">Albornoz</name>.<ref target="#note3" xml:id="reference3">3</ref>  Havrá doze días que escriví a Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan><ref target="#note4" xml:id="reference4">4</ref>  y a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> y a muchos otros <app><lem wit="#O #E2">s<expan><ex>eñore</ex></expan>s</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> míos y antes he escritto muchas vezes. A estas responderé de espacio. [<hi rend="bold">2</hi>] V<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> embíe un capítulo a <name type="person" ref="#CurielJeronimo">Curiel</name> para que vaya dando a <name type="person" ref="#PlantinoCristóbal">Plantino</name> los dineros tomando <app><lem wit="#O #E2">emprendas</lem> <rdg wit="#E1">en prendas</rdg></app> sus casas, que valen más de 4.000 scudos, y más la obra hecha <app><lem wit="#O #E2">que</lem> <rdg wit="#E1">y que</rdg></app> se fuere haziendo, que acabada valdrá más de 20.000 scudos, porque no <app><lem wit="#O #E2">demande</lem> <rdg wit="#E1"><hi rend= "italic">post</hi> demande <hi rend="italic">leuiter distinxit</hi></rdg></app>  fianças por demás, que no fían aquí <app><lem wit="#O #E2">sino</lem> <rdg wit="#E1">si no</rdg></app> con grandes interesses y partes de las ganancias y <del>para</del>, mientra por más tiempo fían, más interesse piden.<ref target="#note5" xml:id="reference5">5</ref> Y esto no puede <del>hazerse en </del>suffrirse en cosas de obra donde apenas los maestros sacan su trabajo y no ganan sino gastan. <foreign><app><lem wit="#O">Secus</lem> <rdg wit="#E1">cum</rdg> <rdg wit="#E2">Sic enim</rdg></app> est in <app><lem wit="#O">mercatorum</lem> <rdg wit="#E1 #E2">mercatoris</rdg></app> negociis</foreign>.<ref target="#note6" xml:id="reference6">6</ref></p> <closer><salute>[<hi rend="bold">4</hi>] Guarde Dios la <app><lem wit="#O #E2">ill<expan><ex>ustr</ex></expan>e</lem> <rdg wit="#E1">ilustrísima</rdg></app> pers<expan><ex>on</ex></expan>a de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan></salute>, a la qual supp<expan><ex>li</ex></expan>co me avise a menudo de la salud suya y de mis prendas de <name type="place">Sevilla</name>.<ref target="#note7" xml:id="reference7">7</ref> <dateline>En <name type="place">Anvers</name>, <date when="1568-07-20">día de la Magdalena</date></dateline>.   </closer>
+            <postscript n="1">
+               <p>[<hi rend="bold">4</hi>] Al s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ManriquedeLaraLuis">Luis</name><ref target="#note8" xml:id="reference8">8</ref>  beso las manos. Ya yo tenía <app> <lem wit="#O #E2">deshecha</lem> <rdg wit="#E1">desecha</rdg></app> la venta de los primeros lienços por caros, y por cierta invención hallamos otros mejores y casi la mitad más baratos. De todo escriviré largo a <app><lem wit="#O #E2">su</lem> <rdg wit="#E1">s.</rdg></app> m<expan><ex>erce</ex></expan>d.</p></postscript>
+            <closer>Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan></closer>
+               <postscript n="2">
+                  <p><app><lem wit="#O #E2">[<hi rend="bold">5</hi>] El libro de <name type="person">Mena</name> ya v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> lo havrá recibido.</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app><ref target="#note9" xml:id="reference9">9</ref> </p></postscript>
+            <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> <app><lem wit="#O #E2 "><foreign>تلميد </foreign></lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app></signed>
+               
+               
+            
+          
+            
+            
+            
+           
+     </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Jean de Noircarmes, señor de Selles, soldado y diplomático leal a la corona española, casado con Caterine de Tisnaq y fallecido en enero de 1585. Fue comisionado de Felipe II para importantes misiones diplomáticas relativas con la pacificación de los Países Bajos. La misión más importante que se le encomendó, entre 1577 y 1578, fue la de que tratara de negociar que las provincias rebeldes,tras la Pacificación de Gante (8 de noviembre de 1576), volvieran a la lealtad de España con las únicas condiciones de mantener el catolicismo y reconocer la soberanía de Felipe II. En septiembre de 1579, tras el fracaso de los esfuerzos diplomáticos, volvió al campo de batalla. El 20 de agosto de 1583 fue capturado por las fuerzas de Francisco, duque de Anjou, permaneciendo en cautividad hasta su muerte. </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Bois-Le-Duc (s’Hertogenbosch) o Den Bosch, una de las ciudades principales del ducado de Brabante, junto con Bruselas, Lovaina y Amberes.  </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Juan de Albornoz, originario de Cuenca y protegido de Zayas, era secretario del duque de Alba desde 1565. La correspondencia que mantiene con la corte española, conservada en el Archivo General de Simancas y publicada parcialmente en <title>Codoin</title> y Carvajal, es una fuente de documentación básica en torno al conflicto de los Países Bajos. Albornoz, que toma a su cargo la tarea de buscarle a BAM, nada más llegar a Amberes, un alojamiento «que no le cueste blanca», venerará la grandeza del frexnense durante el resto de su vida, de ahí que reproche a Zayas el que se hubieran mostrado tan tacaños en la asignación de salario a BAM, dada la carestía de recursos necesarios para la vida en Flandes (cf. Carvajal, «Elogio histórico», pp. 150-151, doc. nº 28). También resultan reveladores los contactos epistolares entre Albornoz y BAM: fruto de uno de ellos es la carta del primero a Zayas, del 19 de marzo de 1572, donde, a instancias del propio BAM, Albornoz apremia al secretario del rey para que se resuelva la partida de BAM a Roma (cf. Carvajal, «Elogio histórico», p. 164, doc. nº 38). Por otro lado, la carta de BAM a Albornoz del 16 de noviembre de 1571 es uno de los principales documentos para el cabal estudio de las motivaciones, confección y repercusión del Index expurgatorius de 1571 (cf. Carvajal, «Elogio histórico», pp. 154-155, doc. nº 33). Por último, citamos aquí el interesante bloque de correspondencia entre Albornoz y BAM conservado en la Biblioteca del Palacio de Liria (ADA, C. 28-168ss): estas cartas son testimonios de la profunda amistad que unía al capellán del rey y el brazo derecho del duque de Alba. A él se dirigía BAM para negociar todos los asuntos que tocaban a la corte de Bruselas, pidiéndole también favores personales como la contratación de criados; Albornoz era también quien informaba a BAM de lo que pasaba en España «porque no teniéndolo por mano de V[uestra] M[erced] o no lo recibo o, si hay algo que oyga, no lo creo» (cf. 1571 11 24). </note>  
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Cf. <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-07-06">1568 07 06</ref>.  </note>
+              
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref>  El Rey había exigido a Plantino una garantía por el dinero que le avanzaba sobre los trabajos de la Biblia. Tras las pertinentes negociaciones (cf. carta de Plantino a Zayas, del 11 de junio de 1568, en <title>CP</title>, I, 277-280, nº 127) se aceptó que las páginas de la Biblia que salieran de las prensas quedarían en poder de Jerónimo Curiel y que, hasta que finalizara la obra, serían garantía de devolución la casa y propiedades de Plantino (cf. carta de Plantino a Zayas, del 27 de agosto de 1568, en <title>CP</title>, II, 8, nº 154). </note> 
+               
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Traducción: «como no debe ser en los negocios de los mercaderes». </note>     
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Con sus indagaciones en el Archivo de Protocolos de Sevilla, Juan Gil ha concretado y desvelado los datos hasta entonces conjeturados sobre la familia sevillana de Montano. La mayor parte de los nombres se vertebran en dos familias: los Alcocer (Gaspar y Antonio Vélez de Alcocer, Diego Díaz Becerril, Gómez de León, María Vélez) y los Núñez Pérez (especialmente Diego Núñez Pérez y Marcos Núñez Pérez). Cf. Gil, <title>Arias Montano en su entorno</title>, pp. 103-140. </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Luis Manrique de Lara. La vida de este destacado personaje, que permaneció relacionado con la corte de los Austrias durante más de cuatro décadas, es prácticamente desconocida. Nació en Paredes de Nava, en fecha incierta, y era hijo bastardo de Rodrigo Manrique, tercer conde de BAM mantuvo una larga relación de amistad con este personaje, como evidencian las frecuentes y cariñosas menciones que de él hace a lo largo de su correspondencia y en la oda «De prouidentia Dei in hominum periculis ex noto et proprio utriusque exemplo» que le dedica en sus <title>Poemata in quattuor tomos distincta</title> (Antuerpiae, 1589). Esa vinculación entre BAM y Luis Manrique ha quedado especialmente patente en algunas cartas como la que Ovando dirige a BAM el 21 de enero de 1570: «Y así lo hezimos pocos días a el señor don Luis Manrique y yo, que diziéndole que venido V[uestra] M[erced], si se fuesse a la Peña, me avía yo de yr con V[uestra] M[erced], començó a hazer juramentos que no yríamos solos, dando a entender que él también de qualquiera manera me holgara yo yr de lo ver» (cf. nº 1570 01 21); o en la que BAM escribe a Zayas el 4 de enero de 1579: «no teniendo yo otra cosa que poder ni deber desear en corte sino la conversación de v. m. y del señor don Luis Manrique» (cf. nº 1579 01 04). También a instancias de BAM Becano elogia a Luis Manrique, junto con Gabriel de Zayas y Juan de Ovando, en el prefacio de sus <title>Origines Antuerpianae</title>. Por su parte, Luis Manrique aprovechó, igual que hizo Ovando, la estancia de BAM en Amberes para surtirse de libros y cuadros a buen precio, como reflejan los libros de contabilidad de Plantino. En 1579 BAM apodera a Luis Manrique, junto a Andrés Luzón y Francisco de Mena «para que cobren todos los maravedís que se le deben y debieren de los gajes que como tal capellán tengo en la mesa maestral y dehesas de Cubillana y para cobrar cualesquier otras cosas que le debieren en cualesquier partes y cualquier título», documento fechado en Sevilla, 12 de marzo de 1579; cf. F. Rodríguez Marín, <title>Nuevos datos para la biografía de cien escritores de los siglos XVI y XVII</title> (Madrid, 1923), p. 57. </note>
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> <title>Ferdinandi Mena doctoris et medici cubicularii Philippi Regis Hispaniarum [...] Complutensisque scholae primarii professoris, Methodus febrium omnium et earum symptomatum curatoria, Hispaniae medicis potissimum ex usu. Accessit liber de septimestri partu et de purgantibus medicinis eodem et expositore et enarratore</title> (Antuerpiae: ex officina Christophori Plantini, M. D. LXVIIII); véase descripción bibliográfica en <title>PP</title>, IV, nº 1660. Una copia digitalizada de esta obra puede consultarse en <ref target="http://alfama.sim.ucm.es/dioscorides/consulta_libro.asp?ref=X533754541&amp;idioma=0">Biblioteca Digital Dioscórides</ref>. El 12 de junio de 1568, Plantino se extrañaba de que Zayas no hubiera recibido aún los ejemplares del libro de Mena ya enviados (cf. <title>CP</title>, I, 280, nº 127).  </note>
+              
+             
+            </div>
+      </back>
+   </text>
+</TEI>
