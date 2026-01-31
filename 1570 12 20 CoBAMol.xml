@@ -1,0 +1,139 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15701220">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Juan de Ovando (Madrid) a Benito Arias Montano (Amberes) - 20 de diciembre de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 12 20</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Juan de Ovando acknowledges receipt of the three chests that BAM had sent to him aboard the fleet that accompanied Queen Doña Ana of Austria on her voyage from Flanders to the Iberian Peninsula. </note>
+            <note type="incipit">En 15 de diziembre reçibí las tres cajas......</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(C) IVDJ, Envío 78/14, f. 149r-150v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> J. Paniagua Pérez, «Burócratas e intelectuales en la Corte de Felipe II. La amistad de Juan de Ovando y Benito Arias Montano», <title>La Ciudad de Dios</title>, CCXI, núm. 3 (1998), p. 949.</witness>
+              
+               <witness xml:id="E2"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 217-218.</witness>
+               <witness xml:id="E3"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 619-620.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Paniagua, «Burócratas e intelectuales», p. 949; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Macías, <title>Correspondencia con Ovando</title>, pp. 217-218; </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 619-620.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.
+</note></person>
+                 
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Era todavía un niño cuando perdió a su madre a causa de la peste, y fue recogido en casa de un  canónigo de Lyon, Claude Porret, en cuyo servicio estuvo muchos años empleado el padre de Plantino. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. Se labró gran reputación en su oficio, y el negocio comenzó a prosperar. Sin embargo, una tarde cuando salía para llevarle a Gabriel de Zayas, el secretario de Felipe II, un cofrecillo que le había encargado para enviarle una joya de gran valor a la reina, Plantino recibió una estocada destinada a otro. Esta herida recibida, que puso su vida en peligro, lo incapacitó para su trabajo manual, y se vio forzado a cambiarlo por el de impresor, el cual había ejercido en Caen. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A partir de esta etapa su vida es bien conocida por su abundante correspondencia, editada por Max Rooses y J. Denucé. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros; en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. A su regreso de Leiden, Plantino vivió aún en Amberes cuatro años durante los que se afana por acercarse de nuevo a la Corona española mediante renovados elogios a los vencedores. En medio de la decadencia de la ciudad, acentuada por el largo sitio que hubo de sufrir, el Compás de oro había quedado reducido, lejos de la mano del maestro, a una mera sombra de su pasado. El primero de julio de 1589, rodeado de su familia y amigos, fallecía el “príncipe de los impresores”, cuya vida estuvo marcada por los conflictos religiosos y políticos de su tiempo. Sobre la tipografía plantiniana, biografía de sus fundadores, Cristóbal Plantino (ca. 1520-1 de julio de 1589) y Juan Moreto (c. 1543-1610), y actividades principales véase L. Voet, <title>The Golden Compasses. A History and Evaluation of the Printing and Publishing Activities of the Officina Plantiniana at Antwerp</title>, 2 vols. (Amsterdam-London-New York, Vangendt and Co.-Routledge and Kegan Paul-Abner Schram, 1969-1972). Del mismo autor es el repertorio bibliográfico de la producción del «Compás de Oro» en vida de Plantino, Amsterdam, Van Hoeve, 1980-1983.</note></person>
+               <person xml:id="CordobaMariana">
+                 <note>Mariana Dávila y Córdoba, (fl. 1560), esposa de Fadrique Enríquez de Ribera, I Marqués de Villanueva del Río</note></person>
+                 </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1570-12-20">20 de diciembre de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement> </correspAction>
+                    </correspDesc> <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Copia de carta por mano desconocida</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-10-31">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/10/IVDJ-78-14-f.-149r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/10/IVDJ-78-14-f.-150v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>En la carta de 5 de septiembre (1570 09 05) BAM ya daba aviso de haber embarcado las cajas junto con otras para don Luis Manrique de Lara y el Dr. Luzón, al tiempo que hacía una breve relación del contenido de las mismas. Posteriormente, en la de 9 de octubre (1570 10 09), avisaba de que la flota se había hecho a la mar con buen tiempo y de que las cajas iban repartidas en los barcos para mayor seguridad. Por la correspondencia del comisario del Santo Oficio Pedro de Puerta han quedado noticias de que dos de las cajas fueron desembarcadas en Laredo, donde las recuperó el citado comisario, y la tercera arribó a Santander, quedando en poder de Juan Ruiz de Escalante, hasta que finalmente Pedro de Puerta se las hizo llegar a Ovando (cf. Macías, <title>Correspondencia con Ovando</title>Apéndice, documentos núm. 2-5, pp. 339-348).</p>
+         <p>Junto a la fecha de la carta leemos tachado 30 enero 1571 años. De la confusión del copista podemos deducir que la copia se hizo en esa fecha. En Jiménez de la Espada, p. 480, leemos el siguiente resumen de esta carta: «Acusa recibo de los tres cajones con libros, pinturas y retablos. Que envía á doña Mariana el que para ella venía; y que le mande más libros y sobre todo catálogos».</p>
+      </front>
+      <body>
+         <div type="anotation">
+               <pb n="f. 150v" ed="C" facs="#foto2"/>
+             <head>[Anotado por otra mano, en el margen derecho, con escritura transversal hacia abajo:]</head>
+               <ab>Copia de una carta escrita en <date when="1570-12-20">20 de diz<expan><ex>iembr</ex></expan>e de 1570</date> al doctor <name type="person" ref="#AriasMontanoBenito">Venito Arias Montano</name> en <name type="place">Anvers</name>.</ab>
+            </div>
+         <div type="main_content">
+               <pb n="f. 149r" ed="C" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustr</ex></expan>e señor:</opener>
+            <p>[<hi rend="bold">1</hi>] <app><lem wit="#C #E2 #E3">En</lem> <rdg wit="#E1">El</rdg></app> <date when="1570-12-15">15 de diz<expan><ex>iembr</ex></expan>e</date> <app><lem wit="#C #E2 #E3">reçibí</lem> <rdg wit="#E1">recibí</rdg></app> las tres cajas de libros, globos, descriptiones, retablos y pinturas que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me enbió, que llegaron en salvamento y más a mi gusto que <app><lem wit="#C #E2 #E3">cosa que</lem> <rdg wit="#E1">ast aquí</rdg></app> en mi vida e <app><lem wit="#C #E2 #E3">reçibido</lem> <rdg wit="#E1">recibido</rdg></app>, porque todo venía como de mano de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. [<hi rend="bold">2</hi>] Y aunque v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> no me enbía lista de lo que enbía, vino todo tan bien <app><lem wit="#C #E2 #E3">acondiçionado</lem> <rdg wit="#E1">acondicionado</rdg></app> que no fue menester; pero para satisfaçión de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, se la embío yo de lo que reçiví.</p>
+            <p>[<hi rend="bold">3</hi>] El retablo antiguo me contentó mucho, y por esto lo di a la s<expan><ex>eñor</ex></expan>a doña <name type="person" ref="#CordobaMariana">Mariana</name> en nombre de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>; y si no me contentara tanto, me quedara <app><lem wit="#C #E2 #E3">yo</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> con él.<ref target="#note1" xml:id="reference1">1</ref></p>
+            <p>[<hi rend="bold">4</hi>] Eme engolosinado tanto desto que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me a embiado, que le tengo de ser <app><lem wit="#C #E2 #E3">ynportuno</lem> <rdg wit="#E1">inportuno</rdg></app> a que me embíe más libros. Y así con el primer <app><lem wit="#C #E2 #E3">correo</lem> <rdg wit="#E1">arreo</rdg></app> embiaré crédito y lista de los que an de ser, y porque <app><lem wit="#C #E1 #E3">entonçes</lem> <rdg wit="#E2">entonces</rdg></app> le escriviré más largo, no lo soy en esta.<ref target="#note2" xml:id="reference2">2</ref></p>
+            <p>[<hi rend="bold">5</hi>] Al s<expan><ex>eño</ex></expan>r <name type="name" ref="#PlantinoCristobal"><app><lem wit="#C #E2 #E3">Christóval</lem> <rdg wit="#E1">Xristóbal</rdg></app> Plantino</name> beso las manos muchas veces, y dígale v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> que le soy muy <app><lem wit="#C #E2 #E3">afiçionadísimo</lem> <rdg wit="#E1">aficionadísimo</rdg></app>, y déjeme v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> acreditado con él para que, aunque v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> se benga, me conozca por su servidor. </p>
+            <closer>[<hi rend="bold">6</hi>] N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or la <app><lem wit="#C #E2 #E3">ill<expan><ex>ustr</ex></expan>e</lem> <rdg wit="#E1">Illustrísima</rdg></app> persona de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> guarde y acreçiente, etc<expan><ex>éter</ex></expan>a. De <name type="place">Madrid</name>, <subst><del>30 de enero 1571 años</del> <add>diziembre 20, 1570</add></subst> años.</closer>
+            <postscript>
+               <head>[Posdata:]</head>
+               <p>[<hi rend="bold">7</hi>] Continúe v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> a hazerme la m<expan><ex>erce</ex></expan>d que suele de embiarme todos los catálogos de libros que ubiere.</p>
+            </postscript>
+         </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> En la de 5 de septiembre, BAM le había advertido a Ovando que, en caso de agradarle el retablo que le enviaba para doña Mariana de Córdoba, podía quedárselo.  </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> La carta que Ovando promete aquí a BAM será finalmente enviada el 17 de abril de 1571 (cf. 1571 04 17). </note>  
+            </div>
+      </back>
+   </text>
+</TEI>
