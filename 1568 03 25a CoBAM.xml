@@ -25,9 +25,8 @@
             <idno type="CoBAM">1568 03 25a</idno>
          </publicationStmt>
          <notesStmt>
-            <note type="abstract">Christopher Plantin has prepared the characters to reprint the Polyglot Bible of Alcalá and has asked the Spanish King for funding in order to purchase the paper. After receiving a printing proof of the Bible, the King submits the project for the various experts’ approval. The assessment is highly favourable. Having been chosen as the Spanish supervisor of the edition, Arias Montano has to leave for Antwerp to coordinate the whole project. Due to the wars in France, the route will be by sea. When Montano gets to the Low Countries, he firstly has to visit the Duke of Alva to inform him of his mission, so that the governor helps him with the practical matters. Secondly, Montano has to give Philip II’s letter to Plantin and discuss with him some issues on the Polyglot of great relevance: the Vulgate –and not the Latin translation of Pagninus- must be printed next to the Hebraic text, just like in the Bible of Alcalá; the new Polyglot will include the Chaldean text from the Pentateuch onwards, the New Testament in Syriac, and dictionaries of Hebrew, Chaldean, Syriac and Greek. The king orders six Bibles in parchment. The preface will expose the reasons of the project; the draft should be sent to Madrid to be corrected. Montano will control the six thousand ducats conceded to Plantin as a loan for purchasing paper. When the printer gives back parts of this amount, Montano will use this money to buy books and manuscripts for the Library of El Escorial. Besides his salary as a Royal Chaplain, Montano will earn 300 “escudos” per year during his sojourn in Antwerp.
-               
-            </note>
+            <note type="abstract">Christopher Plantin has prepared the characters to reprint the Polyglot Bible of Alcalá and has asked the Spanish King for funding in order to purchase the paper. After receiving a printing proof of the Bible, the King submits the project for the various experts’ approval. The assessment is highly favourable. Having been chosen as the Spanish supervisor of the edition, Arias Montano has to leave for Antwerp to coordinate the whole project. Due to the wars in France, the route will be by sea. When Montano gets to the Low Countries, he firstly has to visit the Duke of Alva to inform him of his mission, so that the governor helps him with the practical matters. Secondly, Montano has to give Philip II’s letter to Plantin and discuss with him some issues on the Polyglot of great relevance: the Vulgate –and not the Latin translation of Pagninus- must be printed next to the Hebraic text, just like in the Bible of Alcalá; the new Polyglot will include the Chaldean text from the Pentateuch onwards, the New Testament in Syriac, and dictionaries of Hebrew, Chaldean, Syriac and Greek. The king orders six Bibles in parchment. The preface will expose the reasons of the project; the draft should be sent to Madrid to be corrected. Montano will control the six thousand ducats conceded to Plantin as a loan for purchasing paper. When the printer gives back parts of this amount, Montano will use this money to buy books and manuscripts for the Library of El Escorial. Besides his salary as a Royal Chaplain, Montano will earn 300 “escudos” per year during his sojourn in Antwerp.       
+          </note>
             <note type="incipit">Por lo que con vos se ha comunicado de palabra y papeles,...</note>
          </notesStmt>
          <sourceDesc>
@@ -111,8 +110,7 @@
             <correspAction type="received">
                <persName>Benito Arias Montano</persName>
                <settlement>Madrid</settlement>
-            </correspAction>
-           
+            </correspAction>          
          </correspDesc>
                   <langUsage>
             <language ident="es" ana="source">Español</language>
