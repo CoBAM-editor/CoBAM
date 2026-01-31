@@ -12,8 +12,7 @@
                <resp>Edición crítica y notas</resp>
                <name>Antonio Dávila Pérez </name>
             </respStmt>
-            
-         </titleStmt>
+                    </titleStmt>
          <publicationStmt>
             <distributor>Universidad de Cádiz</distributor>
             <address>
@@ -23,8 +22,7 @@
          </publicationStmt>
          <notesStmt>
             <note type="abstract">Philip II is satisfied with the progress made in the Polyglot and the first works on the liturgical books. Plantin must be given all the facilities to carry out these tasks.  
-               
-            </note>
+                          </note>
             <note type="incipit">Por la relación que Çayas me ha hecho de lo que le havéis ydo scriviendo...</note>
          </notesStmt>
          <sourceDesc>
@@ -41,11 +39,7 @@
                      </msIdentifier>
                   </msDesc>
                </witness>
-               
-               
-               
-              
-               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 190-191.</witness>
+                               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 190-191.</witness>
                <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo II (1571-1572)</title> (Madrid: Ediciones Clásicas, 2022), pp. 31-33.</witness>
               </listWit>
             <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 190-191;</bibl>
@@ -78,8 +72,7 @@
                   <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
                <person xml:id="VillalbaFranciscode">
                   <note>Francisco de Villaba († 14 de abril de 1574), teólogo, fraile Jerónimo, predicador real. </note></person>
-               
-               </listPerson>
+                           </listPerson>
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
@@ -91,8 +84,7 @@
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
             </correspAction>
-            
-         </correspDesc>
+                     </correspDesc>
                   <langUsage>
             <language ident="es" ana="source">Español</language>
          </langUsage>
@@ -109,8 +101,7 @@
          url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/12/AGS-E-540-166.jpg" xml:id="foto1"/>
       <graphic
          url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/12/AGS-E-540-166-vuelto.jpg" xml:id="foto2"/>
-      
-        </facsimile>
+              </facsimile>
    <text>
       <front>
          <p>El borrador de esta carta es de mano de un copista. Sí es de mano de Felipe II la apostilla final escrita debajo del endoso del documento.</p>
@@ -130,19 +121,11 @@
             <opener>Al doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>. 
                El Rey
                Doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, mi cape<expan><ex>ll</ex></expan>án:             
-               
-            </opener>
-            
-            <p>[<hi rend="bold">1</hi>] Por la relación que <name type="person" ref="#ZayasGrabrielde">Çayas</name> me ha hecho de lo que le havéis ydo scriviendo después que llegastes a essos Estados, y por los pliegos de papel y pergamino que avéis embiado, he visto el buen progreso que en la impressión de la Biblia (mediante v<expan><ex>uest</ex></expan>ra buena intelligencia y cuydado, y la diligencia de <name type="person" ref="#PlantinoCristóbal">Plantino</name>) se ha llevado, de lo qual y de que vaya tan al cabo y con tanta <app><lem wit="#B #E2">perfectión</lem> <rdg wit="#E1">perfecion</rdg></app>, he holgado mucho, y también de entender lo que avíades tratado con <name type="person" ref="#PlantinoCristóbal">Plantino</name> sobre la impressión de los nuevos breviarios, missales y diurnales que se han de traer a estos reynos, que teniendo por cierto que aý se hará con la brevedad y en la abundancia que es menester, escrivo al <name type="person" ref="#AlvarezdeToledoFernando">duque de Alva</name> lo que dél entenderéis,<ref target="#note2" xml:id="reference2">2</ref>  para que luego se ponga mano a la obra, aviendo mandado proveer que assí en lo de los dos mill florines que ha pedido <name type="person" ref="#PlantinoCristóbal">Plantino</name>,<ref target="#note3" xml:id="reference3">3</ref> como en lo de la casa o solar, se le haga la comodidad possible.<ref target="#note4" xml:id="reference4">4</ref> </p> 
+                       </opener>
+                        <p>[<hi rend="bold">1</hi>] Por la relación que <name type="person" ref="#ZayasGrabrielde">Çayas</name> me ha hecho de lo que le havéis ydo scriviendo después que llegastes a essos Estados, y por los pliegos de papel y pergamino que avéis embiado, he visto el buen progreso que en la impressión de la Biblia (mediante v<expan><ex>uest</ex></expan>ra buena intelligencia y cuydado, y la diligencia de <name type="person" ref="#PlantinoCristóbal">Plantino</name>) se ha llevado, de lo qual y de que vaya tan al cabo y con tanta <app><lem wit="#B #E2">perfectión</lem> <rdg wit="#E1">perfecion</rdg></app>, he holgado mucho, y también de entender lo que avíades tratado con <name type="person" ref="#PlantinoCristóbal">Plantino</name> sobre la impressión de los nuevos breviarios, missales y diurnales que se han de traer a estos reynos, que teniendo por cierto que aý se hará con la brevedad y en la abundancia que es menester, escrivo al <name type="person" ref="#AlvarezdeToledoFernando">duque de Alva</name> lo que dél entenderéis,<ref target="#note2" xml:id="reference2">2</ref>  para que luego se ponga mano a la obra, aviendo mandado proveer que assí en lo de los dos mill florines que ha pedido <name type="person" ref="#PlantinoCristóbal">Plantino</name>,<ref target="#note3" xml:id="reference3">3</ref> como en lo de la casa o solar, se le haga la comodidad possible.<ref target="#note4" xml:id="reference4">4</ref> </p> 
             <p>[<hi rend="bold">2</hi>] Vos haréis en ello lo que el <name type="person" ref="#AlvarezdeToledoFernando">duque</name> os dixere y ordenare, guardando en la impressión las advertencias que os embía fray <name type="person" ref="#VillalbaFranciscode">Francisco de Villalva</name>,<ref target="#note5" xml:id="reference5">5</ref> mi predicador, <del>sobre presupuesto que avéis de assistir</del> y assistiendo vos mismo a la correctión, porque salga como conviene. [<hi rend="bold">3</hi>] Y a <name type="person" ref="#PlantinoCristóbal">Plantino</name> diréis que estoy muy satisfecho del buen zelo y cuydado con que se occupa en estas cosas que son del servicio de Dios y de su Yglesia, y que assí terné con él la cuenta que meresçe. </p>
-           
-            <closer>[<hi rend="bold">4</hi>] De <name type="place">Madrid</name>, a <date when="1571-02-01"><app><lem wit="#B #E2">primero de hebrero 1571</lem> <rdg wit="#E1">1º de hebrero de 1571</rdg></app></date>.</closer>
-            
-            
-           
-            
-           
-     </div>
+                       <closer>[<hi rend="bold">4</hi>] De <name type="place">Madrid</name>, a <date when="1571-02-01"><app><lem wit="#B #E2">primero de hebrero 1571</lem> <rdg wit="#E1">1º de hebrero de 1571</rdg></app></date>.</closer>
+                 </div>
       </body>
       <back>
             <div type="notes">
@@ -156,8 +139,7 @@
                   <ref target="#reference4">4</ref> «[…] para se encargar de la obra [Plantino] ha pedido una de las casas confiscadas en Anvers, o algún solar en que pueda hacer las piezas necesarias para tender y enjugar lo que se fuere imprimiendo […] y juntamente con el dinero le haréis prestar alguna de las dichas casas que se confiscaron en aquella villa; y si no la hubiere como para este efecto es menester, le mandaréis señalar algún solar, donde él haga las piezas a su modo»; Felipe II al duque de Alba, 31 de enero de 1571, en Carvajal, «Elogio histórico», p. 153, doc. nº 31. En carta del duque de Alba para Zayas con fecha de Bruselas, a 23 de marzo de 1571, se puede leer: «A Arias Montano he hecho dar casa en que pueda meter también a Plantino, y atender con secreto a la impresión de los breviarios; y al dicho Plantino se han entregado los dos mil florines» (publicado en Carvajal, «Elogio histórico», p. 154, nº 32). Esta petición de un solar o local para Plantino derivó meses después en un proyecto más ambicioso que consistía en edificar una Prototipografía Regia, es decir, la sede del Prototipógrafo del Rey, que constaría de una biblioteca en la que guardar los ejemplares de libros impresos en los Países Bajos y una mansión taller para Cristóbal Plantino. Esta sede no solo facilitaría el éxito de las grandes empresas editoriales que dirigía Plantino por estas fechas (la Políglota y los libros de nuevo rezaso), sino que permitiría ejercer un mayor control de los libros publicados en Flandes para evitar la extensión de la Reforma. Sobre el lugar elegido por BAM y Plantino para esta edificio, que finalmente no llegó a construirse, hemos estudiado en otro trabajo que podría tratarse de una finca, cercana a la casa de Guillermo Paludano, donde los jesuitas de Amberes tenían asignada su sede; durante estos años, el duque de Alba reclamó continuamente a la Compañía dicha casa para la futura Prototipografía Real; cf. A. Dávila Pérez, «La correspondencia inédita de B. Arias Montano: nuevas prospecciones y estudio», en J. M. Maestre Maestre – E. Sánchez Salor, M. A. Díaz Gito – L. Charlo Brea- P. J. Galán Sánchez (eds.), <title>Benito Arias Montano y los humanistas de su tiempo</title>, 2 vols. (Mérida, 2006), I, 75-78.  </note> 
                <note type="footnote" xml:id="note5">
                   <ref target="#reference5">5</ref> Francisco de Villalba (Villalba de Lampreana, Zamora – El Escorial, 1575), predicador real, profesó en el monasterio de Montamarta (Zamora) y amplió su formación en el colegio de Sigüenza. Tomó parte en la segunda etapa del Concilio de Trento, donde intervino en dos ocasiones en 1551. Fue predicador de Carlos V durante su estancia en Yuste y, más tarde, de Felipe II. Cf. <title>DHEE</title>, IV, 2760; véase nota biográfica en véase nota biográfica en la web <ref target="https://historia-hispanica.rah.es/biografias/46223-francisco-de-villalba">Historia Hispánica</ref> de la Real Academia de la Historia. El Museo Plantin-Moretus de Amberes conserva cuatro cartas del padre Francisco de Villalba a BAM en el legajo de Archivo 122, titulado «Missale et breuarium 1572-1576», pp. 261-272, introducidas por la anotación «Cartas del Padre Villalba para las impressiones para Spagna».   </note>  
-             
-            </div>
+                       </div>
       </back>
    </text>
 </TEI>
