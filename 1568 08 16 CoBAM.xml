@@ -11,9 +11,7 @@
             <respStmt>
                <resp>Edición crítica y notas</resp>
                <name>Antonio Dávila Pérez </name>
-            </respStmt>
-            
-         </titleStmt>
+            </respStmt></titleStmt>
          <publicationStmt>
             <distributor>Universidad de Cádiz</distributor>
             <address>
@@ -22,9 +20,7 @@
             <idno type="CoBAM">1568 08 16</idno>
          </publicationStmt>
          <notesStmt>
-            <note type="abstract">Philip II is glad to hear that Montano arrived safe and sound at the Low Courties so that he could start the project of the Polyglot. He also gladly heard from Montano’s letter of July 6, 1568, either about the tasks Montano carried out at Antwerp and Leuven and the good references on Plantin and Curiel. The king sends Montano a letter to the University of Leuven, as Montano solicited him in his previous letter.  
-               
-            </note>
+            <note type="abstract">Philip II is glad to hear that Montano arrived safe and sound at the Low Courties so that he could start the project of the Polyglot. He also gladly heard from Montano’s letter of July 6, 1568, either about the tasks Montano carried out at Antwerp and Leuven and the good references on Plantin and Curiel. The king sends Montano a letter to the University of Leuven, as Montano solicited him in his previous letter.   </note>
             <note type="incipit">Por relaçión de Çayas havíamos entendido el discurso de vuestro viage....</note>
          </notesStmt>
          <sourceDesc>
@@ -109,8 +105,7 @@
                   <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>  
                <person xml:id="CurielJeronimo">
                   <note>  Jerónimo Curiel, agente de Felipe II en Flandes y residente en Amberes desde 1550. A partir de 1561 sustituye a López Gallo como agente mayor del rey para los negocios de los Países Bajos. Su función es distribuir las sumas enviadas por la corona a Flandes para pagar los más variados conceptos.</note></person>
-               
-               </listPerson>
+            </listPerson>
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
@@ -127,7 +122,6 @@
                <settlement>Amberes</settlement>
                <date when="1568-07-06">6 de julio de 1568</date>
             </correspAction>
-           
          </correspDesc>
                   <langUsage>
             <language ident="es" ana="source">Español</language>
@@ -145,8 +139,7 @@
          url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/04/AGS-E-540-150-scaled.jpg"/>
       <graphic
          url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/04/AGS-E-540-150vuelto-scaled.jpg"/>
-      
-        </facsimile>
+   </facsimile>
    <text>
       <front>
          <p>Esta carta es respuesta a la carta de BAM a Felipe II del 6 de julio de 1568 (cf. 1568 07 06).</p>
@@ -162,20 +155,12 @@
          <div type="main_content">
                <pb n="f. [1r]" ed="B1" facs="#foto1"/>
             <opener><rs type="person" ref="#FelipeII">El Rey</rs>.
-               Doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, <app><lem wit="#B1 #B3 #E1 #E2 #E3">nuestro capellán</lem> <rdg wit="#B2 #B4"><hi rend="italic">omiserunt</hi></rdg></app>:
-               
-            </opener>
+               Doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, <app><lem wit="#B1 #B3 #E1 #E2 #E3">nuestro capellán</lem> <rdg wit="#B2 #B4"><hi rend="italic">omiserunt</hi></rdg></app>:</opener>
             <p>[<hi rend="bold">1</hi>] Por relaçión de <name type="person" ref="#ZayasGrabrielde">Çayas</name> havíamos entendido el discurso de vuestro viage, y el trabajo y peligro que havíades passado en mar y <app><lem wit="#B1 #B2 #B3 #B4 #E1 #E3">en</lem> <rdg wit="#E2"><hi rend="italic">omisit </hi></rdg></app> tierra, y holgado de que en fin <app><lem wit="#B1 #B2 #B3 #B4 #E1 #E3">huviéssedes</lem> <rdg wit="#E2"> hubiéredes</rdg></app>  llegado a <app><lem wit="#B1 #B2 #B3 #B4 #E1 #E3">salvamento</lem> <rdg wit="#E2"> salvamente</rdg></app> y dado tan buen principio al negoçio dessa <app><lem wit="#B1 #B2 #B3 #E1 #E2 #E3">impressión</lem> <rdg wit="#B4"> imprission</rdg></app>. [<hi rend="bold">2</hi>] Pero mucho más <subst><del>hemos holgado  </del> <add place="above"> holgamos</add></subst> de ver por vuestra carta de <date when="1568-07-06"><app><lem wit="#B1 #B2 #B3 #B4 #E3">VI</lem> <rdg wit="#E1"> seis </rdg> <rdg wit="#E2"> 27</rdg></app> de julio</date><ref target="#note2"
                xml:id="reference2">2</ref> la particularidad de lo que hasta aquel día havíades hecho y tratado, assí aý como en <name type="place">Lovayna</name>, y la satisfaçión que mostráis tener <app><lem wit="#B1 #B2 #B3 #B4 #E2 #E3">de</lem> <rdg wit="#E1"> en </rdg></app> la <app><lem wit="#B1 #B2 #B3 #E1 #E2 #E3">suficiencia de <name type="name" ref="#PlantinoCristóbal">Plantino</name> </lem> <rdg wit="#B4"> sufficençia de Platino</rdg></app> y de la assistencia y buen recaudo que os da <name type="person" ref=" #CurielJeronimo">Hierónimo de Curiel</name>, que con esto y vuestro cuydado y buena diligençia tenemos por çierto que la obra saldrá con el cumplimiento de perfectión que conviene y se pretende. </p>
             <p>[<hi rend="bold">3</hi>] Yo he mandado escrivir a la Universidad de Lovayna en la forma que advertís, y va con esta mi carta,<ref target="#note3"
                xml:id="reference3">3</ref>  para que vos se la podáis llevar o remitir como mejor os paresçiere. [<hi rend="bold">4</hi>] De <name type="place">Madrid</name>, a <date when="1568-08-16"><app><lem wit="#B1 #B2 #B3 #B4 #E2 #E3">XVI</lem> <rdg wit="#E1"> 16 </rdg></app> de agosto <app><lem wit="#B1">M D L XVIII</lem> <rdg wit="#B2 #B4 #E3"> 1568</rdg> <rdg wit="#B3"> 1569</rdg> <rdg wit="#E1 #E2"> de 1568</rdg></app> </date>.</p>
-            <closer><app><lem wit="#B2 #B3 #B4 #E2 #E3">Yo <rs type="person" ref="#FelipeII">el Rey</rs></lem> <rdg wit="#B1 #E1"> <hi rend="italic"> omiserunt</hi></rdg></app>. <name type="person" ref="#ZayasGrabrielde">Çayas</name>. </closer>
-            
-            
-           
-            
-           
-     </div>
+            <closer><app><lem wit="#B2 #B3 #B4 #E2 #E3">Yo <rs type="person" ref="#FelipeII">el Rey</rs></lem> <rdg wit="#B1 #E1"> <hi rend="italic"> omiserunt</hi></rdg></app>. <name type="person" ref="#ZayasGrabrielde">Çayas</name>. </closer> </div>
       </body>
       <back>
             <div type="notes">
@@ -184,8 +169,7 @@
             <note type="footnote" xml:id="note2">
                <ref target="#reference2">2</ref> Cf. 1568 07 06.  </note> 
                <note type="footnote" xml:id="note3">
-                  <ref target="#reference3">3</ref> La carta del Rey a la Universidad de Lovaina lleva fecha del 15 de agosto. El propio BAM había hecho ver al monarca la conveniencia de este escrito: «Fuera para ellos grande merced y consuelo haverles yo traýdo alguna letra de Vuestra Magest[ad, que dizen que dende antes d’estas turbas no han visto ninguna, en las quales ya Vuestra Magestad de más sabe quán officiosos y constantes se mostraron en servicio de Dios y de la iglesia cathólica y de Vuestra Magestad» (Arias Montano a Felipe II, 6 de julio de 1568, nº 1568 07 06). El pasaje central de la misiva de Felipe II, publicada en la Biblia Políglota, <title>Biblia Sacra</title>, tomo I, [pp. 43 y 49], reza así: «Idem etiam Benedictus sibi ab istius Academiae Theologis operam, sedulitatem et omne ad hanc quam molimur impressionem opportunum officium ultro ac libenter oblata promissaque esse narrauit; atque ea in re uestrum erga sacrosanctam religionem ergaque nos eximium studium et singularem fidem plurimum commendans; quantum etiam sibi istius Vniuersitatis pietas, ordo, decor, disciplina, exercitatio, denique uniuersa ratio placuerit, significauit [...] Placuit igitur nobis, has ad uos literas dare, quibus ea quae ille de uobis, de officiis, studiisque uestris ac de integra istius insignis Vniuersitatis re, scripserit, iucunda fuisse testemur; atque oblata a uobis ad dictorum Bibliorum commodissimam expeditionem, omnia consilii, operae ac sedulitatis officia, praeter publicam ecclesiasticae rei (quae in hoc opere agitur et uobis communis quoque esse debet) curam, fidelis etiam nos obsequii et diligentis studii nomine, inter alia uestra, quae iam constant quaeque porro expectantur, peculiariter acceptum iri confirmemus». La respuesta de la Universidad de Lovaina a dicha carta de Felipe II apareció también publicada en <title>Biblia Sacra</title>, tomo I, [pp. 51-53].</note>     
-             
+                  <ref target="#reference3">3</ref> La carta del Rey a la Universidad de Lovaina lleva fecha del 15 de agosto. El propio BAM había hecho ver al monarca la conveniencia de este escrito: «Fuera para ellos grande merced y consuelo haverles yo traýdo alguna letra de Vuestra Magest[ad, que dizen que dende antes d’estas turbas no han visto ninguna, en las quales ya Vuestra Magestad de más sabe quán officiosos y constantes se mostraron en servicio de Dios y de la iglesia cathólica y de Vuestra Magestad» (Arias Montano a Felipe II, 6 de julio de 1568, nº 1568 07 06). El pasaje central de la misiva de Felipe II, publicada en la Biblia Políglota, <title>Biblia Sacra</title>, tomo I, [pp. 43 y 49], reza así: «Idem etiam Benedictus sibi ab istius Academiae Theologis operam, sedulitatem et omne ad hanc quam molimur impressionem opportunum officium ultro ac libenter oblata promissaque esse narrauit; atque ea in re uestrum erga sacrosanctam religionem ergaque nos eximium studium et singularem fidem plurimum commendans; quantum etiam sibi istius Vniuersitatis pietas, ordo, decor, disciplina, exercitatio, denique uniuersa ratio placuerit, significauit [...] Placuit igitur nobis, has ad uos literas dare, quibus ea quae ille de uobis, de officiis, studiisque uestris ac de integra istius insignis Vniuersitatis re, scripserit, iucunda fuisse testemur; atque oblata a uobis ad dictorum Bibliorum commodissimam expeditionem, omnia consilii, operae ac sedulitatis officia, praeter publicam ecclesiasticae rei (quae in hoc opere agitur et uobis communis quoque esse debet) curam, fidelis etiam nos obsequii et diligentis studii nomine, inter alia uestra, quae iam constant quaeque porro expectantur, peculiariter acceptum iri confirmemus». La respuesta de la Universidad de Lovaina a dicha carta de Felipe II apareció también publicada en <title>Biblia Sacra</title>, tomo I, [pp. 51-53].</note>    
             </div>
       </back>
    </text>
