@@ -1,0 +1,515 @@
+﻿
+<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15680614">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Listado de libros, con sus precios, enviado junto a la carta de Benito Arias Montano (Amberes) a Juan de Ovando (Madrid) - 14 de junio de 1568 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 06 14</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Memoria de libros de Flandes y sus precios enviada por BAM a Juan de Ovando junto con su carta del 14 de junio de 1568. </note>
+            <note type="incipit">•	D[iuus] Augustinus f[oli]o Basileae...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(O) IVDJ, Envío 78, ff. 124r-125v y 126r-127v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> A. Rodríguez Moñino, «La biblioteca de Benito Arias Montano: noticias y documentos para su reconstrucción (1548-1598)», <title>Revista del Centro de Estudios Extremeños</title>, 2 (1928), 555-598.</witness>
+               <witness xml:id="E2"> V. Bécares Botas, <title>Arias Montano y Plantino. El libro flamenco en la España de Felipe II</title> (León, 1999), pp. 188-191.</witness>
+               <witness xml:id="E3"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 177-181.</witness>
+               <witness xml:id="E4"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 66-74.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firtPrint">(E1) Rodríguez Moñino, «La biblioteca de Benito Arias Montano», 555-598 (pp. 583-587; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Bécares, <title>Arias Montano y Plantino</title>, pp. 188-191. </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E3) Macías, <title>Correspondencia con Ovando</title>, pp. 177-181; </bibl>
+            <bibl type="inextenso" n="fourthPrint">(E4) Domínguez, <title>Correspondencia</title>, I, 66-74.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.
+
+</note>
+                </person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1568-06-14">14 de junio de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1568-07-15">15 de julio de 1568</date>
+            </correspAction>
+                    </correspDesc>
+        
+         <langUsage>
+            <language ident="la" ana="source">latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Documento original no escrito por Benito Arias Montano, mano algo inexperta</handNote>
+             
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-03-14">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/IVDJ-envio-78-100.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/03/IVDJ-envio-78-101-scaled.jpg"
+         xml:id="foto2"/>
+      
+      
+         
+        </facsimile>
+   <text>
+      <front>
+         <p>BAM se ofrece desde el primer momento a Ovando como intermediario para comprarle libros y otras mercancías a buen precio, igual que hará con otros amigos y cortesanos. Y a fin de que Ovando le escriba lo que desea, la carta del 14 de junio de 1568 llegó acompañada de una relación de libros con los precios que tenía concertados con Cristóbal Plantino. Esa relación de libros parece que se corresponde con una hoja arrancada de un pliego que hemos encontrado dentro del envío 78, y numerada por el anverso como folio 126 y por el reverso como folio 127 debido a que fue cosida doblada por la mitad como si formara a su vez un nuevo pliego. Sobre ella Ovando ha anotado: «Memoria de libros de Flandes y sus precios de Arias Montano». Conserva restos de lacre sellado, lo que nos induce a pensar que se trata efectivamente de la lista enviada por BAM. La letra de esa relación no es de BAM; además el tamaño del papel es mayor que el utilizado en la carta, y los precios de las obras aparecen en florines y placas; todo lo cual induce a pensar que seguramente fuera encargada a un oficial de Plantino a modo de catálogo comercial. En el aparato crítico no hemos incluido, para evitar sobrecargarlo, el error de Rodríguez Moñino de transcribir sistemáticamente la abreviatura "st." (stufferus o plaza) por "fi", que dicho estudioso interpreta como florín.</p>
+
+      </front>
+      <body>
+                
+            <div type="anotation">
+               <pb n="f. 126r" ed="O" facs="#foto1"/>  
+             <head>[Anotado por Ovando a la izquierda de la columna de la derecha:]</head>
+               <ab>Memoria de libros de Flandes y sus precios de Arias Montano.</ab>
+            </div>
+         
+         <div type="main_content">
+            <head>Doctores Theologi</head>
+            <l n="1">D<expan><ex>iuus</ex></expan> Augustinus f<expan><ex>oli</ex></expan>o Basileae<ref target="#note1" xml:id="reference1">1</ref>.................... 10 st.<ref target="#note2" xml:id="reference2">2</ref></l>
+            <l n="2">D<expan><ex>iuus</ex></expan> Hieronymus f<expan><ex>oli</ex></expan>o Basileae<ref target="#note3" xml:id="reference3">3</ref>.................... 12 st.</l>
+            <l n="3">D<expan><ex>iui</ex></expan> Crisostomi opera Basileae<ref target="#note4" xml:id="reference4">4</ref>............... 12 st.</l>
+            <l n="4">Idem Parisiis<ref target="#note5" xml:id="reference5">5</ref>......................................... 13 st.</l>
+            <l n="5">D<expan><ex>iuus</ex></expan> Basilius magnus Grece<ref target="#note6" xml:id="reference6">6</ref></l>
+            <l n="6">Idem latine<ref target="#note7" xml:id="reference7">7</ref>............................................ 2 st. 14</l>
+            <l n="7">D<expan><ex>iui</ex></expan> Gregorii opera f<expan><ex>oli</ex></expan>o<ref target="#note8" xml:id="reference8">8</ref>.......................... 5 st. -</l>
+            <l n="8">Originis opera fol<expan><ex>io</ex></expan><ref target="#note9" xml:id="reference9">9</ref>................................. 4 st.</l>
+            <l n="9">Cyrilli opera fol<expan><ex>io</ex></expan><ref target="#note10" xml:id="reference10">10</ref>.................................. 4 st.</l>
+            <l n="10">Bernardi opera fol<expan><ex>io</ex></expan> Basil<expan><ex>eae</ex></expan><ref target="#note11" xml:id="reference11">11</ref>...................... 3 st. 15</l>
+            <l n="11">Idem Parisiis fol<expan><ex>io</ex></expan><ref target="#note12" xml:id="reference12">12</ref>.................................. 4</l>
+            <l n="12">Damasceni opera in fol<expan><ex>io</ex></expan><ref target="#note13" xml:id="reference13">13</ref>............................. 2 st. 15</l>
+            <l n="13">Athanasii opera in fol<expan><ex>io</ex></expan><ref target="#note14" xml:id="reference14">14</ref>............................. 2 st. 10</l>
+            <l n="14">Ambrosii opera fol<expan><ex>io</ex></expan><ref target="#note15" xml:id="reference15">15</ref>................................. 4     18</l>
+            <l n="15">Gregorii Nisseni opera<ref target="#note16" xml:id="reference16">16</ref>................................. 1 st. 15</l>
+            <l n="16">Hilarii opera fol<expan><ex>io</ex></expan><ref target="#note17" xml:id="reference17">17</ref>.................................. 1 st. <app><lem wit="#O #E2 #E3 #E4">18</lem> <rdg wit="#E1">15</rdg></app></l>
+            <l n="17">Anselmi opera f<expan><ex>oli</ex></expan>o<ref target="#note18" xml:id="reference18">18</ref>.................................. <app><lem wit="#O #E2 #E3 #E4">1 st. 16</lem> <rdg wit="#E1">3 fi. 15</rdg></app></l>
+            <l n="18">Theodoreti opera fol<expan><ex>io</ex></expan>............................... 3 st. 15</l>
+            <l n="19">Dionisii opera<ref target="#note19" xml:id="reference19">19</ref> fol<expan><ex>io</ex></expan> Col<expan><ex>oniae</ex></expan><ref target="#note20" xml:id="reference20">20</ref>...................... 11 st. -</l>
+            <l n="20"><app><lem wit="#O #E1 #E3 #E4">Epiphanii</lem> <rdg wit="#E2"></rdg></app> opera fol<expan><ex>io</ex></expan><ref target="#note21" xml:id="reference21">21</ref>................................ 1 st. 18 </l>
+            <l n="21">Iustinus Martir etc. fol<expan><ex>io</ex></expan><ref target="#note22" xml:id="reference22">22</ref>........................... 1 st. 19</l>
+            <l n="22">Tertuliani opera fol<expan><ex>io</ex></expan><ref target="#note23" xml:id="reference23">23</ref>............................... 2 st. 15</l>
+            <l n="23">Theophilactus <app><lem wit="#O #E3 #E4">Graece</lem> <rdg wit="#E1 #E2">grece</rdg></app><ref target="#note24" xml:id="reference24">24</ref>................................... 4 st. 15</l>
+            <l n="24">Idem latine<ref target="#note24" xml:id="reference25">25</ref>............................................ 4 st. -</l>
+            <l n="25">Opera Leonis Papae fol<expan><ex>io</ex></expan><ref target="#note26" xml:id="reference26">26</ref> </l>
+            <l n="26"><app><lem wit="#O #E2 #E3 #E4">Bedae</lem> <rdg wit="#E1"> Bede</rdg></app> opera fol<expan><ex>io</ex></expan> Venet<expan><ex>iis</ex></expan><ref target="#note27" xml:id="reference27">27</ref>........................... 12 st. 10</l>
+            <l n="27">Gregorius <app><lem wit="#O #E2 #E3 #E4">Nazianzenus</lem> <rdg wit="#E1">Naziazenus</rdg></app><ref target="#note28" xml:id="reference28">28</ref>.................................. 1 st. 14</l>
+            <l n="28">Clemens Alexandrinus fol<expan><ex>io</ex></expan><ref target="#note29" xml:id="reference29">29</ref>........................... 1 st.</l>
+            <l n="29">Ireneus in fol<expan><ex>io</ex></expan><ref target="#note30" xml:id="reference30">30</ref>.....................................   st. 18</l>
+            <l n="30">Cyprianus in fol<expan><ex>io</ex></expan> Aldi<ref target="#note31" xml:id="reference31">31</ref>.............................. 2 st. 12</l>
+            <l n="31">Fulgentii opera<ref target="#note32" xml:id="reference32">32</ref>........................................ 7 st. 12</l>
+            <l n="32">Hosii opera<ref target="#note33" xml:id="reference33">33</ref>............................................ 1 st. 15</l>
+            <l n="33">Eucherii opera  fol<expan><ex>io</ex></expan> Aldi<ref target="#note34" xml:id="reference34">34</ref>............................ 2 st. 15</l>
+            <l n="34">Philo Iudaeus in  fol<expan><ex>io</ex></expan><ref target="#note35" xml:id="reference35">35</ref>............................... 1 st. 18</l>
+            <l n="35">Iosephus <app><lem wit="#O #E2 #E3 #E4">Graece</lem> <rdg wit="#E1"> graece </rdg> </app><ref target="#note36" xml:id="reference36">36</ref>........................................ 3 st. 17</l>
+            <l n="36">Opera Viuis<ref target="#note37" xml:id="reference37">37</ref>............................................ 3 st. 10</l>
+            <l n="37">Eusebii opera<ref target="#note38" xml:id="reference38">38</ref>.......................................... 1 st. 18</l>
+            <l n="38"><choice><sic>Chroniam</sic> <corr> Chronicon</corr> </choice>eiusdem<ref target="#note39" xml:id="reference39">39</ref>.................................... 1 st. -</l>
+            <l n="39">Eusebii opera <app><lem wit="#O #E2 #E3 #E4">Graece</lem> <rdg wit="#E1"> graece </rdg> </app>.<ref target="#note40" xml:id="reference40">40</ref>.................................. 6 st. 15</l>
+            <l n="40"><app><lem wit="#O #E1 #E3 #E4">Laurentius</lem> <rdg wit="#E2"> Laurentinus</rdg></app> Iustinianus<ref target="#note41" xml:id="reference41">41</ref>................................. 2 st. 12</l>
+            <l n="41">Nicephorus fol<expan><ex>io</ex></expan><ref target="#note42" xml:id="reference42">42</ref>..................................... 2 st. 15</l>
+            <l n="42">Platonis opera fol<expan><ex>io</ex></expan><ref target="#note43" xml:id="reference43">43</ref>................................. 2 st. 10</l>
+            <l n="43">Marsilii Ficini opera<ref target="#note44" xml:id="reference44">44</ref>.................................. 3 st. 15</l>
+            <l n="44">P. <app><lem wit="#O #E2 #E3 #E4">Noni</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> opera fol<expan><ex>io</ex></expan><ref target="#note45" xml:id="reference45">45</ref>................................. 1 st. -</l>
+            <l n="45">Aristoteles <app><lem wit="#O #E2 #E3 #E4">Graece</lem> <rdg wit="#E1"> graece </rdg> </app> fol<expan><ex>io</ex></expan> Basileae<ref target="#note46" xml:id="reference46">46</ref>.................... <app><lem wit="#O #E2 #E3 #E4">4 st.</lem> <rdg wit="#E1"> 4 fi. 72 [?]</rdg></app></l>
+            <l n="46">Saluianus in fol<expan><ex>io</ex></expan> Aldi<ref target="#note47" xml:id="reference47">47</ref>.............................. 2 st. 15</l><pb n="f. 127r" ed="O" facs="#foto1"/>
+            <l n="47"><app><lem wit="#O #E2 #E3 #E4">Naucleri</lem> <rdg wit="#E1"> aucleri</rdg></app><ref target="#note48" xml:id="reference48">48</ref>  <choice><sic>Chroniam</sic> <corr> Chronicon</corr> </choice> fol<expan><ex>io</ex></expan>.......................... 3 st. 5</l>
+            <l n="48">Concilia g<expan><ex>e</ex></expan>n<expan><ex>er</ex></expan>alia noua 4 uolumi<expan><ex>nibus</ex></expan> magnis<ref target="#note49" xml:id="reference49">49</ref>..... 20</l>
+            <l n="49">Adami Sasbout <app><lem wit="#O #E2 #E3 #E4">omnia</lem> <rdg wit="#E1"> via</rdg></app> opera<ref target="#note50" xml:id="reference50">50</ref>.............................. 1 st. 15</l>
+            <l n="50">Platina de uit<expan><ex>is</ex></expan> Pontificum<ref target="#note51" xml:id="reference51">51</ref> <app><lem wit="#O #E2 #E3 #E4">nouus</lem> <rdg wit="#E1">nonus</rdg></app>................... 1 st. 15</l>
+            <l n="51">Zonaras <app><lem wit="#O #E2 #E3 #E4">Graecolat<expan><ex>inus</ex></expan></lem> <rdg wit="#E1">grecolat.</rdg></app> fol<expan><ex>io</ex></expan><ref target="#note52" xml:id="reference52">52</ref> ........................ 3 st. 10</l>
+            <l n="52">Aristoteles <app><lem wit="#O #E2 #E3 #E4">Graece</lem> <rdg wit="#E1"> graece </rdg> </app> Aldi<ref target="#note53" xml:id="reference53">53</ref>................................ 19 st.- </l>
+            <l n="53">Aristotelis opera Latine<ref target="#note54" xml:id="reference54">54</ref>............................... 3 st. 18</l>
+            <l n="54">Blondi opera fol<expan><ex>io</ex></expan><ref target="#note55" xml:id="reference55">55</ref>................................... 2 st. 15</l>
+            <l n="55">Procopius in Pentateuchum<ref target="#note56" xml:id="reference56">56</ref>.............................. 1 st. 4 </l>
+            <l n="56"><app><lem wit="#E2 #E3 #E4">Iauelli</lem> <rdg wit="#O"> Lavelli</rdg><rdg wit="#E1">Lenelli</rdg></app>  opera<ref target="#note57" xml:id="reference57">57</ref>  in f<expan><ex>oli</ex></expan>o............................. 6 st. 2</l>
+            <l n="57">Pici Mirandulani opera<ref target="#note58" xml:id="reference58">58</ref>................................. 1 st. 17</l>
+            <l n="58">Boetii opera<ref target="#note59" xml:id="reference59">59</ref>........................................... 2 st. 15</l>
+            <l n="59">Milleloquia Ambrosii<ref target="#note60" xml:id="reference60">60</ref>................................... 3 st. 15</l>
+            <l n="60"><app><lem wit="#O #E2 #E3 #E4">Milleloquia Augustini</lem><rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app><ref target="#note61" xml:id="reference61">61</ref>.................................. 3 st. 15</l>
+            <l n="61">Alfonsus Castro contra haereses<ref target="#note62" xml:id="reference62">62</ref>........................ 1 st. 15</l>
+            <l n="62">Aloysii epitome uitarum sanctorum<ref target="#note63" xml:id="reference63">63</ref>...................... 2 st. 10</l>
+            <l n="63">Celius <app><lem wit="#O #E1 #E3 #E4">Rodiginus</lem> <rdg wit="#E2"> Rodoginus</rdg></app> in fol<expan><ex>io</ex></expan><ref target="#note64" xml:id="reference64">64</ref>............................ 2 st. 15</l>
+            <l n="64"><choice><sic>Catherinus </sic> <corr>Catharinus</corr></choice>in Paulum<ref target="#note65" xml:id="reference65">65</ref>................................... <app><lem wit="#O #E2 #E3 #E4">2</lem> <rdg wit="#E1">32</rdg></app> st. 10</l>
+            <l n="65">Cathena Oecumenica <app><lem wit="#O #E2 #E4">Graece</lem> <rdg wit="#E1 #E3"> grece </rdg> </app><ref target="#note66" xml:id="reference66">66</ref>............................... 9 st. 5</l>
+            <l n="66">Loci <app><lem wit="#O #E3 #E4">communes</lem> <rdg wit="#E1 #E2"> comunes</rdg></app> <app><lem wit="#O #E4">Wor<supplied>m</supplied>atii</lem><rdg wit="#E1 #E2 #E3">Horatii</rdg></app><ref target="#note67" xml:id="reference67">67</ref> fol<expan><ex>io</ex></expan>.......................... 2 st. 5</l>
+            <l n="67"><app><lem wit="#O #E2 #E3 #E4">Brunonis</lem> <rdg wit="#E1">Brimonis [?]</rdg></app> opera<ref target="#note68" xml:id="reference68">68</ref>......................................... 3 st. -</l>
+            <l n="68">Plotinus in fol<expan><ex>io</ex></expan> Basile<expan><ex>ae</ex></expan><ref target="#note69" xml:id="reference69">69</ref>......................... 1 st. 6</l>
+            <l n="69">Thomas ab Argentina super sententias<ref target="#note70" xml:id="reference70">70</ref>................... 3 st. 15</l>
+            <l n="70">Thomae <choice><sic>Alori</sic> <corr> Mori</corr></choice> opera f<expan><ex>oli</ex></expan>o Louan<expan><ex>ii</ex></expan><ref target="#note71" xml:id="reference71">71</ref>.................... st. 17</l>
+            <l n="71">Baynus in Prouerbia f<expan><ex>oli</ex></expan>o<ref target="#note72" xml:id="reference72">72</ref>........................... 1 st. 8</l>
+            <l n="72"><app><lem wit="#O #E2 #E3 #E4">Sanctae Brigidae</lem> <rdg wit="#E1">Sancte Brigide</rdg></app> historia f<expan><ex>oli</ex></expan>o Romae<ref target="#note73" xml:id="reference73">73</ref> ................. 3 st. 4       </l>
+            <l n="73">Blosii opera in f<expan><ex>oli</ex></expan>o<ref target="#note74" xml:id="reference74">74</ref>................................ 1 st. 19</l>
+            <l n="74">Decretum <app><lem wit="#O #E2 #E3 #E4">Iuonis</lem> <rdg wit="#E1"> nouis [?]</rdg></app>  in f<expan><ex>oli</ex></expan>o Louanii<ref target="#note75" xml:id="reference75">75</ref>.................... 2 st. 10</l>
+            <l n="75">Driedonis opera f<expan><ex>oli</ex></expan>o Louanii<ref target="#note76" xml:id="reference76">76</ref>....................... 2 st. 5</l>
+            <l n="76">Concilium Tridentinum cum oratio<expan><ex>nibus</ex></expan><ref target="#note77" xml:id="reference77">77</ref>................ 1 st. 15</l>
+            <l n="77">Biblia <app><lem wit="#O #E2 #E3 #E4">Graecolatina</lem> <rdg wit="#E1">grecolatina</rdg></app> 8º Basileae<ref target="#note78" xml:id="reference78">78</ref>........................ 2 st. 10</l>
+            <l n="78">Biblia  <app><lem wit="#O #E2 #E3 #E4">Graeca</lem> <rdg wit="#E1">greca</rdg></app> Aldi f<expan><ex>oli</ex></expan>o<ref target="#note79" xml:id="reference79">79</ref>............................. 13 st. <app><lem wit="#O #E2 #E3 #E4">15</lem> <rdg wit="#E1"> 1</rdg></app> </l>
+            <l n="79">Biblia <choice><sic>Benedictini</sic> <corr> Benedicti</corr></choice> <ref target="#note80" xml:id="reference80">80</ref>  f<expan><ex>oli</ex></expan>o............................ 3 st. 15</l>
+            <l n="80">Gregor<expan><ex>ii</ex></expan> Turonens<expan><ex>is</ex></expan> historia<ref target="#note81" xml:id="reference81">81</ref> .......................   st. 15</l>
+            <l n="81">Quadripartita <app><lem wit="#O #E3 #E4">iusti<expan><ex>ti</ex></expan>a Cassalii</lem> <rdg wit="#E1">insti castalii</rdg><rdg wit="#E2">instituta castalii</rdg> </app><ref target="#note82" xml:id="reference82">82</ref>...................... 3 st. 18</l>
+            <l n="82">Vincentius <app><lem wit="#O #E3 #E4">Cyconia </lem> <rdg wit="#E1">...aonia</rdg> <rdg wit="#E2">Oyaonia</rdg></app>in Psalmos<ref target="#note83" xml:id="reference83">83</ref>.......................... 1 st. 15</l>
+            <l n="83"><app><lem wit="#E3 #E4">Vicomercato</lem> <rdg wit="#O #E1 #E2"> Vico Mercator</rdg></app> in <app><lem wit="#O #E3 #E4">Physicam</lem> <rdg wit="#E1 #E2"> Phisica </rdg></app><ref target="#note84" xml:id="reference84">84</ref>............................... 1 st. 19</l>
+            <l n="84"><app><lem wit="#O #E2 #E3 #E4">Rationale diuinorum officiorum</lem> <rdg wit="#E1">Orationale [?] diuinorun officiorun</rdg></app><ref target="#note85" xml:id="reference85">85</ref>......................... 1 st. 15</l>
+            <l n="85">Examen <app><lem wit="#O #E2 #E3 #E4">ordinandorum uariorum</lem> <rdg wit="#E1">ordinandorun uariorun</rdg></app><ref target="#note86" xml:id="reference86">86</ref>...........................   st. 12</l>
+            <l n="86">D<expan><ex>iui</ex></expan> Chrisostomi opera <app><lem wit="#O #E2 #E4">Graece</lem> <rdg wit="#E1 #E3"> grece </rdg> </app> f<expan><ex>oli</ex></expan>o<ref target="#note87" xml:id="reference87">87</ref>................. 15 st. 6</l>
+            <l n="87">Nic<expan><ex>olaus</ex></expan> de Nyse s<expan><ex>uper</ex></expan> sententi<expan><ex>as</ex></expan><ref target="#note88" xml:id="reference88">88</ref>.................  1 st. 10</l>
+            <l n="88">Confessio Augustiniana<ref target="#note89" xml:id="reference89">89</ref>.................................    st. 8</l>
+            <l n="89">Saluianus in fol<expan><ex>io</ex></expan><ref target="#note90" xml:id="reference90">90</ref>...................................  2 st. 9</l>
+            <l n="90"><app><lem wit="#O #E2 #E3 #E4">Missae</lem> <rdg wit="#E1">Misse</rdg></app> Episcopales fol<expan><ex>io</ex></expan><ref target="#note91" xml:id="reference91">91</ref>.............................  6 st. 10</l>
+            <l n="91">Pontificale Romanum<ref target="#note92" xml:id="reference92">92</ref>....................................  8 st. 15</l>
+            <l n="92">Psalterium Chori<ref target="#note93" xml:id="reference93">93</ref>.......................................  10 st. 18         </l>
+            <l n="93">Sacerdotale Roman<expan><ex>um</ex></expan><ref target="#note94" xml:id="reference94">94</ref>..................................  10 st. 10</l>
+            <l n="94">Graduale Magnum<ref target="#note95" xml:id="reference95">95</ref>........................................  13 st. <app><lem wit="#O #E2 #E3 #E4">10</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>            </l>
+            <l n="95">Biblioteca sancta fol<expan><ex>io</ex></expan><ref target="#note96" xml:id="reference96">96</ref>..............................   4 st. 17</l>
+            <l n="96">Concordantiae Bibliorum 4º<ref target="#note97" xml:id="reference97">97</ref>..............................   2 st. 15</l>
+            <l n="97">Concordantiae Bibl<expan><ex>iorum</ex></expan> Benedicti f<expan><ex>oli</ex></expan>o<ref target="#note98" xml:id="reference98">98</ref>.............   3 st. 12</l>
+            <l n="98">Concord<expan><ex>antiae</ex></expan> Bibl<expan><ex>iorum</ex></expan> <app><lem wit="#O #E1 #E3 #E4">Rober<expan><ex>ti</ex></expan></lem> <rdg wit="#E2">Reber.</rdg></app> Steph<expan><ex>ani</ex></expan><ref target="#note99" xml:id="reference99">99</ref>.......   4 st. 15</l>
+            <l n="99">Oeconomia sacra Bibliorum<ref target="#note100" xml:id="reference100">100</ref>..............................   1 st. 19</l>
+            <l n="100"><choice><sic>Polytanthia</sic> <corr> Polyanthea</corr></choice> f<expan><ex>oli</ex></expan>o Col<expan><ex>oniae</ex></expan><ref target="#note101" xml:id="reference101">101</ref>.........................   1 st. 19</l>
+            <l n="101">Constitutiones Ap<expan><ex>osto</ex></expan>lorum <app><lem wit="#O #E2 #E3 #E4">Graecolat<expan><ex>inae</ex></expan></lem> <rdg wit="#E1">grecolat.</rdg></app><ref target="#note102" xml:id="reference102">102</ref>.............   1 st. 10</l>
+            <l n="102">Vita Christi per Ludolphum<ref target="#note103" xml:id="reference103">103</ref>............................   2 st. --</l>
+            <l n="103">Epistolae D<expan><ex>iui</ex></expan> <app><lem wit="#O #E1 #E2 #E4">Hieronymi </lem> <rdg wit="#E3"> Hieronyi</rdg></app><app><lem wit="#O #E2 #E3 #E4">Romae</lem> <rdg wit="#E1">Rome</rdg></app><ref target="#note104" xml:id="reference104">104</ref>........................   7 st. 10</l>
+            <l n="104">Idem in 8º<ref target="#note105" xml:id="reference105">105</ref>............................................   3     17</l>
+            </div>
+            <div>
+            <head>Philosophia</head>
+               <l n="105">D<expan><ex>iuus</ex></expan> Thomas in Metaphisi[ca]<ref target="#note106" xml:id="reference106">106</ref>....................   1 st. 17</l>
+               <l n="106"><app><lem wit="#O #E4">in lib<expan><ex>ros</ex></expan> <supplied>de</supplied> Gene<expan><ex>ratione</ex></expan></lem> <rdg wit="#E1 #E2">in lib genes.</rdg> <rdg wit="#E3">in lib[rum] Genes[eos]</rdg></app><ref target="#note107" xml:id="reference107">107</ref>.............................   1 st. -</l>
+               <l n="107"><app><lem wit="#O #E1 #E3 #E4">in</lem> <rdg wit="#E2"> im</rdg></app> parua naturalia<ref target="#note108" xml:id="reference108">108</ref>.................................   1 st. -</l>
+               <l n="108">in Physica<ref target="#note109" xml:id="reference109">109</ref>.........................................   1     15</l>
+               <l n="109">in Ethica<ref target="#note110" xml:id="reference110">110</ref>..........................................   2 st. 10</l>
+               <l n="110">in lib<expan><ex>ros</ex></expan> de anima<ref target="#note111" xml:id="reference111">111</ref>...............................     st. 17</l>
+               <l n="111">in Meteora<ref target="#note112" xml:id="reference112">112</ref>.........................................   2 st. 17</l>
+               <l n="112">in Polytica<ref target="#note113" xml:id="reference113">113</ref>........................................   3 st. -</l>
+               <l n="113">in lib<expan><ex>ros</ex></expan> de coelo et mundo<ref target="#note114" xml:id="reference114">114</ref>......................   2 st. 14</l>
+               <l n="114">Olimpiodorus in Meteora  <app><lem wit="#O #E2 #E4">Graece</lem> <rdg wit="#E1 #E3"> grece </rdg> </app><ref target="#note115" xml:id="reference115">115</ref>.....................   3 st. 10</l>
+               <l n="115"><app><lem wit="#O #E3 #E4">Mathisius</lem> <rdg wit="#E1">Mathisuis</rdg><rdg wit="#E2">Mathesius</rdg></app> in Logica<ref target="#note116" xml:id="reference116">116</ref>................................   1 st. 15</l>
+               <l n="116">Idem in Physica<ref target="#note117" xml:id="reference117">117</ref>....................................     st. 10</l>
+               <l n="117">Porphyrius de non necandis animalibus<ref target="#note118" xml:id="reference118">118</ref>..............   1 st. 15</l>
+               <l n="118"><app><lem wit="#E4">Philo<supplied>poni</supplied></lem> <rdg wit="#O #E1 #E2 #E3">Philo</rdg></app> in Aristotel<expan><ex>is</ex></expan> <supplied reason="ommited">libros</supplied> de animal<expan><ex>ium</ex></expan> generat<expan><ex>ione</ex></expan> <app><lem wit="#O #E2 #E4">Graece</lem> <rdg wit="#E1 #E3"> grece </rdg> </app><ref target="#note119" xml:id="reference119">119</ref>...<app><lem wit="#O #E1 #E2 #E4">1</lem> <rdg wit="#E3"><hi rend="italic">omisit</hi></rdg></app> st 12</l>
+               <l n="119">Eustratius etc. in Moralia<ref target="#note120" xml:id="reference120">120</ref>............................   1 st. 17</l>
+               </div>
+                  <div type="anotation">
+                       
+                     <head>[Anotado por Ovando al final de la columna de la derecha, tras los libros de Filosofía:]</head>
+                     <ab>Florines y placas. Cada florín dozientos m<expan><ex>aravedís</ex></expan>, cada placa diez.<ref target="#note121" xml:id="reference121">121</ref></ab>
+                  </div>
+                  
+      </body>
+      <back>
+         
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  
+                  
+                  <ref target="#reference1">1</ref> <title>Omnium operum D. Aurelii Augustini Hipponensis episcopi primus [-decimus] tomus...</title> (Basileae: per Hieronymum Frobenium et Nicolaum Episcopium, 1550-1553). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5803198.html">(https://datos.bne.es/edicion/a5803198.html)</ref></note> 
+               
+               <note type="footnote" xml:id="note2">
+                         <ref target="#reference2">2</ref> Abreviatura de <foreign>floreni</foreign> (florines), la  moneda más usual en los Países Bajos. Como ya hemos señalado antes, la placa o stufferus era una moneda inferior al florín (veinte placas equivalen a un  florín); por tanto, los números que preceden a la abreviatura son florines, y los que aparecen tras ella son placas.</note>  
+               <note type="footnote" xml:id="note3">
+             
+                  <ref target="#reference3">3</ref> <title>Omnes quae extant D. Hieronymi Stridonensis lucubrationes...</title> (Basileae: ex Officina Episcopiana per Nicolaum et Eusebium Episcopios, fratres, 1565). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5030233.html">(https://datos.bne.es/edicion/a5030233.html)</ref></note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> <title>Opera D. Ioannis Chrysostomi, Archiepiscopi Constantinopolitani...: tomus primus</title> (Basileae: apud Hieronymum Frobenium et Nicolaum Episcopium, 1558). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4839883.html/"> (https://datos.bne.es/edicion/a4839883.html</ref></note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> <title>Omnia opera Diui Ioannis Chrysostomi</title> (Parisiis: apud Charlotte Guillard et Guillaume Desboys, 1556). Véase descripción bibliográfica en el Universal Short Title Catalogue <ref target="https://www.ustc.ac.uk/editions/152188"> (https://www.ustc.ac.uk/editions/152188</ref>)</note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> <title>Diui Basilii Magni Opera Graeca quae ad nos extant omnia </title> (Basileae, 1551). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4612116.html">(https://datos.bne.es/edicion/a4612116.html)</ref> </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> <title>Diui Basilii Magni... Omnia quae in hunc diem Latino sermone donata sunt opera...</title> (Parisiis: apud Sebastianum Niuellium, 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4613179.html">(https://datos.bne.es/edicion/a4613179.html)</ref>.  </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> <title>Opera D. Gregorii Papae, huius nominis primi... Omnia quae extant accuratissima diligentia a mendis multis...</title> (Basileae: apud Hieronymum Frobenium et Nicolaum Episcopium, 1564). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5656271.html">(https://datos.bne.es/edicion/a5656271.html)</ref>.  </note> 
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> <title>Origenis Adamantii, eximi scripturarum interpretis, Opera, quae quidem extant omnia...</title> (Basileae: per Hieronynum Frobenium et Nicolaum Episcopium, 1557). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4820219.html">(https://datos.bne.es/edicion/a4820219.html)</ref>. </note> 
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> <title>Operum diui Cyrilli Alexandrini Episcopi tomi quatuor, quorum postremus nunc recens accedit, ex Graecis manuscriptis exemplaribus fideliter latinitate donatus</title> (Basileae: apud Ioannem Heruagium, 1546). Véase descripción bibliográfica en el Catálogo Bibliográfico del Patrimonio Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12112/ID1e83c6f8/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12112/ID1e83c6f8/NT2)</ref>. </note> 
+               <note type="footnote" xml:id="note11">
+               <ref target="#reference11">11</ref> <title>Diui Bernardi, religiosissimi Ecclesiae doctoris ac primi Clareuallensis coenobii Abbatia Opera </title>(Basileae: apud Ioannem Heruagium, 1552). Véase descripción bibliográfica en Swisscolections <ref target="https://swisscollections.ch/Record/991033800909705501">(https://swisscollections.ch/Record/991033800909705501)</ref>. </note> 
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> <title>Diui Bernardi Clareuallensis Abbatis primi... Opera omnia </title>(Parisiis: apud Gulielmum Merlin et Sebastianum Niuellium et Michaëlam Guillard, 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5210508.html">(https://datos.bne.es/edicion/a5210508.html)</ref>. </note>
+               <note type="footnote" xml:id="note13">
+                  <ref target="#reference13">13</ref> <title>Beati Ioannis Damasceni opera. Item Ioannis Cassiani eremitae non prorsus dissimilis argumenti libri aliquot </title>(Basileae: per Henricum Petri, 1559). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5640994.html">(https://datos.bne.es/edicion/a5640994.html)</ref>. </note>
+               <note type="footnote" xml:id="note14">
+                  <ref target="#reference14">14</ref> <title>Athanasii magni Alexandrini episcopi... Opera, in quatuor tomos distributa  </title>(Basileae: ex officina episcopiana, per Nicolaum et Eusebium Espiscopos, Fratres, 1564). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5685032.html">(https://datos.bne.es/edicion/a5685032.html)</ref>. </note>
+               <note type="footnote" xml:id="note15">
+                  <ref target="#reference15">15</ref> <title>Omnia quotquot extant D. Ambrosii Episcopi mediolanensis opera</title> (Basileae, 1567). Véase descripción bibliográfica en la web de ADABI México <ref target="https://www.adabi.org.mx/vufind/Record/199527">(https://www.adabi.org.mx/vufind/Record/199527)</ref>. </note>
+               <note type="footnote" xml:id="note16">
+                  <ref target="#reference16">16</ref> <title>Diui Gregorii, episcopi Nysseni, fratris Basilii magni, opera quae adipisci licuit omnia</title> (Basileae: per N. Episcopium iuniorem, 1562 ). Véase descripción bibliográfica en Swisscolections <ref target="https://swisscollections.ch/Record/991152019779705501">(https://swisscollections.ch/Record/991152019779705501)</ref>. </note>
+               <note type="footnote" xml:id="note17">
+                  <ref target="#reference17">17</ref> Proponemos la siguiente identificación:<title> Lucubrationes olim per Des. Erasmum Rot. haud mediocribus sudoribus emendatae... / D. Hilarii Pictauorum Episcopi</title> (Parisiis : Carolae Guillard, 1544). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12202/ID2f2c1bea/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12202/ID2f2c1bea/NT2)</ref>. </note>
+               <note type="footnote" xml:id="note18">
+                  <ref target="#reference18">18</ref> <title>D. Anselmi Cantuariensis archiepiscopi theologorum sui temporis facile principis, Operum quae quidem haberi potuerunt omnium tomus primus [-tertius]...</title> (Coloniae Agrippinae: apud Ioannem Birckmannum(IS), Birckmann, Johann, il giovane, 1560). La obra viene referenciada, sin digitalización de ningún ejemplar, en Google Books. </note>
+               <note type="footnote" xml:id="note19">
+                  <ref target="#reference19">19</ref> <title>Beati Theodoreti Episcopi Cyrensis... Operum quae ad hunc diem Latine uersa sparsim extiterunt tomus primus.</title> (Coloniae Agrippinae: apud Ioannem Birckmannum, 1567). Véase descripción bibliográfica en el Catálogo Bibliográfico del Patrimonio Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12460/IDfd7de6ee/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12460/IDfd7de6ee/NT2)</ref>.  </note>
+               <note type="footnote" xml:id="note20">
+                  <ref target="#reference20">20</ref> <title>Dionysii Areopagitae Opera omnia quae extant </title>(Lutetiae Parisiorum: ex officina typographica Michaëlis Vascosani, 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a6300688.html">(https://datos.bne.es/edicion/a6300688.html)</ref>.   </note>
+               <note type="footnote" xml:id="note21">
+                  <ref target="#reference21">21</ref> <title>Diui Epiphanii Episcopi Constantiae Cypri, Contra octoaginta haereses opus, pannarium, siue arcula, aut capsula medica appellatum, continens libros tres, et tomos, siue sectiones ex toto septem</title> (Parisiis: apud Hieronymum de Marnef et Guilielmum Cauellat, 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5394190.html">(https://datos.bne.es/edicion/a5394190.html)</ref>.   </note>
+               <note type="footnote" xml:id="note22">
+                  <ref target="#reference22">22</ref> <title>Diui Iustini, philosophi et martyris Christi, operum, quae extant... tomi III</title> (Basileae: per Ambrosium et Aurelium, Frobenios fratres, 1565). La obra viene referenciada, sin digitalización de ningún ejemplar, en Google Books.   </note>
+               <note type="footnote" xml:id="note23">
+                  <ref target="#reference23">23</ref> <title>Q. Septimii Florentis Tertulliani... operum, tomus primus (-secundus)</title> (Parisiis: apud Andream Wechelum, 1566). La obra viene referenciada, sin digitalización de ningún ejemplar, en Google Books. </note>
+               <note type="footnote" xml:id="note24">
+                  <ref target="#reference24">24</ref> <title>Theophylacti Bulgariae Archiepiscopi Explicationes in Acta Apostolorum, concise ac breuiter ex Patribus collectae, Graece nunc primum editae ex Bibliotheca... Ioannis Sambuci Pannonii Tirnauiensis</title> (Coloniae: apud haeredes Arnoldi Birckmanni, 1568). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a6240247.html">(https://datos.bne.es/edicion/a6240247.html)</ref>. </note>
+               
+               <note type="footnote" xml:id="note25">
+                  <ref target="#reference25">25</ref> <title>D. Theophylacti Bulgariae Archiepiscopi, In omnes diui Pauli apostoli Epistolas enarrationes, ex uetustissimo Graeco codice, iam recens per Philippum Montanum Armenterianum recognitae</title> (Antuerpiae: in aedibus Ioan. Stelsii, 1564). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5139649.html">(https://datos.bne.es/edicion/a5139649.html)</ref>. </note>               
+               <note type="footnote" xml:id="note26">
+                  <ref target="#reference26">26</ref> <title>D. Leonis eius nominis I Romani Pontificis... Opera quae quidem haberi potuerunt omnia ...</title>(Coloniae Agrippinae: apud Ioannem Birckmannum Iuniorem, 1561). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4621863.html">(https://datos.bne.es/edicion/a4621863.html)</ref>. </note>
+               <note type="footnote" xml:id="note27">
+                  <ref target="#reference27">27</ref> La edición de las obras completas de Beda más cercana a la fecha de este listado de libros es la titulada <title>Opera Bedae Venerabilis... omnia in octo tomos distincta</title> (Basileae: per Ioannem Heruagium, 1563). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4355828.html">(https://datos.bne.es/edicion/a4355828.html)</ref>. </note>
+               <note type="footnote" xml:id="note28">
+                  <ref target="#reference28">28</ref> <title>Diui Gregorii theologi, episcopi Nazianzeni opera, quae quidem extant, omnia</title> (Basileae: per Ioannem Heruagium, 1550). Ejemplar digitalizado en Google Books. </note>
+               <note type="footnote" xml:id="note29">
+                  <ref target="#reference29">29</ref> <title>Clementis Alexandrini... Omnia quae quidem extant opera</title> (Basileae: per Thomam Guarinum, 1566). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12363/IDbbe508eb/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12363/IDbbe508eb/NT2</ref>.  </note>
+               <note type="footnote" xml:id="note30">
+                  <ref target="#reference30">30</ref> <title>Opus eruditissimum Diui Irenaei... in quinque libros digestum</title> (Parisiis: apud Audoënum Paruum..., 1567). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4682309.html">(https://datos.bne.es/edicion/a4682309.html)</ref>.</note>
+               <note type="footnote" xml:id="note31">
+                  <ref target="#reference31">31</ref> <title>Diui Caecilii Cypriani Episcopi Carthaginensis, et gloriosissimi Martyris, Opera</title> (Romae: apud Paulum Manutium, Aldi F., 1563). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12285/IDdb96e2de/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12285/IDdb96e2de/NT2</ref>. </note>
+               <note type="footnote" xml:id="note32">
+                  <ref target="#reference32">32</ref> <title>Beati Fulgentii ecclesiasticorum ueterum doctorum patrumue nulli non conferendi Opera quae scripsit omnia</title> (Basileae: ex officina Henricpetrina, 1566). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12285/IDdb96e2de/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12285/IDdb96e2de/NT2</ref>. </note>
+               <note type="footnote" xml:id="note33">
+                  <ref target="#reference33">33</ref> <title>D. Stanislai Hosii ... Opera quae hactenus extiterunt omnia</title> (Antuerpiae: in aedibus Viduae et Haeredum Ioannis Stelsii, 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5809889.html">(https://datos.bne.es/edicion/a5809889.html)</ref>.</note>
+               <note type="footnote" xml:id="note34">
+                  <ref target="#reference34">34</ref> <title>Diui Eucherii Episcopi Lugdunensis Commentarii in Genesim et in libros Regum</title>  (Romae: apud Paulum Manutium, Aldi F., 1564). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5069250.html">(https://datos.bne.es/edicion/a5069250.html)</ref>.</note>
+               <note type="footnote" xml:id="note35">
+                  <ref target="#reference35">35</ref> <title>Philonis Iudaei, scriptoris eloquentissimi ac philosophi summi, Lucubrationes omnes quotquot haberi potuerunt </title> (Basileae: apud Episcopium Iuniorem, 1561). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5659208.html">(https://datos.bne.es/edicion/a5659208.html)</ref>.</note>
+               <note type="footnote" xml:id="note36">
+                  <ref target="#reference36">36</ref> <title>Flauii Iosephi opera </title>(Basileae: Froben, 1544). Existe un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note37">
+                  <ref target="#reference37">37</ref> <title>Io. Lodouici Viuis Valentini Opera in duos distincta tomos</title> (Basileae: per Nic. Episcopium Iuniorem, 1555). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5284691.html">(https://datos.bne.es/edicion/a5284691.html)</ref>.</note>
+               <note type="footnote" xml:id="note38">
+                  <ref target="#reference38">38</ref> <title>Eusebii Pamphili Caesariensis uiri ut sanctissimi, ita multiuaria rerum et diuinarum et humanarum cognitione clarissimi Opera</title> (Basileae: per Henricum Petri, 1559). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5664117.html">(https://datos.bne.es/edicion/a5664117.html)</ref>.</note>
+               <note type="footnote" xml:id="note39">
+                  <ref target="#reference39">39</ref><title> Chronicon opus felicissimum renatum...</title> (Basileae: excudebat Henricus Petrus, 1536). Se puede leer un ejemplar digitalizado en Google Books. </note>
+               <note type="footnote" xml:id="note40">
+                  <ref target="#reference40">40</ref> <title>Ecclesiasticae historiae, Eusebii Pamphili lib. X</title> (Lutetiae Parisiorum: ex officina Roberti Stephani, 1544). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5707232.html">(https://datos.bne.es/edicion/a5707232.html)</ref>.</note>
+               <note type="footnote" xml:id="note41">
+                  <ref target="#reference41">41</ref> <title>Diui Laurentii Iustiniani, protopatriarchae Veneti, opera</title> (Lugduni: apud heredes Iacobi Iunctae, 1568). Se puede leer un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note42">
+                  <ref target="#reference42">42</ref> Podría identificarse, por coincidencia de fechas, con la edición de <title>Nicephori Gregorae, Romanae, hoc est Byzantinae historiae libri XI</title> (Lutetiae: apud Guillielmum Chaudiere, 1566). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12353/ID077ce297/NT3">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12353/ID077ce297/NT3</ref>.</note>
+               <note type="footnote" xml:id="note43">
+                  <ref target="#reference43">43</ref> <title>Diuini Platonis Opera omnia... Marsilio Ficino interprete</title> (Lugduni: apud Antonium Vincentium, 1567). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5653954.html">(https://datos.bne.es/edicion/a5653954.html)</ref>.</note>
+               <note type="footnote" xml:id="note44">
+                  <ref target="#reference44">44</ref> <title>Marsilii Ficini Florentini... opera et quae hactenus extitere</title> (Basileae: Henricus Petri, 1561). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12353/ID077ce297/NT3">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12353/ID077ce297/NT3</ref>.</note>
+               
+               <note type="footnote" xml:id="note45">
+                  <ref target="#reference45">45</ref> <title>Petri Nonii Salaciensis Opera</title> (Basileae: ex officina Henricpetrina, 1566). Se puede leer un ejemplar digitalizado en Google Books. </note>
+               <note type="footnote" xml:id="note46">
+                  <ref target="#reference46">46</ref> <title>Aristotelis, summi semper Philosophi..., Opera</title> (Basileae: per Io. Beb. et Mich. Ising., 1550). Se puede leer un ejemplar digitalizado en Google Books. </note>
+               <note type="footnote" xml:id="note47">
+                  <ref target="#reference47">47</ref> <title> Salviani episcopi Massiliensis De uero iudicio et prouidentia dei libri VII</title> (Romae: apud Paulum Manutium, Aldi F., 1564). Se puede leer descripción bibliográfica y ejemplar digitalizado en la Biblioteca Digital Floridablanca <ref target="https://bibliotecafloridablanca.um.es/bibliotecafloridablanca/handle/11169/5445?mode=full">(https://bibliotecafloridablanca.um.es/bibliotecafloridablanca/handle/11169/5445?mode=full</ref>. Debajo de esta columna, anotada por Ovando la suma del precio de los libros precedentes: 171 fl. 17. </note>
+               <note type="footnote" xml:id="note48">
+                  <ref target="#reference48">48</ref> <title> Tomus primus [- secundus] Chronicon D. Iohannis Naucleri </title>(Coloniae: apud haeredes Iohannis Quentel et Geruuinum Calenium..., 1564). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12165/ID1c6ba8eb/NT8">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12165/ID1c6ba8eb/NT8</ref>.</note>
+               <note type="footnote" xml:id="note49">
+                  <ref target="#reference49">49</ref> <title> Tomus primus [- quartus] Conciliorum omnium, tum generalium, tum prouincialium atque particularium, quae iam inde ab Apostolis</title> (Coloniae Agrippinae: apud Geruuinum Calenium et haeredes Iohannis Quentelii, 1567). Véase descripción bibliográfica y ejemplar digitalizado en DIGIBUG <ref target="https://digibug.ugr.es/handle/10481/11833">(https://digibug.ugr.es/handle/10481/11833)</ref>.</note>
+               <note type="footnote" xml:id="note50">
+                  <ref target="#reference50">50</ref> <title>Fr. Adami Sasbout... Opera omnia, nunc demum gratiam studiosorum in unum corpus redacta</title> (Coloniae Agrippinae: apud Ioannem Birckmannum, 1568). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5792924.html">(https://datos.bne.es/edicion/a5792924.html)</ref>.</note>
+               <note type="footnote" xml:id="note51">
+                  <ref target="#reference51">51</ref> <title>Historia B. Platinae de uitis Pontificum Romanorum, a D. N. Iesu Christo usque ad Paulum II Venetum Papam</title> (Coloniae: apud Maternum Cholinum, 1568). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5659657.html">(https://datos.bne.es/edicion/a5659657.html)</ref>.</note>
+               <note type="footnote" xml:id="note52">
+                  <ref target="#reference52">52</ref> <title>Ioannis Zonarae... Compendium historiarum, in tres tomos distinctum</title> (Basileae: per Ioannem Oporinum, 1557). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5116303.html">(https://datos.bne.es/edicion/a5116303.html)</ref>.</note>
+               <note type="footnote" xml:id="note53">
+                  <ref target="#reference53">53</ref> <title>Opera omnia</title> (Venetiis: apud Aldi filios, 1551-1553), 6 vols. Existe descripción bibliográfica de un ejemplar, sin digitalizar, en Google Books.</note>
+               <note type="footnote" xml:id="note54">
+                  <ref target="#reference54">54</ref> <title>Aristotelis Stagiritae Opera</title> (Lugduni: apud Ioannem Frellonium, 1563). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4524224.html">(https://datos.bne.es/edicion/a4524224.html)</ref>.</note>
+               <note type="footnote" xml:id="note55">
+                  <ref target="#reference55">55</ref> <title>Blondi Flauii Forliuiensis, De Roma triumphante lib. X</title> (Basileae: Froben, 1550). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5381330.html">(https://datos.bne.es/edicion/a5381330.html)</ref>.</note>
+               <note type="footnote" xml:id="note56">
+                  <ref target="#reference56">56</ref> <title>Procopii Gazaei Sophistae Commentarii in Octateuchum</title> (Tiguri: per Andream Gessnerum F. et Iacobum Gessnerum Fratres, 1555). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a6291915.html">(https://datos.bne.es/edicion/a6291915.html)</ref>.</note>
+               <note type="footnote" xml:id="note57">
+                  <ref target="#reference57">57</ref> <title>Dn. Chrysostomi Iauelli Canapicii Ordinis Praedicatorum... Totius rationalis naturalis, diuinae ac moralis philosophiae compendium... in duos tomos digestum</title> (Lugduni: apud haeredes Iacobi Iunctae, 1568). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note58">
+                  <ref target="#reference58">58</ref> <title>Ioannis Pici Mirandulae... Praecipui omnia quae extant opera</title> (Venetiis: apud Hieronymum Scotum, 1557). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5390424.html">(https://datos.bne.es/edicion/a5390424.html)</ref>.</note>
+               <note type="footnote" xml:id="note59">
+                  <ref target="#reference59">59</ref> <title>Anitii Manilii Seuerini Boethi In omnibus philosophiae partibus inter Latinos et Graecos autores principis opera, quae extant omnia</title> (Venetiis: apud Hieronymum Scotum, 1557). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note60">
+                  <ref target="#reference60">60</ref> <title>Diui Ambrosii Milleloquium summam totius doctrinae illius Ambrosii sub mille titulis seu generalibus capitibus ordine alphabetico digestis complectens, authore Fratre Bartholomaeo Vrbinate episcopo</title> (Lugduni: ad Salamandrae apud Senetonios fratres, 1555). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note61">
+                  <ref target="#reference61">61</ref> <title>D. Aurelii Augustini Milleloquium ueritatis a F. Bartholomaeo de Vrbino digestum</title> (Lugduni: ad Salamandrae apud Senetonios fratres, 1556). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note62">
+                  <ref target="#reference62">62</ref> <title>Alfonsi a Castro Zamorensis, ordinis minorum regularis obseruantiae... Aduersus omnes haereses, libri decimiquarti</title> (Parisiis: apud Michaelem Iulianum, 1565). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5678326.html">(https://datos.bne.es/edicion/a5678326.html)</ref>.</note>
+               <note type="footnote" xml:id="note63">
+                  <ref target="#reference63">63</ref> <title>Historiae Aloysii Lipomani Episcopi Veronensis De uitis sanctorum pars prima [-secunda] </title> (Louanii: apud Petrum Zangrium Titetanum,1568). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note64">
+                  <ref target="#reference64">64</ref> <title>Lodouici Caelii Rhodigini Lectionum Antiquarum libri XXX </title>(Basileae: per Ambrosium et Aurelium Frobenios fratres, 1566). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note65">
+                  <ref target="#reference65">65</ref> <title>In omnes Diui Pauli Apostoli et alias septem Canonicas Epistolas, R.P.... Ambrosii Catharini </title>(Parisiis: apud Michaelem Sonnium ..., 1566). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note66">
+                  <ref target="#reference66">66</ref> <title>Catena explanationum ueterum Sanctorum Patrum, in Acta apostolorum, [et] Epistolas catholicas. Ioanne Bernardo Felicicano interprete </title>(Basileae, 1552). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12311/ID393b132e/NT2</ref>.</note>
+               <note type="footnote" xml:id="note67">
+                  <ref target="#reference67">67</ref> Podría tratarse de la obra titulada <title>Loci communes congesti cum ex decretorum libris tum conciliis et orthodoxorum patrum decretis atque etiam diuersarum nationum synodis, in quibus totum ecclesiasticum munus et ueteres ecclesiarum obseruationes breuiter et dilucide comprehenduntur; authore D. Burchardo VVormaciensis ecclesiae episcopo</title> (Coloniae Agrippinae: apud Ioannem Birckmannum iuniorem, 1560). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5758291.html">(https://datos.bne.es/edicion/a5758291.html)</ref>.</note>
+               <note type="footnote" xml:id="note68">
+                  <ref target="#reference68">68</ref>  <title>Brunonis carthusianorum patriarch[a]e sanctissimi, theologi parisiensis scholae doctissimi ... Opera et uita...</title> ([Parisiis: u[a]enundātur Iodoco Badio Ascensio..., 1524). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4733363.html">(https://datos.bne.es/edicion/a4733363.html)</ref>.</note>
+               <note type="footnote" xml:id="note69">
+                  <ref target="#reference69">69</ref>  <title>Plotini diuini... De rebus philosophicis libri LIIII, in enneades sex distributi, a Marsilio Ficino Florentino e Graeca linguam in Latinam uersi</title> (Basileae: per Thomam Guarinum..., 1562). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5703329.html">(https://datos.bne.es/edicion/a5703329.html)</ref>.</note>
+               <note type="footnote" xml:id="note70">
+                  <ref target="#reference70">70</ref>  <title>Thomae ab Argentina... Commentaria in IIII. Libros Sententiarum... </title>(Venetiis: Ex officina Stellae, Iordani Ziletti..., 1564). Véase descripción bibliográfica y ejemplar digitalizado en la web de la BNE <ref target="https://datos.bne.es/edicion/a5070216.html">(https://datos.bne.es/edicion/a5070216.html)</ref>.</note>
+               <note type="footnote" xml:id="note71">
+                  <ref target="#reference71">71</ref> En Lovaina se publican dos ediciones cercanas a la fecha de este listado: <title>Thomae Mori Angli ... Omnia, quae hucusque ad manus nostras peruenerunt, Latina opera... </title>(Louanii: apud Petrum Zangrium Tiletanum, 1566); véase descripción bibliográfica y ejemplar digitalizado en la web de la BNE <ref target="https://datos.bne.es/edicion/a5612199.html">(https://datos.bne.es/edicion/a5612199.html)</ref>; y <title>Thomae Mori Angli... Omnia, quae hucusque ad manus nostras peruenerunt, Latina Opera</title> (Louanii: apud Ioanem Bogardum, 1566) (véase descripción bibliográfica y ejemplar digitalizado en la web de la BNE <ref target="https://datos.bne.es/edicion/a5612550.html">(https://datos.bne.es/edicion/a5612550.html)</ref>).</note>
+               <note type="footnote" xml:id="note72">
+                  <ref target="#reference72">72</ref> <title>In Prouerbia Salomonis tres libri commentariorum ex ipsis Hebraeorum fontibus manantium, authore Rodolpho Bayno Cantabrigensi </title>(Parisiis: ex officina typographica Michaelis Vascosani..., 1555). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12221/ID725ae5fa/NT5">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12221/ID725ae5fa/NT5</ref>.</note>
+               <note type="footnote" xml:id="note73">
+                  <ref target="#reference73">73</ref> <title>Memoriale effigiatum librorum prophetiarum seu uisionum B. Brigidae alias Birgittae... de Regno Suetiae... </title>(Romae: In aedibus Sanctae Brigidae [sic] per Duodecimum et Antonium, socios, 1556). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5068659.html">(https://datos.bne.es/edicion/a5068659.html</ref>.</note>
+               <note type="footnote" xml:id="note74">
+                  <ref target="#reference74">74</ref> <title>Ludouici Blosii... Opera omnia; quorum elenchum octaua pagina commonstrabit... </title>(Louanii: ex officina Ioannis Bogardi..., 1568). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5068659.html">(https://datos.bne.es/edicion/a5068659.html</ref>.</note>
+               <note type="footnote" xml:id="note75">
+                  <ref target="#reference75">75</ref> <title>Decretum Beati Iuonis e praeposito Fani Quintini Bellouacorum ecclesiae Carnotensis episcopi </title>(Louanii: excudebat Bartholomaeus Gravius..., 1561). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12221/ID725ae5fa/NT4">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12221/ID725ae5fa/NT4</ref>.</note>
+               
+               <note type="footnote" xml:id="note76">
+                  <ref target="#reference76">76</ref> <title>Primus [-quartus] tomus Operum D. Ioannis Driedonis a Turnhout sacrae theologiae professoris </title>(Louanii: ex officina Bartholomei Grauij..., 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5396351.html">(https://datos.bne.es/edicion/a5396351.html)</ref>.</note>
+               <note type="footnote" xml:id="note77">
+                  <ref target="#reference77">77</ref> <title>Concilium Tridentinum hoc est Canones et decreta sacrosancti oecumenici et generalis Concilii Tridentini, Sacrae scripturae et Sanctorum canonum concordatiis illustrata</title> (Louanii: apud Petrum Zangrium Tiletanum, 1567). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a6300551.html">(https://datos.bne.es/edicion/a6300551.html</ref>.</note>
+               <note type="footnote" xml:id="note78">
+                  <ref target="#reference78">78</ref> <title>Biblia graeca et latina [pars prima-quarta]</title> (Basileae: per Nicolaum Brylingerum, 1550). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a4626413.html">(https://datos.bne.es/edicion/a4626413.html)</ref>.</note>
+               <note type="footnote" xml:id="note79">
+                  <ref target="#reference79">79</ref> <title>Sacrae scripturae veteris nouaéque omnia</title> (Venetiis: in aedib. Aldi et Andreae Soceri, 1518). Véase descripción bibliográfica y ejemplar digitalizado Hathi Trust Digital Library <ref target="https://catalog.hathitrust.org/Record/009308900">(https://catalog.hathitrust.org/Record/009308900)</ref>.</note>
+               <note type="footnote" xml:id="note80">
+                  <ref target="#reference80">80</ref> <title>Biblia sacra Veteris et Noui Testamenti, iuxta Vulgatam, quam dicunt, editionem: Ioannis Benedicti Theologi industria accurate recognita et emendata</title> (Lutetiae: apud Ioannem Macaeum..., 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5415371.html">(https://datos.bne.es/edicion/a5415371.html)</ref>.</note>
+               <note type="footnote" xml:id="note81">
+                  <ref target="#reference81">81</ref> <title>Gregorii Turonici Historiae francorum libri decem... </title> (Basileae: per Petrum Pernam, 1568). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5421589.html">(https://datos.bne.es/edicion/a5421589.html)</ref>.</note>
+               <note type="footnote" xml:id="note82">
+                  <ref target="#reference82">82</ref> <title>De quadripertita iustitia libri tres... Gaspare Casalio Lusitano... auctore </title> (Venetiis: ex officina Iordani Zileti, 1563). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5068785.html">(https://datos.bne.es/edicion/a5068785.html)</ref>.</note>
+               <note type="footnote" xml:id="note83">
+                  <ref target="#reference8">83</ref> <title>Vincentii Ciconiae Veron. Enarrationes in Psalmos</title> (Patauii: ex officina Laurentij Pasquati, 1567). Véase descripción bibliográfica en la Catálogo Colectivo del Patrimonio Bibliográfico Español <ref target="http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12130/ID6c24c2b1/NT3">(http://catalogos.mecd.es/CCPB/cgi-ccpb/abnetopac/O12130/ID6c24c2b1/NT3</ref>.</note>
+               <note type="footnote" xml:id="note84">
+                  <ref target="#reference84">84</ref> <title>Francisci Vicomercati... In quatuor libros Aristotelis meteorologicorum commentarii et eorundem librorum e Graeco in Latinum per eundem conuersio</title> (Venetiis: apud Hieronymum Scotum, 1565). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5070327.html">(https://datos.bne.es/edicion/a5070327.html)</ref>.</note>
+               <note type="footnote" xml:id="note85">
+               <ref target="#reference85">85</ref> <title>Rationale diuinorum officiorum a R. D. Gulielmo Durando... concinatum</title> (Lugduni: apud haeredes Iacobi Iunta, 1565). Puede verse un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note86">
+                  <ref target="#reference86">86</ref> <title>Examen ordinandorum seu breuis quaedam clericorum institutio, instar Cathechismi, per pias ac catholicas quaestiones et responsiones, summa breuitate digestum. Auctoribus, R. D. Io. Ferro. Io. Olthusio ac Georgio Wicelio</title> (Venetiis: Georgius de Caballis, 1567). Véase descripción bibliográfica en la web del Fondo Histórico de la Moravian Library de Brno <ref target="https://www.historickefondy.cz/Record/mzk.000901675">(https://www.historickefondy.cz/Record/mzk.000901675)</ref>.</note>
+               <note type="footnote" xml:id="note87">
+                  <ref target="#reference87">87</ref> <title>Dionis Chrysostomi orationes LXXX</title> (Parisiis: apud Andream Wechelum, 1554). Puede verse un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note88">
+                  <ref target="#reference88">88</ref> <title>Nicolai de Niise,... In quatuor libros Sententiarum, opus</title> (Venetiis: apud haeredes Melchorem Sessa, 1568). Puede verse un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note89">
+                  <ref target="#reference89">89</ref> <title>Confessio augustiniana in libros quatuor distributa et certis capitibus locorum theologicorum... comprehensa</title> (Dilingae: apud S. Mayer, 1567). Existe referencia a un ejemplar, sin digitalizar, en Google Books.</note>
+               <note type="footnote" xml:id="note90">
+                  <ref target="#reference90">90</ref> <title> Salviani episcopi Massiliensis De uero iudicio et prouidentia dei libri VII</title> (Romae: apud Paulum Manutium, Aldi F., 1564). Se puede leer descripción bibliográfica y ejemplar digitalizado en la Biblioteca Digital Floridablanca <ref target="https://bibliotecafloridablanca.um.es/bibliotecafloridablanca/handle/11169/5445?mode=full">(https://bibliotecafloridablanca.um.es/bibliotecafloridablanca/handle/11169/5445?mode=full</ref>. Obra ya citada en nota 46.</note>
+               <note type="footnote" xml:id="note91">
+                  <ref target="#reference91">91</ref> <title>Missae Episcopales pro Sacris ordinibus conferendis, secundum ritum S. Romanae Ecclesiae</title> (Venetiis: apud Juntas, 1563). Existe referencia a un ejemplar, sin digitalizar, en Google Books.</note>
+               <note type="footnote" xml:id="note92">
+                  <ref target="#reference92">92</ref> <title>Pio IIII Pont. Max. Pontificale Romanum ad omnes pontificias ceremonias quibus nunc utitur sacrosancta Romana Ecclesia accomodatum</title> (Venetiis: apud Iuntas, 1561). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/Mimo0001011390.html">(https://datos.bne.es/edicion/Mimo0001011390.html)</ref>.</note>
+               <note type="footnote" xml:id="note93">
+                  <ref target="#reference93">93</ref> <title>Psalterium ad decantata in choro officia ecclesiastica accomodatissimum</title> (apud Iohan Renis, 1530).</note>
+               <note type="footnote" xml:id="note94">
+                  <ref target="#reference94">94</ref> <title>Sacerdotale iuxta s. Romanae ecclesiae et aliarum ecclesiarum, ex apostolicae bibliothecae ac sanctorum patrum iurium sanctionibus et ecclesiasticorum doctorum scriptis ad optatum commodum quorumcunque sacerdotum collectum et omni nuper diligentia castigatum</title> (Venetiis: apud Ioannem Variscum et socios, 1560). Puede encontrarse un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note95">
+                  <ref target="#reference95">95</ref> <title>Graduale ad consuetudinem sacrosancte Romane Ecclesie nouissime post omnes alias impressiones, tam in textu quam in cantu, diligentissime emendatum atque correctum</title> (Venetiis: Ioanne Varisco et sociis excudentibus, 1565).Debajo de esta columna, izquierda del folio 127, se lee anotada por Ovando la suma de los precios de los libros precedentes: 200 fl. 15.</note>
+               <note type="footnote" xml:id="note96">
+                  <ref target="#reference96">96</ref> <title> Bibliotheca sancta a F. Sixto Senensi... ex praecipuis catholicae ecclesiae autoribus collecta et in octo libros digesta</title> (Venetiis: apud Franciscum Franciscium Senensem, Ioan. Gryphius excudebat, 1567). Véase descripción bibliográfica y ejemplar digitalizado en DIGIBUG <ref target="https://digibug.ugr.es/handle/10481/11023?locale-attribute=es">(https://digibug.ugr.es/handle/10481/11023?locale-attribute=es)</ref>.</note>
+               <note type="footnote" xml:id="note97">
+                  <ref target="#reference97">97</ref> <title>Concordantiae Bibliorum Vtriusque Testamenti, Veteris et Novi, nouae et integrae</title> (Antuerpiae: ex officina uiduae et haeredum Ioannis Stelsii, 1567). Puede verse un ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note98">
+                  <ref target="#reference98">98</ref> <title>Concordantiae nouae utriusque Testamenti, iuxta tropos et phrases, locosque communes distinctae... a Ioanne Benedicto... concinnatae</title> (Parisiis, apud Gulielmum Guillard et Almaricum Warencore, 1562). Véase descripción bibliográfica la Biblioteca de la Universidad de Salamanca <ref target="https://brumario.usal.es/permalink/34BUC_USAL/16fd82o/alma991000834459705773">(https://brumario.usal.es/permalink/34BUC_USAL/16fd82o/alma991000834459705773)</ref>.</note>
+               <note type="footnote" xml:id="note99">
+                  <ref target="#reference99">99</ref> <title>Concordantiae bibliorum utriusque testamenti, ueteris et noui, nouae et integrae, quas re uera maiores appellare possis</title> ([Geneuae]: Oliua Roberti Stephani, 1550). Véase descripción bibliográfica y ejemplar digitalizado en e-rara de la Biblioteca Nacional de Ginebra <ref target="https://www.e-rara.ch/gep_g/content/zoom/2004700">(https://www.e-rara.ch/gep_g/content/zoom/2004700)</ref>.</note>
+               <note type="footnote" xml:id="note100">
+                  <ref target="#reference100">100</ref> <title>Oeconomia Bibliorum siue Partitionum Theologicarum libri quinque, quibus Sacrae Scripturae dispositio seu artificium et uis atque ratio, in tabulis uelut ad uiuum exprimitur... authore D. Georgio Edero</title> (Coloniae Agrippinae: apud Geruinum Calenium et haeredes Ioannis Quentelli, 1568). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5686515.html">(https://datos.bne.es/edicion/a5686515.html)</ref>.</note>
+               <note type="footnote" xml:id="note101">
+                  <ref target="#reference101">101</ref> <title>Polyanthea, hoc est, opus suauissimis floribus celebriorum sententiarium tam Graecarum quam Latinarum, exornatum</title> (Coloniae: apud Maternum Cholinum, 1567). Existe ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note102">
+                  <ref target="#reference102">102</ref> <title>Constitutiones Sanctorum Apostolorum doctrina Catholica</title> (Venetiis: ex officina Iordani Zileti, 1563). Existe ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note103">
+                  <ref target="#reference103">103</ref> <title>Vita Christi per Ludolphum Saxonium sacri ordinis Carthusiensium ex Euangeliis et scriptoribus orthodoxis, excerpta</title> (Venetiis: apud Georgium de Caballis, 1566). Existe ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note104">
+                  <ref target="#reference104">104</ref> <title>Epistolae D. Hieronymi Stridonensis et libri contra haereticos</title> (Romae: apud Paulum Manutium, Aldi f., 1566). Existe ejemplar digitalizado en Google Books. </note>
+               <note type="footnote" xml:id="note105">
+                  <ref target="#reference105">105</ref> <title>Epistolae B. Hieronymi...in libros tres distributae</title> (Dilingae: excudebat Sebaldus Mayer, 1565). Véase descripición bibliográfica en Swisscollections <ref target="https://swisscollections.ch/Record/991108530599705501">(https://swisscollections.ch/Record/991108530599705501)</ref>. Debajo de esta columna, se lee anotada por Ovando la suma del precio de los libros anteriores 34 fl. 4. </note>
+               <note type="footnote" xml:id="note106">
+                  <ref target="#reference106">106</ref> <title>S. Thomae Aquinatis praeclarissima Commentaria in duodecim libros metaphysicorum Aristo, cum duplici textus traslatione antiqua scilicet et noua recens addita</title> (Venetiis: apud Hieronymum Scotum, 1562). Vease descripción bibliográfica en Biblioteca Dixital de Galicia <ref target="http://www.galiciana.bibliotecadegalicia.xunta.es/es/consulta/registro.do?control=BDG201890450535">(http://www.galiciana.bibliotecadegalicia.xunta.es/es/consulta/registro.do?control=BDG201890450535)</ref>. Existe también referencia, sin digitalizar, en Google Books.</note>
+               <note type="footnote" xml:id="note107">
+                  <ref target="#reference107">107</ref> <title>S. Thomae Aquinatis in libros Aristotelis De generatione et corruptione castigatissima commentaria</title> (Venetiis: apud Hieronymum Scottum, 1565). Vease descripción bibliográfica y ejemplar digitalizado en Internet Archive <ref target="https://archive.org/details/ARes742184">(https://archive.org/details/ARes742184)</ref>.  </note>
+               
+               <note type="footnote" xml:id="note108">
+                  <ref target="#reference108">108</ref> <title>S. Thomae Aquinatis Commentaria quae extant, in eos, qui Parua naturalia Aristotelis dicuntur libros</title> (Venetiis : apud Hieronymum Scottum, 1566). Vease descripción bibliográfica en Biblioteca Dixital de Galicia <ref target="http://biblioteca.galiciana.gal/es/consulta/registro.do?id=375595">(http://biblioteca.galiciana.gal/es/consulta/registro.do?id=375595)</ref>. Existe también referencia, sin digitalizar, en Google Books.</note>
+               <note type="footnote" xml:id="note109">
+                  <ref target="#reference109">109</ref> <title>S. Thomae Aquinatis Commentaria in octo Physicorum Aristotelis libros, ex uetustissimo ac fidelissimo manu scripto exemplari, diligentissime castigata</title> (Venetiis: apud Iuntas, 1566). Existe ejemplar digitalizado en Google Books.</note>
+               <note type="footnote" xml:id="note110">
+                  <ref target="#reference110">110</ref> <title>D. Thomae Aquinatis, In libros Ethicorum Aristotelis ad Nicomacum expositio, cui triplicem textus interpretationem adiecimus</title> (Venetiis: apud Iuntas, 1566). Véase descripción bibliográfica en la web de la BNE <ref target="https://datos.bne.es/edicion/a5786147.html">(https://datos.bne.es/edicion/a5786147.html)</ref></note>
+               <note type="footnote" xml:id="note111">
+                  <ref target="#reference111">111</ref> <title>D. Thomae Aquinatis In libros de anima Aristotelis expositio cum triplici textus translatione antigua Argyropyli et Michaelis sophiani nuper addita</title> (Venetiis: apud Iuntas, 1565). Vease descripción bibliográfica en Biblioteca Dixital de Galicia <ref target="http://biblioteca.galiciana.gal/es/consulta/registro.do?id=378983">(http://biblioteca.galiciana.gal/es/consulta/registro.do?id=378983)</ref>. Existe también referencia, sin digitalizar, en Google Books.</note>
+               <note type="footnote" xml:id="note112">
+                  <ref target="#reference112">112</ref> <title>D. Tho. Aquinatis In Meteora Aristotelis commentaria, cum triplici textus interpretatione</title> (Venetiis: apud Iuntas, 1565). Vease descripción bibliográfica y ejemplar digitalizado en Internet Archive <ref target="https://archive.org/details/bub_gb_96dCm_41-G4C">(https://archive.org/details/bub_gb_96dCm_41-G4C)</ref>.  </note>
+               <note type="footnote" xml:id="note113">
+                  <ref target="#reference113">113</ref> <title>Aristotelis Stagiritae Politicorum siue de Republica libri octo, Leonardo Aretino interprete cum D. Thomae Aquitanis explanatione</title> (Venetiis: apud Iuntas, 1568). Vease descripción bibliográfica y ejemplar digitalizado en Biblioteca Virtual del Patrimonio Bibliográfico <ref target="https://bvpb.mcu.es/es/consulta/registro.do?id=464036">(https://bvpb.mcu.es/es/consulta/registro.do?id=464036)</ref>.  </note>
+               <note type="footnote" xml:id="note114">
+                  <ref target="#reference114">114</ref> <title>S. Thomae Aquinatis In libros Aristotelis De coelo et mundo commentaria</title> (Venetiis: apud Iuntas, 1568). Existe ejemplar digitalizado en Google Books.  </note>
+               <note type="footnote" xml:id="note115">
+                  <ref target="#reference115">115</ref> <title>Olympiodori philosophi Alexandrini in Meteora Aristotelis commentarii</title> (Venetiis: apud Aldi filios, 1551). Existe referencia a la obra, sin digitalizar, en Google Books.  </note>
+               <note type="footnote" xml:id="note116">
+                  <ref target="#reference116">116</ref> <title>In uniuersam Aristotelis Stagiritae logicam prolegomena, nunc multo quam ante limatius conscripta et edita, autore Gerardo Mathisio Geldriense</title> (Coloniae: excudebat Petrus Horst, 1565). Existe ejemplar digitalizado en Google Books.  </note>
+               <note type="footnote" xml:id="note117">
+                  <ref target="#reference117">117</ref> <title>Aristotelis De natura seu De rerum principiis libri VIII, in epitomam nunc recens contracti... authore Gerardo Mathisio Geldiense</title> (Coloniae: excudebat Petrus Horst, 1562). Existe ejemplar digitalizado en Google Books.  </note>
+               <note type="footnote" xml:id="note118">
+                  <ref target="#reference118">118</ref> <title>Porphirii philosophi, De non necandis ad epulandum animantibus libri IIII</title> (Florentiae: in officina Bernardi Iunctae, 1548). Vease descripción bibliográfica y ejemplar digitalizado en Internet Archive <ref target="https://archive.org/details/bub_gb_0wv9h6ND5_oC/page/n5/mode/2up">(https://archive.org/details/bub_gb_0wv9h6ND5_oC/page/n5/mode/2up)</ref>.  </note>
+               <note type="footnote" xml:id="note119">
+                  <ref target="#reference119">119</ref> <title>Aristotelis Quinque de animalium generatione libri ex interpretatione Theodori Gazae cum Philoponi seu Ioannis Grammatici commentariis </title> (Venetiis: per Ioannem Antonium ac frates De Sabio, 1526). Véase descripción bibliográfica y ejemplar digitalizado en <ref target="https://archive.org/details/bub_gb_nYcOf6TVsPgC">Internet Archive</ref>.  </note>
+               <note type="footnote" xml:id="note120">
+                  <ref target="#reference120">120</ref> <title>Aristotelis Stagiritae Moralia Nicomachia cum Eustratii, Aspasii, Michaelis Ephesii nonnullorumque aliorum Graecorum explanationibus</title> (Parisiis: apud Ioannem Roigny, 1526). Véase descripción bibliográfica y ejemplar digitalizado en Repositorio Documental de la Universidad de Valladolid <ref target="https://uvadoc.uva.es/handle/10324/760">(https://uvadoc.uva.es/handle/10324/760)</ref>. Debajo de esta columna se lee anotada por Ovando la suma del precio de los libros de Filosofía: 27 fl. 19.  </note>
+               <note type="footnote" xml:id="note121">
+                     <ref target="#reference121">121</ref> Aparecen a continuación unas cuentas de puño del propio Ovando, en las que suma los parciales anotados debajo de cada columna de libros y convierte el monto en maravedíes. </note>
+               
+                 
+               
+            </div>
+      </back>
+   </text>
+</TEI>
