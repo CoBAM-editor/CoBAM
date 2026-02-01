@@ -121,8 +121,7 @@
       <front>
          <p> Como se ha apuntado en la correspondencia anterior, BAM embarca el día 22 de abril en el puerto de Laredo con destino a Flandes. El mal tiempo arroja al humanista español hacia las islas de Irlanda e Inglaterra, que recorre de punta a punta durante varias jornadas, hasta poner finalmente pie en los Países Bajos el 16 de mayo. En esta su primera comunicación oficial con el Rey el comisionado refiere las diligencias realizadas tras su llegada a Amberes el 18 de mayo, destacando las recepciones oficiales del Gobernador General de los Países Bajos, el duque de Alba, y la administración local de la ciudad de Amberes, así como su presentación ante la Universidad Católica de Lovaina. </p>
       </front>
-      <body>
-                  
+      <body>     
          <div type="address">
             <pb n="f. [2v]" ed="0" facs="#foto4"/>
             <head>[Sobrescrito:]</head>
@@ -132,7 +131,6 @@
             <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
             <ab><app><lem wit="#O #E2">De Anvers a Su M<expan><ex>agesta</ex></expan>d. Arias Montano de <date when="1568-07-06">VI de julio 1568</date>. R<expan><ex>ecibid</ex></expan>a en <date when="1568-08-02">dos de agosto</date></lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app>.</ab>
          </div>
-         
          <div type="main_content">
                <pb n="f. [1r]" ed="O" facs="#foto1"/>
             <opener>S<expan><ex>acra</ex></expan> C<expan><ex>athólica</ex></expan> R<expan><ex>eal</ex></expan> M<expan><ex>agestad</ex></expan>:
