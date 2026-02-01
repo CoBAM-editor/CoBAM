@@ -12,7 +12,6 @@
                <resp>Edición crítica, traducción y notas</resp>
                <name>Jeanine De Landtsheer </name>
             </respStmt>
-            
          </titleStmt>
          <publicationStmt>
             <distributor>Universidad de Cádiz</distributor>
@@ -22,9 +21,7 @@
             <idno type="CoBAM">1568 08 07</idno>
          </publicationStmt>
          <notesStmt>
-            <note type="abstract">BAM greatly admires Clusius' erudition and virtue, and is willing to do whatever he can for him. He is going to resort to the influence of the secretary, to ensure the immunity of Clusius' maternal first cousin. Clusius must send the intermediation letter from BAM to said secretary, after having read and sealed it. The letter also mentions that BAM is supporting a possible immunity for Dodoens as well, which he hopes Clusio will like.
-               
-            </note>
+            <note type="abstract">BAM greatly admires Clusius' erudition and virtue, and is willing to do whatever he can for him. He is going to resort to the influence of the secretary, to ensure the immunity of Clusius' maternal first cousin. Clusius must send the intermediation letter from BAM to said secretary, after having read and sealed it. The letter also mentions that BAM is supporting a possible immunity for Dodoens as well, which he hopes Clusio will like. </note>
             <note type="incipit">Satis apud me momenti tua uirtus eruditioque habet...</note>
          </notesStmt>
          <sourceDesc>
@@ -41,7 +38,6 @@
                      </msIdentifier>
                   </msDesc>
                </witness>
-               
                <witness xml:id="E1"> <title>Virorum doctorum epistolae selectae ad Bilib. Pirkheimerum, Ioach. Camerarium, Car. Clusium et Iulium episc. Herbip. datae. Ex autographis nunc primum edidit et illustrauit Theo. Frid. Freytagius</title> (Lipsiae, 1831), pp. 90-91.</witness>
                <witness xml:id="E2">J. L. Barona - X. Gómez Font, <title>La correspondencia de Carolus Clusius con los científicos españoles</title>(Valencia, 1998), pp. 55-56.</witness>
                <witness xml:id="E3"> Carta de Arias Montano, Benito a Clusius, Carolus, 1568-08-07, en: Esther van Gelder (ed.), <title>Clusius correspondence. A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. http://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1183 (accessed: 15/04/2023).</witness>
@@ -58,8 +54,7 @@
             <p>Dirigido por Antonio Dávila Pérez.</p>
          </projectDesc>
          <editorialDecl>
-            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
-						P5</ref></p>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -74,8 +69,7 @@
                   <note>Carolus Clusius, Charles de l’Ecluse o l’Escluse (Arras, 19 de febrero de 1526-Leiden, 4 de abril de 1609), médico y botánico flamenco, profesor de Botánica en la Universidad de Leiden desde 1593. </note></person>
                <person xml:id="DodoneoRemberto">
                   <note>Remberto Dodoens, Dodonaeus o, castellanizado, Dodoneo (Leeuwarden, 1517-Leiden, 1585), médico y botánico asentado principalmente en Malinas hasta el saqueo de 1572, ejerció la cátedra de Medicina Patológica y Terapéutica en al Universidad de Leiden desde 1583 hasta su muerte. </note></person>
-              
-               </listPerson>
+            </listPerson>
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
@@ -86,44 +80,35 @@
             <correspAction type="received">
                <persName>Carlos Clusio</persName>
                <settlement>Malinas</settlement>
-            </correspAction>
-           
+            </correspAction>   
          </correspDesc>
                   <langUsage>
             <language ident="la" ana="source">Latín</language>
          </langUsage>
-        
-         </profileDesc>
+      </profileDesc>
       <revisionDesc status="approved">
          <change who="ADP" when="2023-02-14">Etiquetado inicial; con encabezado</change>
         </revisionDesc>
    </teiHeader>
-   
-   <text>  <group>
+   <text>  
+      <group>
       <text type="source">
-         
       <front>
          <p> El presente documento contiene la primera carta conservada entre BAM y el botánico flamenco Carlos Clusio. Del breve contenido de la carta se desprende que BAM, a instancias de Clusio en una carta anterior o de otra persona de su círculo, hizo de mediador entre la comunidad científica flamenca y las autoridades españolas, incluso desde los comienzos mismos de su estancia en Flandes, para tratar de conseguirles inmunidad ante las acusaciones de herejía que se sucedieron en los juicios promovidos por el duque de Alba tras los graves disturbios revolucionarios acaecidos en los Países Bajos en 1566. El breve billete de BAM venía acompañado de una carta de recomendación dirigida a Juan de Albornoz, secretario del duque de Alba, para conseguir la inmunidad de determinados miembros del círculo de Clusio. De esta carta no se ha podido localizar aún ningún testimonio manuscrito, ni original ni copia, pese a que algunas referencias bibliográficas apuntan a las Archivo Universitario de Wroclaw (Breslau) o a la propia Universidad de Leiden, donde se conserva el resto de las cartas cruzadas entre BAM y Clusio. Por otra parte, entre los testimonios de esta carta incluimos también, como no podía ser de otra manera, la edición digital incluida en la página web de Esther van Gelder (ed.), <title>Clusius correspondence: A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. <ref target=" http://clusiuscorrespondence.huygens.knaw.nl">http://clusiuscorrespondence.huygens.knaw.nl (última consulta:15/04/2023)</ref>, un proyecto colaborativo y en progreso desarrollado en el Huygens Instituut de Holanda. 
              </p>
       </front>
-      
          <body>       
          <div>
-              
             <opener><app><lem wit="#E1 #E4">B<expan><ex>enedictus</ex></expan> Arias Montanus C<expan><ex>arolo</ex></expan> Clusio doctissimo et charissimo S<expan><ex>alutem Dicit</ex></expan></lem> <rdg wit="#E2">Clusio doctissimo et charissimo s.</rdg> <rdg wit="#E3"> Carolo Clusio doctissimo et charissimo salutem Dicit.</rdg></app>.
             </opener>
             <p>[<hi rend="bold">1</hi>] Satis apud me momenti tua uirtus eruditioque habet, neque diuturnae familiaritatis et consuetudinis qua sese commendet indiget usu. Vtinam ego quantum tibi cupio <app><lem wit="#E1 #E3 #E4">praestare</lem> <rdg wit="#E2"> praestarer</rdg></app> possem; cognosceres profecto non nouum aut uulgarem amicum, id quod in rebus omnibus quae meae facultatis erunt, licet experiaris. [<hi rend="bold">2</hi>] Caeterum, quod ad consobrinae immunitatem pertinet, tantum praestare potero quantum gratiae apud <rs type="person" ref="#AlbornozJuande">secretarium</rs> (cuius in huiusmodi negotiis uoluntas ualet) tenebo, id quod mearum litterarum exitus indicabit, quas tu ad eum perferendas curabis, lectas prius tibi et (si placuerint) obsignatas. [<hi rend="bold">3</hi>] In quibus quod confirmandae <name type="person" ref="#DodoneoRemberto">Dodonaeo</name> nostro immunitatis curam quam iam suscepi sustinere uidear, spero neque tibi ingratum, neque causae tuae inutile, meo autem officio consentaneum futurum. </p>
             <closer>[<hi rend="bold">4</hi>]<salute><app><lem wit="#E1 #E3 #E4">Vale</lem> <rdg wit="#E2">Val</rdg></app></salute>. <name type="place">Antuerpiae</name>, <date when="1568-08-07">7 Id<expan><ex>us</ex></expan> August<expan><ex>as</ex></expan> 1568</date>. <signed> Tuus, <name type="person" ref="#AriasMontanoBenito">Arias Montanus</name></signed></closer>
-            
-            
-           
-     </div>
+         </div>
       </body>
       </text>
       <text type="translation">
          <body>       
             <div>
-               
                <opener>Benito Arias Montano saluda cordialmente al muy docto y al muy doctor y estimado señor Carlos Clusio.<ref target="#note1"
                   xml:id="reference1">1</ref>
                </opener>
@@ -134,9 +119,6 @@
                            xml:id="reference5">5</ref> que ya había tomado a mi cargo, no será desagradable para vuestra merced ni inútil para su causa, sino que más bien corresponde a mi deber. </p>
                <closer>[<hi rend="bold">4</hi>] Adiós. En Amberes, a 7 de agosto de 1568.  <signed> Suyo, Arias Montano<ref target="#note6"
                   xml:id="reference6">6</ref>   </signed></closer>
-               
-               
-               
             </div>
          </body>
       <back>
