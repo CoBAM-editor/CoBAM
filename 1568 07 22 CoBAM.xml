@@ -22,8 +22,7 @@
             <idno type="CoBAM">1568 07 22</idno>
          </publicationStmt>
          <notesStmt>
-            <note type="abstract">BAM has just received Zayas’ letter. He can not reply with a longer letter because he sends his anwer with the same postman who brought Zayas’ letter. Twelve days ago BAM wrote to the king and to Zayas. He asks Zayas to write a letter to Curiel urging him to lend Plantin the first amount of money for the Bible with the bond of the printer’s houses and the Bibles already printed. He sends his regards to Luis Manrique. He has come across better and cheaper paintings, as he will tell in a later letter.     
-               
+            <note type="abstract">BAM has just received Zayas’ letter. He can not reply with a longer letter because he sends his anwer with the same postman who brought Zayas’ letter. Twelve days ago BAM wrote to the king and to Zayas. He asks Zayas to write a letter to Curiel urging him to lend Plantin the first amount of money for the Bible with the bond of the printer’s houses and the Bibles already printed. He sends his regards to Luis Manrique. He has come across better and cheaper paintings, as he will tell in a later letter.    
             </note>
             <note type="incipit">Las cartas que traxo Noncarmes passaron de aquí a Bolduq...</note>
          </notesStmt>
@@ -54,8 +53,7 @@
             <p>Dirigido por Antonio Dávila Pérez.</p>
          </projectDesc>
          <editorialDecl>
-            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
-						P5</ref></p>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -134,7 +132,6 @@
             <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
             <ab><app><lem wit="#O #E2"><name type="place">Anvers</name> a <name type="person" ref="#ZayasGrabrielde">Çayas</name>. El doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> de <date when="1568-07-20">xx de julio 1568</date>. R<expan><ex>ecibid</ex></expan>a a <date when="1568-08-09">ix de agosto</date>.</lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app></ab>
          </div>
-         
          <div type="main_content">
                <pb n="f. [1r]" ed="O" facs="#foto1"/>
             <opener>Ill[ustr]e S[eñ]or:
@@ -158,10 +155,8 @@
                   <ref target="#reference3">3</ref> Juan de Albornoz, originario de Cuenca y protegido de Zayas, era secretario del duque de Alba desde 1565. La correspondencia que mantiene con la corte española, conservada en el Archivo General de Simancas y publicada parcialmente en <title>Codoin</title> y Carvajal, es una fuente de documentación básica en torno al conflicto de los Países Bajos. Albornoz, que toma a su cargo la tarea de buscarle a BAM, nada más llegar a Amberes, un alojamiento «que no le cueste blanca», venerará la grandeza del frexnense durante el resto de su vida, de ahí que reproche a Zayas el que se hubieran mostrado tan tacaños en la asignación de salario a BAM, dada la carestía de recursos necesarios para la vida en Flandes (cf. Carvajal, «Elogio histórico», pp. 150-151, doc. nº 28). También resultan reveladores los contactos epistolares entre Albornoz y BAM: fruto de uno de ellos es la carta del primero a Zayas, del 19 de marzo de 1572, donde, a instancias del propio BAM, Albornoz apremia al secretario del rey para que se resuelva la partida de BAM a Roma (cf. Carvajal, «Elogio histórico», p. 164, doc. nº 38). Por otro lado, la carta de BAM a Albornoz del 16 de noviembre de 1571 es uno de los principales documentos para el cabal estudio de las motivaciones, confección y repercusión del Index expurgatorius de 1571 (cf. Carvajal, «Elogio histórico», pp. 154-155, doc. nº 33). Por último, citamos aquí el interesante bloque de correspondencia entre Albornoz y BAM conservado en la Biblioteca del Palacio de Liria (ADA, C. 28-168ss): estas cartas son testimonios de la profunda amistad que unía al capellán del rey y el brazo derecho del duque de Alba. A él se dirigía BAM para negociar todos los asuntos que tocaban a la corte de Bruselas, pidiéndole también favores personales como la contratación de criados; Albornoz era también quien informaba a BAM de lo que pasaba en España «porque no teniéndolo por mano de V[uestra] M[erced] o no lo recibo o, si hay algo que oyga, no lo creo» (cf. 1571 11 24). </note>  
                <note type="footnote" xml:id="note4">
                   <ref target="#reference4">4</ref> Cf. <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-07-06">1568 07 06</ref>.  </note>
-              
                <note type="footnote" xml:id="note5">
                   <ref target="#reference5">5</ref>  El Rey había exigido a Plantino una garantía por el dinero que le avanzaba sobre los trabajos de la Biblia. Tras las pertinentes negociaciones (cf. carta de Plantino a Zayas, del 11 de junio de 1568, en <title>CP</title>, I, 277-280, nº 127) se aceptó que las páginas de la Biblia que salieran de las prensas quedarían en poder de Jerónimo Curiel y que, hasta que finalizara la obra, serían garantía de devolución la casa y propiedades de Plantino (cf. carta de Plantino a Zayas, del 27 de agosto de 1568, en <title>CP</title>, II, 8, nº 154). </note> 
-               
                <note type="footnote" xml:id="note6">
                   <ref target="#reference6">6</ref> Traducción: «como no debe ser en los negocios de los mercaderes». </note>     
                <note type="footnote" xml:id="note7">
