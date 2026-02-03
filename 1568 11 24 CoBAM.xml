@@ -1,0 +1,149 @@
+﻿
+<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15681124">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Juan de Maldonado (París) a Benito Arias Montano (Amberes) - Entre 9 y el 24 de noviembre de 1568 </title>
+            <author>Juan de Maldonado</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">[1568 11 09 - 1568 11 24]</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract"> They need in Paris someone who provides them with the credit necessary to buy books. It would be also convenient to hire a person in charge of making copies of the original books that can not be sold. Francés de Alava also recommends to print books in France with Philip II’s ex libris. BAM will receive a list of books than can be bought in France.</note>
+            <note type="incipit">Que para comprar los libros que se suelen vender de lance...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="Cap">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(Cap) AGS, E 583/138.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 194-195.</witness>
+               <witness xml:id="E2">G. Antolín, <title>Catálogo de códices latinos de la Real Biblioteca de El Escorial</title> (Madrid: Imp. Helénica, 1923), V, pp. 27-8.</witness>
+               <witness xml:id="E3"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 154-157.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 194-195;</bibl><bibl type="inextenso" n="secondPrint">(E2) Antolín, <title>Catálogo de códices latinos</title>, V, 27-28;</bibl>
+            <bibl type="inextenso" n="thirdPrint"> (E3) Domínguez, <title>Correspondencia</title>, I, 154-157.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MaldonadoJuan">
+                  <note>Juan de Maldonado, 1533-1583, teólogo jesuita español, exegeta que desempeñó gran parte de su actividad docente y escrituraria en París y otros puntos de Francia.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="AguilónPedrode">
+                  <note>Secretario de la embajada en Francia de Felipe II; autor de <title>Historia del Duque Carlos de Borgoña, bisabuelo del Emperador Carlos V</title>, impresa en Pamplona en 1586 </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="AlavaFrancesde">
+                  <note>Francés de Álava (1519-1586, embajador de Felipe II en Francia.  </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Juan de Maldonado</persName>
+               <settlement>París</settlement>
+               <date when="1568">Entre el 9 y el 24 de noviembre de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Madrid</settlement>
+               <date when="1568">Poco después del 24 de noviembre de 1568</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Copia de autor desconocido</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-09-18">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/09/AGS-E-583-138-1-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/09/AGS-E-583-138-2-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>En las primeras instrucciones de Felipe II a BAM antes de su partida a Amberes, el rey ya solicitaba a su capellán que se coordinara con Francés de Álava, embajador en París, para la adquisición de libros y manuscritos destinados a la Biblioteca del Escorial. Don Francés habría de enviar listados de libros en venta a BAM para que este emitiera su juicio como experto bibliófilo y, además, no se duplicaran títulos en las compras realizadas en Amberes. Pese a las instrucciones del monarca, parece que la correspondencia entre Francés de Álava y BAM no fue muy frecuente; el biblista denuncia en 9 de noviembre de 1568 (1568 11 09) que ha escrito al embajador sobre la compra de libros y no ha obtenido respuesta.</p> 
+           <p> Esta comunicación, en concreto, consiste en una serie de advertimientos, avisos o consejos que el jesuita Juan de Maldonado, a instancias del propio Francés de Álava y, posiblemente, junto a una carta suya, dirigió a BAM acerca de la adquisición de libros para El Escorial. De esta comunicación solo se ha conservado el resumen en forma de capítulos que Francés de Álava envió a la Corte junto a su carta a Zayas del 24 de noviembre de 1568 (cf. <title>Archivo Documental Español</title>, XVI, 379, citado por Domínguez, <title>Correspondencia</title>, I, p. 154), documento este que quedó archivado en Simancas.   </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [1v]" ed="Cap" facs="#foto2"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Los advertimientos que don <name type="person" ref="#AlavaFrancesde">Françés</name> embió al doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> sobre la compra de los libros para el Escurial.<ref target="#note1"
+               xml:id="reference1">1</ref>  </ab>
+         </div>
+         <div type="main_content">
+               <pb n="f. [1r]" ed="Cap" facs="#foto1"/>
+            <opener>Los avisos que se escrivieron al d<expan><ex>octor</ex></expan> <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> por mandado del señor <rs type="person" ref="#AlavaFrancesde">embaxador</rs><ref target="#note2"
+               xml:id="reference2">2</ref> acerca de los libros que compra son estos.                       </opener>
+            <p>1. Que para comprar los libros que <app><lem wit="#Cap #E1 #E3">se</lem> <rdg wit="#E2"><hi rend="italic">omisit</hi></rdg></app> suelen vender de lance, sería menester que imbiase aquí crédito, y se diese cargo <supplied>a</supplied> alguna persona que los detuviese, como sería el secr<expan><ex>etari</ex></expan>o <name type="person" ref="#AguilónPedrode">Aguilón</name>,<ref target="#note3"
+               xml:id="reference3">3</ref> porque en un lance no se puede esperar la respuesta de <name type="place">Anvers</name>.</p> 
+            <p>2. <app><lem wit="#Cap #E3">Que</lem> <rdg wit="#E1 #E2"><hi rend="italic">omiserunt</hi></rdg></app> porque los más y mejores libros deste reyno no se darán a vender, pero sí a trasladar, sería menester quel rey tuviese aquí algunas personas que no se occupassen en otra cosa que en escrivir semejantes libros. </p>
+            <p>3. <app><lem wit="#Cap #E3">Que</lem> <rdg wit="#E1 #E2"><hi rend="italic">omiserunt</hi></rdg></app> porque aquí en <name type="place">París</name> salen cada día a luz muchos libros nuevos <app><lem wit="#Cap #E1 #E2">en</lem> <rdg wit="#E3">de</rdg></app> diversas librerías, y podría ser que <app> <lem wit="#Cap #E1 #E3">en</lem> <rdg wit="#E2"><hi rend="italic">omisit</hi></rdg></app> aviendo comprado el rey un libro de precio, lo <app><lem wit="#Cap #E3">imprimiesen</lem> <rdg wit="#E1 #E2">imprimieren</rdg></app> aquí por otra parte, con lo qual se desminuiría la auctoridad y estima de los libros del rey, se podrían imprimir algunos en acabándose de trasladar diziendo <foreign>Ex nobili et locuplete bibliotheca Philippi regis, etc.</foreign><ref target="#note4"
+               xml:id="reference4">4</ref>  para hazer juntamente mucho provecho a la Yglesia, y juntamente afamar la nueva librería y occurrir al incoveniente sobredicho. </p>
+            <p><add hand="#FelipeII" place="margin">Esto no ay para qué se haga, y así se avise </add>
+            </p>
+            <p> 4. Embiósele también aviso de algunos libros en particular y que, quando fuese menester, se le podrían embiar los catálogos de todos los libros que ay en este reyno.</p>
+ </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Estos advertimientos fueron escritos por el teólogo y jesuita español Juan de Maldonado (1533-1583), quien por estas fechas enseñaba Teología en la Universidad de París con gran éxito.    </note>
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Don Francés de Álava. Véase nota bibliográfica en 1568 03 25a.    </note>
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Pedro de Aguilón, secretario de embajada en Francia por el rey Felipe II. Es autor de una <title>Historia del duque Carlos de Borgoña, bisabuelo del emperador Carlos Quinto</title> (Pamplona: Thomas Porralis, 1586 (1587)). En la Biblioteca de El Escorial se conserva una obra manuscrita con el título <title>Petri Aguiloni iunioris Hispanica uersio libri inscripti. Liber philosophiae amoris a Raimundo Lullio Latina lingua olim compositi</title>, en cuarto, escrito en 1570. Cf. Félix de Latassa y Ortiz, <title>Biblioteca nueva de los escritores aragoneses que florecieron desde 1500 a 1599</title> (Pamplona, 1798), I, 464-465.  </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Traducción: «De la famosa y rica biblioteca del rey Felipe». El texto en latín aparece subrayado en el manuscrito por la mano de Felipe II quien, como se consigna en la adición señalada en verde en nuestra edición, no ve la conveniencia de esta medida, por lo que ordena que no se lleve a cabo. </note> 
+            </div>
+      </back>
+   </text>
+</TEI>
