@@ -1,0 +1,165 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15680831">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Carolus Clusius (Malinas) - 31 de agosto de 1568 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Jeanine De Landtsheer </name>
+            </respStmt></titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 08 31</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Because of his numerous obligations BAM hardly found the time to write the letter Clusius asked for. He must read it and, if he is satisfied, seal it and bring it to its destination. Greetings to Mr. Brancio. </note>
+            <note type="incipit">Maximis occupationibus ita distinebar cum literas tuas acciperem...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Netherlands</country>
+                        <settlement>Leiden</settlement>
+                        <msName>Universiteitsbibliotheek Leiden</msName>
+                        <altIdentifier>
+                           <idno>(O) LUB, Ms. Vulcanius, 101,1 </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> J. L. Barona - X. Gómez Font, <title>La correspondencia de Carolus Clusius con los científicos españoles</title>(Valencia, 1998), p. 56.</witness>
+               <witness xml:id="E2">Carta de Arias Montano, Benito a Clusius, Carolus, 1568-08-31, en: Esther van Gelder (ed.), <title>Clusius correspondence. A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1178 (accessed: 30/04/2023).</witness>
+               <witness xml:id="E3">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 104-105.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firsPrint">(E1) Barona-Gómez, <title>La correspondencia de Carolus Clusius</title>, p. 56;</bibl>
+            <bibl type="inextenso" n="digitalEdition"> (E2) van Gelder (ed.), <title>Clusius correspondence</title>, <ref target="https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1178 "></ref>https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1178 (última consulta: 25/04/2023);</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E3) Domínguez, <title>Correspondencia</title>, I, 104-105.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="ClusioCarlos">
+                  <note>Carolus Clusius, Charles de l’Ecluse o l’Escluse (Arras, 19 de febrero de 1526-Leiden, 4 de abril de 1609), médico y botánico flamenco, profesor de Botánica en la Universidad de Leiden desde 1593. </note></person>
+               <person xml:id="BrancioJeande">
+                  <note> Jean de Brancio, noble residente en Malinas. Botánico. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1568-08-31">31 de agosto de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Carlos Clusio</persName>
+               <settlement>Malinas</settlement>
+               <date when="1568-09-01">1 de septiembre de 1568</date>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Carlos Clusio</persName>
+               <settlement>Malinas</settlement>
+               <date when="1568-08">Agosto de 1568</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-02-14">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/05/LUB-Ms.-Vulcanius-101-1-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/05/LUB-Ms.-Vulcanius-101-1-2v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>  <group>
+      <text type="source">
+         <front>
+         <p> El presente documento constituye la primera carta original conservada entre BAM y Carlos Clusio. En el testimonio de la Universidad de Leiden se aprecian aún restos del sello. Los folios [1v] y [2r] están en blanco. Esta carta fue recibida por Clusio un día después de que BAM la enviara desde Amberes y parece responder a otra carta perdida de Clusio, enviada también pocos días antes, donde el erudito belga insistía a BAM sobre el asunto de la inmunidad de parientes y conocidos, de lo que ya se trataba en la carta 1568 08 07. Por otra parte, entre los testimonios de esta carta incluimos también la edición digital incluida en la página web de Esther van Gelder (ed.), <title>Clusius correspondence: A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. <ref target=" http://clusiuscorrespondence.huygens.knaw.nl">http://clusiuscorrespondence.huygens.knaw.nl (última consulta:15/04/2023)</ref>, un proyecto colaborativo y en progreso desarrollado en el Huygens Instituut de Holanda. 
+             </p>
+      </front>
+         <body> 
+            <div type="address">
+               <pb n="f. [2v]" ed="0" facs="#foto2"/>
+               <head>[Sobrescrito:]</head>
+               <ab>Doctissimo et charissimo uiro <name type="person" ref="#ClusioCarlos">Carolo Clusio</name>. <name type="place"><choice><sic>Mecliniam</sic> <corr>Mechliniam</corr></choice></name>. </ab>
+            </div>
+            <div type="anotation1">
+               <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+               <ab><app><lem wit="#O #E3"><date when="1568">1568</date>. <name type="person" ref="#AriasMontanoBenito">Ariae Montani</name></lem> <rdg wit="#E1 #E2"><hi rend="italic">omiserunt</hi></rdg></app>.</ab></div>
+            <div type="anotation2">
+               <head>[Anotado por otra mano, bajo el sobrescrito:]</head>
+               <ab><date when="1568">1568</date>. <app><lem wit="#O #E2 #E3"><name type="place">Antuerpia</name></lem> <rdg wit="#E1"> Antuerpiae</rdg></app>, <date when="1568-08-31">31 Augusti</date>. Accepi <app><lem wit="#O #E2 #E3"><name type="place">Mechliniae</name></lem> <rdg wit="#E1"> Mechliniam</rdg></app> <date when="1568-09-01">postridie</date>.</ab></div>
+            <div type="main_content">
+               <pb n="f. [1r]" ed="0" facs="#foto1"/>
+               <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>ico</ex></expan>.            </opener>
+               <p>[<hi rend="bold">1</hi>] Maximis occupationibus ita <app><lem wit="#O #E2 #E3">distinebar</lem> <rdg wit="#E1">distrahebar</rdg></app> cum literas tuas acciperem, ut uix epistolae quam exigis tempus <app><lem wit="#O #E3">habuerim</lem> <rdg wit="#E1 #E2"><hi rend="italic">non distinxerunt</hi></rdg></app>; quam abs te lectam et signatam si placuerit, perferendam curabis, non inutilem ut spero futuram. [<hi rend="bold">2</hi>] Dominum <name type="person" ref="#BrancioJeande">Brancionem</name> meo nomine saluta et uale. </p>
+               <closer>[<hi rend="bold">3</hi>] <name type="place">Antuerpiae</name>, <date when="1568-08-31">prid<expan><ex>ie</ex></expan> Cal<expan><ex>endas</ex></expan> Septem<expan><ex>bres</ex></expan> 1568</date>. <app><lem wit="#O #E2 #E3">Tuus ex animo <name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedictus</ex></expan> Arias Montanus تلميد </name></lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app></closer>
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <div type="address">
+               <pb n="f. [2v]" ed="0" facs="#foto2"/>
+               <head>[Sobrescrito:]</head>
+               <ab>Al muy docto y apreciado señor Carlos Clusius. Malinas.<ref target="#note1"
+                  xml:id="reference1">1</ref> </ab>
+            </div>
+            <div type="anotation1">
+               <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+               <ab>1568. De Arias Montano.</ab></div>
+            <div type="anotation2">
+               <head>[Anotado por otra mano, bajo el sobrescrito:]</head>
+               <ab>1568. Amberes, 31 de agosto. La recibí en Malinas el día siguiente.</ab>
+            </div>
+            <div type="main_content">
+               <opener>Un saludo muy cordial.          </opener>
+               <p>[<hi rend="bold">1</hi>] Al recibir la carta de vuestra merced me encontraba tan atareado con ocupaciones importantísimas que apenas tuve tiempo para la carta que pide; esta, tras leerla y firmarla, si le parece bien, encárguese de encaminarla, pues no será inútil, según espero.<ref target="#note2"
+                  xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Al señor de Brancion<ref target="#note3"
+                  xml:id="reference3">3</ref> salúdelo en mi nombre y tenga salud vuestra merced.</p>
+               <closer>[<hi rend="bold">3</hi>] Amberes, 31 de agosto de 1568. Suyo de corazón,   <signed> B[enito] Arias Montano, condíscípulo.  </signed></closer>
+            </div>
+         </body>
+         <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> En la edición de Barona y Gómez Font el texto del sobrescrito de la carta es situado en el encabezamiento de la misma: «Doctissimo D. Carolo Clusio amico charissimo. Mecliniam. S. P. D.» (p. 58).     </note>   
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Recordemos que en su carta a Clusio del 7 de agosto (<ref target="https://lacorrespondenciadebenitoariasmontano.online/en/?page_id=2905/">1568 08 07</ref>) BAM anunciaba al científico belga una carta de recomendación para conseguir la inmunidad de su prima hermana ante las medidas que el duque de Alba estaba tomando contra los protestantes. Esta misiva es la que parece reclamar Clusio en su carta (perdida, por cierto), a la que responde aquí BAM.  </note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Juan Brancio (Jean de Brancion), noble de Malinas, gran interesado en las plantas. Después de que Clusio regresó de España en 1565, vivió durante un año en Brujas, con Charles de St. Odomarus. Más tarde se mudó a Malinas y se sirvió de la hospitalidad de Brancion hasta que el emperador Maximiliano II le invitó a Viena en 1573.   </note> 
+            </div>  
+         </back>
+      </text>
+   </group>
+   </text>
+</TEI>
