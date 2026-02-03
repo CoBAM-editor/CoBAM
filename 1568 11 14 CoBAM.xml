@@ -1,0 +1,177 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15681114">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Guillermo D. Lindano (La Haya) a Benito Arias Montano [Amberes] - 14 de noviembre de 1568 </title>
+            <author>Guillermo D. Lindano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 11 14</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">While working on the second volume of his <title>Apologeticum</title>, a question arose to Lindanus dealing with a passage of Ecclesiasticus 16, [14]. In this letter Lindanus asks if the Greek manuscripts sent from Rome to make up the edition of the Polyglot present a reading different from the most common text, namely, «every man shall receive according to his works».                     
+            </note>
+            <note type="incipit">Si uales, magnifice D[omine] D[octor], ex animo gratulor.</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 153r-[154v].</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 106-109, nº 10.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 146-153</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 106-109; </bibl><bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 146-153.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="LindanoGuillermo">
+                  <note>Wilhelm Van der Lindt nace en 1525 en Dordrecht y estudia en Lovaina en los 40. Entre 1554 y 1557 enseñó Teología en Dillingen para convertirse en 1577 en canónigo y arcediano del obispado de Utrecht y vicario general de la sede de Leeuwarden. Su extraordinaria eficacia le llevó a ser consagrado obispo de Rurmond el 14 de abril de 1562, en Bruselas. En 1578 hizo un viaje a Roma para exponer al Papa Gregorio XIII el estado de los Países Bajos; el Pontífice le nombra asistente al trono pontifical. Después de tres meses en Roma, Lindano embarca hacia España, de donde regresa en 1579. En 1584 vuelve a Roma, donde, durante el papado de Sixto V, se ocupa de estudios filosóficos y de investigaciones de antiguos manuscritos: en 1588 se le llamó a ocupar el obispado de Gante, vacante después de la muerte de Cornelio Jansenio (muerto en 1575). Lindano fallece el 2 de noviembre de 1588, tres meses después de su nominación. Entre sus muchas obras, mencionamos el <title>De optimo genere interpretandi scripturas</title> (Colonia, 1558), <title>Apologeticum ad Germanos, pro religionis Catholicae pace atque solida ecclesiarum in uero Christi Iesu Euangelio concordia</title>, 3 vols. (Amberes, 1568-1570), <title>Paraphrasis et castigationes in psalmum 118, cum isagoge et oratione parascenastica in eumdem</title>. </note></person> 
+               <person xml:id="RafelengioFrancisco">
+                  <note>Francisco Rafelengio (1539-1597) quien realizó sus estudios en Gante y Nuremberg, donde se inició en el mundo de los negocios, para pasar a París, al Colegio de Francia, donde se especializa en el estudio de las lenguas clásicas y orientales. Hacia 1563 llega a Amberes y conoce a Plantino, quien le confió un puesto de corrector el 12 de marzo de 1564. En 1565 contrajo matrimonio con la hija mayor del impresor. Como librero, impresor y editor trabajó en Amberes entre 1575 y 1585, y en Leiden entre 1585 y 1597.  </note></person> 
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Guillermo D. Lindano</persName>
+               <settlement>La Haya</settlement>
+               <date when="1568-11-14">14 de noviembre de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-07-07">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/07/KBS-Ms-A902-f-153r-scaled.jpg"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/07/KBS-Ms-A902-f-154v-scaled.jpg"/>
+   </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+   <front>
+         <p> Durante los años 1568-1569, Plantino le imprime a Lindano los dos volúmenes de que constaba la primera parte de su <title>Apologeticum ad Germanos</title>. El segundo de estos volúmenes ya estaba impreso en febrero del año 1569, y siempre fueron considerados y vendidos ambos volúmenes como una unidad, por lo que no resulta probable que el obispo de Ruremonde se refiera aquí a ese trabajo, sino más bien a la segunda parte de la obra, titulada <title>Altera pars apologetici ad Germanos, pro religionis catholicae pace, atque solida ecclesiarum in vero Christi Jesu Evangelio concordia</title>, cuya impresión se acabó en 1570.</p>
+         <p>Para la correcta comprensión de esta carta, debemos tener presente que Lindano le pide a BAM que compruebe un pasaje del Eclesiástico en los diversos códices griegos que se habían reunido para la preparación de la Políglota Regia. A su vez, BAM remitirá la carta, con una breve anotación marginal, a Francisco Rafelengio, el yerno de Plantino, para dar satisfacción a la petición del obispo. Una segunda anotación marginal ha sido añadida por Rafelengio, en la que da respuesta a la solicitud de BAM. El hecho de que Rafelengio tenga los manuscritos griegos nos permite conjeturar que tal vez se estaría ocupando de fijar el texto griego. Asimismo podemos suponer, a partir del testimonio de esta carta, que BAM no frecuentaba a diario los talleres de Plantino, donde vivía Rafelengio.</p>
+         <p>La numeración de este documento en el manuscrito de Estocolmo registra la incidencia de que el segundo folio del pliego, donde aparece el sobrescrito, que debería ser el folio 154, no ha sido numerado. El primer folio de la carta siguiente recibe esa numeración. Por ello nosotros hemos optado por registrar entre corchetes el folio 154. </p>
+      </front>
+         <body> 
+            <pb n="f. 154v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Magnifico atque cla<expan><ex>rissimo</ex></expan> u<expan><ex>iro</ex></expan> d<expan><ex>omino</ex></expan> <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name>.               </ab>
+            </div>       
+            <div type="anotation">
+               <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#LindanoGuillermo">Willelmus Lindanus</name>, epis<expan><ex>copus</ex></expan> <app><lem wit="#O #E2">Ruremundensis</lem> <rdg wit="#E1">Ruraemundensis</rdg></app>, ex <name type="place">Haga <app><lem wit="#O #E2"> Co<expan><ex>mitis</ex></expan></lem> <rdg wit="#E1">Co<expan><ex>mite</ex></expan></rdg></app></name> <date when="1568-11-14">14 nouembris 1568</date>. De uersione loci Ecclesiastici <app><lem wit="#E1">16</lem> <rdg wit="#O #E2">18</rdg></app>.</ab>
+            </div>       
+            <div type="main_content">
+               <pb n="f. 153r" ed="O" facs="#foto1"/>
+               <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>.    </opener>
+               <p>[<hi rend="bold">1</hi>] Si uales, mag<expan><ex>nifi</ex></expan>ce d<expan><ex>omine</ex></expan> d<expan><ex>octor</ex></expan>, ex a<expan><ex></ex></expan>n<expan><ex></ex></expan>i<expan><ex>m</ex></expan>o gratulor. [<hi rend="bold">2</hi>] Domum reuersus cum <title>Apologetici</title> nostri <title>pro religionis concordia</title> tomum alterum absoluere studeremus, nodus te uindice dignus incidit. [<hi rend="bold">3</hi>] Cum enim codices Graeci nobis uisi, etiam Complutenses, cap<expan><ex>ite</ex></expan> 16 <title>Ecclesiastici</title> uarient a Latina uulgata editione: «omnis misericordia faciet cuique locum secundum meritum operum suorum»;  optarim ut mag<expan><ex>nifi</ex></expan>ca d<expan><ex>ominatio</ex></expan> u<expan><ex>estra</ex></expan> non grauetur codices <name type="place">Roma</name> missos aliosue Graecos tuos consulere an ulli tui uarient a uulgatis Graecis: ἕκαστoς κατὰ τὰ ἔργα αὐτoῦ εὑρήσει.   </p>
+               <p><add hand="#AriasMontanoBenito" place="margin">Curabis, amabo, charissime Francisce, conferre hunc locum et si quid dignum scriptu inuenies, in tergo huius epistolæ exscriptum ad me mittes</add> </p><p><add hand="" place="margin">Exemplar Romanum non habet aliter ἕκαστoς κατὰ τὰ ἔργα αὐτoῦ εὑρήσει</add> </p> <p>[<hi rend="bold">4</hi>] Noster legisse uidetur: κατὰ τὴv ἀξίαv τῶν ἔργωv, aut forte κατὰ τὸ ἀξίωμα τῶν ἔργωv.  </p>
+               <p>[<hi rend="bold">5</hi>] Si quid tuis in codicibus repereris quod hanc uetustam Graecorum lectionem queat confirmare, nobis pergratum fecerit mag<expan><ex>nifi</ex></expan>ca u<expan><ex>estra</ex></expan> d<expan><ex>ominatio</ex></expan>, si communicare non grauabitur.</p>
+               <p>[<hi rend="bold">6</hi>] Boni, quaeso, consule nostram hanc libertatem, quod tua studia interpellare non uereor; fretus enim tua humanitate non dubitaui hasce ad te dare, quo nos tuis studiis deuotissimos magis tibi nouo beneficio deuincires. </p>
+               <closer>[<hi rend="bold">7</hi>] <salute>Vale diu incolumis in Chr<expan><ex>ist</ex></expan>o Iesu.</salute> Ex <name type="place">Hagha <app><lem wit="#O #E2"> Co<expan><ex>mitis</ex></expan></lem> <rdg wit="#E1">Co<expan><ex>mite</ex></expan></rdg></app></name>, <date when="1568-11-14">14 no<expan><ex>uembris</ex></expan> <app><lem wit="#O #E2">a<expan><ex>nn</ex></expan>o</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> 68</date>.
+                  M<expan><ex>agnifi</ex></expan>cae u<expan><ex>estrae</ex></expan> d<expan><ex>ominationi</ex></expan> ex animo dediti<expan>ssimus</expan>
+                  <signed><name type="person" ref="#LindanoGuillermo">Wilh<expan><ex>elmus</ex></expan> Lindanus</name>, episcopus Ruræmunde<expan><ex>nsis</ex></expan>.</signed></closer>      
+               <postscript>
+                  <head>[Posdata:]</head>
+                  <p>[<hi rend="bold">8</hi>] <name type="person" ref="#PlantinoCristobal">Plantino</name> nostro mandauimus ut mag<expan><ex>nifi</ex></expan>cae u<expan><ex>estrae</ex></expan> d<expan><ex>ominationi</ex></expan> exemplar nostri <title>Apologetici</title> daret nostro nomine quo pignus aliquod amicitiae nostrae extaret.</p>
+               </postscript>
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <pb n="f. 154v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al magnífico y preclaro varón, el señor Benito Arias Montano.              </ab>
+            </div>       
+            <div type="anotation">
+               <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+               <ab> Guillermo Lindano,<ref target="#note1" xml:id="reference1">1</ref> obispo de Ruremonde, desde La Haya, a 14 de noviembre de 1568. Acerca de la traducción de un pasaje del capítulo 16 del Eclesiástico. </ab>
+            </div>       
+            <div type="main_content">
+               <pb n="f. 153r" ed="O" facs="#foto1"/>
+               <opener>Un cordial saludo.    </opener>
+               <p>[<hi rend="bold">1</hi>] Si se encuentra bien, magnífico señor doctor, me alegro sinceramente. [<hi rend="bold">2</hi>] Tras regresar a casa y ponerme manos a la obra para acabar la segunda parte de nuestro <title>Apologético en favor de la concordia de la religión</title>, me ha surgido un problema digno de su intervención. [<hi rend="bold">3</hi>] Pues dado que todos los códices griegos que hemos examinado, incluidos los complutenses, discrepan de la lectura de la Vulgata en el capítulo 16 del <title>Eclesiástico</title>: «omnis misericordia faciet cuique locum secundum meritum operum suorum»;<ref target="#note2" xml:id="reference2">2</ref> me gustaría que su magnífica señoría me comprobara en los códices griegos enviados desde Roma,<ref target="#note3" xml:id="reference3">3</ref> u otros que estén en su poder, si alguno discrepa respecto al arquetipo griego: ἕκαστoς κατὰ τὰ ἔργα αὐτoῦ εὑρήσει<ref target="#note4" xml:id="reference4">4</ref> </p>
+               <p>[<hi rend="bold">4</hi>] Nuestro códice parece haber leído  κατὰ τὴv ἀξίαv τῶν ἔργωv, o tal vez, κατὰ τὸ ἀξίωμα τῶν ἔργωv «según la categoría de sus obras».<ref target="#note5" xml:id="reference5">5</ref></p>
+               <p>[<hi rend="bold">5</hi>] Si encontrara en sus manuscritos algo que confirme esta antigua lectura griega, le quedaríamos muy agradecidos a su señoría si no rehúsa comunicárnoslo.</p>
+               <p>[<hi rend="bold">6</hi>] No tome a mal, se lo ruego, nuestro atrevimiento de interrumpir sus estudios; pues confiado en su humanidad, no he vacilado en remitirle esto, con lo que nos tendrá más obligados aún con este nuevo favor que nos hace a los que ya de por sí somos adeptos a sus estudios. </p>
+               <closer>[<hi rend="bold">7</hi>] <salute>Que Nuestro Señor Jesucristo le dé salud por mucho tiempo</salute>. Desde La Haya, a 14 de noviembre del año 68.
+                  Completamente afectísimo a su magnífica señoría, 
+                  <signed>Guillermo Lindano, obispo de Ruremonde.</signed></closer>      
+               <postscript>
+                  <head>[Posdata]</head>
+                  <p>[<hi rend="bold">8</hi>] Le hemos encargado a nuestro amigo Plantino que en nuestro nombre le regale a su magnífica señoría un ejemplar del <title>Apologético</title> para que medie alguna prenda de nuestra amistad.</p>
+               </postscript>
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Wilhelm Van der Lindt nace en 1525 en Dordrecht y estudia en Lovaina en los 40, siendo uno de los más brillantes estudiantes del Collegium Trilingue; después pasa algún tiempo en Francia perfeccionando el griego y el hebreo. Trabajó durante algún tiempo en la universidad creada en Dillingen por el cardenal Otto Truchsess, obispo de Augsburgo, para la formación de los clérigos, habiendo alcanzado mientras tanto el doctorado de Teología (1556). Entre 1554 y 1557 enseñó Teología en Dillingen para convertirse en 1577 en canónigo y arcediano del obispado de Utrecht y vicario general de la sede de Leeuwarden. Su extraordinaria eficacia le llevó a ser consagrado obispo de Rurmond el 14 de abril de 1562, en Bruselas. La revolución y los problemas religiosos le impidieron residir en Rurmond durante siete años. En 1578 hizo un viaje a Roma para exponer al Papa Gregorio XIII el estado de los Países Bajos; el Pontífice le nombra asistente al trono pontifical. Después de tres meses en Roma, Lindano embarca hacia España, de donde regresa en 1579. En 1584 vuelve a Roma, donde, durante el papado de Sixto V, se ocupa de estudios filosóficos y de investigaciones de antiguos manuscritos: en 1588 se le llamó a ocupar el obispado de Gante, vacante después de la muerte de Cornelio Jansenio (muerto en 1575). Lindano fallece el 2 de noviembre de 1588, tres meses después de su nominación. Entre sus muchas obras, mencionamos el <title>De optimo genere interpretandi scripturas</title> (Colonia, 1558), <title>Apologeticum ad Germanos, pro religionis Catholicae pace atque solida ecclesiarum in uero Christi Iesu Euangelio concordia</title>, 3 vols. (Amberes, 1568-1570), título al que se hace mención en esta carta, <title>Paraphrasis et castigationes in psalmum 118, cum isagoge et oratione parascenastica in eumdem</title>. Cf. <title>BNB</title>, XII (1892-1893), cols. 212-216; <title>HTL</title>, IV, 378-398 y notas; <title>BIB</title>, III, 859. </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> VVLG. Eccli. 16, 15. Traducción: «toda misericordia le garantizará a cada uno un lugar según sus obras».
+            </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Para la preparación de la Políglota Regia no solo dispusieron de los manuscritos griegos reunidos por Cisneros, sino que se volvieron a pedir a Roma los manuscritos que habían servido de base para el texto Complutense. Algunos de esos manuscritos griegos procedentes de Roma han sido identificados en la Biblioteca Vaticana, concretamente los que llevan la numeración 330 y 346 (108 y 248 de la colección Holmes-Parsons). </note>  
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> SEPTVAG. Sir. 16, 14. Traducción: «cada uno recibirá según sus obras». En el margen, añadido por BAM (señalado en color verde en nuestra edición): «Encárgate, por favor, mi querido Francisco, de confrontar este pasaje, y si encuentras algo digno de escribirlo, envíamelo copiado en el reverso de esta carta». La respuesta de Francisco Rafelengio queda anotada también, a continuación, en el margen del mismo original de la carta, que habría sido previamente enviada a él por BAM: «El ejemplar de Roma no recoge otra cosa más que "cada uno recibirá según sus obras"».</note>    
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref>  Traducción del primer sintagma griego: «según el mérito de sus obras»; traducción del segundo sintagma: «según la categoría de sus obras».  </note>     
+               </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
