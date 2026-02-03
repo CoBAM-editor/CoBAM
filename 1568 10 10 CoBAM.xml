@@ -1,0 +1,171 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15681010">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Andrés Masio (Cléves) a Benito Arias Montano (Amberes) - 10 de octubre de 1568 </title>
+            <author>Andrés Masio</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 10 10</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">When returning from Frankfurt Plantin visited Masius, who at that time was not at home due to an epidemy affecting the region of Zevenaar. That is why Masius could not show Plantin all the books and manuscripts he would like. However, Masius sent a messenger to Cleves in order to take a valuable Chaldean manuscript used in the edition of the Polyglot of Alcalá. Masius gives Plantin the manuscript on the condition that the editors of the Bible give it back to him when the work is done. He judges to be right including the Syriac version of the New Testament in the Bible with Hebrew characters, although he warns BAM that the Syriac text must be amended because it has been corrupted over the centuries. He also notifies BAM the danger of printing the Latin translation of the Syriac text by a young French scholar (Guy Lefèvre de la Boderie) without comparing it with the Septuagint before. </note>
+            <note type="incipit">Plantinus noster Francofortia reuertens...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 12r-13v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 96-101, nº 8.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 114-121.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 96-101; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 114-121.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MasioAndres">
+                  <note>Andrés Maes, Masius (Lennick, 30 noviembre 1514-17 abril 1573), estudió en el Collegium Trilingue de Lovaina y cultivó en sus inicios la poesía. A partir de 1561 Masio reside en Zevenaar, desde donde ejerció de consejero del duque de Cléveris, prosiguiendo además sus estudios orientales: publica la traducción del siríaco <title>De Paradiso</title> con comentarios en la imprenta de Plantino en 1569 y colabora con BAM en la Biblia Políglota con una <title>Grammatica linguae Siriacae</title> (Amberes, 1571), tercer tratado del volumen sexto de la Políglota y un Syrorum Peculium (1571), segundo tratado del tomo sexto de la Políglota Su muerte le impidió ver muchos de sus trabajos listos para imprenta.</note></person>
+                 <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Andrés Masio</persName>
+               <settlement>Cléves</settlement>
+               <date when="1568-10-10">10 de octubre de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1568-10-17">17 de octubre de 1568</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Andrés Masio</handNote>
+            <handNote>El añadido en el margen del sobrescrito es de Benito Arias Montano</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-05-25">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/05/KBS-Ms.-A-902-f.-12r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/05/KBS-Ms.-A-902-f.-12v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/05/KBS-Ms.-A-902-f.-13v-scaled.jpg"
+         xml:id="foto3"/>
+      </facsimile>
+        <text>
+      <group>
+   <text type="source">
+          <front>
+             <p> Esta carta de Masio fue entregada a BAM siete días después de su envío, el 17 de octubre de 1568. El folio 13r está en blanco.  
+                El erudito orientalista Andrés Masio, quien había animado a Plantino a emprender la impresión de la Políglota antes incluso de proponer el proyecto al monarca español, será uno de los asiduos colaboradores de la empresa bíblica que dirige BAM. Masio contribuyó no solo prestando libros y ofreciendo consejo, sino que es autor del diccionario y la gramática sirios que se incluyeron en el volumen sexto de la Políglota. Respecto a ese manuscrito caldeo que Masio presta para la preparación de la Políglota Regia, y que justifica la visita de Plantino, el propio BAM, en carta dirigida a Zayas, con fecha 9 de noviembre de 1569 (1569 11 09), nos ofrece el siguiente testimonio: «[...] entre los libros caldeos que el Cardenal tenía para imprimir, faltaba un tomo que no parecía en Alcalá, que era el de los Profetas que llaman Primeros, que son Josué, Judices et libri Samuel et Regum, el cual quedó en poder de Zamora cuando el Cardenal murió. Y este libro se había desaparecido en España, y estando aquí supe que había aportado a Roma y que allí lo había comprado Andreas Masio, secretario del Duque de Baviera y su embajador ordinario, al cual, pasando este estío por aquí con embajada al Duque d’Alba, hablé y le pedí me lo prestase para juntarlo con los demás en esta Biblia; y habiéndomelo prometido, rogué a Plantino que de vuelta de Francafor viniese por allí y lo trajese, y cuando me lo trajo con su carta hallé que no estaba traducido en latín, sino solo en caldeo, escrito de mano, y solo del primer capítulo comenzados a traducir veinte versos, y ansí en caldeo acá lo teníamos en las Biblias de Roma y Venecia, de manera que me ha sido forzado traducirlo yo porque vaya todo el caldeo con sus traducciones [...]»</p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. 13v" ed="O" facs="#foto3"/>
+            <head>[Sobrescrito:]</head>
+            <ab><app><lem wit="#O #E1">Reueren<expan><ex>dissimo</ex></expan></lem> <rdg wit="#E2">Reverendo</rdg></app> et doctissimo uiro d<expan><ex>omino</ex></expan> <name type="person" ref="#AriasMontanoBenito">Benedicto Arias Montano</name> Sacrae Theologiae doctori celeberrimo d<expan><ex>omino</ex></expan> et amico suo <app><lem wit="#O #E2">obseruan<expan><ex>dissimo</ex></expan></lem> <rdg wit="#E1">obseruando</rdg></app>.</ab>
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><name type="person" ref="#MasioAndres">Andreas Masius</name>, <name type="place">Cliuis</name> <date when="1568-10-10">X Octobris 1568</date>. <del>Acc.</del> Redditae <date when="1568-10-17">17 Octobris</date>. De Graecis et Syris exemplaribus Regiorum Bibliorum.</ab>
+         </div>
+         <div type="main_content">
+            <pb n="f. 12r" ed="O" facs="#foto1"/>
+            <opener>R<expan><ex>euerendo</ex></expan> d<expan><ex>omino</ex></expan> Benedicto Arias Andreas Masius s<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>icit</ex></expan>.</opener>
+            <p>[<hi rend="bold">1</hi>] <name type="person" ref="#PlantinoCristobal">Plantinus</name> noster <name type="place">Francofortia</name> reuertens, cum ad meas aedes uellet diuertere, non sine itineris dispendio, forte me <name type="place">Cliuis</name> repperit.  Nam ante dies octo, propter pestem, qua mea uicinia laborare coeperat, illuc me contuleram. [<hi rend="bold">2</hi>] Itaque factum est ut ego hominem pro meo amore, quo eius candidam probitatem amplector, domi meae excipere et chartaceam meam supellectilem ipsi ostendere non potuerim. [<hi rend="bold">3</hi>] Quod profecto doleo. Plane enim cupiebam, propter Biblia quae <rs type="name" ref="#FelipeII">Regiae Maiestatis</rs> iussu teque autore <subst><del>excudenda</del> <add place="above"> excudere</add></subst>  aggressus est, ipsi clare ostendere eam tralationem Graecam, quae in Complutensibus antigraphis <app><lem wit="#O #E2">est,</lem> <rdg wit="#E1"><hi rend="italic">imum punctum posuit</hi></rdg></app> <del> . </del>nihil minus esse quam puram putam τὰ ἑβδoμήκovτα conuersionem; sed plane eam quam <name type="person">Origenes</name> sub asteriscis, obeliscis, limniscis et id genus aliis notis,  quoad eius fieri potuit, proxime Hebraeum exprimere conatus est. [<hi rend="bold">4</hi>] Fragmenta enim illa Syrica Bibliorum quae habeo id aperte loquuntur, ut quae suis illis quaeque notis secernant; tam accurate olim ante annos plurimos <del> . </del>  scripta ut nihil fieri possit accuratius. [<hi rend="bold">5</hi>] Sed erit fortassis <name type="person" ref="#PlantinoCristobal">Plantino</name>, cum proximas nundinas repetet, occasio commodior. Nunc, quod unum potui, misi hinc domum meam nuncium qui codicem illum meum Chaldaeum Compluti, ut uidetur, olim scriptum, cuius apud tuam dignitatem <name type="place">Andouerpiae</name> mentionem faciebam, huc adferret <name type="person" ref="#PlantinoCristobal">Plantinoque</name>, si quid pro Targum excudendo posset adiumenti <subst><del>adferre</del> <add> conferre</add></subst>, asportandum daret. Sed ea lege, ut absolutis Bibliis illis ad me <subst><del>reuertarur</del> <add place="inline"> remittatur</add></subst> meus codex.</p>
+            <p> [<hi rend="bold">6</hi>] Narrat <name type="person" ref="#PlantinoCristobal">Plantinus</name> decretum tibi esse in Nouo Testamento Syricam interpretationem,  supra Latinam et Graecam, sed characteribus Hebraicis, in uulgus dare. Quod ego uehementer probo. Nam sunt profecto plurima, praesertim in Euangeliis, tam apte expressa Syrice ut saepe libuerit mihi suspicari uel ab ipsis euangelistis <del>alia</del> ea lingua esse primum scripta uel tra<supplied>ns</supplied>lata saltem pristinis illis temporibus. [<hi rend="bold">7</hi>] Sed etiam atque etiam, mi domine, uidendum tibi est ne quis locus ab haereticis, quibus Syra gens semper uexata est plurimum, corruptus sit in illis quibus utere <del>antig.</del> aduersariis. Scio enim hoc in multis euenisse. Neque ipsi Syri diffitentur. [<hi rend="bold">8</hi>] Sed et suam Syro Latinam interpretationem Galli cuiusdam uiri, ut audio, docti, <subst><del>sed</del> <add place="inline"> uerum</add></subst> <app><lem wit="#O #E2">etiamnum</lem> <rdg wit="#E1">etiam nunc</rdg></app> iuuenis admodum, adiungere te constituisse addit <name type="person" ref="#PlantinoCristobal">Plantinus</name>. Hic uero, mi domine, etiam atque etiam monendus mihi es ne temere ei interpretationi fidas; sed accurate cum Graeco contendas prius quam probes. [<hi rend="bold">9</hi>] Nosti enim quanti momenti sit uel uerbulum unum, praesertim in <name type="person">Paulli</name> Epistolis, quod a recepta per orbem sententia uel minimum discrepet; et quidem hac temporum diritate, qua tot haereses tam anxie inhiant omnibus occasionibus uetustam Ecclesiae consensionem <app><lem wit="#O #E2">dirumpendi</lem> <rdg wit="#E1">dirupendi</rdg></app>. [<hi rend="bold">10</hi>] Non eo haec scribo, quod interpretem illum, hominem mihi ignotum, non satis Syrice peritum putem, qui fortassis <pb n="f. 12v" ed="O" facs="#foto1"/> est peritissimus; sed quia ut Hebraeus Chaldaeusque sermo, ita et Syricus, propter nominum uerborumque inflectiones incertiores, minus certas sententias habet quam aut Graecus aut Latinus. [<hi rend="bold">11</hi>] Taceo quod dictionum uim et quae res quibusque sint subiectae, tum structuram ipsam quid proprie conficiat in Syrica lingua, nisi multa multorum autorum lectione ac sedulis etiam doctoris monitis instructus, nemo, quantumuis alioqui Hebraice doctissimus atque etiam Chaldaice, <del>nem.</del> satis callere posse uidetur. [<hi rend="bold">12</hi>] Male mihi sit nisi prius quam praeceptorem Syrum audissem ipse putarim me Syrice peritiorem <subst><del>esse</del> <add place="above"> fuisse</add></subst> quam cum menses iam <del>aliquod</del> complures <subst><del>audiuissem</del> <add place="inline"> auditor fuissem</add></subst> difficultatesque peregrinae linguae propius intellexissem! </p>
+            <closer>[<hi rend="bold">13</hi>] Cetera, mi <name type="person" ref="#AriasMontanoBenito">Arias</name>, <name type="peson" ref="#PlantinoCristobal">Plantinus</name> tibi ex me narrabit. [<hi rend="bold">14</hi>] <salute>Vale et gnauiter in perficiundo pulcherrimo opere adlaborato</salute>. Raptim <name type="place">Cliuis</name>, <date when="1568-10-10">X die octobris MDLXVIII</date>. </closer>
+         </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>
+            <div type="address">
+               <pb n="f. 13v" ed="O" facs="#foto3"/>
+               <head>[Sobrescrito:]</head>
+               <ab>Al reverendísimo y doctísimo señor Benito Arias Montano, doctor en Teología Sagrada, señor de gran fama y amigo suyo digno del mayo respeto. </ab>
+            </div>
+            <div type="anotation">
+               <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+               <ab>Andrés Masio,<ref target="#note1" xml:id="reference1">1</ref> Cleves, 10 de octubre de 1568. Recibida el 17 de octubre. Acerca de los manuscritos griegos y sirios de la Biblia Regia.</ab>
+            </div>
+            <div type="main_content">
+               <pb n="f. 12r" ed="O" facs="#foto1"/>
+               <opener>Andrés Masio saluda al reverendo señor Benito Arias.</opener>
+               <p>[<hi rend="bold">1</hi>] Cuando regresaba de Fráncfort nuestro querido Plantino, como quiso desviarse hacia mi casa, no sin dar un rodeo, me encontró en Clèves por casualidad.<ref target="#note1" xml:id="reference2">2</ref> Pues hacía ocho días que me había refugiado allí a causa de una epidemia que había empezado a azotar mi comarca. [<hi rend="bold">2</hi>] Y así sucedió que no pude acogerlo en mi casa ni mostrarle mis libros como corresponde a mi afecto, con el que acojo su cándida integridad. [<hi rend="bold">3</hi>] Y esto, me da pena en verdad; pues estaba deseando mostrarle, con motivo de la Biblia que ha empezado a imprimir bajo la supervisión de vuestra merced por orden de Su Majestad, que la versión griega que se conserva en los antígrafos complutenses no es ni mucho menos la edición fiel de la traducción de los Setenta, sino más bien aquella de Orígenes, en la que intentó por medio de asteriscos, obeliscos, lemniscos y otros signos de este tipo,<ref target="#note3" xml:id="reference3">3</ref> en la medida que fue posible, recoger el texto hebreo con la mayor fidelidad posible.<ref target="#note4" xml:id="reference4">4</ref> [<hi rend="bold">4</hi>] Pues aquellos fragmentos en siríaco que tengo de la Biblia reflejan esto claramente, de manera que distinguen cuáles pertenecen al texto y cuáles son añadidos; escritos hace ya muchos años con tanto cuidado que sería imposible hacerlo con más. [<hi rend="bold">5</hi>] Pero tal vez Plantino encuentre una ocasión más apropiada con motivo de la próxima feria. Ahora he hecho lo único que podía, enviar un mensajero a mi casa para que me trajera aquel códice caldeo, escrito antaño en Alcalá de Henares, según parece, y al que hacía alusión en Amberes en presencia de vuestra merced; y dárselo a Plantino para que se lo lleve, si es que puede servirle de algo en la impresión del Targum. Pero ello con esta condición: que se me devuelva mi códice una vez acabada aquella Biblia.</p>
+               <p>[<hi rend="bold">6</hi>] Me cuenta Plantino que vuestra merced ha decidido incluir en el Nuevo Testamento la versión siríaca,<ref target="#note5" xml:id="reference5">5</ref> además de la latina y la griega, pero con tipos hebreos. Lo cual apruebo sin reservas. Pues hay en efecto muchos pasajes, sobre todo en los Evangelios, tan bien expresados en siríaco, que a menudo se me ha pasado por la cabeza sospechar que fueron redactados primero en esta lengua por los evangelistas, o, al menos, que fueron traducidos en aquellos primeros tiempos. [<hi rend="bold">7</hi>] Pero continuamente, mi querido señor, debe tener cuidado de que ningún pasaje haya sido corrompido por obra de los herejes en aquellas cosas de las que se sirven nuestros enemigos, quienes siempre han hostigado en gran medida al pueblo sirio. Pues sé que esto ha ocurrido en muchos casos. Y ni siquiera los sirios lo desmienten. [<hi rend="bold">8</hi>] Y también me cuenta Plantino que vuestra merced ha decidido incluir una traducción latina que él tiene del texto siríaco, obra de un francés,<ref target="#note6" xml:id="reference6">6</ref> docto, según tengo noticias, pero muy joven todavía. Sobre este particular, mi querido señor, tengo la responsabilidad de advertirle una y otra vez de que no se fíe a la ligera de esa traducción, sino que la compare detenidamente con el texto griego antes de darle su aprobación. [<hi rend="bold">9</hi>] Pues sabe vuestra merced muy bien la importancia que tiene, sobre todo en las Epístolas de San Pablo, una sola palabra que discrepe lo más mínimo del parecer generalmente admitido; y más aún en estos tiempos en que tantos herejes están al acecho de cualquier oportunidad para resquebrajar el antiguo consenso de la Iglesia. [<hi rend="bold">10</hi>] Y no escribo esto porque piense que ese hombre, completamente desconocido para mí, no conoce en suficiente medida la lengua siríaca, pues a lo mejor  <pb n="f. 12v" ed="O" facs="#foto1"/> la conoce a la perfección, sino porque el siríaco, al igual que le sucede al hebreo y al caldeo, construye frases menos claras que el griego o el latín, debido a que la flexión de sus nombres y verbos es más ambigua. [<hi rend="bold">11</hi>] Y paso por alto el hecho de que nadie, a menos que se haya preparado con abundante lectura de muchos autores y con celosos consejos de su maestro, parece ser capaz de conocer a fondo, por más que sea muy entendido en la lengua hebrea e incluso en la caldea, el sentido de las expresiones y las significaciones que están detrás de ellas, así como lo que determina propiamente la estructura en la lengua siríaca. [<hi rend="bold">12</hi>] ¡Que me acaezca alguna desgracia si no pensé yo, antes de oír a mi maestro de siríaco, que era más entendido en esta lengua de lo que de hecho lo era cuando llevaba ya muchos meses como alumno y entendía mejor las dificultades de esta lengua extraña! </p>
+               <closer>[<hi rend="bold">13</hi>] Respecto a lo demás, mi querido Arias, Plantino le llevará mis noticias. [<hi rend="bold">14</hi>] Adiós y trabaje con diligencia para concluir esta hermosísima obra. Escrita de prisa en Clèves, a 10 de octubre de 1568. </closer>
+              </div>
+      </body>
+                <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Andrés Maes, Masius (Lennick, 30 nov. 1514-17 abr. 1573) estudió en el Trilingüe y pronto dominó el latín, griego y hebreo, haciéndose famoso como poeta. Se le designó en agosto de 1538 secretario del Consejero Imperial Juan de Weze, arzobispo de Lund y obispo de Constanza. Se dedicó igualmente a la edición de textos hebreos y junto con el sobrino de su maestro, Henry Rudolph up ten Haitzhovel, obtuvo en Bolonia el grado de doctor en ambos derechos en octubre de 1546. Hacia 1548, Masio se instala en Roma como agente y secretario de varios estados germánicos: allí no perdió el contacto continuo con los amigos de Lovaina y con el ducado de Clèves, dedicando parte de su tiempo a la recopilación y estudio de textos siríacos que llegaban a sus manos. De Roma pasa de nuevo a los Países Bajos; allí contrae matrimonio con la sobrina de su frater Henry Rudolph, Elza up ten Haitzhover, en el verano de 1558. Se fueron a vivir a su estado de Borchkens, en Zeveraar, en enero de 1561; desde allí cumplió sus obligaciones como consejero del duque de Clèves, aunque también prosiguió sus estudios orientales: publica la traducción del siríaco <title>De Paradiso</title> con comentarios en casa de Plantino en 1569 y colabora con BAM en la edición de la Biblia Regia con una <title>Grammatica linguae Syriaca</title> y un <title>Syrorum Peculium</title> (1571). Mientras se imprimía su <title>Iosuae Imperatoris historia</title> fue honrado por Felipe II con una magnífica cadena de oro en 1571. Su muerte le impidió ver la publicación de muchos de sus trabajos listos para la imprenta. Cf. <title>BNB</title>, XIII (1894-1895), cols. 120-125; <title>HTL</title>, III, 282-290, 427-428, 494; <title>NBW</title>, IV (1970), cols. 545-550; <title>BIB</title>, III, 898.</note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> En carta fechada a 22 de octubre de 1568, Plantino le escribe al cardenal Granvela lo siguiente: «je suis, par l'ordonnance de Monsgr Arias Montanus, alé trouver Monsgr Andreas Masius, à l'intention d'impétrer de luy quelques livres en chaldéen et syriaque, pour nous en servir à l'ornement de la Bible que nous poursuivons, sous la faveur et aide de Sa Majesté». Cf. <title>CP</title>, II, 10.  </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Mediante la ayuda de estos signos, tomados de los gramáticos alejandrinos, Orígenes indicó en cada columna lo que faltaba o sobraba. El asterisco se colocaba donde había una omisión, para que a su luz se viera lo que faltaba. El óbelo se adjuntaba a palabras o frases repetidas innecesariamente, o bien en aquellos lugares en que se había descubierto alguna lectura errónea. El lemnisco se empleaba en pasajes que los intérpretes de las Sagradas Escrituras habían transmitido con el mismo sentido, pero no con idénticas palabras.</note>     
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Acerca de este juicio que le mereció a Masio el texto complutense de la versión griega de los Setenta, véase carta 1570 04 19.</note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> BAM había recibido instrucción expresa del Rey para incluir el texto sirio del Nuevo Testamento conforme a la edición de Viena. Por su parte Plantino había recibido poco antes de la llegada de BAM una traducción latina y una transcripción en caracteres hebreos del texto sirio del Nuevo Testamento, obras ambas del joven orientalista francés Guy Le Fèvre de la Boderie (Guido Fabricio).</note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Se refiere a Guy Le Fèvre de la Boderie. Con anterioridad a la aceptación por parte de Felipe II del proyecto de la Políglota, Plantino había solicitado por su cuenta y riesgo los servicios del joven Guy Le Fèvre. En marzo de 1568, coincidiendo con la aceptación del monarca, Plantino recibe del joven orientalista la versión siria del Nuevo Testamento transcrita en caracteres hebreos, junto a una versión literal en latín. Ambas obras serían incluidas en la Biblia Real. BAM solicitó su colaboración en nombre del Rey de España, pero el joven se resistía a abandonar París. Finalmente accedió a instancias del papa Pío IV y dedicó cerca de tres años a la revisión cuidadosa del texto sirio y a la parte sirio-aramea del diccionario inserto en el <title>Apparatus Sacer</title>. Para ello recibió la ayuda de su discípulo y hermano menor, Nicolás.</note>
+            </div>
+          </back>
+   </text>
+      </group>
+   </text>
+</TEI>
