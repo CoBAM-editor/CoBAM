@@ -1,0 +1,165 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15681218">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Tomás de Zornoza (Venecia) a Benito Arias Montano [Amberes] - 18 de diciembre de 1568 </title>
+            <author>Tomás de Zornoza</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1568 12 18</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Tomás de Zornoza sends BAM a Greek book through Albornoz and promises to visit Daniel Barbarus in the days to come. At the same time, he asks BAM to intercede with the Duke of Alva in favor of his nephew fighting in Flanders, which seems to be the main purpose of this letter.
+            </note>
+            <note type="incipit">A los xi con el ordinario scriví....</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Archivo de la Casa de los Duques de Alba</msName>
+                        <altIdentifier>
+                           <idno>(O) ADA, ca. 28/148.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>   
+               <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 158-161.</witness>
+              </listWit>
+            <bibl type="inextenso" n="thirdPrint"> (E) Domínguez, <title>Correspondencia</title>, I, 158-161 y 168.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="CurielJeronimo">
+                  <note>  Jerónimo Curiel, agente de Felipe II en Flandes y residente en Amberes desde 1550. A partir de 1561 sustituye a López Gallo como agente mayor del rey para los negocios de los Países Bajos. Su función es distribuir las sumas enviadas por la corona a Flandes para pagar los más variados conceptos.</note></person>
+               <person xml:id="BarbaroDaniel">
+                  <note>Daniel Mateo Alvise Barbaro (Venecia, 8 de febrero de 1514-13 de abril de 1570), noble veneciano conocido por sus comentarios y traducciones de Vitrubio, Patriarca de Aquilea desde 1550. Estudió filosofía, matemáticas y óptica en la Universidad de Padua y sirvió a la República Veneciana como embajador en la corte inglesa de Isabel I y como representante del Concilio de Trento. Entre sus obras destacan <title>La Predica dei sogni</title> (1542), publicada bajo el seudónimo de reverendo padre Hypneo da Schio, los <title>Dieci libri dell'architettura di M. Vitruvio</title> (1556) y <title>La practica della perspettiva</title> (1568), un libro sobre perspectiva para arquitectos y artistas. </note></person>
+               <person xml:id="IbarraFranciscode">
+                  <note>Nombrado en 1567 intendente general del nuevo ejército que acompañó a Alba para sofocar la primera rebelión de Flandes </note></person>
+               <person xml:id="UberichagaJuande">
+                  <note>Soldado español en Flandes, sobrino de Tomás de Zornoza.  </note></person>
+               <person xml:id="ZapataRodrigo">
+                  <note>Militar español al mando del duque de Alba.</note></person>
+               <person xml:id="ZornozaTomásde">
+                  <note>Consúl de españa en Venecia desde 1547.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Tomás de Zornoza</persName>
+               <settlement>Venecia</settlement>
+               <date when="1568-12-18">18 de diciembre de 1568</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Tomás de Zornoza</handNote>
+         </handNotes>
+         <handNotes>
+            <handNote>Benito Arias Montano</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-07-31">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/07/ADA-C-28-148-1r.jpg"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/07/ADA-C-28-148-1v.jpg"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Tras leer esta carta de Zornoza, BAM la debió de reenviar a Albornoz -incluyendo tres líneas manuscritas por él mismo al final, que hemos señalado en color verde en la edición de la columna de la izquierda- junto con su propia misiva al secretario del duque Alba fechada el 14 de febrero de 1569 (cf. 1569 02 14), donde se menciona el asunto principal de la carta de Zornoza. BAM solo remitió a Albornoz la primera hoja del pliego de la carta, es decir, la que contenía el propio texto de la carta, pero no así la segunda hoja (que contenía el sobrescrito), razón por la que esta segunda hoja con el sobrescrito no se ha conservado en el archivo del Palacio de Liria. </p>
+         <p>La carta de Zornoza contiene dos posdatas: la primera, en orden cronológico, es la que ocupa el folio [1v], donde se plantea la recomendación de su sobrino. La segunda posdata, que se refiere al "dicho" sobrino, fue escrita, por cuestiones de espacio, en la parte inferior del folio [1r]; es decir, el lector se encuentra con esta segunda posdata antes que con la primera.  </p>
+      </front>
+      <body>
+         <div type="main_content">
+            <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <opener>Muy mag<expan><ex></ex>nífi</expan>co s<expan><ex>eñ</ex></expan>or:<ref target="#note1" xml:id="reference1">1</ref></opener>
+            <p>[<hi rend="bold">1</hi>] A los xi con el ordinario scriví a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan><ref target="#note2" xml:id="reference2">2</ref> y imbié a manos del s<expan><ex>eñ</ex></expan>or secret<expan><ex>ar</ex></expan>io <name type="person" ref="#AlbornozJuande">Albornoz</name> el libro griego cartano que es la <choice><sic>blibia</sic> <corr>biblia</corr></choice> en vulgar.<ref target="#note3" xml:id="reference3">3</ref> Esperaré que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me avise del rescibo dél y, como dixe, compré de mi din<expan><ex>e</ex></expan>ro, porque fasta agora no tengo cu<expan><ex>en</ex></expan>ta con Su M<expan><ex>ages</ex></expan>tad de din<expan><ex>e</ex></expan>ro p<expan><ex>ar</ex></expan>a gastar por él; aunque lo que hombre tiene sea <app><lem wit="#O">suyo,</lem><rdg wit="#E">suyo</rdg></app> y en lo demás que se offresciere y mi talento valiere p<expan><ex>ar</ex></expan>a algo no faltaré de leal vizcaýno.<ref target="#note4" xml:id="reference4">4</ref> </p> 
+            <p>[<hi rend="bold">2</hi>] A mons<expan><ex>eñ</ex></expan>or r<expan><ex>everendísi</ex></expan>mo Electto de Aquilea el <name type="person" ref="#BarbaroDaniel">Barbaro</name> no le he visto con estos t<expan><ex>iem</ex></expan>pos tan extraños que haze de yelos y nieves y vientos, y el estar él lexos de mi posada; y con la pri<expan><ex>mer</ex></expan>a comodidad le yré a buscar por hazer s<expan><ex>ervic</ex></expan>i<expan><ex>o</ex></expan> a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>,<ref target="#note5" xml:id="reference5">5</ref> cuya muy mag<expan><ex>nífi</ex></expan>ca p<expan><ex>ersona</ex></expan> N<expan><ex>uestro</ex></expan> S<expan><ex>eñ</ex></expan>or g<expan><ex>uarde</ex></expan> y p<expan><ex>rospere</ex></expan> por largos tiempos como deseo. [<hi rend="bold">3</hi>] De <name type="place">V<expan><ex>eneci</ex></expan>a</name>, <date when="1568-12-18">18 de dez<expan><ex>iembr</ex></expan>e 1568</date>. </p>
+            <closer>B<expan><ex>esa</ex></expan> las m<expan><ex>anos</ex></expan> a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su muy cierto s<expan><ex>er</ex></expan>vi<expan><ex>d</ex></expan>or,<signed><name type="person" ref="#ZornozaTomásde">Thomás de Çornoça</name></signed>
+            </closer>
+            <postscript n="1">
+               <pb n="f. [1v]" ed="O" facs="#foto2"/>
+               <head>[Posdata 1:]</head>
+               <p>[<hi rend="bold">4</hi>] Yo tengo un sobrino hijo de una mi herr<expan><ex>man</ex></expan>a en esse felicíss<expan><ex>im</ex></expan>o ex<expan><ex>érci</ex></expan>to en el tercio de <name type="place">Lombardía</name> baxo de la compañía del s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ZapataRodrigo">Rodrigo Çapata</name><ref target="#note6" xml:id="reference6">6</ref> en la camarada del alférez; llámase <name type="person" ref="#UberichagaJuande">Juan de Uberichaga</name>, <choice><sic>moco</sic> <corr>moço</corr></choice>de 25 años, que como soldado viejo se quiso yr con su vandera de <name type="place">Lombardía</name> a s<expan><ex>er</ex></expan>vi<expan><ex>ci</ex></expan>o a Su M<expan><ex>ages</ex></expan>ta<expan><ex>d</ex></expan> y a Su Exc<expan><ex>elen</ex></expan>cia. Y es moço que se tractta honrradam<expan><ex>ent</ex></expan>e según soy avisado. [<hi rend="bold">5</hi>] Y quando el conde <name type="person">Ludouico</name> herr<expan><ex>man</ex></expan>o del <name type="person">de Oranjes</name> fue roto en <name type="place">Frixa</name>,<ref target="#note7" xml:id="reference7">7</ref> siendo su compañía a quien tocó la vanguardia, y el pri<expan><ex>mer</ex></expan>o que rompió a los inemigos, él se halló con ella y no de los ult<expan><ex>imos</ex></expan> en remeter a los enemigos, del qual tiene relasción el s<expan><ex>eñ</ex></expan>or <name type="person" ref="#IbarraFranciscode">Fran<expan><ex>cis</ex></expan>co de Ybarra</name>,<ref target="#note8" xml:id="reference8">8</ref> y le conosce bien. [<hi rend="bold">6</hi>] Suplicaré a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con el s<expan><ex>eñ</ex></expan>or secret<expan><ex>ar</ex></expan>io <name type="person" ref="#AlbornozJuande">Albornoz</name> le favoresca en lo que le paresciere su virtud y s<expan><ex>er</ex></expan>vi<expan><ex>ci</ex></expan>os ayan merescido, del qual yo fasta agora no he scripto a Su Exc<expan><ex>elen</ex></expan>cia, deseando que con sus s<expan><ex>er</ex></expan>vi<expan><ex>ci</ex></expan>os obligue a su Emp<expan><ex>erad</ex></expan>or mande tener c<expan><ex>uen</ex></expan>ta dél, y me paresce que el moço prettende lo mesmo. [<hi rend="bold">7</hi>] Todavía en lo que es justo, siendo cosa loable el favor de los mayores y s<expan><ex>eño</ex></expan>res, he querido suplicar a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con conjuntura se degne hazerme m<expan><ex>erce</ex></expan>d de recordarse dél en hazerle m<expan><ex>erce</ex></expan>d y benefiçio que pudiere, de que terné particular obligación a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. </p>
+            <p><add hand="#AriasMontanoBenito" place="margin">Yo tengo por cierto que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me la hará en que yo pueda responder a esta carta con relación de la m<expan><ex>erce</ex></expan>d que hará al dicho <name type="person" ref="#UberichagaJuande">Juan de Uberichaga</name> conforme a sus merecim<expan><ex>ient</ex></expan>os y servicios y la liberalidad de Su Ex<expan><ex>celenci</ex></expan>a para con los semejantes.</add>
+               </p>
+            <p><add hand="#AriasMontanoBenito" place="margin"><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name></add>
+            </p>
+               </postscript>
+            <postscript n="2">
+               <head>[Posdata 2 escrita en el folio [1r], en el margen inferior izquierdo, junto al besamanos:]</head>
+               <p>[<hi rend="bold">8</hi>] La que va con esta p<expan><ex>ar</ex></expan>a el d<expan><ex>ich</ex></expan>o mi sobrino le sup<expan><ex>li</ex></expan>co mande aý a recaudo. Y al s<expan><ex>eñ</ex></expan>or <name type="person" ref="#CurielJeronimo">Jeró<expan><ex>ni</ex></expan>mo Curiel</name> beso mil vezes las manos y no le scrivo por no se off<supplied>r</supplied>escer cossa degna.</p>
+            </postscript>
+</div>    </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Sobre Tomás de Zornoza o Çornoça, cónsul de la nación española en Venecia, véase el artículo de István Szászdi León-Borja, «Los cónsules de Portugal, Castilla y Aragón en Venecia durante los siglos XV-XVII», <title>Revista de Historia Moderna</title>, 16 (1997), 179-214, y el <title>Catálogo XXVI del Archivo de Simancas: Papeles de Venecia (siglos XV-XVII1)</title> de Ricardo Magdaleño y Adela González Vega (Valladolid, 1976). </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Carta no localizada.  </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Podría estar refiriéndose Zornoza a la edición del Pentateuco titulada <title>Pentateuco hebraico-chaldaico, español y bárbaro griego</title> que en tres columnas y en folio fue impresa en 1547 en Constantinopla basándose en la edición veneciana de 1497. Albornoz escribe a Zayas el 22 de agosto de 1568: «Aquí me envío Cornoza un testamento viejo en griego y díjome Arias Montano que era para él, y enviéselo o, por mejor decir, tomólo» (<title>Codoin</title>, XXXVII, p. 355).   </note>     
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Los Zornoza pertenecían a un noble linaje vizcaíno, con origen en Bermeo según István Szászdi León-Borja, «Los cónsules de Portugal, Castilla y Aragón en Venecia», p. 188, nota 27.   </note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Se conserva una frecuente correspondencia entre BAM y el eclesiástico veneciano Daniel Bárbaro desde la llegada del capellán real a Amberes a mediados de 1568 hasta la muerte de Bárbaro en 1570. El manuscrito A 902 de Estocolmo conserva siete cartas de Bárbaro a BAM con fecha del 29 de agosto de 1568, 29 de octubre de 1568, 1 de enero de 1569, 1 de marzo de 1569, 16 de abril de 1569, 1 de mayo de 1569 y 23 de julio de 1569. A partir de este párrafo de la carta de Zornoza deducimos que BAM había encargado al diplomático español en Venecia que visitara a Bárbaro. Puede que BAM hubiera solicitado a Zornoza que acercara a Bárbaro una de sus cartas, o que hiciese de intermediado en alguno de los muchos asuntos que, por estas fechas, trataban el humanista español y el veneciano, como el intercambio de materiales de la Biblia Políglota, el envío de obras de Bárbaro (<title>Sobre la perspectiva</title>) a BAM, la renovación de los «asientos» de los judíos en el estado de Venecia, y otras recomendaciones particulares.    </note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Militar español, capitán al mando del duque de Alba.   </note> 
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Luis de Nassau (1538-1574), hermano del estatúder Guillermo de Orange, fue sonoramente derrotado en Jemmigen, durante la campaña de Frisia, el 21 de julio de 1568. Cf. <title>Commentarios de don Bernardino de Mendoza de lo sucedido en la guerra de los Payses Baxos desde el año de 1567 hasta el de 1577</title> (Madrid: Pedro Madrigal, 1592), libro III, especialmente folios 46-72.   </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Francisco de Ibarra, nacido Eíbar (Guipúzcoa), primera mitad s. XVI – ?, c. 1580. Consejero de Guerra, comisario y proveedor general de los Ejércitos y Armadas del Rey. En 1567 fue nombrado intendente general del nuevo ejército que acompañó a Alba para sofocar la primera rebelión de Flandes. Cf. Parker, <title>España y la rebelión en Flandes</title>, p. 100. Véase, sobre este personaje, S. Fernández Conti, «Francisco de Ibarra», en Real Academia de la Historia, <ref target="https://dbe.rah.es/biografias/29417/francisco-de-ibarra">Diccionario Biográfico electrónico</ref> (en red,  https://dbe.rah.es/biografias/29417/francisco-de-ibarra). </note>
+            </div>
+      </back>
+   </text>
+</TEI>
