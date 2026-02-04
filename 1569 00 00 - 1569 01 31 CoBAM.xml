@@ -1,0 +1,140 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690000-15690131">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">[Cornelio Gemma Frisio] [Lovaina] a [Benito Arias Montano] [Amberes] - Antes del 31 de enero de 1569 </title>
+            <author>[Cornelio Gemma Frisio]</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">[1569 00 00-1569 01 31]</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Since the last time he saw BAM, five days ago, he has been working on a writing that had to be sent to the Duke. He requests that BAM's influence on the confessor of the Duke of Alba make the Duke take a favorable decision. He wanted to send a copy of that writting to Spain. Instead, he has written a letter to Zayas. He sends that letter to BAM so that the Spanish humanist reads it and submits it to the Spanish court.                 
+            </note>
+            <note type="incipit">Posteaquam nudiusquintus abs tua dominatione discessi...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 149r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 623-629.</witness>
+            </listWit>
+             <bibl type="inextenso" n="firstPrint"> (E1) Domínguez, <title>Correspondencia</title>, I, 623-629.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="ZayasGabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="ContrerasAlonsode">
+                  <note>Alonso de Contreras, fallecido en 1569. Franciscano, confesor del duque de Alba</note></person>
+               <person xml:id="MeranusLucas">
+                  <note>Lucas Meranus (floruit 1569).</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>[Cornelio Gemma Frisio]</persName>
+               <settlement>Venecia</settlement>
+               <date when="1569">Antes del 31 de enero de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>[Benito Arias Montano]</persName>
+               <settlement>Amberes</settlement>
+                             </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-12-23">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/KBS-A-902-f.-149r-scaled.jpg" xml:id="foto1"/> </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+         <front>
+         <p> Como se desprende de la correspondencia precedente, BAM medió de forma insistente ante las autoridades españolas para promover a Cornelio Gemma como profesor de Medicina en la Universidad de Lovaina. El escrito al que se refiere el autor anónimo de esta carta (creemos que el propio Cornelio Gemma), escrito que tenía como destinatario al duque de Alba, podría tratarse de una exposición razonada de sus méritos para ocupar dicha plaza. El Archivo General de Simancas conserva testimonios de esta recomendación en sendas cartas de BAM a Zayas con fecha del 9 de noviembre de 1568 (original en AGS E, 583/4, nº 1568 11 09) y del 6 de abril de 1569 (original en AGS E, 583/11, nº 1569 04 06). Dado que la recomendación estaba en marcha hacia finales de 1568 y que Gemma ocupa ya el cargo de profesor de Medicina en Lovaina antes de finales de enero de 1569 (cf. Domínguez, <title>Correspondencia, I</title>, p. 211), el documento que aquí se edita pudo ser escrito antes del 31 de enero de 1569.  </p>
+         <p>No se nos ha conservado el sobrescrito de esta carta, por lo que incluso el nombre del destinatario es conjeturado. Creemos que el receptor de esta misiva debe de ser BAM no solo por hallarse el documento entre los papeles del manuscrito de Estocolmo, sino por la referencia a personajes muy allegados a nuestro humanista como el duque de Alba, el confesor de este y, sobre todo, Gabriel de Zayas. </p>
+         </front>
+         <body> 
+            <div type="main_content">
+               <pb n="f. 149r" ed="O" facs="#foto1"/>
+               <opener>Opt<expan><ex>ime</ex></expan> atque integerr<expan><ex>ime</ex></expan> dom<expan><ex>ine</ex></expan>:
+            </opener>
+               <p>[<hi rend="bold">1</hi>] Posteaquam nudiusquintus abs tua dominat<expan><ex>ione</ex></expan> <choice><sic>disscessi</sic> <corr>discessi</corr></choice>, ut scriptum nostrum absoluerem, scripsi noctis magnam partem et sequentis diei partem non minorem: ita ut qui in necessario negocio proficisci statim deberem, facultatem omnem amitterem tam salutandi <app><lem wit="#O"> u<expan><ex>enerandum</ex></expan> p<expan><ex>atrem</ex></expan> </lem> <rdg wit="#E1">vestrae paternitatis</rdg></app> confessarium,  quam tuae dominat<expan><ex>ioni</ex></expan> negotium nostrum commendandi, quod tamen per m<expan><ex>agistrum</ex></expan> <name type="person" ref="#MeranusLucas">Lucam Meranum</name> impleui.  [<hi rend="bold">2</hi>] Spero scriptum nostrum Suae Exc<expan><ex>ellentiae</ex></expan> esse redditum, et quidem anxie scire laboro, si quid de eo sit pronunciatum: quod quale sit, et quando erit factum, mihi dom<expan><ex>inatio</ex></expan> tua indicare non grauabitur. Et quum consultum non erit, uti in hoc negocio fauorem et studium tuum apud Suam Exc<expan>ellenti</expan>am prodas, uellica, quaeso, uel urge <app><lem wit="#O"> u<expan><ex>enerandum</ex></expan> p<expan><ex>atrem</ex></expan> </lem> <rdg wit="#E1">vestrae paternitatis</rdg></app> confessarium ut monendi formandique ducis partes suscipiat. </p>
+               <p>[<hi rend="bold">3</hi>] Volebam, uti tua dom<expan><ex>inatio</ex></expan> monuerat, duplex exemplum mittere eius scripti <choice><sic>nostro</sic> <corr>nostri</corr></choice> quod in <name type="place">Hispania</name> regi non est redditum; sed quum per grauissimas occupationes, qui heri primum redierim domum, non licuerit, malui has litteras in hunc sensum conscribere, quas posses ad tuum <name type="person">Achatem</name>  secretarium el <name type="person" ref="#ZayasGabrielde">Zayo</name> transmittere. [<hi rend="bold">4</hi>] Nihil scripsi ad tuam laudem plenius uel ad gratiam blandius. Non sum is qui hoc possem; neque uero amor, licet summus sit, imponit iudicio. Scripsi ita ut sensi, neque meum unius hoc est de te iudicium, sed plurium. [<hi rend="bold">5</hi>] Quod addidi de nostra causa, uolui iacturam, quod scriptum mittere non possem, hoc modo leuare et interim aliquid rei facere. Si dom<expan><ex>inatio</ex></expan> tua iudicabit, ut ipse potius isthuc ueniam, et d<expan><ex>ominum</ex></expan> confessarium prehensem, faciam quod suadebis. [<hi rend="bold">6</hi>] Oro te, mi dom<expan><ex>ine</ex></expan>, consule audaciam meam boni et me uere rusticum esse cognosce, qui neque in appellando teneam curiae et urbanitatis leges.  </p>
+               <closer><salute>Iterum uale.</salute></closer>     
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <div type="main_content">
+               <pb n="f. 149r" ed="O" facs="#foto1"/>
+               <opener>Óptimo y virtuosísimo señor:
+               </opener>
+               <p>[<hi rend="bold">1</hi>] Después de que hace cinco días me despedí de vuestra señoría para terminar nuestro escrito, escribí gran parte de la noche y una parte no menor del día siguiente, de modo que yo, que debía marcharme de inmediato para un asunto urgente, perdí toda posibilidad tanto de saludar al reverendo padre confesor,<ref target="#note1" xml:id="reference1">1</ref> como de encomendar nuestro negocio a vuestra señoría, cosa que, no obstante, conseguí por medio del maestro Lucas Merano.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Espero que nuestro escrito haya sido remitido a Su Excelencia,<ref target="#note3" xml:id="reference3">3</ref> y en verdad estoy ansioso por saber si va a haber algún pronunciamiento de su parte. El cual, cualquiera que sea, y cuando sea hecho, no le pese a vuestra señoría indicármelo. Y en caso de que no haya resolución, para transmitir el favor e interés de vuestra señoría en este asunto ante Su Excelencia, insista y urja al reverendo padre confesor para que emprenda la tarea de aconsejar e influir al duque.<ref target="#note4" xml:id="reference4">4</ref> </p>
+               <p>[<hi rend="bold">3</hi>] Quería, según me había advertido vuestra señoría, enviar una copia doble de este escrito nuestro, puesto que no se ha remitido en España al rey. Pero ya que no he podido debido a muy pesadas preocupaciones, pues ayer por primera vez regresé a casa, preferí redactar esta carta con esta intención, para que pudiera vuestra señoría entregarla a su Acates el secretario Zayas. [<hi rend="bold">4</hi>] Nada escribí suficientemente elegante en alabanza de vuestra señoría, o nada suficientemente agradable para conseguir su favor. No soy alguien que tenga esta capacidad. Y en verdad el cariño, aunque sea inmenso, no engaña al juicio. Escribí como sentí. Y esta opinión mía sobre vuestra señoría no es la de una sola persona, sino la de muchos. [<hi rend="bold">5</hi>] En cuanto a lo que añadí de nuestra causa, quise de este modo aligerar la pérdida de no poder enviar el escrito y hacer alguna cosa entretanto. Si vuestra señoría opina que yo mismo vaya ahí y presione al señor confesor, haré lo que me recomiende. [<hi rend="bold">6</hi>] Le ruego, mi señoría, que tome a bien mi audacia y tenga en cuenta que soy realmente tosco y no me atengo a las leyes de la corte y la urbanidad al dirigirme a vuestra señoría.         </p>
+               <closer><salute>Adiós de nuevo.</salute></closer> 
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Fray Alonso de Contreras, franciscano, confesor del duque de Alba. Contreras participó en la comisión que redactó el índice de libros prohibidos de 1570, junto con el obispo Francisco Van de Velde (Sonnius), el teólogo Jodokus Ravesteyn o Tiletanus, Laurent Metsius, deán de Santa Gúdula en Bruselas, Viglius ab Ayta de Zuychem y el propio BAM (cf. <title>Codoin</title>, XLI, pp. 173-174). A principios de 1570, Alba encomienda a BAM el reparto de la limosnas para los católicos ingleses que vivían en Flandes «porque fray Alonso de Contreras, que me solía ayudar a estas cosas y a otras muchas de esta cualidad, llevóle Dios para sí, que me ha hecho una gran falta» (carta de Alba a Felipe II, del 15 de enero de 1570, en <title>Duque de Alba</title>, II, 311-312, nº 1.050). En los últimos años de su vida Alba tuvo como confesor a fray Luis de Granada. Domínguez (<title>Correspondencia</title>, I, 624-629), entiende que Contreras también es confesor de BAM, basándose únicamente en el desarrollo de la abreviatura «v. p. confessarium» como «vestrae paternitatis confessarium»; nosotros desarrollamos la abreviatura como «uenerandum patrem confessarium» basándonos en otros textos impresos donde así se lee este tratamiento a un confesor; además, a lo largo de la carta, el autor trata a BAM como «dominatio tua», lo que haría poco coherente la posibilidad de un tratamiento adicional como «uestra paternitas». Si nuestra lectura es correcta, Domínguez debería corregir otros pasajes de su introducción y notas a esta carta en los que utiliza como argumento el hecho de que BAM compartiera confesor con el duque de Alba.   </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Desconocemos quién es este personaje. Domínguez (<title>Correspondencia</title>, I , 627) propone la identificación con Lucas de Meere o Van der Meere, uno de los escabinos del magistrado de Amberes en 1569. En la correspondencia de Cristóbal Plantino aparece un Lucas de Mora (podría ser «de Mera»), que pide al impresor un favor para Claude de Withem, señor de Risbourg; cf. carta de Plantino a de Withem, con fecha de 25 de noviembre de 1569 (<title>CP,</title> II, 85).  
+            </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Fernando Álvarez de Toledo, III duque de Alba.  </note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Acates, el compañero y amigo de Eneas. BAM y Gemma trataron de conseguir con gran dedicación, a través de Zayas, una carta de la corte española para reforzar la petición de Gemma. Así BAM recuerda al secretario real lo siguiente el 6 de abril de 1569: «Tota vía supplico a vuestra merced por la carta en su favor y honor, porque será dorar sobre plata. Y a él añadirle ánimo para sus buenas exercitaciones y, si a vuestra merced pareciere, que en la carta se haga mención de tener Su Magestad noticia de la buena elección y provisión que el duque ha hecho, y approvarlo y encomendarlo para lo de adelante por sus buenas partes, que son muy raras y por los méritos de su padre». La presente carta de Gemma debía ir acompañada, según lo que se indica en la misma, de una misiva dirigida a Zayas (con el mismo objetivo del que estamos hablando), donde también se incluía un elogio de figura de BAM. </note> 
+               </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
