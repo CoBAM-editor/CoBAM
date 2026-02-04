@@ -1,0 +1,159 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690228b">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 28 de febrero de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 02 28b</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">In a previous letter BAM informed Zayas that the Bible was progressing well. If it were not for the cold, the Pentateuc would have already been printed. He has been sick twelve days in bed, although he continued to work on the Bible. When he receives the corrected preface, he will proceed to compose the first volume of the Bible. The University of Leuven is assisting in the editorial process. After Easter, he is adding a press to speed up the printing works. BAM asks if the king wants to be sent a Pentateuch on parchment. The duke of Alba has asked BAM to visit the libraries of Breda and Austracht, where he might find books and manuscripts for the Library of El Escorial. First, he needs to know the list of books that are already in this royal library.  </note>
+            <note type="incipit">Por otras tres he avisado a vuestra merced cómo la Biblia de la Iglesia y de Su Magestad yva en buen punto...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(O) AGS, E 583/9;</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+                  </witness>
+               <witness xml:id="Cap">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(Cap) AGS, E 583/7.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 148-150.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 169-176.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 148-150;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 191-193.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>              
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-02-28">28 de febrero de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+               <date when="1569-03-28">28 de marzo de 1569</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafa de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-11-27">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-9-f-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-9-f-1v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-8-f-2v-scaled.jpg"
+         xml:id="foto3"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Recordemos que esta carta a Zayas fue escrita por BAM el mismo día que la anterior, y envió los dos pliegos bajo el mismo sobrescrito, que se consignó al final de esta segunda carta. En el legajo E 583/7 de Simancas se conserva un registro en forma de capítulos de esta carta. Dice así: «Último de hebrero. Estado en que está la Biblia. Sus traducciones de Chaldeo. + Si embiará el Pentateuco. Las librerías que el duque le ha mandado ver de Breda y Haustrat. Embíesele lista de los libros de Su Magestad». Señalo con una cruz el capítulo que está marcado del mismo modo en el registro de Simancas. </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [2v]" ed="O" facs="#foto3"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Al ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or <name type="person" ref="#ZayasGrabrielde">Gabriel de Çayas</name>, mi s<expan><ex>eñ</ex></expan>or, secretario de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y de su Consejo. En corte. </ab>
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><name type="place">Anvers</name>. A <name type="person" ref="#ZayasGrabrielde">Çayas</name>. Del doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> de <date when="1569-02-28">último de hebrero, 1569</date>. R<expan><ex>ecibid</ex></expan>a a <date when="1569-03-28">XXVIII de março</date>. </ab>
+         </div> 
+         <div type="main_content">
+               <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <p>[<hi rend="bold">1</hi>] Por otras tres he avisado a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> cómo la Biblia de la Iglesia y de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> yva en buen punto, y que esperávamos acabar el Pentateuco en todo este febrero.<ref target="#note1" xml:id="reference1">1</ref>  Y estuviera acabado, si no se huvieran recrecido estos grandes fríos que sobrevinieron a estraño tiempo, tales que ataron las manos a todos los artífices, <app><lem wit="#O #E2">si no</lem> <rdg wit="#E1">sino</rdg></app> fueron los herreros y fundidores. Acabarse <app><lem wit="#O #E2">ha</lem> <rdg wit="#E1">han</rdg></app>, plaziendo a Dios, dentro de quatro días. [<hi rend="bold">2</hi>] Yo he estado doze días en la cama con gravíssimo catharro, y muchos dellos con fiebre, empero no havemos cessado de hazer cada día algo en las tradu<surplus>c</surplus>ciones y en lo que cumplía. Para poner en orden este cuerpo todo, estoy esperando que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me embíe el prólogo o epístola que le he embiado, dirigido a la Iglesia universal, en que doy la razón de todo lo que se haze y del acuerdo que Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> ha tenido en esta santa obra.<ref target="#note2" xml:id="reference2">2</ref>  Embiélo para que Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> lo viera y quien más fuesse razón, y e<surplus>n</surplus>mendado se me embiasse.</p>
+            <p>[<hi rend="bold">3</hi>] Mis traducciones del <app><lem wit="#O #E2">caldeo</lem> <rdg wit="#E1">caldeos</rdg></app> en latín están en vista en <name type="place">Lovaina</name>,<ref target="#note3" xml:id="reference3">3</ref> con otras cosas que con aquella universidad he communicado, en la qual tengo dos dottores theólogos, canónigos y cathedráticos nombrados por procuradores de mi diligencia en las cosas que <app><lem wit="#O">propusiere</lem> <rdg wit="#E1 #E2">propusieren</rdg></app> en aquella universidad, y el uno dellos viene a trattar <app><lem wit="#O #E2">comigo</lem> <rdg wit="#E1">conmigo</rdg></app> y consultar las cosas que se offrecen.<ref target="#note4" xml:id="reference4">4</ref>  Yo he estado dos vezes allá y dado larga cuenta de toda la orden que llevamos. Todos dessean ver acabada esta obra. E yo más. [<hi rend="bold">4</hi>] En passando Pascua, plaziendo a Dios, pienso de añadir otro prelo, de manera que se hagan seis pruevas al día.</p>
+            <p>[<hi rend="bold">5</hi>] V<expan>uestra</expan> m<expan><ex>erced</ex></expan> me avise si será Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>  servido le embíe luego un Pentateuco, en acabándosse, de los de pergamino, porque pienso embiarle dos y, si le aggradar<del>a</del>e ansí, será el uno dellos de los que digo, porque vea la obra que ha mandado hazer, que cierto es cosa para alabar a Dios.</p>
+            <p>[<hi rend="bold">6</hi>] El <name type="person" ref="#AlvarezdeToledoFernando">duque d’Alva</name> me ha scritto esta semana<ref target="#note5" xml:id="reference5">5</ref> que vea las librerías de <name type="place">Breda</name> y <name type="place">Haustrat</name>, porque se han de vender, para que desfrutte yo lo que hallare bueno para Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>. En estando en disposición para salir de casa, yré luego, plaziendo a Dios, a aquellos lugares.<ref target="#note6" xml:id="reference6">6</ref></p>
+            <p>[<hi rend="bold">7</hi>] Ya he pedido a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por muchas vezes me embíe la lista de los libros que allá hay en la librería, porque comienço a comprar otros <pb n="f. [1v]" ed="O" facs="#foto2"/> para la librería real. Por agora no se me offrece otra cosa acerca destas materias. En <name type="place">Anvers</name>. <date when="1569-02-28">Último de <del>agost</del> febrero, 1569</date>.</p>
+            <closer><salute>Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, </salute></closer>
+            <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano <app><lem wit="#O #E2">تلميد </lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> </name></signed>
+         </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Para acelerar los trabajos de impresión, el 8 de noviembre de 1568 se había contratado a Joris Van Spangenberg con objeto de que asistiera a Klaas Van Linschoten. El primer volumen de la Biblia Políglota, que contenía el Pentateuco, no salió de las prensas plantinianas hasta el mes de marzo. Cf. Rooses, <title>Christophe Plantin</title>, p. 121.   </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> El prólogo general de la Biblia finalmente se dividió en dos partes tituladas, «Benedicti Ariae Montani Hispalensis in sacrorum Bibliorum quadrilingium regiam editionem, de diuinae scripturae dignitate, linguarum usu et catholici regis consilio praefatio» (23 de julio de 1571, páginas [7-34] del tomo I de la Políglota) y la «Eiusdem Benedicti Ariae Montani Hispalensis alia ad lectorem praefatio. In qua de totius operis usu, dignitate et apparatu ex ordine differitur», fechada el 23 de julio de 1571 y publicada entre las páginas [35-40] del tomo I de la Políglota. El manuscrito original fue sometido a numerosas revisiones tanto en Lovaina como en Madrid: cf. advertimientos de los doctores de Alcalá sobre la prefación de la Biblia (documento de hacia marzo de 1569, cf. Macías,  <title>La Biblia Políglota de Amberes</title>, pp. 120-121), parecer del doctor Serrano sobre la prefación de la Biblia (datable hacia el 11 de julio de 1569, cf. Macías,  <title>La Biblia Políglota de Amberes</title>, pp. 139-142), y censores de Lovaina a Arias Montano, del 22 de julio de 1570 (1570 07 22). En todas se aconsejaba la reducción de este prefacio general, aunque BAM opta por escribir un nuevo prefacio dirigido al lector donde dar cabida a contenidos que no podían omitirse, según él, sobre todo en lo tocante al capítulo de agradecimientos. En el Archivo General de Simancas (E 586/136) se encuentra un autógrafo de BAM que, a nuestro juicio, contiene una serie de páginas del borrador de la que pudo ser esta epístola general, cuyas líneas fueron desechadas y no vieron la luz en la versión definitiva. </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> La respuesta de la revisión lovaniense de estas traducciones latinas de las paráfrasis caldeas de la Biblia fue enviada a Francisco Rafelengio el 13 de julio de 1569. En ella los doctores lovanienses alaban la fidelidad de la traducción, pero critican la excesiva literalidad de algunos pasajes, en los que BAM incurre a veces en barbarismo y solecismo: «Examinauerunt domini censors hanc uersionem. Placet eis uehementer D[omini] Ariae in uertendo summa fides; displicet tamen quibusdam in locis nimia superstitio; quae interdum non abest a barbarismo et solecismo». Cf. Macías,  <title>La Biblia Políglota de Amberes</title>, pp. 144-145.  </note>  
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Agustín Hunneo y Cornelio Goudano, a quienes BAM agradece su colaboración en uno de los prólogos de la Políglota con estas palabras: «In primis autem sacrarum litterarum studiosi Augustino Hunnaeo et Cornelio Goudano, duobus Louaniensis Gymnasii luminibus, sacrae theologiae doctoribus et publicis professoribus, ac toti rei litterariae addictissimis, ingentes habeant gratias. His enim propter insignem eruditionem et sacrarum linguarum non uulgarem cognitionem optimi regis mandato, hoc opus euoluendum ac diligenter examinandum, a Louaniensi Academia commisum est». En la «Eiusdem Benedicti Ariae Montani Hispalensis alia ad lectorem praefatio. In qua de totius operis usu, dignitate et apparatu ex ordine differitur», escrita el 23 de julio de 1571 y publicada entre las páginas [35-40] del tomo I de la Políglota. En las carta número 1571 12 24 solicita BAM a la corte española para estos dos ilustres catedráticos, en correspondencia por los servicios prestados, algún ministerio, obispado o abadía que les reporten un sueldo digno de modo que no tengan que abandonar su malpagada docencia en la Universidad.   </note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Cf. carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-12">1569 02 12</ref>. </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Esta visita a las librerías de Breda y Haustrat fue realizada por BAM en el mes de marzo de 1569 y, en todo caso, antes del 6 de abril, fecha en la comunica a Zayas el resultado de sus prospecciones. De lo poco valioso que halló, BAM recomienda al rey que adquiera unos originales (algunos de ellos versaban sobre historia inglesa y francesa) cuyo valor había ocultado el capellán del rey a las autoridades locales para que estos tesoros bibliográficos pudieran salir de los Países Bajos sin demasiadas dificultades. Cf. 1569 04 06.  </note> 
+            </div>
+      </back>
+   </text>
+</TEI>
