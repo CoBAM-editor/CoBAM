@@ -1,0 +1,147 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690214">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Albornoz (Bruselas) - 14 de febrero de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 02 14</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM asks Albornoz to be patient with Rodrigo, a noble young who seems to have been living with BAM and, after a period of time, sent back to Albornoz due to his inappropiate behavior. He is very grateful for the letter of recommendation in favor of Dodoneus; although he has heard that Dodoneus has been called to service in the Spanish Court, he assumes that he will not be able to accept because of his age and his familiar duties. Thomas Çornoza has written to BAM about his nephew, who was fighting in Alba’s army. Çornoza wanted BAM to beg the Duke to favour that nephew. When this letter was written, BAM was sick in bed.    </note>
+            <note type="incipit">Beso a vuestra merced las manos por la que me hizo de avisarme de la tornada de don Rodrigo...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Archivo de la Casa de los Duques de Alba</msName>
+                        <altIdentifier>
+                           <idno>(O) ADA, ca. 28/169.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 166-167.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint"> (E) Domínguez, <title>Correspondencia</title>, I, 177-179.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="DodoneoRemberto">
+                  <note>Remberto Dodoens, Dodonaeus o, castellanizado, Dodoneo (Leeuwarden, 1517-Leiden, 1585), médico y botánico asentado principalmente en Malinas hasta el saqueo de 1572, ejerció la cátedra de Medicina Patológica y Terapéutica en al Universidad de Leiden desde 1583 hasta su muerte. </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="ZornozaTomásde">
+                  <note>Consúl de españa en Venecia desde 1547.</note></person>
+               <person xml:id="Rodrigo">
+                  <note>Pariente de Juan de Albornoz, secretario del Duque de Alba durante la rebelión en Flandes. </note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-02-14">14 de febrero de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Albornoz</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-02-17">17 de febrero de 1569</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Benito Arias Montano</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-11-06">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/ADA-C-28-169-1r.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/ADA-C-28-169-2v.jpg" xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>El invierno belga hizo mella en la salud de BAM desde el primer momento. La correspondencia con Juan de Albornoz está plagada de recomendaciones particulares que BAM hace a la mano derecha de Alba a instancias de sus amistades y familiares de España. Con la salud algo débil y aún en cama, BAM escribe esta carta autógrafa a Albornoz con más recomendaciones particulares a favor de don Rodrigo, un joven militar al servicio de Alba, y del botánico Remberto Dodoneo, con el que BAM mantiene una sólida relación personal y científica desde su llegada a Flandes y al que incorporará en la amplia red internacional de expertos en medicina y botánica. Se anuncia también aquí el envío a Albornoz de la carta del cónsul de Venecia Tomás de Çornoza con la petición de favor de un sobrino suyo (véase carta nº 1568 12 18). </p>
+         <p>Los folios [1v] y [2r] están en blanco.</p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [2v]" ed="O" facs="#foto2"/>
+            <head>[Sobrescrito:]</head>
+            <ab> <app><lem wit="#O">Al muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or <name type="person" ref="#AlbornozJuande">Juan de Albornoz</name>, secretario de Su Exc<expan><ex>elenci</ex></expan>a etc. mi s<expan><ex>eñ</ex></expan>or. En <name type="place">Brusselas</name></lem> <rdg wit="#E"><hi rend="italic">omisit</hi></rdg></app>.
+            </ab>
+         </div>       
+         <div type="anotation">
+            <head>[Anotado en el margen, con escritura transversal:]</head>
+            <ab> <app><lem wit="#O"><date when="1569-02-14">Febrero 14</date>. <name type="place">Enveres</name>, <name type="person">Alb<expan><ex>ornoz</ex></expan></name>, <date when="1569">1569</date>. El doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, <date when="1569-02-14">14 de hebrero</date>. A <date when="1568-02-17">17 dél</date>.</lem> <rdg wit="#E"> <hi rend="italic">omisit</hi></rdg></app></ab>
+         </div>            
+         <div type="main_content">
+            <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <opener>Muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or: </opener>
+            <p>[<hi rend="bold">1</hi>] Beso a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> las manos por la que me hizo de avisarme de la tornada de <name type="person" ref="#Rodrigo">don Rodrigo</name><ref target="#note1" xml:id="reference1">1</ref> a essa casa, porque yo estava con cuydado por su negocio, que como cosa tan de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> la tengo por muy mía. Allende la obligación que a sus parientes tengo, yo entendí que, mientras más por acá se tardasse, estragaría más su opinión y no vía la hora <choice><sic>que</sic> <corr>de</corr></choice> hazerlo tornar a la disciplina de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, de la qual, como yo le dixe, dependía toda su buena andança. [<hi rend="bold">2</hi>] Por amor de Dios v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> no se canse con su condición, porque él se perderá si v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> lo suelta de la mano. Y deteniéndolo v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> tornará a lo bueno, que en fin es noble y tiene a v<expan>uestra</expan> m<expan><ex>erced</ex></expan> el respetto que es razón. Y después que tenga más experiencia no se hartará de aggradecer el bien que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le haya hecho en governar su mocedad.</p>
+            <p>[<hi rend="bold">3</hi>] También las beso a v<expan>uestra</expan> m<expan><ex>erced</ex></expan> por la que me hizo con la carta en favor del dottor <name type="person" ref="#DodoneoRemberto">Dodoneo</name>,<ref target="#note2" xml:id="reference2">2</ref> y por la obligación que en esto ha <choice><sic>echa</sic> <corr>echo</corr></choice> al mismo. He entendido que se tratta de llevarlo a <name type="place">España</name> al servi<expan><ex>ci</ex></expan>o de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> porque en su facultad es muy dotto. Yo por el servi<expan><ex>ci</ex></expan>o del rey lo desseo, empero duddo que lo podrá hazer cómmodamente porque tiene una muger muy honrada y está paralýtica<ref target="#note3" xml:id="reference3">3</ref> y él passa de los 53.<ref target="#note4" xml:id="reference4">4</ref></p>
+            <p>[<hi rend="bold">4</hi>] <name type="person" ref="#ZornozaTomásde">Tomás de Çornoza</name> me escrivió los días passados encomendándome supplicasse a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> favorezca a un sobrino suyo que, por ser buen soldado y de buena parte y su sobrino, mere<supplied>ce</supplied> la gracia y favor de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>; bien tengo cierto que viniendo a su noticia todas estas partes, v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le hará la que a muchos que tiene muy obligados por estas tierras y otras, y en esto, allende de la devoción que su tío<ref target="#note5" xml:id="reference5">5</ref> a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> tiene, recibiré yo muy a mi cuenta lo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por él hiziere, dándole buena sperança de que sus servicios no serán olvidados. Las cartas embié luego al castellano.<ref target="#note6" xml:id="reference6">6</ref> [<hi rend="bold">5</hi>] Yo estava al presente en la cama de unas calenturillas que con un catarro me han venido.<ref target="#note7" xml:id="reference7">7</ref></p>  <closer>[<hi rend="bold">6</hi>] Nuestro S<expan><ex>eñ</ex></expan>or la muy magn<expan><ex>ífi</ex></expan>ca persona de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> prospere en su servi<expan><ex>ci</ex></expan>o. En <name type="place">Anvers</name>, <date when="1569-02-14">14 de febrero 1569</date>. Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>,
+               <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> تلميد </signed></closer>
+</div>    
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> No hemos hallado en la correspondencia privada de BAM ni de Albornoz refererencias a este joven díscolo llamado don Rodrigo, cuyos parientes solicitaron al biblista que vigilara de cerca en Flandes.  </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Referencia al médico y botánico Remberto Dodoens (Leeuwarden, 29 junio 1517-Leiden, 10 de marzo 1585). Véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/15680807-2">1568 08 07</ref>.   </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Kathelijne de Bruyn, hija de Antonio de Bruyn, tesorero de artillería de Carlos V. La esposa de Dodoens falleció a los 55 años de edad, el 30 de abril de 1572.   </note>     
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> En varias ocasiones se barajó la posibilidad de que Dodoneo ejerciera el cargo de médico personal de Felipe II; la primera de ellas sucedió en 1561, y la última que conocemos en 1572. Aunque nunca llegó a ocupar este cargo, a partir de 1574 ejerció en la corte de Viena los puestos de médico personal de Maximiliano II y, a su muerte, el de médico de Rodolfo II.</note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> El propio Tomás de Çornoza, tío materno de Juan de Uberichaga, para quien se pide el favor. </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Domínguez, <title>Correspondencia</title>, I, 170, propone identificar al referido castellano con Sancho Dávila, primer castellano de Amberes desde enero de 1569. Las cartas a las que se refiere BAM podrían ser la de Zornoza al propio BAM, con fecha del 18 de diciembre de 1568 (véase <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-12-18">1568 12 18</ref>) y una apostilla de BAM escrita al final de la misma, en las que se solicita al círculo de Alba que se interceda por Uberichaga, un sobrino de Tomás de Zornoza que luchaba en el frente de Flandes.</note>   
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> A mediados de marzo siguiente, casi un mes después, BAM seguía sin estar completamente recuperado: «Nuestro buen amigo Arias Montano queda un poco mal dispuesto. Ahí envío a v. m. este pliego suyo. Aguárdole aquí brevemente a dar el hábito de Santiago a Octavio Gonzaga», carta de Albornoz a Zayas, de 11 de marzo de 1569, en <title>Codoin</title>, XXXVII, 574.   </note> 
+            </div>
+      </back>
+   </text>
+</TEI>
