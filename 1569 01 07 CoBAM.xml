@@ -12,7 +12,6 @@
                <resp>Edición crítica y notas</resp>
                <name>Antonio Dávila Pérez </name>
             </respStmt>
-            
          </titleStmt>
          <publicationStmt>
             <distributor>Universidad de Cádiz</distributor>
@@ -22,9 +21,7 @@
             <idno type="CoBAM">1569 01 07</idno>
          </publicationStmt>
          <notesStmt>
-            <note type="abstract">BAM requests a special permission for a soldier of the Spanish army in Flanders, nephew of Hernán Bravo Cayas, who should return to Spain to solve various practical issues, including judicial ones. He also requires a favorable report of his military services.
-               
-            </note>
+            <note type="abstract">BAM requests a special permission for a soldier of the Spanish army in Flanders, nephew of Hernán Bravo Cayas, who should return to Spain to solve various practical issues, including judicial ones. He also requires a favorable report of his military services. </note>
             <note type="incipit">Los días passados, estando Su Excelencia en Mastrik escriví a vuestra merced...</note>
          </notesStmt>
          <sourceDesc>
@@ -40,9 +37,7 @@
                         </altIdentifier>
                      </msIdentifier>
                   </msDesc>
-               </witness>                     
-               
-          
+               </witness>
                <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 166-167.</witness>
               </listWit>
             <bibl type="inextenso" n="firstPrint"> (E) Domínguez, <title>Correspondencia</title>, I, 166-167.</bibl>
@@ -54,8 +49,7 @@
             <p>Dirigido por Antonio Dávila Pérez.</p>
          </projectDesc>
          <editorialDecl>
-            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
-						P5</ref></p>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -64,7 +58,6 @@
                <person xml:id="AriasMontanoBenito">
                   <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
                </person>
-              
                <person xml:id="AlbornozJuande">
                   <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
                <person xml:id="AlvarezdeToledoFernando">
@@ -82,9 +75,7 @@
                <person xml:id="GorvalanIosepe">
                   <note>Soldado español en Flandes. </note>
                </person>
-              
-               
-               </listPerson>
+            </listPerson>
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
@@ -97,9 +88,6 @@
                <settlement>Bruselas</settlement>
                <date when="1569-01-07">7 de enero de 1569</date>
             </correspAction>
-            
-               
-           
          </correspDesc>
                   <langUsage>
             <language ident="es" ana="source">Español</language>
@@ -118,13 +106,11 @@
          url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/10/ADA-c-28-168-1r-scaled.jpg" xml:id="foto1"/>
       <graphic
          url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/10/ADA-c-28-168-2v-scaled.jpg" xml:id="foto2"/>
-      
         </facsimile>
    <text>
       <front>
          <p>Las recomendaciones de familiares, amigos y deudos ante los grandes patronos de su tiempo ocupan gran parte de la correspondencia privada de BAM. En este documento se hace referencia a una frecuente correspondencia privada de nuestro humanista con Hernán Bravo de Çayas y «otros parientes míos», cartas todas no localizadas.  </p>
          <p>Los folios [1v] y [2r] están en blanco.</p>
-         
       </front>
       <body>
          <div type="address">
@@ -159,8 +145,6 @@
                   <ref target="#reference3">3</ref> Diego de Espinosa (1512-1572), nombrado en 1565 presidente del Consejo de Castilla y, en 1566 Inquisidor General.    </note>     
                <note type="footnote" xml:id="note4">
                   <ref target="#reference4">4</ref> Posible referencia al libro que Tomás de Zornoza envió desde Venecia a BAM por medio de Juan de Albornoz. Cf. carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-12-18">1568 12 18</ref>. No se han podido localizar, si es que se conservan, las dos cartas citadas aquí por BAM: la que recibió de Albornoz con un libro y la respuesta del propio BAM junto con Plantino.</note> 
-             
-             
             </div>
       </back>
    </text>
