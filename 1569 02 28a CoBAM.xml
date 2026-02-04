@@ -1,0 +1,227 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690228a">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 28 de febrero de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 02 28a</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">The travel difficulties have prevented BAM’s last letters from reaching their destination. Zayas has accused BAM of negligence in writing. The supervisor of the Polyglot justifies himself and expresses his affection for the royal secretary. The conflict with England must be solved in a peaceful manner. BAM sent Zayas an upholstery; if the secretary likes it, he will order matching curtains. Thanks for the bulls. As BAM told him in a previous letter, he is willing to travel to Rome. Doña Mariana wants Zayas to visit her more frequently. BAM asks Zayas to send him a copy of his <title>Dictatum Christianum</title>. He is worry about the last shipment to Luis Manriquez. Plantin has sent letters to Zayas together with BAM’s letters. He largely praises the printer. Don Luis Carrillo wants Zayas to intercede so that he can recover his money from an unpaid credit. 
+            </note>
+            <note type="incipit">Yo no puedo atribuir a otra cosa que a desgracia mía...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(O) AGS, E 583/8;</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+                  </witness>
+               <witness xml:id="Cap">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(Cap) AGS, E 583/7.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 145-148.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 169-176.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 145-148;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 183-190.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI			P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AlavaFrancesde">
+                  <note>Francés de Álava (1519-1583), embajador de España en Francia entre 1565 y 1571.</note></person>
+               <person xml:id="ArceFranciscode">
+                  <note>Francisco de Arce (1493-1573), médico y cirujano español.</note></person>
+               <person xml:id="DíazBecerrilDiego">
+                  <note>Diego Díaz Becerril, casado con Isabel Vélez de Alcocer, era hijo de Alonso de Palma y de María Fernández. Mercader avispado cuya fama de hombre honesto en quien todos confiaban en Sevilla hizo que, cuando se abatió sobre los círculos luteranos de Sevilla la gran persecución de 1559, Diego se encargara de velar por los bienes de sus amigos presos en las mazmorras inquisitoriales. El interés comercial de Diego estuvo siempre muy centrado en Ultramar, y más concretamente en el Perú, donde ya había residido hacia 1549 y de donde le vino su fortuna. BAM, quien se refiere a él como su hermano, apreciaba sinceramente a este mercader, quien durante el arresto de nuestro biblista en 1559 había salido como su fiador. Es cierto que Montano le franqueó muchas puertas para sus negocios y lo recomendó en reiteradas ocasiones; pero no deja de ser menos cierto que también encontró siempre en Diego y en la red comercial que la familia tenía en el extranjero una ayuda incondicional. 
+                  </note></person>
+               <person xml:id="CalvetedeEstrellaJuanCristobal">
+                  <note> Juan Cristóbal Calvete de Estrella, 1520-1593, historiador y poeta español. 
+                  </note></person>
+               <person xml:id="CarrillodeCastillaLuis">
+                  <note>Luis Carrillo de Castilla, capitán de Su Majestad y gobernador de la ciudadela de Hoogstraten.</note>
+               </person>  
+               <person xml:id="DavilaCordobaMariana">
+                  <note>Mariana Dávila Córdoba, Mariana, casada con Fadrique Enríquez de Ribera, I Marques de Villanueva del Río</note>
+               </person> 
+               <person xml:id="EspinosaDiegode">
+                  <note>Diego de Espinosa (1512-1572), nombrado en 1565 presidente del Consejo de Castilla y, en 1566 Inquisidor General. </note>
+               </person>
+               <person xml:id="ManriquedeLaraLuis">
+                  <note>Luis Manrique de Lara (fallecido en 1583), limosnero y capellán mayor de Felipe II.  </note></person>
+               <person xml:id="ManuzioPaolo">
+                  <note>Paolo Manuzio, 1512-1574, impresor veneciano.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="VargasFranciscode">
+                  <note>Francisco de Vargas, fallecido en 1566, diplomático español, escritor.</note></person>
+               <person xml:id="VargasPedrode">
+                  <note>Hijo de Francisco de Vargas.</note></person>
+               <person xml:id="ZuñigaJuande">
+                  <note>Juan de Zúñiga, 1539-1586, embajador de España en Roma, capitán general del Reino de Nápoles.</note></person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person> 
+               </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-02-28">28 de febrero de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+               <date when="1569-03-28">28 de marzo de 1569</date>   
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafa de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-11-20">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-8-f-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-8-f-1v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-8-f-2r-scaled.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/AGS-E-583-8-f-2v-scaled.jpg"
+         xml:id="foto4"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>En este documento leemos la primera solicitud de BAM para dirigirse a Roma, suponemos que para presentar el proyecto de la Biblia, hecho que no se produjo hasta 1572. Entre otros temas de interés, BAM vuelve a formular en este documento un elogio de Plantino y a desplegar su faceta de agente comercial consiguiendo para Zayas y otros personajes de la Corte tapicerías, reposteros y otros objetos de lujo fabricados en los Países Bajos. </p>
+         <p>El sobrescrito de esta misiva incluye dos cartas de BAM escritas en dos momentos distintos del mismo día. La segunda de ellas, que editamos con el número 1569 02 28b, ofrece información más detallada sobre los trabajos de la Biblia Políglota. </p>
+         <p>En el legajo E 583/7 de Simancas se conserva un registro en forma de capítulos de esta carta. Dice así: «Último de hebrero. Despachos y pliegos que ha embiado. Lo que importa para con Inglaterra. + Tapicería. Gracias de lo de sus bullas. Que se avise a Diego Díaz del coste. + Su yda a Roma (ojo). + Lo de doña Mariana. + Instrucción Christiana. + Spino del Cardenal y planchas. Loor de Plantino. Lo de don Luys Carrillo». Señalamos con una cruz los capítulos que están marcados del mismo modo en el registro de Simancas. </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [2v]" ed="0" facs="#foto4"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Al ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or <name type="person" ref="#ZayasGrabrielde">Gabriel de Çayas</name>, mi s<expan><ex>eñ</ex></expan>or, secretario de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y de su Consejo. En corte. </ab>
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><app><lem wit="#O #E2"><name type="place">Anvers</name>. A <name type="person" ref="#ZayasGrabrielde">Çayas</name>. Del doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> de <date when="1569-02-28">último de hebrero, 1569</date>. R<expan><ex>ecibid</ex></expan>a a <date when="1569-03-28">XXVIII de março</date></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>. </ab>
+         </div>
+         <div type="main_content">
+               <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustre</ex></expan> s<expan><ex>eñ</ex></expan>or: 
+                       </opener>
+            <p>[<hi rend="bold">1</hi>] Yo no puedo atribuir a otra cosa que a desgracia mía el aportar <app><lem wit="#O #E2">tan</lem> <rdg wit="#E1">tal</rdg></app> mal y tan pocas vezes mis cartas a manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, pues que no menos cuydado y diligencia pongo en escrivirlas y entregarlas que las demás cuyos pliegos llegan. No passa semana que o por la mar, quando se navegava, o por tierra, con quantos correos o particulares sé que parten, o por vía del embaxador de <name type="place">Francia</name><ref target="#note1" xml:id="reference1">1</ref> no escrivo muchas cartas, y todas de mi mano, porque no puedo hazerlo menos. Desde la bíspera de Navidad he embiado siete pli<supplied>e</supplied>gos y con este ocho, y en muchos dellos han ydo hojas de la Biblia, y en <app><lem wit="#O #E2">otros</lem> <rdg wit="#E1">otras</rdg></app> muestras del <title><name type="person" ref="#EspinosaDiegode">Spino</name></title> del card<expan><ex>enal</ex></expan>, y en <app><lem wit="#O #E2">otros</lem> <rdg wit="#E1">otras</rdg></app> hojas de la <title>Silva</title> de <name type="person" ref="#CalvetedeEstrellaJuanCristobal">Strella</name>.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Dame grande pena saber que no aporten, porque qualquiera defecto puede caber en mí, empero el ser negligente en servir a los que devo en quanto pudiere, siempre lo he huydo como cosa agena de mi condición. Y pésame mucho que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, sabiendo cierto quánto le amo y quán tierno soy en est<del>a</del>e affecto, me tratta tan ásperamente en persuadirse que tengo negligencia en le escrivir, pues si a v<expan>uestra</expan> m<expan><ex>erced</ex></expan> no, ¿a quién?</p> <p>[<hi rend="bold">3</hi>] A don <name type="person" ref="#AlavaFrancesde">Francés</name> he escritto tres semanas arreo<ref target="#note3" xml:id="reference3">3</ref> con despachos, y no he recibido respuesta suya un mes ha. Yo no dexaré de hazer lo que devo mientras pudiere, y el successo encomendarlo he a Dios.<ref target="#note4" xml:id="reference4">4</ref> Mucho me pesaría y pesa siempre que sé <supplied>que</supplied> alguna carta se me pierde.  </p>
+            <p>[<hi rend="bold">4</hi>] Las cosas de <name type="place">Inglaterra</name> están tan embaraçadas y tan a n<expan><ex>uest</ex></expan>ro daño como v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> havrá entendido, y es mucho más de lo que se puede dezir, porque si de Dios y del rey no viene buen remedio, toda esta contrattación se pierde y muchas pers<expan><ex>on</ex></expan>as quedan destruidas. A mí me da gran pena ver lo que passa. Por amor de Dios v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> haga lo possible en que se componga por agora con paz, que nunca es buena la guerra, y agora menos que nunca, estando las cosas destos estados quales están.<ref target="#note5" xml:id="reference5">5</ref> </p>
+            <p>[<hi rend="bold">5</hi>] Por otras he dado aviso a v<expan>uestra</expan> m<expan><ex>erced</ex></expan> de una tapicería que tengo mandada guardar para v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> de quatro annas,<ref target="#note6" xml:id="reference6">6</ref> que está igualada a dos scudos y <app><lem wit="#O #E2">pocas placas, mas con condición</lem> <rdg wit="#E1">pocas placas más, con condición</rdg></app> esperen el contento de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>.  Y desseo el aviso dél para, conforme a <app><lem wit="#O #E2">ellas</lem> <rdg wit="#E1">ella</rdg></app>, mandar hazer las antepuertas.<ref target="#note7" xml:id="reference7">7</ref></p><pb n="f. [1v]" ed="O" facs="#foto2"/>
+            <p>[<hi rend="bold">6</hi>] <choice><sic>Beso a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por el aviso</sic> <corr>Beso a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> las manos por el aviso</corr></choice> del despacho de <name type="place">Roma</name>.<ref target="#note8" xml:id="reference8">8</ref> Bien sé que en todas las cosas de honor o facultad mía no tengo que pensar dónde se podrán procurar. Dé Dios mucha vida a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, que no he yo menester más para todo, empero lo que yo soy obligado para el honor de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> yo lo haré con el favor de Dios <foreign>et dignum praestabo me etiam pro laude <app><lem wit="#O #E2">merentis</lem> <rdg wit="#E1">merentes</rdg></app></foreign>.<ref target="#note9" xml:id="reference9">9</ref>  Mande v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> avisar a mi h<expan><ex>e</ex></expan>r<expan><ex>man</ex></expan>o <name type="person" ref="#DíazBecerrilDiego">Diego Díaz</name><ref target="#note10" xml:id="reference10">10</ref> de lo que cuestan las bullas, porque luego lo embiará o pagará donde se le mandare. Yo escriviré de aquí a don <name type="person" ref="#ZuñigaJuande">Juan de Çúñiga</name><ref target="#note11" xml:id="reference11">11</ref>  dándole las gracias por mi parte y reconociendo a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por autor de todo.</p>
+            <p>[<hi rend="bold">7</hi>] Por una mía havrá v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> entendido el desseo que tengo de yr a <name type="place">Roma</name>, y no digo más acerca dello, porque me basta que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> lo entienda para que lo ordene. [<hi rend="bold">8</hi>] Mi s<expan><ex>eñor</ex></expan>a d<expan><ex>oñ</ex></expan>a <name type="person" ref="#DavilaCordobaMariana">Mariana</name><ref target="#note12" xml:id="reference12">12</ref> accusa a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en una suya que me escrivió la postrera que no la vee y que está enojada dello. Mal haze v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, porque los servicios que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le ha hecho es razón que se satisfaga dellos en vistas y buena gracia, ya que estamos ciertos que no havrá otra satisfación, aunque cada mes le presente unos <app><lem wit="#O">afforros</lem> <rdg wit="#E1 #E2">aforros</rdg></app>, etc.</p> 
+            <p>[<hi rend="bold">9</hi>] Desseo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me mande trasladar y embiar una copia de la instrucción christiana<ref target="#note13" xml:id="reference13">13</ref>  que le embió el <app><lem wit="#O #E2">dottor</lem> <rdg wit="#E1">dotor</rdg></app> <name type="person" ref="#ArceFranciscode">Arcos</name><ref target="#note14" xml:id="reference14">14</ref>  mía, porque tengo necessidad della acá y no tengo copia alguna. Y avíseme v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> qué siente della, porque mi intención no fue sino declarar quán simple y claro es el officio común de los christianos en las cosas de importancia, y que han de ser demandadas a todos.</p>  
+            <p>[<hi rend="bold">10</hi>] Con <app><lem wit="#O #E2">esta</lem> <rdg wit="#E1">esto</rdg></app> va una muestra del <title><name type="person" ref="#EspinosaDiegode">Spino</name></title> del cardenal.  Harto mal será que no esté allá ya la plancha y las cien pieças que embié con ella en los cofres del s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ManriquedeLaraLuis">Luis Manrique</name>. </p>
+            <p>[<hi rend="bold">11</hi>] <name type="person" ref="#PlantinoCristobal">Plantino</name> está bueno y tan afficionado y obligado a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> como es razón. En algunos pliegos míos han ydo cartas suyas para v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. Otra vez affirmo a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> que en toda mi vida he visto hombre de más habilidad junta con más bondad y más conocimiento de virtud y uso della. Cada día hallo en él cosas que me mueven a alabar a Dios, y sobre todo la grande humildad y paciencia increýble que tiene a la mucha embidia que los de su arte y tratto le han mostrado y tenido siempre, a los quales, pudiendo con mucha justicia hazer mal, jamás ha dexado de hazer bien. En nombrándole al rey llora de affección que le tiene. [<hi rend="bold">12</hi>] En <name type="place">Roma</name> se haze grande estima dél, y el papa le ha embiado un breve y carta mandándole imprima el breviario general, porque después de impresso tres vezes en <name type="place">Roma</name> por <name type="person" ref="#ManuzioPaolo">Manutio</name><ref target="#note15" xml:id="reference15">15</ref> impressor del papa y pueblo romano, no ha salido ninguno perfecto ni corregido.<ref target="#note16" xml:id="reference16">16</ref>  Imprime otra biblia pequeñita muy portátil a instantia de studiosos <pb n="f. [2r]" ed="O" facs="#foto3"/> que dessean traerla consigo.<ref target="#note17" xml:id="reference17">17</ref> </p>
+            <p>[<hi rend="bold">13</hi>] Don <name type="person" ref="#CarrillodeCastillaLuis">Luis Carrillo</name>, alcayde de <name type="place">Haustrat</name>,<ref target="#note18" xml:id="reference18">18</ref> dize que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> es su protettor y todo su arrimo, y que ha escritto a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> supplicándole haga por una letra suya que don <name type="person" ref="#VargasPedrode">Pedro de Vargas</name>, hijo del embaxador <name type="person" ref="#VargasFranciscode">Vargas</name>,<ref target="#note19" xml:id="reference19">19</ref> le pague doz<expan><ex>ent</ex></expan>os scudos que le deve conforme a una letra suya que tiene, a cuya fiuzia él paga cada año ocho por ciento, porque confiado de que se cumpliría con él, los tomó acá. V<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le haga esta m<expan><ex>erce</ex></expan>d de hazer que se le paguen, porque cierto tiene necessidad, y dello me consta a mí assaz.</p>
+            <p>[<hi rend="bold">14</hi>] Plega a Dios tengan <choice><sic>esta</sic> <corr>estas</corr></choice> más dicha que las otras en llegar más ciertas y más presto. Y prospere la ill<expan><ex>ustr</ex></expan>e pers<expan><ex>on</ex></expan>a de v<expan>uestra</expan> m<expan><ex>erced</ex></expan> en su servi<expan>ci</expan>o. En <name type="place">Anvers</name>, <date when="1569-02-28">últ<expan><ex>im</ex></expan>o de febrero, 1569</date>.</p>
+            <closer><salute>Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, su servidor</salute></closer>
+            <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano <app><lem wit="#O #E2">تلميد </lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> </name></signed>
+         </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Don Francés de Álava, cf. nota biográfica en <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2">1568 03 25a</ref>.  </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> <title>Munuscula Ioannis Christophori Calueti Stellae: ad ampliss. et illustriss. principem Didacum Spinosam S. R. E. praesbyterum cardinalem et pontificem Seguntinum et Senatus Regii praesidem et summum haereticae prauitatis inquisitorem</title> (Antuerpiae: ex officina Christophori Plantini, 1569, en 4º). Se trata de un elogio del cardenal Diego de Espinosa. Véase descripción bibliográfica en <title>PP</title>, II, nº 872. Juan Cristóbal Calvete de Estrella (ca. 1510-1593) alcanzó el grado de maestro en Artes en Salamanca como discípulo de Hernán Núñez, el Comendador Griego. Entre 1533 y 1540 Calvete se sitúa en el entorno inmediato de la corte imperial, dedicando a Carlos V el discurso encomiástico <title>Ad diuum Caesarem Carolum Q. De triumphali eius in Hispanias reditu gratulatiorius panegyricus</title>. En 1541 fue nombrado maestro de pajes del príncipe don Felipe, iniciando en esta época la adquisición de libros para proveer la biblioteca del príncipe, que después pasaría al monasterio de San Lorenzo de El Escorial. En 1546 inicia con el príncipe don Felipe un gran viaje por los estados no hispanos del imperio con motivo de su presentación oficial como futuro heredero de la corona de su padre. Tras un largo período apartado de la corte, en 1587 es nombrado oficialmente cronista latino de Su Majestad, cargo que ostentó hasta su muerte el 14 de febrero de 1593. Cf. M. A. Díaz Gito, <title>Juan Cristóbal Calvete de Estrella. La Vacaida</title> (Alcañiz-Madrid, 2003), pp. XXI-XLVIII.  </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Según el <ref target="https://dle.rae.es/arreo#otras"><title>Diccionario de la lengua española</title></ref>, esta palabra, en uso adverbial, significa «sucesivamente, sin interrupción».   </note>  
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Sobre la compra de libros para el Escorial, encargo de Felipe II en el que debían colaborar BAM y el embajador de Francia don Frances de Álva, véanse cartas <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2">1568 03 25a</ref> y <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-24">[1568 11 09 - 1568 11 24]</ref>.   </note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Cabrera de Córdoba resume el capítulo X de su <title>Historia de Felipe II</title>, pp. 442-444 con el epígrafe «La reina de Inglaterra rompe de secreto la guerra al Rey de España». Galeones ingleses apresaron, en 1568, algunos navíos españoles que iban a Flandes con mercancía y dineros. Entre ellos «arrestaron en Plemua con unos navíos cuatrocientos mil ducados de asiento que el rey católico hizo con genoveses para la paga de sus exércitos de Flandes. Su embaxador Guerao de Spés pidió a la Reina la soltura de los navíos y dineros, y la concedió; pero faltando a la promesa, a la fe de sus mandatos, amistad del rey, los retuvo para favorecer los huguenotes que nuevamente conspiraban contra su rey a instancia del Cardenal de Jatillón, que por ellos solicitaba las armas de Inglaterra. El Duque de Alba procuró la restitución del dinero, y entre las demandas y respuestas se embargaron de la una a otra parte los navíos y haciendas de los tratantes, y venía a ser casi guerra sin tomar las armas, dispuesta para romperse la liga hereditaria que tiene Inglaterra con la Casa de Borgoña. De ahí en adelante, aunque esta diferencia sobre hacienda se malcompuso, [Isabel] admitía al descubierto los rebeldes del rey, y los ayudó, fomentando las rebeliones».  </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> «Ana: Antigua medida de longitud, generalmente para tejidos, equivalente a un metro aproximadamente», según el <ref target="https://dle.rae.es/ana"><title>Diccionario de la lengua española</title></ref>.  </note>     
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> «Antepuerta: Repostero o cortina que se pone delante de la puerta para abrigo u ornato», según el <ref target="https://dle.rae.es/antepuerta"><title>Diccionario de la lengua española</title></ref>.      </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Se refiere al despacho de las bulas para una pensión de 300 ducados sobre la mitra de Badajoz. Cf. Domínguez, <title>Correspondencia</title>, I, p. 186, nota 13.     </note>
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> HOR. <title>Epist.</title> 1, 7, 24. Traducción: «y me mostraré digno también de la gloria de mi bienhechor».    </note>
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> Diego Díaz Becerril. Véase nota biográfica en <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-02-14-cristobal-plantino-amberes-a-benito-arias-montano-madrid-14-de-febrero-de-1568">1568 02 14</ref>.    </note>
+               <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref> Don Juan de Zúñiga y Requesens (1536-17 de noviembre de 1586), segundo hijo del matrimonio entre el Comendador Mayor de Castilla y doña Estefanía de Requesens, hermano menor de don Luis de Requesens, cuyo título heredó, tras la muerte de este último, en 1578. Inició su carrera política en 1568, ocupando la embajada española en Roma durante casi once años; en 1579, fue nombrado virrey de Nápoles; y en 1582, Zúñiga recaló en la corte, accediendo a los Consejos de Estado y Guerra. En 1584 el rey lo nombró ayo y mayordomo mayor del príncipe heredero embajador de España en Roma. Cf. F. Barado y Font, <title>Don Luis de Requesens y la política española en los Países Bajos. Discurso de ingreso en la Real Academia de la Historia</title> (Madrid, 1906), pp. 70-71; J. Martínez Millán – C. J. de Carlos Morales (dirs.), <title>Felipe II (1527-1598). La configuración de la monarquía hispana</title> (Salamanca, 1998),  pp. 519-521.  </note>
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> Doña Mariana de Córdoba, hija de Pedro Dávila, primer marqués de las Navas, y esposa de don Fadrique Enríquez de Ribera, miembro de la casa de los marqueses de Tarifa. No se han localizado cartas de la que debió de ser frecuente correspondencia familiar entre BAM y doña Mariana, en cuya casa se hopedó alguna temporada. En el epistolario montaniano hallamos referencias a estas cartas perdidas: «Mi señora doña María Anna me ha escrito con aviso de la salud de vuestra merced» (carta de Arias Montano a Juan de Ovando, 14 de junio de 1568, <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-06-14">1568 06 14</ref>); «por las cartas que escrive al secretario Çayas y a la señora doña Mariana y a Lastanosa, que luego me avisan que tienen carta de vuestra merced» (Ovando a Arias Montano, 4 de agosto de 1569, 1569 08 04); en septiembre de 1570 BAM envía a doña Mariana un retablo antiguo (Arias Montano a Ovando, 1570 09 05); «[...] nos vino la certeza de la possessión dada a vuestra señoría, la qual tuve yo por cartas de mi señora doña Mariana y de [...]» (Arias Montano a Ovando, 6 de octubre de 1571, 1571 10 06). En algún lugar de retiro de las Navas del Marqués firmó BAM el poema que concluye el Comentario al profeta Oseas (en <title>Commentaria in duodecim prophetas</title>): «Quid moto gratus celebrem poeta? /quid prius laudum referam canoris / uersibus, uel quae resonent Nauarum / carmina rupes?», concluyendo con la indicación «Carmen ex uoto Nauis in agro Abulensi apud Diui Laurentii Sacellum mense augusto 1567».    </note>
+               <note type="footnote" xml:id="note13">
+                  <ref target="#reference13">13</ref> Creemos que BAM se refiere aquí al pequeño tratado devoto para iniciarse en la piedad cristiana, que vería la luz siete años después con el título de <title>Dictatum Christianum siue communes et aptae discipulorum Christi omnium partes. Ex magistri praeceptis et institutis ad pusilli gregis instructionem a condiscipulo Benedicto Aria Montano obseruatis et in breuem summam collatis</title> (Antuerpiae, ex officina Christophori Plantini, architypographi regii, M. D. LXXV, en 12º). Se realizaron traducciones de este tratado al castellano en 1739 y 1771, y al francés en 1579.  </note>
+               <note type="footnote" xml:id="note14">
+                  <ref target="#reference14">14</ref> Conocemos un Juan Arcos de la Mota, en Fregenal, que gestionó bienes de BAM en su patria chica y que aparece citado en el testamento del sabio español (cf. J. Rújula y de Ochotorena - A. Del Solar y Taboada, <title>Doctor Benito Arias Montano. Datos, noticias y documentos para su biografía</title> (Badajoz, 1927), p. 134) y en el estatuto por el que BAM fundó la institución de la cátedra de lengua latina en Aracena (cf. Gil, <title>Arias Montano en su entorno</title>, pp. 299-313). En todo caso, las referencias localizadas de este personaje presentan el tratamiento de licenciado, y no de doctor (cf. R. Caso Amador, «La partida de bautismo de Benito Arias Montano. Comentarios sobre un error historiográfico», en R. Caso Amador – A. Oyola Fabián (coords.), <title>El frescor de los montes. Arias Montano y sus orígenes</title> (Fregenal de la Sierra, 2001), pp. 164-165). Otra posibilidad pasa por que el personaje citado sea Francisco de Arce, médico y amigo de BAM, que ha sido identificado por algunos estudiosos con el licenciado Francisco Vázquez de Arcos (cf. R. Caso Amador, «El origen judeo-converso de Benito Arias Montano», <title>Revista de Estudios Extremeños</title>, 71-3 (2015), 1707). </note>
+               <note type="footnote" xml:id="note15">
+                  <ref target="#reference15">15</ref> Paolo Manuzio (1512-1574), hijo del famoso impresor veneciano Aldo Manuzio.  </note> 
+               <note type="footnote" xml:id="note16">
+                  <ref target="#reference16">16</ref> A partir de la reforma del breviario romano por recomendación del Concilio de Trento formulada en la bula del 9 de julio de 1568 por Pío V, Plantino inició negociaciones, por medio del cardenal Granvela, con el tipógrafo romano Paulo Manuzio, que ostentaba el monopolio de impresión de los nuevos breviarios. El 11 de agosto de 1568 se firma un acuerdo con Manuzio que da a Plantino el monopolio de publicación en los Países Bajos. El privilegio papal que confirmaba esta transacción llegó con fecha de del 22 de noviembre de 1568 y fue ratificado por el Consejo Privado el 10 de enero de 1569 y por el Consejo de Brabante el 11 de enero de 1569. Plantino se había comprometido a pagar a Manuzio una parte de los beneficios, lo que restó valor al negocio, habida cuenta de que algunos impresores de Lieja y Colonia empezaron a comerciar breviarios en los Países Bajos sin pagar nada a Manuzio. Al tener conocimiento de que Felipe II mantenía negociaciones con el papa sobre breviarios especiales para España, Plantino ofreció sus servicios y, finalmente, obtuvo un lucrativo monopolio de impresión de libros litúrgicos para España que se extendió desde 1571 a 1576. Una descripción bibliográfica de los breviarios impresos en la casa plantinaina se puede consultar en <title>PP</title>, I, 442-484. </note>
+               <note type="footnote" xml:id="note17">
+                  <ref target="#reference17">17</ref> En 1569 salieron de las prensas de Plantino una Biblia en latín, en 8º (cf. <title>PP</title>, I, nº 685) y un Nuevo Testamento en 24º (cf. <title>PP</title>, I, nº 706).  </note>
+               <note type="footnote" xml:id="note18">
+                  <ref target="#reference18">18</ref> Don Luis Carrillo de Castilla, capitán de Su Majestad y gobernador de la ciudadela de Hoogstraten. Véase nota bibliográfica en <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-12">1569 02 12</ref>.  </note>
+               <note type="footnote" xml:id="note19">
+                  <ref target="#reference19">19</ref> Creemos que se refiere a Francisco de Vargas y Mejía (1500-1566), fiscal en la contaduría Mayor de Cuenta en 1545, asesor del embajador imperial Francisco de Toledo en el Concilio de Trento en 1551 y embajador imperial en Venecia en 1552, cargo que mantuvo hasta 1558 cuando fue enviado en misión diplomática a Roma hasta 1563 (cf. <title>ABEPI</title>, I, 988, 275; M. José Bertomeu Masiá (ed.), <title>Cartas de un espía de Carlos V. La correspondencia de Jerónimo Bucchia con Antonio Perrenot de Granvela</title> (Valencia, 2006), p. 25).   </note>
+            </div>
+      </back>
+   </text>
+</TEI>
