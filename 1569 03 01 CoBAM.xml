@@ -1,0 +1,168 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690301">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Daniel Barbaro (Venecia) a Benito Arias Montano (Amberes) - 1 de marzo de 1569 </title>
+            <author>Daniel Barbaro</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 03 01</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Barbarus is looking forward to the arrival of the Greek merchant Andreas Darmarius, who is bringing him BAM’s letter and several orders. He would love to see more samples of the Polyglot Bible. He gave his book on the perspective to certain merchant who has to deliver it to BAM or Plantin. He sends a letter from Oliverio Baldoccio. He has already given Josephus Amatus BAM’s letter. His answer goes next to Barbarus’ letter.                
+            </note>
+            <note type="incipit">Andream de Armari, cui te literas ad me dedisse...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 20r-v, f. 25r-v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 118-119, nº 13.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 194-197</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 118-119; </bibl><bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 194-197.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="BarbaroDaniel">
+                  <note>Daniel Mateo Alvise Barbaro (Venecia, 8 de febrero de 1514-13 de abril de 1570), noble veneciano conocido por sus comentarios y traducciones de Vitrubio, Patriarca de Aquilea desde 1550. Estudió filosofía, matemáticas y óptica en la Universidad de Padua y sirvió a la República Veneciana como embajador en la corte inglesa de Isabel I y como representante del Concilio de Trento. Entre sus obras destacan <title>La Predica dei sogni</title> (1542), publicada bajo el seudónimo de reverendo padre Hypneo da Schio, los <title>Dieci libri dell'architettura di M. Vitruvio</title> (1556) y <title>La practica della perspettiva</title> (1568), un libro sobre perspectiva para arquitectos y artistas. </note></person>
+               <person xml:id="BaldochioOliverio">
+                  <note>Humanista residente en Lovaina hacia 1568.</note></person>
+               <person xml:id="DarmarioAndreas">
+                  <note>Copista griego y mercader de libros.</note></person>
+               <person xml:id="Bindoni">
+                  <note>Impresor y editor en Venecia. Amigo de Daniel Barbaro hacia 1569.</note></person>
+               <person xml:id="AmatusIosephus">
+                  <note>Judío nacido en Tesalónica y residente en Amberes hacia 1568.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Daniel Barbaro</persName>
+               <settlement>Venecia</settlement>
+               <date when="1569-03-01">1 de marzo de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+                     </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Desconocido</handNote>
+         </handNotes>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-09-26">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/KBS-A902-f-20r-scaled.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/KBS-A902-f-25v-scaled.jpg" xml:id="foto2"/>   </facsimile>
+   <text>  
+      <group>
+      <text type="source"><front>
+         <p> La creencia de una parte de la filología bíblica de que los judíos habían corrompido el texto sagrado para destruir los principios de la fe cristiana constituye un arma de doble filo, que en manos de los detractores de BAM veremos cómo se vuelve contra la Políglota de Amberes. Al margen de la Políglota, y a partir de la promulgación en febrero de 1569 del edicto de Felipe II que disponía la publicación en Flandes de un catálogo de libros prohibidos, BAM estará ocupado en la elaboración de dicho catálogo. Se busca confeccionar una lista de los libros publicados con posterioridad al Índice de Pío IV (1564) que deban ser prohibidos o expurgados. Al efecto de redactar un primer catálogo, que será sometido a la aprobación de una junta de teólogos reunidos en Bruselas, BAM solicita la colaboración de Daniel Barbaro. El elenco elaborado por BAM será aprobado en su totalidad, publicándose en 1569 en la imprenta de Plantino bajo el título <title>Librorum prohibitorum index ex mandato Regiae Catholicae Maiestatis et Illustrissimi Ducis Albani Consiliique Regii decreto confectus et editus</title>.</p>
+         <p>Los folios 20v y 25r están en blanco.</p>
+      </front>
+         <body> 
+            <pb n="f. 25v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al molto mag<expan><ex>nifi</ex></expan>co et r<expan><ex>everen</ex></expan>do <app><lem wit="#O #E2">sig<expan><ex>nor</ex></expan></lem> <rdg wit="#E1">signore</rdg></app>d<expan><ex>ottor</ex></expan> <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, mio <app><lem wit="#O #E2">os<expan><ex>servandissimo</ex></expan></lem> <rdg wit="#E1"> osservantissimo</rdg></app> <app><lem wit="#O #E2"> f<expan><ex>rate</ex></expan>llo </lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app>. <name type="place">Anversa</name>.
+               </ab>
+            </div>   
+            <div type="main_content">
+               <pb n="f. 20r" ed="O" facs="#foto1"/>
+               <opener>Praestantis<expan><ex>sim</ex></expan>o uiro atque amicissimo d<expan><ex>omino</ex></expan> <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name> <name type="person" ref="#BarbaroDaniel">Daniel Barbarus</name> s<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>icit</ex></expan>.
+            </opener>
+               <p>[<hi rend="bold">1</hi>] <name type="person" ref="#DarmarioAndreas">Andream de Armari</name>, cui te literas ad me dedisse et uolumen cerata tela inductum mihi tradendum credidisse scribis, adhuc expecto. Vereor ne a Graeco homine fidem diu nimis desideremus. [<hi rend="bold">2</hi>] Sane perquam gratum mihi esset specimen uestrorum librorum uidere, ut potius utilitati meae quam uoluntati tuae consuleretur. Etenim quid est quod non maxime probandum sit omnium iudicio, quod tam iustis causis, tam magnis auspiciis, tanti regis conatibus inchoatum, per tot sapientes et optimos uiros est perficiendum? Viuamne tandiu ut absolutum illud opus uideam? Viuam sane (ut spero) et uidebo, et me felicem et uos beatos praedicabo. </p>
+               <p>[<hi rend="bold">3</hi>] Iam (ut scripsi alias) <title>Opticem meam</title> cuidam mercatori ad te cum suis mercibus perferendam dedi. Credo illum bona fide (non enim Graecus est) depositum tibi aut <name type="person" ref="#PlantinoCristobal">Plantino</name> bibliopolae tibi tradendum meo nomine redditurum.</p>
+               <p>[<hi rend="bold">4</hi>] Interim, si me amas, <name type="person" ref="#BaldochioOliverio">Oliuerio Baldoccio</name> Sauonensi in academia Louaniana meas literas reddendas <app><lem wit="#O #E1"> curato.</lem> <rdg wit="#E2"><hi rend="italic">post</hi> curato <hi rend="italic">leuiter distinxit</hi></rdg></app> Ea tamen conditione (ut alias ad te scripsi): si amicitia n<expan><ex>ostra</ex></expan> dignus inuentus fuerit. Dignus autem erit cum et bene de fide et Ecclesia senserit, et honeste uixerit. Sed si iudicio tuo non probabitur, nolo ut cum eo ullis amicitiae officiis communicemus. Alias ad me scripsisti Louanienses bene sentire et <name type="person" ref="#BaldochioOliverio">Oliuerium</name> te uidisse.</p>
+               <p>[<hi rend="bold">5</hi>] <name type="person" ref="#AmatusIosephus">Iosepho Amato</name> <del>Iudaeo</del> tuas literas dedi, cum his meis responsum habes.</p> <closer><salute>[<hi rend="bold">5</hi>] Interim me ama, ut soles.</salute> <name type="place">Venetii</name>, <date when="1569-03-01">Kal<expan><ex>endis</ex></expan> Marti<expan><ex>s</ex></expan> MDLXIX</date>. </closer> 
+            </div>   
+         </body>
+      </text>
+      <text type="translation">
+         <body> 
+               <pb n="f. 25v" ed="O" facs="#foto2"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab> Al muy magnífico y reverendo señor el doctor Arias Montano, mi veneradísimo hermano. Amberes.
+                  </ab>
+               </div> 
+            <div type="main_content">
+                  <pb n="f. 20r" ed="O" facs="#foto1"/>
+               <opener>Daniel Barbaro saluda afectuosamente al eximio varón, y muy amigo, el señor Benito Arias Montano.
+                  </opener>
+                  <p>[<hi rend="bold">1</hi>] Todavía estoy esperando a Andrés Darmario, a quien me escribe vuestra merced que le confió una carta para mí y un volumen envuelto en tela encerada para que me lo entregara. Me temo que tengamos que esperar por largo tiempo que el griego cumpla su palabra.<ref target="#note1" xml:id="reference1">1</ref> [<hi rend="bold">2</hi>] Realmente me sería muy grato poder ver una muestra de vuestros libros, aunque se atienda con ello más a mi propio provecho que al deseo de vuestra merced. Pues, ¿qué razón hay para que no sea aprobado por todos sin excepción lo que se ha emprendido con tan justas razones, tan favorables auspicios, con el empeño de un monarca tan poderoso, y que se debe acabar por obra de tantos hombres sabios y virtuosos? ¿Llegaré a vivir lo suficiente como para ver semejante obra acabada? Viviré sin duda (según espero) y la podré ver, y me pregonaré afortunado a mí mismo y a vuestras mercedes dichosos. </p>
+                  <p>[<hi rend="bold">3</hi>] Ya le he confiado mi libro <title>Sobre la perspectiva</title> (como he escrito a vuestra merced en otra)<ref target="#note2" xml:id="reference2">2</ref> a cierto mercader, para que lo lleve a vuestra merced junto con sus mercancías. Creo que con diligencia (pues no es griego) entregará a vuestra merced lo que le he confiado, a vuestra merced personalmente, o al librero Plantino para que lo entregue a vuestra merced en mi nombre.</p>
+                  <p>[<hi rend="bold">4</hi>] Entretanto, si me aprecia vuestra merced, procure entregarle mi carta al savonense Oliverio Baldocio, que está en la Universidad de Lovaina.<ref target="#note3" xml:id="reference3">3</ref> Pero con esta condición que ya he escrito antes a vuestra merced: si lo considera digno de nuestra amistad. Y será digno si su pensamiento no se aparta de la fe ni de la Iglesia, y vive con honestidad. Pero si no merece la aprobación de vuestra merced, no quiero compartir con él prendas de amistad. En otra me escribió<ref target="#note4" xml:id="reference4">4</ref> vuestra merced que sus maestros de Lovaina tienen buena opinión de él, y que vuestra merced lo había visto personalmente.</p>
+                  <p>[<hi rend="bold">5</hi>] He entregado la carta de vuestra merced a José Amato; con la mía lleva vuestra merced su respuesta.<ref target="#note5" xml:id="reference5">5</ref> </p> <closer><salute>[<hi rend="bold">5</hi>] Mientras tanto, corresponda a mi amistad como acostumbra vuestra merced.</salute> En Venecia, a uno de marzo de 1569. </closer> </div>     
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> A principios de mayo de este año de 1569 Daniel Barbaro recibió por fin el envío que BAM confió cuatro meses antes al mercader griego Andrés Darmario con muestras de la Biblia Políglota y una estampa del nacimiento de Jesús, diseñada por el pintor Jorge Ghisi e impresa por Jerónimo Cock. Véase carta 1569 05 01.</note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Véase carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-01-01">1569 01 01</ref>.
+            </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> El 29 de agosto de 1568 Barbaro pidió a BAM que recabara información sobre Oliverio Baldoccio, un estudioso que vivía en Lovaina que estaba tratando de iniciar una amistad con él (véase carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29">1569 08 29</ref>. El 29 de octubre de ese mismo año (cf. <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-10-29">1569 08 29</ref>) Barbaro manifiesta a BAM que está contento de que este haya recabado buenas referencias sobre Oliverio Baldoccio.
+               </note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Posiblememente se refiere Barbaro a la carta no conservada de BAM escrita el 2 de octubre de 1568 (cf. <ref target="https://lacorrespondenciadebenitoariasmontano.online/en/?page_id=3604/">*1568 10 02</ref>) </note>  
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> No se conserva la respuesta de José Amato ni la carta de BAM que provocó esta respuesta. </note> 
+            </div> 
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
