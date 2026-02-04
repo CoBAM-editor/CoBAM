@@ -1,5 +1,4 @@
-﻿
-<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
 <?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690211">
    <teiHeader>
@@ -22,9 +21,7 @@
             <idno type="CoBAM">1569 02 11</idno>
          </publicationStmt>
          <notesStmt>
-            <note type="abstract">The printing works of the Polyglot are progressing well. In the coming days BAM is sending to the king two copies of the first volume, one on paper and one on vellum. The conflict with England is affecting freight traffic: some goods sent to BAM by his family have lost as well. BAM has not stopped working in the Bible for a single day. He has heard that the heretics in Germany were printing a Bible in three languages, project that has been silenced by the importance of the Polyglot Bible of the King of Spain. BAM has designed the two engravings opening the first volume of the Bible. He lacks copyists, especially some who can write in Latin and Spanish. Greetings from Chapin and Guicciardini. He sends a list of works of art that may be of interest to the King. If so, he will purchase them. He asks to be informed on the political news from Spain.    
-               
-            </note>
+            <note type="abstract">The printing works of the Polyglot are progressing well. In the coming days BAM is sending to the king two copies of the first volume, one on paper and one on vellum. The conflict with England is affecting freight traffic: some goods sent to BAM by his family have lost as well. BAM has not stopped working in the Bible for a single day. He has heard that the heretics in Germany were printing a Bible in three languages, project that has been silenced by the importance of the Polyglot Bible of the King of Spain. BAM has designed the two engravings opening the first volume of the Bible. He lacks copyists, especially some who can write in Latin and Spanish. Greetings from Chapin and Guicciardini. He sends a list of works of art that may be of interest to the King. If so, he will purchase them. He asks to be informed on the political news from Spain.    </note>
             <note type="incipit">Después que embié a vuestra merced el prólogo o epístola general de la Biblia...</note>
          </notesStmt>
          <sourceDesc>
@@ -53,8 +50,6 @@
                         </msIdentifier>
                      </msDesc>
                </witness>
-               
-               
                <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 141-144.</witness>
                <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 169-176.</witness>
               </listWit>
@@ -68,8 +63,7 @@
             <p>Dirigido por Antonio Dávila Pérez.</p>
          </projectDesc>
          <editorialDecl>
-            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
-						P5</ref></p>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -94,10 +88,7 @@
                  <note>Chapino Vitelli (1519-1575), comandante en la Ciudadela de Amberes, maestro de campo del ejército español en Flandes. </note></person>
                <person xml:id="VelezdeAlcocerIsabel">
                   <note>Isabel Vélez de Alcocer, fallecida en 1568, señola sevillana que crió a Arias Montano durante su infancia. </note></person>
-              
-               
                </listPerson>
-            
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
@@ -109,10 +100,7 @@
                <persName>Gabriel de Zayas</persName>
                <settlement>Madrid</settlement>
                <date when="1569-04-04">4 de abril de 1569</date>
-               
             </correspAction>
-            
-           
          </correspDesc>
                   <langUsage>
             <language ident="es" ana="source">Español</language>
@@ -138,31 +126,24 @@
       <graphic
          url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/10/AGS-E-583-6-2v-scaled.jpg"
          xml:id="foto4"/>
-      
-     
-              </facsimile>
+   </facsimile>
    <text>
       <front>
          <p>Tras unos primeros envíos de hojas de pruebas, BAM promete remitir a Madrid de forma inmediata copias en papel y pergamino del primer tomo de la Biblia. El supervisor de la Políglota envía aquí una relación de objetos de lujo que pueden interesar al rey, documento que no se ha conservado junto con esta carta. </p>
          <p>Existe también un resumen de la presente carta en forma de capítulos, que transcribimos aquí: «de 11 de hebrero: + Los quadernos que embía. + Lo que le tomaron en Inglaterra. Lo que trabaja. Biblia que imprimen los hereges. La invención de las dos planchas para el primer cuerpo. Los escrivientes que tiene. Besamanos de Chapin y el Guicciardino. + Las pieças del memorial que embía. Que le escriva nuevas algún paje». Se marca con una cruz los capítulos que están señalados del mismo modo en el registro de capítulos del legajo de Simancas.</p>
       </front>
       <body>
-                  
          <div type="address">
             <pb n="f. [2v]" ed="0" facs="#foto4"/>
             <head>[Sobrescrito:]</head>
             <ab>Al i<expan><ex>llustr</ex></expan>e s<expan><ex>eñ</ex></expan>or <name type="person" ref="#ZayasGrabrielde">Gabriel de Çayas</name>, mi s<expan><ex>eñ</ex></expan>or, secretario de <app><lem wit="#O #E2">Stados</lem> <rdg wit="#E1">Estado</rdg></app> de S<expan><ex>u</ex></expan> Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y de su Consejo. En corte.  </ab>
-            
          </div>
          <div type="anotation">
             <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
             <ab><app><lem wit="#O #E2"><name type="place">Anvers</name>. A <name type="person" ref="#ZayasGrabrielde">Çayas</name>. <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> a <date when="1569-02-11">XI de Hebrero 1569</date>. R<expan><ex>ecibi</ex></expan>da a <date when="1569-04-04">quatro de abril</date></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>. </ab>
          </div>
-         
          <div type="main_content">
                <pb n="f. [1r]" ed="O" facs="#foto1"/>
-            
-            
             <opener>Ill<expan><ex>ustre</ex></expan> s<expan><ex>eñ</ex></expan>or: 
                        </opener>
             <p>[<hi rend="bold">1</hi>] Después que embié a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> el prólogo o epístola g<expan><ex>e</ex></expan>n<expan><ex>er</ex></expan>al de la Biblia,<ref target="#note1" xml:id="reference1">1</ref> he escritto otras dos vezes por la vía de <name type="place">Francia</name> y en ambos pli<supplied>e</supplied>gos he embiado muestras de la obra. En el primero una hoja del primer quaderno, en el segundo otra segunda. Con este va la tercera, porque no son sino ternos todos, que son más cómmodos para la obra.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Ya plaziendo a Dios havrán llegado aquellos y todos los demás que havían ydo por mar, y ansí no será necessario embiar más muestras hasta que embíe a Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> un cuerpo acabado, el qual embiaré, Dios queriendo, luego, después de pocos días que haya recibido el dicho prólogo de retorno, porque al fin deste mes será acabado el primero cuerpo y en <app><lem wit="#O #E2">desembaraçándose</lem> <rdg wit="#E1">desembarcándose</rdg></app> esto de <name type="place">Inglaterra</name> con las primeras naos embiaré dos exemplares, uno de <app><lem wit="#O #E2">pargamino</lem> <rdg wit="#E1">pergamino</rdg></app> y otro de papel, si a Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> le aggrada ansí.<ref target="#note3" xml:id="reference3">3</ref> </p> 
@@ -174,10 +155,8 @@
             <p>[<hi rend="bold">12</hi>] Las pieças de que hago relación a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en un memorial que con esta va<ref target="#note16" xml:id="reference16">16</ref> me han contentado en estremo, porque son dignas de emplear en alguna obra de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>, y son tan graciosas que si yo pudiera comprarlas no las dexara por ningún precio. Don <name type="person" ref="#AlvarezdeToledoFadrique">Fadrique</name><ref target="#note17" xml:id="reference17">17</ref> las fue a ver <app><lem wit="#O #E2">comigo</lem> <rdg wit="#E1">conmigo</rdg></app> y le contentaron muy mucho. [<hi rend="bold">13</hi>] Si v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> entendiere que Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> tomaría gusto en que se las llevassen, creo fácilmente sería servido con ellas, porque la villa o magistrado, a trueco de hazer al dueño aquí alguna commodidad, se las tomaría y las embiaría de buena gana. Y entendiendo v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> que podrá servir en esto a Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>, podrá escrivir un capítulo al <rs type="person" ref="#AlvarezdeToledoFernando">duque</rs>, porque con la menor palabra que él diga no verán otro mayor contento que embiárselas. Yo he dicho y rogado al que las tiene que no venda ninguna pieça de las <choice><sic>que que</sic> <corr>que</corr></choice> yo señalo ni la trueque, porque podrá ser se las compre yo juntas. Y ansí me lo ha promettido hasta que yo le suelte la palabra. Como me veen con hábito de Santiago y con nombre de criado del rey, piensan que soy ricco, y tengo crédito de palabra <app><lem wit="#O #E2">nomás</lem> <rdg wit="#E1">no más</rdg></app>, porque no se ha venido hasta agora a la prueva de la obra, y desso me guardaré yo, guardándome Dios el juizio. [<hi rend="bold">14</hi>] V<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me avise <app><lem wit="#O #E2">acerca</lem> <rdg wit="#E1">cerca</rdg></app> desto su parecer y lo que manda que yo haga; y me avise por todas vías de su salud y de la de los demás mis s<expan><ex>eñor</ex></expan>es. </p>
             <p>[<hi rend="bold">15</hi>] Quando vienen cartas de <name type="place">Spaña</name> todos acuden a mí para saber nuevas, porque piensan v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me las embía, y tienen aquellas por más ciertas, y nunca las hallan. [<hi rend="bold">16</hi>] A v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> supp<expan><ex>li</ex></expan>co mande a un page que me escriva alguna copia de cosas públicas que no sean de su officio, porque estas tales demándeselas <app><lem wit="#O #E2">a</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> el padre predicador,  que yo no quiero. Estas van por la vía de <name type="place">Francia</name>. [<hi rend="bold">17</hi>] N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or la ill<expan><ex>ustr</ex></expan>e pers<expan><ex>on</ex></expan>a de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> prospere en su servicio. En <name type="place">Anvers</name>, <date when="1569-02-11">11 de febrero 1569</date>.</p>
             <closer><salute>Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, su servidor</salute></closer>
-               
             <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano <app><lem wit="#O #E2">تلميد </lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> </name></signed>
-          
-     </div>
+         </div>
       </body>
       <back>
             <div type="notes">
@@ -189,10 +168,8 @@
                   <ref target="#reference3">3</ref> La tirada del primer volumen de la Políglota, que corrió a cargo de los impresores Klaas Van Linschoten y Joris Van Spangenberg, fue completamente terminada el 12 de marzo de 1569. Cf. Rooses, <title>Christophe Plantin</title>, p. 121.  </note>  
                <note type="footnote" xml:id="note4">
                   <ref target="#reference4">4</ref> «Valsingan, calvinista, secretario y consejero de la Reina de Inglaterra, la aconsejó favoreciese los herejes de Francia y Flandres, para que pasando la guerra entre ellos gozase paz en sus discordias, teniendo sus reyes en perpetuo movimiento de su ofensa y defensa, y con las guerras civiles consumido el gran poder que temía por su mudança de religión. Para enriquecerse, enviase navíos a robar en el Océano, con que tendría aumento y los vasallos del Rey destruición, pelando poco a poco su gran riqueza. En el año de mil y quinientos y sesenta y ocho, galeones de la Reina prendieron algunos navíos que iban a Flandres con mercancía y dineros, y prosiguieron sus robos adelante, y en su imitación corsarios hicieron daños a los vasallos de la Corona de España»; Cabrera de Córdoba, <title>Historia de Felipe II</title>, I, 442-443.  </note>
-              
                <note type="footnote" xml:id="note5">
                   <ref target="#reference5">5</ref> BAM no se refiere aquí a su madre natural, Isabel Gómez, que lo crió en su primera infancia en Fregenal, sino a Isabel Vélez, de la que decía en los <title>Rhetoricorum libri quattuor</title> (III, 4) que le cuidó en una larga enfermedad y que ocupaba el lugar de su difunta madre («cedit loco genitricis ademptae», cf. M. V. Pérez Custodio, <title>Los Rhetoricorum libri quattuor de Benito Arias Montano. Introducción, edición crítica, traducción y notas</title> (Badajoz, 1995),  p. 101). BAM trató a sus parientes sevillanos, los Vélez, con la más estrecha familiaridad. Doña Isabel Vélez, viuda de Álvaro de Alcocer, falleció a finales de 1568, como demuestra J. Gil con sus prospecciones en el Archivo de Protocolos de Sevilla (cf. Gil, <title>Arias Montano en su entorno</title>, p. 106). </note> 
-               
                <note type="footnote" xml:id="note6">
                   <ref target="#reference6">6</ref> La anterior edición de este documento transcribe «hermanos» en vez del correcto «hermanas», error que ha tenido alguna repercusión en la bibliografía montaniana: véase, por ejemplo, J. Gil, <title>Arias Montano en su entorno</title>, p. 106, que apunta que BAM alude aquí a Gaspar Vélez de Guevara y Diego Díaz Becerril. En el presente documento BAM se refiere a las tres hijas de Isabel Vélez: Isabel, Mencía y María Vélez de Guevara, que cuidaban del humanista como de un hermano. </note>     
                <note type="footnote" xml:id="note7">
@@ -215,11 +192,8 @@
                   <ref target="#reference15">15</ref> Los prohombres Vitelli y Guicciardini habían propuesto y recomendado a algún personaje, del que no tenemos más referencias, para ocupar el cargo de prior de la abadía de las Dunas, devastada en la furia iconoclasta. Véase también referencia a este asunto en carta 1569 04 09.  </note> 
                <note type="footnote" xml:id="note16">
                   <ref target="#reference16">16</ref> Este memorial no se ha conservado junto a la carta.  </note>
-               
                <note type="footnote" xml:id="note17">
                   <ref target="#reference17">17</ref> Don Fadrique Álvarez de Toledo y Enríquez de Guzmán (1537-1583), cuarto duque de Alba, comandante del ejército de la Corona española en los Países Bajos a las órdenes de su padre Fernando Álvarez de Toledo. Contrajo matrimonio tres veces, sin dejar descendencia. En 1566, una promesa de matrimonio incumplida a Magdalena de Guzmán, dama de compañía de la reina, le costó el encarcelamiento en el castillo de la Mota, en Medina del Campo. En 1568 queda en libertad para acompañar a su padre en la guerra de Flandes, pero tras la vuelta de ambos a España en 1574, la antigua condena revive por el matrimonio secreto de don Fadrique con María de Toledo, hija de García Álvarez de Toledo y Osorio, marqués de Villafranca y virrey de Sicilia, primo del duque de Alba. Este nuevo proceso acarreó en 1579 el encarcelamiento de don Fadrique en el castillo de la Mota y el exilio a Uceda del duque de Alba. Cf. <title>BNB</title>, XV (1930-1932), cols. 387-388. </note>
-               
-               
             </div>
       </back>
    </text>
