@@ -177,7 +177,6 @@
             <pb n="f. [4v]" ed="O" facs="#foto7"/>
             <head>[Sobrescrito:]</head>
             <ab>Al ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or <name type="person" ref="#ZayasGabrielde">Gabriel de Çayas</name>, mi s<expan><ex>eñ</ex></expan>or, Secretario de <app><lem wit="#O #E2">Stados</lem> <rdg wit="#E1">Estado</rdg></app> de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y de su Consejo. En corte.  </ab>
-            
          </div>
          <div type="anotation">
             <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
@@ -252,11 +251,9 @@
       <back>
             <div type="notes">
                <note type="footnote" xml:id="note1">
-                  <ref target="#reference1">1</ref> Francés de Álava, embajador español en Francia entre 1565 y 1571.    </note>   
-               
-                  <note type="footnote" xml:id="note2">
+                  <ref target="#reference1">1</ref> Francés de Álava, embajador español en Francia entre 1565 y 1571.    </note>  
+               <note type="footnote" xml:id="note2">
                      <ref target="#reference2">2</ref> Entendemos que Montano quiere decir de 10 de marzo. En todo caso, se trata de una carta no localizada.  </note>
-            
                <note type="footnote" xml:id="note3">
                   <ref target="#reference3">3</ref> El maestro de postas destinado en Bruselas era Juan A. De Tassis. Desde principios del siglo XVI, el correo de los principales enclaves belgas había quedado en mano de la familia milanesa de los Tassis. En 1505 Felipe el Hermoso paga a 12.000 libras de cuarenta gruesos cada una a Francisco de Tassis, encargado de hacer llegar todos los despachos gubernamentales de Bruselas a Alemania, Francia y España. Su hijo Juan Bautista le sucede en 1571. En 1545 Leonardo de Tassis sucede a su padre Juan Bautista y, hacia 1570 encontramos a Juan A. en Bruselas, mientras que Leonardo había limitado su tarea a Amberes. Cf. Goris, <title>Étude sur les colonies marchandes méridionales</title>, pp. 133-134.   </note>  
                <note type="footnote" xml:id="note4">
