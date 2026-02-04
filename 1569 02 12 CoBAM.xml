@@ -1,0 +1,125 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690212">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">El duque de Alba (Bruselas) a Benito Arias Montano (Amberes) - 12 de febrero de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 02 12</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">The duke of Alva asks BAM to visit some very good libraries in Breda and Hoogstraten that are for sale, to check if there are any books of interest for the collections of the El Escorial Library. The letter is accompanied by separate letters to the governors of Breda and Hoogstraten so that they facilitate BAM's bibliographical task.</note>
+            <note type="incipit">Sabido he que en Ostrat y Brea ay muy buenas librerías...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Archivo de la Casa de los Duques de Alba</msName>
+                        <altIdentifier>
+                           <idno>(B) ADA, ca. 28/179.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness> 
+               <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 181-182.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint"> (E) Domínguez, <title>Correspondencia</title>, I, 181-182.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="CarrillodeCastillaLuis">
+                  <note>Luis Carrillo de Castilla, capitán de Su Majestad y gobernador de la ciudadela de Hoogstraten.</note>
+               </person>              
+              <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Duque de Alba</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-02-12">12 de febrero de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+                       </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Desconocido</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-11-06">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/ADA-C28-179-1r.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/11/ADA-C28-179-2v.jpg" xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>En su carta a Zayas con fecha del 28 de febrero de 1569 BAM escribe que el duque le había escrito la semana pasada para indicarle que visitara las bibliotecas en venta de Breda y Hoogstraten y comprar los libros que considerara adecuados para la Biblioteca de El Escorial. BAM no pudo realizar dicha visita hasta recuperarse completamente de sus problemas de salud; en todo caso, parece que el viaje bibliográfico a esas dos ciudades tuvo lugar antes del 6 de abril, fecha en la que BAM comunica a Zayas el resultado de sus prospecciones (1569 04 06). Domínguez parece no haber consultado el folio donde aparece la anotación sobre el lugar y fecha de redacción del borrador o minuta, y por ello conjetura que este escrito pudo ser redactado a finales de febrero de 1569; la fecha de redacción, sin embargo, fue el 12 de febrero, aunque pudo que el envío del documento original se retrasara un poco, habida cuenta de que BAM da a entender a Zayas en su carta 1569 02 28a que recibió esta carta hacia la última semana de febrero. </p>
+         <p>Los folios [1v] y [2r] están en blanco.</p>
+      </front>
+      <body>
+         <div type="anotation">
+            <pb n="f. [2v]" ed="B" facs="#foto2"/>
+            <head>[Anotado en el margen, con escritura transversal:]</head>
+            <ab> <app><lem wit="#B">Minutas. Al doctor <name type="person" ref="#AriasMontanoBenito">Montano</name> y <name type="person" ref="#CarrillodeCastillaLuis">don Luys Carrillo</name>. En <name type="place">Bruss<expan><ex>el</ex></expan>as</name>. <date when="1569-02-12">12 de hebr<expan><ex>ero</ex></expan> 1569</date></lem> <rdg wit="#E"> <hi rend="italic">omisit</hi></rdg></app>.</ab>
+         </div>            
+         <div type="main_content">
+            <pb n="f. [1r]" ed="B" facs="#foto1"/>
+            <opener>Muy r<expan><ex>everen</ex></expan>do y mag<expan><ex>nífi</ex></expan>co señor: </opener>
+            <p>[<hi rend="bold">1</hi>] Sabido he que en <name type="place">Ostrat</name> y <name type="place">Breda</name> ay muy buenas librerías y, aviéndose de vender, me a parecido avisaros, señor, antes, para que, teniendo lugar, os llegéys, señor, a los dichos lugares y las veays, y aviendo en ellas libros para la librería de San Lorenço, los pornáys <del>v<expan>uestra</expan> m<expan>erced</expan></del> aparte <del> . </del>  para que se puedan embiar; que yo tengo ya s<expan><ex>cri</ex></expan>pto al governador de <name type="place">Breda</name><ref target="#note1" xml:id="reference1">1</ref> os la dexe ver <del> y con </del> y guarde a recabdo los que, señor, le ordenardes, y lo mismo scrivo en la carta que va con esta al de <name type="place">Ostrat</name>,<ref target="#note2" xml:id="reference2">2</ref> la qual le podréys, s<expan><ex>eñor</ex></expan>, dar a v<expan><ex>uest</ex></expan>ra yda, y de lo que hizierdes me avisar<supplied>d</supplied>es, señor.</p>
+            <closer><salute>[<hi rend="bold">2</hi>] Cuya muy r<expan><ex>everen</ex></expan>da y mag<expan><ex>nífi</ex></expan>ca per<expan><ex>sona</ex></expan>...<ref target="#note3" xml:id="reference3">3</ref></salute></closer>
+         </div>    
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Pieter van Kwarebbe, señor de Berchem,ocupó el cargo de gobernador de Breda desde 1568, sustituyendo al señor de Schouwenberg, hasta 1572, cuando fue reemplazado por Adriaan d'Etournel, señor de St. Remy. Cf. <title>BWN</title>, X (1862), versión digitalizada en Dbnl, <ref target="https://www.dbnl.org/tekst/aa__001biog12_01/aa__001biog12_01_0831.php">Digitale bibliotheek vor de Nederlandse letteren</ref>.   </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Luis Carrillo de Castilla, capitán de Su Majestad y gobernador de la ciudadela de Hoogstraten (cf. B. W. Van Schijndel, <title>Hoogstratens oude huizen et families</title>, 2 vols. (Brecht, 1940), I, 237. La relación de BAM con la familia de don Luis Carrillo fue muy familiar durante su estancia en Amberes: BAM se hospedó en la casa de la cuñada (hermana de la esposa) de don Luis Carrillo, la señora de Viegas, a quien el capellán real llama <foreign>soror</foreign> y <foreign>hospes</foreign> (véase, por ejemplo, 1572 07 05ª, 1575 10 29, 1575 12 03, 1576 02 18). Una sobrina del capitán, hija de la señora de Viegas, Ana Herents, fue la discípula espiritual predilecta de BAM en Amberes.   </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> El texto de despedida queda sin terminar en la minuta. A continuación se escribe, en el mismo folio, el texto de la prometida carta a don Luis Carrillo de Castilla, que dice así: «A don Luis Carrillo. Muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or: Yo he ordenado al doctor Arias Montano que vaya a ver la librería que ay en ese castillo para poner aparte los libros que le pareciera della para embiarlos al monesterio de San Lorenço del Scorial. Dexar se la eys, s<expan><ex>eñ</ex></expan>or, ver y guardar los que os <del>m</del> dixere, haziéndole muy buen tratami<expan><ex>ent</ex></expan>o, porque es persona a quien yo amo y tengo en mucha estimación. N<expan><ex>uestro</ex></expan> S<expan><ex>eñ</ex></expan>or v<expan><ex>uest</ex></expan>ra mag<expan><ex>nífi</ex></expan>ca...».   </note>  </div>
+      </back>
+   </text>
+</TEI>
