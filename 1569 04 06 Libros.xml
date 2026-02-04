@@ -1,0 +1,350 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690406">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Lista de los libros que aparté en Haustrat y Breda, enviada junto a la carta de Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 6 de abril de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 04 06</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">«Lista de los libros que aparté en Haustrat y Breda», enviada por BAM a Gabriel de Zayas junto con su carta del 6 de abril de 1569. </note>
+            <note type="incipit"> Decretum. MS....</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(O) AGS, E 583/12.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 160-162.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 212-217.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 160-162;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 212-217.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="ZayasGabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-04-06">6 de abril de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Documento original no escrito por Benito Arias Montano, quien solo añade la anotación al margen con el contenido del documento («Lista de los libros que aparté en Haustrat y Breda»), el encabezamiento «Libros que en Haustrat se apartaron» y dos anotaciones marginales que se señalan en la edición del documento.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-12-18">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/AGS-E-583-12-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/AGS-E-583-12-1v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/AGS-E-583-12-2r-scaled.jpg"
+         xml:id="foto3"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Al final del original de la carta 1569 04 06, con la signatura AGS E, 583/12, se conserva esta lista de los libros que BAM apartó en Haustrat y Breda a instancias del duque de Alba, quien avisó en febrero de este mismo año (cf. <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-12"></ref>1569 02 12) de la conveniencia de esta gestión por si había algún ejemplar que pudiera formar parte de los anaqueles de la biblioteca de San Lorenzo de El Escorial. Por razones varias, la visita a estas bibliotecas fue retrasada hasta bien entrado el mes de marzo de 1569 y, en todo caso, antes del 6 de abril, fecha en la comunica a Zayas el resultado de sus prospecciones en la carta donde va incluida esta lista. </p>
+      </front>
+      <body>
+         <div type="anotation">
+               <pb n="[f. 1r]" ed="O" facs="#foto1"/>  
+             <head>[Anotado por BAM en el margen de la izquierda, con escritura atravesada:]</head>
+               <ab>Lista de los libros que aparté en Haustrat y Breda.</ab>
+            </div>
+         <div type="main_content1">
+            <pb n="[f. 1r]" ed="O" facs="#foto1"/>  
+            <head>Libros que en Haustrat se apartaron</head>
+            <p n="1">Decretum. <app><lem wit="#O #E2">MS.</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> <add hand="#AriasMontanoBenito">manu scrip.</add><ref target="#note1"
+               xml:id="reference1">1</ref></p>
+            <p n="2">Liber de penitentia. MS.<ref target="#note2"
+               xml:id="reference2">2</ref> </p>
+            <p n="3">Confessionale Antonini cum aliis antiquae impressionis.<ref target="#note3"
+               xml:id="reference3">3</ref> </p>
+            <p n="4">Apparatus Innocentii. 4ti. MS.<ref target="#note4"
+               xml:id="reference4">4</ref> </p>
+            <p n="5">Clementinae. MS.<ref target="#note5"
+               xml:id="reference5">5</ref></p>
+            <p n="6">Magister sententiarum. MS.<ref target="#note6"
+               xml:id="reference6">6</ref></p>
+            <p n="7">Speculum historiale. MS.<ref target="#note7"
+               xml:id="reference7">7</ref> </p>
+            <p n="8">Bernardus <app><lem wit="#O #E1">Guidonius</lem> <rdg wit="#E2">Guidonis</rdg></app> de nominibus Pontificum. MS.<ref target="#note8"
+               xml:id="reference8">8</ref> </p>
+            <p n="9">Tres libri expositionum decretal<supplied>i</supplied>um. MS.<ref target="#note9"
+               xml:id="reference9">9</ref></p>
+            <p n="10">Fr. Petrus Praemonstratensis in Psalmos. MS.<ref target="#note10"
+               xml:id="reference10">10</ref></p>
+            <p n="11">Le second livre de Tristan. MS.<ref target="#note11"
+               xml:id="reference11">11</ref></p>
+            <p n="12">Fortalitium fidei antiquae impressionis.<ref target="#note12"
+               xml:id="reference12">12</ref></p>
+            <p n="13">Verbum abreuiatum.<ref target="#note13"
+               xml:id="reference13">13</ref></p>
+            <p n="14">Biblia impressa 1475.<ref target="#note14"
+               xml:id="reference14">14</ref></p>
+            <p n="15">Bonifacii Decreta. MS.<ref target="#note15"
+               xml:id="reference15">15</ref></p>
+            <p n="16">Cassianus de institutione sacerdotum. Impressus.<ref target="#note16"
+               xml:id="reference16">16</ref></p>
+            <p n="17">Disputatio catholici et infidelis R. Lullii. MS.<ref target="#note17"
+               xml:id="reference17">17</ref></p>
+            <p n="18">Summa C<supplied>onfessorum</supplied>. MS.<ref target="#note18"
+               xml:id="reference18">18</ref></p>
+            <p n="19">Postille Fr. Thomae Anglici. MS.<ref target="#note19"
+               xml:id="reference19">19</ref></p>
+            <p n="20"><app><lem wit="#E2">Rosarium</lem> <rdg wit="#O">Rosarius</rdg> <rdg wit="#E1">Glossarium</rdg></app> super Decretum. MS.<ref target="#note20"
+               xml:id="reference20">20</ref></p>
+            <p n="21">Summa Fr. Iohannis Alberti de uitiis. MS.<ref target="#note21"
+               xml:id="reference21">21</ref></p>
+            <p n="22">Petrarcha, de <choice><sic>re mediis</sic> <corr>remediis</corr></choice> utriusque fortunae. MS.<ref target="#note22"
+               xml:id="reference22">22</ref></p>
+            <p n="23">Richardus de Mediauilla, super sententias. MS.<ref target="#note23"
+               xml:id="reference23">23</ref></p>
+            <p n="24">Gesta tempore <choice><sic>Godefeidi</sic> <corr>Godefridi</corr></choice> Bulonii. MS.<ref target="#note24"
+               xml:id="reference24">24</ref></p>
+            <p n="25">Chronica <choice> <sic>d’Arragon</sic> <corr>d'Aragon</corr></choice>. Impressa.<ref target="#note25"
+               xml:id="reference25">25</ref></p>
+            <p n="26">Le jardin de devotion. MS.<ref target="#note26"
+               xml:id="reference26">26</ref></p>
+            <p n="27">Ogier le Danois, en rithme. MS.<ref target="#note27"
+               xml:id="reference27">27</ref> </p> <pb n="[f. 1v]" ed="O" facs="#foto2"/> 
+            <p n="28"><app><lem wit="#O #E2"> Reccueil </lem> <rdg wit="#E1">Recueil</rdg></app>des premieres voyages de Ch. V. MS.<ref target="#note28"
+               xml:id="reference28">28</ref></p>
+            <p n="29"><choice><sic>Ordonnannces</sic> <corr>Ordonnances</corr></choice> pour l’edification de la maison à Bruges.<ref target="#note29"
+               xml:id="reference29">29</ref></p>
+            <p n="30">Les chevaliers fameux. Imprimé.<ref target="#note30"
+               xml:id="reference30">30</ref></p>
+            <p n="31">Des Estats du Duc de <app><lem wit="#O #E2">Bourgongne</lem> <rdg wit="#E1">Bourgogne</rdg></app>. MS.<ref target="#note31"
+               xml:id="reference31">31</ref></p>
+            <p n="32">Les chroniques de Dom Pedro. Imprimé.<ref target="#note32"
+               xml:id="reference32">32</ref> </p>
+            <p n="33">Speculum Durandi. MS.<ref target="#note33"
+               xml:id="reference33">33</ref></p>
+            <p n="34"><app><lem wit="#O #E2">Pollicie</lem> <rdg wit="#E1">Policie</rdg></app> de la ville de <app><lem wit="#E2">Hedinfort</lem> <rdg wit="#O #E1">Hedmfort</rdg></app>. MS.<ref target="#note34"
+               xml:id="reference34">34</ref></p>
+            <p n="35">L’histoire de M. Gerard de Roussillon. MS.<ref target="#note35"
+               xml:id="reference35">35</ref></p>
+            <p n="36">L’ordre des obseques de madame Anne de France. MS.<ref target="#note36"
+               xml:id="reference36">36</ref></p>
+            <p n="37">Condoleances de la mort du tres victorieux Duc de <app><lem wit="#E2">Bourgongne</lem> <rdg wit="#O">Borgongne</rdg><rdg wit="#E1">Bourgogne</rdg></app>.<ref target="#note37"
+               xml:id="reference37">37</ref></p>
+            <p n="38">Les erreurs de Luther a l’empereur Charles.<ref target="#note38"
+               xml:id="reference38">38</ref> </p>
+            <p n="39">Descriptio alicuius portus. Granate obsessio. <del>Pictu</del> <app><lem wit="#O #E2">Picture</lem> <rdg wit="#E1">Picturae</rdg></app> seu <choice><sic>delieneationes</sic> <corr>delineationes</corr></choice> diuersarum gentium, cum nonnullis aliis delineationibus figurarum.<add hand="#AriasMontanoBenito" place="margin">Hoc nullius momenti.</add><ref target="#note39"
+               xml:id="reference39">39</ref></p></div>
+         <div type="main_content2">
+            <pb n="[f. 2r]" ed="O" facs="#foto3"/> 
+            <head>Bredae sequentes manuscripti omnes in pergameno</head>
+            <p n="40">Petrarcha, <del>Vite</del>, italice.<ref target="#note40"
+               xml:id="reference40">40</ref></p>
+            <p n="41">Les chroniques de France, en françois.<ref target="#note41"
+               xml:id="reference41">41</ref></p>
+            <p n="42">Les <app><lem wit="#O #E2">histoires </lem> <rdg>hstoires</rdg></app> de Froissard, en françois.<ref target="#note42"
+               xml:id="reference42">42</ref></p>
+            <p n="43">Modus et Ratio, en françois.<ref target="#note43"
+               xml:id="reference43">43</ref></p>
+            <p n="44">Le livre de monsieur de <choice><sic>Courcj</sic> <corr>Courcy</corr></choice>.<ref target="#note44"
+               xml:id="reference44">44</ref></p>
+            <p n="45">Psalmi, Arabice.<ref target="#note45"
+               xml:id="reference45">45</ref></p>
+            <p n="46">L’histoire de M. Jehan Millet, en <choice><sic>francois</sic> <corr>françois</corr></choice>.<ref target="#note46"
+               xml:id="reference46">46</ref></p>
+            <p n="47"><app><lem wit="#O #E2">Les histoires</lem> <rdg wit="#E1">L'histoire</rdg></app> de Monstrelet, en françois.<ref target="#note47"
+               xml:id="reference47">47</ref></p>
+            <p n="48">La premiere guerre des <choice><sic>Rommanis</sic> <corr>Romains</corr></choice>, en françois.<ref target="#note48"
+               xml:id="reference48">48</ref></p>
+            <p n="49">Gerard de Roussillon, en françois.<ref target="#note49"
+               xml:id="reference49">49</ref></p>
+            <p n="50">Les Chroniques d’Angleterre, en françois.<ref target="#note50"
+               xml:id="reference50">50</ref></p>
+            <p n="51">L’histoire de Gillon de <app><lem wit="#E1 #E2">Trasignies</lem> <rdg wit="#O">Crassigni</rdg></app> en françois.<ref target="#note51"
+               xml:id="reference51">51</ref></p>
+            <p n="52">Bocachardiere, en françois.<ref target="#note52"
+               xml:id="reference52">52</ref></p>
+            <p n="53">Les oeuvres de Molinet, en françois.<ref target="#note53"
+               xml:id="reference53">53</ref></p>
+            <p n="54">La genealogie des françois.<ref target="#note54"
+               xml:id="reference54">54</ref></p>
+            <p n="55">Speculum humanae saluationis.<ref target="#note55"
+               xml:id="reference55">55</ref></p>
+            <p n="56">L’histoire des Pisans, en françois.<ref target="#note56"
+               xml:id="reference56">56</ref></p>
+            <p n="57">Buschalus, en françois.<ref target="#note57"
+               xml:id="reference57">57</ref></p>
+         </div>
+      </body>
+      <back>
+         <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> El <title>Gratiani decretum  cum glossa Bartholomaei Brixiensis</title>, colección de Ley Canónica compilada y escrita en el siglo XII como un libro de texto legal que forma parte de la colección conocida como <title>Corpus Iuris Canonici</title>. En la Biblioteca del Escorial se conserva este manuscrito con signatura Ms. Esc. c-I-7; puede accederse a la ficha bibliográfica y al enlace del propio manuscrito digitalizado a través del <ref target="https://bit.ly/3RQOCrz"></ref>Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial.</note> 
+            <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> <title> Liber decretalium poenitentiae a sanctis patribus institutae</title>. En la Biblioteca de El Escorial se conserva este manuscrito con signatura d-III-7. Véase ficha bibliográfica electrónica en el <ref target="https://rbmecat.patrimonionacional.es/bib/529">Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial</ref>.</note>  
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> La edición más antigua de San Antonino de Florencia (1389-1459) que hemos localizado lleva por título <title>Confessionale</title> [Colonia: Udalricus Zell, c. 1470). La Biblioteca de El Escorial conserva un ejemplar de esta obra con signatura 9-VI-18, que lleva por título <title>Confessionale reuerendi admodum patris ... Antonini archiepi. Floren. ... : tractatus eiusdem dni. Antonini de restitutionibus, tractatus eiusdem quaru[m]dam decisionum ... : item tractatus de societatibus domini Angeli de Periglijs de Perusio, tractatus eiusdem de socidis animalium : his autem nuperrime duos do. Guilielmi Parisiensi dialogos, alterum de restitutione, alterum de usura...</title> (Lugduni: Joannes Clein, 1518). Véase ficha bibliográfica electrónica en <ref target="https://bit.ly/3GRaxIA">Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial</ref>.  </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> <title>Apparatus in quinque libros Decretalium</title>; la Biblioteca Nacional de España conserva un manuscrito del siglo XIV (Mss/12244), que abre con un «Prohemium super apparatu Decretalium Domini Innocentii IIII». </note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> <title>Clementinae</title>, nombre con el que se conocen las <title>Clementis Quinti constitutiones</title>. En la Biblioteca de El Escorial se conserva un manuscrito del siglo XIV con signatura c-II-5, que perteneció a Antonio Agustín, con el título de <title>Apparatus nouarum constitutionum Clementis V et Joannis XXII</title>. Véase ficha bibliográfica electrónica en el <ref target="https://bit.ly/3RqqlHn">Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial</ref>.</note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> <title>Sententiarum libri IV</title> del obispo de París Pedro Lombardo (c. 1100-1164). La Biblioteca de El Escorial conserva dos manuscritos de esta obra (signaturas N-II-25 y T-I-8), que pertenecieron al Conde Duque de Olivares. Véanse fichas bibliográficas en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial. </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> <title>Speculum historiale</title> del dominicano Vicent de Beauvais (c. 1190-1264?). En la Biblioteca de El Escorial se conserva un manuscrito de esta obra de finales del siglo XIV con signatura e-I-15. Véase ficha bibliográfica electrónica en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial.</note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Obra biográfica sobre los papas escrita por el historiador dominico Bernardo de Gui o Bernardo Guidonius (c. 1261-1331). En la Biblioteca del Escorial se conservan dos manuscritos de esta obra, procedentes de la biblioteca del Conde Duque de Olivares, con los títulos de <title>Fr. Bernardus Guidonis, O.P., flores cronicorum seu catalogus Pontificum Romanorum</title> (signatura O-II-6) y <title> Fr. Bernardi Guidonis, O. P., catalogus pontificum romanorum et alia opera</title> (signatura P-I-15). Véanse fichas bibliográficas en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial.  </note> 
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Un nuevo manuscrito con comentarios a las <title>Constitutiones</title> de Clemente.  </note> 
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> El manuscrito de los comentarios a los salmos De Petrus de Herentals, de la Orden Premonstratense, se conserva en El Escorial con el título de <title>Petri de Herenthal praemonstatensis, Catena in psalmos uniuersos</title> y signatura f-II-16. Véanse ficha bibliográfica en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial.   </note> 
+               <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref> En la Biblioteca de El Escorial no se conserva actualmente ningún manuscrito de esta obra sobre el ciclo de leyendas de Tristán, caballero de la Mesa Redonda. </note> 
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> Alfonso de Espina, <title>Fortalitium fidei in uniuersos christianae religionis hostes: Iudeorum [et] Saracenorum no[n] inualido breuis nec minus lucidi compendii uallo rabiem cohibens fortitudinis turris no[n] abs re appellatum ...</title> (Lugd[uni]: per Johanne[m] moylin al[ia]s de chambray...: impensis spectabilis viri stephani gueynart, 1525). La Biblioteca de El Escorial conserva hoy en día esta edición de la obra citada, aunque no hay ningún manuscrito de la misma.  </note>
+               <note type="footnote" xml:id="note13">
+                  <ref target="#reference13">13</ref> <title>Verbum abreviatum</title> de Petrus Cantor (c. 1130-1197), que explica dos razones para el silencio del predicador: evitar discordancias entre la palabra y la acción, y apartar la palabra de Dios de una audiencia que no podría aprecierla o entenderla.  </note>
+               <note type="footnote" xml:id="note14">
+                  <ref target="#reference14">14</ref> Podría tratarse de la <title>Biblia Latina</title> (Venetiis: Franciscus de Hailbrun et Nicolaus de Franckfordia, 1475, en folio), de la que se conserva un ejemplar en la Biblioteca Nacional, o bien de la <title>Biblia Latina</title> [Basileae: Bernardus Richel] (1475, en folio) </note>
+               <note type="footnote" xml:id="note15">
+                  <ref target="#reference15">15</ref> Ejemplar manuscrito de los Decreta del papa Bonifacio VIII (c. 1235- 1303). En el siglo XVI se edita con profusión el <title>Sextum Decretalium liber per Bonifacium Octauum Pontificem in Concilio Lugdunensi editus</title>, ediciones entre las que destacamos las dos plantinianas (Antuerpiae: apud Christophorum Plantinum, 1569 y 1573). En la Biblioteca de El Escorial se conservan varios manuscritos de esta obra, cuyo antiguo poseedor fue el Conde Duque de Olivares: uno con signatura &amp; 1 13 y título <title>Bonifacii Papae VIII liber VI Decretalium. Joannis Andreae glossa in lib. VI Decretalium. Dini de Mugello glossa in regulas juris lib. VI Decretalium</title> (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial); otro con signatura I-I-9 y título <title>Bonifacii VIII liber sextus Decretalium. Joannis Andreae glossa in librum sextum Decretalium</title> (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial); un tercero con signatura d-I-9 y título <title>Bonifacii VIII liber VI Decretalium / cum apparatu Guidonis de Baysio archidiaconi Bononiensis</title> (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial); y otro con signatura T-I-2 y título <title>Bonifacii Papae VIII liber VI Decretalium. Guidonis de Baisio apparatus in librum VI Decretalium</title> (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial). </note>
+               <note type="footnote" xml:id="note16">
+                  <ref target="#reference16">16</ref> La Biblioteca de El Esocorial conserva ediciones de esta obra de San Juan Cassiano (c. 360-435) intitulada <title>Opus Iohannis eremite qui et Cassianus dicitur de institutis cenobiorum origine, causis et remediis uitiorum collationibusque patrum incipit</title> de los siguientes años: Lugduni, per Simonem Beue Laqua, 1516 (signatura 104-VIII-56);  Lugd.: per Iacobum myt, 1525 (signatura 105-VIII-3); y Lugduni: apud Iacobum Giunta, 1542 (signaturas 3-III-25 y 84-IV-22). </note>
+               <note type="footnote" xml:id="note17">
+                  <ref target="#reference17">17</ref> Manuscrito de la obra de Raimundo Lull (c. 1232-1315) titulada <title>Liber catholici et infidelis</title> o también <title>Liber de disputationem fidelis et infidelis</title>. No se conserva actualmente ningún manuscrito de esta obra en El Escorial.</note>
+               <note type="footnote" xml:id="note18">
+                  <ref target="#reference18">18</ref> Podría tratarse de la <title>Summa confessorum </title> de Iohannes Teutonicus (c. 1250-1314) o de la <title>Summa confessorum reuerendi patris Joannis de Friburgo</title>, cuyo autor vivió entre 1250 y 1314.  </note>
+               <note type="footnote" xml:id="note19">
+                  <ref target="#reference19">19</ref> <title>Fr. Thomae Anglici expositio super X libros de civitate Dei una cum expositione super reliquos libros Fr. Nicholai Treveth. Cassiodori Variarum libri IV-VII. Petri Blessensis epistolae et oppositiones contra perfidiam Judaeorum. Marbodi, Redonensis episcopi versus</title>, manuscrito conservado en la Biblioteca de El EScorial con la signatura a-II-16 (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial).   </note>
+               <note type="footnote" xml:id="note20">
+                  <ref target="#reference20">20</ref> <title>Guidonis de Baysio archidiaconi Bononiensis Rosarium seu apparatus in Decretales</title>, del que se conserva un ejemplar manuscrito en la Biblioteca de El Escorial con signatura d-I-3 (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial), y otro más con signatura d-I-6 (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial).     </note>
+               <note type="footnote" xml:id="note21">
+                  <ref target="#reference21">21</ref> Podría tratarse, quizás, de la <title>Summa de uitiis</title> del filósofo y teólogo franciscano Juan de la Rochela (c. 1200-1245).   </note>
+               <note type="footnote" xml:id="note22">
+                  <ref target="#reference22">22</ref> Manuscrito de la conocida obra de Francesco Petrarca (1304-1374) <title>De remediis utriusque fortunae</title>, la obra con mayor digusión en la península durante el siglo XV. Tres manuscritos de esta obra se conservan en el Escorial (N. II. 5, N. II. 18 y O. II. 2); el segundo de ellos es el adquirido por BAM en Haustrat (véase descripción bibliográfica completa en el Catálogo de la Real Biblioteca del Monasterio de San Lorenzo de El Escorial).  </note>
+               <note type="footnote" xml:id="note23">
+                  <ref target="#reference23">23</ref> <title>Ricardus de Mediavilla [Richard of Middleton], Super quartuor libros sententiarum Petri Lombardi quaestiones subtilissimae</title>, escritas entre 1281 y 1285. La Biblioteca de El Escorial conserva una edición veneciana de esta obra, fechada hacia 1474, con el título de <title>Questionu[m] quarti libri super s[e]n[tent]ias / editi a mag[ist]ro Ricardo de Mediauilla ordinis fratrum minorum</title>. </note>
+               <note type="footnote" xml:id="note24">
+                  <ref target="#reference24">24</ref> Godofredo de Bouillon (c. 1061-1100), noble y militar francés, quien condujo desde los Países Bajos un ejércido a la primera cruzada. No hemos visto ningún ejemplar manuscrito ni impreso de esta obra en la Biblioteca de El Escorial.</note>
+            <note type="footnote" xml:id="note25">
+                  <ref target="#reference25">25</ref> Podría tratarse de la <title>Crónica de Aragón de Gualberto Fabricio de Vagad</title> (Zaragoza: Pablo Hurus, 1499). Véase ficha bibliográfica y enlace a ejemplar digitalizado en Biblioteca Virtual Miguel de Cervantes. </note> 
+            <note type="footnote" xml:id="note26">
+                  <ref target="#reference26">26</ref> Manuscrito de la obra de Petrus de Alliaco (1351-1420), <title>Le jardin amoureux de l’âme dévote o Le jardin de dévotion</title>, publicada en Brujas por Colard Mansion en 1476.  </note>
+               <note type="footnote" xml:id="note27">
+                  <ref target="#reference27">27</ref> Ogier de Dinamarca, uno de los más ilustres héroes de las canciones de gesta danesas. La versión rimada sobre este héroe fue compuesta en doce cantos por Raimbert de París en el siglo XII, formando parte del ciclo carolingio. No hemos localizado ningún manuscrito de esta obra en la Biblioteca de El Escorial. </note>
+               <note type="footnote" xml:id="note28">
+                  <ref target="#reference28">28</ref> Existe una publicación titulada <title>Premier voyage de Charles-Quint en Espagna de 1517</title> de Laurent Vital, editado por L. P. Gachard en <title>Collection des voyages des souverains des Pays-Bas</title>, 4 vols. (Bruselas, 1874-1881), vol. III, traducción española <title>Relación del primer viaje de Carlos V a España, 1517-1518</title> (Madrid, 1958). En el tomo II de la misma obra de Gachard, se publica un <title>Itinéraire de Charles-Quint de 1506 a 1513</title>. </note>
+               <note type="footnote" xml:id="note29">
+                  <ref target="#reference29">29</ref> No existe ningún ejemplar de esta obra en la Biblioteca de El Escorial.  </note>
+               <note type="footnote" xml:id="note30">
+                  <ref target="#reference30">30</ref> Obra sobre la saga del mítico rey Arturo, con las aventuras de los famosos caballeros de la Tabla Redonda (Lancelot, Gauvain, Tristal, Perceval, Galahad, etc.).</note>
+               <note type="footnote" xml:id="note31">
+                  <ref target="#reference31">31</ref> En la Biblioteca de El Escorial se conserva una copia manuscrita con el título de  <title>Ordenanzas de Felipe el Bueno, duque de Borgoña, sobre el gasto de su casa. Mons de Hainaut, 31 de diciembre de 1458</title> y signatura II/828. Dicho ejemplar está digitalizado y puede verse a través del siguiente enlace.</note>
+               <note type="footnote" xml:id="note32">
+                  <ref target="#reference32">32</ref> Podría tratarse de una edición impresa de la <title>Crónica do senhor rei Dom Pedro oitavo rei destes regnos</title>, de Fernâo Lopes (ca. 1380-1460).</note>
+               <note type="footnote" xml:id="note33">
+                  <ref target="#reference33">33</ref> Guillielmi Durandi, <title>Speculum Iudiciale</title> o <title>Speculum iuris</title>. De esta obra se conservan dos manuscritos en la Biblioteca de El Escorial, ambos procedentes del Conde-Duque de Olivares: signatura R-I-3 (véase Catálogo de la Biblioteca de El Escorial); I-I-11 (véase Catálogo de la Biblioteca de El Escorial). </note>
+               <note type="footnote" xml:id="note34">
+                  <ref target="#reference34">34</ref> No hemos hallado referencias de esta obra.</note>
+               <note type="footnote" xml:id="note35">
+                  <ref target="#reference35">35</ref> La Biblioteca Nacional de Francia conserva un manuscrito (Ms. 2180) de la canción de gesta en octosílabos de Girart de Rousillon (c. 810-877/879), conde de París y conde de Viena. </note>
+               <note type="footnote" xml:id="note36">
+                  <ref target="#reference36">36</ref> No hemos localizado referencias de este manuscrito, que podría tratar sobre las exequias fúnebres de Ana de Francia (1461-1522), regente de Francia durante la minoría de edad de su hermano Carlos VIII (1483-1491).</note>
+               <note type="footnote" xml:id="note37">
+                  <ref target="#reference37">37</ref> No hemos hallado referencias de esta obra.</note>
+               <note type="footnote" xml:id="note38">
+                  <ref target="#reference38">38</ref> No hemos hallado referencias de esta obra.</note>
+               <note type="footnote" xml:id="note39">
+                  <ref target="#reference39">39</ref> BAM realiza la siguiente adición (marcada en color verde en la columna de la izquierda): <foreign>Hoc nullius momenti</foreign>, que significa «esto ni tiene ningún valor». La anotación se puede leer en el margen izquierdo de la página. La edición de <title>Codoin</title> separa en una nueva línea el texto a partir de «Picture». </note>
+               <note type="footnote" xml:id="note40">
+                  <ref target="#reference40">40</ref> Puede que este título corresponda a <title>Le vite degli huomini illustri</title>, en italiano, de Petrarca. </note>
+               <note type="footnote" xml:id="note41">
+                  <ref target="#reference41">41</ref> En la Biblioteca Nacional de Francia se conserva un ejemplar manuscrito del siglo XIV titulado <title>Grandes Chroniques de France</title>, compilación de obras históricas escritas entre los siglos XIII y XIV.</note>
+               <note type="footnote" xml:id="note42">
+                  <ref target="#reference42">42</ref> Jean Froissart, <title>Chroniques de France, d'Angleterre, d'Escoce, d'Espaigne, de Bretaigne, de Gascogne, de Flandres et lieux circunvoisins</title> (París: pour Anthoine Verard, [ca. 1499]). </note>
+               <note type="footnote" xml:id="note43">
+                  <ref target="#reference43">43</ref> <title>Livre du roi Modus et de la reine Ratio</title>, atribuido a Henri de Ferrières, conservado, por ejemplo, en Ms. 100218-100219 de la Biblioteca Real Alberto I de Bélgica y en el Ms. Fr. 12399 de la Biblioteca Nacional de Francia.</note>
+               <note type="footnote" xml:id="note44">
+                  <ref target="#reference44">44</ref> Puede referirse a la obra de Jean de Courcy (1360-1431), <title>Chronique, dite de la Bouquechardière</title>, del siglo XIV, que comienza en 1416 y termina en 1422. Con signatura Ms. 728 se encuentra un manuscrito de esta obra en la biblioteca del Castillo de Chantilli.  </note>
+            <note type="footnote" xml:id="note45">
+                  <ref target="#reference45">45</ref> No hemos hallado referencias de esta obra. </note>
+               <note type="footnote" xml:id="note46">
+                  <ref target="#reference46">46</ref> Obra no identificada. </note>
+               <note type="footnote" xml:id="note47">
+                  <ref target="#reference47">47</ref> Un manuscrito de la <title>Chronique d’Egueran Monstrelet</title>, del siglo XV, se conserva en la Biblioteca Universitaria de la Sorbona (Ms. 61). Enguerrand de Monstrelet nació hacia 1390 y falleció en 1453.</note>
+               <note type="footnote" xml:id="note48">
+                  <ref target="#reference48">48</ref> Obra no identificada.</note>
+               <note type="footnote" xml:id="note49">
+                  <ref target="#reference49">49</ref> Véase nota 35.</note>
+               <note type="footnote" xml:id="note50">
+                  <ref target="#reference50">50</ref> La Biblioteca Mazarino conserva un manuscrito del siglo XV con signatura Ms. 1860 y título <title>Anciennes chroniques d’Angleterre</title>. </note>
+               <note type="footnote" xml:id="note51">
+                  <ref target="#reference51">51</ref> Incorporamos la corrección de <title>Codoin</title> y, siguiendo a esta, Domínguez («Trasignies» en lugar de la lectura del manuscrito «Crassigni»). La obra sobre la historia de Gillon de Trazegnies es una novela anónima del siglo XV en la corte de Borgoña en honor a la familia Trazegnies. </note>
+               <note type="footnote" xml:id="note52">
+                  <ref target="#reference52">52</ref> Véase nota 44.</note>
+               <note type="footnote" xml:id="note53">
+                  <ref target="#reference53">53</ref> Puede referirse a las obras del cronista borgoñes Jean Molinet (1435-1507).</note>
+               <note type="footnote" xml:id="note54">
+                  <ref target="#reference54">54</ref> Se conserva un manuscrito del siglo XV en la Biblioteca de Clermont-Ferrand con el título de <title>La généalogie des roys de France</title> (Ms. 269).</note>
+               <note type="footnote" xml:id="note55">
+                  <ref target="#reference55">55</ref> Manuscrito del <title>Speculum Humanae Salvationis</title>, obra escrita a principios de XIV por autor desconocido. En España se conserva una copia dentro del ms. Vit. 25-7 de la Biblioteca Nacional de Madrid, fechado en 1432.</note>
+            <note type="footnote" xml:id="note56">
+                  <ref target="#reference56">56</ref> <title>Les anchiennes croniques de Pise</title>, obra de autor desconocido, escrita hacia 1474, de la que se conservan varios manuscritos en bibliotecas europeas. Véase descripción bibliográfica en ARLIMA.  </note>
+               <note type="footnote" xml:id="note57">
+                  <ref target="#reference57">57</ref> El <title>Roman de Bucalus</title>, novela en prosa que relata de la historia de Tournai inspirada principalmente en el <title>Liber de antiquitate urbis Tornacensis</title> y la <title>Historiae Tornacensis</title>. Véase descripción bibliográfica en ARLIMA.</note> </div>
+      </back>
+   </text>
+</TEI>
