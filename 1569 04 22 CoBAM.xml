@@ -1,0 +1,170 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690422">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Carolus Clusius (Malinas) - 31 de agosto de 1568 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Jeanine De Landtsheer </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 04 22</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM is very grateful for the seeds he received from Clusius and Brancio, but he was upset to hear about the latter’s illness, until Clusius informed him about Brancio’s recovery. He wishes Brancio a perpetual good health and all possible happiness. The same goes for Clusius. He very much regrets that he could not even enjoy his friend’s company for a few hours on his way home, but he hopes that it will happen in the future. He longs to see Clusius’s book in print and has even urged Plantin, but the printer blamed Clusius for not yet having finished his text. BAM sent Clusius’s list to his friends in Spain. He conveys greetings to Brancio and hopes that he will share his treasure of bulbs and irises with him. Brancio can use Plantin as an intermediary. </note>
+            <note type="incipit">Accepi literas cum seminibus pro quibus maximas gratias ago...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Netherlands</country>
+                        <settlement>Leiden</settlement>
+                        <msName>Universiteitsbibliotheek Leiden</msName>
+                        <altIdentifier>
+                           <idno>(O) LUB, Ms. Vulcanius, 101,2. </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> J. L. Barona - X. Gómez Font, <title>La correspondencia de Carolus Clusius con los científicos españoles</title>(Valencia, 1998), p. 57.</witness>
+               <witness xml:id="E2">Carta de Arias Montano, Benito a Clusius, Carolus, 1568-08-31, en: Esther van Gelder (ed.), <title>Clusius correspondence. A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1179 (accessed: 30/12/2024).</witness>
+               <witness xml:id="E3">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 226-231.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firsPrint">(E1) Barona-Gómez, <title>La correspondencia de Carolus Clusius</title>, p. 57;</bibl><bibl type="inextenso" n="tercerImpreso"> </bibl>
+            <bibl type="inextenso" n="digitalEdition"> (E2) van Gelder (ed.), <title>Clusius correspondence</title>, <ref target="https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1179"></ref>https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1179 (última consulta: 30/12/2023);</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E3) Domínguez, <title>Correspondencia</title>, I, 226-231.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="ClusioCarlos">
+                  <note>Carolus Clusius, Charles de l’Ecluse o l’Escluse (Arras, 19 de febrero de 1526-Leiden, 4 de abril de 1609), médico y botánico flamenco, profesor de Botánica en la Universidad de Leiden desde 1593. </note></person>
+               <person xml:id="BrancioJeande">
+                  <note> Jean de Brancio, noble residente en Malinas. Botánico. </note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-04-22">22 de abril de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Carlos Clusio</persName>
+               <settlement>Malinas</settlement>
+               <date when="1569-04-22">22 de abril de 1569</date>
+            </correspAction>
+            <correspAction type="answered">
+               <persName>Carlos Clusio</persName>
+               <settlement>Malinas</settlement>
+               <date when="1569-04-24">24 de abril de 1569</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Carta original autógrafa de Benito Arias Montano</handNote>
+            <handNote>Sobrescrito de mano desconocida y algo inexperta</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-12-30">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/LUB-Ms-Vulcanius-101-2-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/LUB-Ms.-Vulcanius-101-2-2v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+         <front>
+         <p> El presente documento constituye la segunda carta original conservada entre BAM y Carlos Clusio. En el testimonio de la Universidad de Leiden se aprecian aún restos del sello. Los folios [1v] y [2r] están en blanco. La carta fue recibida por Clusio en Malinas el mismo día que BAM la envió desde Amberes y parece responder a otra carta perdida de Clusio, enviada también pocos días antes, donde el botánico belga enviaba a BAM algunas semillas. Por otra parte, entre los testimonios de esta carta debe incluirse también la edición digital incluida en la página web de Esther van Gelder (ed.), <title>Clusius correspondence: A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. <ref target=" http://clusiuscorrespondence.huygens.knaw.nl">http://clusiuscorrespondence.huygens.knaw.nl (última consulta:15/01/2024)</ref>, un proyecto colaborativo y en progreso desarrollado en el Huygens Instituut de Holanda. 
+             </p>
+      </front>
+         <body> 
+            <div type="address">
+               <pb n="f. [2v]" ed="O" facs="#foto2"/>
+               <head>[Sobrescrito, no autógrafo de BAM:]</head>
+               <ab>Doctissimo uiro, domino <name type="person" ref="#ClusioCarlos">Carolo Clusio</name> A<expan><ex>trebatensi</ex></expan>. <name type="place">Mechliniae</name>.  </ab>
+            </div>
+            <div type="anotation1">
+               <head>[Anotado por Clusio en el margen, con escritura transversal:]</head>
+               <ab><date when="1569-04-22">1569. <app><lem wit="#O #E2 #E3"><name type="place">Antuerpia</name></lem><rdg wit="#E1"> Antuerpiae</rdg></app>, X K<expan><ex>a</ex></expan>l<expan><ex>endas</ex></expan> Maii</date>. Accepi <app><lem wit="#O #E3"><name type="place">Machliniae</name></lem> <rdg wit="#E2">Mechliniae</rdg> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> <app><lem wit="#O #E2 #E3"><date when="1569-04-22">eodem die</date></lem> <rdg wit="#E1">postridie</rdg></app>. Respondi ibidem <date when="1569-04-24">VIII K<expan><ex>a</ex></expan>l<expan><ex>endas</ex></expan> eiusdem</date>.</ab></div>
+            <div type="main_content">
+               <pb n="f. [1r]" ed="O" facs="#foto1"/>
+               <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>ico</ex></expan>.            </opener>
+               <p>[<hi rend="bold">1</hi>] Accepi literas cum seminibus, pro quibus maximas gratias ago et tibi et d<expan><ex>omino</ex></expan> <name type="person" ref="#BrancioJeande">Brancioni</name>, cuius proximum laborem mihi ab amico quodam significatum ante quam tuas literas <app><lem wit="#O #E1 #E3">acciperem</lem> <rdg wit="#E2">acceperim</rdg></app>, grauiter dolui cuperemque, si fieri posset, uel a me susceptum <app><lem wit="#O #E2 #E3">leuari</lem> <rdg wit="#E1">lenari</rdg></app>. Profecto magna cura <app><lem wit="#E3">angebar</lem> <rdg wit="#O #E1 #E2">agebar</rdg></app> illius euentus, quoad a te iam mitioris ualetudinis certior factus fui. Cupio illi et optimam et perpetuam ualetudinem et omnia felicia quem et uirum optimum noui et multis nominibus amo. [<hi rend="bold">2</hi>] Tibi autem nihil est quod non cupiam, nisi quod mihi non opto. Vix dici <app><lem wit="#E1 #E3">potest</lem> <rdg wit="#O #E2">potes</rdg></app> quantum dolui quod publici negotii causa festinare coactus uestra consuetudine per horas aliquot rediens frui non potui. Spero autem opportunitatem mihi aliquando fore ut commodius fruar; ut uos meo officio <app><lem wit="#O #E2 #E3">utamini</lem> <rdg wit="#E1">utimini</rdg></app> <app><lem wit="#O #E1 #E2">semper</lem> <rdg wit="#E3">: semper</rdg></app> erit opportunum. [<hi rend="bold">3</hi>] Librum tuum iam <app><lem wit="#O #E3">excussum</lem> <rdg wit="#E1 #E2"> excusum</rdg></app> cupio, de quo <name type="person" ref="#PlantinoCristobal">Plantinum</name> <app><lem wit="#O #E2 #E3">urgeo</lem> <rdg wit="#E1">urges</rdg></app>, sed ille nescio quae abs te nondum absoluta causatur. Matura, amabo hunc foetum ingenii tui, ut statim nouum alium utilem quoque reip<expan><ex>ublicae</ex></expan> concipias. Nollem te ut oliuam <del>su</del> <app><lem wit="#O #E2 #E3">certos</lem> <rdg wit="#E1">per certos</rdg></app> annos intermittere, sed binis etiam fructibus ut ficum singulas aestates ornare et <app><lem wit="#O #E2 #E3">iuuare</lem> <rdg wit="#E1">innare</rdg></app>.</p>
+               <p>[<hi rend="bold">4</hi>] Indicem tuum mittam in <name type="place">Hispaniam</name> duplicem aut triplicem eodem exemplo. Spero nos aliquid habituros. Iubebo curari ab amicis.</p>
+               <p>[<hi rend="bold">5</hi>] D<expan><ex>omi</ex></expan>num <name type="person" ref="#BrancioJeande">Brancionem</name> meo nomine salutabis orabisque ut diuitias illas suas <app><lem wit="#O #E2 #E3">bulbacaeorum</lem> <rdg wit="#E1">bulbaceosque</rdg></app> et iridum mecum communicet, non minoris aestimaturo quam <app><lem wit="#O #E2 #E3">par</lem> <rdg wit="#E1">pare</rdg></app> est illique semper debituro. Id praestare poterit per <name type="pesrson" ref="#PlantinoCristobal">Plantinum</name> nostrum qui fideliter quidquid acceperit reddet.</p> 
+               <closer> [<hi rend="bold">6</hi>] <salute>Vale</salute>. <name type="place">Antuerpiae</name>, <date when="1569-04-22">10 Cal<expan><ex>endas</ex></expan> Maii 1569</date>. Tuus ex animo, <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedictus</ex></expan> Arias Montanus <app><lem wit="#O #E2 #E3">تلميد </lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app></name></signed></closer>
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <div type="address">
+                  <pb n="f. [2v]" ed="O" facs="#foto2"/>
+                  <head>[Sobrescrito, no autógrafo de BAM:]</head>
+                  <ab>Al muy docto señor, el señor Carlos Clusio de Arras.<ref target="#note1" xml:id="reference1">1</ref> En Malinas. </ab>
+               </div>
+               <div type="anotation1">
+                  <head>[Anotado por Clusio en el margen, con escritura transversal:]</head>
+                  <ab>1569. De Amberes, 22 de abril. La recibí en Malinas al día siguiente. Respondí en el mismo lugar a 24 de abril.<ref target="#note2" xml:id="reference2">2</ref></ab></div>
+            <div type="main_content">
+                  <pb n="f. [1r]" ed="O" facs="#foto1"/>
+               <opener>Un cordial saludo.            </opener>
+                  <p>[<hi rend="bold">1</hi>] He recibido la carta con las semillas, por las que doy muchas gracias a vuestra merced y al Sr. Branciόn, cuya reciente enfermedad, de la que fui informado por un amigo antes de recibir la carta de vuestra merced, me ha dolido mucho y desearía que se aliviara, incluso cambiándome por él, si fuera posible. Verdaderamente tenía una gran preocupación por cómo saldría de esta hasta que me enteré por vuestra merced de que gozaba de mejor salud. Le deseo una óptima y perpetua salud, y toda la felicidad, porque le conozco como al mejor de los hombres y le quiero por muchas razones. [<hi rend="bold">2</hi>] Para vuestra merced nada hay que no desee si no es lo que no deseo para mí mismo. Faltan palabras para decir cuánto lamenté no poder disfrutar de la compañía de vuestra merced durante unas horas en mi camino de vuelta debido a que ciertos asuntos públicos me obligaron a acelerar mi marcha. Espero, no obstante, tener otra ocasiόn para disfrutar más convenientemente; siempre será oportuno que vuestras mercedes hagan uso de mis servicios. [<hi rend="bold">3</hi>] Deseo que el libro de vuestra merced esté ya imprimido, sobre lo que doy prisas a Plantino, pero él alega no sé que cosas que todavía no ha terminado vuestra merced. Por favor, dese prisa con este fruto de su ingenio, para que pueda concebir vuestra merced inmediatamente uno nuevo, también útil para la república. No quisiera que vuestra merced, como el olivo, deje pasar algunos años, sino más bien que, como la higuera, nos aporte y deleite con frutos dos veces al año.<ref target="#note3" xml:id="reference3">3</ref></p>
+                  <p>[<hi rend="bold">4</hi>] Enviaré la lista de vuestra merced a España, dos o tres copias del mismo ejemplar. Espero que obtengamos algo. Urgiré a mis amigos a encargarse de este asunto. </p>
+                  <p>[<hi rend="bold">5</hi>] Transmita mis saludos al señor de Branción y pídale que comparta su tesoro de bulbos e iris conmigo, que no lo he de valorar en menos de lo que es justo y siempre estaré en deuda con él. Podría hacerlo a través de nuestro querido Plantino, que con toda confianza me entregará lo que haya recibido. </p> 
+                  <closer>  <salute>Adiós</salute>. En Amberes, a 22 de abril 1569.
+                     Suyo de corazón, Benito Arias Montano condiscípulo
+                  </closer>
+            </div>
+            </body>
+         <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Entendemos que la A. es la abreviatura por <foreign>Atrebati</foreign> o <foreign>Atrebatensi</foreign>, pues una de las variantes más comunes del nombre del botánico belga fue la del nombre latino Carolus Clusius Atrebatensis, que aparece en ocasiones publicado en forma de la abreviatura C. C. A. Véase, por ejemplo, el título de la siguiente obra, con traducción latina de Clusio: <title>Admiranda narratio, fida tamen de commodis et incolarum ritibus Virginiae nuper admodum ab Anglis, qui a Dn. Richardo Greinvile equestris ordinis uiro eo in coloniam anno M.D.LXXXV deducti sunt inuentae, sumtus faciente Dn. Waltero Raleigh equestris ordinis uiro fodinaru[m] stanni praefecto ex auctoritate serenissimae Reginae Angliae. Anglico scripta sermone a Thoma Hariot eiusdem Walteri domestico, in eam coloniam misso ut regionis si tum diligenter obseruaret, nunc autem primum Latio donata a C.C.A.</title> (Francoforti ad Moenum: typis Ioannis Wecheli, sumptibus vero Theodori de Bry, uenales reperiuntur in officina Sigismundi Feierabendii, Anno MDXC).   </note>   
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Carta no localizada. </note>   
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Los próximos libros de Clusio fueron dos traducciones: <title>Garcia ab Horto, Aromatum, et simplicium aliquot medicamentorum apud Indos nascentium historia: primum quidem Lusitanica lingua per dialogos conscripta... nunc vero Latino sermone in epitomen contracta, et iconibus ad uiuum expressis, locupletioribusque annotatiunculis illustrata a Carolo Clusio</title> y Nicolás Monardes Alfaro, <title>De simplicibus medicamentis ex Occidentali India delatis, quorum in medicina usus est... interprete Carolo Clusio</title>, ambos publicados por Cristóbal Plantino en 1574. Si BAM se refiere a una obra original de Clusio, esta no vería la luz hasta el año 1576, también en los talleres de Plantino, bajo el título <title>Rariorum aliquot stirpium per Hispanias obseruatarum historia</title>.    </note>   
+           </div>
+         </back>
+      </text>
+   </group>
+   </text>
+</TEI>
