@@ -51,8 +51,7 @@
             <p>Dirigido por Antonio Dávila Pérez.</p>
          </projectDesc>
          <editorialDecl>
-            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
-						P5</ref></p>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI P5</ref></p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -156,8 +155,7 @@
                <head>[Sobrescrito:]</head>
                <ab> Por servicio del Rey Católico al secretario Albornoz, junto al señor Duque de Alba, para que las envíe al señor doctor Arias Montano donde estuviere.
                </ab>
-            </div>       
-            
+            </div>    
             <div type="annotation">
                <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
                <ab> Daniel Barbaro. Primero de mayo de 1569. Recibida en Bruselas a 14 de mayo.
