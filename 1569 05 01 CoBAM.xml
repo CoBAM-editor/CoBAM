@@ -1,0 +1,201 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690501">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Daniel Barbaro (Venecia) a Benito Arias Montano (Bruselas) - 1 de mayo de 1569 </title>
+            <author>Daniel Barbaro</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 05 01</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Daniel Barbaro has finally received the package BAM sent to him via the Greek merchant Andreas Darmario four months ago containing samples of the Polyglot Bible and a picture of the birth of Jesus, designed by the painter Jorge Ghisi and printed by Hieronymus Cock. As to the Polyglot, he had already communicated his approval after receiving the samples entrusted to Guicciardini. He wants BAM to recommend the Spanish king a young man of extraordinary skills named Marcantonio Gadaldino, who is under the protection of cardinal Sirleto. He also wants to know if BAM has received his book <title>La pratica della perspettiva</title>.                
+            </note>
+            <note type="incipit">Andreas Graecus commendatum sibi abs te Bibliorum specimen...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 21r-v, ff. 24r-v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 128-131, nº 15.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 232-237.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 128-131; </bibl><bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 232-237.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="BarbaroDaniel">
+                  <note>Daniel Mateo Alvise Barbaro (Venecia, 8 de febrero de 1514-13 de abril de 1570), noble veneciano conocido por sus comentarios y traducciones de Vitrubio, Patriarca de Aquilea desde 1550. Estudió filosofía, matemáticas y óptica en la Universidad de Padua y sirvió a la República Veneciana como embajador en la corte inglesa de Isabel I y como representante del Concilio de Trento. Entre sus obras destacan <title>La Predica dei sogni</title> (1542), publicada bajo el seudónimo de reverendo padre Hypneo da Schio, los <title>Dieci libri dell'architettura di M. Vitruvio</title> (1556) y <title>La practica della perspettiva</title> (1568), un libro sobre perspectiva para arquitectos y artistas. </note></person>
+               <person xml:id="BaldochioOliverio">
+                  <note>Humanista residente en Lovaina hacia 1568.</note></person>
+               <person xml:id="PiusV">
+                  <note>Pío V, 1504-1572, papa.</note></person>
+              <person xml:id="DarmarioAndreas">
+                  <note>Copista griego y mercader de libros.</note></person>
+               <person xml:id="GadaldinoAgostino">
+                  <note>Agostino Gadaldino (1515-1575). Médico, filólogo, residente en Venecia.</note></person>
+               <person xml:id="GadaldinoMarcantonio">
+                  <note>Marcantonio Gadaldino, 1545-1592. Canónigo en Treviso; orientalista; hijo de Agostino Gabaldino.</note></person>
+               <person xml:id="SirletoGuglielmo">
+                  <note>Guglielmo Sirleto, 1514-1585. Cardinal. Bibliotecario del Vaticano. Humanista.</note></person>
+              <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Daniel Barbaro</persName>
+               <settlement>Venecia</settlement>
+               <date when="1569-05-01">01 de mayo de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-05-14">14 de mayo de 1569</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-01-04">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/KBS-Ms.-A902-f.-21r-scaled.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/KBS-Ms.-A902-f.-21v-scaled.jpg" xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/KBS-Ms.-A902-f.-24v-scaled.jpg"/>
+   </facsimile><text>  
+      <group>
+      <text type="source"> <front>
+         <p> El segundo folio del pliego de esta carta original, donde se conserva el sello y sobrescrito, ha sido archivado en el legajo A 902 del manuscrito de Estocolmo separado de la primera parte del pliego, donde se escribió la carta. Esto ha dado como resultado el salto en la numeración de ambas partes de la carta: folios 21r-v (primera parte del pliego) el cuerpo de la misma y folios 24r-v (segunda parte del pliego), el sello y sobrescrito. El folio 24r del original de esta carta está en blanco.  </p>
+      </front>
+         <body> 
+            <pb n="f. 24v" ed="O" facs="#foto3"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Por servicio del Rey Cathólico al secretario <name type="person" ref="#AlbornozJuande">Albornoz</name>, iunto al s<expan><ex>eñ</ex></expan>or <name type="person" ref="#AlvarezdeToledoFernando">duque d’Alva</name>, para que las embíe al s<expan><ex>eñ</ex></expan>or dottor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> donde estuviere.
+               </ab>
+            </div>
+            <div type="annotation">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#BarbaroDaniel">Daniel Barbarus</name>. <date when="1569-05-01">Kal<expan><ex>endis</ex></expan> Mai<expan><ex>is</ex></expan> 1569</date>. R<expan><ex>ecibid</ex></expan>a en <name type="place">Bruselas</name> a <date when="1569-05-14">14 de mayo</date>.
+               </ab>
+            </div>  
+            <div type="main_content">
+               <pb n="f. 21r" ed="O" facs="#foto1"/>
+               <opener><name type="person" ref="#BarbaroDaniel">Daniel Barbarus</name> <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name> s<expan><ex>alutem</ex></expan>.</opener>
+               <p><name type="person" ref="#DarmarioAndreas">Andreas</name> Graecus commendatum sibi abs te Bibliorum specimen post quatuor menses tandem <app><lem wit="#O #E2">attulit</lem> <rdg wit="#E1">petiitque</rdg></app> a me ut illum excusatum haberem, quod sarcinas suas latronum metu in itinere nescio ubi reliquerat, quas denique se habuisse dixit et literas tuas cum pictura Christi nati et Bibliorum exemplari quam primum licuit mihi bona fide reddidisse. Accepi hominis excusationem, postquam nulla alia fuit nisi temporis iactura. </p>
+               <p>Iam uero quid de specimine sentiam ad te scripsi; scies tamen in dies illud magis ac magis mihi <app><lem wit="#O #E2">probari,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> probari <hi rend="italic">imum punctum posuit</hi></rdg></app> deque ea re cum <rs type="person" ref="#PiusV">pontificis</rs> legato, uiro optimo, me loquutum fuisse. Iam praesenserat non nihil ille et religiosissimi <rs type="person" ref="#FelipeII">regis</rs> propositum mirum in modum commendauerat.</p>
+               <p>Agite igitur uos et ardentissimum bonorum desiderium quam primum aura uestra recreate; bene mereamini de religione, de Ecclesia deque fidei nostrae solidissima petra; uindicate illam ab iniuriis, a calumniis et imposturis impiorum, iniquorum et perfidorum hominum; statuite in loco spacioso pauperum pedes; accelerate spes nostras diligentia uestra et nos de fine tantae prouinciae certos reddite. </p>
+               <p>Interim te scire uelim me iam <app><lem wit="#O #E2">biennium</lem> <rdg wit="#E1">bienium</rdg></app> r<expan><ex>euerendissi</ex></expan>mo et doctis<expan><ex>sim</ex></expan>o <app><lem wit="#O #E2">car<expan><ex>dina</ex></expan>li</lem> <rdg wit="#E1">cardenali</rdg></app> <name type="person" ref="#SirletoGuglielmo">Sirleto</name> adolescentem <app><lem wit="#O #E2">quendam</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> commendasse, cum nouissem in eo non modo ingenuam indolem, ut facile de ipso quilibet omnia sibi polliceri posset, sed etiam cognouissem quodam quasi naturae miraculo illum praecipuas linguas optime callere, Graecam, Hebraeam, Chaldaeam <app><lem wit="#O #E2">Latinamque,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> Latinamque <hi rend="italic">imum punctum posuit</hi></rdg></app> easque tam prompte ex tempore loqui, et de singulis rationes et causas reddere, et tam soluta quam astricta o<expan><ex>rati</ex></expan>o<expan><ex>n</ex></expan>e sermones et poemata componere quam uel senex longo studio aut materna institutione faceret. Propterea doctissimo <app><lem wit="#O #E2">car<expan><ex>dina</ex></expan>li</lem> <rdg wit="#E1">cardenali</rdg></app> carissimus est, et <name type="place">Roma</name> tota iuuenem admiratur. Pater illi est praestantissimus uir medicus, qui <name type="place">Venetiis</name> commoratur, <name type="person" ref="#GadaldinoAgostino">Augustinus</name> nomine, <name type="person" ref="#GadaldinoAgostino">Gadaldinus</name> cognomento, <name type="place">Mutinae</name> oriundus. Nomen adolescentis <name type="person" ref="#GadaldinoMarcantonio">Marcus Antonius</name>; hunc tibi notum esse mea commendatione uolui. Mitto autem ad te <pb n="f. 21v" ed="O" facs="#foto2"/> cum his literis nonnulla quae ipse de studiorum suorum ratione amantissimo patri suo <del>nouis.</del> nuper scripsit, ut noscas ingenium et maturos conatus adolescentis et, si occasio affuerit, ipsum serenis<expan><ex>simo</ex></expan> <rs type="person" ref="#FelipeII">regi</rs> commendes, cuius praesidio praeclara huiusmodi ingenia ali debent. Ego uero in hac edendorum Bibliorum ratione, quam tanta cum laude iniit Christianissimus rex u<expan><ex>este</ex></expan>r, iudico adolescentem hunc unum fore qui se uirum praestari possit, et uberes ac maturos fructus editurum, si liberalitate alicuius principis tanquam dulcissimo fluuio irrigetur. Interim ex eius scriptis quem tibi commendo agnosces. </p>
+               <p>Quod uero me dignum regia cognitione feceris, amanter id quidem fecisti; ueruntamen nollem beneuolentiae istius uestrae spiritibus nauiculam meam in aliquos elationis scopulos compelli; parcius ergo agas. </p>
+               <p>Quod autem desideras aliqua uel ingenii uel artis uel naturae opera a me tibi communicari, scias me libenter id curaturum. Et iam mirum opus naturae tibi proposui, in quo ingenium et ars mirum <app><lem wit="#O #E1">immodum</lem> <rdg wit="#E2">in modum</rdg></app> uiget, adolescentem scilicet, quem tibi superius commendaui. Nescio adhuc an tibi perlata fuerit <title>Optices</title> mea; id scire uelim an Italus Graecum mendacio uicerit. Si non habuisti, mittam quam celerrime; iam unam misi <name type="person" ref="#BaldochioOliverio">Oliuerio Baldoccio</name>, quem testimonio tuo mihi fore carissimum scies.  </p>
+               <closer><salute>Interim uale</salute>. Dat<expan><ex>um</ex></expan> <name type="place">Venet<expan><ex>iis</ex></expan></name> <date when="1569-05-01">Kal<expan><ex>endis</ex></expan> Mai<expan><ex>is</ex></expan> MDLXVIIII</date>.</closer>
+               <signed> Electus Aquilensis tuus.</signed>   
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <pb n="f. 24v" ed="O" facs="#foto3"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Por servicio del Rey Católico al secretario Albornoz, junto al señor Duque de Alba, para que las envíe al señor doctor Arias Montano donde estuviere.
+               </ab>
+            </div>       
+            
+            <div type="annotation">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> Daniel Barbaro. Primero de mayo de 1569. Recibida en Bruselas a 14 de mayo.
+               </ab>
+            </div>
+            <div type="main_content">
+               <pb n="f. 21r" ed="O" facs="#foto1"/>
+               <opener>Daniel Barbaro saluda a Benito Arias Montano.<ref target="#note1" xml:id="reference1">1</ref></opener>
+               <p>Andrés el griego,<ref target="#note2" xml:id="reference2">2</ref> después de cuatro meses, por fin me ha traído la muestra de la Biblia que vuestra merced le confió y me pidió que lo disculpara, porque por miedo a los ladrones había dejado su bagaje no sé en qué punto del camino; el cual dijo que ya por fin lo había recuperado, y tan pronto como le había sido posible me había traído de buena fe la carta de vuestra merced junto con el grabado del niño Jesús y la muestra de la Biblia. Acepté la disculpa, puesto que no hubo más pérdida que la temporal.</p>
+               <p>Por otra parte, ya he escrito a vuestra merced mi opinión sobre la muestra; con todo, sabrá vuestra merced que cada día la apruebo en mayor medida y sobre esto he hablado con el legado del papa, un hombre excelente. Él, por su parte, ya había tenido algunas noticias y había recomendado de un modo sorprendente el propósito de un rey tan religioso.</p>
+               <p>Ánimo, por tanto, y recreen cuanto antes con el aura de vuestras mercedes el flagrantísimo deseo de los hombres piadosos; préstenle su servicio a la religión, a la Iglesia y a la solidísima piedra de nuestra fe; defiéndanla de los ultrajes, de las calumnias y de las imposturas de los hombres impíos, inicuos y pérfidos; coloquen en un lugar espacioso los pies de los pobres; aligeren nuestras esperanzas con la diligencia de vuestras mercedes y hacednos saber el final de tan gran empresa.</p>
+               <p>Entretanto, me gustaría que supiera vuestra merced que hace ya un bienio que le recomendé un joven al doctísimo cardenal Sirleto,<ref target="#note3" xml:id="reference3">3</ref> dado que había advertido en este joven no solo su noble naturaleza, hasta tal punto que fácilmente cualquiera podría prometerse todo de él mismo, sino que también me había dado cuenta de que aquel, como por un milagro de la naturaleza, dominaba a la perfección las principales lenguas, el griego, el hebreo, el caldeo y el latín, y las habla de forma improvisada con facilidad, y de cada una de ellas en particular da las razones y las causas, e incluso es capaz de componer poemas y sermones, tanto en prosa como en verso, de igual modo que lo podría hacer un anciano después de mucho estudio o por tratarse de su lengua materna. Por ello, el cardenal lo aprecia mucho y toda Roma está admirada del joven. El padre de este es un distinguido médico de Venecia, llamado Agostino Gadaldino,<ref target="#note4" xml:id="reference4">4</ref>  natural de Módena. El joven se llama Marcantonio;<ref target="#note5" xml:id="reference5">5</ref> y he querido que vuestra merced tenga referencias suyas a través de mí. Y envío a vuestra merced <pb n="f. 21v" ed="O" facs="#foto2"/>con esta carta unos apuntamientos que él mismo le escribió hace poco a su querido padre acerca de sus estudios, para que así conozca el ingenio y los trabajos maduros de este joven, y si se presentara la ocasión lo recomiende vuestra merced al serenísimo rey, bajo cuya protección deben sustentarse los ingenios preclaros como este. A decir verdad, yo pienso que en esta empresa de la Biblia, la cual ha emprendido con tanta gloria el cristianísimo rey de vuestras mercedes, este joven sería el único que podría mostrarse como un hombre, y que ofrecería abundantes y maduros frutos si fuera regado por la generosidad de algún príncipe como si de una dulce corriente se tratara. Mientras tanto, vuestra merced podrá colegir de sus escritos cuál es el porte de este que le encomiendo. </p>
+               <p>En cuanto a que me haya hecho vuestra merced merecedor de la consideración del rey, ha obrado en ello, sin duda, como un amigo; sin embargo, no quisiera que mi barquito se vea arrastrado contra ningún escollo de soberbia por los vientos de esta benevolencia vuestra; proceda vuestra merced, por tanto, con mayor moderación. </p>
+               <p>Por lo que respecta al deseo de vuestra merced de que le haga partícipe de alguna obra de ingenio, de arte o de la naturaleza, tenga por seguro que lo procuraré. Y ya de hecho he mostrado a vuestra merced una obra sorprendente de la naturaleza, en la que están presentes en grado sumo el ingenio y el arte, me refiero, claro está, al joven que le he recomendado antes. No sé todavía si ha llegado a vuestra merced mi libro <title>Sobre la perspectiva</title>; me gustaría saber si el italiano ha superado al griego en ser mentiroso.<ref target="#note6" xml:id="reference6">6</ref> Si no lo ha recibido, lo enviaré a vuestra merced lo antes posible; ya he enviado un ejemplar a Oliverio Baldocio, quien sabrá vuestra merced que me va a ser muy grato por el testimonio de vuestra merced.  </p>
+               <closer><salute>Entretanto, adiós</salute>. Fechada en Venecia a primero de mayo de 1569.</closer>
+               <signed>Suyo, Electo de Aquileya.</signed>     
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> El texto de la salutatio ha sido escrito por el propio Arias Montano, según se deduce de la caligrafía, posiblemente para identificar de forma más rápida el remitente de la carta, pues Barbaro iniciaba en ocasiones sus cartas directamente si encabezamiento de saludo; véase, por ejemplo, <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-03-01">1569 03 01</ref> y <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-16">1569 04 06</ref>. </note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Andrés Darmario.  </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Guillermo Sirleto (1514-6 de octubre de 1585), de origen humilde, destacó pronto por su erudición, llegando a ser uno de los más sobresalientes exponentes del Renacimiento de los estudios religiosos en Roma. Junto con el Papa Marcelo II se encargó de establecer el texto griego y la Vulgata del Nuevo Testamento. En 1549 fue custodio de la Vaticana; Pío IV lo nombra protonotario apostólico en mayo de 1555 y cardenal en 1565 por recomendación de Carlos Borromeo, como recompensa por su participación en la redacción del catecismo de Trento. Su prestigio fue subiendo durante los papados de Pío V y Gregorio XIII merced a sus estudios patrísticos y litúrgicos, participando en todas las comisiones de relevancia como la reforma del calendario y la reedición del Martirologio. Publicó, entre otras obras, las <title>Vitae sanctorum a Metaphase editae</title> (tomos V y VI de las <title>Vitae Sanctorum de Lippomano</title>, Venecia, 1551-1558), las <title>Annotationes in Psalmos</title> (en la Biblia Políglota de Amberes), y el <title>Menologium Graecorum</title> (en el tomo III de las <title>Antiquae lectiones de Canisio</title>, Ingolstadt, 1601). Cf. <title>NBG</title>, XLIV, cols. 40-41; G. Fragnito, «Sirleto, Guglielmo», <ref target="https://www.treccani.it/enciclopedia/guglielmo-sirleto_(Dizionario-Biografico)/">Dizionario Biografico degli Italiani</ref>, XCII (2018). </note>   
+            <note type="footnote" xml:id="note4">
+               <ref target="#reference4">4</ref> Agostino Gadaldino, hijo del ilustre librero y editor establecido en Venecia Antonio Gadaldino  (ca. 1482 - Modena, 6 aprile 1568). Nacido el 15 de marzo de 1515 en Módena, médico de renombre activo en Venecia, «ornato ancora della cognitione di molt'altre scientie et di molte et varie lingue» (F. Panini, <title>Cronica della città di Modona</title>, R. Bussi - R. Montagnani (Modena 1978), p. 169). Tradujo al latín y editó la <title>Opera omnia</title> de Galeno (Venecia: Junta, 1541) y otras obras. Como su padre, también sufrió varios procedimientos inquisitoriales, y en agosto de 1557 fue condenado por el Santo Oficio de Venecia, donde se había presentado espontáneamente, a castigos espirituales y una multa económica después de haber confesado haber leído libros prohibidos. Murió en Venecia en 1575. Cf. A. Pastore, «Gadaldino, Antonio», <ref target="https://www.treccani.it/enciclopedia/antonio-gadaldino_(Dizionario-Biografico)/">Dizionario Biografico degli Italiani</ref>, LI (1998). 
+            </note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Hijo de Agostino Gadaldino, joven de extraordinarias cualidades protegido de Daniel Barbaro y del cardenal Sirleto, de quien ejerció como secretario. Sobre la familia Gadaldino, veáse el enlace de la nota anterior. 
+               </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Recordemos que Barbaro se había mostrado en cartas anteriores muy irritado por los retrasos del mercader griego Darmario en hacerle llegar un envío de BAM desde Amberes. El enfado del patriarca de Aquileya con los hombres que le servían de correo le lleva también a dudar de la capacidad y honestidad de un italiano (suponemos que otro comerciante que había viajado a Flandes) que había de hacer llegar a BAM una copia de su tratado <title>Sobre la perspectiva</title>. 
+               </note> 
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
