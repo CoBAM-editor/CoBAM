@@ -1,0 +1,174 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690807">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Carolus Clusius (Malinas) - 7 de agosto de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Jeanine De Landtsheer </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 08 07</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM is most grateful for Brancio’s affection and his generous presents. By growing and blooming they will become very dear. If only he could show his gratitude in some way! Clusius must convey cordial greetings. BAM is upset and saddened by the news of Bernardino of Burgos’s death: he was devoted to literature and an expert in all issues concerning Andalusia and literature. Shortly before he died, BAM had written to him and his friend Duranus about some Spanish plants. He expects that Monardes’ book will be sent to him. He is willing to do whatever will be welcome to Clusius and Brancio and he hopes that he is not a nuisance by his begging for seeds.
+            </note>
+            <note type="incipit">Maximas ego D. Brancioni gratias ago...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Netherlands</country>
+                        <settlement>Leiden</settlement>
+                        <msName>Universiteitsbibliotheek Leiden</msName>
+                        <altIdentifier>
+                           <idno>(O) LUB, Ms. Vulcanius, 101,3. </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> Ignacio de Asso, <title>Clarorum Hispaniensium atque exterorum epistolae</title> (Zaragoza, 1793), pp. 37-38.</witness>
+               <witness xml:id="E2"> J. L. Barona - X. Gómez Font, <title>La correspondencia de Carolus Clusius con los científicos españoles</title>(Valencia, 1998), pp. 58-59.</witness>
+               <witness xml:id="E3">Carta de Arias Montano, Benito a Clusius, Carolus, 1568-08-31, en: Esther van Gelder (ed.), <title>Clusius correspondence. A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1180  (accessed: 30/01/2024).</witness>
+               <witness xml:id="E4">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 262-265.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firsPrint">(E1) Asso, <title>Clarorum Hispaniensium atque exterorum epistolae</title>, pp. 37-38;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Barona-Gómez, <title>La correspondencia de Carolus Clusius</title>, pp. 58-59;</bibl><bibl type="inextenso" n="tercerImpreso"> </bibl>
+            <bibl type="inextenso" n="digitalEdition"> (E3) van Gelder (ed.), <title>Clusius correspondence</title>, <ref target="https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1180 "></ref>https://clusiuscorrespondence.huygens.knaw.nl/edition/entry/1180 (última consulta: 30/01/2024);</bibl>
+            <bibl type="inextenso" n="thirdPrint"> (E4) Domínguez, <title>Correspondencia</title>, I, 262-265.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+               P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="ClusioCarlos">
+                  <note>Carolus Clusius, Charles de l’Ecluse o l’Escluse (Arras, 19 de febrero de 1526-Leiden, 4 de abril de 1609), médico y botánico flamenco, profesor de Botánica en la Universidad de Leiden desde 1593. </note></person>
+               <person xml:id="BrancioJeande">
+                  <note> Jean de Brancio, noble residente en Malinas. Botánico. </note></person>
+               <person xml:id="BurgosBernardinode">
+                  <note> Bernardino de Burgos, fallecido en 1569. Boticario en Sevilla, amigo de Benito Arias Montano.</note></person>
+               <person xml:id="Duran">
+                  <note> Durán, personaje español perteneciente al círculo de contactos botánicos de Benito Arias Montano.</note></person>
+               <person xml:id="MonardesNicolas">
+                  <note> Nicolás Monardes (ca. 1493 - 1588), médico sevillano, especialista en historia natural, medicina, metalurgia. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-08-07">7 de agosto de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Carlos Clusio</persName>
+               <settlement>Malinas</settlement>
+               <date when="1568-09-01">8 de agosto de 1569</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-02-13">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/02/LUB-Ms.-Vulcanius-101-3-f-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/02/LUB-Ms.-Vulcanius-101-3-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+         <front>
+         <p> En el presente documento se demuestra que BAM no solo hacía de mediador constante entre la comunidad científica flamenca y las autoridades españolas en los Países Bajos, sino que también fue vínculo permanente entre los botánicos flamencos y algunos emientes estudiosos de esa misma materia en España. La carta fue recibida por Clusio en Malinas un día después de ser enviada desde Amberes. Entre los testimonios de esta carta incluimos también la edición digital incluida en la página web de Esther van Gelder (ed.), <title>Clusius correspondence: A digital edition-in-progress</title>. 1st release: December 2015. The Hague: Huygens ING. <ref target=" http://clusiuscorrespondence.huygens.knaw.nl">http://clusiuscorrespondence.huygens.knaw.nl (última consulta:13/02/2024)</ref>, un proyecto colaborativo y en progreso desarrollado en el Huygens Instituut de Holanda. 
+             </p>
+         <p>Los folios [1v] y [2r] de esta carta original están en blanco.</p>
+      </front>
+         <body> 
+            <div type="address">
+               <pb n="f. [2v]" ed="0" facs="#foto2"/>
+               <head>[Sobrescrito:]</head>
+               <ab><app><lem wit="#O #E2 #E3 #E4">Doctissimo d<expan><ex>omino</ex></expan> <name type="person" ref="#ClusioCarlos">Carolo Clusio</name>, amico charissimo. <name type="place">Mechliniam</name>.</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app></ab>
+            </div>
+            <div type="anotation">
+               <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+               <ab><app><lem wit="#O #E2 #E3 #E4"><date when="1569">1569</date>. <name type="place">Antuerpia</name>, <date when="1569-07-08">7 <app><lem wit="#O #E3 #E4">Idus</lem> <rdg wit="#E2">Idibus</rdg></app> Augusti</date>. <app><lem wit="#O #E3 #E4">Accepi</lem> <rdg wit="#E2">Recepi</rdg></app> <app><lem wit="#O #E4"><name type="place">Machliniae</name></lem> <rdg wit="#E2 #E3">Mechliniae</rdg></app> <date when="1569-07-09">postridie</date>.</lem><rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app></ab></div>
+            <div type="main_content">
+               <pb n="f. [1r]" ed="0" facs="#foto1"/>
+               <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>ico</ex></expan>.
+            </opener>
+               <p>[<hi rend="bold">1</hi>] <app><lem wit="#O #E2 #E3 #E4">Maximas</lem> <rdg wit="#E2">Maxima</rdg></app> ego d<expan><ex>omino</ex></expan> <name type="name" ref="#BrancioJeande">Brancioni</name> gratias ago, cuius summa<supplied>m</supplied> liberalitatem et in me amorem gratissimis muneribus imo potius diuitiis acceptis expertus sum. Ea mihi non memoriam augebunt uiri summe dilecti et perpetua recordatione culti, sed pignoris nomine et crescendo <app><lem wit="#O #E2 #E3 #E4">et</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> floribus ferendis erunt <app><lem wit="#O #E1 #E4">charissima</lem> <rdg wit="#E2 #E3">carissima</rdg></app>. Vtinam ego aliquo officio hunc illi animum testari <app><lem wit="#O #E2 #E3 #E4">possim</lem> <rdg wit="#E1">possem</rdg></app>! Tu tamen meo nomine illum salutabis gratissimique hominis oratione quamlibet ornata accipies. [<hi rend="bold">2</hi>] Debere me autem <app><lem wit="#O #E1 #E3 #E4">tibi</lem> <rdg wit="#E2">sibi</rdg></app> cum multa alia, tum etiam haec munera fateor, quo procurante mihi contigisse sat scio atque magnam gratiam habeo relaturus <app><lem wit="#O #E1 #E3 #E4">et</lem> <rdg wit="#E2">ex</rdg></app> similibus et aliis rerum officiorumque exemplis.</p>
+               <p>[<hi rend="bold">3</hi>] Ego his diebus uehementer turbatus et <app><lem wit="#O #E2 #E3 #E4">maeore</lem> <rdg wit="#E2">moerore</rdg></app> maximo affectus sum ob acceptum nuntium <name type="person" ref="#BurgosBernardinode">Bernardini</name> illius <name type="person" ref="#BurgosBernardinode">Burgensis</name> <del>e uit</del> e uiuis sublati, uiri de omni re literaria benemerentis et de re publica etiam <name type="place">Betica</name> omni atque in hoc studiorum genere exercitatissimi, et mihi cum primis charissimi. Ad illum, paulo <choice><sic>autem</sic> <corr>ante</corr></choice> quam obiit, de plantis Hispanis scripseram et ad alterum illum, <name type="person" ref="#Duran">Duranum</name>, quem diligenter curaturum spero.</p>
+               <p>[<hi rend="bold">4</hi>] <app><lem wit="#O #E2 #E3 #E4">Expecto</lem> <rdg wit="#E1">Expecto</rdg></app> etiam <name type="person" ref="MonardesNicolas">Monardi</name> librum ad nos esse perferendum. [<hi rend="bold">5</hi>] Omnia ego uellem quae et d<expan><ex>omino</ex></expan> Brancioni et tibi grata essent efficere, enitar autem id quod possim praestare. [<hi rend="bold">6</hi>]Oratum te uelim ut ne semina omnium generum conquire<supplied>re</supplied> et mihi parare molestum aut taediosum ducas; id n<expan><ex>ost</ex></expan>ra amicitia fiet <app><lem wit="#O #E1 #E3 #E4">leuissimum</lem> <rdg wit="#E2">lenissimum</rdg></app> tibi, quem uehementer amo. </p>
+               <closer>[<hi rend="bold">7</hi>] <salute>Vale</salute>. <name type="place">Antuerpiae</name>. <date when="1569-08-07"><app><lem wit="#O #E2 #E3 #E4">7</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> Id<expan><ex>us</ex></expan> Augusti 1569</date>. <app><lem wit="#O #E2 #E3 #E4">Tuus ex animo B<expan><ex>enedictus</ex></expan> Arias Montanus</lem><rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> <app><lem wit="#O #E3 #E4">تلميد </lem> <rdg wit="#E1 #E2"><hi rend="italic">omiserunt</hi></rdg></app></closer>
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>       
+            <div>
+               
+               <div type="address">
+                  <pb n="f. [2v]" ed="0" facs="#foto2"/>
+                  <head>[Sobrescrito:]</head>
+                  <ab>Al doctísimo señor Carlos Clusio, mi queridísimo amigo. Malinas.</ab>
+               </div>
+               <div type="anotation">
+                  <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+                  <ab>1569. Amberes, 7 de agosto. La recibí en Malinas el día siguiente.</ab></div>
+               <div type="main_content">
+                  <pb n="f. [1r]" ed="0" facs="#foto1"/>
+                  <opener>Cordiales saludos.
+                  </opener>
+                  <p>[<hi rend="bold">1</hi>] Estoy muy agradecido al señor de Brancion, de cuya increíble generosidad y afecto hacia mí tengo experiencia a través de sus regalos tan agradables y, más aún, a través de sus riquezas. Estos no solo aumentan en mí la memoria de un hombre más amado, a quien honro con el recuerdo perpetuo, sino que también serán los más apreciados al crecer y florecer por ser un regalo suyo. ¡Si tan sólo pudiera demostrar esta actitud mía a él a través de uno u otro servicio! Pero vuestra merced debe saludarle en mi nombre y darle la bienvenida con las frases más adornadas de un hombre muy agradecido. [<hi rend="bold">2</hi>] Reconozco que debo a vuestra merced junto con otros muchos favores también estos, y sé muy bien que los he conseguido porque se ha encargado vuestra merced de procurármelos, y le doy muchísimas gracias, dispuesto a corresponder con ejemplos similares y otros de asuntos y servicios.</p>
+                  <p>[<hi rend="bold">3</hi>]  En estos días, me he visto gravemente alterado y afectado con profundo dolor al recibir la noticia de que Bernadino de Burgos<ref target="#note1" xml:id="reference1">1</ref>  se ha ido de entre los vivos, un hombre con tantos méritos en todo el mundo de la literatura y en la vida pública en toda Andalucía, y con la mayor experiencia en este tipo de estudios y uno de mis amigos más queridos. Poco antes de su muerte, le había escrito a él acerca de las plantas de España y también a ese otro hombre, Durán,<ref target="#note2" xml:id="reference2">2</ref>  quien espero que tenga mucho cuidado de este asunto.</p>
+                  <p>[<hi rend="bold">4</hi>]  Espero que el libro de Monardes<ref target="#note3" xml:id="reference3">3</ref>  también será enviado a nosotros. [<hi rend="bold">5</hi>]  Me gustaría hacer realidad todo lo que les sea grato al señor de Brancion y a vuesta merced misma, y me esforzaré en hacer lo que pueda. [<hi rend="bold">6</hi>] Me gustaría pedir a vuestra merced que no considere molesto o tedioso buscar todo tipo de semillas y adquirirlas para mí. Nuestra amistad hará de esto una tarea sencilla para vuestra merced, a quien quiero profundamente. </p>
+                  <closer>[<hi rend="bold">7</hi>] Adiós. Amberes, 7 de agosto de 1569. Suyo de corazón, Benito Arias Montano, condiscípulo.
+                  </closer>
+               </div>
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Bernardino de Burgos, boticario sevillano perteneciente al entorno de Nicolás Monardes. También formó parte del círculo más íntimo de BAM, pues, como demuestra la documentación obrante en el Archivo de Protocolos de Sevilla, llegó a tener poder notarial para recibir cobros en su nombre; cf. Gil, <title>Arias Montano en su entorno</title>, pp. 31, 183.  BAM tuvo entre su colección de arte un cuadro de Bernardino de Burgos, posiblemente pintado por Pedro de Villejas Marmolejo; cf. Gil, <title>Arias Montano en su entorno</title>, pp. 72, 330.</note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Estas cartas a las que se refiere vagamente BAM no han sido localizadas aún. Tampoco tenemos referencias sobre el personaje aludido con el apellido Durán, que debe de ser también un botánico perteneciente al círculo humanista sevillano de BAM.  </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Sobre el también sevillano Nicolás Bautista Monardes (ca. 1493 – 20.X.1588), médico, especialista en historia natural, medicina, metalurgia, puede verse entrada de J. L. Fresquet Febrer, «Nicolás Batuista Monardes», en Real Academia de la Historia, <ref target="https://dbe.rah.es/biografias/12999/nicolas-bautista-monardes">Diccionario Biográfico electrónico</ref> (en red, <ref target="https://dbe.rah.es/biografias/12999/nicolas-bautista-monardes">https://dbe.rah.es/biografias/12999/nicolas-bautista-monardes</ref>). BAM se refiere aquí al libro que publicó por primera vez Monardes en 1565 sobre los productos medicinaes americanos con el título de <title>Dos libros. El uno trata de todas las cosas que traen de nuestras Indias occidentales, que sirven al uso de Medicina y como se ha usar la rayz del Mechoacan, purga excelentissima. El otro libro, trata de las dos medicinas maravillosas que son contra todo Veneno, la piedra Bezaar, y la yeva Escuerçonera</title>; de esta obra existe una edición de 1569, que es posiblemente a la que se refiere BAM en esta carta (puede verse un ejemplar digitalizado en <ref target="https://digibug.ugr.es/handle/10481/16442?locale-attribute=en">DIGIBUG</ref>). En 1571 vio la luz la <title>Segunda Parte del Libro, de las cosas que se traen de nuestras Indias occidentales, que sirven al uso de medicina</title>, y en 1574 se reeditó la obra completa con el título de <title>Primera y Segunda y Tercera Partes de la Historia Medicinal de las Cosas que se traen de nuestras Indias Occidentales que sirven en Medicina</title>. Carlos Clusio, a quien iría destinado finalmente el libro que BAM ceclaraba esperar en esta carta, finalmente se encargó de publicar una traduccón al latín de esta obra con el título de <title>De simplicibus medicamentis ex Occidentali India delatis, quorum in medicina usus est</title>, impreso por Cristóbal Plantino en Amberes en 1574. </note>     
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
