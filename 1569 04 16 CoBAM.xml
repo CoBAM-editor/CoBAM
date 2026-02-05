@@ -1,0 +1,192 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690416">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Daniel Barbaro (Venecia) a Benito Arias Montano (Amberes) - 16 de abril de 1569 </title>
+            <author>Daniel Barbaro</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt> </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 04 16</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Daniel Barbarus has received the first sample of the Polyglot via Guicciardini. Unreservedly, he praises the work and trusts that it will be useful to restore the unity of the Church. Barbarus, who does not know the details of the Polyglot project, just misses a prologue in which the reader can understand the reasons which made the King undertake the work. He also asks to report the reader the perfidy of the Jews, who were responsible, in his opinion, for corruption of the original texts. He considers that the philological effort developed by BAM and all his employees to become the project a reality must be highlighted in that preface. He approves the engravings opening the Polyglot. He also expresses his admiration for the Duke of Alba and his son. He received the index of forbidden books. After the positive report by BAM, he has decided to start a friendship with Oliverio Baldoccio.                 
+            </note>
+            <note type="incipit">Accepi, uir erudite et pie et amice carissime, literas tuas...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 68r-69v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness> <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 122-127, nº 15.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 218-225.</witness>
+            </listWit>
+            <bibl type="inextenso" n="primerImpreso">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 122-127; </bibl><bibl type="inextenso" n="segundoImpreso"> (E2) Domínguez, <title>Correspondencia</title>, I, 218-225.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="BarbaroDaniel">
+                  <note>Daniel Mateo Alvise Barbaro (Venecia, 8 de febrero de 1514-13 de abril de 1570), noble veneciano conocido por sus comentarios y traducciones de Vitrubio, Patriarca de Aquilea desde 1550. Estudió filosofía, matemáticas y óptica en la Universidad de Padua y sirvió a la República Veneciana como embajador en la corte inglesa de Isabel I y como representante del Concilio de Trento. Entre sus obras destacan <title>La Predica dei sogni</title> (1542), publicada bajo el seudónimo de reverendo padre Hypneo da Schio, los <title>Dieci libri dell'architettura di M. Vitruvio</title> (1556) y <title>La practica della perspettiva</title> (1568), un libro sobre perspectiva para arquitectos y artistas. </note></person>
+               <person xml:id="BaldochioOliverio">
+                  <note>Humanista residente en Lovaina hacia 1568.</note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="AlvarezdeToledoFadrique">
+                  <note>Fadrique Álvarez de Toledo 1537-1583, cuarto duque de Alva, hijo de Fernando Álvarez de Toledo</note></person>
+               <person xml:id="DarmarioAndreas">
+                  <note>Copista griego y mercader de libros.</note></person>
+               <person xml:id="GuicciardiniLodovico">
+                  <note>  Lodovico Guicciardini (1521-1589), escritor, político, geógrafo y comerciante italiano</note></person>
+               <person xml:id="Bindonius">
+                  <note>  Impresor y editor en Venecia, amigo de Daniel Barbaro hacia 1569.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Daniel Barbaro</persName>
+               <settlement>Venecia</settlement>
+               <date when="1569-04-16">16 de abril de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-12-26">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/KBS-A902-f.-68r-scaled.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/KBS-A902-f.-68v-scaled.jpg" xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2023/12/KBS-A902-f.-69v-scaled.jpg" xml:id="foto3"/> </facsimile>
+   <text> 
+      <group>
+      <text type="source">
+       <front>
+         <p> La creencia de una parte de la filología bíblica de que los judíos habían corrompido el texto sagrado para destruir los principios de la fe cristiana constituye un arma de doble filo, que en manos de los detractores de BAM veremos cómo se vuelve contra la Políglota de Amberes. Al margen de la Políglota, y a partir de la promulgación en febrero de 1569 del edicto de Felipe II que disponía la publicación en Flandes de un catálogo de libros prohibidos, BAM estará ocupado en la elaboración de dicho catálogo. Se busca confeccionar una lista de los libros publicados con posterioridad al Índice de Pío IV (1564) que deban ser prohibidos o expurgados. Al efecto de redactar un primer catálogo, que será sometido a la aprobación de una junta de teólogos reunidos en Bruselas, BAM solicita la colaboración de Daniel Barbaro. El elenco elaborado por BAM será aprobado en su totalidad, publicándose en 1569 en la imprenta de Plantino bajo el título <title>Librorum prohibitorum index ex mandato Regiae Catholicae Maiestatis et Illustrissimi Ducis Albani Consiliique Regii decreto confectus et editus</title>.</p>    <p>El folio 69r del original de esta carta está en blanco. </p>
+       </front>
+         <body> 
+            <pb n="f. 69v" ed="O" facs="#foto3"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al molto mag<expan><ex>nifi</ex></expan>co et r<expan><ex>everen</ex></expan>do il <app><lem wit="#O #E2">sig<expan><ex>nor</ex></expan></lem> <rdg wit="#E1">signore</rdg></app> <name type="person" ref="#AriasMontanoBenito">Benedetto Arias Montano</name> mio <app><lem wit="#O #E2">honorandis<expan><ex>sim</ex></expan>o</lem> <rdg wit="#E1">honoradissimo</rdg></app>. <name type="place">Anversa</name>.
+               </ab>
+            </div>       
+            <div type="annotation1">
+               <head>[Anotado por otra mano debajo del sobrescrito:]</head>
+               <ab> El cónsul, su s<expan><ex>er</ex></expan>vi<expan><ex>d</ex></expan>or, besa a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> las manos.
+               </ab>
+            </div>  
+            <div type="annotation2">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#BarbaroDaniel">Danielis Barbari</name> de Bibliis.
+               </ab>
+            </div> 
+            <div type="main_content">
+               <pb n="f. 68r" ed="O" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] Accepi, uir erudite et pie et amice carissime, literas tuas et specimen Bibliorum per <name type="person" ref="#GuicciardiniLodovico">L<expan><ex>udouicum</ex></expan> Guicciardinum</name> ad me missum. Doleo me hominem non uidisse, siquidem amplexus illum fuissem, et in tuam gratiam omnem operam meam et studium illi promisissem. [<hi rend="bold">2</hi>] Literas nullas alias neque specimen ullum ab aliquo accepi; <rs type="person" ref="#DarmarioAndreas">Graecus</rs> defecit, <name type="person" ref="#Bindonius">Bindonius</name> discessit, fasciculos nullos <app><lem wit="#O #E1">uidi,</lem> <rdg wit="#E2"><hi rend="italic">post</hi> uidi <hi rend="italic">imum punctum posuit</hi></rdg></app> picturam tamen Christi nati aliunde habui. Gratias tibi nihilominus ago perinde ac si abs te illam habuissem; ut enim officiosos ac sedulos amo, ita officii desertores quatenus huiusmodi (uitium enim non naturam odi) odisse cogor. [<hi rend="bold">3</hi>] Sed ad rem. Specimen illud egregium Bibliorum mihi summopere placuit, et in eo miram <rs type="person" ref="#FelipeII">Serenissimi Regis uestri</rs> tum pietatem tum liberalitatem admiratus sum; et studium uestrum quanta potui animi propensione commendaui. [<hi rend="bold">4</hi>] Deus uelit ut uetus fermentum penitus expurgetur, ut in azimis ueritatis et sinceritatis epulari <app><lem wit="#O #E2">possimus.</lem> <rdg wit="#E1"><hi rend="italic">post</hi> possimus <hi rend="italic">non distinxit</hi></rdg></app> Quantum, bone Deus, commodi, quantum utilitatis hoc regio munere donatam se sentiet Ecclesia Dei, cum a diuinis dapibus foedissimas et infames uolucres pietas et magnificentia uestra expulerit, et purissimos sacrae doctrinae fontes aperuerit! [<hi rend="bold">5</hi>] Vt enim non minus indignum quam perniciosum erat grammaticos homunculos et rabulas de foro atque sophistas sine fide, sine humilitate, sine spiritu de sacrosanctis nostrae redemptionis mysteriis tam petulanter iudicare et secundum elementa mundi et insanientem sapientiam diuina eloquia metiri seque ipsos summa, et non ferenda, licentia et insolentia iudices caelestis scientiae constituere; ita omni commendatione dignus et maxime utilis erit pius iste ac honestissimus labor in edendis quam castigatissimis Sacris Voluminibus. [<hi rend="bold">6</hi>] Valeant <name type="person">Erasmi</name>, <name type="person">Buceri</name>, <name type="person">Melancthones</name>, <name type="person">Caluini</name> et reliqui porcorum greges, et in mare inferni a malis spiritibus acti sese nunquam inde emersuros proiiciant! Nullae sint rugae, nullae maculae in formosissima Christi sponsa, ueniat illa de candidissimo <name type="place">Libano</name>, ueniat de <name type="place">Libano</name>, ueniat, coronetur tanquam triumphatrix, de capite <name type="place">Amana</name>, de uertice <app><lem wit="#O #E2"><name type="place">Seir</name></lem> <rdg wit="#E1">Sanir</rdg></app> et <name type="place">Hermon</name>, de cubilibus leonum, de montibus pardorum, deuictis nimirum omnibus tyrannicis potestatibus, <app><lem wit="#O #E2">ha<supplied>e</supplied>reticis,</lem> <rdg wit="#E1"> <hi rend="italic">post</hi> haereticis <hi rend="italic">non distinxit</hi></rdg></app> mundi sapientibus atque affectibus carnis! </p>
+               <p>[<hi rend="bold">7</hi>] Sed quo feror epistolae modum <app><lem wit="#O #E2">egrediens? </lem> <rdg wit="#E1"> egrediens. </rdg></app> Audi quid desiderem in praeclara istorum librorum editione. Vellem praefationem quandam apponi, quae causas memoret quibus Serenissimus Rex adductus tantum opus aggressus fuerit. <pb n="f. 68v" ed="O" facs="#foto2"/> Eas quidem multas et graues esse scio: religiosissimi animi nimirum probitatem, odium perfectum in perfidos Ecclesiae hostes, studium in catholicos homines, Dei gloriam et honorem, ueritatis ardorem et huiusmodi quae sanctissimum principem excitarunt, mouerunt, compulerunt. [<hi rend="bold">8</hi>] Alias addi uelim multa de Iudaeorum perfidia et qui ab origine <app> <lem wit="#O #E2">coeperint</lem> <rdg wit="#E1">coeperunt</rdg></app> Sacros Libros corrumpere et qua de causa et quam periculosum sit eorum interpretationibus fidem adhibere. Praeterea studiosis proponere diligentiam et studium uestrum in comparandis antiquis et incorruptis exemplaribus, et in consulendis bonis ac doctis uiris, et quanta ex labore uestro hominibus piis utilitas prouentura sit, ut eius spe concepta sese plurimum iuuandos sentiant. </p>               <p>[<hi rend="bold">9</hi>] Characteres et typos o<expan><ex>mn</ex></expan>es tam Hebraeos et Caldaeos quam Latinos et Graecos maxime probo, formamque uniuersam amplector, principis religiosissimi pietatem et magnificentiam admiror, et illi fausta omnia precor. [<hi rend="bold">10</hi>] <name type="person" ref="#AlvarezdeToledoFernando">Albanum ducem</name> et <name type="person" ref="#AlvarezdeToledoFadrique">Federicum</name> illustrem principem eius filium, quem mihi tam belle laudas, ueneror. Victorias demum de iniquis fidei hostibus per eum a D<expan><ex>omi</ex></expan>no Iesu reportandas desidero, et de relatis gaudeo. </p>
+               <p>[<hi rend="bold">11</hi>]   Indicem librorum abs te missum habui. Ego nullos haereticorum librorum unquam uidi neque uidere curaui, me Deo protegente; quare nescirem quid libello uestro addere possem.</p>
+               <p>[<hi rend="bold">12</hi>]  <name type="person" ref="#BaldochioOliverio">Oliuerium Baldoccium</name> posthac tua sponsione suauius amabo.</p> <closer><salute>[<hi rend="bold">13</hi>]  Tu interim uale et me ama</salute>. Dat<expan><ex>um</ex></expan> <name type="place">Venetiis</name> <date when="1569-04-16">XVI Kal<expan><ex>endas</ex></expan> Mai<expan><ex>as</ex></expan> M.D.LXIX</date>.</closer>
+               <signed> Tuus <name type="person" ref="#BarbaroDaniel">Daniel Barbarus</name>, electus Aquileiensis. </signed>          
+     </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <pb n="f. 69v" ed="O" facs="#foto3"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al muy magnífico y muy reverendo señor Benito Arias Montano, con todo mi respeto. Amberes.
+               </ab>
+            </div>       
+            <div type="annotation1">
+               <head>[Anotado por otra mano debajo del sobrescrito:]</head>
+               <ab> El cónsul, su servidor,<ref target="#note1" xml:id="reference1">1</ref> besa a vuestra merced las manos.
+               </ab>
+            </div>  
+            <div type="annotation2">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> De Daniel Bárbaro sobre la Biblia. 
+               </ab>
+            </div>  
+            <div type="main_content">
+               <pb n="f. 68r" ed="O" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] He recibido, varón erudito, piadoso y amigo queridísimo, la carta de vuestra merced y la muestra de la Biblia que me envió por medio de Lodovico Guicciardini. Lamento no haberlo visto a él, pues al menos lo hubiera acogido y le hubiera prometido toda mi ayuda y favor en reconocimiento a la persona de vuestra merced. [<hi rend="bold">2</hi>] No he recibido ninguna otra carta ni muestra de parte de nadie; el griego ha fallado,<ref target="#note2" xml:id="reference2">2</ref> Bindoni<ref target="#note3" xml:id="reference3">3</ref> se ha marchado, no he visto ningún paquete; sin embargo, he conseguido por otra vía el grabado del niño Jesús. De cualquier modo, le quedo tan agradecido como si me lo hubiera conseguido vuestra merced; pues igual que aprecio a las personas obsequiosas y diligentes, del mismo modo, y hasta qué punto, me veo obligado a odiar a los que no cumplen con sus compromisos (pues detesto su falta, no su naturaleza). [<hi rend="bold">3</hi>] Pero vamos al grano. Me ha complacido mucho aquella egregia muestra de la Biblia, y me causa admiración tanto la increíble piedad que vuestro serenísimo rey ha mostrado en ello como su generosidad; y he encomendado el celo de vuestras mercedes con toda la inclinación de espíritu que he podido. [<hi rend="bold">4</hi>] ¡Ojalá Dios quiera que se purifique completamente el viejo fermento, para que podamos banquetear con los panes ázimos de verdad y sinceridad! ¡Cuánta ventaja, buen Dios, cuánta utilidad sentirá la Iglesia de Dios que se le regala con este regio don, una vez que la piedad y magnificencia de vuestras mercedes hayan apartado a esos pajarracos repulsivos e infames de los manjares divinos, y hayan abierto las fuentes purísimas de la sagrada doctrina! [<hi rend="bold">5</hi>] Pues igual que no era menos indigno que pernicioso el hecho de que los gramáticos, charlatanes y sofistas sin fe, sin humildad, sin espíritu emitieran sus juicios de un modo tan petulante acerca de los sagrados misterios de nuestra redención y pretendieran medir las palabras divinas conforme a los elementos del mundo y los parámetros de una necia sabiduría, y se erigieran ellos mismos en jueces de la ciencia celeste con una libertad e insolencia excesivas e insufribles, de igual modo será digno de toda recomendación, y especialmente útil, ese piadoso y honestísimo trabajo de sacar a la luz los Libros Sagrados lo más depurados que se pueda. [<hi rend="bold">6</hi>] ¡Que se pierdan los Erasmos, los Buceros, los Melancthons, los Calvinos y las demás piaras de cerdos, y que, hostigados por los malos espíritus, se arrojen al mar del infierno, de donde nunca volverán a salir! ¡Que no haya ninguna arruga, ninguna mancha en la hermosísima esposa de Cristo, que venga del cándido Líbano, que venga de Líbano, que venga, que sea coronada como triunfadora, desde la cima del Amana, desde las crestas del Seir y del Hermón, de las guaridas de leones,<ref target="#note4" xml:id="reference4">4</ref> de los riscos de leopardos, derrotados en efecto todos los poderes despóticos, los heréticos, los sabios del mundo y las pasiones de la carne! </p>
+               <p>[<hi rend="bold">7</hi>] Pero ¿adónde me dejo llevar fuera de los patrones de una carta? Atiende lo que echo de menos en la edición insigne de estos libros. Me gustaría que llevara un prólogo que recogiera las razones que han movido al serenísimo rey a emprender tan gran obra. <pb n="f. 68v" ed="O" facs="#foto2"/> Estas, ciertamente, me consta que son muchas y de peso: la dignidad de su religiosísimo espíritu, su odio absoluto a los pérfidos enemigos de la Iglesia, su afición a los hombres católicos, la gloria y el honor de Dios, el deseo de veracidad y cuantas razones de esta índole estimularon, movieron y empujaron a este santísimo príncipe. [<hi rend="bold">8</hi>] Por otro lado, me gustaría que se añadieran muchas cosas sobre la perfidia de los judíos y quienes empezaron desde el principio a corromper los Libros Sagrados y por qué motivo, y qué peligroso es confiar en las interpretaciones de estos. Y además mostrar a los estudiosos vuestra diligencia y celo comparando los ejemplares antiguos e incorruptos, consultando a honrados y doctos varones, así como la magnitud de la utilidad que va a resultar del trabajo de vuestras mercedes para los hombres piadosos, a fin de que una vez concebida la esperanza de esto, sientan que van a ser ayudados en gran medida. </p>
+               <p>[<hi rend="bold">9</hi>]  Los caracteres y todos los tipos, tanto los hebreos y caldeos como los latinos y griegos, los apruebo sin reservas, acepto todo lo que atañe a la forma, admiro la piedad y generosidad del príncipe religiosísimo, y deseo que todo salga bien. [<hi rend="bold">10</hi>]  Siento gran admiración por el duque de Alba y por su ilustre primogénito Fadrique, al que tan hermosamente me alaba vuestra merced. Y, en definitiva, ansío que se han de obtener victorias sobre los inicuos enemigos de la fe por Nuestro Señor Jesucristo a través de él, y me reconforto con las conseguidas.</p>
+               <p>[<hi rend="bold">11</hi>]  He recibido el índice de libros que me envió vuestra merced. Yo por mi parte nunca he visto ni he intentado ver ningún libro herético, con la protección de Dios, por lo que no sé qué podría añadir a la lista de vuestras mercedes.</p>
+               <p>[<hi rend="bold">12</hi>]  A Oliverio Baldocio, con el compromiso de vuestra merced, en adelante lo trataré con mayor afabilidad. [<hi rend="bold">13</hi>]  Entretanto que le vaya bien y permanezca en mi amistad. </p>
+               <p> Fechada en Venecia, a 16 de abril de 1569. </p>    
+               <signed>Suyo, Daniel Barbaro, patriarca electo de Aquileya</signed>
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Tomás de Zornoza, cónsul en Venecia. Véase carta suya a BAM y nota biográfica en <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-12-18">1568 12 18</ref>. </note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Alusión al mercader Andrés Darmario. </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Puede tratarse de algún miembro de los Bindoni, la conocida familia veneciana de impresores y editores del siglo XVI. Véase sobre algunos de sus miembros los registros del <ref target="https://www.treccani.it/enciclopedia/ricerca/bindoni/?search=bindoni">Dizionario biografico degli Italiani</ref>.</note>   
+            <note type="footnote" xml:id="note4">
+               <ref target="#reference4">4</ref> El Amana, el Senir y el Hermón son montes del Antilíbano, al norte de Palestina. Simbolizan el lugar por donde venían los enemigos de Israel, así como su soberbia. Para todo este pasaje, desde «esposa» hasta «leopardos», véase VVLG. <title>Cant.</title> 4, 8: «Veni de Libano, sponsa mea, ueni de Libano, coronaberis; de capite Amana, de uertice Sanir et Hermon, de cubilibus leonum, de montibus pardorum». Mantenemos en el texto la lectura del original «Seir», que, frente a la que presenta la Vulgata y la propia Políglota, puede verse también, por ejemplo, en los sermones de Bernardo de Claraval en la <ref target="url">edición parisina de 1561</ref>. 
+            </note> 
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
