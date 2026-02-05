@@ -1,0 +1,153 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690522">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Albornoz (Bruselas) - 22 de mayo de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 05 22</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">
+               BAM writes again to Alba's secretary, inquiring about the progress of his illness and the results of the treatment. Along with the letter, he sends more medicines. Furthermore, he recommends Rafael Manrique to fill the position in Pavía. Manrique belonged to a family closely connected to BAM: he was the brother of Luis Manrique, royal treasurer, and Bernardino de Manrique, dean of Granada —a family with whom Arias Montano had strong ties.               
+            </note>
+            <note type="incipit">Con desseo y cuydado he estado por saber si vuestra merced tomó las pildorillas...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Archivo de la Casa de los Duques de Alba</msName>
+                        <altIdentifier>
+                           <idno>(O) ADA, ca. 28/171.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>  
+               <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 241-243.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint"> (E) Domínguez, <title>Correspondencia</title>, I, 241-243.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="ManriquedeLaraBernardino">
+                  <note>Bernardino Manrique de Lara, deán de Granada; capellán de Felipe II; hermano de Luis y Rafael Manrique de Lara.</note>
+               </person>
+               <person xml:id="ManriquedeLaraRafael">
+                  <note>
+                     Oficial militar en el ejército español en Flandes; hermano de Luis Manrique de Lara y de Bernardino Manrique de Lara.</note>
+               </person>
+               <person xml:id="ManriquedeLaraLuis">
+                  <note>Luis Manrique de Lara (fallecido en 1583), limosnero y capellán mayor de Felipe II.  </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-05-22">22 de mayo de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Albornoz</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-02-24">24 de mayo de 1569</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Benito Arias Montano</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-01-12">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/ADA-ca.-28-171-f.-1r.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/ADA-ca.-28-171-f.-2v.jpg" xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Esta carta se escribe solo cinco días después de la anterior a Albornoz. El seguimiento de la enfermedad de Albornoz, así como los cuidados médicos que BAM le proporciona, sirven en este caso de preámbulo para lo que parece el principal contenido de la carta, una nueva recomendación personal ante el todopoderoso Alba. </p>
+         <p>Los folios [1v] y [2r] están en blanco. La carta fue recibida por Albornoz en Bruselas dos días después de ser enviada desde Amberes.</p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [2v]" ed="O" facs="#foto2"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Al muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or mi s<expan><ex>eñ</ex></expan>or <name type="person" ref="#AlbornozJuande">Ju<expan><ex>an</ex></expan> de Albornoz</name>, secretario de Su Exc<expan><ex>elenci</ex></expan>a. En <name type="place">Brusselas</name>.
+            </ab>
+         </div> 
+         <div type="anotation">
+            <head>[Anotado en el margen por otra mano, con escritura transversal:]</head>
+            <ab> <app><lem wit="#O"><name type="person" ref="#AlbornozJuande">Alb<expan><ex>ornoz</ex></expan></name></lem> <rdg wit="#E"><hi rend="italic">omisit</hi></rdg></app>. <name type="place">Anveres</name>. <date when="1569-05-22">Mayo 22 de 1569</date>. El doctor <name type="person">Arias Montano</name> <date when="1569-05-22">22 de mayo</date>; a <date when="1560-05-24">24 dél</date>.</ab>
+         </div>            
+         <div type="main_content">
+            <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <opener>Muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or: </opener>
+            <p>[<hi rend="bold">1</hi>] Con desseo y cuydado he estado por saber si v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> tomó las pildorillas y cómo se ha hallado con ellas, porque espero que le yrá siempre bien para los corrimientos,<ref target="#note1"
+               xml:id="reference1">1</ref> tomándolas de mes a mes todo el tiempo que se sintiere fatigado dellos. Para esto he ordenado que se me haga aquí una poca de aquella massa. de la qual le embiaré, queriendo v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> servirse de usar della. [<hi rend="bold">2</hi>] Del ánime embío a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con esta un poco de lo muy bueno, que usando v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> del sahumerio tanto como un garvanço de tres en tres noches en la forma que yo mostré a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> terná para algunos días y se hallará bien con él, mayormente haviendo precedido ya las <app><lem wit="#O">pildorillas.</lem> <rdg wit="#E"><hi rend="italic">post</hi> pildorillas <hi rend="bold">leuiter distinxit</hi></rdg></app> Y, gastado este, yo havré procurado más, plaziendo a Dios.<ref target="#note2"
+               xml:id="reference2">2</ref> </p>
+            <p> [<hi rend="bold">3</hi>] Como v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me certificó tan llanamente de la voluntad que conocía en el <rs type="person" ref="#AlvarezdeToledoFernando">duque</rs> acerca de hazer toda m<expan><ex>erce</ex></expan>d a don <name type="person" ref="#ManriquedeLaraRafael">Rafael Manrique</name>,<ref target="#note3"
+               xml:id="reference3">3</ref> y más me mostró v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> la suya y affección que tiene a sus cosas y pers<expan><ex>on</ex></expan>as de su casa, luego que aquí torné se lo conté y en él hallé toda fe y seguridad que tenía de que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le haría qualquiera m<expan><ex>erce</ex></expan>d, y me dixo que él desseava aquella plaça de <name type="place">Pavía</name>, y solamente se havía abstenido de trattar della por respetto de Su Exc<expan><ex>elenci</ex></expan>a si tuviesse voluntad de hazerla dar a otra pers<expan><ex>on</ex></expan>a. Y entendido de mí lo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> acerca desto me havía dicho, determinó de yr a besar las manos a Su Exc<expan><ex>elenci</ex></expan>a y a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, por cuyo medio él tiene cierta esperança de ser siempre bien accommodado. [<hi rend="bold">4</hi>] Lo que a mí me cabrá de contento con qualquiera buena andança del s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ManriquedeLaraRafael">Rafael</name> v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> lo sabe bien, pues entiende la obligación que tengo a don <name type="person" ref="#ManriquedeLaraLuis">Luis Manrique</name><ref target="#note4"
+                  xml:id="reference4">4</ref> su her<expan><ex>man</ex></expan>o  y la estrecha amistad y compañía que he tenido con do<supplied>n</supplied> <name type="person" ref="#ManriquedeLaraBernardino">Bernardino Manrique</name>,<ref target="#note5"
+                     xml:id="reference5">5</ref> deán de <name type="place">Granada</name>, desde mochacho en los estudios,  alliende de lo que devo al mismo s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ManriquedeLaraRafael">Raf<expan><ex>ael</ex></expan></name> y de la affición que le tengo por lo mucho bueno que dél conozco, y parte grande dello es proffesar <supplied>ser</supplied> servidor y amigo grande de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>.   </p>
+            <closer><salute>[<hi rend="bold">5</hi>] Cuya muy mag<expan><ex>nífi</ex></expan>ca pers<expan><ex>on</ex></expan>a N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or prospere en su servi<expan><ex>ci</ex></expan>o</salute>. En <name type="place">Anvers</name>, <date when="1569-05-22">22 de mayo 1569</date>.  
+               Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor,
+               <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> تلميد </signed></closer>
+</div>    
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> «Corrimiento: Fluxión de humores que carga a alguna parte del cuerpo», según el <ref target="https://dle.rae.es/corrimiento">DLE</ref> de la RAE.   </note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> BAM parece tener disponible una red segura de proveedores de productos de todo tipo procedentes del Nuevo Mundo. En el campo de la botánica y medicina, BAM envía a varios de sus amigos las, famosas en aquel tiempo, piedras bezoar, cálculos que se encontraban en las vísceras de ciertos animales rumiantes y que eran considerados también un antídoto universal. Así, por ejemplo, tenemos noticias de envíos de este tipo dirigidos al médico parisino Nicolás Rasio. Cf. cartas de Plantino a BAM, números 1577 09 29 y 1577 10 23 y 1580 02 22. El humanista y obispo de Amberes Levino Torrencio fue otro de los destinatarios de estos regalos curativos enviados por BAM; cf. carta de Torrencio a BAM del 3 de enero de 1587 (1587 01 03).   </note>  
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Sobre la familia Manrique de Lara véase Luis de Salazar y Castro, <title>Historia genealógica de la Casa de Lara, justificada con documentos y escritores de inviolable fe </title>(Madrid: Imprenta Real Mateo de Llanos y Guzmán, 1697). Rafael Manrique, hermano de Luis y Bernardino Manrique, es hijo de uno de los personajes más influyentes de comienzos del siglo XVI, Rodrigo Manrique de Lara, III Conde de Paredes, Señor de Villa Palacios, Villaverde, Bienservida, Riopal, Cotillas y San Vicente, Comendador de la Alhambra y la Solana en la Orden de Santiago. En su testamento Rodrigo reconoció a veintiséis hijos de los treinta y dos que llegó a tener: tuvo nueve con Isabel Fajardo Chacón, su primera mujer, seis con Ana Manrique, su segunda, y el resto bastardos. Salazar y Castro, <title>Historia genealógica</title>, II, 385-388, dedica una entrada a Rafael Manrique de Lara, quinto hijo de Rodrigo y su segunda mujer, I conde de Burgo-Labéçar, señor de Villaverde, caballero de la Orden de Santiago, gobernador y castellano de Cremona. Salazar y Castro destaca los servicios militares que Rafael prestó a Felipe II, espacialmente en Italia, gracias a los que obtuvo los puestos de gobernador y castellano de Cremona, una de las plazas destacadas del Estado de Milán. El 22 de febrero de 1584 recibió el hábito de Santiago tras aportar las pruebas de su genealogía su hermano Bernardino de Mendoza. Los documentos aportados por Salazar y Castro testimonian que Rafael Manrique vivía aún en el año 1597. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Luis Manrique de Lara, limosnero y capellán mayor del rey. Véase nota biográfica sobre este personaje en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-07-20">1568 07 22</ref>.  </note>   
+            <note type="footnote" xml:id="note5">
+               <ref target="#reference5">5</ref> Bernardino Manrique de Lara, colegial del mayor de San Ildefonso de Alcalá, capellán mayor de Carlos V en la Capilla Real de Granada y deán de Granada. Fue hijo nacido antes del matrimonio de Rodrigo Manrique y Ana Manrique, y legitimado por el mismo matrimonio. El año de 1584 Bernardino se encuentra en la corte firmando la genealogía del hábito de Santiago de su hermano, Rafael. Cf. Salazar y Castro, <title>Historia genealógica</title>, II, 364; véase también Rafael Marín López, <title>El cabildo de la Catedral de Granada en el siglo XVI</title> (Granada: Universidad, 1998), p. 17. BAM debió de coincidir con Bernardino durante sus estudios de Teología en el Colegio Mayor de San Ildefonso en la década de los cincuenta.   </note> 
+            </div>
+      </back>
+   </text>
+</TEI>
