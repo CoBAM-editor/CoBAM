@@ -1,0 +1,168 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690804">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Juan de Ovando (Madrid) a Benito Arias Montano [Amberes] - 4 de agosto de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 08 04</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Ovando does not want to write BAM more frequently in order to not disturb him in his many tasks. He knows about BAM through letters to Zayas and others. In the preface to his book, Becanus praises Ovando, who attributes this praise to BAM’s love to his friends. He will try to compensate Becano with a gift. Meanwhile Ovando asks BAM to give him thanks. Along with this letter Ovando sends a list of instruments and books to be ordered in Antwerp and a amount of money to pay for them. His desire is to gather a copious library. Juan del Caño uses to ask Ovando news about BAM. </note>
+            <note type="incipit">Yo dexo de escrevir a v. m. porque sé la intensa ocupación que tiene......</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(C) IVDJ, Envío 78/3-4, ff. 138r-139v y 135r-v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="R"> M. Jiménez de la Espada, «Correspondencia del Dr. Benito Arias Montano con el licenciado Juan de Ovando», in <title>Boletín de la Real Academia de la Historia</title>, 19 (1891), pp. 477.</witness>
+               <witness xml:id="E1"> J. Paniagua Pérez, «Burócratas e intelectuales en la Corte de Felipe II. La amistad de Juan de Ovando y Benito Arias Montano», <title>La Ciudad de Dios</title>, CCXI, núm. 3 (1998), pp. 943-4.
+                  B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 182-188.</witness>
+               <witness xml:id="E2"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 182-188.</witness>
+               <witness xml:id="E3"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 254-261.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Paniagua, Paniagua, «Burócratas e intelectuales», pp. 943-944; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Macías, <title>Correspondencia con Ovando</title>, pp. 182-188; </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 254-261.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.
+</note>
+                </person>
+               <person xml:id="GoropiusBecanusIohannes">
+                  <note>Juan Goropio Becano (1518-1572), médico, filólogo, humanista y lingüista.  </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="CañoJuandel">
+                  <note>Juan del Caño (1521-1583), biblista, profesor en Salamanca and Santiago de Compostela</note>
+               </person>
+               <person xml:id="LastanosaPedroJuande">
+                  <note>Pedro Juan de Lastanosa (1500-1576), matemático, cartógrafo, ingeniero y consejero de Felipe II</note>
+               </person>
+               <person xml:id="CordobaMariana">
+                 <note>Mariana Dávila y Córdoba, (fl. 1560), esposa de Fadrique Enríquez de Ribera, I Marqués de Villanueva del Río</note></person>
+               <person xml:id="GuicciardiniLodovico">
+                  <note>  Lodovico Guicciardini (1521-1589), escritor, político, geógrafo y comerciante italiano</note></person>
+               <person xml:id="Roano">
+                  <note>  Roano, sacerdote, compañero de Benito Arias Montano en la Peña de Aracena. Existen referencias suyas, al menos, hasta 1578.</note></person> 
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1569-08-04">4 de agosto de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+                    </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Copia de carta por mano desconocida</handNote>
+             <handNote>Memoria de Juan López de Velasco, secretario de Juan de Ovando</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-01-30">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/IVDJ-78-3-f.-138r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/IVDJ-78-3-f.-138v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/02/IVDJ-78-3-f.-139r-scaled.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/IVDJ-78-3-f.-139v-scaled.jpg"
+         xml:id="foto4"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Entre esta carta y la anterior de BAM a Ovando ha pasado más de un año sin comunicación epistolar. Podríamos pensar que solo conservamos una parte de ese intercambio; pero sabemos por una relación que hizo el propio Ovando de las cartas que le envió BAM (cf. Macías, <title>Correspondencia con Ovando</title>, p. 346) que este no vuelve a escribirle hasta el 5 de septiembre de 1569. Nuestro biblista se halla inmerso en la preparación de la Políglota y del catálogo de libros prohibidos con un ritmo de trabajo frenético. Por su parte Ovando no anda menos ajetreado, como él mismo declara: «por mis muchas ocupaciones, que son tantas que, porque las acabe, me relievan de yr al Consejo». Además de sus ocupaciones como oidor en el Consejo de la Inquisición, está atendiendo a la visita del Consejo de Indias.</p>
+         <p>El motivo de esta carta es el envío de una relación en la que, atendiendo al ofrecimiento de BAM así como a la calidad y los precios que el frexnense tanto le ha alabado, le solicita libros, catálogos, instrumentos de astronomía y cuadros (véase botón de enlace al documento al final de la carta). </p>
+      </front>
+      <body>
+         <div type="anotation">
+               <pb n="f. 139v" ed="C" facs="#foto4"/>
+             <head>[Anotado por otra mano, en el margen derecho, con escritura transversal hacia abajo:]</head>
+               <ab>Copia de la carta que se escrivió a <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, a <name type="place">Flandes</name>, a <date when="1569-08-04">4 de agosto de 1569</date>.</ab>
+            </div>
+         <div type="main_content">
+               <pb n="f. 138r" ed="C" facs="#foto1"/>
+            <opener><app><lem wit=" #C #E2 #E3">Ill<expan><ex>ustr</ex></expan>e</lem> <rdg wit="#E1">Illustrísimo</rdg></app> s<expan><ex>eñ</ex></expan>or:</opener>
+            <p>[<hi rend="bold">1</hi>] Yo dexo de escrevir a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> porque sé la intensa ocupación que tiene y el desseo grande de acabarla y venirse, y a mí no me falta lo mesmo. Y también porque me contento de saber de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por las cartas que escrive al secretario <name type="person" ref="#ZayasGrabrielde">Çayas</name> y a la señora doña <name type="person" ref="#CordobaMariana">Mariana</name> y a <name type="person" ref="#LastanosaPedroJuande">Lastenosa</name>,<ref target="#note1" xml:id="reference1">1</ref> que luego me avisan que tienen carta de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. [<hi rend="bold">2</hi>] Ahora dos cosas me an obligado a escrevir a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>: la una, por reñir un poco con v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> de que le ocupe tan tanto el amor de carne y sangre de sus amigos que haga que los que no los conoscen los lisongeen. Dígolo por lo que de los tres <app><lem wit="#C #E2 #E3">dize</lem> <rdg wit="#E1">dice.</rdg></app> <name type="person" ref="#GoropiusBecanusIohannes"><app><lem wit="#C #E2 #E3">Jo<expan><ex>an</ex></expan></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> Goropio Becano</name> en la <choice><sic>espístola</sic> <corr>epistola</corr></choice> nuncupatoria de su libro de las <title>Orígines <app><lem wit="#C #E1 #E3">Antuuerpianas</lem> <rdg wit="#E2">Antuerpianas</rdg></app></title>;<ref target="#note2" xml:id="reference2">2</ref> y particularmente a mí me escrive en una carta suya con un libro dellos que me <app><lem wit="#C #E2 #E3">embió</lem> <rdg wit="#E1">enuió</rdg></app>, en que da bien a entender quánto se ciega v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en las cosas de sus amigos. [<hi rend="bold">3</hi>] Solía ser v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> <app><lem wit="#C #E1 #E2">muy</lem> <rdg wit="#E3">mui</rdg></app> acertado en toda cosa. No sé qué de nuevo aya acaescido a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, <app><lem wit="#E2 #E3">si no</lem> <rdg wit="#C">sinos</rdg> <rdg wit="#E1">señor</rdg></app> es lo que me dezía el buen <name type="person" ref="#Roano">Roano</name>,<ref target="#note3" xml:id="reference3">3</ref>  <app><lem wit="#C #E2 #E3">i<expan><ex>d est</ex></expan></lem> <rdg wit="#E1">i</rdg></app>, «al <app><lem wit="#C #E2 #E3">señor</lem> <rdg wit="#E1">Señoir</rdg></app> doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> no le haze provecho salir de la <name type="place">Peña</name>». [<hi rend="bold">4</hi>] <app><lem wit="#C #E2 #E3">Ame</lem> <rdg wit="#E1">A me</rdg></app><ref target="#note4" xml:id="reference4">4</ref> puesto v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> <app><lem wit="#C #E1 #E3">en cuydado</lem> <rdg wit="#E2">en el cuydado</rdg></app> de desengañar a <name type="person" ref="#GoropiusBecanusIohannes">Becano</name> de lo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> de mí le a dicho. No le escrivo ahora <app><lem wit="#C #E2 #E3">hasta</lem> <rdg wit="#E1">asta</rdg></app> acabar de ver su libro, y no he podido acabar de ver más del primero por mis muchas ocupaciones, que son tantas que, porque las acabe, me relievan de yr al Consejo;<ref target="#note5" xml:id="reference5">5</ref>  de lo que hasta ahora he visto me a parescido <app><lem wit="#C #E1 #E2">muy</lem> <rdg wit="#E3">mui</rdg></app> bien y espantado su mucha curiosidad y erudición.<pb n="f. 138v" ed="C" facs="#foto2"/> [<hi rend="bold">5</hi>] Solicitado he que se le haga m<expan><ex>erce</ex></expan>d,<ref target="#note6" xml:id="reference6">6</ref> y querría que subiesse mucho de lo que <app><lem wit="#C #E2 #E3">se</lem> <rdg wit="#E1">le</rdg></app> hizo con <app><lem wit="#C #E2 #E3"><name type="person" ref="#GuicciardiniLodovico">Guchardino</name>.</lem> <rdg wit="#E1">Guchardino</rdg></app><ref target="#note7" xml:id="reference7">7</ref> Entretanto que le <app><lem wit="#C #E2 #E3">escrivo,</lem> <rdg wit="#E1">escrivo.</rdg></app> v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le dé muchas gracias de su parte, pues con v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> fue con quien las quiso ganar.</p>
+            <p>[<hi rend="bold">6</hi>] Lo segundo que me hizo <app><lem wit="#C #E2 #E3">escrevir</lem> <rdg wit="#E1">escriuir</rdg></app> a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con este correo fue para que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me la haga de dar orden cómo se me traygan los <app><lem wit="#C #E1 #E3">ynstrumentos</lem> <rdg wit="#E2">instrumentos</rdg></app>, libros y cosas que van en este memorial <app><lem wit="#C #E3">yntrocluso </lem> <rdg wit="#E2">introcluso</rdg> <rdg wit="#E1">yntroduso</rdg></app>en esta <app><lem wit="#C #E2">carta.</lem> <rdg wit="#E1 #E3">carta,</rdg></app> Para lo qual <app><lem wit="#C #E3">enbío</lem> <rdg wit="#E1">envío</rdg> <rdg wit="#E2">embío</rdg></app> crédito de cien ducados, y si en ellos no huviere para todo, se me trayga lo para que huviere en <app><lem wit="#C #E2 #E3">essos</lem> <rdg wit="#E1">esos</rdg></app> cien ducados por el orden del memorial, excepto que lo primero que quiero son los catálogos de libros y escritores, porque por el oficio que tengo me <app><lem wit="#C #E1 #E3">ymportan</lem> <rdg wit="#E2">importan</rdg></app>. [<hi rend="bold">7</hi>] Y rescebiré mucha m<expan><ex>erce</ex></expan>d de que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> <app><lem wit="#C #E2 #E3">hiziesse</lem> <rdg wit="#E1">hiziese</rdg></app> hazer en ellos una curiosidad, que en las márgenes se <app><lem wit="#C #E2 #E3">pusiesse</lem> <rdg wit="#E1">pusiese</rdg></app> por una cifra breve los libros que de los contenidos en dichos catálogos se hallen y de qué diferencias de <app><lem wit="#C #E3">ynpresión </lem> <rdg wit="#E1">impresión</rdg> <rdg wit="#E2">ympresión</rdg></app>y de qué precios, lo qual podrá hazer qualquier oficial de mercader de libros a quien v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> se lo encargue y lo pague. [<hi rend="bold">8</hi>] Y esto que ahora pido me podrá v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> embiar con la brevedad que huviere lugar porque venga <app><lem wit="#C #E1 #E3">seguro,</lem> <rdg wit="#E2">seguro.</rdg></app> y avisarme de la comodidad que avrá para me proveer de una copiosa librería, porque la <app><lem wit="#C #E2 #E3">desseo</lem> <rdg wit="#E1">deseo</rdg></app> hazer para que si v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> se quisiere recoger a la <name type="place">Peña</name>, pueda yo tener en <supplied>ella</supplied> en <app><lem wit="#C #E2 #E3">qué ver</lem> <rdg wit="#E1">saver</rdg></app> lo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en ella me quisiere enseñar.</p>
+            <p>[<hi rend="bold">9</hi>] <name type="person" ref="#CañoJuandel"> Juan del Caño</name> me pide muchas vezes le escriva lo que de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> <app><lem wit="#C #E2 #E3">yo sé</lem> <rdg wit="#E1">pasa</rdg></app>. Le escrivo lo que los que he dicho me dizen. </p>
+            <closer><salute>[<hi rend="bold">10</hi>] N<expan><ex>uest</ex></expan>ro Señor la <app><lem wit="#C #E2 #E3"> ill<expan><ex>ustr</ex></expan>e</lem> <rdg wit="#E1">Ilustrísima</rdg></app> persona de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> guarde <pb n="f. 139r" ed="C" facs="#foto3"/>y haga <app><lem wit="#C #E2 #E3">tam</lem> <rdg wit="#E1">tan</rdg></app> <app><lem wit="#C #E2">bien aventurado</lem> <rdg wit="#E1 #E3">bienaventurado</rdg></app> como yo le <app><lem wit="#C #E2 #E3">desseo</lem> <rdg wit="#E1">deseo</rdg></app></salute>. En <name type="place">Madrid</name>, <date when="1569-08-04">4 de agosto 1569</date>.
+               Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor, <signed>el licen<expan><ex>cia</ex></expan>do <name type="person">Ju<expan><ex>an</ex></expan> de Ovando</name></signed>.
+</closer>
+         </div>
+      </body>
+      <back>
+         <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref>  Entre el epistolario de BAM no se ha conservado ni una muestra de esa correspondencia que aquí y en otros lugares se menciona con D.ª Mariana de Córdoba y con Pedro Juan de Lastanosa.</note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> <title>Origines Antwerpianae siue Cimmeriorum Becceselana nouem libros complexa</title> (Amberes, 1569). En la dedicatoria a Felipe II que el autor pone al frente de esta obra («Ad Philippum II, Hispaniarum, etc. regem catholicum, Ioannis Goropii Becani praefatio») elogia el propósito del rey de imprimir la Biblia Políglota y el mecenazgo de su corte, en la que ensalza, aparte de la figura del propio BAM, a los amigos de este: Luis Manrique, Juan de Ovando y Gabriel de Zayas. El elogio de Ovando, del cual se considera indigno y se queja ante BAM por considerarlo responsable, aparece en los siguientes términos: «Quid iam dicam de clarissimo uiro Ioanne de Ouanda, homine, in quo dubitari queat, philosophiane an iurisprudentia habeat principatum. Neque hunc passus es in castro Caceris patria sua latere, sed maximis grauissimisque et summae dignationis muneribus uoluisti praeesse; adeo, ut eum non solum Academiae Complutensi instaurandae, optimisque ornandae institutis praefeceris; sed supremo etiam Indiarum Senatui dederis Episcopum et Harmosten, ut uoces has, a duabus praecipuis Graeciae ciuitatibus petitas, doctissimo uiro applicemus».</note>   
+                <note type="footnote" xml:id="note3">
+                   <ref target="#reference3">3</ref> Roano era el compañero de BAM en la Peña de Alájar, quien le acompañó desde su primera estancia en la ermita de Nuestra Señora de los Ángeles, allá por el año de 1552, según lo atestigua el notario de Aracena Fernando Sánchez Ortega: «…vino a residir, él y otro presbítero llamado Roano… el año de mil e quinientos e cinquenta y dos, y trajeron un criado que los servía, que se llamaba España, y que después fue presbítero…» (cf. G. Morocho Gayo, «Trayectoria humanística de Benito Arias Montano I. Sus cuarenta primeros años (c. 1525/27-1567)», en <title>El humanismo extremeño. Estudios presentados a las 2as Jornadas por la Real Academia de Extremadura en Fregenal de la Sierra en 1997</title>  (Trujillo, 1998), pp. 157-209 (p. 177). Y también en carta dirigida a Zayas el 4 de enero de 1579, en la que se queja de los muchos huéspedes que le molestan, distrayéndole de sus estudios y pidiéndole recomendaciones, BAM se refiere a Roano como su compañero de retiro, fallecido ya por esa fecha: «…y era vivo Roano, mi compañero, que sabía entretener y despedir los visitantes a sus tiempos» (cf. 1579 01 04). El hecho de que Juan de Ovando conociera a Roano desde tiempo atrás confirma que la amistad entre BAM y el futuro presidente de Indias se remonta como muy tarde a los años de su estancia en Sevilla como provisor.</note>     
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Entiéndase «me ha».</note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Juan de Ovando está inmerso en la enorme tarea que supuso la visita del Consejo de Indias, la cual duró desde el 7 de junio de 1567 hasta el 12 de agosto de 1571. Durante el tiempo que duró la visita, Ovando no dejó de pertenecer al Consejo de la Inquisición, cuya presidencia ostentaba su protector el cardenal Diego de Espinosa; sin embargo, en los períodos que los trabajos de la visita requirieron una mayor dedicación de tiempo, dejó de atender sus obligaciones como miembro de la Suprema.</note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Parece que también BAM intercedió para que se concediese a Becano algún premio; en este sentido podemos leer en la carta que le dirige a Zayas el 23 de diciembre de 1569 la siguiente recomendación: «Ante todas cosas, deseo que v. m. con esos señores hagan con Su Magestad que le onre en agradecimiento de su obra y travajo puesto en este libro, que ha echo en su nombre, con algún premio honorario, que se le dé en esta villa por mano de algún ministro de Su Magestad, o por la mía, o como fuere más servido. Y a costa de pocos scudos se puede hazer con alguna cadena o collar o semejante cosa” (cf. Macías, <title>La Biblia Políglota de Amberes</title>, p. 172). Y unos días más tarde, el 7 de enero de 1570, vuelve a insistirle al secretario Zayas sobre el mismo particular: «Refiere lo que por otras tiene escrito del doctor Becano, afirmando que para servir a S. M. de médico y de filósofo e historiador, y para el particular gusto que S. M. tiene del conocimiento de cosas naturales, no se hallará hombre más a propósito que él. Desea que S. M. le mandase dar algún don honorario de collar o cadena o vaso, porque lo meresce mucho» (<title>Codoin</title>, p. 167).</note>
+                  <note type="footnote" xml:id="note7">
+                     <ref target="#reference7">7</ref> Ludovico Guicciardini. Véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-11">1569 02 11</ref>.</note>
+         </div>
+      </back>
+   </text>
+</TEI>
