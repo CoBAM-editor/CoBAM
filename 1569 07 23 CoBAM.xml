@@ -1,0 +1,184 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690723">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Daniel Barbaro [Venecia] a Benito Arias Montano [Bruselas] - 23 de julio de 1569 </title>
+            <author>Daniel Barbaro</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 07 23</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Barbarus welcomes how the works of the Polyglot progress; he has received a copy with the so-called First Prophets. He insists on the recommendation of the young Marco Antonio Gadaldino, who had enthusiastically presented in an earlier letter. He is not determined to send his portrait to BAM. Surely BAM meant send him in return an engraving, perhaps by Paludanus, to whom the Italian prelate sends his greetings. Barbarus has completed its <title>Aurea quinquaginta priores Dauidis Psalmos doctorum uirorum catena</title> and sends a copy to BAM.                
+            </note>
+            <note type="incipit">Impatiens morae amor est...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 22r. </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 146-149, nº 21.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 250-253.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 146-149; </bibl><bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 250-253.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="BarbaroDaniel">
+                  <note>Daniel Mateo Alvise Barbaro (Venecia, 8 de febrero de 1514-13 de abril de 1570), noble veneciano conocido por sus comentarios y traducciones de Vitrubio, Patriarca de Aquilea desde 1550. Estudió filosofía, matemáticas y óptica en la Universidad de Padua y sirvió a la República Veneciana como embajador en la corte inglesa de Isabel I y como representante del Concilio de Trento. Entre sus obras destacan <title>La Predica dei sogni</title> (1542), publicada bajo el seudónimo de reverendo padre Hypneo da Schio, los <title>Dieci libri dell'architettura di M. Vitruvio</title> (1556) y <title>La practica della perspettiva</title> (1568), un libro sobre perspectiva para arquitectos y artistas. </note></person>
+               <person xml:id="BroeckWillemvanden">
+                  <note>Willem van den Broeck (1530-1580), escultor holandés, hermano de los pintores Crispin van den Broeck y Hendrick van den Broeck.</note></person>
+               <person xml:id="GadaldinoMarcantonio">
+                  <note>Marcantonio Gadaldino, 1545-1592. Canónigo en Treviso; orientalista; hijo de Agostino Gabaldino.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Daniel Barbaro</persName>
+               <settlement>Venecia</settlement>
+               <date when="1569-07-23">23 de julio de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-08-08">08 de agosto de 1569</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+         <handNotes>
+            <handNote>Daniel Barbaro</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-01-04">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/KBS-Ms.-A-902-f.-22r-scaled.jpg" xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/KBS-Ms.-A-902-f.-23v-scaled.jpg" xml:id="foto2"/>
+   </facsimile>
+   <text> 
+      <group>
+      <text type="source">
+         <front>
+         <p> Esta es la última de las cartas cruzadas entre Daniel Barbaro y BAM cuyo texto hemos conservado en el manuscrito de Estocolmo. La correspondencia se vio truncada por la muerte del patriarca de Aquileya en abril de 1570.    </p>
+         <p> Los folios 22v y 23r del original de esta carta están en blanco.</p> 
+         </front>
+         <body> 
+            <pb n="f. 22v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al r<expan><ex>everen</ex></expan>do et mag<expan><ex>nífi</ex></expan>co, come fratello honorando, il <app><lem wit="#O #E2">s<expan><ex>igno</ex></expan>r</lem> <rdg wit="#E1">signore</rdg></app> dottor <name type="person" ref="#AriasMontanoBenito">Benedetto Aria<supplied>s</supplied> Montano</name>.
+               </ab>
+               <ab>Por servitio <app> <lem wit="#O #E2">del Rey</lem> <rdg wit="#E1">di Rei</rdg></app> Catholico al señor secr<expan><ex>etari</ex></expan>o <name type="person" ref="#AlbornozJuande">Albornoz</name>, iunto al s<expan><ex>eñ</ex></expan>or <name type="person" ref="#AlvarezdeToledoFernando">duque d’Alva</name>, para que la embíe al s<expan><ex>eñ</ex></expan>or dottor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> donde <app><lem wit="#O #E1"> estuviere.</lem> <rdg wit="#E2">estuviere. Anversa.</rdg></app></ab>
+            </div> 
+            <div type="annotation">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#BarbaroDaniel">Daniel Barbarus</name>. <date when="1569-07-23">23 de julio 1569</date>. R<expan><ex>ecibid</ex></expan>a <date when="1569-08-08">8 de ago<expan><ex>sto</ex></expan></date>.
+               </ab>
+            </div> 
+            <div type="main_content">
+               <pb n="f. 22r" ed="O" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] Impatiens morae amor est. Vrgebat me nimis literarum tuarum expectatio et iam omissis excusationibus, quas mihi <app><lem wit="#O #E2">qualescunque</lem> <rdg wit="#E1">qualescumque</rdg></app> pro te fingebam, te acriter accusare incipiebam cum optatissimae literae tuae mihi allatae sunt. Quibus respondere statim uolui, ne in eandem inciderem tarditatis suspicionem <app><lem wit="#O #E2">in</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> quam te incidisse arguebam. [<hi rend="bold">2</hi>] Agnosco profecto ex tuis literis ad ueteris in me amoris tui specimen nouum quoddam et iucundius demonstrationis genus semper accedere. Quod cum tu optime noueris, me literas tuas desiderare <app><lem wit="#O #E2">a</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> diu permittis; quod animi mei acerbitatem recentis cuiusdam suauitatis aspersione lenire te posse confidas. </p>
+               <p>[<hi rend="bold">3</hi>] Pergrata mihi fuere humanissima uirtutis tuae officia, quod me principibus uiris et de Christiana religione benemeritis commendaueris. [<hi rend="bold">4</hi>] Det Deus, regum rex, ut illis omnia prospere cedant, quod non dubito <app><lem wit="#O #E2">futurum,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> futurum <hi rend="italic">imum punctum posuit</hi></rdg></app> <app><lem wit="#O #E2">etsi</lem> <rdg wit="#E1">Et si</rdg></app> aduersi insurgunt fluctus, <app><lem wit="#O #E2">etsi</lem> <rdg wit="#E1">et si</rdg></app> horrida tempestas imminet, <app><lem wit="#O #E2">etsi</lem> <rdg wit="#E1">et si</rdg></app> omnia mortem <app><lem wit="#O #E2">intentant.</lem> <rdg wit="#E1"><hi rend="italic">post</hi> intentant <hi rend="italic"> leuiter distinxit</hi></rdg></app> Facile enim et proprium est exercituum Deo insanos malorum impetus, quos mirabili prouidentia sua excitari sinit, comprimere, brachia fortium <app><lem wit="#O #E2">conterere</lem> <rdg wit="#E1">continere</rdg></app>, tranquillitatem et pacem dilectis suis gratificari. </p>
+               <p>[<hi rend="bold">5</hi>] De Bibliis autem Sacris, quod opus ad finem uestra opera et diligentia properet maxime laetor. Accepi alterum specimen Priorum Prophetarum, quod mihi gratissimum fuit. </p>
+               <p>[<hi rend="bold">6</hi>] Adolescens, quem tibi superioribus literis meis commendaui,  auocandus potius quam prouocandus est; ad labores enim natus est, quos leuiores illi faciet iucundus tuae commendationis stimulus. </p>
+               <p>[<hi rend="bold">7</hi>] De imagine mea, quam te adeo ardenter optare dicis, statuam alias quid agendum mihi sit; nondum enim mihi liquet an amori tuo indulgeam an uerecundiae rationem habeam. </p>
+               <p>[<hi rend="bold">8</hi>] <name type="person" ref="#BroeckWillemvanden">Paludanum</name> sculptorem nomine meo saluta, et scias me uiros probos amare, praesertim excellentioribus artibus praestantes. [<hi rend="bold">9</hi>] Interim librum meum in Psalmos editum ad te mitto, quem paulo post has literas te habiturum spero. [<hi rend="bold">10</hi>] Tu, si me amas, boni omnia consule. </p>
+               <closer><salute>Vale</salute>. <date when="1569-07-23">Xª Kal<expan><ex>endas</ex></expan> Aug<expan><ex>usti</ex></expan> MDLXIX</date>.
+               </closer>
+               <signed> Tuus <name type="person" ref="#BarbaroDaniel">Daniel Barbarus</name>, electus Aquileiensis.</signed> 
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <pb n="f. 22v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al reverendo y magnífico señor el doctor Benito Arias Montano, al que honro como a un hermano. 
+               </ab>
+               <ab>Por servitio di Rei Catholico al señor Secr[etari]o Albornoz, iunto al señor Duque d’Alva, para que la embíe al señor dottor Arias Montano donde estuviere.</ab>
+            </div>    
+            <div type="annotation">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> Daniel Bárbaro. 23 de julio 1569. Recibida el 8 de agosto.
+               </ab>
+            </div>
+            <div type="main_content">
+               <pb n="f. 22r" ed="O" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] La amistad no soporta la tardanza. Me apremiaba en exceso la espera de la carta de vuestra merced, y agotadas ya todas las excusas que me inventaba a favor de vuestra merced, empezaba a acusarle violentamente, cuando me llegó su añorada carta. A la cual he querido responder enseguida para no caer en esta misma sospecha de tardanza de la que le acusaba. [<hi rend="bold">2</hi>] Y de hecho, reconozco por la carta de vuestra merced que a la muestra de su antigua amistad hacia mí siempre se añade una nueva y más agradable. Lo cual, como lo sabe perfectamente, vuestra merced se permite que anhele las cartas de vuestra merced por más tiempo; dado que confía en poder apaciguar mi espíritu con una nueva muestra de amabilidad. </p>
+               <p>[<hi rend="bold">3</hi>] Me fueron muy gratas las humanísimas muestras de virtud de vuestra merced, puesto que me ha recomendado ante varones principales y que están al servicio de la religión cristiana. [<hi rend="bold">4</hi>] Que Dios, rey de reyes, les conceda que todo les salga bien, como no me cabe duda que así será, aunque surjan marejadas, aunque acechen horribles temporales, aunque todo amenace con la muerte. Y es que resulta fácil para el Dios de los ejércitos, y propio de él, reprimir los locos ataques de los malos, los cuales permite con sorprendente providencia que se desencadenen,  reprimir los brazos de los fuertes, recompensar a sus elegidos con la tranquilidad y la paz. </p>
+               <p>[<hi rend="bold">5</hi>] Respecto a la Sagrada Biblia, me alegro sobremanera de que la obra se acerque al final gracias a trabajo y diligencia de vuestras mercedes. He recibido otra prueba de los Primeros Profetas, la cual me ha contentado mucho.</p>
+               <p> [<hi rend="bold">6</hi>] El joven que encomendé a vuestra merced en mi carta anterior<ref target="#note1" xml:id="reference1">1</ref> hay que apartarlo antes que atraerlo, pues ha nacido para el trabajo, el cual se lo hará más grato el estímulo de la mediación de vuestra merced. </p>
+               <p>[<hi rend="bold">7</hi>] Respecto a mi retrato, el cual dice vuestra merced desear tan ardientemente, en otra decidiré qué debo hacer; pues aún no tengo claro si condescender a la amistad de vuestra merced o si atender al pudor. </p>
+               <p>[<hi rend="bold">8</hi>]Salude en mi nombre al escultor Paludano,<ref target="#note2" xml:id="reference2">2</ref> y tenga por seguro que yo aprecio a los hombres virtuosos, especialmente a los que sobresalen en las bellas artes. [<hi rend="bold">9</hi>] Entretanto, envío a vuestra merced el libro que he publicado sobre los Salmos,<ref target="#note3" xml:id="reference3">3</ref> el cual espero que reciba poco tiempo después de esta carta. [<hi rend="bold">10</hi>] Vuestra merced, por su parte, si me aprecia, tómelo todo a bien.  </p>
+               <closer>Adiós. 23 de julio de 1569.
+               </closer>
+               <signed> Suyo, Daniel Barbaro, patriarca de Aquileya.</signed>    
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Véase carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-05-01">1569 05 01</ref>. El joven recomendado se llamaba Marcantonio Gadaldino, protegido también del cardenal Sirleto, de quien ejerció como secretario.</note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Guillermo Paludano, Van den Broeck o Van den Poel († ca. 1580), que no debe confundirse con su hermano Crispino van den Broeck. El arte de Paludano, del que no dan referencias las biografías nacionales al uso, estaba relacionado con la forja y la escultura; así lo deducimos de las palabras de BAM: «Guillermo Paludano ha mandado cortar las piedras para las rexas de Su Excelencia y va a las canteras a dar las traças y medidas de lo que ha de venir  desbastado de allá. Lleva consigo las formas y holgaría de mostrarlas a Su Excelencia porque ha mudado algunas cosas con grande gracia y elegancia de la obra y de su firmeza y con más de quatrocientos florines de ventaja en servicio de Su Excelencia, porque pretende ganar su gracia y confirmarse por su criado y ganar honor aquí y en España con esta obra» (Arias Montano a Juan de Albornoz, 19 de noviembre de 1571). </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> <title>Aurea in quiquaginta Dauidicos Psalmos doctorum Graecorum catena, interprete Daniele Barbaro electo patriarcha Aquileiensi</title> (Venetiis: apud Georgium de Caballis, 1569). Puede verse un ejemplar digitalizado de esta obra, procedente de la Biblioteca Nacional de Austria, en <ref target="https://bit.ly/3OeGjU6">Google Books</ref>.   </note>  
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
