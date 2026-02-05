@@ -1,0 +1,161 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690804">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Juan de Ovando (Madrid) a Benito Arias Montano [Amberes] - 4 de agosto de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 08 04</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Along with his letter of 4 August 1569, Ovando sends a list of instruments and books to be ordered in Antwerp and a amount of money to pay for them. His desire is to gather a copious library.  </note>
+            <note type="incipit">Memoria de los instrumentos...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(C) IVDJ, Envío 78/3-4, ff. 135r-v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 187-188.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 259-260.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>Correspondencia con Ovando</title>, pp. 182-188; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 254-261.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.
+</note>
+                </person>
+               <person xml:id="PlantinoCristóbal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1569-08-04">4 de agosto de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+                    </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Memoria de mano de Juan López de Velasco, secretario de Ovando</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-02-09">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/IVDJ-78-3-f.-135r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="http://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/01/IVDJ-78-3-f.-135v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Junto con su carta del 4 de agosto de 1569 Ovando envía esta memoria en la que, atendiendo al ofrecimiento de BAM así como a la calidad y los precios que el frexnense tanto le ha alabado, le solicita libros, catálogos, instrumentos de astronomía y cuadros. La copia que conservamos de esa relación o memoria que acompaña a la carta está marcada como folio 135 en la numeración antigua del legajo, y podría ser de letra (según Jiménez de la Espada, «Correspondencia con Ovando», p. 477) de Juan López de Velasco, quien acompañó a Ovando como uno de los secretarios de la visita del Consejo de Indias, y que más tarde, en recompensa a sus muchos trabajos, será propuesto para desempeñar el cargo de primer cosmógrafo cronista de dicho Consejo. </p>
+         <p>Ovando se deja asesorar y confía en el criterio de BAM; pero además, no cabe duda de que ambos amigos compartían aficiones como la astronomía, tan de moda en la época, o el gusto por la pintura flamenca. Unida a esa afición por los astros está el interés que ambos muestran por la cartografía y los útiles de navegación, que, al menos en el caso de Ovando, puede estar justificado más allá de meras inquietudes intelectuales por las sucesivas tareas que le son encomendadas al frente del Consejo de Indias. Y en ese mismo sentido, los libros que solicita en esta primera memoria, obras de consulta en su mayoría, así como las reiteradas e insistentes peticiones de catálogos que formula a lo largo de su correspondencia con BAM están motivados por su celo profesional como inquisidor; pues los catálogos de libros constituían para los intelectuales el medio de mantenerse al día de las nuevas publicaciones, siendo especialmente apreciados los que se editaban con motivo de la feria de Fráncfort, donde se daba cita el mercado editorial de prácticamente toda Europa.</p>
+      </front>
+      <body>
+         <div type="anotation">
+            <pb n="f. 135v" ed="C" facs="#foto2"/>
+            <head>[Anotado por otra mano, en el margen derecho, con escritura transversal hacia abajo:]</head>
+            <ab>Copia de los libros, instrumentos y descripciones que ha de embiar de <name type="place">Flandes</name> <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, y el crédito para el costo.</ab>
+         </div>
+         <div type="main_content_obras">
+               <pb n="f. 135r" ed="C" facs="#foto1"/>
+            <opener>Memoria de los instrumentos, descriptiones, pinturas y libros que me a de mandar embiar de <name type="place">Flandes</name> el s<expan><ex>eñ</ex></expan>or <name type="person" ref="#AriasMontanoBenito"></name>Benito Arias Montano</opener>
+            <p>[<hi rend="bold">1</hi>] Un astrolabio del tamaño y láminas que a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> pareziere, muy bien labrado como para sí mismo, con los autores que huvieren scripto del uso dél enquadernados <ref target="#note1" xml:id="reference1">1</ref></p>
+            <p>[<hi rend="bold">2</hi>] Dos globos, celeste y terreste, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso dellos en un cuerpo.<ref target="#note2" xml:id="reference2">2</ref></p>
+            <p>[<hi rend="bold">3</hi>] Un <app><lem wit="#C #E2">ánnullo</lem> <rdg wit="#E1">ánnulo</rdg></app> muy bien labrado de la mayor grandeza que parezca convenir, también con los autores del uso dél juntos.<ref target="#note3" xml:id="reference3">3</ref> </p>
+            <p>[<hi rend="bold">4</hi>] Uno u dos radios astronómicos lígneos, de competente grandeza, bien fabricados, con los autores del uso dél.<ref target="#note4" xml:id="reference4">4</ref></p>
+            <p>[<hi rend="bold">5</hi>] Todas las descriptiones y mapas stampadas y puestas en lienço que a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> pareziere y contentaren. <ref target="#note5" xml:id="reference5">5</ref></p>
+            <p>[<hi rend="bold">6</hi>] <choice><sic>Dios</sic> <corr>Dos</corr></choice> ymágines muy buenas de pinzel, en tabla, con peannas y puertas convenientemente grandes para poner en un altar. En la una un crucifixo, y en las puertas una N<expan>uest</expan>ra S<expan><ex>eñor</ex></expan>a y un San Juan. Y en la otra la Conceptión o el offrescimiento de los Reyes, al fin que sea de Nuestra Señora.<ref target="#note6" xml:id="reference6">6</ref></p>
+            <div type="main_content_libros">
+            <head>Libros</head>
+               <p>[<hi rend="bold">7</hi>] Dos cuerpos de la <choice><sic>Blibia</sic> <corr>Biblia</corr></choice>  pequeña que aora a impresso el <name type="person" ref="#PlantinoCristobal">Plantino</name>, muy bien enquadernados para en casa y de camino.<ref target="#note7" xml:id="reference7">7</ref></p>
+               <p>[<hi rend="bold">8</hi>] Opera omnia Augustini</p>
+               <p>                                       		     }   de la mejor impressión que se hallaren.</p>
+               <p>[<hi rend="bold">9</hi>] Omnia opera Hieronimi</p>
+               <p>[<hi rend="bold">10</hi>] <title>Bibliotheca</title> Conradii Gisnerii<ref target="#note8" xml:id="reference8">8</ref></p>
+               <p>[<hi rend="bold">11</hi>] Ioannes <choice><sic>Triten.</sic> <corr>Tritem<expan><ex>ius</ex></expan></corr></choice> <title>de scriptoribus ecclesiasticis</title> <ref target="#note9" xml:id="reference9">9</ref> </p>
+               <p>[<hi rend="bold">12</hi>] <title>Biblioteca Sacra</title> a F. Sixto Senen<expan><ex>si</ex></expan>, ordinis praedicatorum<ref target="#note10" xml:id="reference10">10</ref></p>
+               <p>[<hi rend="bold">13</hi>] Yten todos los catálogos o memorias de libros y scriptores que se pudieren hallar impressos u de mano, y en esto me la haga v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> de poner mucha diligencia, de manera que ayamos la más cumplida copia dellos que ser pueda. </p>
+               <p>[<hi rend="bold">13</hi>] Media dozena de lienços, paisages para un studio, de pocas y pequeñas <app><lem wit="#C #E2">figuras,</lem> <rdg wit="#E1">figuras.</rdg></app> si se hallaren de mano buena y regocijada; y si no, mandarlos hazer.</p>
+            </div>
+     </div>
+      </body>
+      <back>
+         <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref>  En su carta del 23 de diembre de 1569, BAM comunica a Ovando haberle enviado dicho astrolabio dentro de unos baúles destinados al duque de Nájera. Cf. 1569 12 23. </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref>  En su referida carta del 23 de diembre de 1569, BAM escribe a Ovando que en breve le conseguirá dos globos de Mercator. Cf. 1569 12 23. </note>  
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref>  El anillo astronómico era un instrumento empleado en náutica consistente en un círculo graduado de gran peso suspendido de un hilo o cordón, con un apéndice lateral sobre un radio que forma 45º con la vertical, provisto de un agujero por donde pasan rayos solares que son recibidos luego en otro punto de la circunferencia del círculo. En su carta del 23 de diembre de 1569, BAM notifica a Ovando que, junto con dicha misiva, iba un «ánnulo astronómico bastante para meter en el braço y muy bien proporcionado». Cf. 1569 12 23.</note>  
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Se trata del báculo astronómico o ballestilla, como nos aclara el propio BAM en su carta de 23 de diciembre de 1569: «un báculo astronómico o radio de metal excelentemente hecho». En dicha, BAM comunica a Ovando que tiene en su poder ya dicho báculo astronómico o radio de metal para enviárselo a la primera ocasión (cf. 1569 12 23). La ballestilla era un instrumento muy sencillo, para medir ángulos, que comenzó a generalizarse a mediados del siglo XV, y que consistía en una vara, generalmente de madera, sobre la que se deslizaba otra vara cruzada más pequeña. El marino aplicaba el ojo en un extremo del instrumento, dirigía este hacia la estrella cuya posición quería medir y deslizaba la vara cruzada hasta que la parte inferior de esta coincidía con el horizonte y la superior con la estrella. La altura de la estrella (ángulo que forma con el horizonte) se leía directamente en una graduación grabada en la vara principal.</note>   
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> En su carta del 23 de diembre de 1569, BAM comunica a Ovando que, junto con los dos globos de Mercator, también tenía en su poder, para enviarlo a la primera ocasión, «un mapamundi y carta de marear hecha por él mesmo nuevamente, la mejor que ha salido». Cf. 1569 12 23. </note>      
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> En su carta del 23 de diembre de 1569, BAM escribe a Ovando lo siguiente sobre estas dos imágenes: «Quedan en mi poder dos retablos, acabados conforme a como v. m. los demanda». Cf. 1569 12 23. </note> 
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Se refiere a la biblia impresa por Plantino ese mismo año en 8º. Dicha biblia fue enviada antes del 23 de diciembre de 1569 en unos cofres destinados al duque de Najera. Cf. 1569 12 23. </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Conrad Gesner, naturalista y humanista suizo, nacido y muerto en Zurich (1516-1565). Su <title>Bibliotheca uniuersalis, siue catalogus omnium scriptorum locupletissimus, in tribus linguis, Latina, Graeca, et Hebraica…</title> (Zurich, 1545) constituye un catálogo alfabético de toda la literatura latina, griega y hebrea publicada durante el primer siglo de la imprenta, ordenado por los nombres de pila de los autores, con un índice inverso de apellidos. Esta obra, que le ha valido el título de «padre de la bibliografía», es un intento de poner orden dentro del rápido crecimiento de publicaciones que trajo como consecuencia la invención de la imprenta. Puede verse un ejemplar digitalizado de la obra en <ref target="https://bit.ly/3ukOFTB">Google Books</ref>. Sin embargo, y a pesar de su reconocida utilidad, la obra entró rápidamente en el índice de libros prohibidos y fue retirada en todos los países católicos. En 1548 publicó <title>Pandectarum siue partitionum uniuersalium… libri XXI</title>, un índice ordenado por materias del contenido de la <title>Bibliotheca uniuersalis</title>. Y en 1555 J. Simler dio a la imprenta el <title>Epitome Bibliothecae Conradi Gesneri, conscripta primum a Conrado Lycosthene Rubeaquensi, nunc denuo recognita et… locupletata per Iosiam Simlerum Tigurinum…</title>, una edición abreviada de la <title>Bibliotheca uniuersalis</title> de 1545, pero actualizada con la adición de más de 2.000 nuevos autores.</note>
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Ioannes Tritemius (1462-1516), teólogo, historiador y religioso benedictino de origen alemán, nacido en Trittenheim, de donde toma el sobrenombre de Trit(h)emius, pero cuyo verdadero apellido era Heidenberg. Siendo de familia noble, comenzó muy tarde sus estudios debido a los crueles tratos que sufrió de su padrastro. Completó sus estudios en Tréveris y en la universidad de Heidelberg. Entró accidentalmente en la abadía benedictina de Sponheim donde tomó el hábito en 1482 y formó una rica biblioteca durante los más de veinte años que vivió en aquella casa. Los últimos años de su vida los pasó en la abadía de Santiago de Wurzburgo entregado a sus estudios. Tritemio fue un escritor fecundísimo, entre cuyos trabajos destacan su obra enciclopédica <title>De scriptoribus ecclesiasticis</title> (1494); <title>Catalogus illustrium uirorum Germaniae</title> (1495); y <title>Chronicon Sponheimense</title> (1601). También compuso dos obras sobre escritura cifrada muy apreciadas en su época y que le han valido el reconocimiento como el primer criptógrafo que merece tal nombre: <title>Polygraphia</title> (1499), y <title>Steganographia</title> (1513). Puede verse un ejemplar digitalizado de la obra <title>De scriptoribus ecclesiasticos</title> publicada en Colonia, 1546, en <ref target="https://bit.ly/498Q2nr">Google Books</ref>.</note>
+                  <note type="footnote" xml:id="note10">
+                     <ref target="#reference10">10</ref> Sixto de Siena, religioso dominico italiano, hijo de padres judíos, nacido en Siena en 1520 y muerto en 1569. Reconocido como orientalista eminente por su conocimiento extraordinario del griego y de las lenguas orientales. Sus interpretaciones de la Biblia fueron muy discutidas por el influjo rabínico. Junto a Vatablo y Santes Pagnino son los tres grandes orientalistas del s. XVI. Su influencia en España fue grande. La adhesión a sus interpretaciones, consideradas poco ortodoxas, se usaron como cargo en los procesos inquisitoriales a los hebraístas de Salamanca. Su <title>Bibliotheca sancta</title>, publicada por primera vez en Venecia en 1566, es una obra enciclopédica que encierra una enseñanza completa para comprender las Sagradas Escrituras. Los ocho libros en que se divide la obra recogen la información siguiendo la estructura y el orden de la Biblia; además se incluye un diccionario de todos los autores y escritos mencionados en la Biblia; un tratado sobre los principios y técnicas para interpretar las Escrituras Sagradas, una bio-bibliografía sobre cientos de comentaristas católicos, comentarios e índices de pasajes difíciles y controvertidos, correcciones de las falsas interpretaciones de versículos tanto del Antiguo como del Nuevo Testamento, y todo ello seguido de varios índices, incluido uno de herejes. Puede verse un ejemplar digitalizado de la obra, de la edición veneciana de 1566, en <ref target="https://digibug.ugr.es/handle/10481/11023">Digibug</ref>. </note>
+         </div>
+      </back>
+   </text>
+</TEI>
