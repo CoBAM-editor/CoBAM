@@ -1,0 +1,144 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700203">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Cristóbal Plantino (Amberes) a Benito Arias Montano (Bruselas) - 3 de febrero de 1570 </title>
+            <author>Cristóbal Plantino</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 02 03</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Following BAM’s instructions, Plantin has calculated the costs of the parchment for the bibles ordered by Philip II. The sum received from Spain is not even half of the money needed. </note>
+            <note type="incipit">De Anglis et 3º praelo addito antehac bis scripsisse...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Bélgica</country>
+                        <settlement>Amberes</settlement>
+                        <msName>Museum Plantin-Moretus</msName>
+                        <altIdentifier>
+                           <idno>(B) MPM Arch. 7, f. 147v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">M. Rooses - J. Denucé, <title>Correspondance de Christophe Plantin</title> 8 vols. (Antwerpen, 1883-1918, Reimpr. Nendeln, Liechtenstein, 1968), vol. II, p. 108, nº 205.</witness>
+               <witness xml:id="E2">A. Dávila Pérez, <title>Benito Arias Montano. Correspondencia de Arias Montano conservada en el Museo Plantin-Moretus de Amberes</title> (Alcañiz-Madrid: Instituto de Estudios Humanísticos - Consejo Superior de Investigaciones Científicas, 2002), vol. I, pp. 21-24.</witness>
+               <witness xml:id="E3">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title>(Madrid: Ediciones Clásicas, 2017), pp. 338-343.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>CP</title>, II, p. 108, nº 205; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Dávila, <title>Correspondencia conservada en el Museo Plantin-Moretus</title>, I, pp. 21-24; </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E3) Domínguez, <title>Correspondencia.</title>, I, 338-343.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="CurielJeronimo">
+                  <note>  Jerónimo Curiel, agente de Felipe II en Flandes y residente en Amberes desde 1550. A partir de 1561 sustituye a López Gallo como agente mayor del rey para los negocios de los Países Bajos. Su función es distribuir las sumas enviadas por la corona a Flandes para pagar los más variados conceptos.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Cristóbal Plantino</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-02-03">3 de febrero de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Arias Montano</persName>
+               <settlement>Bruselas</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Borrador autógrafo de Cristóbal Plantino.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-05-24">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/05/MPM-Arch-7-f.-147v.png"
+         xml:id="foto1"/>
+   </facsimile>
+   <text>
+      <group>
+      <text type="source">
+         <front>
+         <p> Desde la llegada de BAM a Amberes el 18 de mayo de 1568 queda interrumpida la correspondencia entre el impresor y el comisionado español, entregados codo con codo al trabajo frenético de impresión y edición de la Biblia Políglota. El ritmo de los trabajos en la imprenta era tan acelerado que, durante las ausencias del humanista español (en esta ocasión se encontraba en Bruselas) el impresor no dejaba de informarle de todos los problemas técnicos o financieros que iban surgiendo.
+             </p>
+      </front>
+         <body> 
+            <div type="main_content">
+               <pb n="f. 147v" ed="B" facs="#foto1"/>
+               <opener><date when="1570-02-03">3 Februarii 1570</date>. Ill<expan><ex>ustr</ex></expan>i d<expan><ex>omino</ex></expan> B<expan><ex>enedicto</ex></expan> <name type="person" ref="#AriasMontanoBenito">Ariae Montano</name>, <name type="place">Bruxellas</name>.         </opener>
+               <p>[<hi rend="bold">1</hi>] De Anglis et 3º praelo addito antehac bis scripsisse. [<hi rend="bold">2</hi>] Sumptus pergameni computasse, qui peruenient <del>ad</del> ultra 3800 fl<expan><ex>orenos</ex></expan>, Biblia namque habitura 1600 folia, pro quib<expan><ex>us</ex></expan> totidem dozenis <del>per</del> perg<expan><ex>ameni</ex></expan> opus est. [<hi rend="bold">3</hi>] Accepi uero a d<expan><ex>omi</ex></expan>no <name type="person" ref="#CurielJeronimo">Curiele</name> ad has rationes 1400 fl<expan><ex>orenos</ex></expan>, quae sum<expan><ex>ma</ex></expan> non est media p<expan><ex>ar</ex></expan>s eorum, quae <app><lem wit="#B #E2 #E3">pro</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> pergamenis iam receptis solui. Vellem me posse ferre sumptus. Ego ne uerbum quidem facerem. Imo etiam nunc taedet et pudet ill<expan><ex>ustri</ex></expan> d<expan><ex>ominationi</ex></expan> v<expan><ex>estrae</ex></expan> hac etiam in parte molestum esse, quod ne nunc quidem essem nisi mihi iussisset rationes has <app><lem wit="#B #E2 #E3">conficere</lem> <rdg wit="#E1">auferre</rdg></app> et illi significare, quod nunc non facio ut urgeam uel importunus sim absenti, <app><lem wit="#B #E1 #E2">sed</lem> <rdg wit="#E3">sed &#60;ut&#62;</rdg></app> morem uoluntati geram et mandato paream.  </p>
+               <closer>[<hi rend="bold">4</hi>] <salute>D<expan><ex>ominu</ex></expan>m D<expan><ex>eum</ex></expan> obsecro ut ill<expan><ex>ustrem</ex></expan> d<expan><ex>ominationem</ex></expan> v<expan><ex>estram</ex></expan> nobis diu seruet incolumem</salute>. <dateline><name type="place">Ant<expan><ex>uerpiae</ex></expan></name>, raptim, <date when="1570-02-03">3 Februarii</date></dateline>.</closer> </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <div type="main_content">
+               <pb n="f. 147v" ed="B" facs="#foto1"/>
+               <opener>3 de febrero de 1570. Al ilustre señor Benito Arias Montano, Bruselas.         </opener>
+               <p>[<hi rend="bold">1</hi>] Que sobre los ingleses y la adición de la tercera prensa he escrito dos veces hasta ahora.<ref target="#note1" xml:id="reference1">1</ref>  [<hi rend="bold">2</hi>] Que he calculado los gastos de pergamino,<ref target="#note2" xml:id="reference2">2</ref>  que pasarán los 3.800 florines, pues la Biblia va a tener 1.600 folios,<ref target="#note3" xml:id="reference3">3</ref>  para los cuales se necesita otras tantas docenas de pergamino.<ref target="#note4" xml:id="reference4">4</ref> [<hi rend="bold">3</hi>] Sin embargo recibí del señor Curiel<ref target="#note5" xml:id="reference5">5</ref>  para estas cuentas 1.400 florines, suma que no supone ni la mitad de lo que pagué por los pergaminos ya recibidos.<ref target="#note6" xml:id="reference6">6</ref>  Quisiera poder afrontar estos gastos. Yo ni siquiera escribiría una palabra. Lo que es más, ahora incluso me pesa y avergüenza molestar también con este asunto a vuestra ilustre señoría,  pues ni siquiera ahora lo haría si no me hubiese ordenado ajustar estas cuentas y ponerlo en su conocimiento, cosa que no hago ahora para apremiarle ni importunarle en su ausencia, sino para complacer su voluntad y obedecer su mandato.<ref target="#note7" xml:id="reference7">7</ref>  </p>
+               <closer>[<hi rend="bold">4</hi>] Suplico a Dios nuestro Señor que nos guarde a vuestra ilustre señoría con salud mucho tiempo. <dateline>En Amberes, deprisa, 3 de febrero</dateline>. </closer>
+            </div>
+         </body>
+         <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> No conservamos ninguna de las dos cartas a las que se refiere Plantino, que no pudo registrar en sus archivos las minutas al encontrarse de viaje de negocios en Lieja a finales de 1569 y principios de 1570. El 28 de enero había regresado a Amberes (cf. <title>CP</title>, II, 102, nº 202) coincidiendo con la asistencia de Arias a la junta de Bruselas. El asunto «de los ingleses» debe de estar relacionado con lo que se expone en la próxima carta de BAM al duque de Alba del 13 de febrero de 1570 (nº 1570 02 13): el rey de España concedía una limosna anual a los ingleses «religiosos, y clérigos, y estudiantes y legos que hay en estos estados, [...] personas nobles y necesitadísimas». Fernando Álvarez de Toledo ocupó en esta tarea a Arias Montano «porque fray Alonso de Contreras, que me solía ayudar a estas cosas y a otras muchas de esta cualidad, llevóle Dios para sí» (<title>Duque de Alba</title>, II, 311-312, nº 1.050). Había que resolver el modo y la cantidad del reparto: para estas cuestiones son de interés dos documentos conservados en AGS E 583-18 y E 583-18bis, el primero de los cuales contiene la relación de nombres, y el segundo, la distribución entre ellos de los cuatro mil florines anuales de Felipe II. En cuanto a las prensas, para acelerar los trabajos de impresión de la Biblia Regia se decidió que «donde había antes dos [prelos] en que se imprimían dos pruebas al día pusiésemos otros dos, uno ordinario cada día y otro extraordinario para los adherentes de la obra» (Arias Montano a Felipe II, 10 de mayo de 1570, nº 1570 05 10).     </note>   
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Para el uso renacentista de <foreign>pergamenum</foreign>, -i, atestiguado desde latín tardío, véase Hoven, <title>Lexique</title>, p. 258.  </note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> El sustantivo <foreign>folium</foreign> es empleado por Plantino en su acepción técnica de «gran hoja que forma un cuaderno del libro imprimido» (más testimonios de este neologismo pueden hallarse en Hoven, <title>Lexique</title>, p. 142); así pues, una edición en cuarto presentaría cuatro páginas en cada cara del <foreign>folium</foreign>, una en octavo, ocho páginas, y así sucesivamente. Tras la impresión, el <foreign>folium</foreign> recibía también el nombre <foreign>folium</foreign>. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> El rey había encargado a Plantino la impresión de ejemplares en pergamino de la Biblia Políglota; el pedido, que al principio fue de seis biblias, pasó después a doce y, finalmente, llegó a trece. El pergamino fue suministrado por Juan Tollis, de Amberes, y por su viuda Catalina (desde 1572); las pieles procedían de Holanda y su precio era de cuarenta y cinco sueldos la docena. El número de los folios o pliegos de pergamino que se emplearon ascendió a 16.263 (1355 docenas), comprados a razón de cuarto sueldos y tres cuartos cada uno; el total de gasto en pergamino, por tanto, ascendió a tres mil ochocientos sesenta y dos florines con nueve sueldos y cuarto (<title>GC</title>, II, pp. 45-46). </note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Jerónimo de Curiel, agente de Felipe II en Flandes, residente en Amberes. Véase nota biográfica en carta nº 1568 03 25a.</note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Según los libros de cuentas de la casa plantiniana, los últimos pagos recibidos por Plantino de manos de Jerónimo Curiel a cuenta de la impresión de la Biblia Políglota llevan fecha del 23 de diciembre de 1569 (600 florines) y del 15 de enero de 1570 (800 florines); registrados en MPM Arch. 121, p. 36.  </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Plantino no había reparado en gastos al comprar el mejor papel y, como confiaba el mismo impresor al cardenal Granvela, se habría arruinado completamente de no ser por la venta de breviarios. Se llegó a un punto en que Plantino no encontraba quien le prestara dinero, con lo que solo pudieron imprimirse 600 ejemplares de los dos últimos volúmenes del <title>Apparatus Sacer</title>. Otro testimonio epistolar de los agobios económicos por los que pasaba la imprenta en estas fechas puede leerse en la carta de los censores de Lovaina a Benito Arias Montano, con fecha del 22 de julio de 1570 (cf. nº 1570 07 22).  </note>
+            </div>
+         </back>
+      </text>
+   </group>
+   </text>
+</TEI>
