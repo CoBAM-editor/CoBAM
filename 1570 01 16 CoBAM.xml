@@ -1,0 +1,193 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700116">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Ovando Madrid) - 16 de enero de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 01 16</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM, whose health is still somewhat delicate, informs Ovando on merchandise that he has sent him to date with various messengers -an astrolabe, a Bible, a breviary, an astronomical ring- and also what remains in his hands to be sent -globes, paintings and maps- until commercial navigation, closed because of inclement winter, resumes. in this letter BAM also sends a list of books recently presented at Frankfurt Fair and a list of new books he has made up. He praises Becano’s scholarship, whom he recommended for the post of physician in the Court of Philip II.  </note>
+            <note type="incipit">En la recámara del Duque de Nájara embié a v. m...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(O) IVDJ, Envío 78/7 f. 130 r-v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+                 <witness xml:id="E1"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 194-197.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 328-331.</witness>
+               <witness xml:id="F"> M. Jiménez de la Espada, «Correspondencia del Dr. Benito Arias Montano con el licenciado Juan de Ovando», Boletín de la Real Academia de la Historia, 19 (1891), pp. 478-479.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>Correspondencia con Ovando</title>, pp. 194-197; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 328-331;</bibl>
+            <bibl type="fragment">(F) Jiménez de la Espada, «Correspondencia con Ovando», 478-479.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.</note></person>
+               <person xml:id="ManriquedeLaraJuan">
+                  <note>Juan Esteban Manrique de Lara Acuña y Manuel, o, más abreviadamente, Manrique de Lara, IV Duque de Nájera (Valencia de Don Juan, León, 10 de abril de 1533 - Madrid, 5 de junio de 1600). Fue Virrey y capitán general del reino de Valencia, embajador ante la Santa Sede, miembro del Consejo Real. </note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="Vergara">
+                  <note>Vergara, mayordomo del duque de Nájera.</note></person>
+               <person xml:id="Manuel">
+                  <note>Manuel, camarero del duque de Nájera.</note></person>
+               <person xml:id="ManriquedeLunaPedro">
+                  <note>Manrique de Luna, Pedro (fl. 1568), vecino de Bernardino de Burgos.</note></person>
+               <person xml:id="GesnerConrad">
+                  <note>Gesner, Conrad (1516-1565), naturalista y bibliógrafo suizo.</note></person>
+              <person xml:id="PerezChavarriJuan">
+                  <note>Juan Pérez Chávarri (fl. 1569), mercader vasco que operaba en Amberes.</note></person>
+               <person xml:id="PalmaFranciscode">
+                  <note>Francisco ce Palma, miembro de una familia de mercaderes residente en Amberes.</note></person>
+               <person xml:id="ManriquedeLaraLuis">
+                  <note>Luis Manrique de Lara (fallecido en 1583), limosnero y capellán mayor de Felipe II.  </note></person>
+               <person xml:id="GoropiusBecanusIohannes">
+                  <note>Juan Goropio Becano (1518-1572), médico, filólogo, humanista y lingüista.  </note></person>
+               <person xml:id="ZayasGabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person> </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-01-16">16 de enero de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1570-02-21">21 de febrero de 1570</date>
+               </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-04-23">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/04/IVDJ-Envio-78-no-7-f.-130r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/04/IVDJ-Envio-78-no-7-f.-130v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/04/IVDJ-Envio-78-no-7-f.-130vbis-scaled.jpg"
+         xml:id="foto3"/>
+   </facsimile>
+   <text>
+      <front>
+         <p> Esta carta viene a completar la anterior de 23 de diciembre, en la que BAM no pudo extenderse a causa de su enfermedad; de ahí que repita parcialmente su contenido. El 31 de marzo Ovando acusa recibo de todo los envíos reflejados en esta carta: «La última que de v. m. tengo es de diez y seis de henero, y assí mesmo tengo recibido todo lo que v. m. dize averme enviado».</p>
+         <p>Jiménez de la Espada, pp. 478-479, transcribe un fragmento de esta carta: desde «Todas estas piezas» hasta «imprimiere».</p>
+         <p>El sobrescrito de la carta aparece anotado en el vuelto de un folio sin numerar, que nosotros hemos identificado con el número [130v-bis]. La carta fue recibida el 21 de febrero. </p>
+      </front>
+      <body>
+         <pb n="f. [130v-bis]" ed="O" facs="#foto3"/>
+         <div type="address">
+            <head>[Sobrescrito:]</head>
+            <ab> Al ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or, mi s<expan><ex>eñ</ex></expan>or, <name type="person" ref="#OvandoJuande">Juan de Ovando</name>. Del Real Consejo de la Santa Inquisición. En corte.
+            </ab>
+            <div type="annotation">
+               <head>[Anotado por otra mano, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> en Anvers. <date when="1571-01-16">16 de enero</date>. Rescebida en <name type="place">Madrid</name> <date when="1570-02-21">21 de f<expan><ex>ebrer</ex></expan>o 1570</date>. </ab>
+            </div>  
+            <div type="main_content">
+            <pb n="f. 130r" ed="O" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or: </opener>
+            <p>[<hi rend="bold">1</hi>] En la recámara del <name type="person" ref="#ManriquedeLaraJuan">duque de Nájara</name> embié a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> un astrolabio encomendado a <name type="person" ref="#Vergara">Vergara</name>, su mayordomo, y a <name type="person" ref="#Manuel">Manuel</name>, su <choice><sic>camararero</sic><corr>camarero</corr></choice>; el mismo <rs type="person" ref="#ManriquedeLaraJuan">duque</rs> tomó el cargo de entregarlo a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. Con don <name type="person" ref="#ManriquedeLunaPedro">Pedro Manrique de Luna</name>, v<expan><ex>ezin</ex></expan>o de <name type="place">Burgos</name>, embié también una biblia pequeña de <name type="person" ref="#PlantinoCristobal">Plantino</name> y un breviario del mismo. Y en una zabra que partió ocho días ha,<ref target="#note1"
+               xml:id="reference1">1</ref> llevó un hidalgo de <name type="place">Vittoria</name>, por nombre <name type="person" ref="#PerezChavarriJuan">Juan Pérez de Chávarri</name>, un ánnulo astronómico; el qual me promettió, llevándolo Dios com bien, dar buena cuenta dél. [<hi rend="bold">2</hi>] Agora partiendo un amigo mío, que se dize <name type="person" ref="#PalmaFranciscode">Fran<expan><ex>cis</ex></expan>co de Palma</name>,<ref target="#note2"
+                  xml:id="reference2">2</ref> para <name type="place">España</name>, le di que <app><lem wit="#O #E2">llevasse</lem><rdg wit="#E1">llevase</rdg></app> en su baúl un báculo astronómico que se entregará a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con esta, metido en una caxa de madera; el báculo es en tres pieças, que después se arma en una como v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> luego verá. Todas estas pieças son de mano del que mejor creo lo labra en Europa, y muy acertadas. Ansí yré poco a poco, con comodidades, embiando lo que pudiere, hasta que Dios ordene que se abra esta navegación de la mar, que pueda embiar los globos, pinturas y cartas. [<hi rend="bold">3</hi>] En lo que toca a los lienços pintados, holgaría saber de qué precio los quiere v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, porque conforme al precio es la perfección dellos; haylos de un tamaño de tres hasta onze florines. Los que tiene el s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ManriquedeLaraLuis">Luis Manrique</name><ref target="#note3"
+                     xml:id="reference3">3</ref> parte son de cinco, parte, de seis florines; y son de buena mano y el maestro<ref target="#note4"
+                        xml:id="reference4">4</ref> es mi amigo. Estos se pueden ver de cerca y de lexos; los de menos precio parecen bien de lexos. Yo tengo uno que por dicha huve en 9 florines, que no lo havría por 18 si pidiesse otro tal. [<hi rend="bold">4</hi>] El epítome de <name type="person" ref="#GesnerConrad">Gesnero</name> embiaré con la primera buena opportunidad, y una copia que tengo hecha de otros libros que no se contienen en <name type="person" ref="#GesnerConrad">Gesnero</name>.<ref target="#note5"
+                           xml:id="reference5">5</ref> [<hi rend="bold">5</hi>] Dentro desta caxa van dos quadernos de los libros que esta feria y la passada han aportado a <name type="place">Francafort</name>, porque allí es la confluencia de toda <name type="place">Europa</name>, digo libros nuevamente venidos a luz. Y ansí procuraré se me traygan todos los que cada feria se publicaren, por donde ternemos noticia de lo bueno y malo que se imprimiere.<ref target="#note6"
+                              xml:id="reference6">6</ref> <pb n="f. 130v" ed="O" facs="#foto1"/></p>
+            <p>[<hi rend="bold">6</hi>] Antes de cerrar esta me pareció encomendar al mismo <name type="person" ref="#PalmaFranciscode">Fran<expan><ex>cis</ex></expan>co de Palma</name>, por ser amigo y de mucha confiança, que es hijo de muy honrados padres en esta villa, una copia de libros que yo tengo sacada,<ref target="#note7"
+               xml:id="reference7">7</ref> allende de los que hay en el catálogo de <name type="person" ref="#GesnerConrad">Gesnero</name>, por vía de lugares communes y materias y facultades;<ref target="#note8"
+                  xml:id="reference8">8</ref> él me promettió dar buen recado de todo, porque lo llevaría hasta <name type="place">Medina</name>, y allí lo daría a pers<expan><ex>on</ex></expan>a del S<expan><ex>an</ex></expan>to Officio o a otra pers<expan><ex>on</ex></expan>a que conociesse a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, de <name type="place">Sevilla</name> o de <name type="place">Medina</name>, porque él passaría a <name type="place">Lisboa</name>. Y, si no fuera por tam buen portador, no los osara aventurar por no haverlos aun trasladado para mí. [<hi rend="bold">7</hi>] V<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> mandará que se trasladen en un libro grande para v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, dexando espacios largos después de cada capítulo para yr añadiendo los que de nuevo se hallaren. Y estos originales mandará v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> guardar para mí, si Dios allá me tornare, en cuya mano y providencia pongo todas mis cosas. </p>
+            <p>[<hi rend="bold">8</hi>] Al presente me hallo toda vía flaco y con accidentes de difficultosa convalescencia. [<hi rend="bold">9</hi>]<name type="person" ref="#GoropiusBecanusIohannes">Beccano</name>  besa a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> las manos muchas vezes. Yo he escritto al secretario <name type="person" ref="#ZayasGabrielde">Çayas</name> rogándole pida a <rs type="person" ref="#FelipeII">Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan></rs> algún premio honorario de su libro,<ref target="#note9"
+               xml:id="reference9">9</ref> porque cierto merece ser honrado, y es mucho más de lo que muestra en sus escrittos, en los quales hay cosas paradoxas,<ref target="#note10"
+                  xml:id="reference10">10</ref> empero de mucho ingenio y lección, otras muchas hay raras y eruditíssimas. Escrive agora otro que llama <title>Hermathena</title><ref target="#note11"
+                     xml:id="reference11">11</ref> que es nombre del musaeo de <name type="person">Cicerón</name>, en el qual disputa de muchas antigüedades de la theología antigua de <name type="person">Pythágoras</name> y de <name type="person">Orpheo</name>. Comúnmente se tiene por el más raro ingenio destos Estados. Es afficionadíssimo servidor de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. </p>
+               <closer>[<hi rend="bold">10</hi>] <salute>Cuya ill<expan><ex>ustr</ex></expan>e pers<expan><ex>on</ex></expan>a N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or largos tiempos prospere en su servi<expan><ex>cio</ex></expan> con el accrecentami<expan><ex>ent</ex></expan>o de stado que yo desseo</salute>. <dateline>En <name type="place">Anvers</name>, <date when="1570-01-16">16 de enero 1570</date>.</dateline>
+               Ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or, besa las manos de v<expan>uestra</expan> m<expan><ex>erced</ex></expan> su servidor,   <signed>B<expan><ex>enito</ex></expan> Arias Montano <foreign>تلميد</foreign></signed>
+            </closer>
+           </div>
+         </div>
+           </body>
+      <back>
+         <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Es de suponer que BAM se haya confundido, pues el 9 de enero Chávarri ya estaba en Bilbao. Véase la carta de Chávarri a Juan de Ovando en Macías, <title>Correspondencia con Ovando</title>, pp. 337--338 (Apéndice, doc. nº 1). </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Francisco de Palma, hijo de Juan de Palma y miembro de una familia de mercaderes de origen converso afincada en Amberes y muy conocida de Plantino, con quien mantuvieron frecuentes relaciones comerciales.  </note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Luis Manrique de Lara. Véase nota biográfica en carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-07-20">1568 07 22</ref>.   </note> 
+            <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> En la carta de 4 de agosto de 1569 Ovando pedía «media dozena de lienços, paisages para un studio, de pocas y pequeñas figuras». El pintor Pieter van der Borcht (Malinas, 1545 − Amberes, 1608) no solo era especialista en paisajes, sino que además formaba parte del círculo próximo a Plantino, llegando a ser uno de sus más importantes ilustradores, y el propio BAM lo había ensalzado al secretario G. de Zayas como «muy buen pintor» con motivo de su colaboración en los frontispicios de la Biblia Regia (cf. carta de BAM a Zayas, 11 de febrero de 1569, nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-11">1569 02 11</ref>). Por otra parte, los libros de contabilidad de Plantino reflejan un importante volumen de paisajes adquiridos por BAM, por lo que debemos suponer que buena parte de esos cuadros que adquiere nuestro humanista por encargo para sus amistades serían obra de P. van der Borcht. </note>  
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Se trata de la lista mencionada en la carta de 23 de diciembre: «tengo procurada lista de todos los que después acá han parecido, nuevos o antiguos, y la embiaré a v. m. por vía del correo o por otra más commoda» (documento nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-12-23-o">1569 12 23 O</ref>, § 4).  </note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Como ya hemos señalado anteriormente, los catálogos de libros eran la forma de mantenerse al día de las nuevas publicaciones; pero en este caso se añadía el celo profesional, pues tanto BAM como Ovando, en sus facetas como censor de libros y como oidor del Consejo de Inquisición respectivamente, se interesan por tener «noticia de lo bueno y malo que se imprimiere». 
+            </note>  
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Ha cambiado de opinión y se ha decidido a enviarle a Ovando la lista de libros que menciona antes.</note>
+            <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Ese trabajo bibliográfico seguramente BAM lo aprovecharía años más tarde, ya como bibliotecario de El Escorial, para confeccionar la tabla de materias con que organizó los fondos escurialenses.</note> 
+            <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> El 7 de enero BAM le había escrito a Zayas pidiéndole su intercesión para que el rey concediese a J. Goropio Becano «algún don honorario de collar o cadena o vaso, porque lo meresce mucho»; cf. carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-01-07">1570 01 07</ref>, § 3. </note> 
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> BAM no compartía las extravagantes teorías lingüísticas de Becano, quien sostenía, entre otras opiniones, que el lenguaje hablado por nuestros primeros padres en el Paraíso era el brabanzón hablado en la región situada entre los ríos Escalda y Mosa. Becano estaba persuadido de que la lengua originaria debía ser la más simple, y que esta estaría formada básicamente por palabras cortas. Sobre ese presupuesto concluía que dado que el número de palabras cortas en brabanzón es superior al del latín, griego y hebreo, la lengua hablada en Brabante debía ser la lengua originaria. Y en definitiva, todas las demás lenguas derivarían de esta. Asimismo estaba persuadido de que Adam y Eva eran nombres de origen brabanzón. Como corolario de su teoría deducía que la ubicación del Jardín del Edén se encontraba en Brabante. </note>
+            <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref> Esta obra fue publicada en 1580, ocho años después de la muerte de Becano, por su amigo y admirador Levino Torrencio en una edición conjunta de todos los trabajos que dejó inéditos, y que salió de los talleres de Plantino bajo el título de <title>Opera Ioannis Goropii Becani hactenus in lucem non edita: nempe Hermathena, Hieroglyphica, Vertumnus, Gallica, Francica, Hispanica</title>. Al frente de <title>Hermathena</title> aparece una dedicatoria de Torrencio a BAM, fechada en Lieja a primero de julio de 1578, a la que BAM no tuvo la delicadeza de responder; hecho que suscitó las quejas de Torrencio. Una copia digitalizada del libro en cuestión, procedente de la Universidad de Gante, puede leerse en <ref target="https://bit.ly/4daokJj">Google Books</ref>.  </note>
+         </div>
+      </back>
+   </text>
+</TEI>
