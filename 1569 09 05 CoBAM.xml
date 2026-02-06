@@ -1,0 +1,149 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15690905">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Ovando [Madrid] - 5 de septiembre de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 09 05</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM received two letters from Ovando along with a bill of exchange. He will send instruments and books ordered by Ovando when traffic problems through England are solved.  </note>
+            <note type="incipit">Reçibió dos mis cartas duplicadas...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="Cap">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(Cap) IVDJ, Envío 78/2 f. 135r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+                 <witness xml:id="E1"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 168-181.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 57-74.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>Correspondencia con Ovando</title>, p. 189, p. 346; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 266-267.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.
+
+                  </note></person>
+                   <person xml:id="ManriquedeLaraJuan">
+                      <note>Juan Esteban Manrique de Lara Acuña y Manuel, o, más abreviadamente, Manrique de Lara, IV Duque de Nájera (Valencia de Don Juan, León, 10 de abril de 1533 - Madrid, 5 de junio de 1600). Fue Virrey y capitán general del reino de Valencia, embajador ante la Santa Sede, miembro del Consejo Real. </note></person>
+               <person xml:id="PuertaPedrode">
+                  <note>Pedro de Puerta, comisario del Santo Oficio en Laredo.  </note></person>
+            
+                 
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-09-05">5 de septiembre de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               </correspAction>
+            <correspAction type="answerto">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-08-04">4 de agosto de 1569</date>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1570-01-21">21 de enero de 1570</date>
+            </correspAction>
+                    </correspDesc>
+        
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Juan López de Velasco</handNote>
+            
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-02-19">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/02/IVDJ-Envio-78-2-f.-133r-scaled.jpg"
+         xml:id="foto1"/>
+     
+         
+        </facsimile>
+   <text>
+      <front>
+         <p> No conservamos el original de esta carta de 5 de septiembre de 1569, pero conocemos sumariamente su contenido gracias a una relación que el propio Juan de Ovando hizo de todas las cartas que BAM le envió durante su estancia en Flandes, la cual se ha conservado en el Instituto de Valencia de Don Juan, envío 78, doc. nº 2, bajo el título «Relaciones de cartas que tengo recebidas de el D. Arias Montano de Anbers y de P<hi rend="sup">o</hi> de Puerta de Laredo, y otras en respuesta y escriptas a el[l]os», cuyo texto completo puede consultarse en Macías, <title>Correspondencia con Ovando</title>, pp. 346-348. En la entrada correspondiente a la carta de 5 de septiembre de 1569, Ovando registró el párrafo que editamos a continuación. Por otro lado, el cacereño contesta a esa carta de 5 de septiembre en la suya de 21 de enero de 1570 (1570 01 21), donde aporta una serie de datos que nos permiten completar un poco más el contenido de la carta perdida. Pues de acuerdo con ese testimonio sabemos que BAM había pedido noticias acerca de Juan del Caño, el amigo común; justifica el elogio de Ovando que Becano había puesto en la dedicatoria que figura al frente de su obra <title>Origines Antwerpianae</title>; asimismo se deduce que BAM le ha conseguido los globos de Mercator que solicitaba; y, por último, parece que el frexnense le habría elogiado en su carta a Cristóbal Plantino.</p>
+         <p>Respecto a la datación del presente documento, parece claro que tuvo que ser redactado en torno a la fecha de la última carta que se registra, la que Ovando le escribe a BAM el 17 de abril de 1571. Podría pensarse que hubiera sido elaborado de forma paulatina a medida que se iban recibiendo las cartas, sin embargo, al tratarse de un borrador, todo de la misma mano, en un único pliego de papel y con gran uniformidad de estilo, lo más plausible es que fuera redactado en un corto espacio de tiempo. </p>
+
+      </front>
+      <body>
+        
+                     
+         <div type="main_content">
+            <pb n="f. 133r" ed="Cap" facs="#foto1"/>
+            <opener>Relaciones de cartas que tengo <del>escriptas</del> recebidas de el d<expan><ex>octor</ex></expan> <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> de <name type="place">Anbers</name> y de <name type="person" ref="#PuertaPedrode">P<expan><ex>edr</ex></expan>o de Puerta</name><ref target="#note1" xml:id="reference1">1</ref> de <name type="place">Laredo</name>, y otras en respuesta y escriptas a e<supplied>l</supplied>los <del>por su . </del>.<ref target="#note2" xml:id="reference2">2</ref></opener>
+            <p><name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, <name type="place">Ambers</name>, <date when="1569-09-05">5 de 7<hi rend="sup">e</hi> 1569</date>. Reçibió dos mis cartas duplicadas con çédula de cambio de 100 du<expan><ex>cad</ex></expan>os.  Embiará un astrolabio con uno de los cavalleros parientes del <name type="person" ref="#ManriquedeLaraJuan">duque de Nájara</name><ref target="#note3" xml:id="reference3">3</ref> y me embiará lo que le pido <del>en m</del> en la memoria que reçibió quando esté abierto el paso de <del>Flandes</del> <name type="place">Yngalaterra</name>.</p>
+           </div>
+
+            
+           </body>
+      <back>
+        
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref>  Pedro de Puerta, comisario del Santo Oficio en Laredo, de quien sabemos que facilitó desde ese puerto el envío de libros y otras mercancías por parte de BAM desde Amberes a Ovando; véase, por ejemplo, la carta del propio Pedro de Puerta a Ovando del 8 de noviembre de 1570 editada en Macías, <title>Correspondencia con Ovando</title>, pp. 340-341.  </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> La relación comprende las cartas cruzadas entre el 14 de junio de 1568 y el 17 de abril de 1571. No sigue un orden cronológico, pues registra primero las que ha recibido de parte de Arias Montano hasta el 9 de octubre de 1570, entre las que se inserta la de Juan Pérez de Chabarri de 9 de enero de 1570. A continuación recoge las respuestas de Ovando hasta el 17 de abril de 1571. Y por último anota las que cruzan Pedro de Puerta y Juan de Ovando en 1570, entre el 8 de noviembre y el primero de diciembre, relacionadas con los envíos que BAM le remite a Ovando desde Flandes. Tampoco se trata de un registro exhaustivo, ya que ni siquiera recoge todas las cartas del período que abarca. Así, por ejemplo, no se anota la que Ovando le escribe el 20 de diciembre de 1570 a BAM. No obstante, todas estas limitaciones se ven compensadas con creces pro la información que nos proporciona sobre la carta de 5 de septiembre de 1569, cuyo contenido hemos podido reconstruir gracias a esta relación.</note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Juan Esteban Manrique de Lara Acuña y Manuel, o, más abreviadamente, Manrique de Lara, IV Duque de Nájera (Valencia de Don Juan, León, 10 de abril de 1533 - Madrid, 5 de junio de 1600). Fue Virrey y capitán general del reino de Valencia, embajador ante la Santa Sede, miembro del Consejo Real. Véase entrada biográfica en María Peligros Belchí Navarro, «Manrique de Lara». Real Academia de la Historia, <title>Diccionario Biográfico electrónico</title> (en red, <ref target="https://dbe.rah.es/biografias/20771/manrique-de-lara">https://dbe.rah.es/biografias/20771/manrique-de-lara)</ref>.   </note> 
+            
+               
+               
+            </div>
+      </back>
+   </text>
+</TEI>
