@@ -69,8 +69,6 @@
                       <note>Juan Esteban Manrique de Lara Acuña y Manuel, o, más abreviadamente, Manrique de Lara, IV Duque de Nájera (Valencia de Don Juan, León, 10 de abril de 1533 - Madrid, 5 de junio de 1600). Fue Virrey y capitán general del reino de Valencia, embajador ante la Santa Sede, miembro del Consejo Real. </note></person>
                <person xml:id="PuertaPedrode">
                   <note>Pedro de Puerta, comisario del Santo Oficio en Laredo.  </note></person>
-            
-                 
             </listPerson>
          </particDesc>
          <correspDesc>
@@ -94,13 +92,11 @@
                <date when="1570-01-21">21 de enero de 1570</date>
             </correspAction>
                     </correspDesc>
-        
          <langUsage>
             <language ident="es" ana="source">Español</language>
          </langUsage>
          <handNotes>
             <handNote>Juan López de Velasco</handNote>
-            
          </handNotes>
          </profileDesc>
       <revisionDesc status="approved">
@@ -111,39 +107,28 @@
       <graphic
          url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/02/IVDJ-Envio-78-2-f.-133r-scaled.jpg"
          xml:id="foto1"/>
-     
-         
-        </facsimile>
+   </facsimile>
    <text>
       <front>
          <p> No conservamos el original de esta carta de 5 de septiembre de 1569, pero conocemos sumariamente su contenido gracias a una relación que el propio Juan de Ovando hizo de todas las cartas que BAM le envió durante su estancia en Flandes, la cual se ha conservado en el Instituto de Valencia de Don Juan, envío 78, doc. nº 2, bajo el título «Relaciones de cartas que tengo recebidas de el D. Arias Montano de Anbers y de P<hi rend="sup">o</hi> de Puerta de Laredo, y otras en respuesta y escriptas a el[l]os», cuyo texto completo puede consultarse en Macías, <title>Correspondencia con Ovando</title>, pp. 346-348. En la entrada correspondiente a la carta de 5 de septiembre de 1569, Ovando registró el párrafo que editamos a continuación. Por otro lado, el cacereño contesta a esa carta de 5 de septiembre en la suya de 21 de enero de 1570 (1570 01 21), donde aporta una serie de datos que nos permiten completar un poco más el contenido de la carta perdida. Pues de acuerdo con ese testimonio sabemos que BAM había pedido noticias acerca de Juan del Caño, el amigo común; justifica el elogio de Ovando que Becano había puesto en la dedicatoria que figura al frente de su obra <title>Origines Antwerpianae</title>; asimismo se deduce que BAM le ha conseguido los globos de Mercator que solicitaba; y, por último, parece que el frexnense le habría elogiado en su carta a Cristóbal Plantino.</p>
          <p>Respecto a la datación del presente documento, parece claro que tuvo que ser redactado en torno a la fecha de la última carta que se registra, la que Ovando le escribe a BAM el 17 de abril de 1571. Podría pensarse que hubiera sido elaborado de forma paulatina a medida que se iban recibiendo las cartas, sin embargo, al tratarse de un borrador, todo de la misma mano, en un único pliego de papel y con gran uniformidad de estilo, lo más plausible es que fuera redactado en un corto espacio de tiempo. </p>
-
       </front>
       <body>
-        
-                     
          <div type="main_content">
             <pb n="f. 133r" ed="Cap" facs="#foto1"/>
             <opener>Relaciones de cartas que tengo <del>escriptas</del> recebidas de el d<expan><ex>octor</ex></expan> <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> de <name type="place">Anbers</name> y de <name type="person" ref="#PuertaPedrode">P<expan><ex>edr</ex></expan>o de Puerta</name><ref target="#note1" xml:id="reference1">1</ref> de <name type="place">Laredo</name>, y otras en respuesta y escriptas a e<supplied>l</supplied>los <del>por su . </del>.<ref target="#note2" xml:id="reference2">2</ref></opener>
             <p><name type="person" ref="#AriasMontanoBenito">Arias Montano</name>, <name type="place">Ambers</name>, <date when="1569-09-05">5 de 7<hi rend="sup">e</hi> 1569</date>. Reçibió dos mis cartas duplicadas con çédula de cambio de 100 du<expan><ex>cad</ex></expan>os.  Embiará un astrolabio con uno de los cavalleros parientes del <name type="person" ref="#ManriquedeLaraJuan">duque de Nájara</name><ref target="#note3" xml:id="reference3">3</ref> y me embiará lo que le pido <del>en m</del> en la memoria que reçibió quando esté abierto el paso de <del>Flandes</del> <name type="place">Yngalaterra</name>.</p>
            </div>
-
-            
-           </body>
+      </body>
       <back>
-        
-            <div type="notes">
+         <div type="notes">
                <note type="footnote" xml:id="note1">
                   <ref target="#reference1">1</ref>  Pedro de Puerta, comisario del Santo Oficio en Laredo, de quien sabemos que facilitó desde ese puerto el envío de libros y otras mercancías por parte de BAM desde Amberes a Ovando; véase, por ejemplo, la carta del propio Pedro de Puerta a Ovando del 8 de noviembre de 1570 editada en Macías, <title>Correspondencia con Ovando</title>, pp. 340-341.  </note>  
                <note type="footnote" xml:id="note2">
                   <ref target="#reference2">2</ref> La relación comprende las cartas cruzadas entre el 14 de junio de 1568 y el 17 de abril de 1571. No sigue un orden cronológico, pues registra primero las que ha recibido de parte de Arias Montano hasta el 9 de octubre de 1570, entre las que se inserta la de Juan Pérez de Chabarri de 9 de enero de 1570. A continuación recoge las respuestas de Ovando hasta el 17 de abril de 1571. Y por último anota las que cruzan Pedro de Puerta y Juan de Ovando en 1570, entre el 8 de noviembre y el primero de diciembre, relacionadas con los envíos que BAM le remite a Ovando desde Flandes. Tampoco se trata de un registro exhaustivo, ya que ni siquiera recoge todas las cartas del período que abarca. Así, por ejemplo, no se anota la que Ovando le escribe el 20 de diciembre de 1570 a BAM. No obstante, todas estas limitaciones se ven compensadas con creces pro la información que nos proporciona sobre la carta de 5 de septiembre de 1569, cuyo contenido hemos podido reconstruir gracias a esta relación.</note>   
             <note type="footnote" xml:id="note3">
                <ref target="#reference3">3</ref> Juan Esteban Manrique de Lara Acuña y Manuel, o, más abreviadamente, Manrique de Lara, IV Duque de Nájera (Valencia de Don Juan, León, 10 de abril de 1533 - Madrid, 5 de junio de 1600). Fue Virrey y capitán general del reino de Valencia, embajador ante la Santa Sede, miembro del Consejo Real. Véase entrada biográfica en María Peligros Belchí Navarro, «Manrique de Lara». Real Academia de la Historia, <title>Diccionario Biográfico electrónico</title> (en red, <ref target="https://dbe.rah.es/biografias/20771/manrique-de-lara">https://dbe.rah.es/biografias/20771/manrique-de-lara)</ref>.   </note> 
-            
-               
-               
-            </div>
+         </div>
       </back>
    </text>
 </TEI>
