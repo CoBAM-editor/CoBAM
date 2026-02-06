@@ -1,0 +1,158 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700315">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Andrés Masio (Zevenaar) a Benito Arias Montano [Amberes] - 15 de marzo de 1570</title>
+            <author>Andrés Masio</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 03 15</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Andreas Masius apologizes for not having had enough time to complete the task assigned to him. Masius explains that, despite his many commitments, he has gathered and organized his notes on the origin and evolution of the Syriac language. He details how Hebrew was the original language that deteriorated over time, giving way to Chaldean and later to Syriac. The Syrian Christians preserved and refined this language, using it in their sacred texts. Masius expresses his hope that a complete Syriac grammar will be published in the future, mentioning that Moses Mardenus left important texts in Venice. He concludes by apologizing for the limitations of his work due to the short time available.</note>
+            <note type="incipit">Etsi exacta iam hieme, quam anni partem priuatis meis studiis liberius semper impendere possum...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="E1"> <title>Biblia Sacra</title>, VII, en <title>Grammatica linguae Syricae</title>, pp. 3-4.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 114-121.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Biblia Sacra</title>, VII, pp. 3-4; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 368-385.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MasioAndres">
+                  <note>Andrés Maes, Masius (Lennick, 30 noviembre 1514-17 abril 1573), estudió en el Collegium Trilingue de Lovaina y cultivó en sus inicios la poesía. A partir de 1561 Masio reside en Zevenaar, desde donde ejerció de consejero del duque de Cléveris, prosiguiendo además sus estudios orientales: publica la traducción del siríaco <title>De Paradiso</title> con comentarios en la imprenta de Plantino en 1569 y colabora con BAM en la Biblia Políglota con una <title>Grammatica linguae Siriacae</title> (Amberes, 1571), tercer tratado del volumen sexto de la Políglota y un Syrorum Peculium (1571), segundo tratado del tomo sexto de la Políglota Su muerte le impidió ver muchos de sus trabajos listos para imprenta.</note></person>
+                 <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Andrés Masio</persName>
+               <settlement>Cléves</settlement>
+               <date when="1570-03-15">15 de marzo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote></handNote>
+            <handNote></handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-08-14">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/Biblia-Sacra-VII-p.-3-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/Biblia-Sacra-VII-p.-4-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+        <text>
+      <group>
+   <text type="source">
+          <front>
+             <p> No se conserva ningún testimonio manuscrito de esta carta, pese a que la misiva de Masio debió de pasar por los talleres de la imprenta antes de su publicación (con más o menos variaciones con respecto al original) en el volumen VII de la Políglota. El contenido de la carta consiste principalmente en la exposición sobre el origen histórico de la lengua siríaca, de lo que se deduce que este documento epistolar se redactó desde el principio con el objetivo de su publicación al frente de la Grammatica linguae Syricae de Masio.  </p>
+      </front>
+      <body>
+         <div type="main_content">
+            <pb n="p. 3" ed="E" facs="#foto1"/>
+            <opener>D<expan><ex>omino</ex></expan> <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name> theologo doctiss<expan><ex>imo</ex></expan> piissimoque <name type="person" ref="#MasioAndres">Andreas Masius</name> s<expan><ex>alutem</ex></expan> d<expan><ex>icit</ex></expan>.</opener>
+            <p>[<hi rend="bold">1</hi>] Etsi exacta iam hieme, quam anni partem priuatis meis studiis liberius semper impendere possum, ad alia atque alia continuo negotia accersar, doctissime <name type="person" ref="#AriasMontanoBenito">Aria</name>, et alioqui bimestre tempus, quo meam istam operam inclusistis, breue nimis esse iudicauerim, tamen ut tui desiderii expectationem conarer, quoad eius facere nunc possem, explere; eo facilius me impulit magnis suis precibus et mirifica obtestatione <name type="person" ref="#PlantinoCristobal">Plantinus</name> noster, quod ea desiderare te intelligerem, quae aliqua ex parte utilia fortassis forent ad absoluendum perficiendumque immortale illud opus edendae multis linguis sacrae historiae; quod opus tua procuratione, quae tibi a <rs type="person" ref="#FelipeII">Catholici Regis Maiestate</rs> est commissa, <name type="person" ref="#PlantinoCristobal">Plantini</name> uero industria singulari iamdudum sub prelo uersatur et prope ad umbilicum, ut audio, est ductum.</p>
+            <p>[<hi rend="bold">2</hi>] Detraxi igitur per superiores hosce dies singulos aliquid temporis, non quidem aliis meis negotiis (neque enim id officium, quod illustriss<expan><ex>simo</ex></expan> principi meo debeo, patiebatur) sed mihi ipsi, et quae aliquando hic illic obseruaram atque annotaram dispersaque habebam, ea succisiuis operis contraxi atque ratione quadam constrinxi et ad artem, ut cursim potui, redegi. Vtinam uero ex hoc meo qualicumque labore tantum capiant homines istarum rerum studiosi fructum, quantum ille mihi attulit taedium! Inuitissime enim atque fastidiosissime in hoc scribendi genere uersatus sum.</p> 
+            <p>[<hi rend="bold">3</hi>] Sed ut linguae Syricae originem, cuius literarum cognitio hoc meo opusculo tractatur, paullo altius repetam, sermonem Hebraïcum fuisse eum, cuius communione primos homines inter se iunxerat optimus parens Deus, tam confessa iam olim apud doctos uiros res est, ut refelli non mereantur, qui ingenii ostentandi gratia magis quam pro sua ipsorum existimatione, nescio cui linguae principatum dare audent. Illum autem sermonem post linguarum confusionem mansisse apud Semitas, significasse mihi quidem Moses uidetur, cum diceret Sem fuisse parentem omnium filiorum Heber. Nemo enim nescit ab Heber nomen habere Hebraeos. Cum porro apud istos nimis facile, atque etiam tum uiuo Sem, exolesceret auita religio, ille maiorum melior sermo simul paullatim corrumpebatur deprauabaturque. [<hi rend="bold">4</hi>] Quod fieri etiam ante <name type="person">Abrahami</name> aetatem coeptum erat. Iam tum enim colebant isti deos alienos, ut est in <name type="person">Iosuae</name> historia scriptum.  Sed hic, cum caelesti inflatu, tamquam manu iniecta, e superstitionibus patriis esset exemptus atque ad colendam illam sanctiorum parentum pietatem religionemque reuocatus, linguam quoque ipsorum quam ut primam ita optimam esse intelligebat, constanter sibi putauit esse retinendam. Itaque ceteri, ut more maiorum suorum pure Deum colere, ita et pure illorum more loqui, non diu post desiere proque Hebraeo sermone, Chaldaeo uti coepere. [<hi rend="bold">5</hi>] Cui rei satis magno argumento sunt Labanis illa uerba יגר סהדותא, quibus ille utebatur cum tumulum testimonii dicere uellet. At <name type="person">Abrahamus</name>, eiusque posteri Israelitae Hebraeum, una cum auita religione retinuerunt usque adeo firme, ut ne in <name type="place">Aegypti</name> quidem annorum plus quam ducentorum exsilio uel longa consuetudine et familiaritate barbarorum uel seruituti duritate eum amitterent. </p>
+            <p>[<hi rend="bold">6</hi>] Porro cum hi ob sua scelera, quae post <name type="person">Dauidis</name> imperium et <name type="person">Solomonis</name> ueluti quodam probae religionis fastidio, in dies maiora patrabant, in <name type="place">Babyloniam</name> tandem captiui essent abducti, continuo huius gentis sermonem, hoc est, Chaldaicum, tam sunt cupide amplexati, ut cum non fere pluribus quam septuaginta illic annis mansissent, eum deinde in patriam reuersi perpetuo pro uernaculo usurpauerint, cum Hebraeum interim, quod eo et Lex ipsa et sacra omnis historia atque uaticini libri ac alia insuper praeclara doctissimae antiquitatis monimenta essent conscripta, soli sacerdotes et praeter eos alii homines qui literis studebant, rerumque optimarum cognitioni sese dabant, utcumque conseruarent et in ludis literariis eo pueros ad literas destinatos excolerent. [<hi rend="bold">7</hi>] Sed enim quamuis Chaldaice loqui a Baby<pb n="p. 4" ed="E" facs="#foto2"/>loniis Israelitae didicissent, tamen sermone Hebraico inde a cunabulis assuefacti, peregrinam linguam in patria sic suis casibus ubique conseruare non potuerunt, ut non ipsam multis modis ad patriae, hoc est, Hebraicae normam accommodarent. Itaque ex illo sermone quem a Chaldaeis acceperant Israëlitae, cum eum ipsi, ut dixi, plurimum casibus terminationibusque mutauissent et multa insuper Graeca uocabula admiscuissent (ut erat in sequentibus temporibus apud plerasque nationes Graecorum lingua in multo usu) effecta est ea lingua quae non modo a nostris hominibus, sed ab illis quoque, quorum propria est, Syrica uocatur. Habes ergo paucis Syricae linguae ortum.</p> 
+            <p>[<hi rend="bold">8</hi>] Qua cum <name type="person">Christus</name> Dei et <name type="person">Mariae</name> filius, eiusque discipuli, quippe uernacula, in Iudaea primum Israëlitis sacrosanctum Euangelium patefecissent peruulgassentque, plerique omnes deinde Christiani homines, qui illa atque uicina circumquaque loca incolebant, eadem uti coepere, ad sacra illa salutaris doctrinae monimenta tum conseruanda, tum posteris prodenda, atque etiam explicanda. Fueruntque proinde longo tempore Syrorum Christianorum coetus celeberrimi et frequentissimi, quamquam fere in Graecis semper sint annumerati a nobis, qui ad Occidentem habitamus. [<hi rend="bold">9</hi>] Doctissimorum igitur hominum studio, quales apud illos multi uixere et scriptis libris floruere, breui usque eo expolita est illa lingua, ut non minus scite uocalibus notis, punctisque aliis quaeque eius literae, syllabae, uerba, denique uerborum casus, numeri, personae, tempora, genera notata atque distincta et illustrata sint, quam in Hebraea lingua factum est ab excellentissimo ingenio uiris illis qui auctores Massoreth, hoc est, traditionis uocantur. [<hi rend="bold">10</hi>] Quare si quis mediocri praeditus ingenii perspicatia, tum ab emendatissimis libris atque etiam ocio instructus, eas rationes sibi quaerendas inuestigandasque esse statueret, quas secuti sunt illi, qui sic, ut dixi, uerba singula appositis suis notis explicarunt, nae ille posset et quidem non nimis multa in eam rem consumpta opera, Syricarum literarum artem omnem certissimis regulis atque praeceptis concludere.</p> 
+            <p>[<hi rend="bold">11</hi>] Sed ut Iudaei ita Syri quoque accuratissimo illo scribenti genere in sola Sacrorum Librorum scriptura utuntur. Atque utinam etiam usus fuisset ille librarius, qui in urbe <name type="place">Mozal</name> ad flumen <name type="place">Tigrim</name> exemplar illud Noui Testamenti scripsit; de quo id optimi et benignissimi Caesaris <name type="person">Ferdinandi</name> liberalitate et <name type="person">Mosis Mardeni</name> industria typis est expressum, quod usum nos habemus! Ego certe perfectiora grammatices praecepta obseruatione diutina animaduertere atque notare, et per otium tandem conscribere potuissem. [<hi rend="bold">12</hi>] Nunc autem ueniam iure postulare uideor, si nimis rudia haec rudimenta atque inchoata, aut etiam manca, tibi mitto, qui praeter talium librorum accuratissime atque emendatissime scriptorum penuriam, qua maxime impedior neque facultate insuper uacui atque liberi temporis neque ingenii ubertate affluo, neque ullius hominis, quae sequar, uestigia hac in re ante me uideo. Sed exstat a Syris ipsis conscripta Grammatica. Eius expectatione desiderium absolutioris doctrinae poterunt lenire ii, in quibus est istarum rerum studium. Spes enim est, eam aliquando prodituram in lucem. [<hi rend="bold">13</hi>] Nam <name type="person">Moses Mardenus</name>, cum ipsam et simul Dictionarium, ut uocant, Syricorum uocabulorum ex <name type="place">Assyria</name> secum asportasset <name type="place">Venetiisque</name> reliquisset et proinde mihi, qui ipsum <name type="place">Romae</name> priuatim interdum audiebam doctorem, eorum librorum copiam facere non potuisset; post <name type="place">Roma</name> <name type="place">Viennam</name> profectus, <name type="persom">Ioanni Alb<expan><ex>erto</ex></expan> Widmanstadio</name> utrumque descripsit, ut mihi suis literis significauit. Cum igitur, ut audio, <name type="person">Widmanstadii</name> libros omnes, sane non uulgares, illustrissimus Bauarorum Dux sibi redemerit, non faciet opinor ille tantus Princeps et ad rem literariam iuuandam propensissimus, ut tam raros libros in priuata sua biblioteca situ perire patiatur.  </p>
+            <closer>[<hi rend="bold">14</hi>] Vale, uir et literis et pietate ornatissime, et si hac mea lucubratiuncula minime perfecti quod instituti, magnam culpae partem in te ipso esse existimato, qui et nimis breui et minime uacuo tempore mihi hoc oneris per <name type="person" ref="#PlantinoCristobal">Plantinum</name> nostrum imposuisti. Iterum uale. <date when="1570-03-15">Idibus Martiis M. D. LXX</date>. <name type="place">Zeuenera</name>. </closer></div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>
+            <div type="main_content">
+               <pb n="p. 3" ed="E" facs="#foto1"/>
+               <opener>Al señor Benito Ariae Montano, teólogo muy erudito y piadosísimo, Andrés Masio le envía saludos.</opener>
+               <p>[<hi rend="bold">1</hi>] A pesar de que, terminado ya el invierno, estación que siempre puedo dedicar más libremente a mis estudios privados, soy llamado a unos y otros asuntos, doctísimo Arias, y aunque además el tiempo de dos meses, al que me limitó vuestra merced esta tarea, me parece muy breve, sin embargo, para intentar cumplir con las expectativas de vuestra merced, en la medida en que ahora puedo hacerlo, me ha impulsado más fácilmente Plantino,<ref target="#note1"
+                  xml:id="reference1">1</ref>  con sus grandes ruegos y maravillosa insistencia, por esta razón, porque entiendo que tú deseabas aquello que de alguna manera podría ser útil para completar y perfeccionar la inmortal obra de la publicación de la historia sagrada en varias lenguas; obra que, bajo tu supervisión, encargada por la Majestad del Rey Católico, y por la singular diligencia de Plantino, ya desde hace tiempo está en prensa, y, según oigo, casi finalizada.</p>
+               <p>[<hi rend="bold">2</hi>] Por tanto, durante estos últimos días he sustraído algo de tiempo, no a otros negocios míos, pues mis obligaciones para con mi ilustre príncipe<ref target="#note2"
+                  xml:id="reference2">2</ref> no lo permitían, sino a mí mismo, recopilando aquí y allá lo que alguna vez había observado y anotado, y que tenía disperso, lo he reunido y sistematizado y, como pude, lo he organizado. ¡Ojalá los estudiosos de estos temas obtengan de este mi trabajo, por rudimentario que sea, tanto provecho como fatiga me ha causado! Porque, ciertamente, he trabajado en este tipo de escritura con gran desgana y fastidio. </p> 
+               <p>[<hi rend="bold">3</hi>] Pero para recordar un poco más lejos el origen de la lengua siríaca, el estudio de cuya gramática se trata en este mi opúsculo, es una cosa tan reconocida entre los sabios que el idioma hebreo fue aquel con el cual Dios, Padre Supremo, unió a los primeros hombres en comunicación mutua, que no merecen ser refutados aquellos que, más por la vanidad de mostrar ingenio que por estima propia, se atreven a dar la primacía a cualquier otra lengua. Sin embargo, Moisés parece indicar que esta lengua permaneció entre los semitas después de la confusión de lenguas, al decir que Sem fue el padre de todos los hijos de Heber.<ref target="#note3"
+                  xml:id="reference3">3</ref>  Pues nadie ignora que los hebreos toman su nombre de Heber. Y aunque entre ellos la religión ancestral se extinguía con demasiada facilidad, incluso ya en vida de Sem, la lengua mejor de los ancestros también se iba corrompiendo y deteriorando paulatinamente. [<hi rend="bold">4</hi>] Esto había comenzado a ocurrir antes de la época de Abraham. Ya entonces ellos adoraban dioses ajenos, como está escrito en la historia de Josué.<ref target="#note4"
+                     xml:id="reference4">4</ref>  Pero este, siendo arrebatado de las supersticiones paternas por inspiración celestial, como poniendo la mano sobre él, y vuelto a cultivar la piedad y religión de sus padres más santos, comprendía que su lengua, al ser la primera, era también la mejor, y pensó que debía conservarla con firmeza. Así que los demás, no mucho tiempo después, de la misma manera que dejaron de rendir culto a Dios con la pureza que caracterizaba a sus mayores, así también dejaron de hablar con la pureza de ellos, y en lugar de la lengua hebrea usaron el caldeo. [<hi rend="bold">5</hi>] De ello dan testimonio suficiente aquellas palabras de Labán,<ref target="#note5"
+                        xml:id="reference5">5</ref>  יגר סהדותא, que aquel usó cuando quería decir el «túmulo del testimonio». Pero Abraham y sus descendientes, los israelitas, conservaron el hebreo junto con la religión ancestral tan firmemente, que ni siquiera lo perdieron durante el largo exilio de más de doscientos años en Egipto por la larga familiaridad y trato de los bárbaros o por la dureza de la esclavitud. </p>
+               <p>[<hi rend="bold">6</hi>] Luego, cuando, debido a sus crímenes, que después del gobierno de David y Salomón perpetraban cada día mayores como por una especie de aburrimiento de la buena religión, los israelitas finalmente fueron llevados cautivos a Babilonia, abrazaron rápidamente la lengua de este pueblo, esto es, la caldea, tan ansiosamente que, tras permanecer allí poco más de setenta años,<ref target="#note6"
+                  xml:id="reference6">6</ref> regresaron a su patria usándola perpetuamente como lengua vernácula, mientras que el hebreo, en el que se habían escrito la propia Ley y toda la historia sagrada y los libros de profecías y otros monumentos de la antigüedad doctísima, solo los sacerdotes en todo caso y, además de estos, otros hombres, que se dedicaban al estudio de las letras y al conocimiento de las mejores materias lo conservaban y lo enseñaban a los niños destinados a las letras en las escuelas. [<hi rend="bold">7</hi>] Pero aunque los israelitas hubieran aprendido a hablar caldeo de los babilonios <pb n="p. 4" ed="E" facs="#foto2"/>, al estar habituados al hebreo desde la cuna, no pudieron conservar esta lengua extranjera en su patria así en sus propios casos sin adaptarla de muchas maneras a la norma de su lengua madre, es decir, la hebrea. Así que de esa lengua que los israelitas habían tomado de los caldeos, y que ellos mismos, como he dicho, habían modificado con numerosos casos y terminaciones y a la que añadieron además muchos vocablos griegos (pues en los tiempos siguientes, la lengua griega era de uso común en muchas naciones), surgió esa lengua que, no solo por nuestros hombres, sino también por aquellos a quienes pertenece propiamente, se llama siríaco. Así tienes, pues, el origen de la lengua siríaca en pocas palabras.</p> 
+               <p>[<hi rend="bold">8</hi>] Como quiera que Cristo, el hijo de Dios y de María, y sus discípulos, primero en Judea, en esa lengua, pues era vernácula, revelaron y divulgaron el Evangelio sacrosanto a los israelitas, la mayoría de todos los cristianos que habitaban esos lugares y alrededores comenzaron a usar la misma lengua para conservar, transmitir y también explicar esos sagrados monumentos de la doctrina de la salvación. Y así hubo en adelante durante mucho tiempo comunidades de cristianos sirios, muy famosas y numerosas, aunque casi siempre fueron considerados griegos por nosotros, los que habitamos al occidente. [<hi rend="bold">9</hi>] Así que, por el estudio de hombres doctísimos, muchos de los cuales vivieron entre ellos y florecieron escribiendo libros, en breve aquella lengua fue pulida hasta el punto de que cada una de sus letras, sílabas, palabras, en fin, los casos de las palabras, los números, las personas, los tiempos y los géneros fueron anotados, distinguidos e ilustrados con vocales, puntos y otras señales, de modo no menos hábil que la lengua hebrea, por aquellos hombres de excelente ingenio que son llamados los autores de la Masora, esto es, la tradición. [<hi rend="bold">10</hi>] Por lo tanto, si alguien dotado con mediana perspicacia de ingenio y provisto de libros muy correctos y tiempo libre, se decidiera a buscar e investigar esos métodos que siguieron aquellos que así explicaron cada palabra con sus notas correspondientes, como he dicho, seguramente podría, sin mucho esfuerzo, establecer toda la gramática siríaca con reglas y preceptos muy seguros.</p> 
+               <p>[<hi rend="bold">11</hi>] Pero, al igual que los judíos, también los sirios usan ese género escritural tan exacto solo en la escritura de los Libros Sagrados. ¡Ojalá también lo hubiera usado aquel escriba que, en la ciudad de Mozal, a orillas del Tigris, escribió ese manuscrito del Nuevo Testamento a partir del que, por la liberalidad del excelente y benignísimo emperador Fernando y la diligencia de Moisés Mardeno,<ref target="#note7"
+                  xml:id="reference7">7</ref>  ha sido impreso y es el único testimonio que tenemos!<ref target="#note8"
+                     xml:id="reference8">8</ref>  Ciertamente, entonces, habría podido yo observar y anotar reglas gramaticales más perfectas y, finalmente, escribirlas en mi tiempo libre. [<hi rend="bold">12</hi>] Ahora, sin embargo, creo que tengo derecho a pedir perdón si te envío estos rudimentos tan toscos e incompletos, ya que, además de la escasez de tales libros tan exacta y cuidadosamente escritos, que es mi mayor impedimento, tampoco dispongo de tiempo desocupado y libre ni de abundancia de ingenio, ni veo huellas de ningún hombre a seguir en este campo antes que yo. Pero existe una gramática escrita por los propios sirios. Quienes tienen interés en estos asuntos podrán mitigar su deseo de una doctrina más completa con la expectativa de ella, pues hay esperanza de que salga a la luz algún día. [<hi rend="bold">13</hi>] Porque Moisés Mardenus, habiendo llevado consigo de Asiria tanto esta gramática como un diccionario, así lo llaman, de palabras siríacas, y habiéndolos dejado en Venecia, y no habiendo podido, por lo tanto, facilitarme esos libros, pues yo a veces lo escuchaba como maestro en privado en Roma, después de partir de Roma a Viena, copió ambos para Juan Alberto Widmanstadio, como me informó por carta. Por tanto, según oigo, habida cuenta de que el ilustrísimo duque de Baviera<ref target="#note9"
+                        xml:id="reference9">9</ref> ha adquirido todos los libros de Widmanstadio, ciertamente nada comunes, no creo que un príncipe tan grande y propenso a ayudar en la causa literaria permita que libros tan raros se pierdan en su biblioteca privada.</p>
+               <closer>[<hi rend="bold">14</hi>] Adiós, hombre adornado tanto de letras como de piedad, y si en esta mi pequeña lucubración no he cumplido completamente con lo propuesto, considera que gran parte de la culpa es de vuestra merced, pues me impuso esta carga a través de nuestro Plantino en un tiempo demasiado breve y nada libre. <salute>Adiós nuevamente</salute>. A 15 de marzo de 1570. Zevenaar. </closer>
+            </div>
+         </body>
+                <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Véase carta de Plantino a Andrés Masio del 26 de 1569, donde el impresor le impone el plazo de la Pascua de 1570 para que lo que tuviera compuesto de su gramática siríaca; carta publicada en Lossen, Briefe von Andreas Masius, p. 436 y CP, III, pp. 53-54, nº 359. </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Guillermo de Jülich-Cléveris-Berg (1516-1592), duque de Jülich-Cléveris-Berg desde 1539 hasta su muerte.  </note>
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Anotado en el margen: «<title>Genes.</title> 10, uers. 21».    </note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Anotado en el margen: «<title>Iosu.</title> 24, v. 2».   </note>     
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Anotado en el margen: «<title>Genes.</title> 31, v. 46».  </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> El cautiverio de Babilonia se extendió desde el 16 de marzo del año 597 a. C. hasta el 538 a. C.  </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Moses Mardenus, sacerdote siríaco ortodoxo y obispo. Jugó un papel decisivo en la impresión de la primera biblia siríaca. En 1552 fue enviado por el Patriarca de Antioquía con el encargo de imprimir la Peshitta (versión siríaca de la Biblia), que finalmente pudo conseguir hacerlo en Viena, en 1555, con la colaboración de Widmanstadio y el apoyo financiero del emperador Fernando I de Austria. </note>
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Se refiere aquí Masio a la ya citada edición que, bajo los auspicios de Fernando I de Habsburgo, publicó J. Alb. Widmanstadio publicó en Viena, 1555, con el título de Liber Sacrosancti Euangelii, characteribus et lingua Syra, Jesu Christo uernacula. Este trabajo fue varias veces reimpreso en años posteriores con algunas correcciones y variantes. </note>
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Albrecht von Wittelsbach (1528-1579), duque Alberto V de Baviera. </note>
+            </div>
+          </back>
+   </text>
+      </group>
+   </text>
+</TEI>
