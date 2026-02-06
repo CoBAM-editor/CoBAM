@@ -1,0 +1,152 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15691130">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Stephanus Vindandus Pighius [Bruselas] a Benito Arias Montano (Amberes) - 30 de noviembre de 1569 </title>
+            <author>Stephanus Vinandus Pighius</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez - Jeanine De Landtsheer </name>
+            </respStmt></titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 11 30</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Pighius sends to BAM, as a gift, copies of some coins from his personal collection, for which BAM had previously shown interest. At the same time, he offers to provide BAM with any other piece from his library and museum that may be useful for his studies.
+            </note>
+            <note type="incipit">Numulos mitto, quos ipse nuper ex meo cumulo selegeras...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C1">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Germany</country>
+                        <settlement>Hamburg</settlement>
+                        <msName>Staats- und Universitätsbibliothek Hamburg</msName>
+                        <altIdentifier>
+                           <idno>(C1) SUBH, Sup. ep. (4º) 7, f. 78v; </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C2">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Belgium</country>
+                        <settlement>Brussels</settlement>
+                        <msName>Archives Générales du Royaume/Algemeen Rijksarchief</msName>
+                        <altIdentifier>
+                           <idno>(C2) Manuscrits Divers 187, f. 75r-v; </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C3">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Belgium</country>
+                        <settlement>Brussels</settlement>
+                        <msName>Bibliothèque royale de Belgique / Koninklijke Bibliotheek van België</msName>
+                        <altIdentifier>
+                           <idno>(C3) Ms. 7400/113, f. 143v-144r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> H. De Vocht, «Stephani Vinandi Pighii epistolarium», in <title>Humanistica Lovaniensia</title>, 15 (Lovaina, 1959), p. 283.</witness>
+              <witness xml:id="E2">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 300-303.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firsPrint">(E1) De Vocht, <title>Pighii epistolarium</title>, p. 283;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 300-303.</bibl> </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+               P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PighiusStephanus">
+                  <note>Stephanus Winandus (o Vinandus) Pighius (Kampen, 1520 - Xanten, 16 de octubre de 1604) fue un humanista y anticuario holandés. Pighius se convirtió en secretario y bibliotecario del cardenal Antoine Perrenot de Granvelle en Bruselas, cargos que ocupó hasta 1571, aunque el propio Granvelle tuvo que abandonar Bruselas en 1564. Durante este tiempo publicó una edición de Valerius Maximus (Amberes: Plantino 1567).   </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Stephanus Vinandus Pighius</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-11-30">30 de noviembre de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Mano desconocida</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-03-11">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/03/SUBH-Sup.-ep.-7-4o-f.-78v.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+   <text> 
+      <group>
+      <text type="source">
+         <front>
+         <p> Posiblemente nos hallemos ante la primera carta remitida por Pighio a BAM; al menos es la primera que se nos ha conservado. En todo caso, recordemos que la carta de Morillon a BAM con fecha del 24 de octubre (<ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-10-24">1569 10 24</ref>) fue escrita por el propio Pighio, que realizaba labores de secretario de la archidiócesis de Malinas por encargo del cardenal Granvela, y esta es la razón por la que fue conservada en el manuscrito con el restante epistolario del humanista flamenco. Como ejemplo de la circulación de objetos eruditos en el marco de la República de las Letras de principios de la Edad Moderna, la misiva que editamos aquí venía acompañada de unas copias de monedas de la colección personal de Pighio, cuyo museo numismático y epigráfico debió de haber conocido previamente BAM. Este parece que mostró especial interés por algunas de las monedas en cuestión e incluso las seleccionó en un encuentro previo con Pighio.   </p>
+            <p>Sobre los testimonios conservados de esta carta, remitimos a lo dicho en el comentario de la citada misiva del 24 de octubre de 1569. </p>
+         </front>
+         <body> 
+            <div type="main_content">
+               <pb n="f. 78v" ed="C1" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] <app><lem wit="#E1 #E2">Num<supplied>m</supplied>ulos</lem> <rdg wit="#C1">Arrio Montano 30 Nobr. 1559. Numulos</rdg> <rdg wit="#C2">Arrio Montano 30 nbr. 1559. Numulos</rdg> <rdg wit="#C3">Ario Montano 30 Nbr. 1559. Numulos</rdg></app> mitto, quos ipse nuper ex meo cumulo selegeras, sed medio metallo <app><lem wit="#C1 #C2 #E1 #E2">transfusos</lem> <rdg wit="#C3">transfugos</rdg></app> ex ipsis antiquis. [<hi rend="bold">2</hi>] Quod <app><lem wit="#C1 #E1 #E2">leuidense</lem> <rdg wit="#C2">levidente</rdg> <rdg wit="#C3">levi dente</rdg></app> munusculum, ut ab amico profectum, ut hilari uultu accipias uelim. En omnes argenteos, inquis, quos plumbeos <app><lem wit="#E2">expectabam!</lem> <rdg wit="#E1">expectabam?</rdg> <rdg wit="#C1 #C2 #C3">expectabam</rdg></app>  Sed ita placuit collybus, Daedalio <app><lem wit="#C1 #C2 #C3 #E2">usis</lem> <rdg wit="#E1">usus</rdg></app> consilio, quo medium tenere tramitem iubemur. [<hi rend="bold">3</hi>] Si quid praeterea eiusmodi rerum apud me est, quae tuis studiis delectationiue seruire poterunt, gratissimum erit intelligere; uehementer enim cum in his, tum in aliis, quibus potero d<expan><ex>ominationi</ex></expan> u<expan><ex>estrae</ex></expan> gratificare cupio.</p> <closer><salute>Vale.</salute></closer> 
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>       
+            <div type="main_content">
+               <pb n="f. 78v" ed="C1" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] Envío las moneditas que vuestra señoría misma había escogido recientemente<ref target="#note1" xml:id="reference1">1</ref> de mi colección, pero fundidas con la mitad de metal a partir de las propias piezas antiguas.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Este regalillo sin importancia quisiera que lo aceptara con rostro sonriente, como procedente de un amigo. «¡Mira -dice vuestra señoría- son todas de plata las monedas que esperaba de plomo!» Pero así decidimos hacer el cambio de moneda, recurriendo al consejo de Dédalo, que nos obliga a tomar la vía de enmedio.<ref target="#note3" xml:id="reference3">3</ref> [<hi rend="bold">3</hi>] Si hay algo más de este tipo en mi poder que pueda servirle para sus estudios y ocio, me será gratísimo saberlo; pues deseo complacer a vuestra señoría con todas mis ganas tanto en estos asuntos como en otros en los que pueda. Adiós.     </p>  
+            </div>        
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Por una carta de Pighio a Andreas Masio del 15 de noviembre de 1569 (cf. De Vocht, <title>Pighii epistolarium</title>, pp. 281-283) conocemos algunos detalles de esta visita previa de BAM al humanista flamenco. Pighius declara que Plantino y BAM estuvieron en Bruselas para visitarle, porque BAM quería conocerlo. Esta visita -con el intercambio apasionado de intereses anticuarios entre ambos humanistas- ocurrió en el contexto de la importante entrevista personal que tanto el impresor como el biblista español mantuvieron con Maximiliano Morillon algunos días antes del 24 de octubre de 1569, en los preparativos de la visita de BAM a la abadía de Affligem para examinar libros y manuscritos de posible interés para la Biblioteca de El Escorial (cf. carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-10-24">1569 10 24</ref>). En efecto, en su carta del 15 de noviembre a Masio, Pighio escribió que, durante aquella visita, comieron juntos BAM, Plantino, Morillon y él mismo, y esa fue la ocasión en la que se le requirió a Morillon una carta de recomendación para que BAM pudiera desempeñar su misión en la abadía de Affligem y en otras sbajo la jurisdicción del arzobispado de Malinas.      </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Según de Vocht, <title>Pighii epistolarium</title>, p. 283, el mismo método para completar las colecciones de monedas había sido empleado y tranmsitido a Pighius por su colega Marcus Laurinus Jr. (Brujas, 1525-Calais, 1581).   </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> El consejo que Dédalo le dio a su hijo Ícaro tras construirle las alas, a saber, que volara por la parte media del cielo, ni muy alto para que el Sol no derritiera la cera de sus alas, ni muy bajo para que la espuma del mar no mojara las plumas e hiciera imposible volar. </note>
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
