@@ -1,0 +1,167 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15691214">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Stephanus Vindandus Pighius [Bruselas] a Benito Arias Montano [Amberes] - 14 de diciembre de 1569 </title>
+            <author>Stephanus Vinandus Pighius</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez - Jeanine De Landtsheer </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 12 14</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Upon his return from a trip, Pighius finds BAM's letter in response to his missive from November, in which he had sent some copies of coins. Thanks to this letter, Pighius receives the happy news that BAM is recovering from a serious illness and that he has received the coins sent, which have greatly cheered him during his convalescence. Pighius also expresses condolences for the passing of the confessor of the Duke of Alba.
+            </note>
+            <note type="incipit">Reuersus ab Atrebatibus ac S. Amando...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C1">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Germany</country>
+                        <settlement>Hamburg</settlement>
+                        <msName>Staats- und Universitätsbibliothek Hamburg</msName>
+                        <altIdentifier>
+                           <idno>(C1) SUBH, Sup. ep. (4º) 7, f. 79v-80r; </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C2">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Belgium</country>
+                        <settlement>Brussels</settlement>
+                        <msName>Archives Générales du Royaume/Algemeen Rijksarchief</msName>
+                        <altIdentifier>
+                           <idno>(C2) Manuscrits Divers 187, f. 76v-77r; </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C3">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Belgium</country>
+                        <settlement>Brussels</settlement>
+                        <msName>Bibliothèque royale de Belgique / Koninklijke Bibliotheek van België</msName>
+                        <altIdentifier>
+                           <idno>(C3) Ms. 7400/113, f. 146r-r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> H. De Vocht, «Stephani Vinandi Pighii epistolarium», in <title>Humanistica Lovaniensia</title>, 15 (Lovaina, 1959), pp. 284-285.</witness>
+              <witness xml:id="E2">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 304-305.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firsPrint">(E1) De Vocht, <title>Pighii epistolarium</title>, pp. 284-285;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 304-305.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+               P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PighiusStephanus">
+                  <note>Stephanus Winandus (o Vinandus) Pighius (Kampen, 1520 - Xanten, 16 de octubre de 1604) fue un humanista y anticuario holandés. Pighius se convirtió en secretario y bibliotecario del cardenal Antoine Perrenot de Granvelle en Bruselas, cargos que ocupó hasta 1571, aunque el propio Granvelle tuvo que abandonar Bruselas en 1564. Durante este tiempo publicó una edición de Valerius Maximus (Amberes: Plantino 1567).   </note></person>
+               <person xml:id="ContrerasAlonsode">
+                  <note>Alonso de Contreras, fallecido en 1569. Franciscano, confesor del duque de Alba</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Stephanus Vinandus Pighius</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-12-14">14 de diciembre de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569">Entre el 30 de noviembre y el 14 de diciembre de 1569</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Mano desconocida</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-03-11">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/03/SUBH-Sup.-ep.-7-4o-f.-79v.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/03/SUBH-Sup.-ep.-7-4o-f.-80r.jpg"
+         xml:id="foto2"/>
+   </facsimile>  
+   <text>  
+      <group>
+      <text type="source">
+               <front>
+         <p> La carta de BAM a la que responde aquí Pighio no ha sido localizada, y debió de ser escrita entre el 30 de noviembre de 1569, fecha del la misiva precedente de Pighio a la que respondió BAM (<foreign>terminus ante quem non</foreign>) y el 14 de diciembre (<foreign>terminus post quem non</foreign>). Habida cuenta de la corta distancia entre Bruselas y Amberes, sería incluso muy plausible que BAM hubiera entregado al correo su carta de respuesta uno o, como máximo, dos días antes de este 14 de diciembre. En esta carta se vuelve a hacer mención a la salud quebradiza de BAM, que se resintió particularmente durante su larga estancia de ocho años en las frías tierras flamencas.   </p>
+         <p>Sobre los testimonios conservados de este documento, remitimos a lo dicho en el comentario de la <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-10-24">carta del 24 de octubre de 1569</ref>. </p>
+               </front>
+         <body> 
+            <div type="main_content">
+               <pb n="f. 79v" ed="C1" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] <app><lem wit="#E1 #E2">Reuersus</lem> <rdg wit="#C1 #C2 #C3">Ariae Montano 14 Dcbr 1559. Reuersus</rdg></app> ab <name type="place">Atrebatibus</name> ac <name type="place">S<expan><ex>ancto</ex></expan> <app><lem wit="#C1 #E1 #E2">Amando</lem> <rdg wit="#C2 #C3">Amandas</rdg></app></name> suauissimas tuas <app><lem wit="#C1 #C2 #E1 #E2">literas</lem> <rdg wit="#C3">litteras</rdg></app> tui repperi, humanitatis atque candoris ingenui testes singulares, e quibus ualde <app><lem wit="#C1 #C2 #E1 #E2">iucundum fuit</lem> <rdg wit="#C3">fuit iucundum</rdg></app> intelligere te nunc e grauissimo morbo <app><lem wit="#C1 #C2 #C3 #E2">utcunque</lem> <rdg wit="#E1">utcumque</rdg></app> conualuisse, pristinaeque sanitati <app><lem wit="#C1 #C2 #C3 #E2">in dies</lem> <rdg wit="#E1">in dies</rdg></app>  magis <pb n="f. 80r" ed="C1" facs="#foto1"/> restitui. [<hi rend="bold">2</hi>] Gratulor itaque tibi plurimum, nec minus religioni et reip<expan><ex>uplicae</ex></expan> nostrae et uere (non <expan><ex>e</ex></expan>n<expan><ex>im</ex></expan> te usura falsi gaudii mei uelim frui) gratulor te quidem post damnosam R<expan><ex>eueren</ex></expan>di P<expan><ex>atris</ex></expan> N<expan><ex>ostri</ex></expan> confessarii integerrimi uiri mortem n<expan><ex>o</ex></expan>b<expan><ex>is</ex></expan> adhuc diuina bonitate superstitem esse. Etenim, ut is, ita nec possunt et eius similes auctoritate et prudentia ueroque pietatis studio praestantes uiri, malo quodam fato abrepti, ingens boni sui desiderium non relinquere in tanta raritate atque inopia eorum, qui sincero affectu Catholicam religionem restauratam et <app><lem wit="#C3 #E1 #E2">rem publicam</lem> <rdg wit="#C1 #C2">Remp.</rdg></app> <app><lem wit="#C1 #C2 #E1 #E2">Christ<expan><ex>ianam</ex></expan></lem> <rdg wit="#C3"><hi rend="italic">omisit</hi></rdg></app> saluam cupiunt simulque in hoc operam sinceram impendunt.</p> <p>[<hi rend="bold">3</hi>] De nummulorum munusculo non est quod magnopere gratias agas, sed uehementer gaudeo uenisse tam <app><lem wit="#C1 #C2 #E1 #E2">oportune</lem> <rdg wit="#C3">opportune</rdg></app>, ut non parum, quemadmodum scribis, momenti ad confirmandam ualetudinem tuam attulerit. Et facile credo, recreant enim plurimum spiritus uitales, modo male affectos bellae imagines, itaque nunc uellem aureas misissem, ut eo mouissem <app><lem wit="#C1 #E1 #E2">efficacius</lem><rdg wit="#C2 #C3">efficatius</rdg></app>. [<hi rend="bold">4</hi>] Tu quidem, mi <name type="person" ref="#AriasMontanoBenito">Montane</name>, imposterum quae in potestate mea s<expan><ex>un</ex></expan>t, ut operam, studium, consilium, rem fidemque meam t<expan><ex>i</ex></expan>b<expan><ex>i</ex></expan> <app><lem wit="#C1 #C2 #C3 #E2">paratam</lem> <rdg wit="#E1">parata</rdg></app> puta. </p> <closer><salute>Vale.</salute></closer>  </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>       
+            <div type="main_content">
+               <pb n="f. 79v" ed="C1" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] Tras regresar de Arras<ref target="#note1" xml:id="reference1">1</ref> y de San Amando<ref target="#note2" xml:id="reference2">2</ref> me encontré la agradabilísima carta de vuestra merced, testigo singular de su amabilidad y candor innato, por medio de la cual me fue muy grato saber que ahora estaba vuestra merced mejorando, como quiera que fuese, de una gravísima enfermedad, y que vuelve vuestra merced cada día más <pb n="f. 80r" ed="C1" facs="#foto1"/> a su estado de salud inicial. [<hi rend="bold">2</hi>] Así que me alegro muchísimo por vuestra merced, y no menos por la religión y nuestra república, y verdaderamente (pues no quisiera que disfrutases del empleo de una falsa alegría mía) me alegro de que, después de la desdichada muerte de nuestro reverendo padre confesor, un señor de lo más íntegro,<ref target="#note3" xml:id="reference3">3</ref> todavía nos quede vivo vuestra merced por la bondad de Dios. Y es que igual que este, así también los hombres parecidos a él que destacan por su autoridad, prudencia y verdadero cultivo de la piedad, cuando son arrebatados por un destino fatal, no pueden evitar dejar una enorme nostalgia de su bondad en medio de tan gran escasez y falta de quienes desean mantener restaurada la religión católica y a salvo la república cristiana, y al mismo tiempo invierten su trabajo sincero para este fin. </p><p>[<hi rend="bold">3</hi>] Sobre el regalito de las moneditas<ref target="#note4" xml:id="reference4">4</ref> no hay por qué me dé tantas gracias vuestra merced, pero me alegro enormemente de que hayan llegado de manera tan oportuna que, según me escribe, haya contribuido no poco a consolidar tu salud. Y fácilmente lo creo, pues las imágenes bellas recrean mucho a los alientos vitales que acaban de ser afectados por una enfermedad; y así ahora querría haber enviado monedas de oro, para haber producido ese resultado de manera más eficaz. [<hi rend="bold">4</hi>] Así que, vuestra merced, mi querido Montano, piense que en adelante todo lo que esté en mi poder, como mi trabajo, mi estudio, mi consejo, mis posesiones y mi lealtad, está a su entera disposición.<ref target="#note5" xml:id="reference5">5</ref></p> <closer><salute>Adiós.</salute></closer> 
+            </div>        
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Arrás en español, Arras en francés, Atrecht en neerlandés y Atrebates en latín. Actualmente es una ciudad del norte de Francia, capital del departamento del Paso de Calais, en la región de Alta Francia.     </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> La abadía benedictina de Saint-Amand-les-Eaux, ubicada actualmente en Francia, en la región de Norte-Paso de Calais, departamento de Norte, en el distrito de Valenciennes.   </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Alonso de Contreras, confesor del duque de Alba. Véase nota biográfica en carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-01-31">[1560 00 00-1560 01 31]</ref>.</note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Véase carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-11-30">1569 11 30</ref>.</note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> En sus palabras de despedida Pighio reutiliza una extensa iunctura ciceroniana, haciendo gala del uso aplicado del latín de laboratorio entre los humanistas; cf. CIC. <title>fam.</title> VI, 10, 1: «idque tu ad tuos uelim scribas, haec quidem certe, quae in potestate mea sunt, ut operam, consilium, rem, fidem meam sibi ad omnis res paratam putent». </note>
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
