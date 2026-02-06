@@ -1,0 +1,181 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15691116">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Guy Le Fèvre de la Boderie [Amberes] a Benito Arias Montano (Amberes) - 16 de noviembre de 1569 </title>
+            <author>Guy Le Fèvre de la Boderie</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 11 16</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">In the preface to his Latin translation of the Syriac New Testament, Guy Lefevre had claimed that the authors of the Septuagint had translated into Greek the twenty-four books of the Hebrew canon. In a previous communication, BAM warned his collaborator that this was not a commonly accepted opinion in their time, but many biblical scholars believed that the seventy interpreters translated into Greek only the five books of Moses. Guy Lefevre thanks BAM for his observation and promises to correct his prologue. </note>
+            <note type="incipit">Immortales ago tibi gratias, uir doctissime et ornatissime,...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 85r-v. </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 158-161, nº 26.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 276-283.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 158-161; </bibl><bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 276-283.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+               P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="LeFevreGuy">
+                  <note>Guy Le Fèvre de la Boderie (1541-1598), orientalista francés, biblista y poeta.</note>
+               </person>
+               <person xml:id="LindanoGuillermo">
+                  <note>Wilhelm Van der Lindt nace en 1525 en Dordrecht y estudia en Lovaina en los 40. Entre 1554 y 1557 enseñó Teología en Dillingen para convertirse en 1577 en canónigo y arcediano del obispado de Utrecht y vicario general de la sede de Leeuwarden. Su extraordinaria eficacia le llevó a ser consagrado obispo de Rurmond el 14 de abril de 1562, en Bruselas. En 1578 hizo un viaje a Roma para exponer al Papa Gregorio XIII el estado de los Países Bajos; el Pontífice le nombra asistente al trono pontifical. Después de tres meses en Roma, Lindano embarca hacia España, de donde regresa en 1579. En 1584 vuelve a Roma, donde, durante el papado de Sixto V, se ocupa de estudios filosóficos y de investigaciones de antiguos manuscritos: en 1588 se le llamó a ocupar el obispado de Gante, vacante después de la muerte de Cornelio Jansenio (muerto en 1575). Lindano fallece el 2 de noviembre de 1588, tres meses después de su nominación. Entre sus muchas obras, mencionamos el <title>De optimo genere interpretandi scripturas</title> (Colonia, 1558), <title>Apologeticon libri tres ad Germanos, pro concordia cum catholica Christi Ecclesia, contra nouam protestantium confessionem Augustanam ex Lutherana Caluinisantem</title>, 3 vols. (Amberes, 1568-1570), <title>Paraphrasis et castigationes in psalmum 118, cum isagoge et oratione parascenastica in eumdem</title>. </note></person> 
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Guy Le Fèvre de la Boderie</persName>
+               <settlement>Amberes</settlement>
+               <date when="1569-11-16">16 de noviembre de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafa de Guy Le Fèvre</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-02-22">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/03/KBS-A-902-f-85r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/03/KBS-A-902-f-86v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+         <front>
+         <p> Guy Le Fèvre (Guido Fabricius), uno de los colaboradores  con mayor participación en la Políglota, se encargó de redactar, entre otros trabajos, el prefacio del quinto volumen donde presenta de modo particular su traducción latina del Nuevo Testamento sirio. En la redacción definitiva recogerá la matización de BAM de la que se trata en la presente carta: «In Graecam uero iussu, ex nulla unquam obliuione delenda liberalitate ac munificentia Ptolemaei Philadelphi magnarum et excellentium rerum cognoscendarum auidi regis, ac mirabilis seu diligentia, seu felicitate 72 uirorum, quorum supra meminimus, conuersi fuerunt uel quinque libri Mosis tantum, ut cum Hebraeis Christiani doctores nonnulli censent, uel (ut alii uolunt, multique grauissimi auctores uidentur innuere) omnes uiginti quatuor libri, qui in canone Hebraeorum continentur».
+             </p>
+         <p>Pese al clima de buen entendimiento y cordialidad que rezuma esta carta, parece que el joven discípulo de Postel no terminó de aceptar que BAM recogiera los laureles del trabajo común en el cual había vertido no pocos esfuerzos y desvelos. Así pues, la insatisfacción contenida tomará la poesía como vehículo para dar rienda suelta a su opinión sobre BAM. Cf. M. Sabbe, «Guy Le Fèvre de la Boderie et la Polyglotte Anversoise», <title>De Gulden Passer</title>, 6 (1928), 250-253. </p>
+         </front>
+         <body> 
+            <pb n="f. 85v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Doctissimo et clarissimo uiro d<expan><ex>omino</ex></expan> <name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedicto</ex></expan> Ariae Montano</name>, Catholicae Maiestatis legato dignissimo, domino meo obseruando.
+               </ab>
+               <div type="annotation1">
+                  <head>[Anotado por otra mano, con escritura transversal, por encima del sobrescrito:]</head>
+                  <ab> <app><lem wit="#O #E1"><name type="person" ref="#LindanoGuillermo">Λινδανος</name></lem><rdg wit="#E2"><hi rend="italic">omisit</hi></rdg></app>
+                  </ab>
+               </div>  
+               <div type="annotation2">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#LeFevreGuy">Guido Fabritius</name> de uersione 72 in 24 lib<expan><ex>ros</ex></expan> sacros. <name type="place">Antuerpiae</name> <date when="1569-11-16">16 Nouembr<expan><ex>is</ex></expan></date>.
+               </ab>
+            </div> 
+               <div type="main_content">
+               <pb n="f. 85r" ed="O" facs="#foto1"/>
+               <opener>S<expan><ex>alutem</ex></expan> P<expan><ex>lurimam</ex></expan>.</opener>
+               <p>[<hi rend="bold">1</hi>] Immortales ago tibi gr<expan><ex>ati</ex></expan>as, uir doctissime et ornatissime, quod aperte et syncere in praefatione a me tumultuarie exarata <app><lem wit="#O #E2">q<expan><ex>uid</ex></expan></lem> <rdg wit="#E1">quod</rdg></app> mutandum censeas me admonere dignatus <app><lem wit="#O #E2">fueris,</lem> <rdg wit="#E1">fueris.</rdg></app> nimirum de 24 libris canonicis, quos a 72 senioribus Grece uersos fuisse scripseram, quamuis, ut scribis, ea res adhuc inter doctos plena sit controuersiarum. [<hi rend="bold">2</hi>] Ego uero ingenue fatebor me nullum authorem adhuc legisse qui hoc in dubium reuocet, eorum precipue quorum authoritas in Ecclesia aliquo in p<expan><ex>re</ex></expan>tio habetur. [<hi rend="bold">3</hi>] Quin <app><lem wit="#O #E2">imo</lem> <rdg wit="#E1">immo</rdg></app> <name type="person">Augustinus</name> <title>De Ciuit<expan><ex>ate</ex></expan> Dei</title> lib<expan><ex>ro</ex></expan> 18, cap<expan><ex>itulo</ex></expan> <choice><sic>34</sic> <corr>43</corr></choice>, uidetur asserere non Legem tantum, sed et alia Prophetarum oracula a septuaginta interp<expan><ex>re</ex></expan>tibus in Graecam linguam fuisse translata, dum inter caetera sic dicit: «Spiritus enim, qui in Prophetis erat, quando illa dixerunt, idem etiam ipse erat in septuaginta uiris, quando illa interp<expan><ex>re</ex></expan>tati sunt». [<hi rend="bold">4</hi>] <name type="person">Iustinus</name> etiam, martyr et philosophus, in <title>Oratione contra gentiles</title> idem innuere mihi uidebatur his uerbis, secundum <name type="person">Langi</name> uersionem: «Quod si quis asseueret <name type="person">Mose</name> quoque et aliorum P<expan><ex>ro</ex></expan>phetarum scripta Graecis edita esse literis, ex historiarum externarum lectione is discat <name type="place">Aegipti</name> regem <name type="person">Ptolemeum</name> bibliothecam <name type="place">Alexandriae</name> instituisse et <app><lem wit="#O #E2">undecunque</lem> <rdg wit="#E1">undecumque</rdg></app> libris comportatis compleuisse; eundemque ubi cognouisset antiquos libros Hebraeorum conscriptos literis diligenter asseruari cognoscere ea scripta uolentem, septuaginta sapientibus uiris Grecae simul et Hebraicae linguae peritis, uertendorum interpretatione eorum librorum laborem demandasse ab ipsis usque <name type="place">Hierosolymis</name> accitis, etc.»</p><p>  [<hi rend="bold">5</hi>] Verum quia, ut sapienter iudicasti ac perquam humane, qui tuus mos est, me admonuisti illud, si addito 24 librorum numero scriptum p<expan><ex>ro</ex></expan>diret in lucem, in quorundam fortassis rep<expan><ex>re</ex></expan>hensiones incursurum, aut sciolis et <app><lem wit="#O #E2">Grecanicae</lem> <rdg wit="#E1">Graecanicae</rdg></app> leuitatis plus aequo admiratoribus occasionem <app><lem wit="#O #E2">p<expan><ex>rae</ex></expan>biturum</lem> <rdg wit="#E1">prebiturum</rdg></app> <app> <lem wit="#O #E1">paruipendendae</lem> <rdg wit="#E2">parui pendendae</rdg></app> linguae sanctae, tuis monitis et authoritati, quae non solum in hac re, sed in omnibus apud me plurimum semper ualebit, parebo lubens. [<hi rend="bold">6</hi>] Quod statim hisce tibi significare uolui, cum per occupationes quas <app><lem wit="#O #E2">nosti</lem> <rdg wit="#E1">nos</rdg></app> nunc te inuisere tibique coram habere gr<expan><ex>ati</ex></expan>as mihi nunc non liceat, ut scias te non solum libertate, sed etiam authoritate, iussu et dominatione in me meaque omnia uti posse, meque semper tibi dicto audientem futurum. </p><p> [<hi rend="bold">7</hi>] Nolim ut grauiora negotia intermittas ullo modo, ut mihi rescribas; tantum enim te monitum <app><lem wit="#O #E2">uolui</lem> <rdg wit="#E1">uolui.</rdg></app> nil mihi esse iucundius quam a bonis et doctis uiris tui similibus non solum admoneri, sed et corrigi ac meliora edoceri. [<hi rend="bold">8</hi>] Atque hoc quidem no<expan><ex>m</ex></expan>i<expan><ex>n</ex></expan>e me maximo afficiet beneficio quisquis ita fecerit, meque sibi, ut et tu tibi, arctiori adhuc uinculo deuinciet. </p>
+               <closer>[<hi rend="bold">9</hi>] <salute>Bene uale, domine obseruande, et si placet, precibus tuis me Deo commenda, prout et ego quotidie pro tua incolumitate Diuinam suplex interpello Maiestatem.</salute></closer>
+               <signed>Tuus ex a<expan><ex>n</ex></expan>i<expan><ex>m</ex></expan>o G<expan><ex>uido</ex></expan> Fabricius B<expan><ex>oderianus</ex></expan>.</signed>
+               </div>
+            </div>
+         </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <pb n="f. 85v" ed="O" facs="#foto2"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al muy docto y eximio varón el señor Arias Montano, legado dignísimo de Su Majestad Católica, con el debido respeto.
+               </ab>
+               <div type="annotation1">
+                  <head>[Anotado por otra mano, con escritura transversal, por encima del sobrescrito:]</head>
+                  <ab> Lindano<ref target="#note1" xml:id="reference1">1</ref>
+                  </ab>
+               </div>    
+               <div type="annotation2">
+                  <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+                  <ab> Guy Le Fèvre<ref target="#note2" xml:id="reference2">2</ref> acerca de la traducción que los setenta y dos hicieron de los veinticuatro libros canónicos. Amberes, a 16 de noviembre. 
+                  </ab>
+               </div> 
+               <div type="main_content">
+                  <pb n="f. 85r" ed="O" facs="#foto1"/>
+                  <opener>Un cordial saludo.</opener>
+                  <p>[<hi rend="bold">1</hi>] Le estoy inmensamente agradecido, doctísimo y honorabilísimo varón, porque abierta y sinceramente se ha dignado a advertirme lo que piensa que se debe modificar en el prólogo que he redactado con prisas, pues, en efecto, había escrito sobre los veinticuatro libros canónicos que habían sido traducidos al griego por los setenta y dos ancianos, aunque como me advierte vuestra merced, esto todavía no está nada claro entre los eruditos. [<hi rend="bold">2</hi>] Yo, por mi parte, reconozco con ingenuidad que no he leído todavía a ningún autor que lo ponga en tela de juicio, sobre todo, de estos autores cuya autoridad tiene un peso en la Iglesia. [<hi rend="bold">3</hi>] Es más, San Agustín, en el libro 18 de <title>La Ciudad de Dios</title>, capítulo 43,<ref target="#note3" xml:id="reference3">3</ref> parece afirmar que no sοlo la Ley, sino también otros oráculos de los Profetas habían sido traducidos al griego por los setenta intérpretes, cuando entre otras cosas dice lo siguiente: «Pues el Espíritu que inspiró a los Profetas cuando pronunciaron aquellas profecías, ese mismo Espíritu inspiró a los setenta varones al hacer su traducción».<ref target="#note4" xml:id="reference4">4</ref> [<hi rend="bold">4</hi>] También Justino, mártir y filósofo, en su <title>Discurso contra los gentiles</title>, me parece dar a entender eso mismo cuando dice, según la traducción de Langus:<ref target="#note5" xml:id="reference5">5</ref> «Y si alguno afirma que también los escritos de Moisés y de los otros Profetas fueron redactados en griego, que sepa por la lectura de las historias de otros pueblos que Ptolomeo, el rey de Egipto, fundó la biblioteca de Alejandría y la llenó con libros traídos de todas partes; y cuando supo que antiguos libros redactados en escritura hebrea eran celosamente guardados, queriendo conocer estos escritos, les pidió a setenta varones sabios, conocedores tanto de la lengua griega como de la hebrea, traídos hasta de Jerusalén, que tradujeran estos libros, etc.»<ref target="#note6" xml:id="reference6">6</ref> </p><p> [<hi rend="bold">5</hi>] Pero, ya que me advirtió vuestra merced, tras considerarlo con sabiduría y con mucha amabilidad, según es su costumbre, de que si publicaba mi escrito con la puntualización de que era veinticuatro el número de libros, quizá fuera objeto de reprensión por parte de algunos, u ofrecería una ocasión para vilipendiar la lengua santa a los sabihondos y a los fanáticos de la ligereza grequizante,<ref target="#note7" xml:id="reference7">7</ref> de buen grado seguiré los consejos y la autoridad de vuestra merced, la cual no solo en este asunto, sino en todo la tendré en gran consideración. [<hi rend="bold">6</hi>] Lo cual he querido enseguida hacerlo saber a vuestra merced con esta carta, dado que las ocupaciones que conoce vuestra merced no me permiten visitarle y expresarle mi gratitud personalmente, para que sepa que puede servirse no solo con libertad, sino también con autoridad, disposición y poder absoluto de mí y de todo lo mío y que yo siempre estaré atento a los consejos de vuestra merced. </p><p> [<hi rend="bold">7</hi>] No quisiera de ningún modo que vuestra merced interrumpiera sus obligaciones para contestar a la mía; pues escribo solo a vuestra merced para hacerle saber que nada me es más grato que el hecho de que los hombres buenos y doctos, como vuestra merced, no solo me adviertan, sino que también me corrijan y me instruyan. [<hi rend="bold">8</hi>] Y con este comportamiento me ganará con el mayor favor cualquiera que proceda así, y me tendrá obligado a él, como vuestra merced lo ha hecho para sí, con un vínculo más estrecho aún.   </p>
+                  <closer>[<hi rend="bold">9</hi>] <salute>Adiós, respetable señor, y, si le place, encomiéndeme a Dios en las plegarias de vuestra merced, igual que yo le pido a diario en mis súplicas a la Divina Majestad por la salud de vuestra merced.</salute></closer>
+                  <signed>Afectuosamente suyo, Guy Le Fèvre de la Boderie.</signed>
+               </div>
+            </div>
+         </body>
+         <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref>BAM anota al dorso de esta carta el nombre de Lindano, aunque no se habla de este personaje en el presente documento. La anotación se refiere a la siguiente carta que está archivada en el manuscrito de Estocolmo a partir del folio 86r, de Francisco Rafelengio a BAM con fecha del 7 de octubre de 1575, en la que el yerno de Plantino precisamente informa a nuestro biblista de los últimos ataques de Lindano a la Biblia Regia.   </note>
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Guy Le Fèvre de la Boderie (1541-1598), poeta y filósofo francés, colaborador de la Biblia Políglota especializado en lenguas orientales. Nació en el castillo de la Boderie (Normandía) el 9 de agosto de 1541. Sus comienzos son mal conocidos; después de su etapa en Falaise, se marcha a Caen, a París, a Lyon y a Mâcon. Pero más significativos que sus itinerarios son sus etapas intelectuales: frecuenta asiduamente círculos poéticos durante su infancia; estudia matemáticas en su adolescencia; se decanta por el estudio de la filosofía y las lenguas orientales en su madurez. El encuentro con Guillermo Postel hacia finales de 1562 será determinante para su formación como orientalista, en hebreo, sirio y árabe; así como para la temática de toda su obra poética posterior. En el Collège de France, donde es discípulo de Postel, muy pronto se convierte en su alumno predilecto. Y por recomendación suya se marchará a Amberes, con su hermano menor Nicolás, para ayudar a BAM con la Políglota (1568-1572). Más tarde fue secretario y traductor de Francis, duque de Anjou y Alençon. Después de la muerte del duque se retiró a Normandía. Entre sus trabajos recogidos en la Políglota debemos mencionar su traducción latina del Nuevo Testamento sirio, el diccionario siro-caldaico, colaboró igualmente en la revisión de la traducción que Santes Pagnino hizo del Antiguo Testamento, ayudó a los censores de Lovaina a revisar el Nuevo Testamento completo, así como otros trabajos de menor importancia. Cf. <title>Dictionnaire des lettres françaises publié sous la direction de Mgr. G. Grente. Le 16me siècle</title> (París, 1951), pp. 436-437; A. Cioranesco, <title>Bibliographie de la littérature française du seizième siècle</title> (París, 1959), p. 421; <title>GC</title>, I, pp. 63-367.</note>
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> En la carta original Le Févre intercambia las cifras de la cita, y anota el capítulo 34. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Aug. <title>Ciu. Dei</title>, 18, 43.</note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Johann Lang (Johann Lange, Ioannes Langus Silesius) (*1503 – †1567), cf. <title>ADB</title>, XVII, 638-639 autor de una traducción al latín con anotaciones de las obras de Justino Martir: <title>Diui Iustini philosophi et martyris Christi operum quae extant omnium per Ioannem Langium Silesium, e Graeco in Latinum sermonem uersorum et sententiis priscorum Sanctorum Patrum illustratorum tomi III </title> (Basileae: per Ambrosium et Aurelium, Frobenios fratres, 1565, en folio. Puede verse una copia digitalizada del primer tomo, que abre precisamente con la <title>Oratio ad gentiles</title>, en <ref target="https://bit.ly/436SbxA">Google Books</ref>.   </note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Just. <title>Cohortatio ad Graecos</title>, 13 (Cf. <title>PG</title>, t. VI, cols. 265-266).   </note> 
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Recuérdese que veinticuatro es también el número de cantos que componen los poemas homéricos.  </note> 
+            </div>
+         </back>
+      </text>
+   </group>
+   </text>
+</TEI>
