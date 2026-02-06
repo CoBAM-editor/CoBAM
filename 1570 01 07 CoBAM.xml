@@ -1,0 +1,160 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700107">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 7 de enero de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 01 07</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM has bought parchment for the bibles ordered by the King. He requests monetary compensation for the theologians of Louvain involved in the edition of the Bible. He also calls for a gift to Becano, to who he recommended as royal physician. The printing works of the Bible are progressing well; thanks to the good work of Plantin, the costs are lower than anticipated. BAM continues to collect books and manuscripts for the library of El Escorial at a good price.  </note>
+            <note type="incipit">A los tres deste llegó a esta villa un correo despachado de Medina...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="Cap">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(Cap) AGS, E 583/16.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+                  </witness>
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 166-167.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 326-327.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 166-167;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 326-327.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person> 
+               <person xml:id="ZayasGabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="GoropiusBecanusIohannes">
+                  <note>Juan Goropio Becano (1518-1572), médico, filólogo, humanista y lingüista.  </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="CurielJeronimo">
+                  <note>  Jerónimo Curiel, agente de Felipe II en Flandes y residente en Amberes desde 1550. A partir de 1561 sustituye a López Gallo como agente mayor del rey para los negocios de los Países Bajos. Su función es distribuir las sumas enviadas por la corona a Flandes para pagar los más variados conceptos.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-01-07">7 de enero de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Resumen en forma de capítulos realizado por mano desconocida en la corte</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-04-15">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/04/AGS-E-583-16-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/04/AGS-E-583-16-1v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Este es el primer contacto epistolar conservado entre BAM y la corte española después de más de cinco meses. De esta carta no se ha localizado ni original ni borrador, tan solo un resumen por capítulos redactado en la Corte española tras la recepción del original que, como se ha dicho, está perdido.  </p>
+      </front>
+      <body>
+         <div type="anotation">
+            <pb n="f. [1v]" ed="O" facs="#foto4"/>
+            <head>[Anotado al dorso, en el margen, con escritura transversal:]</head>
+            <p>Puntos de <app><lem wit="#Cap #E2">cartas</lem> <rdg wit="#E1">carta</rdg></app> de <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> a <name type="person" ref="#ZayasGabrielde">Çayas</name>. <date when="1570-01-07">7 en<expan><ex>ero</ex></expan> 70</date>.<ref target="#note1"
+               xml:id="reference1">1</ref> </p> 
+         </div> 
+         <div type="main_content">
+               <pb n="f. [1r]" ed="Cap" facs="#foto1"/>
+            <opener>Puntos de cartas del doctor <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> a <name type="person" ref="#ZayasGabrielde">Çayas</name> de <date when="1570-01-07">VII de enero 1570</date>. </opener>
+            <p>[<hi rend="bold">1</hi>] Que ha tomado setecientas dozenas de pargaminos para Su M<expan><ex>agesta</ex></expan>d y de <name type="person" ref="#CurielJeronimo">Hier<expan><ex>óni</ex></expan>mo de Curiel</name> mill y qui<expan><ex>nient</ex></expan>os <expan><ex>escu</ex></expan>dos<ref target="#note2"
+               xml:id="reference2">2</ref> para la paga dellos.<ref target="#note3"
+                  xml:id="reference3">3</ref>  Pide se prevenga a contadores mayores para que hagan buena esta partida.<ref target="#note4"
+                     xml:id="reference4">4</ref> </p>
+            <p>[<hi rend="bold">2</hi>] Que en <name type="place">Lovayna</name> están ocupados tres juezes y un notario todos los días dos horas cada día y el notario más de cuatro en la censura y vista de lo que pertenesçe a la Biblia. Son hombres doctos y versados en lo de las lenguas, y dan su parescer y refieren a la Universidad lo que importa.<ref target="#note5"
+               xml:id="reference5">5</ref>  Es razón darles alguna satisfación honoraria, por lo menos un vaso de plata de a <app><lem wit="#Cap #E2">XX</lem> <rdg wit="#E1">20</rdg></app> <expan><ex>escu</ex></expan>dos a cada uno. Querría saber si se los podrá dar a cuenta de gastos extraordinarios. </p>
+            <p>[<hi rend="bold">3</hi>] Refiere lo que por otras tiene escripto del doctor <name type="person" ref="#GoropiusBecanusIohannes">Becano</name>, affirmando que para servir a Su M<expan><ex>agesta</ex></expan>d de médico y de philósopho e historiador y para el particular gusto que Su M<expan><ex>agesta</ex></expan>d tiene del conocimiento de cosas naturales, no se hallará hombre más a propósito que él. Dessea que Su M<expan><ex>agesta</ex></expan>d le mandasse dar algún don honorario de collar o cadena o vaso, porque lo meresçe mucho.<ref target="#note6"
+               xml:id="reference6">6</ref>  </p>
+            <p>[<hi rend="bold">4</hi>] Que la obra de la Biblia va tan buena y con tanta perfección que, siendo forçado acrescentar el gasto hasta <app><lem wit="#Cap #E2">XX</lem> <rdg wit="#E1">20</rdg></app> <expan><ex>mill</ex></expan> <expan><ex>escu</ex></expan>dos, no ay quien no crea que se gastan más de <app><lem wit="#Cap #E2">LX</lem> <rdg wit="#E1">60</rdg></app> <expan><ex>mill</ex></expan>. Ayuda mucho a esto la buena industria de <name type="person" ref="#PlantinoCristobal">Plantino</name>.<ref target="#note7"
+               xml:id="reference7">7</ref> </p>
+            <p>[<hi rend="bold">5</hi>] Usa de gran diligencia y ardid para allegar libros manuscriptos originales para la librería de Su M<expan><ex>agesta</ex></expan>d.<ref target="#note8"
+               xml:id="reference8">8</ref>  Tiene ya más de <app><lem wit="#Cap #E2">LXX</lem> <rdg wit="#E1">70</rdg></app>, que le han costado la décima parte de lo que a otro se vendieran. Tiene en su poder los que halló en <name type="place">Haustrat</name><ref target="#note9"
+                  xml:id="reference9">9</ref> y de <name type="place">París</name> le han traýdo otros griegos. Con estos y los suyos manuscriptos, de que piensa hazer heredera la librería de Su M<expan><ex>agesta</ex></expan>d,<ref target="#note10"
+                     xml:id="reference10">10</ref> dize se podrán juntar hasta 300, que dessea se pusiessen en la librería en pieça aparte. </p> </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> La edición de <title>Codoin</title> (E1) titula este documento reutilizando el propio título del manuscrito (sin editarlo, por tanto, en el cuerpo del texto), aunque añadiendo alguna palabra inicial («Copia de...») y escribiendo «carta» en lugar de «cartas». El título de la citada edición dice así: «Copia de puntos de carta del doctor Arias Montano a Zayas. De 7 de enero 1570».   </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Escudos. Esta moneda equivale a dos florines hasta 1578, y dos y medio o tres a partir de esa fecha. Cf. Macías, <title>Correspondencia con Ovando</title>, p. 170. A lo largo del manuscrito se emplea de forma sistemática la abreviatura V, que hemos desarrollado con el valor de «mill». </note>   
+               <note type="footnote" xml:id="note3">
+                     <ref target="#reference3">3</ref> Esta cantidad de pergamino fue solo un acopio inicial, pues el total de docenas de pergamino empleadas en la impresión de los trece ejemplares de la Biblia destinados al rey fue de 1.600, según consta en el presupuesto confeccionado por Plantino por estas fechas: «sumptus pergameni computasse, qui peruenient ultra 3.800 floreni Biblia namque habitura 1600 folia, pro quibus totidem dozenis pergameni opus est» (Plantino a Arias Montano, 3 de febrero de 1570, 1570 02 03). Según L. Voet, en 1570 el pergamino para imprimir costaba dos florines y cinco placas la docena (cf. <title>GC</title>, II, 45). Haciendo cuentas, el precio de las mil seiscientas docenas de pergamino ascendería, como apunta Plantino, a unos 3.800 florines, unos mil novecientos escudos. Sin embargo la provisión de fondos no llega a Plantino tan rápidamente como era necesario, pues a fecha de 15 de enero los libros de cuentas de la casa tipográfica registran que solo se había recibido del erario real 1.400 florines de los más de tres mil presupuestados (en MPM Arch 121, p. 36), de lo que Plantino se queja en su referida carta a BAM con número 1570 02 03. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Aubrey Bell escribe en su biografía de Arias Montano: «To be given a letter of credit by King Philip and to pocket the money were two different things, and Arias Montano complains over and over again that the king’s treasurer or bankers do not honour the bills he has contracted in the king’s name». Citado por Clair, <title>Cristóbal Plantin</title>, p. 132.  </note>  
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> BAM solicita una gratificación para los teólogos de la Universidad de Lovaina Cornelio Reyneri Goudano y Agustín Hunneo, quienes actuaron como censores de la Políglota, y para Juan Harlemio, profesor de Sagrada Escritura y lengua hebrea en el colegio jesuita de Lovaina, quien revisó las pruebas de los distintos diccionarios añadidos a la Biblia. Según la contabilidad de gastos relativos a la Biblia Regia (MPM Arch. 121, p. 179 ss.) entre el 24 y el 25 de marzo de 1571 sse hizo entrega a los teólogos de Lovaina de dichos regalos, consistentes en sendas tazas de oro por un valor de cincuenta y cinco florines, para Goudano y Hunnaeo, y un cáliz para Juan Harlemio. Cf. Bécares, <title>Arias Montano y Plantino</title>, pp. 92-93.    </note>  
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Recomendación de Juan Goropio Becano para ocupar el puesto de médico de Felipe II, quien finalmente no llegó a pisar la corte española, pues desde 1572 reside en Lieja al lado de su amigo Levino Torrencio. Juan de Ovando, por su parte, también presionó a la corte en el particular de la merced que había de hacerse a Becano: «Yo también e solicitado al secretario Çayas para que se acordase a Su Magestad hiziese merced a Becano, y la primera vez dixome que haría se le diesen dozientos ducados». (Ovando a Arias Montano, 31 de marzo de 1570, nº 1570 03 31). Parece que los esfuerzos de BAM y Ovando sí dieron sus frutos en lo tocante al regalo honorario del rey para Becano, pues el segundo escribe al primero el 17 de abril de 1571: «Una carta reçebí de Goropio, y eme holgado de questé contento de lo poco que Su Magestad con el hizo» (cf. 1571 04 15]). Sobre Juan Goropio Becano véase nota biográfica en carta nº 1568 11 09.   </note>  
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Plantino no dudó en contraer nuevas deudas para hacer frente a los gastos complementarios que suponían los cambios de tipo y de papel con respecto al presupuesto original. El impresor explica a Granvela que debe relegar otras impresiones por los grandes gastos que le ocasiona la impresión de la Biblia Real: «je me sentois tomber sous le fardeau de si pesante oeuvre, en laquelle j’avois desjà employé plus de tout le mien, car il n’a esté jour ouvrable, depuis 18 mois en çà, que je l’ay commencé à bon escient, que je n’y aye despendu plus de 25 escus, seulement en papier et gages des ouvriers manuaires, sans y comprendre les despens ordinaires, ni geges de six doctes correcteurs domesticques et des docteurs de la faculté de Théologie de Louvain et d’ailleurs, qu, à nos despens, visitent et approuvent tout ce nous y adjouctons plus qu’aux exemplaires de Complute» (Plantino al Cardenal Granvela, 16 de diciembre de 1569, <title>CP</title>, II, nº 199, p. 96). De multiplicar la cantidad diaria de gastos por el número de días de los dieciocho meses resulta la cifra de unos 14.000 escudos. Colin Clair analiza lo que la Biblia Políglota significó para la economía plantiniana, concluyendo que «fue todo menos un negocio brillante, por el retraso de los pagos españoles, por las dificultades para la obtención de privilegios e incluso de la aprobación papal y por las malas ventas de la Políglota». Cf. C. Clair, <title>Cristóbal Plantino</title> (Madrid, 1964), pp. 132-133.   </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Algunos de estos ardides pueden consultarse en cartas números <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-09">1568 11 09</ref> (§ 17 ss.) y <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06">1569 04 06</ref>.  </note>  
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Véase relación de libros adquiridos en las librerías de Hoogstraten al final de la carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06-libros">1569 04 06</ref>.  </note> 
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> En mayo de este mismo año BAM valoraba con orgullo, sus «originales» en más de mil escudos (cf. carta nº 1570 05 09). El 23 de abril de 1582 BAM suscribe un carta notarial donde dona todos sus libros al convento de Santiago de la Espada de Sevilla, «salbo los libros griegos y hebreos e arábigos escritos de mano, que se llaman originales, porqu’estos tengo propósito de darlos e serbir con ellos a Su Magestad para su librería Real de San Lorençio, porque ansí lo tengo prometido a Su Magestad de palabra» (documento conservado en Archivo de Protocolos de Sevilla I, 1582, I (=157), fº 1.697v, publicado por Gil, <title>Arias Montano en su entorno</title>, pp. 207-209).   </note>  
+            </div>
+      </back>
+   </text>
+</TEI>
