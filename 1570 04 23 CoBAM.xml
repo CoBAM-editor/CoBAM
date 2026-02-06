@@ -1,0 +1,162 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM1570423">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Andrés Masio (Zevenaar) - 23 de abril de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 04 23</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM has received Masius’ letter dated April 19; he is concerned about Masius’ health. He liked the Syriac grammar very much and is looking forward to the Syriac dictionary. He appreciates Masius’ dedication and promises to do his best to reciprocate. He sends the prologue to the Bible for correction. He fully agrees with Masius’ opinion on the edition of the Septuagint included in the Polyglot of Alcalá. </note>
+            <note type="incipit">Accepi literas tuas ad XIII Kal. Maii datas...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 196r-v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 184-187, nº 32.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 396-403.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 184-187; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 396-403.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MasioAndres">
+                  <note>Andrés Maes, Masius (Lennick, 30 noviembre 1514-17 abril 1573), estudió en el Collegium Trilingue de Lovaina y cultivó en sus inicios la poesía. A partir de 1561 Masio reside en Zevenaar, desde donde ejerció de consejero del duque de Cléveris, prosiguiendo además sus estudios orientales: publica la traducción del siríaco <title>De Paradiso</title> con comentarios en la imprenta de Plantino en 1569 y colabora con BAM en la Biblia Políglota con una <title>Grammatica linguae Siriacae</title> (Amberes, 1571), tercer tratado del volumen sexto de la Políglota y un Syrorum Peculium (1571), segundo tratado del tomo sexto de la Políglota Su muerte le impidió ver muchos de sus trabajos listos para imprenta.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-04-23">23 de abril de 1570</date></correspAction>
+               <correspAction type="received">
+                  <persName>Andrés Masio</persName>
+                  <settlement>Zevenaar</settlement>
+                                </correspAction>
+            <correspAction type="answerto">
+               <persName>Andrés Masio</persName>
+               <settlement>Zevenaar</settlement>
+               <date when="1570-04-19">19 de abril de 1570</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Andrés Masio</handNote>
+            <handNote>El añadido en el margen del sobrescrito es de Benito Arias Montano</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-07-18">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/07/KBS-Ms.-A-902-f.-196r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/07/KBS-Ms.-A-902-f.-196v.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+        <text>
+      <group>
+   <text type="source">
+          <front>
+             <p> De esta carta, que es la respuesta al documento anterior de Andrés Masio, solo conservamos la minuta autógrafa de BAM. Constituye asimismo la primera de la serie de cartas que BAM envía en relación con la Prefación de la Biblia. Esta Prefación, por su lugar preeminente al frente de la obra, es quizás el trabajo que más veces revisa el supervisor de la Biblia Regia. El contenido de esta parte de la Biblia ya había sido tratado con los doctores de Alcalá. Pero una vez que le dio forma al guión exigido, quiso someterla al juicio y aprobación de todos los eruditos que directa o indirectamente habían ofrecido su apoyo y colaboración en la Políglota. </p>
+      </front>
+      <body>
+         <div type="main_content">
+            <pb n="f. 196r" ed="B" facs="#foto1"/>
+            <opener><app><lem wit="#B #E2">ישוע ענני</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app></opener>
+            <opener><name type="person" ref="#MasioAndres">Andreae Masio</name> <choice><sic><name type="place">Zeneueram</name></sic> <corr>Zeueneram</corr></choice>. </opener>
+            <p>[<hi rend="bold">1</hi>] Accepi literas tuas ad <date when="1570-04-19">XIII Kal<expan><ex>endas</ex></expan> Maii datas</date>, quae me initio mirifice delectarunt; in fine autem dolore affecerunt quod te, cum illas dares, non bene ualere significarent. <del>Spero iam te illud destillationis et grauedinis malum. </del> Existimo autem <del>et cupio uehementer</del> illud grauedinis ac destillationis malum tibi esse depulsum eiusque rei certior fieri uehementer cupio. Namque grauius ego laborare soleo opinione et cura ualetudinis amicorum quam ipsimet sensu. [<hi rend="bold">2</hi>] <del>Tuum</del> Tua <del>in</del> grammatica<del>m</del> Syrica<del>m</del> <del>lucubrationes et obseruationes</del> no<supplied>n</supplied> potuit mihi non gratissima <del>et magno usui esse</del> esse, quam uideo magno usui fore iis qui <del>eiusmo</del> huiusmodi delectantur studio. Eam igitur <del>sub</del> ad communem utilitatem et nominis tui laudem sacris et regiis Bibliis addemus una cum copia illa Syricorum uerborum, quam a te <del>expedimus</del> postulaui et <del>summopere postulo</del> quam citissime mittendam expecto. [<hi rend="bold">3</hi>] Quod autem mihi inscribere gram<supplied>m</supplied>aticam tuam constitueris <del>tantum</del> summi et maximi beneficii loco accipio. Tantum abest ut reiicere <app><lem wit="#B #E2">uelim.</lem> <rdg wit="#E2"><hi rend="italic">post</hi> uelim <hi rend="italic">non distinxit</hi></rdg></app> [<hi rend="bold">4</hi>] Quod enim ab eo quem <del>plurimum</del> uirtutis et <del>conditionis</del> doctrinae causa plurimum <app><lem wit="#B #E2">diligo,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> diligo <hi rend="italic">imum punctum posuit</hi></rdg></app> maius aut gratius expetere munus possum quam huiusmodi <subst><del>ab</del> <add place="above">ex</add></subst> ipsa uirtute et eruditione natum et ab amicitia honestissima profectum, aut quid <del>hon</del> uel <del>honestius uel</del> honestum uel illustre magis <del>nomine meo</del> mihi <choice><sic>contigere</sic> <corr>contingere</corr></choice> potest quam ut nomem meum ibi apelletur ubi tuum personat et auditur? [<hi rend="bold">5</hi>] Sed doleo ego <del>tamen</del> plurimum quod, cum gratiam habere tibi maximam et debeam et possim, referre tamen non possum. Verum tamen <del>si</del>, qua<supplied>m</supplied>uis officiis relatis <del>hu</del> istam tuam erga me humanitatem <del>.</del> rependere non <del>per</del> ualeam, memoria tamen et grati animi perpetuo obsequio <del>aequaturum me spero</del> et nominis tui apud omnes iucundissima mihi commendatione <del>et</del> satisfacturum me spero.  </p>
+            <p>[<hi rend="bold">6</hi>] Iussus fueram a rege meo praefationem Bibliis <del>componere</del> apponere <del>inqua</del> argumento ab eius consiliariis indicato, ut de Sacrorum Librorum <del>usu de linguarum</del> utilitate, de linguarum commoditate ac usu et de regis consilio quae opportuna mihi uiderentur exponerem. <del>ego</del> Eam ego his <del>superiori</del> proximis diebus, dum <name type="person" ref="#PlantinoCristobal">Plantinus</name> aberat, exaraui <del>qui</del>, cuius exemplum regi non ante mittere decreui quam tuo iudicio et egregio in me beneficio correctum haberem; cuius <del>opera</del> consilio et opera precipue me in toto hoc Bibliorum opere plurimum adiuuari apud regem <del>et consiliarios</del> regiosque consiliarios non semel per literas <del>sum</del> professus sum. [<hi rend="bold">7</hi>] Facies igitur et tua ista <subst><del>erga</del>  <add place="above"> in</add></subst> me beneuolentia et singulari erga Ecclesiam pietate atque <del>.</del> egregia eruditione dignissimum officium, si correctum exemplum uel omnino, si tibi ita uisum fuerit, immutatum quam citissime remiseris. Existimato autem non meum aut priuati cuiuspiam, sed tuum, sed commune catholicorum omnium opus hoc esse, quorum partes nihil minus tibi quam mihi sustinendae sunt. [<hi rend="bold">8</hi>] <del>satis apono</del> Arbitror satis latas margines ad notandum et corrigendum esse relictas. Vteris ergo arbitratu tuo, cui ego plurimum in rebus omnibus sum perpetuo tributurus. <del>summopere mihi placet</del> <pb n="f. 196v" ed="B" facs="#foto2"/>
+            </p>
+            <p>[<hi rend="bold">9</hi>] Quae de Graeca <del>.</del> Complutensium Bibliorum uersione antea scripseras quaeque nunc scripsisti <del>.</del> mihi mirum immodum probantur. Sed adhuc tuam sententiam de septuaginta duorum interpretatione desidero, qua de re alias oportunius <del>a me</del> per literas rogabo, quod has breuiores quam uolebam esse negotiorum frequentia cogit quibus in dies magis obruor. 
+            </p>
+            <closer>[<hi rend="bold">10</hi>] <salute>Vale</salute>. 
+               <name type="place">Antuerpiae</name>, <date when="1570-04-23">9 Kal<expan><ex>endas</ex></expan> Maias 1570</date>.</closer>
+         </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>
+            <div type="main_content">
+               <pb n="f. 196r" ed="B" facs="#foto1"/>
+               <opener>Jesús, respóndeme</opener>
+               <opener>Para Andrés Masio, en Zevenaar. </opener>
+               <p>[<hi rend="bold">1</hi>] Recibí la carta de vuestra merced con fecha del 19 de abril,<ref target="#note1"
+                  xml:id="reference1">1</ref> la cual al principio me agradó sobremanera; sin embargo, al final me entristeció porque me daba a entender que vuestra merced no se encontraba bien cuando la entregabas. Con todo, me imagino que se habrá librado vuestra merced del catarro y la secreción, y quiero que me tenga informado de ello. Pues suelo sufrir yo más por lo que se cree y por la preocupación por la salud de mis amigos que ellos mismos por su afección. [<hi rend="bold">2</hi>] La gramática siria de vuestra merced no pudo dejar de resultarme muy grata, la cual veo que será de gran utilidad para los que se deleitan con este tipo de estudios. Por tanto, la vamos a añadir para utilidad pública y gloria del nombre de vuestra merced a la Sagrada y Regia Biblia juntamente con el diccionario de palabras siríacas que pedí a vuestra merced y que espero que me sea enviado lo antes posible.<ref target="#note2"
+                     xml:id="reference2">2</ref> [<hi rend="bold">3</hi>] Respecto a la decisión de vuestra merced de dedicarme la gramática, la recibo como muestra del mayor y más grande favor. Pues nada está más lejos de mi intención que el querer rechazarlo. [<hi rend="bold">4</hi>] ¿Pues qué regalo mayor o más agradable puedo yo prdir de aquel a quien aprecio en mayor medida por su virtud y doctrina que uno de esta suerte creado por la propia virtud y erudición, y surgido de una amistad honestísima, o qué puede acaecerme más honesto o más ilustre que el hecho de que mi nombre sea pronunciado allí donde resuena y es oído el de vuestra merced? [<hi rend="bold">5</hi>] En cambio, estoy muy afligido porque aun cuando no solo deba, sino que también pueda estarle sumamente agradecido a vuestra merced, sin embargo no puedo corresponderle. Pero con todo, aunque no pueda corresponder con los servicios prestados a esta humanidad de vuestra merced para conmigo, sin embargo tengo la esperanza de resarcir a vuestra merced con el recuerdo, la deferencia constante de un espíritu agradecido y una muy placentera, para mí, recomendación de su persona ante todos.</p>
+               <p>[<hi rend="bold">6</hi>] Mi rey había ordenado poner un prólogo al frente de la Biblia conforme al argumento descrito por sus consejeros, de modo que expusiera lo que me pareciese oportuno acerca de la utilidad de los Libros Sagrados, la ventaja y utilidad de las lenguas, y la decisión del rey.<ref target="#note3"
+                  xml:id="reference3">3</ref> Este prólogo lo he redactado estos días pasados mientras Plantino estaba fuera,<ref target="#note4"
+                  xml:id="reference4">4</ref> cuya copia he decidido no enviársela al rey hasta que lo tenga corregido con la opinión y el valioso favor de vuestra merced, de cuyo consejo y ayuda he declarado más de una vez al rey y a sus consejeros que me he servido, especialmente yo, en todo el trabajo de la Biblia. [<hi rend="bold">7</hi>] Cumplirá vuestra merced, por tanto, una tarea dignísima con esa benevolencia suya para conmigo, con una piedad singular respecto a la Iglesia y con una erudición egregia, si me envía lo antes posible la copia corregida o complentamente modificada, en caso de que así hubiera parecido bien a vuestra merced. Considere, sin embargo, que este trabajo no es mío o de cualquier particular, sino de vuestra merced, de todos los católicos, cuyas causas debe vuestra merced asumir no menos que yo. [<hi rend="bold">8</hi>] Creo que se han dejado márgenes lo suficientemente amplios para hacer las anotaciones y correcciones. Use, por tanto, su juicio, al que siempre tendré en mucha consideración en todos los asuntos.  <pb n="f. 196v" ed="B" facs="#foto2"/>
+               </p>
+               <p>[<hi rend="bold">9</hi>] Respecto a lo que me había escrito vuestra merced ya antes acerca de la versión griega de la Políglota Complutense, y lo que me ha escrito ahora últimamente, lo apruebo sin reservas. Pero todavía espero la opinión de vuestra merced sobre la interpretación de los setenta y dos, acerca de lo cual le consultaré por cartas en otro momento, dado que el número de asuntos con los que cada día estoy más abrumado me obliga a que esta sea más breve de lo que yo quisiera.  
+               </p>
+               <closer>[<hi rend="bold">10</hi>] Adiós.
+                  En Amberes, a 23 de abril de 1570.
+               </closer>
+            </div>
+         </body>
+                <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Véase carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-04-19">1570 04 23</ref>. </note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> <title>Syrorum peculium. Hoc est, uocabula apud Syros scriptores passim usurpata: targumistis uero aut prorsus incognita: aut in ipsorum uocabulariis adhuc non satis explicata. Andreas Masius sibi suae memoriae iuuandae caussa colligebat</title> (Antuerpiae: ex officina Christophori Plantini, MDLXXI). Véase copia digital en <ref target="https://bdh.bne.es/bnesearch/detalle/bdh0000095064">Biblioteca Digital Hispánica.</ref> </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Cf. Macías, <title>La Biblia Políglota de Amberes</title>, docs. n<hi rend="sup">os</hi> 14, 17 y 18.</note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Cristóbal Plantino había acudido a la feria de Fráncfort.</note>  
+            </div>
+          </back>
+   </text>
+      </group>
+   </text>
+</TEI>
