@@ -1,0 +1,162 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700213">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) al Duque de Alba (Bruselas) - 13 de febrero de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 02 13</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Francis Englefield brought the list of English Catholics living in the Low Countries. Alms assigned by the king to these Catholics has been divided into three chapters: monasteries; learned and ecclesiastical persons stripped of their property; and needy people who in the future could earn their own livelihood. Then BAM proposes two ways of distributing alms among these English Catholics. Henceforth Engelfield will be responsible for collecting and distributing the money. Along with this letter, BAM sends Juan Vargas his warnings about printers.
+            </note>
+            <note type="incipit">Francisco Inglefild vino aquí a los onze deste...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(O) AGS, E 583/17.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 168-171.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 344-351.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 168-171;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 344-351.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="EnglefieldFrancisco">
+                  <note>Francisco Englefield (1522-1596), cortesano inglés; consejero de María Tudor; católico inglés exiliado en Flandes. </note></person>
+               <person xml:id="HargatEdmundo">
+                  <note>Sacerdote católico inglés exiliado en Flandes. </note></person>
+               <person xml:id="VargasJuande">
+                  <note>Juan de Vargas (fl. 1572), miembro del Tribunal de los Tumultos. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-02-13">13 de febrero de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Duque de Alba</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1570-02-14">14 de febrero de 1570</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Benito Arias Montano</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-05-28">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/05/AGS-E-583-17-1r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/05/AGS-E-583-17-1v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/05/AGS-E-583-17-2r.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/05/AGS-E-583-17-2v.jpg" xml:id="foto4"/>
+   </facsimile>
+   <text>
+      <front>
+         <p> Este documento da noticia de otra de las misiones encomendadas a BAM por el duque de Alba, la adjudicación y reparto de la limosna española para los católicos ingleses residentes en Flandes. La carta del BAM al gobernador de los Países Bajos vio la luz en <title>Codoin</title>; los documentos anexos a la misma contienen la lista de los ingleses católicos exiliados en Flandes, más dos formas alternativas de reparto de la limosna entre los mismos (AGS E, 583/18). El primero de estos anexos (AGS E, 583/18-1) es resumido con el siguiente título: «Los nombres de los ingleses cathólicos que se entretienen en Flandes»; al comienzo del mismo leemos el siguiente encabezado: «Nomina, status et conditiones Anglorum propter fidem in Belgia exulantium octauo die februarii anno 1570»; el segundo de los anexos (AGS E, 583/18-2) es resumido por BAM con el título de «Distribución de la limosna para los ingleses» y contiene la propuesta de reparto de Engelfield (en su encabezado presente el siguiente texto: «Ordo et ratio distributionis quatuor millium florenorum annuatim distribuendorum ex mandato Philippi Regis Catho[li]ci Religionis sacerdotibus et studiosis Catholicis Anglis in Belgio commorantibus. A die prima februarii mensis anni millesimi quintentesimi septuagesimi et deinceps»); el tercer anexo (AGS E, 583/18-3) contiene la propuesta de distribución de la limosna defendida por BAM.    </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [2v]" ed="0" facs="#foto4"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Al ill<expan><ex>ustrísi</ex></expan>mo y exc<expan><ex>elentísi</ex></expan>mo s<expan><ex>eñ</ex></expan>or el <name type="person" ref="#AlvarezdeToledoFernando">duque D’Alva</name>, mi s<expan>eñ</expan>or, en su corte. <app><lem wit="#O #E2"><name type="place">Bruselas</name></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>. </ab>
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><app><lem wit="#O #E2"><name type="place">Enveres</name>. A Su Exc<expan><ex>elenci</ex></expan>a 1570. El doctor <name type="person">Arias</name> <date when="1570-02-13">13 de hebrero</date>. A <date when="1570-02-14">14 dél</date>. Para embiar a S<expan><ex>u</ex></expan> M<expan><ex>agesta</ex></expan>d.</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> Sobre el repartimiento de los 4 <expan><ex>mill</ex></expan> florines <app><lem wit="#O #E1">de renta</lem> <rdg wit="#E2"><hi rend="italic">omisit</hi></rdg></app> cada año que se da a los ingleses. </ab>
+         </div>
+         <div type="main_content">
+            <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustrísi</ex></expan>mo y ex<expan><ex>celentísi</ex></expan>mo s<expan><ex>eñ</ex></expan>or:
+            </opener>
+            <p>[<hi rend="bold">1</hi>] <name type="person" ref="#EnglefieldFrancisco">Fran<expan><ex>cis</ex></expan>co Inglefi<supplied>l</supplied>d</name><ref target="#note1" xml:id="reference1">1</ref>  vino aquí a los <date when="1572-02-11">onze deste</date> y traxo la lista de los ingleses religiosos y clérigos, y estudiantes y legos que hay en estos Estados en <name type="place">Lovayna</name>, <name type="place">Brujas</name>, <name type="place">Anvers</name>, <name type="place">Malinas</name>, <name type="place">Bergas</name>, <name type="place">Duay</name>, y en otras partes.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Pusimos en tres capítulos la summa de lo que <app><lem wit="#O #E2">Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan></lem> <rdg wit="#E1">S. M<hi rend="sup">d</hi></rdg></app> les haze m<expan><ex>erce</ex></expan>d, repartida a tres monasterios<ref target="#note3" xml:id="reference3">3</ref> que <app><lem wit="#O #E2">Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan></lem> <rdg wit="#E1">S. M<hi rend="sup">d</hi></rdg></app>, pidiéndolos a la reyna de <name type="place">Inglaterra</name>, hizo venir a estos Estados, que son de pers<expan><ex>on</ex></expan>as nobles y necessitadíssimas. [<hi rend="bold">3</hi>] Se constituyeron primeramente sus porciones a razón de quarenta y cinco florines por año a cada pers<expan><ex>on</ex></expan>a, que es lo menos que pudimos arbitrar para comida y vestido, que de ninguna parte tienen socorro estos.</p>
+            <p>[<hi rend="bold">4</hi>] El segundo capítulo fue de pers<expan><ex>on</ex></expan>as nobles, doctas, <app><lem wit="#O #E2">ecclesiásticas</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> y despojadas de sus <app><lem wit="#O #E2">bienes. A algunos dellos</lem><rdg wit="#E1">bienes, algunos dellos</rdg></app>, por ser muy notoria su pobreza y que no tienen de donde la <app><lem wit="#O #E2">remediar,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> remediar <hi rend="italic">imum punctum posuit</hi></rdg></app> se les assignó cierta porción. Entre estos es uno en quien estuvimos diferentes Inglefi<supplied>l</supplied>d e yo, por no saber <app><lem wit="#O #E2">yo</lem><rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> la voluntad de <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Ex<expan><ex>celenci</ex></expan>a</lem> <rdg wit="#E1">V. E.</rdg></app> en este particular, y es <name type="person" ref="#HargatEdmundo">Edmundo Hargat</name>,<ref target="#note4" xml:id="reference4">4</ref> que <name type="person" ref="#EnglefieldFrancisco">Inglefi<supplied>l</supplied>d</name> dezía devérsele particularmente assignar cien florines por ser recomendado encarecidamente a <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. E.</rdg></app>.  E yo, diziendo que no tenía tal noticia y que era poco paño para cortar y cubrir muchos, no me conformaba con él, y ambos dexamos este nombre a la disposición y mandato de <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. E.</rdg></app>.</p>
+            <p>[<hi rend="bold">5</hi>] En el tercero capítulo restavan cinq<expan><ex>uen</ex></expan>ta y seis pers<expan><ex>on</ex></expan>as entre sacerdotes, estudiantes y legos, los quales son pobres, empero algunos dellos pers<expan><ex>on</ex></expan>as que podrán, el tiempo andando, hallar commodidades con que puedan bivir sin la limosna, y otras muy necessitadas <app><lem wit="#O #E2">y</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> que no pueden encubrir sus necessidades, y otras que las encubren lo mejor que pueden, mas que tienen noticia dellos y de sus necessidades ciertos buenos sacerdotes, que son como maestros y consoladores de los demás. [<hi rend="bold">6</hi>] Y porque era poco el resto entre tantos, pusimos una de dos formas, dexando a <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. E.</rdg></app> la approbación de quál mejor le pareciere. La una fue <pb n="f. [1v]" ed="O" facs="#foto2"/> que el número de aquellas pers<expan><ex>on</ex></expan>as honradas y beneméritas a las quales se assignasse una cierta porción cada año llegasse a diez y siete nombrados,<ref target="#note5" xml:id="reference5">5</ref> y que el resto del dinero se repartiesse cada año por manos, arbitrio y consciencia de cinco repartidores,<ref target="#note6" xml:id="reference6">6</ref> pers<expan><ex>on</ex></expan>as principales que nombramos, y estos lo repartiessen a las pers<expan><ex>on</ex></expan>as que se nombran en el tercero dicho capítulo, conforme a la necessidad y dignidad que ellos conocían en cada uno, porque a estos les sería cierto quándo uno tenía necessidad y quánta, y quándo salía della. Y escrivírían cada año la razón deste repartimi<expan><ex>ent</ex></expan>o. Porque repartirlo nosotros por nombres era cosa incierta, y allende desto estar nombrada la porción que a cada uno se le havía de dar era indigno del nombre de limosna real, no pudiendo caber a cada uno, unos con otros, ocho o diez florines, y era la misma cosa y más cierta y con más honrado título dezir mill florines, para que se repartan entre los demás, conforme a la necessidad del que la tuviere. Esta fue la primera forma, que va con esta. </p>
+            <p>[<hi rend="bold">7</hi>] La segunda fue que, por parecer también poca la parte que a los dottores y pers<expan><ex>ona</ex></expan>s dignas se les assignava en aquel número de diez y siete, que era a unos quarenta y a otros veinte, etc., quedassen nombrados los quatro que tenían manifestíssima necessidad y ningún socorro, y los demás fuessen con los otros al arbitrio de los repartidores; porque ellos admittirían y echarían fuera al que les pareciesse tenía o no tenía necessidad de la dicha limosna y ternían su libro de la razón desto cada año. Ambas van con esta, para que <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. E<hi rend="sup">a</hi>.</rdg></app> lo mande ordenar como más servido sea.</p>
+            <p>[<hi rend="bold">8</hi>] Una cosa tengo por aviso, en la qual <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. V. E<hi rend="sup">a</hi>.</rdg></app> mandará dar la orden que sea servido, que a los monasterios de <name type="place">Brujas</name> se les deve entera la limosna de todo el año pasado, cumplido por la Navidad próxima, que no se les ha dado, porque dizen han tenido difficultosa cobrança, y han comido sobre taja a esperança <app><lem wit="#O #E2">del</lem> <rdg wit="#E1">de</rdg></app> cobrar. </p>  
+            <p>[<hi rend="bold">9</hi>] <name type="person" ref="#EnglefieldFrancisco">Inglefi<supplied>l</supplied>d</name> se encarga de la cobrança de aquí adelante, y del entrego a las pers<expan><ex>on</ex></expan>as nombradas y a los repartidores. [<hi rend="bold">10</hi>] Y <app><lem wit="#O #E2">supp<expan><ex>li</ex></expan>ca</lem> <rdg wit="#E1">suplico</rdg></app> a <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. E<hi rend="sup">a</hi>.</rdg></app> sea servido mandar nombrar día de las soluciones y poner en buenos sitios la paga <app><lem wit="#O #E2">dellas</lem> <rdg wit="#E1">dellos</rdg></app> en cosas que sean ciertas, porque <app><lem wit="#O #E2">dize</lem> <rdg wit="#E1">dicen</rdg></app> haver andado nueve meses tras los de finanças por cobrança de una limosna particular, uno a quien se libró. <pb n="f. [2r]" ed="O" facs="#foto3"/> </p>
+            <p>[<hi rend="bold">11</hi>] Los advertim<expan><ex>ient</ex></expan>os acerca de las emprentas embío en este paquete a <name type="person" ref="#VargasJuande">Ju<expan><ex>an</ex></expan> de Vargas</name>,<ref target="#note7" xml:id="reference7">7</ref> que por mandado de <app><lem wit="#O #E2">V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a</lem> <rdg wit="#E1">V. E<hi rend="sup">a</hi>.</rdg></app> me los ha embiado a pedir.</p>
+            <p><add hand="#unknown" place="margin">Quédanse haziendo los placartes para la publicación.</add></p>
+            <closer>[<hi rend="bold">12</hi>] <salute>Cuya ill<expan><ex>ustrísi</ex></expan>ma y exc<expan><ex>elentísi</ex></expan>ma pers<expan><ex>on</ex></expan>a y casa Nuestro S<expan>eñ</expan>or prospere en su servi<expan><ex>ci</ex></expan>o</salute>. En <name type="place">Anvers</name>, <date when="1570-02-13">13 de febr<expan><ex>er</ex></expan>o 1570</date>.
+               Ill<expan><ex>ustrísi</ex></expan>mo y exc<expan><ex>elentísi</ex></expan>mo s<expan><ex>eñ</ex></expan>or.
+               Besa las ill<expan><ex>ustrísi</ex></expan>mas manos de V<expan><ex>uestra</ex></expan> Exc<expan><ex>elenci</ex></expan>a su criado y capellán, 
+               <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> <app><lem wit="#O #E2"><foreign>تلميد </foreign></lem> <rdg wit="#E1">omisit</rdg></app>  </signed></closer></div>
+      </body>
+      <back>
+         <div type="notes">
+            <note type="footnote" xml:id="note1">
+               <ref target="#reference1">1</ref> En los listados donde se desglosa el reparto de la limosna (AGS E 583/18) Francis Englefield figura como noble laico con familia de ocho miembros. BAM anota sistemáticamente el apellido del inglés como «Inglefid» en lugar de «Inglefild». Sir Francis Englefield (ca. 1520-1596), político inglés católico, fue el hijo mayor del juez Sir Thomas Englefield de Englefield, Berkshire. Francis, que sucedió a su padre en 1537, era demasiado joven para tomar parte en la oposición a la abolición de la jurisdicción romana y la disolución de los monasterios, e incluso llegó a tomar el juramento de supremacía real. Pero el posterior desarrollo de los acontecimientos y el recrudecimiento de la reforma le hicieron apartarse de la corona inglesa, hasta el punto de ser encarcelado en la Torre en agosto de 1551 y juzgado de nuevo en febrero de 1553. Al servicio de la princesa María desde 1551, con la sucesión de Isabel I perdió el puesto que ocupaba en el Consejo Privado. Antes de mayo de 1559 pasó ya al continente, donde desarrollaría hasta su muerte un intenso papel en todos los planes para la restauración del catolicismo en Inglaterra, apostando al principio por la vía diplomática, pero abogando finalmente por la intervención de España. Englefield acabó sus días en Valladolid; ciego durante los últimos veinte años de su vida, recibió una pensión de seiscientas coronas de Felipe II. Cf. <title>Encyclopaedia Britannica</title>, XI (1911), s. v. <ref target="https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Englefield,_Sir_Francis">Englefield</ref>, que remite a <title>Dictionary of National Biography</title>, XVII, 372-374.     </note> 
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> El listado que trajo Engelfield a BAM debe de ser aquel al que nos hemos referido en el comentario de la presente carta como anexo 1 (AGS E, 583/18-1), conteniendo, según descripción del propio BAM, «Los nombres de los ingleses cathólicos que se entretienen en Flandes».    </note> 
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Se hace referencia aquí al convento de los cartujos ingleses que residían en la ciudad de Brujas, el convento de las monjas de la orden de Santa Brígida procedentes de la abadía de Sión y el convento de las monjas de Bedforde de la orden de Santo Domingo residentes en Brujas. Según los ya citados documentos anexos a esta carta la suma asignada a estos tres monasterios ascendía a 2600 florines, con la siguiente distribución: 45 florines a cada uno de los 24 frailes del convento de Brujas, es decir, un total de 1120 florines; 43 florines para cada una de las 26 monjas de Santa Brígida, es decir, 1120 florines en total; y 45 florines para cada una de las 8 monjas de Bedforde, o 360 florines en total.   </note> 
+            <note type="footnote" xml:id="note4">
+               <ref target="#reference4">4</ref>  Edmundo Hargat, que figura en los listados como sacerdote desprovisto de cualquier renta para hacer frente a los mínimos gastos de comida y ropa, fue recomendado por el duque de Feria para que su manutención ascendiera a 100 florines anuales frente a los 45 florines asignados a la mayoría de personas en su misma situación. BAM parece no transigir con esta recomendación. </note>
+            <note type="footnote" xml:id="note5">
+               <ref target="#reference5">5</ref>  El listado de estos diecisiete nombrados puede leerse en AGS E 583/18-3. Sus nombres y la asignación propuesta a cada uno son los siguientes: en primer lugar se citaba a un grupo de sacerdotes que incluía a Edmundo Hargat (sin asignación propuesta); Thomas Harding (40 florines al año); Nicolas Saunder (40 florines al año); William Taylor (30 florines al año); Thomas Wilson (30 florines al año); Thomas Bayly (30 florines al año); Laurentius Webb (30 florines al año); Thomas Hyde (20 florines al año); y Gregory Bell (20 florines). Viene después un grupo de intelectuales no iniciados aún en el sacerdocio, entre los que se encuentran William Knott (30 florines); Alan Coope (30 florines); John Fen (30 florines); Roger Rames (20 florines); Robert Tempest (20 florines); William Swymborne (20 florines); William Coniers (20 florines); y Robert Redman (40 florines).          
+            </note> 
+            <note type="footnote" xml:id="note6">
+               <ref target="#reference6">6</ref>  Como se especifica en el documento anexo AGS E 583/18-3, los distribuidores elegidos para repartir la limosna entre los ingleses fueron Thomas Harding, Nicolas Saunder, Thomas Wilson, Thomas Bayly y Gregory Bell.          
+            </note> 
+            <note type="footnote" xml:id="note7">
+               <ref target="#reference7">7</ref> Hasta esta palabra la frase aparece subrayada. Sobre Juan de Vargas, oidor de la Cancillería de Valladolid y posteriormente miembro del «Consejo de Turbas», véase nota biográfica en carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-06-14">1568 06 14</ref>.   </note>
+         </div>
+      </back>
+   </text>
+</TEI>
