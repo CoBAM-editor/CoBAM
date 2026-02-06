@@ -1,0 +1,170 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15691024">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Maximiliano Morillon (Bruselas) a Benito Arias Montano (Amberes) - 24 de octubre de 1569 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez - Jeanine De Landtsheer </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1569 10 24</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Morillon has received a letter from BAM informing him that his visit to the Abbey of Afflighem was very satisfactory. Morillon promises his collaboration to obtain catalogs of the libraries from the abbots in his jurisdiction and for any other new matter that arises. He sends greetings from Brussels to Plantin's family circle.
+            </note>
+            <note type="incipit">Perspexi tuum candorem atque humanitatem...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C1">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Germany</country>
+                        <settlement>Hamburg</settlement>
+                        <msName>Staats- und Universitätsbibliothek Hamburg</msName>
+                        <altIdentifier>
+                           <idno>(C1) SUBH, Sup. ep. (4º) 7, f. 76r; </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C2">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Belgium</country>
+                        <settlement>Brussels</settlement>
+                        <msName>Archives Générales du Royaume/Algemeen Rijksarchief</msName>
+                        <altIdentifier>
+                           <idno>(C2) Manuscrits Divers 187, f. 73r; </idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C3">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Belgium</country>
+                        <settlement>Brussels</settlement>
+                        <msName>Bibliothèque royale de Belgique / Koninklijke Bibliotheek van België</msName>
+                        <altIdentifier>
+                           <idno>(C3) Ms. 7400/113, f. 139v-140r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> H. De Vocht, «Stephani Vinandi Pighii epistolarium», in <title>Humanistica Lovaniensia</title>, 15 (Lovaina, 1959), pp. 275-277.</witness>
+              <witness xml:id="E2">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 268-275.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firsPrint">(E1) De Vocht, <title>Pighii epistolarium</title>, pp. 275-277;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 268-275.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+               P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MorillonMaximiliano">
+                  <note>Maximiliano Morillon (1516/7-27 de marzo 1586), político, dignatario eclesiástico, después obispo de Tournai. Fue protegido por Granvela y Viglio, y gracias a ellos hizo una brillante carrera política y religiosa. Cuando en 1545 Antonio Perrenot se convierte en obispo de Arras, se lleva a Maximiliano hacia su círculo asegurándole las canonjías en Arras, Malinas y Bruselas, a lo que Felipe II añadió la prebostía en Aire. Cuando en 1561 Granvela se convierte en arzobispo de Malinas, nombró a Morillon arcediano y vicario general, erigiéndole en la principal autoridad de la diócesis tras la marcha del arzobispo en 1564. En 1580 Granvela le propone ante Felipe II como obispo de Tournai, nombramiento que la hostilidad de Juan Fonck y la ocupación de la ciudad por las tropas de los Estados retarda más de dos años. Fue consagrado el 23 de octubre de 1583. Cf. BNB, XV (1899), cols. 267-273; BIB, III, 994.</note>
+               </person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="PighiusStephanus">
+                  <note>Stephanus Winandus (o Vinandus) Pighius (Kampen, 1520 - Xanten, 16 de octubre de 1604) fue un humanista y anticuario holandés. Pighius se convirtió en secretario y bibliotecario del cardenal Antoine Perrenot de Granvelle en Bruselas, cargos que ocupó hasta 1571, aunque el propio Granvelle tuvo que abandonar Bruselas en 1564. Durante este tiempo publicó una edición de Valerius Maximus (Amberes: Plantino 1567).   </note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Maximiliano Morillon</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1569-08-07">24 de octubre de 1569</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Mano desconocida</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-02-22">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/03/SUBH-Sup.-Ep.-4o-7-f.-76r.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+         <front>
+         <p> La carta se encuentra publicada en el epistolario de Pighius, quien la escribió en nombre de Morillon (de Vocht, <title>Pighii epistolarium</title>, carta 173, p. 277). No se ha preservado la carta original de Morillón, que posiblemente acabó entre los papeles de Pighio que, después de su muerte en 1604, pasaron junto con el resto de su legado manuscrito a la Biblioteca Estatal de Prusia de Berlín. En cuanto a las cartas, alcanzarían el número de 266 piezas originales, de o a Pighius, pero desaparecieron hace tiempo de la biblioteca berlinesa: de estas cartas se conservan tres copias de calidad diversa, procedentes como muy pronto del año 1725: la del manuscrito de Hamburgo (SUBH, Sup. ep. (4º) 7, f. 76r), que preserva el mejor estado textual de toda la transmisión manuscrita, y dos manuscritos bruselenses, aparentemente dependientes del manuscrito de Hamburgo (ARA, Manuscrits Divers 187, fol. 73r y BRB, Ms. 7400/113, fol. 139v-140r). Sobre esta transmisión véase J.H. Jongkees, «Stephanus Winandus Pighius Campensis», <title>Mededelingen van het Nederlands Historisch Instituut te Rome</title> 8 (1954) 120-185 (p. 190) y Domínguez, <title>Correspondencia</title>, I, 301.
+             </p>
+         </front>
+         <body> 
+            <div type="main_content">
+               <pb n="f. 76r" ed="C1" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] <app> <lem wit="#E1 #E2">Perspexi</lem> <rdg wit="#C1 #C2 #C3">D. Arrio Montano 24  Oct. pro Morillonio. Perspexi</rdg></app> tuum candorem atque humanitatem, mi <name type="person" ref="#AriasMontanoBenito">Montane</name>, <app><lem wit="#C1 #C2 #E1 #E2">ex tuis literis</lem><rdg wit="#C3">ex litteris tuis</rdg></app> <app><lem wit="#C1 #C2 #C3 #E2"><name type="place">Affligemio</name></lem><rdg wit="#E1">Affligemii</rdg></app> datis et uehementer placuit gratum istud fuisse hospitium, atque non paenituisse suscepti itineris, quod deinceps commodum atque felix uobis <app><lem wit="#E1 #E2">opto</lem> <rdg wit="#C1 #C2 #C3">optu</rdg></app>. [<hi rend="bold">2</hi>] <app><lem wit="#E2"><name type="person" ref="#AlbornozJuande">Albornotio</name></lem> <rdg wit="#C1 #C2 #C3 #E1">Albernotio</rdg></app> tuas <app><lem wit="#C1 #C2 #E1 #E2">literas</lem> <rdg wit="#C3">litteras</rdg></app> reddi curauimus et de indicibus <app><lem wit="#C1 #E1 #E2">bibliothecarum </lem> <rdg wit="#C2 #C3">bibliothecatum</rdg></app> mihi modo sedulo curae futurum est, ut <app><lem wit="#C1 #C2 #E1 #E2">satisfiat</lem> <rdg wit="#C3">satisfaciat</rdg></app>  expectatione tuae, concepitque iam meo iussu <name type="person" ref="#PighiusStephanus">Pighius</name> noster de ea re <app><lem wit="#C1 #C2 #E1 #E2">literas</lem> <rdg wit="#C3">litteras</rdg></app> amicis praelatis dandas. Insuper, si quae imposterum occurrent, in quibus usui ac seruitio d<expan><ex>ominationi</ex></expan> u<expan><ex>estrae</ex></expan> esse potero, promptissimum me semper merito inueniet. [<hi rend="bold">3</hi>] <name type="person" ref="#PlantinoCristobal">Plantinus</name> non poterit non esse commendatus d<expan><ex>ominationi</ex></expan> tuae. Affinis et soror, item <name type="person" ref="#PighiusStephanus">Pighius</name>, plurimam salutem uicissim remittunt <app><lem wit="#C1 #C2 #C3 #E2">uxorculae et <name type="person">Isabellulae</name></lem> <rdg wit="#E1"> &lt;; sic etiam&gt; uxorcula Isabellula</rdg></app>, <app><lem wit="#E1 #E2">quae</lem> <rdg wit="#C1 #C2 #C3">qui</rdg></app> uobis in amoribus est. </p> </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>       
+            <div type="main_content">
+                  <pb n="f. 76r" ed="C1" facs="#foto1"/>
+               <p>[<hi rend="bold">1</hi>] He apreciado<ref target="#note1" xml:id="reference1">1</ref> bien el candor y amabilidad de vuestra merced, mi querido Montano, por la carta que me envió desde Afflighem,<ref target="#note2" xml:id="reference2">2</ref> y me complació sobremanera que resultase del agrado de vuestra merced ese alojamiento y que no se haya arrepentido de empreder el viaje, que les deseo a vuestras mercedes<ref target="#note3" xml:id="reference3">3</ref> cómodo y exitoso en adelante. [<hi rend="bold">2</hi>] Nos hemos encargado de que la carta de vuestra merced sea entregada a Albornoz,<ref target="#note4" xml:id="reference4">4</ref> y en cuanto a los catálogos de las bibliotecas me ocuparé al punto de forma diligente de que se dé satisfacción a la expectativa de vuestra merced, y ya nuestro querido Pighio<ref target="#note5" xml:id="reference5">5</ref> ha pergeñado una carta sobre este asunto para remitirla a los amigos abades.<ref target="#note6" xml:id="reference6">6</ref> Además, si en adelante surge algún asunto en el que pueda servir a vuestra señoría, siempre me tendrá preparado como merece. [<hi rend="bold">3</hi>] Plantino no podrá dejar de ser recomendado a vuestra señoría. Mi cuñado y mi hermana,<ref target="#note7" xml:id="reference7">7</ref>  igual que Pighio, devuelven sus cordiales saludos a su querida esposa y Isabelita,<ref target="#note8" xml:id="reference8">8</ref> a las que tanto quiere vuestra merced.     </p>  
+            </div>        
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Maximiliano Morillon (1516/7-27 de marzo 1586), político, dignatario eclesiástico, después obispo de Tournai. Fue protegido por el cardenal Granvela y por el consejero Viglio, y gracias a ellos hizo una brillante carrera política y religiosa. Cuando en 1545 Antonio Perrenot se convierte en obispo de Arras, se lleva a Maximiliano hacia su círculo asegurándole las canonjías en Arras, Malinas y Bruselas, a lo que Felipe II añadió la prebostía en Aire. Cuando en 1561 Granvela se convierte en arzobispo de Malinas, nombró a Morillon arcediano y vicario general, erigiéndole en la principal autoridad de la diócesis tras la marcha del arzobispo en 1564. En 1580 Granvela le propone ante Felipe II como obispo de Tournai, nombramiento que la hostilidad de Juan Fonck y la ocupación de la ciudad por las tropas de los Estados retarda más de dos años. Fue consagrado el 23 de octubre de 1583. Cf. <title>BNB</title>, XV (1899), cols. 267-273; <title>BIB</title>, III, 994.</note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Abadía benedictina de Bélgica, ubicada en la provincia del Brabante Flamenco, a unos veinte kilómetros al noroeste de Bruselas. La carta de BAM a Morillón no ha sido localizada y debió de haber sido escrita uno o dos días antes que esta respuesta de Morillón. En ella, nuestro humanista agradecía a Morillón el buen trato que, por su intercesión, había recibido en dicha abadía, donde pasó unos días revisando los libros y manuscritos que podrían ir destinados a la Biblioteca de El Escorial. </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Entiéndase, a BAM y a Plantino, quien acompañó al biblista en este viaje a la abadía de Afflighem, según se desprende de la carta de Pighius a Andreas Masius del 15 de noviembre de 1569, publicada por De Vocht, <title>Pighii epistolarium</title>, nº 176, p. 282. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> La carta de BAM a Morillón iba acompañada de otra dirigida al secretario del duque de Alba, Juan de Albornoz, y probablemente escrita pocos días antes del 29 de octubre. Morillón, que residía en Bruselas, hizo llegar esta carta a su destinatario final. Dicha carta de BAM a Albornoz tampoco ha podido ser localizada.    </note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Stephanus Winandus (o Vinandus) Pighius (Kampen, 1520 - Xanten, 16 de octubre de 1604) fue un humanista y anticuario holandés. Formado como filólogo en Lovaina, realizó un viaje a Italia entre 1548 y 1555 donde pudo refinar sus conocimientos arqueológicos con grandes humanistas del momento como Jean Matal o Antonio Agustín. En 1556 regresa a los Países Bajos y se convierte en secretario y bibliotecario del cardenal Antoine Perrenot de Granvelle en Bruselas, cargos que ocupó hasta 1571, aunque el propio Granvelle tuvo que abandonar Bruselas en 1564. Durante este tiempo publicó una edición de Valerius Maximus (Amberes: Plantino 1567). Por mediación de Andreas Masius, a partir de 1571 entra al servicio del príncipe heredero Karl Friedrich de Kleve, a quien acompaña en sus viajes por Austria e Italia. Tras la muerte del príncipe, en 1575, Pighio es nombrado canónigo en Xanten, cargo que ocupa hasta su muerte dedicado también a la composición de sus grandes obras, entre las que destacan sus <title>Annales Romanorum</title> en tres tomos, el primero editado en 1598, y los dos últimos editados de forma póstuma en 1615 a cargo de Andreas Schoto. Puede leerse una completa entrada bibliográfica sobre Pighio en la web del <ref target="https://centrocil.web.uah.es/Anticuarios/Textos/pighi.htm">Corpus Inscriptionum Latinarum II</ref> de la Universidad de Alcalá.    </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Dicha carta está publicada en De Vocht, <title>Pighii epistolarium</title>, nº 174, pp. 277 ss. Con objeto de ahorrar tiempo y energía en sus pesquisas sobre los fondos bibliográficos de interés de las abadías y conventos de Flandes, BAM decide utilizar la influencia de Morillón para solicitar a los distintos abades bajo su jurisdicción que elaboraran ellos mismos los listados de libros y manuscritos de sus bibliotecas y se los hiciesen llegar a él. Sobre este viaje y su encuentro con BAM también ofrece detalles Pighius en su citada carta a Masius del 15 de noviembre de 1569 (cf. De Vocht, <title>Pighii epistolarium</title>, nº 176).        </note> 
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> La hermana de Morillon, Marie, estaba casada con Didier van 't Sestich, miembro del Consejo de Brabante desde 1569 y, en 1580, canciller de Brabante. Algunos datos sobre Didier van 't Sestich y su entorno familiar pueden leerse en E. van Even, «Nouveaux renseignements sur le séjour à Louvain de Gui Morillon, secrétaire de Charles-Quint, et de sa famille», <title>Messager des sciences historiques ou archives des arts et de la bibliographie de Belgique</title> (1877), pp. 166-167.       </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Aunque parece que la esposa mencionada se refiere a la de Cristóbal Plantino, no hemos hallado referencias para identificar a esa querida Isabelita a quien envía saludos Pighio y que BAM tenía entre su círculo más íntimo de Amberes.       </note> 
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
