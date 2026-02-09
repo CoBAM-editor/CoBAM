@@ -1,0 +1,184 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700501G">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a"> Cornelio Gemma (Lovaina) a Benito Arias Montano (Amberes) - 1 de mayo de 1570 </title>
+            <author>Cornelio Gemma</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 01 G</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Gemma has corrected the prologue of the Bible written by BAM, although he expresses feelings of not being up to the task. He is impressed by the form and subject of the text. He just sends some corrections regarding the wording and suggestes adding a comparison of Philip II to the Roman kings. He thanks again BAM for his recommendation to the Spanish court. Soon he will go to visit Montano. He also invites him to his ceremony of doctorate that will take place on 22 May. </note>
+            <note type="incipit">Clarissime domine doctor et patrone obseruandissime, si sus (quod aiunt) uocanda ad opus Mineruae fuit...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 114r-115v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> F. Van Ortroy, <title>Bio-bibliographie de Gemma Frisius, fondateur de l'École belge de Géographie, de son fils Corneille et de ses neveux les Arsenius</title> (Bruselas, 1920 = Amsterdam, 1966), pp. 413-415.</witness>
+               <witness xml:id="E2"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 188-189, nº 33.</witness>
+               <witness xml:id="E3"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 420-427.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Van Ortroy, <title>Bio-bibliographie de Gemma Frisius</title>, pp. 413-415; </bibl>
+            <bibl type="inextenso" n="firstPrint">(E2) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 180-183; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E3) Domínguez, <title>Correspondencia</title>, I, 390-395.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="GemmaCornelius">
+                  <note>Médico, astrónomo y astrólogo; el hijo mayor del catógrafo y fabricante de instrumetos matermáticos Gemma Frisio; catedrático de Medicina en Lovaina. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="SevillaFernandode">
+                  <note>Mercadés cordobés establecido en Amberes y gran amigo personal de Montano. Fernando de Sevilla aparece con cierta frecuencia en la correspondencia de Arias Montano entre 1570 y 1572. En el capítulo de saludos que Plantino envía a Montano tras su marcha de Amberes, suelen aparecer de forma ligada los nombres del banquero Luis Pérez, Fernando Ximénez y Fernando de Sevilla (véase, por ejemplo, carta de Plantino a Montano en 77 05 14). A Fernando de Sevilla pertenecía el ejemplar de los Opera Omnia de Erasmo que se confió a la Faculta de Teología de Lovaina la expurgación de las obras del humanista holandés con vistas al Index expurgatorius qui hoc saeculo prodierunt (Amberes, 1571), ejemplar de la edición publicada en 1538 por Jérôme Froben y Nicolas Episcopius en Basilea, actualmente en depósito de la biblioteca de la Facultad de Teología de la Universidad Católica de Lovaina.
+                  </note></person> 
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Cornelio Gemma</persName>
+               <settlement>Lovaina</settlement>
+               <date when="1570-05-01">1 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Cornelio Gemma</handNote>
+            <handNote>El añadido en el margen del sobrescrito es de Benito Arias Montano</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2023-08-27">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/KBS-Ms.-A-902-f.-114r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/KBS-Ms.-A-902-f.-114v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/KBS-Ms.-A-902-f.-115r.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/KBS-Ms.-A-902-f.-115v.jpg"
+         xml:id="foto4"/>
+   </facsimile>
+        <text>
+      <group>
+   <text type="source">
+          <front>
+             <p> Las tempranas relaciones que encontramos entre Cornelio Gemma y BAM se pueden rastrear desde el 9 de noviembre de 1568. El joven Cornelio no duda en acudir al legado del rey para solicitar su favor en relación con una plaza de profesor de medicina en Lovaina. El juicio que Gemma emite sobre la prefación de la Biblia está demasiado cargado de servilismo y gratitud por el favor recibido como para poderlo valorar en toda su amplitud.  </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. 115v" ed="O" facs="#foto4"/>
+            <head>[Sobrescrito:]</head>
+            <ab>†Cl†arissimo domino <app><lem wit="#O #E2 #E3">†doc†tori</lem><rdg wit="#E1"><expan><ex>au</ex></expan>tori</rdg></app>, sacrae paginae †in†terpreti Regio, d<expan><ex>omino</ex></expan> Ariae †M†ontano, domino suo †co†lendissimo. <name type="place">Hantuerpiae</name>.</ab>
+         </div>
+         <div type="anotation">
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><name type="place">Louanio</name> <date when="1570"></date>1570. <name type="person" ref="#GemmaCornelius">Cornelii Gemmae</name> Calend<expan><ex>is</ex></expan> Maii. De praefatione Bibliorum.</ab>
+         </div>
+         <div type="main_content">
+            <pb n="f. 114r" ed="O" facs="#foto1"/>
+            <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>.</opener>
+            <p>[<hi rend="bold">1</hi>] Clariss<expan><ex>ime</ex></expan> d<expan><ex>omine</ex></expan> doctor et patrone obseruandiss<expan><ex>ime</ex></expan>, si sus (quod aiunt) uocanda ad opus Mineruae <app><lem wit="#O #E2 #E3">fuit</lem> <rdg wit="#E1">fint</rdg></app>, recte mehercule et nostrae censurae diuinam illam <app><lem wit="#O #E2 #E3">foeturam</lem> <rdg wit="#E1">faeturam</rdg></app> ingenii tui, ubi ne quicquam ad perfectionem uel Momus expostulet, commisisti. Sed quando ita uisum est, perlegi omnia quam attentissime ne in illo erga te officii g<expan><ex>ene</ex></expan>re uidear <app><lem wit="#O #E1 #E3">dormitasse,</lem><rdg wit="#E2"><hi rend="italic">post</hi> dormitasse <hi rend="italic">imum punctum posuit</hi></rdg></app> quamquam pudet in illis censorem agere, quae michi lumine suo et splendore hoc qualecumque animi lumen obtundunt. [<hi rend="bold">2</hi>] De rebus theologicis meum iudicium non est quod expectes; sum enim illarum penitus rudis, neque res <app><lem wit="#O #E1 #E3">sacras</lem> <rdg wit="#E2">sanas</rdg></app> inquirere soleo nisi quantum ad mores formandos componendasque animae perturbationes utile uidebatur. Quarum istuc experior in dies <app><lem wit="#O #E2 #E3">praestantissimum,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> praestantissimum <hi rend="italic">non distixit</hi></rdg></app> illud autem cogitatione concepi dudum et intellexi, re ipsa consecutum minime esse confiteor. Interim ne nichil egisse uidear unicum et alterum annotaui, ubi quidem nullus error in rebus, sed forte expositione uberiori aut uerbo planiore res uisa est indigere. </p>
+            <p>[<hi rend="bold">3</hi>] Nescio an sub finem commode ad laudem regis <name type="person" ref="#FelipeII">Philippi</name> nostri conueniat obiter addi comparationem <app><lem wit="#O #E2 #E3">regum</lem> <rdg wit="#E1">regni</rdg></app> Romanorum, quod alii <app><lem wit="#O #E2 #E3">quidem</lem> <rdg wit="#E1">quadraginta</rdg></app> armis, alii semper fuerint religione praestantes; in <pb n="f. 114v" ed="O" facs="#foto2"/> nostro utrumque genus laudis et gloriae mira cum aequabilitate spectatum hactenus fuerit, ut humanarum rerum et diuinarum iuxta contemperatio ad labefactatae maxime reip<expan><ex>ublicae</ex></expan> Christianae restaurationem infusa diuinitus uideatur. Posset id obiter intertexi, sed elegantius et uerbis (quae tibi sunt in <app><lem wit="#O #E2 #E3">promptu</lem> <rdg wit="#E1">promptum</rdg></app>) multo <app><lem wit="#O #E2 #E3">elimatioribus</lem> <rdg wit="#E1">eleuatioribus</rdg></app> <app><lem wit="#O #E2 #E3">, si</lem> <rdg wit="#E1"><hi rend="italic">ante</hi> si <hi rend="italic">imum punctum posuit</hi></rdg></app> modo pagina aut sensus rei tuo iudicio tale quid patiatur. [<hi rend="bold">4</hi>] Nichil enim desidero magis quam ut uirtutes principum animis <app><lem wit="#O #E1 #E3">popularibus</lem> <rdg wit="#E2">populariter</rdg></app> plane et fuse <app><lem wit="#O #E1 #E3">delineentur</lem> <rdg wit="#E2">delinientur</rdg></app>, quod a te factum uideo artificio sane tam accurato ut picturis <name type="person">Phidiae</name> uel <name type="person">Polycleti</name> statuis possit contendere. Miror profecto insignem ordinis oeconomiam, uerborum flumen, sententiarum optimarum pondus, <app><lem wit="#O #E1 #E3">consyderationis</lem> <rdg wit="#E2">considerationis</rdg></app> philosophicae syntagma et contextum tam <app><lem wit="#O #E1 #E3">admirabilem</lem> <rdg wit="#E2">admirabiliter</rdg></app>, ut si quid ademeris uel adieceris, quemadmodum in consonantissima harmonia, totus concentus ilico uioletur. [<hi rend="bold">5</hi>] Sed nolo laudare in os. Consules boni, ut libere orasti, libere respondeo. Nec uelim ullo pacto inter censores operis recenseri, ut obiter uisus es <app><lem wit="#O #E2 #E3">insinuasse</lem> <rdg wit="#E1">infirmasse</rdg></app>. Nescis enim quantum hac ratione tuo <app><lem wit="#O #E2 #E3">operi</lem> <rdg wit="#E1">opere</rdg></app> pulcherrimo et pondus et ornamentum sis detracturus.  </p>
+            <p>[<hi rend="bold">6</hi>] Magnum attulit adiumentum nobis commendatio tua, atque huius beneficii non minor erit <pb n="f. 115r" ed="O" facs="#foto3"/> gratia quam si me secundo ac tertio a morte redemeris. Agerem pluribus gratias, sed ea est tuorum omnium amplitudo, ut prestet benemerendi tempus optare et, quod a te factum est, tibi dum adsum (adesse autem perpetuo me non dubito) <app><lem wit="#O #E2 #E3">solo</lem> <rdg wit="#E1">sola</rdg></app> admirationis silentio uenerari.</p> <p>[<hi rend="bold">7</hi>] Res omnis nostra belle procedit; spero propediem istius tam turbulentae comediae laetam <app><lem wit="#O #E2 #E3">catastrophen</lem> <rdg wit="#E1">castrophen</rdg></app> fore, quamquam ille noua in dies moliatur, quae tuis praeceptis et praesidiis hactenus confirmatus didici contemnere. [<hi rend="bold">8</hi>] Propediem (si di sinant) et corpore te praesens inuisam; est enim aliud quod illic agam atque in quo tuis consiliis ualde sit opus. Praeterea, ut uerbo dicam, <date when="1570-05-22">22 Maii</date> suscepturus sum doctoratus insignia. Huic actui celeberrimo te inter caeteros amicissimum nobis adfuturum in ornamentum spero, si per ualetudinem et seria negotia licet. [<hi rend="bold">9</hi>] Sed pluribus <app><lem wit="#O #E1 #E3">coram.</lem> <rdg wit="#E2"><hi rend="italic">post</hi> coram <hi rend="italic">non distinxit</hi></rdg></app> Scripsi et d<expan><ex>omino</ex></expan> <app><lem wit="#O #E1 #E3"><name type="person" ref="#SevillaFernandode">Siviliae</name></lem> <rdg wit="#E2">Siuilice</rdg></app>. Videbo et hortulum tuum et quid desideres. Cyclaminis plantam mecum adferam cum aliis <choice><sic>plaerisque</sic> <corr>plerisque</corr></choice>.</p> <closer>[<hi rend="bold">10</hi>] Bene uale, mi domine et frater colendiss<expan><ex>ime</ex></expan>, salutat te plurimum soror tua, uxor mea.
+               Louanii, Kalendis Maii 1570.	
+               D<expan><ex>ominationi</ex></expan> u<expan><ex>estrae</ex></expan> ex animo <app><lem wit="#O #E2 #E3">addictiss<expan><ex>imus</ex></expan></lem> <rdg wit="#E1">additissimus</rdg></app>, Cornelius <choice><sic>Gemme</sic><corr>Gemma</corr></choice>.</closer>
+         </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>
+            <div type="address">
+               <pb n="f. 115v" ed="O" facs="#foto4"/>
+               <head>[Sobrescrito:]</head>
+               <ab>Al distinguido señor doctor Arias Montano, traductor real de Escritura Sagrada, con el debido respeto. Amberes. </ab>
+            </div>
+            <div type="anotation">
+               <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+               <ab>Lovaina 1570. De Cornelio Gemma,<ref target="#note1"
+                  xml:id="reference1">1</ref> primero de mayo. Acerca del prefacio de la Biblia.</ab>
+            </div>
+            <div type="main_content">
+               <pb n="f. 114r" ed="O" facs="#foto1"/>
+               <opener>	Un cordial saludo.</opener>
+               <p>[<hi rend="bold">1</hi>] Distinguido señor doctor y patrón respetabilísimo, si una cerda, como dicen, tuvo que ser llamada para una obra de Minerva,<ref target="#note2"
+                  xml:id="reference2">2</ref> con gran acierto, por Hércules, sometió vuestra merced a nuestra censura aquel fruto divino de su ingenio, donde ni siquiera Momo exigiría nada para alcanzar la perfección.<ref target="#note3"
+                     xml:id="reference3">3</ref> Pero ya que ha parecido así, lo he leído todo lo más atentamente posible para no dar la impresión de haberme dormido en aquel tipo de obligación respecto a vuestra merced, aunque me avergüenza ejercer mi censura en aquello que con su luz y esplendor anublan esta luz de mi mente, cualquiera que sea su valor. [<hi rend="bold">2</hi>] En asuntos de Teología, mi juicio no es el que debería esperar vuestra merced; pues los desconozco por completo, y no suelo investigar los asuntos sagrados, salvo en la medida que me parece útil para adquirir las buenas costumbres y restablecer las perturbaciones del espíritu. De estas dos cuestiones, esta última he experimentado cada día lo importante que es; sin embargo, la primera hace tiempo que la concebí con el pensamiento y la entendí, pero en la práctica tengo que confesar que he logrado muy poco. Mientras tanto, para no dar la impresión de haber estado ocioso, he anotado algún que otro pasaje donde, a decir verdad, no había ningún error de contenido, pero el asunto sí me pareció que requería quizá una exposición más detallada o un término más claro. </p>
+               <p>[<hi rend="bold">3</hi>] No sé si casi al final convendría añadir expresamente para gloria de nuestro Rey Felipe la comparación con los reyes romanos, dado que unos destacaron con las armas y otros por su religiosidad; en cambio, el <pb n="f. 114v" ed="O" facs="#foto2"/> nuestro, hasta ahora, ha mostrado ambos géneros de méritos y gloria con una sorprendente equidad, de modo que parece una mezcla de los asuntos humanos y divinos inspirada por la divinidad para sacar a la república cristiana del abatimiento en que se halla. Podría entretejerse esto abiertamente, pero de un modo más elegante y con palabras más cuidadas, las cuales a vuestra merced le salen con facilidad, con tal que el escrito o el sentido de la exposición admita en el juicio de vuestra merced algo similar. [<hi rend="bold">4</hi>] Pues no hay nada que desee tanto como el que las virtudes de los príncipes se dibujen de manera clara y generalizada en los ánimos del pueblo, lo cual veo que vuestra merced lo ha conseguido con tal artificio, que podría competir con las pinturas de Fidias o las estatuas de Policleto. Me admira, en verdad, la insigne economía del orden, el flujo de palabras, el peso de las principales frases, el sintagma de la consideración filosófica y la trabazón conseguida de un modo tan admirable, que si quitas o añades algo, igual que en una armonía absoluta, enseguida se romperá todo el concierto. [<hi rend="bold">5</hi>] Pero no quiero regalar el oído de vuestra merced. Tómelo a bien, ya que me consultó libremente vuestra merced, con igual libertad le respondo. Y no me gustaría de ningún modo ser contado entre los censores de la obra, como me pareció que me insinuó vuestra merced a las claras. Pues no sabe cuánto peso y adorno quitaría vuestra merced de este modo a su hermosísima obra.  </p>
+               <p>[<hi rend="bold">6</hi>] La recomendación de vuestra merced me fue de gran ayuda, y mi gratitud por este favor no será menor <pb n="f. 115r" ed="O" facs="#foto3"/> que si me hubiera salvado vuestra merced de la muerte dos o tres veces.<ref target="#note4"
+                  xml:id="reference4">4</ref>  Me gustaría expresarle mi gratitud con más prolijidad, pero es tal la grandeza de todas las virtudes de vuestra merced, que es preferible desear la ocasión de prestarle servicio y venerarle, lo cual vuestra merced lo ha conseguido, mientras estoy junto a vuestra merced (y en efecto no dudo en estarlo siempre) con el silencio solo de la admiración. </p>
+               <p>[<hi rend="bold">7</hi>] Todos nuestros asuntos marchan a la perfección; espero en breve el feliz desenlace de esta comedia tan turbulenta, aunque aquel maquina cada día cosas nuevas, las cuales hasta ahora, confirmado con los preceptos y ayuda de vuestra merced, he aprendido a desdeñar. [<hi rend="bold">8</hi>] Pronto, si los dioses lo permiten, iré a visitar personalmente a vuestra merced; pues hay otro asunto que tengo que tratar allí y en el cual requiero los consejos de vuestra merced. Además, le comunico que el 22 de mayo voy a recibir las insignias del doctorado. Espero que vuestra merced, el mejor de mis amigos, me acompañe en este concurrido acto, si la salud y los importantes negocios de vuestra merced se lo permiten. [<hi rend="bold">9</hi>] Pero hablaremos más cara a cara. Ya he escrito tambien al señor de Sevilla.<ref target="#note5"
+                  xml:id="reference5">5</ref>   Veré también el jardín de vuestra merced y lo que desee. Llevaré conmigo planta de ciclamen junto con otras muchas. 
+               </p> <closer>[<hi rend="bold">10</hi>] Adiós, mi querido señor y hermano respetabilísimo; le envía muchos saludos su hermana, mi mujer.
+                  En Lovaina, a primero de mayo de 1570.
+                  Afectuosamente suyo, Cornelio Gemma. </closer>
+            </div>
+         </body>
+                <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Sobre Conelio Gemma véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-09">1568 11 09</ref>.  </note>
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Frase proverbial para expresar que alguien pretende instruir a otro más avisado.</note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Momo es la personificación del sarcasmo. Es hija de la Noche y hermana de las Hespérides en la Teogonía hesiódica.  </note>  
+            <note type="footnote" xml:id="note4">
+               <ref target="#reference4">4</ref> Sobre la recomendación de BAM para promover a Gemma como profesor de Medicina de Lovaina véanse cartas <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-09">1568 11 09</ref> y <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06">1569 04 06</ref>. </note> 
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Posiblemente Fernando de Sevilla, mercadés cordobés establecido en Amberes y gran amigo personal de BAM. Fernando de Sevilla aparece con cierta frecuencia en la correspondencia de BAM entre 1570 y 1572. En el capítulo de saludos que Plantino envía a BAM tras su marcha de Amberes, suelen aparecer de forma ligada los nombres del banquero Luis Pérez, Fernando Ximénez y Fernando de Sevilla (véase, por ejemplo, carta de Plantino a BAM en 77 05 14). A Fernando de Sevilla pertenecía el ejemplar de los <title>Opera Omnia</title> de Erasmo que se confió a la Faculta de Teología de Lovaina la expurgación de las obras del humanista holandés con vistas al <title>Index expurgatorius qui hoc saeculo prodierunt</title> (Amberes, 1571), ejemplar de la edición publicada en 1538 por Jérôme Froben y Nicolas Episcopius en Basilea, actualmente en depósito de la biblioteca de la Facultad de Teología de la Universidad Católica de Lovaina.</note>
+            </div>
+          </back>
+   </text>
+      </group>
+   </text>
+</TEI>
