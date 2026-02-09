@@ -1,0 +1,149 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700500T">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano [Amberes] a los obispos de Tournai y Gante, y al arzobispo de Cambray - Mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 00 T</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM writes three bishops by reason of his office to make them a request. The Polyglot Bible is almost complete. Bam has written the preface, considering appropriate that a group of persons of recognized dignity correct and revise the draft. He asks the bishops to assist in this process of correction.  </note>
+            <note type="incipit">Quamquam nullum antehac meum tibi officium constet...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(B) KBS, Ms. A 902, f. 197v-r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 196-199, nº 35.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 464-469.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 196-199; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 464-469.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="BerghesMaximiliende">
+                  <note>Maximilien de Berghes (1512-1570), arzobispo de Cambray.</note></person>
+               <person xml:id="JansenCornelius">
+                  <note>Cornelius Jansen (1510-1576), obispo de Gante.</note></person>
+               <person xml:id="dOigniesGilbert">
+                  <note>Gilbert d'Oignies (1520-1574), obispo de Tournai.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05">Hacia mediados de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Maximilien de Berghes </persName>
+               <persName>Cornelius Jansen </persName>
+               <persName>Gilbert d'Oignies </persName>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-09-18">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/09/KBS-Ms-A-902-f.-197v.jpeg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/09/KBS-Ms-A-902-f.-197r-1.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p> Este texto es en realidad la minuta de tres cartas diferentes. Es decir, BAM se dirige por separado a cada uno de estos tres prelados, aunque el texto es uno mismo en todos los casos. En mayo de 1570 ostenta la dignidad episcopal en Gante Cornelio Jansenio. La silla de Tournai es ocupada por Gilbert d’Oignies. Respecto al arzobispado de Cambray, desde el 22 de mayo de 1562 ostenta tal dignidad Maximiliano de Berghes. Dentro del legajo en que se ha conservado este borrador, el folio que lo contiene sufrió un cambio de orientación antes de ser numerado; de modo que para su correcta lectura e interpretación hay que comenzar por el f. 197v y continuar en el f. 197r.</p>
+         <p>Esta carta fue escrita después del 6 de mayo, porque esa es la fecha de la carta anterior conservada en el Manuscrito de Estocolmo. La carta fue escrita antes del 13 de mayo porque esa es la fecha de la respuesta de uno de los destinatarios de esta carta (Cornelio Jansenio).</p>
+      </front>
+      <body>   
+         <div type="main_content">
+            <pb n="f. 197v" ed="B" facs="#foto1"/>
+            <opener>Episcopis <name type="name"><app><lem wit="#B #E2">Tornacensi</lem><rdg wit="#E1">Turnicensi</rdg></app></name>, <name type="place">Gandauensi</name>, archiep<expan><ex>iscop</ex></expan>o <name type="place">Camerace<expan><ex>nsi</ex></expan></name>.</opener>
+            <p>[<hi rend="bold">1</hi>] Quamquam nullum <del>hactenus</del> antehac meum <del>in te</del> tibi officium constet quod <del>studium et</del> animum et studium erga te meum testari et gratiam <del>mi</del> erga me tuam conciliare possit, tamen et muneris, loci personaeque quam sustines maxima dignitas <choice><sic>meam</sic> <corr>meum</corr></choice> et omnium eorum, qui pietatem <del>sincere</del> pure sancteque colere <del>stu</del> student amorem obseruantiamque <del>tibi certam</del> tui <del>certam</del> confirmare tibi potest, et ista cum summa <app><lem wit="#B #E2">amplitudine</lem> <rdg wit="#E1"><hi rend="italic">post</hi> amplitudine <hi rend="italic">imum punctum posuit</hi></rdg></app> <del>conuincta</del>maxima quoque <app><lem wit="#B #E2">coniuncta</lem> <rdg wit="#E1">conuincta</rdg></app> humanitas tuam mihi et omnibus expetentibus <del>gratiam</del> pollicetur gratiam omnemque <del>rusticum pudorem</del> dubitationem tollit <del>exige po</del> orandi et postulandi eas res, praecipue quas <del>efficere</del> praestare <del>et</del> facultatis, dignitatis humanitatisque tuae proprium est; cuius generis sunt quaecumque uel <del>si</del>ad pietatis <del>uel u</del> et catholicae religionis uel ad bonarum literarum rationes adiuuandas et consolidandas <del>spectant</del> faciunt. [<hi rend="bold">2</hi>] Quamobrem cum et ego nondum tibi <del>cognitus</del> notus aut conspectus tantum te amem atque obseruem quantum <del>qui maxime</del> familiarissimus <del>quisque</del> quisque tibi mortalium omnium amare atque obseruare potest, in re honestissima nec mea tantum causa <del>non mea sed tua uere</del>, sed uere tua, immo omnium optimorum uirorum et sacrorum presulum, totius denique christianae atque catholicae Ecclesiae diligentiam, auctoritatem<del>que</del> et operam tuam expetere et postulare non dubitaui. Sed de tua humanitate et facilitate maxima mihi ipse <del>tam praesentem promissi quam propediem</del> non expecto solum, sed praesentem intueri uideor. </p>
+            <p>[<hi rend="bold">3</hi>] Iam <del>opinor</del> ex publica fama et aliis auctoribus certis opinor te <del>accepisti audisti audiisse</del> cognouisse regis nostri catholici erga Sacrorum Librorum dignitatem conseruandam et amplificandam consilium et studium quantum semper fuerit; atque eius rei <del>causa</del> efficiendae causa <name type="person" ref="#PlantinoCristobal">Plantino</name> typographo celeberrimo <choice><sic>comissam</sic> <corr>commissam</corr></choice> fuisse prouinciam satis difficilem, honestissimam tamen, imprimendi Biblia Haebraica, Graeca et Chaldaica cum tribus Latinis uersionibus, ea quam Vulgatam dicimus et duabus aliis correctissimis; meque ad id procurandum opus <del>ad</del>a rege ipso fuisse legatum. [<hi rend="bold">4</hi>] Id opus, quod <del>.</del> ex diuino beneficio optime et ex animi sententia procedat, atque non nimis longe a fine sit, praefatione <del>.</del> instruere ex eiusdem r<expan><ex>egis</ex></expan> <app><lem wit="#B #E2">c<expan><ex>atholici</ex></expan></lem> <rdg wit="#E1">catholica</rdg></app> auctoritate meditamur. Ipse autem rex nobis argumentum prescripsit, quod longiore <del>etiam</del> oratione etiam ex illius mandato persequeremur. Quoniam uero in toto opere ipso nihil <del>nostrum</del> a nobis adhibitum <del>pro</del> est praeter summam uersionum fidem, <pb n="f. 197r" ed="B" facs="#foto2"/> correctionis diligentiam <del>abque pres</del> quam pro ingenii et facultatis nostrae tenuitate studiose praestitisse uidemur, una tantum praefationis <del>rationem</del> cura reliqua est, cuius rationem non meo unius ingenio aut consilio <del>sed omni</del> constare uolui, sed omnium eorum arbitrio et calculo quibus et pietatis et doctrinae causa me ipsum meaque omnia <del>proponere corri</del> ad corrigendum, probandum atque examinandum proponere ac <choice><sic>sumittere</sic> <corr>summitere</corr></choice> debeo. [<hi rend="bold">5</hi>] His omnibus nominibus cum dignitas amplitudoque tua obseruanda et colenda sit ad communem <subst><del>causam</del> <add place="above">rem</add></subst>, hoc est, ad praefationem in sacra haec Biblia communibus usibus edendam; <del>.</del> adeunda, oranda, implorandaque fuit ut, inter caetera quae pietatis causa negocia sustines, aliquot saltem horas <del>nobis nob etiam</del> huic praefationi impertiri uelis pro arbitrio iudicioque tuo eximio non in <del>re rerum solum</del> rebus tantum <del>sed ipsis</del> quae in ea tractantur, sed in uerborum etiam proprietate, elegantia et castimonia examinandae, corrigendae <del>atque</del> et, si commodum uideatur, mutandae et innouandae. Ideo enim latiores margines in <choice><sic>examplari</sic> <corr>exemplari</corr></choice> parari curaui ut idoneus <del>locus esset</del> annotationibus et correctionibus adscribendis esset locus.</p> 
+            <p>[<hi rend="bold">6</hi>] <del>autem facies autem</del> In ea autem re suscipienda et quam maturrime efficienda et munere, officio nomineque tuo dignissimum officium <del>et me qui</del> feceris et me tui cultorem studiosissimum maximo et perpetuo beneficio deuinxeris. Nec ingratum aut immemorem experieris, utpote qui <del>et</del> cum apud alios omnes tum apud regem meum <del>et</del> humanitatem, facilitatem, doctrinam, pietatem, satis alias notas uirtutes tuas tamen ipse etiam <del>praedicaturus</del> sum praedicaturus.</p>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body> 
+               <div type="main_content">
+                  <pb n="f. 197v" ed="B" facs="#foto1"/>
+                  <opener>A los obispos de Tournai,<ref target="#note1"
+                     xml:id="reference1">1</ref> de Gante,<ref target="#note2"
+                        xml:id="reference2">2</ref> y al arzobispo de Cambray.<ref target="#note3"
+                           xml:id="reference3">3</ref></opener>
+                  <p>[<hi rend="bold">1</hi>] Aunque hasta ahora no medie ningún servicio mío con el que pueda demostrar mi inclinación y afición hacia vuestra merced, y granjearme su favor; sin embargo, la máxima dignidad del cargo, la plaza y la posición que ostenta vuestra merced le pueden confirmar el afecto y consideración hacia su persona que sentimos no solo yo, sino también todos estos que se afanan en practicar la piedad con pureza y santidad; también la probada humanidad de vuestra merced junto con su alta jerarquía me garantiza a mí, y a todos los que lo procuran, su favor, y disipa toda vacilación al pedirle y reclamarle estas cosas, sobre todo las que son propias del cargo, de la dignidad y de la humanidad de vuestra merced; de cuya naturaleza son todas las que atienden a ayudar y consolidar la valoración de la piedad y la religión católica tanto como la de las buenas letras. [<hi rend="bold">2</hi>] Por lo cual, también yo, a quien todavía no conoce ni ha visto vuestra merced, le aprecio tanto y le tengo en tanta consideración como el que más de los allegados de vuestra merced, en un asunto de gran virtud, y que no me atañe sólo a mí, sino también a vuestra merced, o mejor dicho, a todos los varones excelentes y a todas las autoridades eclesiásticas, en resumen, a toda la Iglesia cristiana y católica, no he dudado en solicitar y exigir la diligencia, la autoridad y la colaboración de vuestra merced. Pero de la gran humanidad y amabilidad de vuestra merced no solo espero los mayores favores, sino que me parece tenerte delante. </p>
+                  <p>[<hi rend="bold">3</hi>] Me imagino que por el comentario público, así como por otras fuentes fidedignas, ha tenido noticias vuestra merced de cuánta ha sido siempre la determinación y el empeño de nuestro rey católico por conservar y aumentar la dignidad de los Libros Sagrados; y que para llevar a cabo esto le ha sido confiada al famoso impresor Plantino la tarea bastante difícil, aunque muy estimable, de imprimir la Biblia hebrea, griega y caldea con tres traducciones latinas, esta que llamamos Vulgata, junto con otras dos muy correctas; e igualmente habrá oído vuestra merced que yo he sido enviado por el rey mismo para dirigir este trabajo. [<hi rend="bold">4</hi>] Trabajo al que, como avanza a pedir de boca, conforme a la ayuda divina y nuestro deseo, y no dista mucho de su conclusión, tenemos la intención de proveer con un prefacio, según el mandato de este mismo rey católico. Sin embargo, el propio rey nos determinó el argumento, para que nosotros también, conforme a su mandato, lo desarrollaramos con un discurso más amplio. Y dado que en toda la obra nosotros no hemos puesto nada de nuestra cosecha salvo la mayor fidelidad de las traducciones <pb n="f. 197r" ed="B" facs="#foto2"/> y el mayor cuidado en la corrección de pruebas, lo cual, a tenor de la parquedad de nuestro ingenio y capacidad, creemos haberlo cumplido con celo, solo queda el cuidado del prefacio, cuya consideración no he querido que dependa solo de mi ingenio y juicio, sino también de la opinión y criterio de todos estos a cuya corrección, aprobación y examen debo presentarme y someterme yo mismo y todo lo mío por su piedad y erudición. [<hi rend="bold">5</hi>] Como la dignidad y grandeza de vuestra merced deban ser consideradas y respetadas por todas estas razones con vistas a un proyecto común, es decir, a la publicación del prefacio de esta sagrada Biblia para utilidad pública, también debieron ser abordadas, solicitadas e imploradas a fin de que, entre los demás negocios que sostiene vuestra merced a causa de su piedad, se digne a concederle algunas horas, al menos, a este prefacio para que, conforme a la opinión y el distinguido juicio de vuestra merced, no solo en lo que al contenido se refiere, sino también en la propiedad, elegancia y pureza de los términos lo examine, lo corrija y, si le parece conveniente, lo modifique y lo renueve. Y por ello, he procurado que se dejaran márgenes bastante anchos en el ejemplar para que hubiera un lugar apropiado para recoger las anotaciones y las correcciones. </p> 
+                  <p>[<hi rend="bold">6</hi>]  En emprender este trabajo y concluirlo lo antes posible prestará vuestra merced un servicio digno de su cargo, de su responsabilidad y de su nombre, y a mí, que soy afectísimo suyo, me obligará con un enorme y duradero favor. Y no me mostraré desagradecido ni olvidadizo, puesto que no solo ante todos los demás, sino también ante mi rey, yo mismo predicaré la humanidad, amabilidad, sabiduría, piedad y las otras virtudes de vuestra merced más que probadas.</p>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Gilbert d'Oignies (1520-1574), obispo de Tournai desde el 21 de octubre de 1565 hasta su muerte el 25 de agosto de 1574.</note>
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> Cornelius Jansen (1510-1576), ordenado obispo de Gante el 29 de agosto de 1568, cargo que ejerció hasta su muerte, acaecida el 11 de abril de 1576.</note>
+                  <note type="footnote" xml:id="note3">
+                     <ref target="#reference3">3</ref> Maximilien de Berghes (1512-1570), ordenado arzobispo de Cambray el 14 de mayo de 1559, ocupando dicho cargo hasta su fallecimiento el 29 de agosto de 1570.</note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
