@@ -1,0 +1,153 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM1570511">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Maximiliano Morillon [Bruselas] - 11 de mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 11</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Before submitting the foreword of the Polyglot to the Spanish Court, Arias Montano requests Morillon to review and refine both the content and language of the draft. Additionally, he expresses a desire to receive Pighius’s evaluation. </note>
+            <note type="incipit">Praeter caeteros omnes et optimos et doctissimos uiros...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(B) KBS, Ms. A 902, f. 198v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 206-209, nº 38.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 458-463.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 206-209; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 458-463.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MorillonMaximiliano">
+                  <note>Maximiliano Morillon (1516/7-27 de marzo 1586), político, dignatario eclesiástico, después obispo de Tournai. Fue protegido por Granvela y Viglio, y gracias a ellos hizo una brillante carrera política y religiosa. Cuando en 1545 Antonio Perrenot se convierte en obispo de Arras, se lleva a Maximiliano hacia su círculo asegurándole las canonjías en Arras, Malinas y Bruselas, a lo que Felipe II añadió la prebostía en Aire. Cuando en 1561 Granvela se convierte en arzobispo de Malinas, nombró a Morillon arcediano y vicario general, erigiéndole en la principal autoridad de la diócesis tras la marcha del arzobispo en 1564. En 1580 Granvela le propone ante Felipe II como obispo de Tournai, nombramiento que la hostilidad de Juan Fonck y la ocupación de la ciudad por las tropas de los Estados retarda más de dos años. Fue consagrado el 23 de octubre de 1583. Cf. BNB, XV (1899), cols. 267-273; BIB, III, 994.</note>
+               </person>
+               <person xml:id="PighiusStephanus">
+                  <note>Stephanus Winandus (o Vinandus) Pighius (Kampen, 1520 - Xanten, 16 de octubre de 1604) fue un humanista y anticuario holandés. Pighius se convirtió en secretario y bibliotecario del cardenal Antoine Perrenot de Granvelle en Bruselas, cargos que ocupó hasta 1571, aunque el propio Granvelle tuvo que abandonar Bruselas en 1564. Durante este tiempo publicó una edición de Valerius Maximus (Amberes: Plantino 1567).   </note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05-11">11 mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Maximiliano Morillon </persName>
+            </correspAction>
+            <correspAction type="answeredby">
+               <persName>Maximiliano Morillon </persName>
+               <date when="1570-05-17">17 mayo de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-11-25">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/11/KBS-Ms-A-902-f.-198v.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>El nombre de Antonio Perrenot, cardenal de Granvela, aparece vinculado al de la imprenta de Plantino como uno de sus más fervientes protectores, y, por supuesto, también aparece vinculado al más ambicioso proyecto de su tipografía, la Biblia Políglota. Sin embargo, a partir de 1570, Antonio Perrenot, que tendrá que ausentarse de los Países Bajos para atender sus ocupaciones como Virrey de Nápoles, seguirá siendo puntualmente informado sobre el negocio de la Biblia a través de Maximiliano Morillón, su vicario general para la diócesis de Malinas. </p>
+      </front>
+      <body>  
+         <div type="anotation">
+            <pb n="f. 198v" ed="B" facs="#foto1"/>
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab>De praefatione Bib<expan><ex>liorum</ex></expan> <app><lem wit="#B #E2">Regiorum</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>.</ab>
+         </div>         
+         <div type="main_content">
+            <p><name type="person" ref="#MorillonMaximiliano">Morillonio</name> s<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> <app><lem wit="#B #E1">d<expan><ex>icit</ex></expan></lem> <rdg wit="#E2">dico</rdg></app>.</p>
+            <p>[<hi rend="bold">1</hi>] Praeter caeteros omnes et optimos et doctissimos uiros, quorum ego probitate et doctrina ad studiorum meorum totiusque uitae rationes componendas utor, unus tu es <del>est</del> qu<del>i</del>em <del> . </del> postquam amicum magno Dei beneficio nactus sum, mearum rerum omnium cognoscendarum <del>Arist.</del> et probandarum <name type="person">Aristarchum</name> mihi proposui, quippe cuius <del>quod</del> <del>quantum</del> eruditionem, pietatem, grauitatem, iudicium et in colendis amicitiis diligentiam <del>ualeas</del> multis priuatis et publicis exemplis <del>probe intellexerim</del> perspectam habeam; atque illud etiam <del>sci.</del> aperte sciam <del>me meaque omnia</del> quantum me measque res omnes singulari <del>a te</del> beneuolentia <surplus>et</surplus> <del>cura esse suscepta</del> prosequaris, id quod ego inter maxima quae mihi <del>a patria</del> <del>per</del> <del>unquam a patria</del> uarias regiones peragranti unquam contigerint commoda summum duco atque amplissimum. [<hi rend="bold">2</hi>] <app><lem wit="#B #E1"> Quamobrem</lem> <rdg wit="#E2">Quam ob rem</rdg></app> cum tantum ego tibi tribuam et fidam ut nulli <del>mortalium</del> magis mortalium, rei non tantum meae unius quantum tuae ipsius propriae, quantum omnium piorum et catholicorum hominum <del>cognoscendae</del> communis cognoscendae et promouendae rationem tibi exponere et curam etiam imponere non dubitaui. Quid autem hoc sit paucis accipies.</p> 
+            <p>  [<hi rend="bold">3</hi>] Praefationem huic sacro Bibliorum operi, quod catholici regis consilio et <del> . </del> auctoritate susceptum a <name type="person" ref="#PlantinoCristobal">Plantino</name> est, praefigendam eiusdem regis mei mandato his proximis <del>diebus</del> ante diebus exarabam, accepto argumento ab eodem rege; qui quid in praefatione agendum <app><lem wit="#B #E2">esset</lem> <rdg wit="#E1">esse</rdg></app> <del>idem praescrip.</del> ipse mihi praescripserat, ut de diuinorum librorum dignitate et utilitate, de linguarum usu deque suo ipsius <del>in hoc opere . </del> in hac re consilio agerem. [<hi rend="bold">4</hi>] Huius autem praefationis exemplum antequam regi meo <del>ostendum</del> <del>uidendum</del> <del>mittam tibi</del> <del>corri.</del> <del> . </del> missum ostenderem, tibi legendum <del>corrigendum</del> et, pro tuo singulari ingenio et iudicio <del>censendum</del>, examinandum corrigendumque mittere decreui <del>quod</del> <del>quod</del>. Id autem negotium inter plurima alia, quae publicarum rerum causa sustines, tibi non <choice><sic>tatum</sic> <corr>tantum</corr></choice> tantum <del>in ei</del> in meam, sed in totius christianae reip<expan><ex>ublicae</ex></expan> gratiam suscipiendum esse non dubito. Cupio autem non rerum modo quae in praefatione tractantur, sed uerborum etiam <del>rationem</del> et totius orationis rationem a te haberi censuramque adhiberi, qualem ego a te expecto, qui me praeter caetera hoc etiam nomine tibi deuinctissimum perpetuo habebis. Latiores margines in exemplo <del>relinqui</del> parari uolui ut <del>adscribendis</del> correctionibus, additionibus aut detractionibus et omnium animaduersionum uel notarum generibus adscribendis commodus esset locus. </p>
+            <p>[<hi rend="bold">5</hi>] <del>unum autem te</del> Illud autem porro te exoratum uelim ut, quanto id commodo tuo fieri possit, citissime <choice><sic>etxemplum</sic><corr>exemplum</corr></choice> ipsum una cum tua censura adiuncta <del>mittatur</del> nobis remittatur. <del>pr</del> Gratissimum praeterea mihi <del>erit</del> feceris si domino <name type="person" ref="#PighiusStephanus">Pigio</name> legendum ostenderis, cuius etiam <del>iudicium</del> sententiam uel eius uel tuis literis conscriptam indicabis. </p>
+            <p>[<hi rend="bold">6</hi>] Vale. <name type="place">Antuerpiae</name>, <date when="1570-05-11">11 Maii 1570</date>. </p>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body>  
+               <div type="anotation">
+                  <pb n="f. 198v" ed="B" facs="#foto1"/>
+                  <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+                  <ab>Sobre el prefacio de la Biblia Regia.</ab>
+               </div>         
+               <div type="main_content">
+                  <p>Un cordial saludo para Morillón.<ref target="#note1" xml:id="reference1">1</ref></p>
+                  <p>[<hi rend="bold">1</hi>] Aparte de todos los demás hombres magníficos y doctísimos, de cuya integridad y sabiduría yo me sirvo para componer el orden de mis estudios y de toda mi vida, desde que encontré su amistad por mediación divina, vuestra merced es el único que me he propuesto como Aristarco<ref target="#note2" xml:id="reference2">2</ref> para conocer y aprobar todos mis asuntos, dado que la erudición de vuestra merced, piedad, gravedad, juicio y diligencia en el trato de los amigos la tengo comprobada con muchas muestras privadas y públicas; y también sé en qué medida me secunda con su singular benevolencia a mí y a todos mis negocios, algo que yo considero lo más importante y destacado entre las mayores ventajas que me hayan acaecido en mi recorrido por diversas regiones. [<hi rend="bold">2</hi>] Por lo cual, como yo le tengo en tan gran estima y confianza, que a nadie tengo en más, en este asunto que no es tanto mío solo como de vuestra merced, como común a todos los hombres piadosos y católicos, no he vacilado en exponerle la manera de conocerlo y promoverlo e imponerle también su cuidado. Ahora bien, cuál es este asunto, lo sabrá vuestra merced con pocas palabras. </p>
+                     <p>[<hi rend="bold">3</hi>] El prefacio que hay que poner al frente de este trabajo sagrado de la Biblia, que por decisión y mandato del rey católico ha emprendido Plantino, hace unos días que lo estaba redactando, conforme al argumento recibido de este mismo rey, quien personalmente me había determinado con anterioridad lo que se debía tocar en este prefacio, de modo que tratara sobre la dignidad y utilidad de los libros divinos, sobre el uso de las distintas lenguas, y sobre su propia decisión en esta empresa.  [<hi rend="bold">4</hi>] Sin embargo, antes de mostrárselo a mi rey, he decidido enviar a vuestra merced una copia de este prefacio para que lo lea, y, conforme a su singular ingenio y juicio, lo examine y lo corrija. Y no dudo de que este negocio, entre los otros muchos que debido a los asuntos públicos ocupan a vuestra merced, lo va a emprender no solo por hacerme el favor a mí, sino también a toda la cristiandad. Con todo, deseo que juzgue no solo el contenido que se trata en este prefacio, sino también los términos y todo el discurso, y me ofrezca su censura tal y como espero de vuestra merced, quien, aparte de los demás servicios, con este nuevo favor me tendrá para siempre obligadísimo. He procurado que se dejaran márgenes bastante amplios en la copia para que hubiera suficiente espacio para anotar las correcciones, las adiciones, las supresiones y todo tipo de censura o notas. </p>
+                  <p> [<hi rend="bold">5</hi>] Por otra parte, querría pedir a vuestra merced que, en la medida en que se pueda hacer para tu comodidad, nos envíe la copia misma del prólogo, juntamente con su censura, lo antes que pueda. Me complacerá mucho, además, si se lo da a leer al señor Pighio,<ref target="#note3" xml:id="reference3">3</ref> cuya opinión me dará vuestra merced a conocer recogida bien por su propio puño por el de él.   </p>
+                  <p>[<hi rend="bold">6</hi>] Adiós. En Amberes, a 11 de mayo de 1570. </p>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Sobre Maximiliano Morillon véase nota biográfica en carta nº <ref target=" https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-10-24">1569 10 24</ref>. </note>
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> Aristarco de Samotracia, célebre crítico alejandrino. </note>
+                  <note type="footnote" xml:id="note3">
+                     <ref target="#reference3">3</ref> Stephanus Vinandus Pighius. Véase nota biográfica en carta nº <ref target=" https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-10-24">1569 10 24</ref>. </note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
