@@ -1,0 +1,182 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700501V">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Vargas (Bruselas) - 1 de mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 01</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM has not answerd Vargas’ letter before due to the sadness he felt at the news of Barbarus’ death. He has received a copy of the letter to be sent to the archbishop and gives approval to the text. He proposes again that the books are allocated among those who have already handled them. He considers a good idea that the censors write down on a separate paper the censored passages, so that they can be reviewed at the general assembly that will draw up the catalog of forbidden books. Greetings from Plantin. Greetings to Luis del Río.  </note>
+            <note type="incipit">El sábbado passado próximo recibí la de v. m...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Bélgica</country>
+                        <settlement>Bruselas</settlement>
+                        <msName>Algemeen Rijksarchief </msName>
+                        <altIdentifier>
+                           <idno>(O) ARA, «Papiers d’État et de l’Audience 1531-1700» (T 105), 1740/2, ff. 74r-75v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 404-407.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E) Domínguez, <title>Correspondencia</title>, I, 404-407. </bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="VargasJuande">
+                   <note>
+                      <note>Juan de Vargas (fl. 1572), miembro del Tribunal de los Tumultos. </note>
+                   </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="BarbaroDaniel">
+                  <note>Daniel Mateo Alvise Barbaro (Venecia, 8 de febrero de 1514-13 de abril de 1570), noble veneciano conocido por sus comentarios y traducciones de Vitrubio, Patriarca de Aquilea desde 1550. Estudió filosofía, matemáticas y óptica en la Universidad de Padua y sirvió a la República Veneciana como embajador en la corte inglesa de Isabel I y como representante del Concilio de Trento. Entre sus obras destacan <title>La Predica dei sogni</title> (1542), publicada bajo el seudónimo de reverendo padre Hypneo da Schio, los <title>Dieci libri dell'architettura di M. Vitruvio</title> (1556) y <title>La practica della perspettiva</title> (1568), un libro sobre perspectiva para arquitectos y artistas. </note></person>
+               <person xml:id="DelRíoLuis">
+                  <note>Luis Del Río (1537-1578), abogado y consejero de Felipe II. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="EscaligeroJulioCesar">
+                  <note>Julio César Escalígero (1484-1558), erudito clásico; médico; padre de José Justo Escalígero.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05-01">01 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Vargas</persName>
+               <settlement>Bruselas</settlement>
+                             </correspAction>
+            <correspAction type="answerto">
+               <persName>Juan de Vargas</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1570-04-28"></date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-08-19">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/ARA-1740-2-f-1r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/ARA-1740-2-f-1v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/08/ARA-1740-2-f-2v-scaled.jpg"
+         xml:id="foto3"/>
+   </facsimile>
+   <text>
+      <front>
+         <p> Se inicia aquí una serie de cinco cartas de BAM a Juan de Vargas, todas ellas del mes de mayo de 1570 y conservadas en el Algemeen Rijksarchief de Bruselas. Estos documentos transmiten la mayor fase de ebullición en los preparativos de la edición del Índice de libros expurgados que vería la luz en 1571. De estas cartas también deducimos que Juan de Vargas jugó un papel importante como delegado de Alba en este menester.   </p>
+         <p>Entre 1569 y 1571 debieron de ser frecuentes los contactos personales y epistolares entre BAM y de Vargas, presidente del Consejo de Estado en Flandes, el órgano que coordina la elaboración de los índices de libros prohibidos y expurgados en los que BAM también estuvo envuelto. El 13 de febrero de 1570 BAM escribe al duque de Alba: «Los advertim<hi rend="sup">os</hi> acerca de las emprentas embío en este paquete a Ju. de Vargas, que por mandado de v. exc.<hi rend="sup">a</hi> me los ha embiado a pedir» (original en AGS E, 583/17-18bis, documento publicado de forma parcial en <title>Codoin</title>, pp. 168-171).
+         </p>
+      </front>
+      <body>
+         <pb n="f. 75v" ed="O" facs="#foto3"/>
+         <div type="address">
+            <head>[Sobrescrito:]</head>
+            <ab>Al ill<expan><ex>ustre</ex></expan> s<expan><ex>eñ</ex></expan>or mi s<expan><ex>eñ</ex></expan>or <name type="person" ref="#VargasJuande">Ju<expan><ex>an</ex></expan> de Vargas</name>,<ref target="#note1"
+               xml:id="reference1">1</ref> regente de <name type="place">Nápoles</name> y presidente en el Consejo Real de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>. En <name type="place">Brusselas</name>. 
+            </ab>
+            <div type="annotation">
+               <head>[Anotado por otra mano, con escritura transversal:]</head>
+               <ab> <date when="1570-05-01">P<expan><ex>rimer</ex></expan>o de mayo 1570</date>. Resp<expan><ex>on</ex></expan>d<expan><ex>ida</ex></expan>. Doctor <name type="person" ref="#AriasMontanoBenito">Arias Montan<expan><ex>o</ex></expan></name>. </ab>
+            </div>  
+            <div type="main_content">
+            <pb n="f. 74r" ed="O" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or:</opener>
+            <p> [<hi rend="bold">1</hi>] <date when="1570-04-29"> El sábbado passado próximo</date><ref target="#note2"
+               xml:id="reference2">2</ref> recibí la de v<expan>uestra</expan> m<expan><ex>erced</ex></expan> con el exemplo de la carta para el <app><lem wit="#O">arçobispo.</lem><rdg wit="#E"><hi rend="italic">non distinxit</hi></rdg></app><ref target="#note3"
+                  xml:id="reference3">3</ref> [<hi rend="bold">2</hi>] Y no respondí aquel día a ella por estar perturbadíssimo por unas cartas que me traxeron de <name type="place">Venecia</name> y nueva en ellas de la muerte del patriarcha de <name type="place">Aquileia</name>,<ref target="#note4"
+                     xml:id="reference4">4</ref> que era el más hábil hombre de <name type="place">Italia</name> e yo le tenía por <app><lem wit="#O">padre.</lem><rdg wit="#E"><hi rend="italic">non distinxit</hi></rdg></app> Y dame terriblíssima pena la muerte de los que bien quiero. </p>
+            <p>[<hi rend="bold">3</hi>] Yo leý la copia que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me embió, la qual torno a embiar con esta y me parece muy bien cómo v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> la mandó <app><lem wit="#O">ordenar.</lem> <rdg wit="#E"><hi rend="italic">non distinxit</hi></rdg></app> [<hi rend="bold">4</hi>] Y desseo ver el fin de una obra tan santa y provechosa. No entiendo por la lección desta copia si el repartim<expan><ex>ient</ex></expan>o de los libros es conforme a lo que yo, si bien me acuerdo, declaré que havía sido parecer de los diputados, y era que algunos señaladamente se comettiessen a universidades o prelados o personas que havían dado noticia dellos, porque estos es verissímil que más fácilmente hallarían los lugares en que ellos havían tropeçado. [<hi rend="bold">5</hi>] Y lo que Su Exc<expan><ex>elenci</ex></expan>a y v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> han ordenado (que embíen los que leyeren los libros en papel aparte señalados los lugares que les pareciere duddosos o sospechosos) ha sido con mucho juizio y prudencia mandado, porque algunos hay que condennan lugares que no entendieron, como por un exemplo declararé.  </p>
+            <p>[<hi rend="bold">6</hi>] Un prelado embió señalado en su parecer a <name type="person" ref="#EscaligeroJulioCesar">Julio Caesar Escalígero</name> sobre <name type="person">Theophrastro</name>,<ref target="#note5"
+               xml:id="reference5">5</ref> y dando la razón dixo que parecía affirmar la eternidad del <app><lem wit="#O">mundo.</lem><rdg wit="#E"><hi rend="italic">leuiter distinxit</hi></rdg></app> Y púsosse el libro en el catálogo con las condiciones que los demás. Y después viendo yo el libro hallé lo contrario, que el Julio César burlava de los que dizen ser el mundo eterno y de los argumentos que para esto traen.<ref target="#note6"
+                  xml:id="reference6">6</ref> Y en otra parte affirma que él cree el mundo haver sido criado por Dios y que se ha de acabar con fuego, porque la fe y la religión se lo ha enseñado <app><lem wit="#O">ansí.</lem><rdg wit="#E"><hi rend="italic">leuiter distinxit</hi></rdg></app> Y burla de los que affirman lo contrario.<ref target="#note7"
+                     xml:id="reference7">7</ref> Por semejantes inconvenientes es buen consejo que cada uno escriva lo que le pareciere y después se examinen los lugares vistos en los proprios auctores y con maduro juizio se haga la corrección. [<hi rend="bold">7</hi>] Y v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> crea que esto agradará mucho a Dios y será de muy grande utilidad y una de las buenas empresas que el rey y el duque y v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> havrán tomado. Porque solo el pretender un semejante negocio le fue gloria a <name type="person" ref="#EscaligeroJulioCesar">Julio César</name>, aunque no lo puso por obra por causa de su muerte. Dize <name type="person">Suetonio</name> que tenía en voluntad corregir las leyes y abbreviar la inmensidad dellas.<ref target="#note8"
+                        xml:id="reference8">8</ref> </p>
+            <p>[<hi rend="bold">8</hi>] <name type="person" ref="#PlantinoCristobal"> Plantino</name> besa <pb n="f. 74v" ed="O" facs="#foto1"/>  a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> las manos y ha mandado enquadernar un libro para descifrar las inscriptiones antiguas, el qual embiará luego a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. Al s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#DelRíoLuis">Luis</name><ref target="#note9"
+               xml:id="reference9">9</ref> beso las manos muchas vezes.</p>  <closer>[<hi rend="bold">9</hi>] <salute>N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or la ill<expan><ex>ustr</ex></expan>e pers<expan><ex>on</ex></expan>a de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> prospere en su servi<expan><ex>ci</ex></expan>o y estado accreciente</salute>. <dateline>En <name type="place">Anvers</name>, <date when="1570-05-01">primero de mayo 1570.</date></dateline>
+            Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor
+               <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> تلميد</signed></closer>
+            <postscript>
+               <head>[Posdata:]</head>
+               <p>[<hi rend="bold">10</hi>] En la copia señalé dos lugares que por descuydo del scriviente se erraron. El uno es donde dize «pour le dict appendice», que ha de dezir «pour le dict catalogue du Concil», porque habla con el arçob<expan><ex>is</ex></expan>po al qual se le encargan los libros corregibles del catálogo del Concilio, y el otro es una parte dos vezes puesta. </p>
+            </postscript> 
+            </div>
+         </div>
+           </body>
+      <back>
+         <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Sobre Juan de Vargas véase nota biográfica en carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-06-14">1568 03 14</ref>. El 25 de abril; el día 1 de mayo de 1570 cayó en viernes. </note>
+            <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> El 25 de abril; el día 1 de mayo de 1570 cayó en viernes.   </note>
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference2">3</ref> La primera fase del proceso de trabajo preparatorio del Índice expurgatorio consistió en el envío de cartas firmadas por el duque de Alba a arzobispos, obispos y universidades, reclamando su contribución a la gigantesca obra que emprendían.</note>  
+            <note type="footnote" xml:id="note4">
+               <ref target="#reference4">4</ref> Daniel Barbaro, quien falleció el 13 de abril de 1570.   </note> 
+               
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> <title>Iulii Caesaris Scaligeri... commentarii et animaduersiones in sex libros de causis plantarum Theophrasti</title> (Lugduni: apud Gulli Rouillium, 1566). Puede verse ejemplar digitalizado en <ref target="https://digibug.ugr.es/handle/10481/10322">DIGIBUG</ref>.   </note>  
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> En efecto, Julio César Escalígero califica de tonterías la opinión de quienes sostienen que el mundo es eterno: «Alii mundum statuebant aeternum hanc eadem ob causam: quia, inquiunt, semper gignitur, imperfectus est; ac nunquam desistet generatio, quia nunquam absoluetur. Nugae.»; en <title>Iulii Caesaris Sacaligeri... commentarii et animaduersiones</title>, p. 16.   </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> En <title>Iulii Caesaris Scaligeri exotericarum exercitationum liber quintus decimus de subtilitate, ad Hieronymum Cardanum</title> (Lutetiae: ex officina typographica Michaelis Vascosani, 1557), Exercitatio LXI, nº 6, «De caeli aeternitate iterum», ff. 97v-98r. Puede verse ejemplar digitalizado en <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k53459g/f2.item">GALLICA</ref>.</note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> SVET. <title>Iul.</title>, 44, 2: «... ius ciuile ad certum modum redigere atque ex immensa diffusaque legum copia optima quaeque et necessaria in paucissimos conferre libros».</note> 
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Louis Del Río (1537-1578), nacido en Brujas, jurista y profesor de Derecho en la Universidad de París, miembro del Consejo de los Tumultos en Flandes (donde colaboró estrechamente con Juan de Vargas) y miembro del Consejo Privado de Bruselas. Cf. Julie Versele, «Louis del Río», en Real Academia de la Historia, <title>Diccionario Biográfico electrónico</title> (en red, <ref target="https://dbe.rah.es/biografias/65535/louis-del-rio">https://dbe.rah.es/biografias/65535/louis-del-rio)</ref>.</note> 
+         </div>
+      </back>
+   </text>
+</TEI>
