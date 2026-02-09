@@ -1,0 +1,137 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700506">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan Sambuco [Viena] - 6 de mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 06</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM sends Sambucus a copy of the prologue to the Polyglot Regia, asking his opinion and assessment on that work. </note>
+            <note type="incipit">Ego tametsi tempore non primus omnium quibus charus es dici possim...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(B) KBS, Ms. A 902, f. 198r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 202-205, nº 37.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 430-441.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 202-205; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 430-441.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="SabucusIohannes">
+                  <note>Juan Sambuco (1531-1584), humanista húngaro, medico, filólogo e historiador.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05">6 mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Iohannes Sambucus </persName>
+            </correspAction>
+            <correspAction type="answeredby">
+               <persName>Iohannes Sambucus </persName>
+               <settlement>Viena</settlement>
+               <date when="1570-06-01">1 de junio de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-09-30">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/09/KBS-Ms-A-902-f.-198r.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>El hecho de haberse conservado dos minutas con un mismo destinatario, el mismo contenido y redactadas ambas en torno a la misma fecha, nos obliga a considerar, como ya apuntábamos en la carta 1570 05 00 S, que solo uno de estos dos borradores fue realmente enviado al erudito húngaro Juan Sambuco. Y como señalábamos allí mismo, la dispersión de ideas y la sintaxis descuidada de aquel documento obligan a considerarlo como el borrador previo de este otro que ofrecemos aquí. </p>
+      </front>
+      <body>   
+         <div type="main_content">
+            <pb n="f. 198r" ed="B" facs="#foto1"/>
+            <p>[<hi rend="bold">1</hi>] Ego tametsi tempore non primus omnium quibus charus <choice><sic>est</sic> <corr>es</corr></choice> dici possim, affectu tamen et studio inter <del>postremos non haberi</del> primos censeri. Id quod si tibi persuaseris, omni officiorum genere ex me expectando cum opportunum fuerit experiri <del>licebit</del> poteris. Eadem autem ego animi mei fiducia fretus amicitiae <del>suauissimos</del> fructus <del>a te</del> ex te, cum res postulauerit, <del> . . exigere</del> suauissimos percepturus exigere non dubitabo. </p>
+            <p>[<hi rend="bold">2</hi>] <del>Iam ut arbitror</del> Bibliorum quadrilinguium opus illud maximum et dignissimum quod a <name type="person" ref="#FelipeII">Philipp<del>o</del>i</name> <del>rege</del> catholic<del>o</del>i <choice><sic>reges</sic> <corr>regis</corr></choice> consilio et auspiciis <name type="person" ref="#PlantinoCristobal">Plantino</name> nostro imprimendum commissum est cuique ego procurando regis auctoritate legatus sum ex diuino beneficio foeliciter atque ex animi sententia procedere <del>iam scias</del> atque non longe nimium a fine distare scias <del>ueli</del> uolo. Id autem oportuna praefatione instruere ex eiusdem cath<expan><ex>olici</ex></expan> r<expan><ex>egis</ex></expan> auctori<supplied>ta</supplied>te meditamur. Ipse autem rex argumentum nobis prescripsit, quod longiore oratione etiam ex illius mandato persequeremur. Quoniam uero nihil a nobis in toto opere <del> . est</del> exigebatur praeter sum<supplied>m</supplied>am uersionum fidem et correctionis diligentiam, quam pro ingenii ac facultatis nostrae tenuitate studiose praestitisse uidemur, una tantum reliqua cura est praefationis, cuius rationem non meo unius ingenio aut <del>con</del> iudicio constare uolui, sed <del>omn</del> eorum omnium arbitrio et calculo quibus et pietatis et doctrinae nomine me ipsum meaque omnia ad examen, correctionem et probationem proponere <app><lem wit="#B #E2">ac</lem> <rdg wit="#E1">et</rdg></app> summittere debeo. [<hi rend="bold">3</hi>] <del>His autem . </del> Ex quibus te unum ut amicum diligo ita quoque meorum studiorum censorem adiutoremque appellare constitui <del>maxi</del> in re praecipue non mea tantum, sed tua, sed communi omnium <del>bono</del> christianorum et doctorum uirorum qualis tu es, cuiusmodi hanc Sacrorum Bibliorum aeditionem existimare oportet.</p> 
+            <p>[<hi rend="bold">4</hi>] Te igitur, mi <name type="person" ref="#SabucusIohannes">Sambuce</name>, uehementer oro atque obsecro ut, inter caetera studia tua, aliquot saltem horas huic praefationi impertiri uelis pro arbitrio iudicioque tuo eximio, non in rebus quae in ea <app><lem wit="#B #E2">tractantur</lem> <rdg wit="#E1">tranctantur</rdg></app> solum, sed in uerborum etiam proprietate, elegantia et castimonia examinandae, corrigendae et, si commodum uideatur, immutandae. Ideo enim latiores margines in exemplo relinqui curaui, ut idoneus adnotationibus et correctionibus adscribendis esset locus. [<hi rend="bold">5</hi>] Gratissimum autem mihi et te dignissimum <del>officium</del> feceris officium ac me tui amantissimum perpetuo beneficio deuinxeris. Nec ingratum experiere aut immemorem, utpote qui cum apud alios omnes quibus notus sum tum apud regem meum pietatem doctrinamque tuam sim libenter perpetuo praedicaturus.</p> <closer><salute>Vale</salute>. <name type="place">Antuerpiae</name>, <date when="1570-05-06">pridie Non<expan><ex>as</ex></expan> Maii 1570</date>.</closer>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body> 
+               <div type="main_content">
+                  <pb n="f. 198r" ed="B" facs="#foto1"/>
+                  <p>[<hi rend="bold">1</hi>] Si bien no se puede decir que sea el primero de todos a quienes es grato vuestra merced, no obstante, en afecto y celo puedo ser considerado entre los primeros.<ref target="#note1"
+                     xml:id="reference1">1</ref> Y si vuestra merced está convencido de ello, podrá experimentar todo tipo de servicios de mi parte cuando fuere oportuno. Y llevado por esta confianza de mi espíritu en que recibiré los suavísimos frutos de la amistad de vuestra merced cuando lo exija la ocasión, no vacilaré en pedirlos.</p>
+                  <p>[<hi rend="bold">2</hi>] Quiero que sepa vuestra merced que aquel trabajo insigne y dignísimo de la Biblia cuadrilingüe, que por decisión y bajo los auspicios del rey católico Felipe, recibió el encargo de imprimirla nuestro Plantino, y la cual estoy encargado de dirigir en nombre del rey, avanza felizmente por obra de Dios y conforme a nuestro deseo, y no dista ya mucho de su conclusión. Ahora bien, tenemos en mente proveerla con un prólogo apropiado, como lo tiene ordenado este mismo rey católico. Y el propio rey nos ha determinado lo que debemos tratar con un discurso más extenso conforme a su mandato. Y dado que no se nos exigía en toda la obra otra responsabilidad que la máxima fidelidad de las traducciones y el mayor cuidado en la corrección, lo cual creemos haberlo garantizado con celo, a tenor de la parquedad de nuestro ingenio y facultades, solo me queda el cuidado del prefacio, cuya consideración no he querido que dependa solo de mi ingenio y juicio, sino también de la opinión y criterio de todos estos a cuyo examen, aprobación y corrección debo presentarme y someterme yo mismo y todo lo mío por su piedad y erudición. [<hi rend="bold">3</hi>] De entre los cuales, a vuestra merced muy en particular, igual que le aprecio como amigo, del mismo modo he decidido llamarle como censor y colaborador, especialmente en un asunto que no es solo mío, sino también de vuestra merced, también común a todos los hombres cristianos y doctos, cual es vuestra merced, tal y como conviene considerar esta edición de la sagrada Biblia.</p> 
+                  <p>[<hi rend="bold">4</hi>] A vuestra merced por tanto, mi querido Sambuco, pido y ruego encarecidamente que entre los demás trabajos suyos se digne a dedicarle a este prefacio al menos algunas horas, para que, según su opinión y eximio juicio, lo examine, lo corrija y, si le parece oportuno, lo modifique no solo en el contenido, sino también en la propiedad, la elegancia y la pureza de los términos empleados. Y por este motivo he procurado dejar márgenes bastante amplios en la copia, para que haya suficiente espacio para recoger las anotaciones y las correcciones. [<hi rend="bold">5</hi>] Me prestará vuestra merced así un servicio muy grato para mí y muy digno de vuestra merced, y me tendrá obligado con un favor eterno a mí que soy afectísimo suyo. Y no me mostraré desagradecido ni olvidadizo, puesto que no solo ante todos los que conozco, sino también ante mi rey pregonaré siempre de buen grado la piedad y erudición de vuestra merced. </p>
+                  <closer>[<hi rend="bold">6</hi>] Adiós. En Amberes, a 6 de mayo de 1570.</closer>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Domínguez, <title>Correspondencia</title>, I, 431 ss, opta por fundir en uno solo el borrador que nosotros editamos como <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-s/">1570 05 00 S</ref> y este mismo. Aun siendo plausible esta hipótesis (el infinitivo <foreign>censeri</foreign> podría depender del verbo <foreign>cupio</foreign> que en el citado borrador anterior quedaba incompleto, nosotros hemos preferido incluir ambos testimonios en nuestra edición crítica digital de manera separada, habida cuenta de la separación física de los dos borradores en el manuscrito de Estocolomo, y de que cada uno de los borradores pudo ser resultado de un momento de redacción distinto. </note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
