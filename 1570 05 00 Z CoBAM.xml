@@ -1,0 +1,135 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700500Z">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Viglio de Zuichem  [Bruselas] - Mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 00 Z</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM sends Viglius Zuichemus, President of the Privy Council, a copy of the prologue he is preparing for the Polyglot Bible in order to solicit his feedback on the draft.  </note>
+            <note type="incipit">Praefationem sacro Bibliorum operi Philippi Regis nostri Catol. consilio et auctoritate edendo...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(B) KBS, Ms. A 902, f. 197r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness> <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 200-201, nº 36.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 470-475.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 200-201; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 470-475.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AyttaVigliusZuichemiusab">
+                  <note>  Viglius Zuichemius ab Aytta (1507-1577), diplomático holandés; presidente del Consejo Privado del Emperador; tío de Bucho y Folcard de Montzima.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05">Hacia mediados de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Viglio ab Aytta de Zuichem</persName>
+               <settlement>Bruselas</settlement>
+                             </correspAction>
+            <correspAction type="answeredby">
+               <persName>Viglio ab Aytta de Zuichem</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1570-05-16">16 de mayo de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-09-06">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/09/KBS-Ms-A-902-f.-197r.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p> La prueba de que esta minuta autógrafa fue realmente enviada por BAM, la tenemos en la carta 1570 05 16, donde recogemos la respuesta del Presidente Viglio. Este es, por tanto, el <hi rend="italic">terminus post quem non</hi> para la datación de esta misiva; en cuanto al <hi rend="italic">terminus ante quem non</hi>, debemos fijarlo el día 13 de mayo, fecha en que BAM escribe a Juan de Vargas, enviándole también su carta a Viglio para que Vargas se la hicera llegar. 
+         </p>
+      </front>
+      <body>    
+         <div type="main_content">
+            <pb n="f. 197r" ed="B" facs="#foto1"/>
+            <opener>Praesidi <name type="person" ref="#AyttaVigliusZuichemiusab">Viglio</name> s<expan><ex>alutem</ex></expan>.</opener>
+            <p>[<hi rend="bold">1</hi>] Praefationem sacro Bibliorum <supplied>operi</supplied> <name type="person" ref="#FelipeII">Philippi</name> regis nostri catol<expan><ex>ici</ex></expan> consilio et auctoritate edendo prefigendam <del>ex regis ipsius</del> argumento ex regis ipsius mente praescripto <del>his</del> proximis hisce diebus componebam, <del>cuius exemplum . .</del> quam ego tuo iudicio, cui plurimum in omni studiorum genere tribuo, examinandam et censendam atque pro arbitrio corrigendam <choice><sic>immuttandamque</sic> <corr>immutandamque</corr></choice> destinaui. [<hi rend="bold">2</hi>] Scio enim quantum me, ex quo <del>tibi</del> in tuorum numerum adscripsisti <del>. . </del>, ames (quae tua summa humanitas est). Scio quantum <del>pr.</del> omnibus <del>rebus</del> publicis cum <del>im</del>primisque <del>ad</del> pietatem et catholicam religionem spectantibus rebus <del>pro.</del> studeas et consulas, quantumque regis nostri consilia <del>que</del> omnia et studia probes. </p>
+            <p>[<hi rend="bold">3</hi>] Quam ob rem hunc laborem inter plurima tua negotia tibi non fore molestum spero, quem ego non tantum in meam, qui dignitatem tuam plurimum diligo et obseruo, quantum in regis ipsius et totius christianae reipub<expan><ex>licae</ex></expan> gratiam tibi susceptum <del>uelim non</del> <app><lem wit="#B #E2">cupio,</lem> <rdg wit="#E1"><hi rend="italic">post</hi>cupio <hi rend="italic">imum punctum posuit</hi></rdg></app> non adeo magnum futurum, praesertim cum ingenii <del>isto</del> sis in omni <del>argument.</del> lectionis et scribendi argumento facillimi et exercitatissimi neque tantum praefationis uolumen sit, ut non possit paucis horis <del>.</del> euolui et ista etiam iudicandi facilitate ac dexteritate notari. <del>Quamquam</del> <app><lem wit="#B #E2">Praeterquam</lem> <rdg wit="#E1">preter</rdg></app> autem ea in ea re dignissimum tuo nomine, tuo et <del>iste publicarum</del> erga publicam utilitatem studio officium facturus sis, me quoque <del>aeterno maximo</del> tui <del>amantissimum</del> colentissimum maximo et aeterno beneficio deuinxeris. [<hi rend="bold">4</hi>] Curaui capaciores in exemplo ipso praefationis margines <del>reliq.</del> adstrui ut commodus ad correctiones et notationes adscribendas locus esset. <subst><del>eam</del> <add place="above">Id</add></subst> tu quamprimum fieri commodo tuo possit mihi <choice><sic>remittendam</sic> <corr>remittendum</corr></choice> curabis <surplus>ad</surplus> <del>scripto</del> una cum adscripta iudicii tui sententia.</p>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body>
+               <div type="main_content">
+               <pb n="f. 197r" ed="B" facs="#foto1"/>
+                  <opener>Al Presidente Viglio,<ref target="#note1"
+                     xml:id="reference1">1</ref> salud.</opener>
+                  <p>[<hi rend="bold">1</hi>] Hace unos días que estaba redactando, conforme al argumento determinado por el propio rey, el prólogo que hay que poner al frente de esta obra sagrada de la Biblia que se imprime por decisión y mandato de nuestro rey católico Felipe; y he decidido que vuestra merced, cuyo juicio estimo mucho en todo tipo de estudios, examine y juzgue este prólogo, y que lo corrija y modifique según el criterio de vuestra merced. [<hi rend="bold">2</hi>] Pues soy consciente de en qué medida me aprecia vuestra merced desde que me incluyó en el número de los suyos, dada su gran humanidad. Sé en qué medida se vuelca y preocupa vuestra merced por todos los asuntos públicos, y especialmente por los que atienden a la piedad y a la religión católica, y en qué medida aprueba todas las decisiones y proyectos de nuestro rey.</p>
+                  <p>[<hi rend="bold">3</hi>] Por lo que espero que este trabajo no resultará molesto a vuestra merced entre sus numerosas ocupaciones; el cual deseo que lo acepte no tanto como un servicio a mí, que aprecio y honro mucho la dignidad de vuestra merced, cuanto al propio rey y a toda la cristiandad, tarea que no será grande, máxime teniendo en cuenta la facilidad y experiencia de vuestra merced en cualquier tema de lectura y escritura, y no siendo tanta la extensión del prólogo como para no poderlo examinar en unas cuantas horas, y anotarlo con esa misma facilidad y agudeza de juicio. Además del hecho de que en esto prestará vuestra merced un dignísimo servicio con su nombre y con su desvelo por el bien común, a mí también, que soy afectísimo suyo, me obligará con un favor que será el mayor e imperecedero. [<hi rend="bold">4</hi>] He procurado dejar márgenes bastante amplios en la copia misma del prólogo para que haya espacio suficiente para anotar las correcciones y las observaciones. Trate vuestra merced de enviármelo de vuelta lo antes que pueda junto con el juicio que le haya merecido.</p>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Sobre Viglio de Zuichem, Presidente del Consejo de Estado de los Países Bajos, véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06">1569 04 06</ref>.  </note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
