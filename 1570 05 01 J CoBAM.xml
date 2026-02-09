@@ -1,0 +1,214 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700501J">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Hadrianus Iunius (Haarlem) a Benito Arias Montano [Amberes] - 1 de mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 01 J</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">The author of the letter submits a request to BAM to access certain books that have appeared in the Index of Prohibited Books of 1570, defending the importance of some of them for historical work, while, on the other hand, showing respect for orthodox theological doctrines. </note>
+            <note type="incipit">Incredibiles tibi atque adeo immortales gratias uerbis amplissimis agerem...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C1">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Países Bajos</country>
+                        <settlement>Utrecht</settlement>
+                        <msName>Universiteitsbibliotheek Utrecht</msName>
+                        <altIdentifier>
+                           <idno>(C) UBU, Ms. 829, ff. 42v-44r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C2">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Países Bajos</country>
+                        <settlement>Utrecht</settlement>
+                        <msName>Universiteitsbibliotheek Utrecht</msName>
+                        <altIdentifier>
+                           <idno>(C) UBU, Ms. 829, f. 173v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> P. Scheltema, <title>Hadriani Junii Epistolae selectae nunc primum editae </title>(Amsterdam, 1839), pp. 43-45.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 408-417.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Scheltema, <title>Epistolae selectae</title>, pp. 43-45; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 408-417.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="IuniusHadrianus">
+                  <note>Adriaen de Jonghe (1511-1575), médico holandés, humanista, poeta.</note></person>
+               <person xml:id="FuchsiusLeonardus">
+                  <note>Leonardus Fuchsius (1501-1566), botanista alemán, humanista.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Hadrianus Iunius</persName>
+               <settlement>Haarlem</settlement>
+               <date when="1570-05-01">1 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano </persName>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>La copia de los ff. 42v-44r es obra de Petrus Junius, hijo de Hadrianus Junius.</handNote>
+            <handNote>La copia del f. 173v es de mano desconocida.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-10-11">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/10/UBU-Ms.-892-f.-42v.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/10/UBU-Ms.-892-f.-43r.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/10/UBU-Ms.-892-f.-43v.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/10/UBU-Ms.-892-f.-44r.jpg"
+         xml:id="foto4"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>En el Ms. 829 de la Biblioteca de la Universidad de Utrecht se conservan dos copias de esta carta: la primera de ellas (C1, ff. 42v-44r) va marcada con el número LI dentro de la primera centuria de cartas y es en la que basamos nuestra edición. En el folio 173v del mismo manuscrito se conserva otra copia (C2), de otra mano, que parece una transcripción de C1. Para un inventario de la correspondencia conservada de Hadrianus Junius remitimos al trabajo de C. Heesakkers – D. van Miert, «An Inventory of the Correspondence of Hadrianus Junius (1511–1575)», <title>Lias</title>, 37/2 (2010), 109–268. </p>
+      </front>
+      <body>  
+         <div type="main_content">
+            <pb n="f. 42v" ed="C1" facs="#foto1"/>
+            <opener><name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name> theologo.</opener>
+            <p>[<hi rend="bold">1</hi>] Incredibiles tibi atque adeo immortales gratias uerbis amplissimis <app><lem wit="#C1 #C2 #E2">ut</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> agerem, res quidem exigeret, uir ornatiss<expan><ex>ime</ex></expan> idemque sanctiss<expan><ex>ime</ex></expan>, quod neminem gratum gratiarum  <pb n="f. 43r" ed="C1" facs="#foto2"/> esse immemorem ius ratioque postulet, nisi fidelior earum custos esset mens beneficii tenax atque menor, quam tibi deuotam penitus cogita, perpetuamque fore eam memoriam, dum elogii (quo me ornasti, quoque me de sene repubescere ac cum <name type="person">Aesone</name> Thessalo reiuuenescere quodam modo dedisti) echo aures meas personabit. </p>
+            <p>[<hi rend="bold">2</hi>] Quodsi uno me insuper beneficio, quod tua in manu esse non diffido, cumulare non piguerit, nae tum ego omnes omnium beatorum fortunas contemnere, <name type="`person">Crassumque</name> diuitiis anteire posse putauero; quod cuiusmodi sit, sagacitas tua <app><lem wit="#C1 #C2 #E2">emunctissima</lem> <rdg wit="#E1">eminentissima</rdg></app> facile odorabitur. </p>
+            <p>[<hi rend="bold">3</hi>] Perlectus est a me <title>Prohibitorum librorum Index</title> operosus, in quo mirifice me torquet quod primi nominis impressores, e quorum officinis optimos utriusque linguae authores prodiise constat, damnatos legam, cum quibus pariter et authorum ipsorum abolitio sanciri uidetur. [<hi rend="bold">4</hi>] Deinde sollicitum me facit tanta uis omnigenum scriptorum, qui (ut de <name type="person" ref="#FuchsiusLeonardus">Fuchsio</name> <app><lem wit="#C1 #C2 #E2">aliisque</lem> <rdg wit="#E1">aliique</rdg></app> medicis, quibus insueuimus, taceam) historiam scribenti mihi mate<pb n="f. 43v" ed="C1" facs="#foto3"/>riam suppeditare possent uel ad refuntanda aliorum testimonia, uel ad colligendam ueri instructionem, quando constet <name type="person">Plinii</name> <app><lem wit="#C1 #E1 #E2">testimonio</lem> <rdg wit="#C2"> <del>authoritate</del> testimonio</rdg></app>, nullum tam <app><lem wit="#C1 #C2 #E2">esse malum</lem> <rdg wit="#E1">malum esse</rdg></app> librum, qui non aliquid boni contineat. </p>
+            <p>[<hi rend="bold">5</hi>] Quodsi non uere minus quam lepide dixit <name type="person">Virgilius</name> ex Enniano stercore se gemmas colligere, quidni idem mihi quoque liceat, e sterquilinio et ruderibus Germanicorum scriptorum et Gallicorum excoquere purum putumque ueritatis aurum exoptanti? Neque uero ita cerebri uacuum me aut a iudicio inopem existimem, ut nequeam capitis atque inguinis discrimina nosse; neque ita sum puer, ut gladius mihi (iuxta paroemiam) committi non debeat. Quin iam olim degustatus mihi est arboris scientiae boni malique succus. </p>
+            <p>[<hi rend="bold">6</hi>] Quorsum haec omnia? Nimirum ut si ratione ulla fieri queat, ut quum anno adhinc tricesimo <add place="margin">III Martii M D XL</add> <name type="place">Bononiae</name> doctoratus títulos cum in philosophia tum in medicina acceperim, data legendi quiduis et profitendi authoritate, nunc tua ope beneficioque concedatur usus lectioque librorum mediae classis (<app><lem wit="#C1 #C2 #E2">theologicos</lem> <rdg wit="#E1">theologicas</rdg></app>, in quibus sunt <name type="person">Luth<expan><ex>erus</ex></expan></name>, <name type="person">Mel<expan><ex>anchthon</ex></expan></name>, <name type="person">Oecol<expan><ex>ampadius</ex></expan></name>,  <pb n="f. 44r" ed="C1" facs="#foto4"/> <name type="person">Zuing<expan><ex>lius</ex></expan></name>, <name type="person">Calv<expan><ex>inus</ex></expan></name> eiusque farinae alios non moror, <app><lem wit="#C1 #E1 #E2">imo auersor</lem> <rdg wit="#C2"><del>imo auersor</del></rdg></app>, quod historico mihi aliena sit illorum lectio) in quibus localem, quam uocant, memoriam defixam habeo, quique a rerum narratione non abhorrent et qui tamen apud rigidos istos censores ac praetores cuncta promiscue inuolaturos, inuidiam incursuri sunt, quo sic aduersum uitiligatores istos et calumniatores in tuto statuar. [<hi rend="bold">7</hi>] Id si praestiteris, uir clariss<expan><ex>ime</ex></expan>, ut magnum operae pretium meis per te historiis accedet, ita <app><lem wit="#C2 #E2">me</lem> <rdg wit="#C1"><surplus>Iunium</surplus> me</rdg> <rdg wit="#E1">Junium me</rdg></app> plane bearis <app><lem wit="#C1 #C2 #E2">quando</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>, ut scite Plinius ait, «<app><lem wit="#E2">Deus est mortali</lem> <rdg wit="#C1 #C2">Deus est mortalis</rdg> <rdg wit="#E1">Dei est mortalis</rdg></app>, iuuare mortalem et haec ad aeternam gloriam uia». </p>
+            <closer>[<hi rend="bold">8</hi>] <salute>Vale, Theologiae lumen et <name type="person" ref="#IuniusHadrianus">Iunium</name> amare perge</salute>. <name type="place">Harlemo</name> <date when="1570-05-01"><app><lem wit="#C1 #C2 #E2">K<expan><ex>a</ex></expan>l<expan><ex>endis</ex></expan></lem> <rdg wit="#E1">Cal.</rdg></app> Maii</date> <add place="margin">A<expan><ex>nn</ex></expan>o M D LXX</add>.</closer>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body>  
+               <div type="main_content">
+                  <pb n="f. 42v" ed="C1" facs="#foto1"/>
+                  <opener>A Benedicto Arias Montano, teólogo.<ref target="#note1"
+                     xml:id="reference1">1</ref></opener>
+                  <p>[<hi rend="bold">1</hi>] Que yo te diera unas gracias increíbles y, de hecho, inmortales, con palabras más amplias, lo requeriría la ocasión, varón sumamente adornado y, al mismo tiempo, santísimo, ya que la ley y la razón permiten que alguien que es agradecido <pb n="f. 43r" ed="C1" facs="#foto2"/> olvide las gracias, a menos que no fuera un guardián más fiel de ellas una mente que retiene y recuerda bien el beneficio, mente que puedes considerar completamente devota a ti y cuya memoria será perpetua, mientras el eco del elogio (con el que me has honrado, y con el que de algún modo me has permitido regresar de la vejez a la pubertad y rejuvenecer con Esón de Tesalia<ref target="#note2"
+                     xml:id="reference2">2</ref>) resuene en mis oídos. </p>
+                  <p>[<hi rend="bold">2</hi>] Y si, además, no te molestara colmarme con un beneficio más, que no dudo que esté en tu mano, entonces sí, pensaría que podría despreciar todas las fortunas de todos los bienaventurados y superar en riquezas a Craso.<ref target="#note3"
+                     xml:id="reference3">3</ref> De qué tipo de beneficio se trata, tu finísima sagacidad lo adivinará fácilmente. </p>
+                  <p>[<hi rend="bold">3</hi>] He leído cuidadosamente el laborioso <title>Índice de libros prohibidos</title>,<ref target="#note4"
+                     xml:id="reference4">4</ref> y me atormenta notablemente que vea condenados a los impresores de más alto renombre, de cuyos talleres es bien sabido que han salido los mejores autores de ambas lenguas,<ref target="#note5"
+                        xml:id="reference5">5</ref> lo que parece implicar también al mismo tiempo la abolición de los mismos autores. [<hi rend="bold">4</hi>] Luego, me inquieta la gran cantidad de escritores de todo tipo, que (por no hablar de Fuchs<ref target="#note6"
+                           xml:id="reference6">6</ref> y de otros médicos con los que estamos acostumbrados a trabajar) podrían proporcionar mate<pb n="f. 43v" ed="C1" facs="#foto3"/>rial a un historiador como yo tanto para refutar los testimonios de otros como para reunir información verdadera, pues, según el testimonio de Plinio, «no hay libro tan malo que no contenga algo bueno».<ref target="#note7"
+                              xml:id="reference7">7</ref></p>
+                  <p>[<hi rend="bold">5</hi>] Y Si Virgilio dijo no con menos verdad que con ingenio que recogía gemas del estiércol de Ennio, ¿por qué no habría de estarme permitido a mí también, deseoso como estoy de extraer oro puro y verdadero del estiércol y escombros de los escritores alemanes y franceses? Y no me consideraría yo tan vacío de juicio o tan carente de criterio, como para no poder distinguir entre la cabeza y las ingles. Tampoco soy tan niño como para que no se me pueda confiar una espada (según el proverbio).<ref target="#note8"
+                     xml:id="reference8">8</ref> Es más, ya hace tiempo que he probado el jugo del árbol de la ciencia del bien y del mal. </p>
+                  <p>[<hi rend="bold">6</hi>] ¿Por qué digo todo esto? Pues bien, es para que, si de alguna manera pudiera lograrse, ya que hace treinta años<ref target="#note9"
+                     xml:id="reference9">9</ref> recibí en Bolonia los títulos de doctor tanto en Filosofía como en Medicina, con la autoridad para leer y enseñar lo que quisiera, ahora, con tu ayuda y beneficio, se me conceda el acceso y la lectura de los libros de la clase media (los teológicos, entre los cuales están Lutero, Melanchthon, Ecolampadio, <pb n="f. 44r" ed="C1" facs="#foto4"/> Zuinglio, Calvino y otros de la misma índole, no me preocupan, es más los rechazo, puesto que su lectura, en cuanto historiador, me es ajena), en los que encuentro plasmada la historia local, así la llaman, que no se apartan de la narración de los hechos y que, sin embargo, se ganarán la enemistad de esos severos censores y jueces, quienes mezclan todo sin distinción, y de esta manera yo estaría protegido contra esos picapleitos y calumniadores. [<hi rend="bold">7</hi>] Si haces esto, varón ilustrísimo, no solo se añadirá algo de mucho valor para mis historias gracias a ti, sino que también y me harás plenamente feliz como sabiamente dice Plinio: «Un Dios es para un mortal ayudar a un mortal este es el camino hacia la gloria eterna».<ref target="#note10"
+                        xml:id="reference10">10</ref> </p>
+                  <closer>[<hi rend="bold">8</hi>] Adiós, luz de la Teología, y sigue amando a Junio. Desde Harlem, a 1 de mayo.<ref target="#note11"  xml:id="reference11">11</ref></closer>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> En cuanto al remitente de esta carta, Adriano de Jonghe o Hadrianus Junius nace en Hoorn el 1 de julio de 1511. Se doctoró en Medicina y Filosofía en Bolonia; cf. G. Bronzino, <title>Notitia doctorum Bononiae</title>(Milán, 1962), p. 30. Como médico entró al servicio del duque de Norfolk, Tomás Howard, y trató de obtener la protección de Enrique IV, a quien se dirigía como rey, dedicándole su <title> Lexicon Graecolatinum</title> (Basilea, 1548). Ya en su país se establece en Haarlem, trabajando y estudiando allí con la excepción de un paréntesis en 1564, fecha en que aceptó la propuesta del rey de Dinamarca para asentarse en esa tierra durante una estancia que, a la postre, resultó muy breve. Resumió su propia vida y publicó una serie de ediciones impresas en la casa de Plantino, a quien en 1574 prometió una visita cuando intentó llevar a su hijo a Lovaina. Su casa y sus libros fueron destruidos en 1573, de forma que se asentó en Middelburg, donde intentó continuar su actividad hasta que le alcanzó la muerte el 16 de junio de 1575. Cf. <title>BWN</title>, IV, pp. 73-75; <title>HTL</title>, II, 483-487; <title>HTL</title>, III, 350, 566, 569; <title>HTL</title>, IV, 181,515; <title>BIB
+                     </title>, II, 748. </note>
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> Esón o Aesón, rey de Tesalia y
+                     padre de Jasón. Medea, por medio de un encantamiento, degolló y
+                     resucitó convertido en un hombre joven; su intención final era
+                     que Esón se liberara de su hermano Pelias, pues hizo que este
+                     también fuera degollado pero después no lo volvió a la vida.
+                  </note>
+                  <note type="footnote" xml:id="note3">
+                     <ref target="#reference3">3</ref> Marco Licinio Craso (115/114
+                     a.C. - 53 a. C), uno de los hombres más ricos de su tiempo
+                     gracias a los negocios inmobiliarios. </note>
+                  <note type="footnote" xml:id="note4">
+                     <ref target="#reference4">4</ref> Referencia al <title>Index
+                        librorum prohibitorum</title> (Amberes, 1570), citado ya en
+                     carta <ref target=
+                        "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-
+                        03-04">1569 03 04</ref>, índice que completa el que se editó
+                     también en Amberes en 1569, para reproducir el del Concilio de
+                     Trento de 1564, que no fue publicado en los Países Bajos.
+                  </note>
+                  <note type="footnote" xml:id="note5">
+                     <ref target="#reference5">5</ref> A saber, la lengua griega y
+                     la lengua latina. </note>
+                  <note type="footnote" xml:id="note6">
+                     <ref target="#reference6">6</ref> Leonardus Fuchsius
+                     (1501-1566), botanista alemán, catedrático de Medicina en la
+                     Universidad de Tübingen. </note>
+                  <note type="footnote" xml:id="note7">
+                     <ref target="#reference7">7</ref> Así lo testimoniaba Plinio el
+                     Joven (<title>Epist.</title> 3, 5, 10) hablando de su tío,
+                     Plinio el Viejo: «dicere etiam solebat nullum esse librum tam
+                     malum ut non aliqua parte prodesset». </note>
+                  <note type="footnote" xml:id="note8">
+                     <ref target="#reference8">8</ref> Como se puede ver en el texto
+                     latino (señalado en verde), C1 añade en el margen la fecha del 3
+                     de marzo de 1540. </note>
+                  <note type="footnote" xml:id="note9"><ref target="#reference9">9</ref> Erasmo, <title>Adag.</title>
+                     , 1418: «Ne puero gladium». </note>
+                  <note type="footnote" xml:id="note10">
+                     <ref target="#reference10">10</ref> PLIN. <title>Nat.</title>, 2,
+                     18. </note>
+                  <note type="footnote" xml:id="note11">
+                     <ref target="#reference11">11</ref> Como se puede ver en el
+                     texto latino (señalado en verde), C1 añade en el margen el año
+                     de la fecha, en números latinos. </note>
+               </div>
+                </back>
+             </text>
+          </group>
+       </text>
+    </TEI>       
