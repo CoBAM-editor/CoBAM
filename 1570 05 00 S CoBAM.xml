@@ -1,0 +1,137 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700500S">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano [Amberes] a Juan Sambuco [Viena] - Mayo de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 00 S</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Although BAM has not met Sambucus yet, he dares to write him for the first time to make a request. BAM has just written the foreword of the Polyglot Bible. Before sending it to the Court he has considered convenient that some prestigious scholars revise and correct the draft. BAM asks Sambucus to participate in this process of correction. </note>
+            <note type="incipit">Cum pietatis et bonarum literarum similibus studiis...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(B) KBS, Ms. A 902, f. 196v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 192-195, nº 34.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 430-441.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 192-195; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 430-441.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="SabucusIohannes">
+                  <note>Juan Sambuco (1531-1584), humanista húngaro, medico, filólogo e historiador.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05">Hacia mediados de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Iohannes Sambucus </persName>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-09-23">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/09/KBS-Ms-A-902-f.-196v.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>Recogemos con esta una serie de minutas autógrafas, que comprenden los folios 196v-198 del manuscrito de Estocolmo, todas ellas con un mismo tema central, y algunas incluso con importantes coincidencias de forma. Cada una de estas cartas debió de ir acompañada por un borrador del prólogo a la Biblia Políglota. Pues BAM pretende recabar, en relación con dicho prólogo, el juicio y valoración de un número, lo más variado posible, de eruditos y hombres de Iglesia. Tres de estas minutas no están fechadas, pero por su ubicación dentro del manuscrito sabemos que fueron redactadas con posterioridad a la carta 70 04 23 y con anterioridad al día 6 de mayo de ese mismo año, que es la fecha de la carta 1570 05 06.</p> 
+         <p>Respecto a la primera de ellas, debemos señalar que la coexistencia de dos minutas con un mismo destinatario, Juan Sambuco, con un mismo contenido y redactadas ambas por la misma fecha, obliga a considerar que solo una debió de ser remitida. Y en efecto, este f. 196v del manuscrito de Estocolmo tiene todos los visos de ser el boceto del borrador recogido en el documento 1570 05 06. La dispersión de ideas, la sintaxis descuidada, las frases inconclusas, todo ello induce a considerarlo como un apunte previo.</p>
+         <p>BAM y Juan Sambuco no se conocían personalmente, aunque sí tenían una relación indirecta por medio de la amistad común de Plantino. Teniendo en cuenta esto, se puede apreciar a través de estos borradores cómo BAM intenta abordar al humanista húngaro, y cómo se esfuerza por encontrar la fórmula adecuada para hacerlo.</p>
+      </front>
+      <body> 
+         <div type="main_content">
+            <pb n="f. 196v" ed="B" facs="#foto1"/>
+            <opener>Iohanni Sambuco s<expan><ex>alutem</ex></expan>.</opener>
+            <p>[<hi rend="bold">1</hi>] Cum pietatis et bon<del>o</del>arum <del>studiorum</del> literarum <del>communio</del> similibus studiis <del>amicoque</del> amicorum etiam communio accedit, eae res satis idoneae semper optimis uiris existimatae sunt ad nouas inter eos, qui se mutuo antea <del>non</del> alias non uiderint aut cognouerint amicitias, consuetudines ac necessitudines ineundas et confirmandas, quip<supplied>p</supplied>e cum ipsa religionis communio et <del>charitas</del> fraterna dilectio<del>ne</del> homines uinciat, studiorum praeterea similitudo amorem mutuum, etiam inter absentes, conciliet et amicorum <del>inter .</del> communia pignora necessitudines efficiant certissimas. [<hi rend="bold">2</hi>] His <del>omnibus</del> igitur nominibus omnibus, quod a me iam diu est, quamuis alias tibi ignoto, plurimum animo dilectus atque etiam cultus <app><lem wit="#B #E2">extiteris</lem> <rdg wit="#E1">extitens</rdg></app>, ut ego uicissim a te amer, hac prima conciliationis epistola <del>postulare du</del> postulatu dignum duxi, quippe cum te et <del>pieta</del> egregio pietatis studio flagrantem et multiplici bonarum literarum eruditione ornatum tum res ipsae et eorum <subst><del>operum</del> <add place="above">scriptorum</add></subst>, quae a te uel composita uel explicata uel ex antiquorum scriptorum thesauris in lucem edita sunt, <del>argumenta</del> rationes plurimae <subst><del>confirmant</del> <add place="above">docent</add></subst> et communis utriusque nostrum amici eiusdemque optimi uiri <name type="person" ref="#PlantinoCristobal">Christophori Planti<surplus>ti</surplus>ni</name> testimonium assiduum confirmat.</p> 
+            <p>[<hi rend="bold">3</hi>] <del>Nu</del> Nemo autem <del>hominum</del> mortalium est quem ego, <surplus>et</surplus> <del>bonorum et optimorum</del> et bonarum literarum non dico usu et facultate (his enim partibus tenuem admodum me esse <subst><del>agnosco</del> <add place="inline">confiteor</add></subst>), sed studio et amore, flagrantiorem <del>me</del> quam me <del>ar</del> esse arbitrer; nemo etiam hominum est <del>qui . Plantinum me prae me</del> cui <del>chariss</del> <name type="person" ref="#PlantinoCristobal">Plantinus</name> noster charior quam mihi sit. <del>Nemo</del> Quamobrem nullum ego esse <del>homine</del> mortalium puto qui <del>tui nominis</del> maiore <del>ergo</del> in te studio et dilectione <del>sit</del> affectus sit quam ego, <subst><del>qui</del> <add place="above">cui</add></subst> quantum uirtute et <del>.</del> doctrina ualeas, quantum etiam <name type="person" ref="#PlantinoCristobal">Plantinum</name> <del>ames nostrum</del> diligas nostrum satis <del>perspectum</del> <del>habeo perspectum</del> fuerit exploratum. Id quod ubi tibi <del>ap</del> expositum fuerit, mihi esse a te rependendum mini<surplus>ni</surplus>me ambigo, quandoquidem <del>uis honesta</del> ea honestae et ingenuae amicitiae uis est ut <del>animo solor</del> uel unica tantum sui <del>causa</del> gratia <del>animos</del> eius qui <del>amatas</del> dilectus fuerit animum ei qui prior amauerit simili uinculo et charitatis iungat iugo. [<hi rend="bold">4</hi>] Cupio igitur...</p>
+            <p>[<hi rend="bold">5</hi>] Diu enim est quod uirtutum artiumque tuarum exemplis et multorum, quos ego summos uiros habeo, testimoniis quantum et ingenio et eruditione ualeres, quantum pietatis studio flagrares aperte cognoui teque ob eam rem plurimum, iam diu est, dilexi et ut mihi uehementer dilectum tibi confirmarem ocassionem commodam <del>.</del> captaui, quam iam mihi communis amicitia <name type="person" ref="#PlantinoCristobal">Plantini</name> nostri obtulit et rei eius de qua nunc te appellaturus sum <del>confirmauit</del> dignitas confirmauit. Quantum enim <del>tibi</del> <name type="person" ref="#PlantinoCristobal">Plantinus</name>, uir optimus et de omni literarum rep<expan><ex>ublica</ex></expan> benemerentissimus, tibi charus sit probe noui. Eundem autem mihi charissimum esse omnibus quibus potui argumentis testatus sum et omnibus officiis perpetuo me testaturum profiteor <del>. contigit . </del> <surplus>ut</surplus> ut amicitiam quam ego, tibi nondum notus, exoptabam communicatis etiam rationibus inirem. [<hi rend="bold">6</hi>] Occasionem nactus sum et uirtute tua et honestissimae <app><lem wit="#B #E2">charitatis</lem> <rdg wit="#E1">caritatis</rdg></app> causa dignam. Ea huiusmodi est: prefationem in sacrum Bibliorum opus quod <name type="person">Philippi</name> catholici regis consilio et auctoritate <name type="person" ref="#PlantinoCristobal">Plantinus</name> noster cudit, ego ut ei operi procurator, le<supplied>ga</supplied>tus hisce proximis diebus accepto a rege ipso argumento scribebam. Eam autem non antea ego probare decreui quam doctissimis et candidissimis uiris ad legendum, corrigendum censendumque traderem, <del>ex quibus</del> in quorum numero unum <del>.</del> te semper habui, cuius ingenio et iudicio plurimum tribuerem cuiusque et in rebus meis <del>cognoscendis candorem</del> suscipiendis humanitatem, cognoscendis candorem, iudicandis diligentiam et integritatem mihi ipse promitterem. Quibus omnibus †  † <app><lem wit="#B #E2">huic praefationi non tantum adeo mea</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>, quam publica Ecclesiae cuius opus hoc est, causa <app><lem wit="#B #E2">legendae</lem> <rdg wit="#E1">regendae</rdg></app> et pro arbitrio iudicioque tuo additis in margine notis et adscriptionibus corrigendae impenderis, cui etiam efficiendae rei amicorum <del>quorum fid</del> doctorum, quibus tu uteris quorumque magnus in ista Ecclesia numerus est, operam <app><lem wit="#B #E2">adhibebis</lem> <rdg wit="#E1">adhibibis</rdg></app>, si placeat, et exemplum <app><lem wit="#B #E2">ipsum</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> <del>ubi .</del> abs te notatum et correctum, quam primum id tuo commodo fieri possit, ad <name type="person">Plantinum</name> nostrum mihi reddendum remittes.</p> 
+            <p>[<hi rend="bold">7</hi>] Vale et me ama, amoremque erga te meum quocumque officii genere expectando <app><lem wit="#B">experiere</lem> <rdg wit="#E1"> experiri poteris</rdg> <rdg wit="#E2">experire</rdg></app>.  </p>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body> 
+               <div type="main_content">
+                  <pb n="f. 196v" ed="B" facs="#foto1"/>
+                  <opener>A Juan Sambuco salud.</opener>
+                  <p>[<hi rend="bold">1</hi>] Cuando a los estudios similares a la piedad y las buenas letras le sobreviene también la comunión de amigos, los hombres de pro siempre han considerado estas circunstancias como muy idóneas para iniciar y confirmar nuevas amistades, relaciones y familiaridad entre quienes no se han visto con anterioridad en ninguna otra parte, puesto que aunque la comunión misma de credo y el amor fraternal vincula a los hombres, la similitud de estudios concilia además el afecto mutuo, incluso entre ausentes, y las prendas comunes de la amistad traban unos lazos muy firmes de familiaridad. [<hi rend="bold">2</hi>] Así pues por todas estas razones, puesto que desde hace ya tiempo has sido alguien muy querido en mi ánimo e incluso honrado, aunque por lo demás no me conozca, he considerado digno en esta primera carta de acercamiento la petición de que yo sea al mismo tiempo apreciado por vuestra merced, dado que vuestra merced no solo arde por el egregio celo de la piedad y está adornado con la más variada erudición de las buenas letras, sino que también los temas mismos y muchas razones de estos escritos, que vuestra merced ha compuesto o ha explicado o bien ha publicado a partir de los tesoros de los antiguos escritores, lo muestran, y el testimonio asiduo de este amigo común y excelente varón, Cristóbal Plantino, lo confirma.</p> 
+                  <p>[<hi rend="bold">3</hi>] Ahora bien, no hay hombre al que yo, y no estoy hablando de la utilidad y ventaja de las buenas letras (pues en esta parcela tengo que reconocer que estoy muy limitado), sino del celo y el amor, considere más apasionado que a mí mismo; ni tampoco hay un hombre a quien nuestro Plantino sea más querido que a mí. Por lo que considero que no hay nadie que tenga a vuestra merced más afecto y apego que yo, quien sabe bien cuánto vale vuestra merced por su virtud y su erudición, y cuánto quiere también a nuestro Plantino. Y esto, una vez que lo haya expresado a vuestra merced, no me caben dudas de que me corresponderá, pues es tal la fuerza de la amistad honesta y sencilla, que incluso solo con su favor es capaz de unir el ánimo de este que ha sido querido al que primero lo quiso con un lazo y un yugo de afecto similares. [<hi rend="bold">4</hi>]Deseo por tanto... <ref target="#note1"
+                     xml:id="reference1">1</ref></p>
+                  <p>[<hi rend="bold">5</hi>] Pues hace tiempo que tengo constancia por las muestras de las virtudes y facultades de vuestra merced, y por el testimonio de muchos varones, a los que tengo en gran consideración, de cuánto vale por su ingenio y erudición, de cuánto arde con el celo de la piedad; y por ello, ya desde hace tiempo tengo a vuestra merced en mi amistad, y he aprovechado una ocasión apropiada para confirmarle mi gran afecto, la cual ya me la ofreció la amistad común de nuestro amigo Plantino y me la ha confirmado la dignidad de este asunto sobre el que voy a consultar a vuestra merced. Pues me consta en qué medida es grato a vuestra merced Plantino, varón excelente y al que toda la comunidad literaria le es deudora. Y he tratado de mostrar con todas las pruebas que he podido que este me es muy afecto, y prometo que trataré de seguir mostrándolo siempre en todas mis manifestaciones a fin de iniciar, haciéndo partícipe a vuestra merced de los argumentos, la amistad que yo, a quien aún no conoce, deseaba vivamente. [<hi rend="bold">6</hi>] He conseguido una ocasión digna de la virtud y del honestísimo afecto de vuestra merced. Y es como voy a contar: hace unos días que yo en calidad de director y legado estaba redactando, conforme al argumento que el rey mismo había enviado, el prólogo para la Sagrada Biblia que nuestro amigo Plantino imprime por decisión y mandato del rey católico don Felipe. Pero he decidido no darle mi aprobación a este prólogo antes de entregárselo a varones doctos y sinceros para que lo lean, lo corrijan y lo juzguen, entre los cuales siempre he tenido especialmente a vuestra merced, cuyo ingenio y juicio tengo en mucha estima, y cuya humanidad para hacerse cargo de mis asuntos, cuyo candor para conocerlos, cuya diligencia e integridad para juzgarlos yo mismo me los prometo. Por todas estas †cuestiones†, vuestra merced no tanto por mi interés, sino por el público de la Iglesia, cuya obra es, podrá ofrezcerse a leerlo y corregirlo conforme a la opinión y juicio de vuestra merced con anotaciones y escolios marginales; para cuya ejecución, si le parece bien, podrá hacer partícipes a los eruditos amigos de vuestra merced, de los que vuestra merced se sirve, y de los que hay un gran número en esta Iglesia; y la copia anotada y corregida, envíesela lo antes que pueda a nuestro Plantino para que me la devuelva.</p> 
+                  <p>[<hi rend="bold">7</hi>] Adiós, y manténgame en su amistad; y la mía, que la debe esperar con cualquier tipo de manifestación, la podrá experimentar.</p>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Este texto inacabado coincide con el final del folio 196v. A partir de este punto del texto, BAM utiliza todos los márgenes del folio (izquierdo, superior, derecho e inferior) para seguir ensayando las ideas de esta primera comunicación epistolar con Sambuco.</note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
