@@ -1,0 +1,182 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15701028">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Fray Luis de León (Salamanca) a Benito Arias Montano (Amberes) - 28 de octubre de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 10 28</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Fray Luis expresses his pleasure at having received BAM’s letter. In both Madrid and Salamanca, León de Castro is attacking BAM’s Polyglot Bible, primarily because of the prominence given to the Hebrew text in the edition. Fray Luis spoke with Castro in an attempt to defuse the controversy by clarifying the editorial approach taken in the Polyglot. Castro —having heard that the Vulgate was to be replaced by Pagnino’s translation, but knowing this was not the case— promised to speak and write favorably about BAM and his Bible. Fray Luis also confides his desire to leave the university and retire to a secluded place to study. He concludes by updating BAM on several mutual friends, including Felipe Ruiz, Grial, Álvaro de Lugo, Pedro Portocarrero, Juan de Caño, Chacón, and Rogina. </note>
+            <note type="incipit">Llegando a este lugar a diez y seis de octubre de una longa ausencia que avía hecho...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 97r-98v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> A. Rodríguez Moñino, «Carta de Fray Luis de León», <title>El Criticón</title> (1934-1935 = Cáceres, 1983), pp. 53-55.</witness>
+               <witness xml:id="E2"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 242-244, nº 49.</witness>
+               <witness xml:id="E3"> J. Barrientos García, <title>Fray Luis de León. Epistolario: cartas, licencias, poderes, dictámenes</title> (Madrid: Editorial Agustiniana, 2001), pp. 89-94.</witness>
+               <witness xml:id="E4"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 583-592.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Rodríguez Moñino, «Carta de Fray Luis de León», pp. 53-55; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 242-244; </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E3) Barrientos, <title>Fray Luis de León. Epistolario</title>, pp. 89-94; </bibl>
+            <bibl type="inextenso" n="fourthPrint">(E4) Domínguez, <title>Correspondencia</title>, I, 583-592.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="LeonLuisde">
+                  <note>Fray Luis de Léon (1527-1591) nació en Belmonte (Cuenca, España) en el seno de una familia de hidalgos de origen judío. En 1541 inicia fray Luis sus estudios en Salamanca y en 1544 profesa como fraile agustino. En 1556 amplía sus estudios en Alcalá con Cipriano de la Huerga. En 1560 alcanza el grado de licenciado y de Maestro en Teología. En 1578 oposita a la cátedra de Filosofía Moral y en 1579 consigue la cátedra de Sagrada Escritura. En 1580 publica los comentarios <title>In Cantica Canticorum</title> e <title>In Psalmum XXVI</title>; y en 1583 <title>La Perfecta casada</title> y <title>Los Nombres de Cristo</title>.</note></person>
+               <person xml:id="CastroLeonde">
+                  <note>León de Castro (1500-1586), helenista español, catedrático en la Universidad de Salamanca.</note></person>
+               <person xml:id="ZayasGabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="CañoJuandel">
+                  <note>Juan del Caño (1521-1583), biblista, profesor en Salamanca and Santiago de Compostela</note></person>
+               <person xml:id="ChaconPedro">
+                  <note>Pedro Chacón (1525-1581), jesuita, escritor científico.</note></person>
+               <person xml:id="EspinosaDiegode">
+                  <note>Diego de Espinosa (1512-1572), nombrado en 1565 presidente del Consejo de Castilla y, en 1566 Inquisidor General. </note></person>
+               <person xml:id="GrialJuande">
+                  <note>Amigo de Arias Montano y de fray Luis de León; secretario de Pedro de Portocarrero. </note></person>
+               <person xml:id="LugoAlvarode">
+                  <note>Amigo de Arias Montano y de fray Luis de León. </note></person>
+               <person xml:id="PortocarreroPedro">
+                  <note>Pedro Portocarrero, Rector de la Universidad de Salamanca; obispo de Calahorra (1587–94), Córdoba (1594) y Cuenca (1596). </note></person>
+               <person xml:id="RoginaJuande">
+                  <note>Amigo de Arias Montano y de fray Luis de León. </note></person>
+               <person xml:id="RuizFelipe">
+                  <note>Amigo de Arias Montano y de fray Luis de León. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Fray Luis de León</persName>
+               <settlement>Salamanca</settlement>
+               <date when="1567">28 de octubre de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-08-16">16 de agosto de 1570</date>
+            </correspAction>
+                    </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafa de fray Luis de León.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-08-23">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/06/KBS-A902-f-97r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/06/KBS-A902-f-97v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/06/KBS-A902-f-98r.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/06/KBS-A902-f-98v.jpg"
+         xml:id="foto4"/>
+        </facsimile>
+   <text>
+      <front>
+         <p> Fray Luis de León, quien había pasado el verano de 1570 en su ciudad natal, Belmonte, se encuentra al regresar a sus quehaceres universitarios con la agradable sorpresa de la carta del amigo. Aunque no ha aparecido, al menos hasta ahora, esa carta de BAM fechada el 16 de agosto de este mismo año a la que alude el poeta, resulta evidente que aquel, un tanto inquieto por las noticias recibidas en relación con León de Castro,  acude al testimonio prudente de fray Luis para valorar el asunto en su justa medida, sin apasionamientos ni falsos temores.</p>
+      </front>
+      <body>
+         <pb n="f. 98v" ed="O" facs="#foto4"/>
+         <div type="address">
+            <head>[Sobrescrito:]</head>
+            <ab> Al muy magnífico y muy reverendo señor <supplied reason="paperdamaged">el dot</supplied>tor <name type="person" ref="#AriasMontanoBenito">Benito Arias Montano</name>, y my señor. En <name type="place">Enveres</name>.
+            </ab>
+         </div>  
+         <div type="anotation"> 
+            <head>[Anotado en el margen por BAM, con escritura transversal:]</head>
+            <ab><name type="place">Salamanca</name> <date when="1570">1570</date>. <name type="person" ref="#LeonLuisde">Fray Luis de León</name> <date when="1570-10-28">28 de ottubre</date>. Iuicio del maestro <name type="person" ref="#CastroLeonde">León</name>.</ab>
+            </div>
+         <div type="main_content">
+               <pb n="f. 97r" ed="O" facs="#foto1"/>
+            <opener>Muy mag<expan><ex>nifi</ex></expan>co y muy r<expan><ex>everen</ex></expan>do s<expan><ex>eñ</ex></expan>or:</opener>
+            <p>[<hi rend="bold">1</hi>] Llegando a este lugar a <date when="1570-10-16">diez y seis de octubre</date> de una longa ausencia que avía hecho, hallé una carta de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> hecha a <date when="1570-08">tantos de agosto</date>,<ref target="#note1" xml:id="reference1">1</ref> que fue para mý la <app><lem wit="#O #E2 #E4">cosa</lem> <rdg wit="#E1 #E3">causa</rdg></app> más deseada que me podía <app><lem wit="#O #E1 #E3 #E4">venir,</lem> <rdg wit="#E2"><hi rend="italic">post</hi> venir <hi rend="itali">imum punctum posuit</hi></rdg></app> porque, después que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> salió deste reyno, ny avía visto carta de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> ny sabido nueva que cierta <app><lem wit="#O #E2 #E3 #E4">fuese</lem><rdg wit="#E1">fuesse</rdg></app>, lo qual me tenía más penado de lo que puedo dezir, y creýa que la culpa estava en mý. Bendito sea Dios, que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> tiene salud y esos negocios<ref target="#note2" xml:id="reference2">2</ref>  a que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> fue, van <app><lem wit="#O #E2 #E3 #E4">tam</lem> <rdg wit="#E1">tan</rdg></app> adelante y con tam próspero sucesso, siempre sea assí. [<hi rend="bold">2</hi>] En lo del maestro <name type="person" ref="#CastroLeonde">León</name>, pésame mucho que aya llegado allá y puesto en cuidado a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. Diré lo que a avido en ello, y después diré lo que e hecho. Su affición es la que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> dize con los 70 y con los authores griegos, y persuádese en sus <app><lem wit=" #O #E1 #E4">opiniones</lem> <rdg wit="#E2 #E3"><hi rend="italic">post</hi> opiniones <hi rend="italic">leviter distinxerunt</hi></rdg></app> así que lo que desdize dellas ny lo entiende ny piensa que es tolerable, y así todo lo que es letra o que tiene <app><lem wit="#O #E2 #E3 #E4">color</lem> <rdg wit="#E1">cosas</rdg></app> de aver nacido de rabbinos es para él <app><lem wit="#O #E2 #E3 #E4">cosa</lem> <rdg wit="#E1">cossa</rdg></app> descomulgada. Por esta causa dize mal de <name type="person">Pagnino</name> y de <name type="person">Vatablo</name><ref target="#note3" xml:id="reference3">3</ref> y de quantos profesan y an profesado este camino, y no perdona a <app><lem wit="#O #E3 #E4">S. Jherónimo</lem> <rdg wit="#E1">S. Ierónimo</rdg> <rdg wit="#E2">Sant Hierónimo</rdg></app>. <app><lem wit="#O #E2 #E3 #E4">Dixéronle</lem> <rdg wit="#E1">Diríanle</rdg></app> que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, quando se encargó <app><lem wit="#O #E2 #E3 #E4">desse</lem> <rdg wit="#E1">de esse</rdg></app> negocio, avía pretendido que la <app><lem wit="#O #E2 #E3 #E4">traslación</lem> <rdg wit="#E1">translación</rdg></app> de <name type="person">Pagnino</name> se pusiese, y acaso quando lo supo se halló en la corte; y dízenme que trattó dello  <pb n="f. 97v" ed="O" facs="#foto2"/> con el cardenal,<ref target="#note4" xml:id="reference4">4</ref> y por esta <app><lem wit="#O #E2 #E3 #E4">ocasión</lem> <rdg wit="#E1">occasión</rdg></app> se <app><lem wit="#O #E2 #E3 #E4">devió</lem> <rdg wit="#E1">debió</rdg></app> entonces de <app><lem wit="#O #E2 #E3 #E4">desbaratar</lem> <rdg wit="#E1">disparatar</rdg></app> en algunas palabras contra v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. Pero sucedióle mal, porque con quien primero se desmandó fue con el secr<expan><ex>etari</ex></expan>o <name type="person" ref="#ZayasGabrielde">Çayas</name>, <del>y</del> <app><lem wit="#O #E1 #E2 #E4">el qual</lem> <rdg wit="#E3">y el qual</rdg></app> bolvió por v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, como devía, y le trattó a él como merecía. </p>
+            <p>[<hi rend="bold">3</hi>] Aquí los días pasados, en ciertas <app><lem wit="#O #E2 #E3 #E4">juntas</lem> <rdg wit="#E1">puntos</rdg></app> que hizimos los dottores theólogos acerca de la Biblia de <name type="person">Vatablo</name>, cuya vista se nos avía cometido para que se imprima otra vez,<ref target="#note5" xml:id="reference5">5</ref> tuvimos con él, sobre estas sus imaginaciones, grandes differencias. Y una vez, a este propósito no sé qué dixo de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>; yo y los demás que estavamos allí le respondimos lo que convenía. Él es hombre de cuyas cosas es mejor no hazer caso, porque tiene el ingenio de la manera que e dicho y, quitado desto, en todo lo demás es hombre llano y de bien. [<hi rend="bold">4</hi>] Con todo esto, por dar contento a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, cuya condición <app><lem wit="#O #E2 #E4">sé que</lem> <rdg wit="#E1 #E3"><hi rend="italic">omiserunt</hi></rdg></app> es inclinada a toda paz, yo le hablé después que recebí su carta, y le dixe la <app> <lem wit="#O #E2 #E4">justa</lem> <rdg wit="#E1">farta</rdg> <rdg wit="#E3">fasta</rdg></app> quexa que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> dél tenía y el agravio que le hazía, mayormente <app><lem wit="#O #E1 #E4">tiniendo</lem> <rdg wit="#E2 #E3">teniendo</rdg></app> <app><lem wit="#O #E2 #E3 #E4">tam</lem> <rdg wit="#E1">tan</rdg></app> poca <app><lem wit="#O #E2 #E3 #E4">notitia</lem> <rdg wit="#E1">noticia</rdg></app> de la <app><lem wit="#O #E3 #E4">dotrina</lem> <rdg wit="#E1 #E2">dotrina</rdg></app> de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> y de sus opiniones. Díxele más, su bondad de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> y su llaneza, que <app><lem wit="#O #E1 #E4">tiniendo</lem> <rdg wit="#E2 #E3">teniendo</rdg></app> tanta causa para estar sentido, no quería sino paz y amor. Respondióme bien, porque, como e dicho, fuera de estas sus letras es hombre <del>de</del> <app><lem wit="#O #E2 #E3 #E4">llano</lem> <rdg wit="#E1">de llano</rdg></app>. Dize que, si habló algo, fue porque le <choice><sic>enganaron</sic> <corr>engañaron</corr></choice> diziéndole que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> quería quitar la Vulgata y <app><lem wit="#O #E2 #E3 #E4">introduzir</lem> <rdg wit="#E1">entroduzir</rdg></app> a <app><lem wit="#O #E1 #E3 #E4"><name type="person">Pagnino</name>,</lem> <rdg wit="#E2"><hi rend="italic">post</hi> Pagnino <hi rend="italic">imum punctum posuit</hi></rdg></app> y que desto ya el hecho le a desengañado, que le pesa de lo dicho y que tiene a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por amigo y señor, y que jura, por palabra en todas las conversaciones que se ofreciere ocasión, y por escritto en los libros que escriviere, hazer memoria de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, alabándole y preciándole como es razón y como haría el mayor amigo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> tiene, y con esto le dexé. Si uviere <pb n="f. 98r" ed="O" facs="#foto3"/> otra cosa que merezca aviso, yo le daré a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>.</p>
+            <p>[<hi rend="bold">5</hi>] De mý no tengo <app><lem wit="#O #E2 #E3 #E4">cosa</lem> <rdg wit="#E1">otra cosa</rdg></app> nueva que hazer saber a <app><lem wit="#O #E2 #E3 #E4">v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>.</lem> <rdg wit="#E1"><hi rend="italic">non distinxit</hi></rdg></app> E tenido salud, a Dios gracias; trabajo en esta atahona ocupado siempre en las letras de que menos gusto, y cada día con más deseo de salir dellas y de todo lo que es universidad, y bivir lo que resta en sosiego y en secreto, aprendiendo lo que <app><lem wit="#O #E2 #E4">de</lem> <rdg wit="#E1 #E3"><hi rend="italic">omiserunt</hi></rdg></app> cada día voy olvidando más.<ref target="#note6" xml:id="reference6">6</ref>  [<hi rend="bold">6</hi>] Dios <app><lem wit="#O #E2 #E3 #E4">lo</lem> <rdg wit="#E1">le</rdg></app> ordene como Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> más se sirva, y nos traiga con bien a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> por acá con la brevedad que yo deseo. </p> 
+            <p>[<hi rend="bold">7</hi>] <name type="person" ref="#RuizFelipe">Philippe Ruiz</name> se a ydo a bivir con <name type="person" ref="#LugoAlvarode">Álvaro de Lugo</name>. Bivo solo, pero él bive contento y bive de veras, y así pasó. <name type="person" ref="#GrialJuande">Grial</name> está con don <name type="person" ref="#PortocarreroPedro">Pedro Portocarrero</name>,<ref target="#note7" xml:id="reference7">7</ref> que es agora presidente de <name type="place">Galicia</name>. Del dottor <name type="person" ref="#CañoJuandel">Juan del Caño</name> a días que no sé. <name type="person" ref="#ChaconPedro">Chacón</name><ref target="#note8" xml:id="reference8">8</ref> está en <name type="place">Roma</name> y <name type="person" ref="#RoginaJuande">Rogina</name><ref target="#note9" xml:id="reference9">9</ref> en <name type="place">Parraces</name>  leyendo Theología.</p> 
+            <closer>[<hi rend="bold">8</hi>] <salute>Nuestro Señor la muy magnífica persona de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> guarde y prospere como deseo</salute>. Son en <name type="place">Salamanca</name> <date when="1580-10-28">28 de octubre de 1570</date>.
+               Besa l<expan><ex>as</ex></expan> m<expan><ex>anos</ex></expan> de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su siervo,  <signed><name type="person" ref="#LeonLuisde">Fr<expan><ex>ay</ex></expan> Luis de León.</name></signed> </closer>
+         </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Carta no localizada.</note>   
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Se refiere a los trabajos de la Políglota de Amberes.</note>  
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Francisco Vatablo (Gamache, segunda mitad del XV-París, 16 marzo 1547) fue profesor de hebreo en París, cuando Francisco I funda el Colegio Real (1530) y abad de Bellozane; era también versado en el griego y tradujo al latín los <title>Parua naturalia</title> de Aristóteles. Roberto Estienne le atribuyó unas notas sobre el Antiguo Testamento en su edición latina de León Judas (París, 1545), aunque parece que nada tuvo que ver Vatablo con este material, que procedía de pasajes tomados de protestantes franceses y alemanes. A pesar del prestigio de Vatablo, cuyo nombre usó Estienne para protegerse de la Sorbona, las notas fueron condenadas por esta universidad. Cf. <title>NBG</title>, XLV (1866), 988-989; <title>IBF</title>, IV, 2086.</note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Diego de Espinosa, inquisidor general desde 1566.</note>   
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> El librero salmantino Gaspar de Portonariis, proyectó publicar una nueva edición de la llamada Biblia de Vatablo. Para ello, en 1569, el Consejo de la Inquisición confió el texto a una junta de teólogos que, presididos por el decano de esa facultad en Salamanca, celebró reuniones trabajosas y no pocas veces agrias. Frente a los hebraístas, entre los que se encontraba Fray Luis, que se inclinaban por el original hebreo, el helenista León de Castro defendía la superioridad de la versión griega de los Setenta, al tiempo que rechazaba el texto hebreo. Por eso le resultaba sospechoso Vatablo; y en su firme creencia de que los judíos habían alterado el texto original seguido por los setenta y dos intérpretes, atacaba indirectamente la autoridad de la Vulgata, traducción esta en la que San Jerónimo siguió fielmente el texto hebreo, salvo en lo que se refiere a la traducción de los Salmos. Véase carta de Juan del Caño a León de Castro, donde el canónigo nos informa también sobre este suceso (Macías, <title>La Biblia Políglota de Amberes</title>, pp. 314-321. </note> 
+               <note type="footnote" xml:id="note6">
+               <ref target="#reference6">6</ref> Estas confidencias entre amigos son de un valor excepcional para conocer el estado anímico del poeta. Sentimientos que han quedado plasmados en su «Oda a la vida retirada».  </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref>  Entre los miembros aquí citados del círculo de amistad de fray Luis y BAM de quien disponemos de más datos biográficos es de Pedro Portocarrero, rector de la Universidad de Salamanca; fue obispo de Calahorra (1588–94), Córdoba (1594) y Cuenca (1597).   </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref>  Pedro Chacón, o Ciacconus (Toledo, 1527- Roma, 26 de octubre de 1581); estudió Filosofía y Teología en la universidad de Salamanca y aprendió Matemáticas y Griego de forma autodidacta. Rechazó una plaza de profesor en la Universidad de Salamanca para marchar a Roma, donde pronto se ganó el favor y la admiración de algunos cardenales y del papa, que le encargó participar en la revisión del texto de los Setenta; entre sus más estrechas amistades contó a Latino Latinio, Fulvio Ursino, Antonio Caraffa y Guillermo Sirleto. Su obra da testimonio de su profunda erudición y de una vida entregada al estudio incansable: <title>Calendarium Vetus Romanum</title> (Amberes, 1568), <title>Inscriptio columnae rostratae C. Duilii</title> (Roma, 1586), así como múltiples comentarios sobre J. César, Salustio, Arnobio, Tertuliano, S. Isidoro, etc. Cf. N. Antonio, <title>Bibliotheca Hispana Noua</title> II, 179-184; <title>IBEPI</title>, I, 308.   </note> 
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Juan Rogina, antiguo colegial del Colegio de Oviedo en Salamanca y doctor en Teología, quien regentó en la abadía de Párraces las cátedra de Artes y, posteriormente, una de las dos de Teología (Vísperas); su muerte tiene lugar en 1571 (cf. Domínguez, <title>Correspondencia</title>, I, 590). Párraces era una antigua abadía de la provincia y diócesis de Segovia, que formaba territorio exento, comprendiendo las poblaciones de Aldea Vieja, Bercial, Cobos, Etreros, Marugán, Muñopedro y San García. Su cabecera era el monasterio de Santa María de Parraces. Más adelante se emancipó de su matriz y en 1566 Felipe II logró unir la abadía a su fundación de Jerónimos.  </note> 
+            </div>
+      </back>
+   </text>
+</TEI>
