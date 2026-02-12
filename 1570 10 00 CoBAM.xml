@@ -1,0 +1,237 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15701000">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Pedro Serrano (Alcalá de Henares) a Benito Arias Montano (Amberes) - Octubre de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">[1570 10 00]</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Opinions on the preface to the Polyglot vary. According to Serrano, the text is excellent in both content and form. Nevertheless, the preface could be improved in two respects: first, it would benefit from greater clarity through more consistent and nuanced punctuation; second, certain doctrines are assumed without explanation and should be more fully articulated. Serrano highlights a number of paragraphs that should be revised in order to make the doctrinal content more explicit and comprehensible.</note>
+            <note type="incipit">No se maraville v. m. que según la variedad de los ingenios...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 156r-159v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(C) KBS, Ms. A 902, ff. 160-163.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 245-251, nº 50.</witness>
+              <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 593-609.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 245-251; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2)Domínguez, <title>Correspondencia</title>, I, 593-609.  </bibl>
+     </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PioV">
+                  <note>Pío V, 1504-1572, papa.</note></person>
+               <person xml:id="SerranoPedro">
+                  <note>Pedro Serrano (fallecido en 1578), teólogo español, obispo de Coria.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Pedro Serrano</persName>
+               <settlement>Alcalá de Henares</settlement>
+               <date when="1570-10">Octubre de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Carta no autógrafa, excepto la firma.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-07-06">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-156r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-156v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-157r.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-157v.jpg"
+         xml:id="foto4"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-158r.jpg"
+         xml:id="foto5"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-158v.jpg"
+         xml:id="foto6"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/07/KBS-A902-f-159v.jpg"
+         xml:id="foto7"/>
+        </facsimile>
+   <text>
+      <front>
+         <p> Tras una larga y detenida deliberación, BAM envía a los censores de Acalá de Henares, a finales del verano de 1570, según lo había anunciado en la carta número 1570 08 23, una copia del prefacio que se iba a imprimir al frente de la Políglota Regia. En torno al 9 de octubre de ese mismo año, BAM aguarda con impaciencia, y así se lo hace constar al secretario Zayas, el parecer de los doctores de Alcalá encargados de examinar dicho prefacio, entre los que se hallaba el propio Dr. Serrano.  Por tanto, podemos suponer que este detallado examen, del que se conserva un duplicado en los folios 160-163 del manuscrito de Estocolmo, pudo ser redactado durante el mes de octubre, o en cualquier caso, no mucho más tarde.
+         </p>
+      </front>
+      <body>
+         <pb n="f. 159v" ed="O" facs="#foto7"/>
+         <div type="anotation"> 
+            <head>[Anotado en el margen por BAM, con escritura transversal:]</head>
+            <ab>Del <app><lem wit="#O #C #E2">dottor</lem> <rdg wit="#E1">doctor</rdg></app> <name type="person" ref="#SerranoPedro">Serrano</name> a <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> <del>sobre cosas de la biblia</del> sobre la praefación.<ref target="#note1" xml:id="reference1">1</ref></ab>
+            </div>
+         <div type="main_content">
+               <pb n="f. 156r" ed="O" facs="#foto1"/>
+            <opener>Muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or:</opener>
+            <p>[<hi rend="bold">1</hi>] No se maraville v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> que según la variedad de los ingenios se ayan <app><lem wit="#O #E1 #E2">variados</lem> <rdg wit="#C">variado</rdg></app> los pareçeres açerca de la praefaçión de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, ni es cosa que le deva causar pesadumbre, pues todos se conforman en desear el açertamiento della.<ref target="#note1" xml:id="reference2">2</ref>  Yo la he leýdo, y el argumento y materia della me ha pareçido muy <app><lem wit="#O #E1 #E2">escogida</lem> <rdg wit="#C">escogido</rdg></app>, y va con tan buen estylo y elegançia deduzida al propósito, que a todos dará contentamiento. [<hi rend="bold">2</hi>] Y con dos cosas que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> advierta, satisfará a los pareçeres que se an dado, y no avrá más que pedir. La una es perspicuidad en la distinçión de las periodos, con la distinçión de punctos y <app><lem wit="#O #C #E2">commas</lem> <rdg wit="#E1">comas</rdg></app>; porque unas vezes se implican, y otras se alargan tanto, que falta <app><lem wit="#O #E1 #E2">spírit<del>o</del>u</lem> <rdg wit="#C">spírito</rdg></app> para tener con ellas. La otra es interponer algunas dotrinas que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> dexa como suppuestas, y conviene que vayan expressadas; y de señalarlas en los lugares que se desean, serviré yo en esta a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con el amor que devo, y no como censor, sino como discípulo desta arte, aunque v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me la haga por allá con el nombre de maestro.</p>
+            <p>[<hi rend="bold">3</hi>] «Finem rebus omnibus praestitutum esse»<ref target="#note3" xml:id="reference3">3</ref> es proposiçión magistral, y ansý su dignidad pide una affirmaçión llena. Y ansý en lugar del «uidetur»<ref target="#note4" xml:id="reference4">4</ref>  viene muy bien un «est»,<ref target="#note5" xml:id="reference5">5</ref> y se fenesca la cláusula con un «existimatur».<ref target="#note6" xml:id="reference6">6</ref></p>
+            <p>[<hi rend="bold">4</hi>] Infra, eadem pagina, en lugar del «creduntur», se porná más significantemente «conspiciuntur», ut non derogetur cognitioni naturali, quae constitutionem uniuersi cum suo ambitu a Deo profluxisse et emanasse assequuta <app><lem wit="#O #C #E2">et,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> et <hi rend="italic">imum punctum posuit</hi></rdg></app> etsi quantum ad modum et tempus et cognitionis firmitatem fide ex Genesi sit accepta.<ref target="#note7" xml:id="reference7">7</ref></p>
+            <p>[<hi rend="bold">5</hi>] Infra, clausula quae incipit: «Omnia quae numerauimus» digerenda est penes hanc doctrinam, quod appetitus naturalis, qualis est in inanimatis, dirigitur a cognitione naturae, hoc est, Dei, quare inanimata nullam cognitionem habent, nec imperfectam, altioris siue inferioris sortis sint; unde nunquam obliqua in suis officiis reperiuntur, sed aeque perfecte omnia in suo genere ea absoluunt.<ref target="#note8" xml:id="reference8">8</ref>  </p>
+            <p>[<hi rend="bold">6</hi>] Pagina 2ª, la cláusula que comiença: «Etenim si a primis, etc.» est implicata et indiget illuminatione propter longitudinem <app><lem wit="#O #C #E2">periodi,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> periodi <hi rend="italic">imum punctum posuit</hi></rdg></app><ref target="#note9" xml:id="reference9">9</ref> porque la sentençia que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> enseña es probar que cómo omnia inanimata perpetuo tenore in suis functionibus obsequuntur <pb n="f. 156v" ed="O" facs="#foto2"/> suo creatori,<ref target="#note10" xml:id="reference10">10</ref> a los hombres, que conosçen y tienen razón. [<hi rend="bold">7</hi>] Y ansí conviene que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> ponga dos puntos que señalen la <app><lem wit="#O #E1">sentencia</lem> <rdg wit="#C #E2">sentençia</rdg></app> que quiere <app><lem wit="#O #C #E2">enseñar,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> enseñar <hi rend="italic">imum punctum posuit</hi></rdg></app> y desta manera ningún «non» redunda. </p>
+            <p>[<hi rend="bold">8</hi>] Fol<expan><ex>io</ex></expan> 2, pag<expan><ex>ina</ex></expan> 2, ante periodum quae incipit: «Verum enimuero, etc.» ne lector suspicetur in statu naturali tantum creatum fuisse primum hominem, et ab hoste Diabolo ex eo deiectum, praeponatur doctrina quae dicat: «Hinc post naturalia adminicula <app><lem wit="#O #E1">super naturali</lem> <rdg wit="#C #E2">supernaturali</rdg></app> ope creasse Deum primum hominem rectum, et iustitia originali munitum, qua mens Deo copulata et eidem sensualis pars annexa integre malum cauere posset, et in Dei gratia homo perseuerans coelestem suum finem consequi». Qua interposita doctrina, aptissime sequitur clausula: «Verum, etc.»<ref target="#note11" xml:id="reference11">11</ref>  </p>
+            <p>[<hi rend="bold">9</hi>] Infra, eadem pagina, oportet interponere: «Postquam ab innocentiae statu per peccatum decidit homo, ita infirmatum aut imbecillitatum fuisse, ut non solum uigorem antiquum et sublimitatem uirium ad assequutionem coelestis finis mediorumque eiusdem exercitium amisisse, sed et tantam ignorantiam contraxisse manifestum sit, ut maxima pars eorum, quae homo scit, cum minima eorum quae ignorat comparari nequeat, etc.»<ref target="#note12" xml:id="reference12">12</ref>  </p>
+            <p>[<hi rend="bold">10</hi>] Fol<expan><ex>io</ex></expan> 3, pag<expan><ex>ina</ex></expan> 2, coarctandum est nomen philosophiae, ut dicatur: «Orta est illa philosophiae pars quae uitam hominis instituit, et est tripliciter diuisa, etc». Et sane praecedens periodus est doctrinae plena, obscura tamen, quia longius <app><lem wit="#E1">tracta<supplied>tur</supplied>tur</lem> <rdg wit="#O #C #E2">tracta</rdg></app>; quae distinctione membrorum principalium potest apte illuminari.<ref target="#note13" xml:id="reference13">13</ref>  </p>
+            <p>[<hi rend="bold">11</hi>] Infra, eadem pagina, ubi dicitur: «Homines essent» addendum est: «tenebris ignorantiae post peccatum offusi». Et deinde «instigatorem ad malum diuisionesque et discordias communem hostem haberent, proprium cuique sensum applaudentem, etc.», ut malorum quae narrantur duae causae in initio dictionis <app><lem wit="#O #C #E2">exprimantur,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> exprimantur <hi rend="italic">imum punctum posuit</hi></rdg></app> exprimantur, ubi etiam quae una periodo dicuntur, pluribus distinguere oporteret explicationis gratia.<ref target="#note14" xml:id="reference14">14</ref></p>
+            <p>[<hi rend="bold">12</hi>] Infra, eadem pagina, in periodo quae incipit: «Atque hoc unum» oportet exprimere «aduersarium propensione hominum in propria sensa post lapsum peccati usum fuisse, etc.» Et quia sequens periodus ex hac nascitur, apte incipiet: «Atque hinc, quanquam nonnulli, etc.»<ref target="#note15" xml:id="reference15">15</ref>  </p>
+            <p>[<hi rend="bold">13</hi>] Fol<expan><ex>io</ex></expan> 4, pag<expan><ex>ina</ex></expan> 1, ubi dicitur: «Causa latens nequitiae» «originalis peccati» dicatur, absque illo «ut ita dicamus».<ref target="#note16" xml:id="reference16">16</ref>  [<hi rend="bold">14</hi>] Et infra, quod sequitur: «Nullum adhibuisse remedium ignorantiae, infirmitatis et aliorum quae recensentur», dicendum est: «nec potuisse inuenire nec adhibere remedium, quia uerum, firmum, nudum et syncerum exhibere Christo redemptori nostro reseruatum fuit, dicente ipso: In hoc natus sum, ut testimonium perhibeam ueritati».<ref target="#note17" xml:id="reference17">17</ref></p>
+            <p>[<hi rend="bold">15</hi>] Fol<expan><ex>io</ex></expan> 4, pag<expan><ex>ina</ex></expan> 2, quae dicuntur uidentur procedere, supposita integra hominis natura, cum solum Diaboli aduersa opera, ignorantiae et caeterorum malorum causa exhibeatur, quandoqui<pb n="f. 157r" ed="O" facs="#foto3"/>dem stragis peccati meminisse oporteret. [<hi rend="bold">16</hi>] Quibus factum est ut non solum de resurrectione mortuorum, de beatificatione animarum per Dei claram uisionem, et de cognitione Dei, ut beatificator est, quae <app><lem wit="#O #C #E2">supernaturalia</lem> <rdg wit="#E1">super naturalia</rdg></app> sunt, dicere quicquam non potuerint, uerum nullam simplicem, puram, firmam et nudam asserere ueritatem. Tantum abest ut sub fabulis poetarum, quaestionibus et artificiis nuda et simplex ueritas contenta eliciatur, nisi ab eo qui eam sibi persuaserit.<ref target="#note18" xml:id="reference18">18</ref>  </p>
+            <p>[<hi rend="bold">17</hi>] Fol<expan><ex>io</ex></expan> 4, pag<expan><ex>ina</ex></expan> 2, aquella cláusula que comiença: «Verum enimuero, etc.» uidetur mutanda, dicendo: «In ignorantias praefatas et multos alios errores incidere necessarium erat eum, qui extra Ecclesiam absque fide redemptoris Christi, per quem a iugo Diaboli omnes liberandi erant, et absque luce etiam coelestis doctrinae ageret. [<hi rend="bold">18</hi>] Atqui quoniam hoc ex illo dependebat (fide scilicet redemptoris, qui et doctor ac magister hominum futurus erat) ilico post peccatum primi parentis fidem fecit, quae per traditionem aliquo tempore, scilicet <app><lem wit="#O #C #E2">naturae</lem> <rdg wit="#E1">natura</rdg></app> producta, tandem lege lata, fuit corroborata. [<hi rend="bold">19</hi>] In qua post legis naturalis <choice><sic>renouitionem</sic> <corr>renouationem</corr></choice>, sui cognitionem apertius Dominus tradidit, cultum quo honorari uellet instituit et conuictum etiam politicum, ut debite atque sine ulla proximi laesione degeretur, edocuit. [<hi rend="bold">20</hi>] Necnon et prophetas tanquam ministros et suae legis <app><lem wit="#O #E1">et</lem> <rdg wit="#C #E2">atque</rdg></app> doctrinae praedicatores, quam populo inuulgarent suamque beneuolentiam et iram item ob populi exasperationem, quae illis Dominus specialiter aperiebat, delegit. [<hi rend="bold">21</hi>] Atque his gradibus populum suum, ut filium, in fide deduxit, donec quod pollicitus fuerat praestando pater misericordiarum Deus suum unigenitum, hominem factum dedit, qui et doctor coelestis doctrinae eiusdem aeterni patris, simul et hominum redemptor adfuit.»<ref target="#note19" xml:id="reference19">19</ref>  [<hi rend="bold">22</hi>] Y está v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> obligado, conforme a este tino, <supplied>a</supplied> mudar la oración, porque hasta este parágrapho ha venido hablando con los philósophos, y de los errores y ignorancias que <foreign>in cognitione sui propriaeque beatitudinis, ac beatificatoris Dei</foreign><ref target="#note20" xml:id="reference20">20</ref> avían tenido. Y ansí para hablar de la misericordia que Dios usó en querer redimir los hombres y enseñarlos, es menester que los dexe, que <app><lem wit="#O #E1">han</lem> <rdg wit="#C #E2">an</rdg></app> servido como de exemplo para que los hombres conoscan quan poco <app><lem wit="#O #E1 #E2">por sí</lem> <rdg wit="#C">de sí</rdg></app> pueden y saben. Y <app><lem wit="#O #E2">torne</lem> <rdg wit="#C #E1">tornando</rdg></app> a su pueblo con la oraçión del qual, como de schuela, quiso Dios que todas las gentes <app><lem wit="#C #E2">viniessen</lem> <rdg wit="#O #E2">viniesen</rdg></app> <supplied>a</supplied> aprender su dotrina y misericordias. [<hi rend="bold">23</hi>] Y començando a tratar este beneficio tan grande de dar <app><lem wit="#O #E2">dotrina</lem> <rdg wit="#C #E1">doctrina</rdg></app> al hombre para que se <app><lem wit="#C #E1">conosçiesse y conosçiesse</lem> <rdg wit="#O #E2">conosçiese y conosçiese</rdg></app> a Dios, y los mysterios que tenía ordenados para su redempçión y consequuçión del fin, para el qual fue criado, no la trate v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> <foreign>nomine uerbi</foreign>, porque se toma <foreign>pro unigenito Dei filio</foreign><ref target="#note21" xml:id="reference21">21</ref> ordinariamente en la Escritura. Y tomándolo por la doctrina divina, es coinçidir mucho con los herejes en el lenguaje, <foreign>a quo est abstinendum, maxime ex doctrina sanctorum</foreign>,<ref target="#note22" xml:id="reference22">22</ref> variando por estos vocablos: «Doctrina coelestis, sacra, reuelata, <pb n="f. 157v" ed="O" facs="#foto4"/> uerbum diuinum».<ref target="#note23" xml:id="reference23">23</ref> </p>
+            <p>[<hi rend="bold">24</hi>] Fol<expan><ex>io</ex></expan> 6, pag<expan><ex>ina</ex></expan> 1ª, in diuisione partium Sanctae Scripturae in Vetus et Nouum Testamentum oportet, enumerando partes Veteris Testamenti, Christi Redemptoris uaticinia et pollicitationes distincte primum enarrare, post cuius fidem doctrinam coelestem continet, quam ad uiuum accedente plenitudine temporis proprio ore Christus Iesus, suo Euangelio et sacrosancta praedicatione explicare et enarrare dignatus est.<ref target="#note24" xml:id="reference24">24</ref> Y v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> prosigue muy bien la dignidad de la una doctrina y de la otra, sino que es menester iuntar de cada parte lo que desta animadversión le conviene. </p>
+            <p>[<hi rend="bold">25</hi>] Fol<expan><ex>io</ex></expan> 6, pag<expan><ex>ina</ex></expan> 2, que comiença: «Maximum quidem, etc.»<ref target="#note25" xml:id="reference25">25</ref>  es escogida. Tiene necessidad de declaraçión, que se hará con mayor expressión de los scriptores y ministros del Nuevo y Viejo Testamento, como se advierte en el margen. Y también la tiene de punctuaçión, que tiene periodos muy <app><lem wit="#O #C #E2">buenas</lem> <rdg wit="#E1">buenos</rdg></app> y sin distinçión. [<hi rend="bold">26</hi>] Y tanbién quando descrive quánto el <app><lem wit="#O #C #E2">exerçiçio</lem> <rdg wit="#E1">exerciçio</rdg></app> de la vida regulada por la Sancta <surplus>Sancta</surplus> Scriptura la encumbra, es menester poner por cabeça el benefiçio de la fe de Christo y sus <app><lem wit="#O #C #E2">mysterios,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> mysterios <hi rend="italic">imum punctum posuit</hi></rdg></app> y que en imitar su vida y seguir sus pisadas con su ayuda, está la perfeçión della, como él mismo lo dixo: «Discite a me quia mitis sum, etc.».<ref target="#note26" xml:id="reference26">26</ref>  Et rursus: «qui uult uenire post me abneget semetipsum, etc.».<ref target="#note27" xml:id="reference27">27</ref> Y la regla y guía desta imitaçión y siguimiento es la dotrina del Sagrado Evangelio. </p>
+            <p>[<hi rend="bold">27</hi>] Fol<expan><ex>io</ex></expan> 7, pag<expan><ex>ina</ex></expan> 1ª, la eversión de repúblicas y provinçias, ha de poner v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en qué se apartaron de la Iglesia Cathólica, <foreign>extra quam non est salus neque uera consistentia uirtutis</foreign>, y ansí <foreign>omnia corruunt</foreign>,<ref target="#note28" xml:id="reference28">28</ref> faltando el fundamento de la fe, y tanbién de la virtud. [<hi rend="bold">28</hi>] También <app><lem wit="#O #C #E2">pareçe</lem> <rdg wit="#E1">parece</rdg></app> que no se deve poner por necessario a los reyes y administradores de la repúbl<expan><ex>ica</ex></expan> el estudio de la Escritura (como es ansý) sino la integridad de la fe, debaxo de la <app><lem wit="#O #C #E2">obediençia</lem> <rdg wit="#E1">obediencia</rdg></app> de la Iglesia cathólica regida por el <app><lem wit="#O #E1 #E2">Spírito</lem> <rdg wit="#C">Spíritu</rdg></app> Sancto, author y dictador de la Sancta Scriptura, y la administraçión de sus <app><lem wit="#O #C #E2">offiçios</lem> <rdg wit="#E1">officios</rdg></app>, procurando el <app><lem wit="#O #E2">llevantamiento</lem> <rdg wit="#C #E1">levantamiento</rdg></app> de la virtud y abatimiento de los viçios, como siempre se lo declaran y predican los ministros de la Iglesia; por la qual razón han de procurar siempre traerlos junto a sý. [<hi rend="bold">29</hi>] Y para la autoridad que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> allega, asse de advertir que en aquel tiempo el príncipe seglar era superior al <app><lem wit="#O #C #E2">saçerdoçio</lem> <rdg wit="#E1">sacerdoçio</rdg></app>. Lo qual suppuesto, habla la autoridad alegada. Y encomiende luego el studio de la Sancta Scriptura a los <app><lem wit="#O #E2">saçerdotes</lem> <rdg wit="#C #E1">sacerdote</rdg> </app></p>
+            <p>[<hi rend="bold">30</hi>] Fol<expan><ex>io</ex></expan> 8, pag<expan><ex>ina</ex></expan> 1, loco illius «Dei uerbum» expedit «Diuinam Scripturam» ponere, quae non solum ad fidem Christi Iesu in sua integritate retinendam et uirtutem <pb n="f. 158r" ed="O" facs="#foto5"/> augendam atque ad humanae foelicitatis rationes constituendas, sed ad, etc.<ref target="#note29" xml:id="reference29">29</ref> </p>
+            <p>[<hi rend="bold">31</hi>] Infra, eadem pagina, ubi prior intentio aut consilium hostis exprimitur, dicendum est «illud esse fidem a pectoribus fidelium euellere, et quod notitia et usus, etc.»<ref target="#note30" xml:id="reference30">30</ref>  </p>
+            <p>[<hi rend="bold">32</hi>] Eodem fol<expan><ex>io</ex></expan>, pag<expan><ex>ina</ex></expan> 2, in periodo quae incipit: «Curauit itaque» explicandum est de infidelibus, qui fidem noluerunt recipere nec diuino uerbo Sacrae Scripturae edoceri; porque lo que se sigue luego uerificatur in haereticis.<ref target="#note31" xml:id="reference31">31</ref>  </p>
+            <p>[<hi rend="bold">33</hi>] Fol<expan><ex>io</ex></expan> 9, pag<expan><ex>ina</ex></expan> 1, doctrina quae incipit paragrapho: «Omnia in uniuersum, etc.» explicanda est et temperanda. Explicanda in distinctione clausularum, singulis classibus ex his ad quos dirigitur suam <app><lem wit="#O #C #E2">reddendo,</lem> <rdg wit="#E1"><hi rend="italic">post</hi> reddendo <hi rend="italic">imum punctum posuit</hi></rdg></app> scholasticis <app><lem wit="#O #E1 #E2">theologis</lem> <rdg wit="#C">Theologiae</rdg></app> studium hoc commendando ne tota uita in scholastica theologia insumatur, sed eius cognitio semel habita, studio Sacrae Scripturae subseruiat, ad cuius ancillationem et custodiam in sua puritate dono Dei est exhibita. Rhetoribus, quod eloquentiae lepores et suauissimi quidem in Scriptura Diuina Spiritu Sancto doctore dispositi sunt. Adolescentibus scholas frequentantibus, <app><lem wit="#O #E1 #E2">quanti</lem> <rdg wit="#C">quanto</rdg></app> eius studium aestimare debeant, quae regulam uitae christianae instituendae tene<del>a</del>t. Quapropter per ancillarias disciplinas gradus necessarios facientes ad eius studium anheli properent, imo et inter alias disciplinas miscere studeant. Temperanda etiam est, ut non sic contra doctores scholasticos oratio inuehatur, quod expertes omnino huius studii nomine doctoris contentos notet. Nec insuper propter rei dignitatem affirmetur in cuiusquam theologi animum subiisse Sacrae Scripturae studium indignum esse, cui tempus et labor impendatur. Qua ratione Sanctae Scripturae studium commendatur et aptissime atque elegantissime continuatur sequenti paragrapho sermo contra haereticos, diabolo eis praesidente, qui in praecedenti incoeptus fuerat.<ref target="#note32" xml:id="reference32">32</ref>  </p> 
+            <p>[<hi rend="bold">34</hi>] Fol<expan><ex>io</ex></expan> 11, pag<expan><ex>ina</ex></expan> 1, a paragrapho qui incipit: «At uero in ipsis statim, etc.» florens et plena satis procedit oratio; tamen quoniam, authore Tertulliano, quem omnes sancti sequuntur, nulli quantumuis peritissimo doctori catholico ineunda est disputatio cum <app><lem wit="#O #E1 #E2">haeretico</lem> <rdg wit="#C">haereticis</rdg></app>, conuenit in principio praemittere «sapientissimos uiros, etc., in conciliis apostolica authoritate congregatis, Spiritu Sancto praesidente, ex Sacra Scriptura telis desumptis, machinationes haereticorum eneruatas et explosas fuisse». Et quod de uento Aquilone in fine huius partis eleganter appenditur, ego in exemplum adducerem eo finiendo periodum ut dicerem: «At uero illuminator ille cordium aeterni Patris spiritus excussit, etc., quemadmodum potentissimus Aquilo excussis nubibus et caligine coelum <app><lem wit="#O #C #E2">serenat</lem> <rdg wit="#E1">serenet</rdg></app>, etc.» Quoniam in scriptura Aquilo non nisi in malam aut asperiorem partem accipitur.<ref target="#note33" xml:id="reference33">33</ref> <pb n="f. 158v" ed="O" facs="#foto6"/>  </p>
+            <p>[<hi rend="bold">35</hi>] Tandem, prope finem, ante periodum quae incipit: «Quamobrem omnium bonorum, etc.» in testimonium quod omnia, quae ornate satis annumerata sunt diuino ductu sint acta, aptissime mentio Summi Pontificis, Christi Vicarii, inferretur; qui postquam negotium tam sacri operis resciuit, laetissimo animo probauit et suam benedictionem rei tractatoribus misit. Quo maiori operis authoritati consuletur et officium debitum praestabitur.<ref target="#note34" xml:id="reference34">34</ref></p>
+            <closer>            
+               <signed><app><lem wit="#O #C #E2">E<expan><ex>l</ex></expan> d<expan><ex>octor</ex></expan></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> Serrano.</signed> </closer>
+         </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Al final del duplicado, en el folio 163v del manuscrito de Estocolmo, se puede leer de mano de Montano: «Doctor Serrano de praefatione in Biblia».</note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Ya en su carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1570-10-09-z/">70 10 09 Z</ref> BAM le escribía a Zayas lo siguiente: «Yo espero con harto desseo los quadernos que se me han de embiar de Alcalá para la perfección desta santa Biblia, y espero también la prefación, digo, lo que parecerá acerca della a aquellos mis señores de Alcalá». </note>   
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Traducción: «Que se le ha dado fin a todo».</note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Traducción: «parece».</note>   
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Traducción: «es». </note> 
+               <note type="footnote" xml:id="note6">
+               <ref target="#reference6">6</ref> Traducción: «se cree». </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Traducción: «Debajo en esa misma página, en lugar del <foreign>creduntur</foreign>, se pondrá más significativamente <foreign>conspiciuntur</foreign>, para no quitarle sus atribuciones al conocimiento natural, el cual ha comprendido que la constitución del universo y su movimiento ha salido y emanado de Dios, aunque en cuanto al modo y al tiempo y a la firmeza del conocimiento haya sido recibido del <title>Génesis</title> mediante la fe».   </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Traducción: «Debajo, la cláusula que comienza: ʻOmnia quae numerauimusʼ se debe referir a esta doctrina, que el instinto natural, cual se da en los seres que carecen de alma, es guiado por el conocimiento de la naturaleza, es decir, de Dios, ya que los seres que carecen de alma no tienen ningún conocimiento, ni siquiera imperfecto, ya pertenezcan a la clase superior o a la inferior. Por lo que nunca se descubren desviaciones en sus tareas, sino que lo cumplen todo con la misma perfección dentro de su género».   </note> 
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref>   Traducción: «En la segunda página, la cláusula que comienza: ʻEtenim si a primis etc.ʼ es intrincada y poco clara debido a la extensión del periodo».  </note> 
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref>  Traducción: «todo lo que carece de alma obedece siempre a su creador en sus funciones».  </note> 
+               <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref>  Traducción: «En el folio 2, página 2, ante el periodo que comienza: ʻVerum enimuero etc.ʼ para que el lector no crea que solo el primer hombre fue creado en estado natural, y que fue apartado de este por su enemigo el Diablo, conviene que se le anteponga una doctrina que diga: ʻEntonces, después de los apoyos naturales, con una obra sobrenatural creó Dios al primer hombre dotado de integridad y provisto de la justicia original, con la que su mente unida a Dios y provista de una parte sensitiva pudiera precaverse de todo mal, y perseverando el hombre en la gracia de Dios poder alcanzar su objetivo celestialʼ. Y una vez interpuesta esta doctrina, sigue muy a propósito la cláusula: ʻVerum, etc.ʼ».  </note> 
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> Traducción: «Debajo, en esta misma página, conviene que se intercale ʻque después que el hombre se apartó por el pecado de su estado de inocencia, se enfermó o se debilitó tanto, que es manifiesto que no solo perdió su antiguo vigor y la grandeza de sus fuerzas para conseguir su objetivo celestial y para el ejercicio de sus medios, sino que además contrajo tan gran ignorancia que la parte mayor de lo que el hombre conoce no puede compararse con la menor de lo que ignora, etc.ʼ».</note>
+               <note type="footnote" xml:id="note13">
+                  <ref target="#reference13">13</ref> Traducción: «En el folio 3, página 2, se debe delimitar el concepto de filosofía de modo que diga: ʻsurgió aquella parte de la filosofía que formó la vida del hombre y que está dividida en tres, etc.ʼ. Y en verdad, el periodo precedente está lleno de doctrina, aunque oscura, debido a que se extiende en exceso; el cual se puede esclarecer perfectamente separando sus principales miembros».</note> 
+               <note type="footnote" xml:id="note14">
+                  <ref target="#reference14">14</ref> Traducción: «Debajo, en esa misma página, donde se dice: ʻHomines essentʼ habría que añadir: ʻofuscados por las tinieblas de la ignorancia después de su pecadoʼ. Y a continuación ʻque tuvieran un enemigo común que los incite al mal y a las divisiones y discordias, el cual le aplauda a cada uno su opinión, etc.ʼ, de modo que se expresen al comienzo del discurso las dos causas de los males que se narran, donde incluso lo que se dice en un solo periodo convendría dividirlo en varios en aras de la claridad».</note>
+               <note type="footnote" xml:id="note15">
+                  <ref target="#reference15">15</ref> Traducción: «Debajo, en la misma página, en el periodo que comienza: ʻAtque hoc unumʼ conviene expresar que ʻel enemigo se ha servido de la inclinación de los hombres hacia sus propias opiniones después de caer en el pecado, etc.ʻ. Y dado que el periodo siguiente se deriva de este otro, comenzará muy a propósito: ʻY de aquí, aunque algunos, etc.ʼ». </note>
+               <note type="footnote" xml:id="note16">
+                  <ref target="#reference16">16</ref> Traducción: «En el folio 4, página 1, donde se dice: ʻCausa latens nequitiaeʼ se debe decir ʻdel pecado originalʼ, sin aquello de ʻut ita dicamosʼ». </note>
+               <note type="footnote" xml:id="note17">
+                  <ref target="#reference17">17</ref> VVLG. <title>Ioh.</title> 18, 37. Traducción: «Y debajo, lo que sigue: ʻNo ha ofrecido ninguna solución a su ignorancia, a su flaqueza y a las demás cosas a las que se pasa revistaʼ se debe decir: ʻy no ha podido encontrar ni ofrecer solución, porque mostrar la verdad, la firmeza, la pureza y la sinceridad le fue reservado a Cristo, Nuestro Redentor, quien dijo: Yo nací para testificar la verdadʼ». </note>
+               <note type="footnote" xml:id="note18">
+                  <ref target="#reference18">18</ref> Traducción: «En el folio 4, página 2, lo que se dice parece ir bien una vez suplantada la naturaleza íntegra del hombre, al mostrarse sólo la colaboración adversa del Diablo como la causa de su ignorancia y de los restantes defectos, puesto que convendría acordarse del menoscabo del pecado. Con ello se ha conseguido que no hayan podido decir nada no solo de la resurrección de los muertos, de la beatificación de las almas por medio de la clara contemplación de Dios, así como del conocimiento de Dios, en la medida que es el beatificador, todo lo cual es sobrenatural, sino que ni siquiera han podido sostener una verdad simple, pura, firme y desnuda. Nada está tan lejos como el que la verdad simple y desnuda de preguntas y artificios se deje atraer contenida en las fábulas de los poetas, salvo por quien se la haya persuadido».</note>
+               <note type="footnote" xml:id="note19">
+                  <ref target="#reference19">19</ref> Traducción: «En el folio 4, página 2, aquella cláusula que comienza: ʻVerum enimuero,etc.ʼ parece que se debe mudar diciendo: ʻEra necesario que incurriera en la ignorancia referida y en muchos otros errores quien actuara fuera de la Iglesia sin la fe de Cristo Redentor, por quien todos debían ser liberados del yugo del Diablo, y también sin la luz de la doctrina celestial. Pero habida cuenta de que esto dependía de aquello otro (es decir, de la fe del Redentor, quien iba a ser el doctor y el maestro de los hombres), por ello, tras el pecado de nuestro primer antepasado, creó la fe, la cual mediante la tradición de cierto tiempo, sin duda producida por la naturaleza, finalmente fue corroborada una vez promulgaa la ley. En la cual, tras la renovación de la ley natural, el Señor concedió de manera más abierta el conocimiento de sí mismo, instituyó el culto con el que quería ser honrado, y enseñó también la convivencia social para que continuara de modo correcto y sin perjuicio del prójimo. Y eligió a los profetas como ministros y predicadores de su ley y de su doctrina, para que la divulgaran entre el pueblo, así como su ira por la exasperación del pueblo, lo que especialmente les mostraba el Señor. Y con estos progresos guió a su pueblo, como a un hijo, en la fe, hasta que, ofreciendo lo que había prometido, Dios misericordioso entregó como padre a su hijo unigénito hecho hombre, quien asistió como doctor de la doctrina celeste de su padre al mismo tiempo que fue Redentor de los hombresʼ». </note>
+               <note type="footnote" xml:id="note20">
+                  <ref target="#reference20">20</ref> Traducción: «en el conocimiento suyo y de su propia beatitud, y de Dios beatificador». </note> 
+               <note type="footnote" xml:id="note21">
+                  <ref target="#reference21">21</ref> Traducción: «por hijo unigénito de Dios». </note>
+               <note type="footnote" xml:id="note22">
+                  <ref target="#reference22">22</ref> Traducción: «del cual hay que alejarse, máxime según la doctrina de los Santos». </note> 
+               <note type="footnote" xml:id="note23">
+                  <ref target="#reference23">23</ref> Traducción: «doctrina celestial, sagrada, revelada, palabra divina». </note> 
+               <note type="footnote" xml:id="note24">
+                  <ref target="#reference24">24</ref> Traducción: «En el folio 6, página primera, en la división de las partes de la Sagrada Escritura en Antiguo y Nuevo Testamento, conviene que, al enumerar las distintas partes del Antiguo Testamento, se narren primero de forma diferenciada las profecías y anuncios de Cristo Redentor, tras cuya fe encierra la doctrina celestial, la cual, al acercarse la plenitud del tiempo, Jesucristo se dignó a explicar y narrar de modo directo por su propia boca, por su Evangelio y por la predicación sagrada». </note>
+            
+         <note type="footnote" xml:id="note25">
+            <ref target="#reference25">25</ref> Traducción: «El mayor en verdad, etc.» </note>
+               <note type="footnote" xml:id="note26">
+                  <ref target="#reference26">26</ref> VVLG. <title>Matth.</title> 11, 29.  </note>
+               <note type="footnote" xml:id="note27">
+                  <ref target="#reference27">27</ref> VVLG. <title>Matth.</title> 16, 24. Traducción: «ʻAprended de mí que soy manso, etcʼ. Y en otra ocasión: ʻquien quiera seguirme, que se niegue a sí mismo, etc.ʼ»  </note>
+               <note type="footnote" xml:id="note28">
+                  <ref target="#reference28">28</ref> Traducción: «fuera de la cual no hay salvación ni auténtica consistencia de la virtud, y así todo se derrumba». </note>
+               <note type="footnote" xml:id="note29">
+                  <ref target="#reference29">29</ref> Traducción: «En el folio 8, página 1, en lugar de aquel ʻDei uerbumʼ, conviene poner ʻDiuina Scripturaʼ, la cual no solo para mantener la fe de Jesucristo en su integridad, aumentar la virtud y fijar los principios de la felicidad humana, sino también para, etc.». </note>
+               <note type="footnote" xml:id="note30">
+                  <ref target="#reference30">30</ref> Traducción: «Debajo, en esa misma página, donde se expresa la primera intención o decisión del enemigo, se debe decir ʻque aquello era arrancar la fe del corazón de los fieles, y el que el conocimiento y el uso, etc.ʼ».</note>
+               <note type="footnote" xml:id="note31">
+                  <ref target="#reference31">31</ref>  Traducción: «En ese mismo folio, página 2, en el período que empieza: ʻCurauit itaqueʼ se debe desarrollar referido a los infieles, que no han querido recibir la fe ni ser instruidos en la palabra divina de la Sagrada Escritura, porque lo que se sigue luego se verifica en los herejes».</note>
+               <note type="footnote" xml:id="note32">
+                  <ref target="#reference32">32</ref> Traducción: «En el folio 9, página 1, la doctrina que empieza en el párrafo: ʻOmnia in uniuersumʻ hay que desarrollarla y atenuarla. Hay que desarrollarla separando las cláusulas, dedicándole una a cada uno de los colectivos a los que va dirigida, recomendándole este tipo de estudio a los teólogos escolásticos, para que no se consuma toda la vida en la teología escolástica, sino que una vez adquirido el conocimiento de esta, se someta al estudio de las Sagradas Escrituras, para cuya servidumbre y custodia fue presentada en su pureza por regalo de la divinidad. A los maestros de retórica, porque los encantos de la elocuencia fueron dispuestos realmente muy dulces en la Divina Escritura por la sabiduría del Espíritu Santo. A los jóvenes que frecuentan las escuelas, cuánto deben estimar su estudio, dado que esta encierra un modelo para fundamentar la vida cristiana. Por lo cual, haciendo los progresos necesarios a través de las disciplinas auxiliares, los deseos se apresuren hacia su estudio e incluso deseen mezclarse entre las demás enseñanzas. También hay que atenuarla para que el discurso no discurra de tal modo en contra de los doctores escolásticos, que los tache de completos desconocedores de este género de estudio satisfechos con el título de doctor. Y no se afirme además, a causa de la dignidad del asunto, que en la opinión de algún teólogo ha penetrado la idea de que el estudio de la Escritura Sagrada es indigno de este a quien se lo impida el tiempo y las obligaciones. Con esta disposición se encomienda el estudio de la Escritura Sagrada y se continúa en el párrafo siguiente de modo muy apropiado y elegante el discurso contra los herejes, presididos por el diablo, el cual se había iniciado en el párrafo anterior».</note>
+               <note type="footnote" xml:id="note33">
+                  <ref target="#reference33">33</ref> En el folio 11, página 1, el discurso se desarrolla florido y lleno a partir del párrafo que empieza: «At uero in ipsis statim etc.»; de cualquier modo, y como aconseja Tertuliano, a quien siguen todos los santos, dado que ningún doctor católico, por más sabio que sea, debe iniciar la polémica con un hereje, conviene poner al principio que «varones muy sabios, etc. en los concilios convocados por la autoridad apostólica, presididos por el Espíritu Santo, y tomando sus dardos de la Sagrada Escritura, han sido enervadas y reventadas las maquinaciones de los herejes». Y lo que se añade con mucha elegancia al final de esta parte acerca del Aquilón, yo lo aduciría a modo de ejemplo al final de este período, de modo que dijera: «Sin embargo, aquel espíritu del Padre Eterno iluminador de corazones disipó, etc., del mismo modo que el potentísimo Aquilón serena el cielo una vez disipadas las nubes y la niebla, etc.» Ya que en los escritos el Aquilón no se concibe sino en sentido negativo o bastante riguroso.</note>
+               <note type="footnote" xml:id="note34">
+                  <ref target="#reference34">34</ref> Y por último, cerca del final, antes del periodo que empieza: «Quamobrem omnium bonorum, etc» como prueba de que todo lo que se ha añadido suficientemente adornado ha sido guiado por la divinidad, se podría introducir de modo muy conveniente la mención del Sumo Pontífice, vicario de Cristo, quien una vez que tuvo noticias del negocio de una obra tan sagrada, la aprobó de muy buen grado, y envió su bendición a los que se ocupaban del asunto. Con esto se procurará mayor autoridad para la obra y se cumplirá con la obligación contraída.</note>
+            </div>
+      </back>
+   </text>
+</TEI>
