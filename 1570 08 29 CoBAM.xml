@@ -76,15 +76,13 @@
             <correspAction type="sent">
                <persName>Agustín Huneo </persName>
                <persName>Cornelio Goudano </persName>
-               <settlement>Lovaina</settlement>
-               
+               <settlement>Lovaina</settlement>   
                <date when="1570-07-29">29 de julio de 1570</date>
             </correspAction>
             <correspAction type="received">
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
-              
-                             </correspAction>
+            </correspAction>
             <correspAction type="answerto">
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
