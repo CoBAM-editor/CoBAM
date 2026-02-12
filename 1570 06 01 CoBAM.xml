@@ -1,0 +1,179 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700601">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Juan Sambuco (Viena) a Benito Arias Montano (Amberes) - 1 de junio de 1570</title>
+            <author>Juan Sambuco</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 06 01</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Sambucus has read BAM’s prologue three times and considers it excellent both in its arguments and in its rhetorical quality. He expresses his gratitude to BAM for holding him in high esteem and consideration. He asserts that vernacular translations of the Bible are necessary, although the interpretation of its mysteries should remain the responsibility of the Catholic Church authorities. Plantin deserves the highest praise and honor for his contributions to the Republic of Letters. If BAM requires anything from the Court, Sambucus offers to mediate on his behalf. Meanwhile, he encourages BAM to maintain regular correspondence with him. </note>
+            <note type="incipit">Praefationem non modo sanam, eruditam et piam...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 168r-169v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 216-219, nº 42.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 520-527.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 216-219; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 520-527.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="SabucusIohannes">
+                  <note>Juan Sambuco (1531-1584), humanista húngaro, medico, filólogo e historiador.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Iohannes Sambucus </persName>
+               <settlement>Viena</settlement>
+               <date when="1570-06-01">1 de junio de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answeredto">
+               <persName>Benito Arias Montano </persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05-06">6 de mayo de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de Juan Sambuco</handNote>
+            <handNote>Anotaciones autógrafas de BAM en el sobrescrito</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-03-17">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>Juan Sambuco, humanista húngaro amigo de Plantino, a quien BAM había solicitado su parecer sobre el prólogo de la Biblia Regia, responde aquí a la carta de BAM cuya minuta recogimos en el documento 1570 05 06. Sambuco, desde la perspectiva de una mentalidad que abraza la Reforma, subraya la importancia de traducir los textos sagrados a las lenguas vernáculas. Y de hecho, en esta línea había trabajado ya el teólogo luterano Juan Draconites, fallecido en 1566, quien incluía la traducción alemana de Lutero al lado de los textos hebreos, caldeos, griegos y latinos.  </p>
+         <p>En la edición digital de esta carta no ofrecemos los facsímiles de la misma por no disponer de una copia con una calidad suficiente para ello.</p>
+      </front>
+            <body> 
+               <pb n="f. 169v" ed="O"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab> R<expan><ex>eueren</ex></expan>do et clariss<expan><ex>imo</ex></expan> uiro d<expan><ex>omi</ex></expan>no <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name>, d<expan><ex>omi</ex></expan>no et amico obser<expan><ex>uando</ex></expan>. <name type="place">Antuerpiam</name>.
+                  </ab>
+               </div>       
+               <div type="anotation1">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> <name type="person" ref="#SabucusIohannes">Iohannis Sambuci</name>. <date when="1570-06-01">Cal<expan><ex>endis</ex></expan> Iunii 1570</date>. De praefatione.</ab>
+               </div>     
+               <div type="anotation2">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> <name type="person" ref="#SabucusIohannes">Io<expan><ex>annis</ex></expan> Sambuci</name> de praefatione.</ab>
+               </div>  
+               <div type="main_content">
+                  <pb n="f. 168r" ed="O"/>
+                  <opener>R<expan><ex>euerendo</ex></expan> <name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedicto</ex></expan> Ariae Montano</name> <name type="person" ref="#SabucusIohannes"><app><lem wit="#O #E1">I<expan><ex>ohannes</ex></expan></lem> <rdg wit="#E2">etc.</rdg></app> Samb<expan><ex>ucus</ex></expan></name> s<expan><ex>alutem</ex></expan>.
+                  </opener>
+                  <head>[Añadido por BAM en el margen superior izquierdo ]</head>
+                  <p><add place="margin" hand="#AriasMontanoBenito"><name type="person" ref="#SabucusIohannes">Iohannis Sambuci</name> historiographi Caesareii.</add></p>
+                  <p>[<hi rend="bold">1</hi>] Praefationem non modo sanam, eruditam et piam, sed o<expan><ex>mn</ex></expan>is generis ornamentis et artificii politam flosculis iterum, opera non intermissa, perlegi. Cuius dignitas tanto consilio et operi facile respondebit. Laudo studium et adhibitas uigilias, amplector sensus e ueris principiis salutis coelestisque disciplinae <choice><sic>profectas</sic> <corr>profectos</corr></choice>, progressus ordinatos, rationes expedite confectas, consectaria non ἀvακόλoυθα. Ac sine ullius offensa dico me in homine Hispano, theologo praesertim, uix tantam rerum tractationem stilo exquisito deprehendisse. Nemo est, <name type="person" ref="#AriasMontanoBenito">Aria</name>, qui summi regis altam et solidam in rem <name type="person">Christi</name> uoluntatem et impensas non in coelum extollat, o<expan><ex>mn</ex></expan>ibus o<expan><ex>mn</ex></expan>ino uictoriis, insulis recens uel antea repertis aut ad nauigationes notatis non anteferat. [<hi rend="bold">2</hi>] Sed de me iudicium te fallit quod ex amore et sermonibus <name type="person" ref="#PlantinoCristobal">Plantini</name> hausisti, qui a me <app><lem wit="#O #E2">putas</lem> <rdg wit="#E1">putes</rdg></app> aliquid prolegomenis addi aut demi posse. Conscius mihi sum et <name type="person">Eurip<expan><ex>idis</ex></expan></name> illud tueor: βάρoς δὲ καὶ τόδ΄ ἐστίv, αἰvεῖσθαι λίαv.  Veruntamen qui a puero linguarum commendationem phi<expan><ex>losophi</ex></expan>amque sum secutus a tanto uiro laudari mihi non iniucundum est.</p>
+                  <p><add place="margin" hand="#AriasMontanoBenito">Sunt et alia diuersa argumenta in eadem epistola.</add></p>
+                  <p>[<hi rend="bold">3</hi>] Et quando amicitiae libertatem concedis, illud non reticebo: nos in <name type="place">Germania</name> ὡς πλείστoυς tenere nullo pacto aut conditionibus obiectis neque tollendam neque negligendam esse sacrorum uernacula lingua intelligentiam et lectionem, cum hoc tamen, ut Scripturae interpretatio et mysteriorum enunciatio <app><lem wit="#O #E2">praefectis</lem> <rdg wit="#E1">perfectis</rdg></app> Ecclesiae salua sit, audacia temere docendi aut commentandi uulgo reprimatur, caritatis in monendo arguendoque uis ualeat, odium et morbus priuatus minuatur, secessiones et idiognostae non plus quam uniuersus sanctorum Spiritu Dei munitorum sensus possit. Sed neque dona caelestia et authoritatem christianam unico loco aut sede concludimus, etiamsi <name type="place">Toleti</name> sit. Modo caetera conueniant non m<expan><ex>a</ex></expan>ioris Pontificem aestimamus. Necessarium tamen caput praecipuaque membra, quibus nitatur coetus diuinus, quos sequamur nosque committamus, secundum Deum, o<expan><ex>mn</ex></expan>es boni profitentur. Haec si non nihil duriora uidentur, r<expan><ex>ation</ex></expan>es copiosae sunt a defensoribus expositae; nec meum est pluribus tractare. [<hi rend="bold">4</hi>] Amo te de sensu in <app><lem wit="#O #E2"><name type="person" ref="#PlantinoCristobal">Plantinum</name>;</lem> <rdg wit="#E1"><hi rend="italic">non distinxit</hi></rdg></app> quidquid in eum contuleris, publice feceris. Vtinam per facultates <pb n="f. 168r" ed="O"/> illius rebus copiosius liceret consulere! Prolixe illud declararem. Vestrum est, quibus expeditiora sunt o<expan><ex>mn</ex></expan>ia, ornare iuuareque tales per quos beneficii gratia in o<expan><ex>mn</ex></expan>em redundat posteritatem.</p>
+                  <p>[<hi rend="bold">5</hi>] Si quid apud regem, quod sponte uelle uideris, de me <app><lem wit="#O #E2">inieceris</lem> <rdg wit="#E1">inueneris </rdg></app>aut aliquando effeceris, prosequar officium memoria constanti. Verum qui <app><lem wit="#O #E2">amiciciam</lem> <rdg wit="#E1">amicitia</rdg></app> non utilitatibus metior, sustinebo me atque oblectabo tuis eleganter et amantissime scriptis l<expan><ex>it</ex></expan>eris cui, nisi saepius scripsero, prouocatus indignus necessitudine optata fuero. </p>
+                  <closer>[<hi rend="bold">6</hi>] <salute>Vale</salute>. <date when="1570-06-01">Kal<expan><ex>endis</ex></expan> Iunii 1570</date>. <name type="place">Vienna</name>.
+                  </closer>
+                  <postscript>
+                     <head>[Posdata:]</head>
+                     <p>[<hi rend="bold">7</hi>] Si ingratum tibi non erit, aut significabis, mittam fortasse proxime aliquot meas in Nouum Testamentum obseruationes, obiter dum ueteres codices uerso, annotatas. I<expan><ex>ter</ex></expan>um uale, mi opt<expan><ex>ime</ex></expan> et doctis<expan><ex>sime</ex></expan> <name type="person" ref="#AriasMontanoBenito">Aria</name>, meque diligere pergito. </p></postscript>
+               </div> 
+            </body>
+         </text>
+         <text type="translation">
+            <body> 
+               <pb n="f. 169v" ed="O"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab> Al reverendo y distinguido varón el señor Benito Arias Montano, respetable señor y amigo. Amberes. 
+                  </ab>
+               </div>       
+               <div type="anotation1">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> De Juan Sambuco.<ref target="#note1" xml:id="reference1">1</ref> A primero de junio de 1570. Sobre el prefacio.</ab>
+               </div>     
+               <div type="anotation2">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> De Juan Sambuco sobre el prefacio.</ab>
+               </div>  
+               <div type="main_content">
+                  <pb n="f. 168r" ed="O"/>
+                  <opener>Juan Sambuco saluda al reverendo señor Benito Arias Montano.
+                  </opener>
+                  <p>[<hi rend="bold">1</hi>] He vuelto a leer sin interrupción el prefacio de nuevo, el cual no solo está bien escrito, con erudición y piedad, sino que ha sido pulido con todo tipo de ornamentos y adornos de artificio. Su dignidad fácilmente responderá a tan elevado propósito y obra. Alabo el celo y las vigilias en ello invertidas, recibo con agrado los sentimientos emanados de los auténticos principios de la salvación y de la disciplina celestial, los progresos ordenados, los razonamientos formulados con facilidad, las conclusiones consecuentes. Y sin ánimo de ofender a nadie, afirmo que yo en un español, máxime siendo teólogo, difícilmente había encontrado tan gran despliegue de ideas con un estilo tan exquisito. No hay nadie, Arias, que no alce al cielo la elevada y sólida voluntad y los gstos de tan alto rey respecto para la causa cristiana, que no las anteponga a todas las victorias, a las islas recientemente, o ya antes, descubiertas, o a las trazadas para la navegación. [<hi rend="bold">2</hi>] Pero respecto a mí, engaña a vuestra merced el juicio que ha sacado del afecto y las palabras de Plantino, puesto que vuestra merced piensa que yo podría añadir o quitar algo al prólogo. Soy consciente de ello y observo aquello de Eurípides que dice: «También es molesto ser alabado en exceso».<ref target="#note2" xml:id="reference2">2</ref> Sin embargo, dado que desde la infancia he perseguido la recomendación de las lenguas y la filosofía, no me resulta ingrato el ser alabado por un varón tan insigne. [<hi rend="bold">3</hi>] Y ya que me concede vuestra merced la libertad de un amigo, no voy a silenciar que nosotros en Alemania por lo general sostenemos que de ningún modo y bajo ningún pretexto se debe suprimir ni olvidar el conocimiento y la lectura de los libros sagrados en la lengua vernácula, con tal que la interpretación de la escritura y la exposición de los misterios sea conservada por los próceres de la Iglesia, que se contenga la audacia de enseñar con irreflexión o de contentar en público, que se mantenga viva la caridad del aviso o la reprensión, que disminuya el odio y los males particulares, que las secesiones y los herejes no puedan más que todo el sentir de los santos ayudados por el Espíritu Santo. Pero no limitamos los dones divinos y la autoridad cristiana a un único lugar o sede, aunque esté en Toledo dicha sede. A condición de que lo demás sea concorde, no estimamos en más la figura del Pontífice. En cualquier caso, todos los virtuosos reconocen que es necesaria una cabeza visible y un cuerpo preeminente, en los que se apoye la asamblea divina, y a los cuales podamos seguir y confiarnos, según la voluntad de Dios. Esto, si parece algo demasiado duro, hay abundantes argumentos expuestos por sus defensores, y no es cometido mío meterme en mayores profundidades. [<hi rend="bold">4</hi>] Apruebo el sentimiento de vuestra merced respecto a Plantino; cualquier honor que le haya conferido vuestra merced, le ruego que lo haga público. ¡Ojalá las circunstancias permitieran ocuparse con mayor detenimiento de sus asuntos! Lo declararía con todo lujo de detalles. Está en la mano de vuestras mercedes, quienes lo tienen todo más fácil, adornar y ayudar a tales hombres por quienes el favor redunda en toda la posteridad.</p> 
+                   <p>  [<hi rend="bold">5</hi>] Si, como parece vuestra merced querer por propio impulso, mencionas algo o haces algo alguna vez sobre mí, cumpliré con mi servicio con permanente recuerdo. Pero yo, que valoro la amistad no por la utilidad, me contendré y me deleitaré con la carta elegante y afablemente redactada de vuestra merced, a quien, a menos que escriba con más frecuencia, seré llamado indigno de la familiaridad deseada.  </p>
+                  <closer>[<hi rend="bold">6</hi>] Adiós. A primero de junio de 1570. Desde Viena.
+                  </closer>
+                  <postscript>
+                     <head>[Posdata:]</head>
+                     <p>[<hi rend="bold">7</hi>] Si no resulta ingrato a vuestra merced, o me da a entender lo contrario, le enviaré, quizá pronto, algunas observaciones que he hecho sobre el Nuevo Testamento, anotadas al paso mientras hojeo los antiguos códices. Adiós otra vez, mi excelente y doctísimo Arias, y continúe considerándome su amigo.  </p></postscript>
+               </div>   
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Juan Sambuco o Iohannes Zsamboky (25 de julio de 1531- 13 de junio 1584) procedía de una noble y rica familia del noroeste de Pressburg, Hungría. Estudió en varias universidades de Alemania, Francia e Italia y fue consejero e historiógrafo en la corte de Viena de Maximiliano II y de Rudolfo II. La primera edición de sus <title>Emblemata</title> apareció en 1564 en la oficina plantiniana, que reimprimió esta obra cinco veces más. Sus otras publicaciones van desde la edición de textos clásicos hasta obras historiográficas. Publicó también los <title>Icones Medicorum</title> (1574), retratos y vidas de grandes médicos. En la República de las Letras de su época se le reconoció, además de por su obra, por su patronazgo científico y por la espléndida colección de libros y manuscritos que llegó a atesorar, colección que legó a la Biblioteca Imperial de Viena. Cf. <title>HTL</title>, III, pp. 494-495; <title>DBI</title>, IV, 1748; A. Visser, <title>Joannes Sambucus and the Learned Image: the Use of Emblem in Late-Renaissance Humanism</title> (Leiden: Brill, 2005).</note>   
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> E. <title>Or.</title>, v. 1162.
+                  </note> 
+               </div> 
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
