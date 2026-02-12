@@ -1,0 +1,136 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15701109">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Karel van Tisnacq - antes del 9 de noviembre de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">[1570 00 00 - 1570 11 09]</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM requests that the President of the Privy Council appraise his book on the Twelve Prophets, which is priced at three florins and twelve patars. </note>
+            <note type="incipit">Remonstre humblement Benedictus Arias Montanus, docteur en Theologie...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Bélgica</country>
+                        <settlement>Amberes</settlement>
+                        <msName>Museum Plantin-Moretus</msName>
+                        <altIdentifier>
+                           <idno>(O) MPM Arch. 121, ff. 1r-2v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1">A. Dávila Pérez, <title>Benito Arias Montano. Correspondencia de Arias Montano conservada en el Museo Plantin-Moretus de Amberes</title> (Alcañiz-Madrid: Instituto de Estudios Humanísticos - Consejo Superior de Investigaciones Científicas, 2002), vol. I, pp. 29-31.</witness>
+               <witness xml:id="E2">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title>(Madrid: Ediciones Clásicas, 2017), pp. 610-613.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Dávila, <title>Correspondencia conservada en el Museo Plantin-Moretus</title>, I, pp. 29-31; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 610-613. </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="TisnacqKarelvan">
+                  <note>Charles Tisnacq (principios de siglo-Bruselas, 17 de abril de 1573). Tras sus estudios de Derecho, marchó a Italia y, a su regreso, comenzó su carrera como consejero (26 de julio de 1537) y abogado-fiscal (4 de junio de 1545) en el consejo de Brabante. En 1559 es nombrado presidente del consejo de estado y Felipe II se lo lleva a España como ministro de justicia y secretario para los sucesos de los Países Bajos. El 9 de septiembre de 1568 se le nombra presidente del consejo privado, cuando Viglio renuncia al cargo. Este último, cuya salud estaba en declive, fue mantenido en su puesto de presidente del consejo de estado por Felipe II. Cuando a Tisnaco le sobreviene la muerte en 1573, Viglio se vuelve a hacer cargo provisionalmente de la presidencia del Consejo Privado. </note></person>
+               <person xml:id="delaTorreJacques">
+                  <note>Jacques de la Torre (ca. 1513 - 1581), secretario del Consejo Privado, era hijo de un importante mercader de Brujas y de una mujer flamenca. Su hermana, Magdalena, se casó con el mercader de Brujas Francisco del Río y el hijo de estos, Luis del Río, fue miembro del Consejo de Turbas.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="enviada">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date notAfter-iso="1568-11-09">no después del 9 de noviembre de 1570</date>
+            </correspAction>
+            <correspAction type="recibida">
+               <persName>Karel van Tisnacq</persName>
+               <settlement>[Bruselas]</settlement>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="fr">Francés</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Carta no autógrafa, excepto la firma y rúbrica, que sí es de BAM</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="aprobada">
+         <change who="#Dávila" when="2025-08-12">Etiquetado inicial; con encabezado</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/08/MPM-Arch-121-p.-1.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/08/MPM-Arch-121-p-3.jpg"
+         xml:id="foto2"/>
+      </facsimile>
+   <text>
+      <front>
+         <p> El proceso de publicación de libros en los Países Bajos debía pasar por dos inevitables trámites burocráticos: primero, la censura eclesiástica; y después, la licencia y privilegio, competencia del Consejo Privado del rey. Superados estos pasos, quedaba un tercero: la tasación del libro, a cargo también del Consejo Privado. Los <title>Commentaria in XII Prophetas</title> de BAM son registrados en los libros de la imprenta a un precio de 70 placas, es decir, tres florines con diez placas (MPM Ms. 269, f. 11v), dos placas menos del precio consignado en este documento. </p>
+         <p> En cuanto a la fecha de esta solicitud, tan solo es seguro el terminus post quem non: 9 de noviembre, día en que el secretario Jacques de la Torre firma en la misma ciudad de Amberes la resolución del Consejo Privado. No sería demasiado arriesgado, sin embargo, suponer que esta misiva fuera redactada en el margen de un mes antes de la fecha de respuesta. El escrito no es autógrafo de BAM, aunque sí original, pues el comisionado real estampa su firma y rúbrica al final del mismo. El papel forma parte actualmente de los archivos de la imprenta, porque la tasación del libro fue anotada y firmada en una esquina de la misma solicitud y remitida de nuevo a los talleres de Plantino. El documento tiene una paginación posterior, y conserva los pliegues del doblado que se hizo tanto para remitirlo al Consejo Privado como para la devolución a la imprenta. No se ha conservado el sobrescrito original de esta carta. </p>
+      </front>
+      <body>
+         <div type="annotation">
+            <pb n="f. 2v" ed="O" facs="#foto2"/>
+            <head>[Anotado de otra mano, posiblemente Juan Moreto, con escritura trasversal:]</head>
+            <ab>Taxe du livre de <name type="person" ref="#AriasMontanoBenito">Montanus</name> <title>in XII Prophetas</title>.<ref target="#note1" xml:id="reference1">1</ref></ab>
+         </div>
+         <div type="main_content">
+         <pb n="f. 1r" ed="O" facs="#foto1"/>
+            <opener>A monsigneur le President du Privé Conseil.<ref target="#note2" xml:id="reference2">2</ref></opener>
+            <p>[<hi rend="bold">1</hi>] Remonstre humblement <name type="person" ref="#AriasMontanoBenito">Benedictus Arias Montanus</name>, docteur en Theologie, chapelain <app><lem wit="#O #E2">du</lem> <rdg wit="#E1">de</rdg></app> Roy nostre sire et son commis en ceste ville d’<name type="place">Anvers</name> pour l'impression de la Bible catholique quadrilingue, comment apres avoir, avec grand labeur et travail, composé et escript des <title>Commentaires sur les XII Prophetes</title>, et en ayant faict impetrer le privilege de Sa M<expan><ex>ajes</ex></expan>te <app><lem wit="#O #E2">par</lem> <rdg wit="#E1">pour</rdg></app> <name type="person" ref="#PlantinoCristobal">Christophle Plantin</name>, prototypographe royal, il les luy a faict imprimer a ses propres cousts et despens. [<hi rend="bold">2</hi>] Et pourtant supplie que, prennant esgard a ses <app><lem wit="#O #E2">dits</lem> <rdg wit="#E1">dicts</rdg></app> labeurs et grands frais, il vous plaise (suivant l’ordonnance de Sa M<expan><ex>ajes</ex></expan>te sur le faict de l’imprimerie) ordoner la taxe du dit livre à tel prix que, <choice><sic>considererés</sic> <corr>considerés</corr></choice> et ingerés le faveur de ses labeurs et les despences qu'il y a faictes, le meriter. [<hi rend="bold">3</hi>] Et vous <app><lem wit="#O #E2">ferez</lem> <rdg wit="#E1">ferés</rdg></app> bien etc.</p>
+            <p><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedictus</ex></expan> Arias Montanus</name> تلميد </p> 
+            <div type="annotation">
+               <head>[Añadido por otra mano, arriba en la esquina izquierda:] </head>
+            <p>[<hi rend="bold">4</hi>] <add hand="unknown" place="top">Vu le livre icy mentionné, il est <app><lem wit="#O #E2">tauxé</lem> <rdg wit="#E1">taxé</rdg></app> a trois florins douze patars. <app><lem wit="#O #E2">Faict</lem> <rdg wit="#E1">Icy</rdg></app> en <name type="place">Anvers</name> le <date when="1570-11-11">IX<hi rend="sup">e</hi> Novemb<expan><ex>re</ex></expan> 1570</date>.</add></p>
+               <closer><signed><name><app><lem wit="#O #E1">J<expan><ex>acques</ex></expan></lem> <rdg wit="#E2"><hi rend="italic">omisit</hi></rdg> </app> de la Torre.</name></signed><ref target="#note3" xml:id="reference3">3</ref></closer></div>
+         </div></body>
+            <back>  
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> <title>Benedicti Ariae Montani Hispalensis commentaria in XII Prophetas</title> (Antuerpiae: ex officina Christophori Plantini, MDLXXI. Puede consultarse un ejemplar digitalizado de la obra, perteneciente a la Universidad de Sevilla, en <ref target="https://archive.org/details/ARes69107/page/n3/mode/2up">Internet Archive.</ref></note>
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> Charles Tisnacq (principios de siglo-Bruselas, 17 de abril de 1573). Gran amigo de Viglio, hijo de Simón de Tisnacq o Tisnac, caballero de la reina María de Hungría y de María van Thielt. Tras sus estudios de Derecho, marchó a Italia y, a su regreso, comenzó su carrera como consejero (26 de julio de 1537) y abogado-fiscal (4 de junio de 1545) en el consejo de Brabante. En 1559 es nombrado presidente del consejo de estado y Felipe II se lo lleva a España como ministro de justicia y secretario para los sucesos de los Países Bajos. El 9 de septiembre de 1568 se le nombra presidente del consejo privado, cuando Viglio renuncia al cargo. Este último, cuya salud estaba en declive, fue mantenido en su puesto de presidente del consejo de estado por Felipe II. Cuando a Tisnaco le sobreviene la muerte en 1573, Viglio se vuelve a hacer cargo provisionalmente de la presidencia del Consejo Privado. Tisnaco deja a un hijo, Carlos, caballero de la orden militar de Calatrava y lugarteniente del rey en la corte feudal de Brabante. Cf. <title>BNB</title>, XXV (1930-1932), cols. 334-340; <title>BIB</title>, IV, 1425. </note>
+                  <note type="footnote" xml:id="note3">
+                     <ref target="#reference3">3</ref> Jacques de la Torre (ca. 1513 - 1581), secretario del Consejo Privado, era hijo de un importante mercader de Brujas y de una mujer flamenca. Su hermana, Magdalena, se casó con el mercader de Brujas Francisco del Río y el hijo de estos, Luis del Río, fue miembro del Consejo de Turbas. Cf. R. Fagel, <title>Protagonists of War. Spanish Army Commanders and the Revolt in the Low Countries</title> (Leuven: Leuven University Press, 2021), p. 242. 
+                  </note> 
+               </div>
+            </back>
+   </text>
+</TEI>
