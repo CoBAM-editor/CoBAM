@@ -49,8 +49,7 @@
             <p>Dirigido por Antonio Dávila Pérez.</p>
          </projectDesc>
          <editorialDecl>
-            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
-						P5</ref></p>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
