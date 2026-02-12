@@ -39,12 +39,9 @@
                      </msIdentifier>
                   </msDesc>
                </witness>
-               
-              
                <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 222-227, nº 44.</witness>
                <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 538-545.</witness>
             </listWit>
-           
             <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 222-227; </bibl>
             <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 538-545.</bibl>
          </sourceDesc>
@@ -75,7 +72,6 @@
                   <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person> 
                <person xml:id="PlantinoCristobal">
                   <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
- 
             </listPerson>
          </particDesc>
          <correspDesc>
@@ -83,21 +79,13 @@
                <persName>Agustín Huneo </persName>
                <persName>Cornelio Goudano </persName>
                <settlement>Lovaina</settlement>
-               
                <date when="1570-07-22">22 de julio de 1570</date>
             </correspAction>
             <correspAction type="received">
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
-              
-                             </correspAction>
-           
-            
-            
-            
-            
-                    </correspDesc>
-        
+            </correspAction>
+         </correspDesc>
          <langUsage>
             <language ident="la" ana="source">Latín</language>
          </langUsage>
@@ -105,7 +93,6 @@
             <handNote>Texto de la carta a cargo de copista desconocido</handNote>
             <handNote>Firmas autógrafas al final de la carta de Huneo y Goudano</handNote>
             <handNote>Sobrescrito a cargo de otra mano desconocida</handNote>
-            
          </handNotes>
          </profileDesc>
       <revisionDesc status="approved">
@@ -122,10 +109,7 @@
       <graphic
          url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-119v.jpg"
          xml:id="foto3"/>
-     
-      
    </facsimile>
-       
    <text>
       <group>
          <text type="source">
@@ -144,14 +128,11 @@
                <div type="anotation">
                   <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
                   <ab> De praefatione et Apparatu t<expan><ex>om</ex></expan>o 3.</ab>
-               </div>     
-               
+               </div>    
                <div type="main_content">
                   <pb n="f. 118r" ed="O" facs="#foto1"/>
-                  
                   <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>. 
                   </opener>
-                  
                   <head>[Añadido por BAM en la parte superior del papel:]</head>
                   <p><add place="margin" hand="#AriasMontanoBenito"><name type="person" ref="#HuneoAgustín">Augustini Hunei</name> et <name type="person" ref="#GoudanoCornelio">Cornelii Reinerii Goudani</name> in Louaniensi Academia Theologiae professorum.</add></p>
                   <p>[<hi rend="bold">1</hi>] Vir doctissime, recepimus priorem partem Apparatus, cui titulus <title>De arcani sermonis interpretatione</title>; quae nobis utilis quaedam isagoge seu introductio esse uidetur ad Sacrarum Literarum intelligentiam, qualem <name type="person">Pagninus</name> olim conscripsit. [<hi rend="bold">2</hi>] Ac proinde, cum omnibus Sacrae Theologiae studiosis seruire debeat, pauci autem Bibliorum Regiorum copiam habituri sint, uidetur nobis magis in rem et utilitatem christianae rei pub<expan><ex>licae</ex></expan> futurum, si seorsim extra opus illud regium excudatur in exiguo aliquo uolumine, quod omnibus esse usui possit. Existimamus enim opus illud regium, quod in maximam molem excrescet, libris non prorsus necessariis non esse augmentandum et grauandum.	</p>
@@ -160,16 +141,7 @@
                   <closer>[<hi rend="bold">9</hi>] <salute>His uale, uir humanissime, et nos, ut soles, amare perge</salute>. <name type="place">Louanii</name>, <date when="1570-07-22">die 22 Iulii an<expan><ex>n</ex></expan>o 1570</date>. 
                      Tibi deditiss<expan><ex>imi</ex></expan>, 
                      <signed><name type="person" ref="#HuneoAgustín">Augustinus Hunnaeus</name>,</signed> <signed><name type="person" ref="#GoudanoCornelio">Cornelius Reyneri Goudanus</name>.</signed></closer>
-                  
-                
-                  
-                  
-                  
-               </div>        
-               
-               
-               
-               
+               </div>  
             </body>
          </text>
          <text type="translation">
@@ -183,14 +155,11 @@
                <div type="anotation">
                   <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
                   <ab> Sobre el prefacio y el tomo 3º del Aparato.</ab>
-               </div>     
-               
+               </div> 
                <div type="main_content">
                   <pb n="f. 118r" ed="O" facs="#foto1"/>
-                  
                   <opener>Un cordial saludo.  
                   </opener>
-                  
                   <head>[Añadido por BAM en la parte superior del papel:]</head>
                   <p><add place="margin" hand="#AriasMontanoBenito">De Agustín Huneo y Cornelio Reyneri de Gouda, profesores de Teología en la Universidad de Lovaina.</add></p>
                   <p>[<hi rend="bold">1</hi>] Doctísimo varón, recibimos la primera parte del Aparato, cuyo título es <title>Sobre la interpretación del lenguaje arcano</title>,<ref target="#note1" xml:id="reference1">1</ref> la cual nos parece una isagoge o introducción útil para la comprensión de la Sagrada Escritura, como la que Pagnino compuso antaño.<ref target="#note2" xml:id="reference2">2</ref> [<hi rend="bold">2</hi>] Y por ello, como está orientado al servicio de todos los estudiosos de la Teología Sagrada, y en cambio van a ser pocos los que tengan la Biblia Regia, nos parece que prestaría mejor servicio a la cristiandad si se imprimiese aparte, fuera de la obra regia, en un pequeño volumen, que podría ser útil a todos.<ref target="#note3" xml:id="reference3">3</ref> Pues consideramos que esta obra regia, que va a cobrar un volumen excesivo, no debe ser incrementada y sobrecargada con libros que no sean absolutamente necesarios.	</p>
@@ -199,16 +168,7 @@
                   <closer>[<hi rend="bold">9</hi>] <salute> Con esto nos despedimos, varón humanísimo, y manténganos en su amistad como suele. </salute> En Lovaina, a 22 de julio de 1570.
                      Afectuosamente suyos, 
                      <signed>Agustín Huneo,</signed> <signed>Cornelio Reyneri de Gouda.</signed></closer>
-                  
-                  
-                  
-                  
-                  
-               </div>        
-               
-               
-               
-               
+               </div>   
             </body>
             <back>
                <div type="notes">
@@ -232,10 +192,8 @@
                   </note>  
                   <note type="footnote" xml:id="note8">
                      <ref target="#reference8">8</ref> Plantino estaba de hecho oprimido por el peso de los gastos. Ya en diciembre de 1569 escribe al cardenal Granvela informándole de que si no fuera por la venta de breviarios se habría arruinado completamente, pues sus desembolsos eran muy superiores a su patrimonio. Solo las sumas gastadas en papel fueron enormes. Compró el de mejor calidad; de los 1200 juegos de la Biblia Regia impresos en este material, 960 se tiraron sobre papel gran real de Troyes; 200, sobre papel fino real con la uva de Lyon; 30, sobre papel imperial con el águila; y 10 sobre gran papel imperial de Italia. Trece juegos, originariamente seis, hubieron de imprimirse en vitela para uso del rey. Para completar la Biblia, Plantino se endeudó seriamente y llegó un momento en que ya no halló créditos. Cuando alcanzó los dos últimos volúmenes del Aparato, solo pudo imprimir 600, la mitad de los que necesitaba. Trató de conseguir dinero para los ejemplares restantes a través de su amigo el comerciante español Luis Pérez, quien le compró 400 Biblias ya completas.
-                  </note>  
-                     
-               </div> 
-               
+                  </note> 
+               </div>     
             </back>
          </text>
       </group>
