@@ -1,0 +1,163 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700516">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">  (Bruselas) a Benito Arias Montano [Amberes] - 16 de mayo de 1570</title>
+            <author>Viglio de Zuichem</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 16</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Viglius expresses his gratitude to Montano for considering him in the revision process of the preface to the Polyglot. However, deeming the prologue to be so meticulously composed, he refrains from making any alterations and returns the text unmodified.  </note>
+            <note type="incipit">Quod mihi, doctissime Aria, praefationem tuam Sacris Bibliis...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 120r-[121v].</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 212-213, nº 40.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 488-491.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 212-213; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 488-491.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AyttaVigliusZuichemiusab">
+                  <note>  Viglius Zuichemius ab Aytta (1507-1577), diplomático holandés; presidente del Consejo Privado del Emperador; tío de Bucho y Folcard de Montzima.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Viglio ab Aytta de Zuichem</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1570-05-16">16 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+                             </correspAction>
+            <correspAction type="answeredto">
+               <persName>Viglio ab Aytta de Zuichem</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1570-05">Mayo de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de Viglius ab Aytta de Zuichem</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-02-02">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/KBS-Ms-A-902-f.-120.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/KBS-Ms-A-902-f.-121.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p> Viglio de Zuichem, Presidente del Consejo Privado, tras acceder a la petición que BAM le formula en la carta [70 05 00 Z], le remite esta carta acompañando el ejemplar del prólogo a la Biblia Políglota. En este caso particular el Presidente Viglio se limita al elogio de la obra; sin embargo, BAM conseguirá con estas consultas involucrar en su empresa a todos los estamentos de poder y asegurarse su respaldo. </p>
+      </front>
+      <body>      
+         <pb n="f. [121v]" ed="O" facs="#foto2"/>
+         <div type="address">
+            <head>[Sobrescrito:]</head>
+            <ab>Eximio ac doctissimo uiro domino d<expan>omino</expan> <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name>, Sacrae Theologiae doctori, domino <supplied>s</supplied>uo plurimum honorando. 
+            </ab>
+            <div type="annotation">
+               <head>[Anotado por otra mano, con escritura transversal:]</head>
+               <ab> <name type="place">Brusselis</name> <date when="1570">1570</date>. Praesidis <name type="person" ref="#AyttaVigliusZuichemiusab">Viglii</name>, <date when="1570-05-16">16 Maii</date>, de praefatione. </ab>
+            </div>              
+         <div type="main_content">
+            <pb n="f. 120r" ed="O" facs="#foto1"/>
+            <head>[Añadido por BAM en el centro del margen superior de la hoja:] <add>Praesidis <name type="person" ref="#AyttaVigliusZuichemiusab">Viglii</name>.</add></head>
+            <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>.</opener>
+            <p>[<hi rend="bold">1</hi>] Quod mihi, doctissime <name type="person">Aria</name>, praefationem tuam Sacris Bibliis (quae Regiae Maiestatis auspiciis isthic excuduntur) praefigendam communicare dignatus fueris, non possum non maximas gratias tibi <app><lem wit="#O #E1">agere.</lem> <rdg wit="#E2"><hi rend="italic">leuiter distinxit</hi></rdg></app> Non quod ego quicquam eius quod tu requiris praestare potuerim, cum illa omni ex parte perpolita absolutaque mihi esse uisa fuerit, sed quod desiderio quodam iampridem tenebar ut tam augustum opus ad colophonem perductum intelligerem. [<hi rend="bold">2</hi>] Merito autem omnes Sacrarum L<expan><ex>ite</ex></expan>rarum studiosi Deo Opt<expan><ex>imo</ex></expan> Max<expan><ex>imo</ex></expan> gratias agent, qui tibi uires animumque addiderit quo opus hoc compleres; quo nomine non nostra tantum aetas, sed omnis posteritas plurimum se tibi debere fatebitur.</p> 
+            <p>[<hi rend="bold">3</hi>] In praefatione uero uti omnino nihil corrigendum annotandumue ingenii iudiciique mei tenuitas inuenire potuit, ita satis eam laudare nequeo; non ab rerum tantum <subst><del>pondera</del> <add>pondere</add></subst> <choice><sic>seriemque</sic> <corr>serieque</corr></choice>, uerum etiam a uerborum <choice><sic>exquisitam elegantiam</sic> <corr>exquisita elegantia</corr></choice>. Proinde ad te exemplum mundum remitto, cui post tantum uirum manum apponere non sum ausus.</p> <closer>[<hi rend="bold">4</hi>]<salute>Quod superest, Deum precor ut te rei literariae studiosisque omnibus in multos annos conseruet incolumem.</salute> 
+            <dateline><name type="place">Bruxellae</name>, <date when="1570-05-16">XVIª Maii 1570.</date></dateline>
+               T<expan><ex>uae</ex></expan> d<expan><ex>ominationi</ex></expan> deditis<expan><ex>simus</ex></expan> amicus ac seruitor, 
+               <signed>  <name type="person" ref="#AyttaVigliusZuichemiusab">Viglius Zuichemus</name></signed></closer>
+         </div></div>
+      </body></text>
+         <text type="translation">
+            <body>      
+               <pb n="f. [121v]" ed="O" facs="#foto2"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab>Al eximio y doctísimo señor el señor don Benito Arias Montano, doctor en Sagrada Teología, con el debido respeto.  
+                  </ab>
+                  <div type="annotation">
+                     <head>[Anotado por otra mano, con escritura transversal:]</head>
+                     <ab> Bruselas 1570. Del presidente Viglio,<ref target="#note1" xml:id="reference1">1</ref> a 16 de mayo, sobre el prefacio. </ab>
+                  </div>              
+                  <div type="main_content">
+                     <pb n="f. 120r" ed="O" facs="#foto1"/>
+                     <head>[Añadido por BAM en el centro del margen superior de la hoja:] <add>Del Presidente Viglio.</add></head>
+                     <opener>Un cordial saludo. </opener>
+                     <p>[<hi rend="bold">1</hi>] Dado que se ha dignado, doctísimo Arias, a hacerme partícipe del prefacio que se va a poner al frente de la Sagrada Biblia (la que se imprime ahí bajo los auspicios de Su Real Majestad), no puedo dejar por ello de estar muy agradecido a vuestra merced. No porque yo pueda ofrecerle algo de esto que solicita, puesto que el prefacio me ha parecido estar completamente pulido y terminado, sino porque desde hacía ya tiempo sentía el deseo de saber que llegaba a su término una obra tan egregia. [<hi rend="bold">2</hi>] Con razón todos los estudiosos de las Sagradas Escrituras darán gracias a Dios Óptimo Máximo, quien ha dado fuerzas y coraje a vuestra merced para acabar esta obra; y por este motivo, no solo nuestra generación, sino toda la posteridad reconocerá estar en gran deuda con vuestra merced. </p> 
+                     <p>[<hi rend="bold">3</hi>] Por lo demás, en el prefacio, si bien mi poco ingenio y juicio no ha podido encontrar nada en absoluto que corregir o que observar, no obstante, no soy capaz de elogiarlo tanto como merece, no solo por la importancia y la disposición del contenido, sino también por la exquisita elegancia de los términos. Por lo tanto, le devuelvo la copia inmaculada, a la que no me he atrevido a acercar las manos después de haberlo hecho tan insigne varón.</p> 
+                     <closer>[<hi rend="bold">4</hi>] Por lo demás, ruego a Dios que conserve a vuestra merced muchos años en plenas facultades para bien de las letras y de todos los estudiosos.
+                     En Bruselas, a 16 de mayo de 1570.
+                        Afectuosamente suyo, su amigo y servidor, Viglio de Zuichem. </closer>
+                  </div></div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Sobre Viglio de Zuichem, Presidente del Consejo de Estado de los Países Bajos, véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06">1569 04 06</ref>.  </note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
