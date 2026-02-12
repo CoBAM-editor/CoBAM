@@ -1,0 +1,179 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15710124">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Gabriel de Zayas (Madrid) a Benito Arias Montano - 24 de enero de 1571 </title>
+            <author>Gabriel de Zayas</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+                     </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1571 01 24</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Zayas has received two letters from BAM. On behalf of the King, Zayas thanks BAM for his counsel regarding the situation in the Low Countries and the succession of the Duke of Alba. The documentation concerning the breviaries will be sent with an upcoming dispatch. A draft of the privilege for the Bible will likewise be sent to Plantin. In Italy, only one of the parchment Bibles is to be delivered, namely to the Pope. Another parchment Bible will be for the Duke of Alba. Ten further copies will be sent to Spain. Zayas asks that, if there is any space left in the crates of books for Friar Juan de Regla, BAMo send him thread, paper, and other commodities typical of Flanders. The Cardinal of Seville has died. Don Fadrique [Enríquez de Ribera] is gravely ill.    </note>
+            <note type="incipit">En XVII del presente, recibí dos cartas de v. m.</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="B">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Simancas</settlement>
+                        <msName>Archivo General de Simancas</msName>
+                        <altIdentifier>
+                           <idno>(B) AGS, E 583/22.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+                  </witness>
+               <witness xml:id="E1">Marqueses de Pidal y de Miraflores - M. Salvá (eds.), <title>Colección de documentos inéditos para la Historia de España</title>, 113 vols. (Madrid, 1842-1914), XLI, 188-190.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo II (1571-1572)</title> (Madrid: Ediciones Clásicas, 2022), pp. 26-30.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Codoin</title>, pp. 188-190;</bibl>
+            <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, II, 26-30.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="FelipeII">
+                 <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="AlvarezdeToledoFadrique">
+                  <note>Fadrique Álvarez de Toledo 1537-1583, cuarto duque de Alva, hijo de Fernando Álvarez de Toledo</note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="JimenezdeBertandonaMartin">
+                  <note>Martín Jiménez de Bertendona (1530-1607), natural de Bilbao, hijo de Martín de Bertendona y Gondra. Bertendona sirvió en las campañas de Flandes durante los gobiernos de Alba y Requesens, siendo nombrado general de la Armada tras la capitulación de Amberes de 1585. </note></person>
+               <person xml:id="PioV">
+                  <note>Antonio Michele Ghislieri, papa Pío V, 1504-1572.</note></person>
+               
+               <person xml:id="ReglaJuan">
+                  <note>Juan Regla (1500-1574), confesor de Carlos I.</note></person>
+               <person xml:id="ZuñigaGasparde">
+                  <note>Gaspar de Zúñiga y Avellaneda (1507-1571), cardenal y arzobispo de Sevilla.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Gabriel de Zayas</persName>
+               <settlement>Madrid</settlement>
+               <date when="1571-02-24">24 de enero de 1571</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Borrador de mano desconocida.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-11-20">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/11/AGS-E-583-22-1r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/11/AGS-E-583-22-1v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/11/AGS-E-583-22-2r.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/11/AGS-E-583-22-2v.jpg"
+         xml:id="foto4"/>
+   </facsimile>
+   <text>
+      <front>
+         <p>Con un estilo dinámico, el secretario Zayas despacha con BAM cuestiones públicas y privadas: la sucesión de Alba, los libros de nuevo rezado, Biblia Políglota, encargo de mercancías flamencas y noticias de amigos. Esta minuta autógrafa de Zayas presenta varias tachaduras y rectificaciones que permiten reconstruir el proceso de redacción. En el cuerpo del texto con visualización de marcado de XML, como es norma en esta edición, se consigna el texto tachado. </p>
+      </front>
+      <body>
+         <div type="anotation">
+            <pb n="f. [2v]" ed="B" facs="#foto4"/>
+            <head>[Anotado por otra mano, en el margen, con escritura transversal:]</head>
+            <ab><app><lem wit="#B #E2">De <name type="person" ref="#ZayasGrabrielde">Çayas</name> mi s<expan><ex>eño</ex></expan>r. A <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> en <date when="1571-01-24">XXIIII de enero 1571</date></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>. </ab>
+         </div>
+         <div type="main_content">
+               <pb n="f. [1r]" ed="B" facs="#foto1"/>
+            <opener>A <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>. 
+                       </opener>
+            <p>[<hi rend="bold">1</hi>] En <date when="1571-01-17"><app><lem wit="#B #E2">XVII</lem> <rdg wit="#E1">17</rdg></app> del presente</date> recibí dos cartas de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, de <date when="1570-12-28"><app><lem wit="#B #E2">XXVIII</lem> <rdg wit="#E1">28</rdg></app></date> y <date when="1570-12-29"><app><lem wit="#B #E2">XXIX</lem> <rdg wit="#E1">29</rdg></app> del passado</date>,<ref target="#note1" xml:id="reference1">1</ref> y con ellas el contentami<expan><ex>ent</ex></expan>o possible por saber de la salud de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, que entender esto me <subst><del>sustenta</del> <add place="above">conserva</add></subst> la mía, con la qual quedo agora, a Dios gr<expan><ex>aci</ex></expan>as, y lo mismo entiendo de los hermanos de <name type="place">Sevilla</name> por aviso fresco que de allá tengo.</p>
+            <p>[<hi rend="bold">2</hi>] La de <date when="1570-12-28"><app><lem wit="#B #E2">XXVIII</lem> <rdg wit="#E1">28</rdg></app></date> contiene tan buenas cosas, que acordé de mostrarla a Su M<expan><ex>agesta</ex></expan>d, y haviéndola leýdo con harta attención, me mandó que de su parte escriviesse a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> las graçias de lo que <subst><del>escrive</del> <add place="above">contiene</add></subst>, y señaladamente en el particular del <rs ref="#AlvarezdeToledoFernando">duque de Alva</rs> y en lo que toca al govierno de essos Estados, que todo ello está muy bien <del>dicho</del> considerado y con zelo de buen criado y buen christiano. Mas ya no ay bolver atrás en la provisión que está hecha del successor.<ref target="#note2" xml:id="reference2">2</ref> </p> 
+            <p>[<hi rend="bold">3</hi>] Los papeles y recaudo <app><lem wit="#B #E2">necessarios</lem> <rdg wit="#E1">necesario</rdg></app> para la impressión de los breviarios yrán sin falta con <del>un</del> correo <del>que p.</del> expresso que partirá dentro de cinco o seys días para aý, que este no va más que hasta la corte de <name type="place">Françia</name>.<ref target="#note3" xml:id="reference3">3</ref> </p>
+            <p>[<hi rend="bold">4</hi>] La minuta del <app><lem wit="#B #E2">previlegio</lem> <rdg wit="#E1">privilegio</rdg></app> que digo en la otra que va con esta, que no parecía, la hallé muy guardada, y tanbién lo despacharé <pb n="f. [1v]" ed="B" facs="#foto2"/> y embiaré luego <del>con el cumplimiento necessario</del> y assí lo diga v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> al buen <name type="person" ref="#PlantinoCristobal">Plantino</name> con mi besamanos, y que entonces responderé a su carta de <date when="1570-12-06">VI de <app><lem wit="#B #E2">X<expan><ex>diciem</ex></expan>bre</lem> <rdg wit="#E1">diciembre</rdg></app></date>, en que vienen los nombres y edades de sus hijas,<ref target="#note4" xml:id="reference4">4</ref> que ha holgado de entenderlo <app><lem wit="#B #E2">Su</lem> <rdg wit="#E1">S.</rdg></app> M<expan><ex>agesta</ex></expan>d, y tengo por cierto le hará la m<expan><ex>erce</ex></expan>d y gratificación que su virtud y grande ingenio mereçe.</p>
+            <p>[<hi rend="bold">5</hi>] A <app><lem wit="#B #E2">Su M<expan><ex>agesta</ex></expan>d</lem> <rdg wit="#E1">S. M.</rdg></app> pareçe basta llevar a <name type="place">Italia</name> <choice><sic>un</sic> <corr>una</corr></choice> de las biblias en <app><lem wit="#B #E2">pargamino</lem> <rdg wit="#E1">pergamino</rdg></app> para <del>que se p.</del> que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> la presente a Su Sanct<expan><ex>ida</ex></expan>d,<ref target="#note5" xml:id="reference5">5</ref> que con otras personas allí no ay <subst><del>con quien</del> <add place="above">que</add></subst> cumplir, y assí será bien que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> la embíe con la conduta <del>y</del> secretam<expan><ex>en</ex></expan>te y <app><lem wit="#B #E2">al</lem> <rdg wit="#E1">el</rdg></app> buen recaudo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> mismo dize que conviene, porque se gane tiempo.</p>
+            <p>[<hi rend="bold">6</hi>] Visto lo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me escrive del <rs ref="#AlvarezdeToledoFernando">duque de Alva</rs> y la razón que ay para le dar gusto, tiene por bien <app><lem wit="#B #E2">Su M<expan><ex>agesta</ex></expan>d</lem> <rdg wit="#E1">S. M.</rdg></app> que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le dé una de las Biblias en <app><lem wit="#B #E2">pargamino</lem> <rdg wit="#E1">pergamino</rdg></app>,<ref target="#note6" xml:id="reference6">6</ref> y que quando sea tiempo haga v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> enquadernar las diez que se han de traer acá como <del>v. m.</del> sabe que conviene, haviéndose de tener en librerías públicas, donde tanto se manejan.<ref target="#note7" xml:id="reference7">7</ref> </p>
+            <p>[<hi rend="bold">7</hi>] En esta hora tengo carta de <name type="place">Bilvao</name> de <date when="1571-01-16"><app><lem wit="#B #E2">XVI</lem> <rdg wit="#E1">16</rdg></app></date> deste, por donde entiendo que <name type="person" ref="#JimenezdeBertandonaMartin">Bertandona</name><ref target="#note8" xml:id="reference8">8</ref> se haría a la vela <pb n="f. [2r]" ed="B" facs="#foto3"/> <surplus>se haría a la vela</surplus> en sirviéndole el tiempo, y él traerá de buena gana las dos arquimesas en que huelgo vengan los libros del padre fray <name type="person" ref="#ReglaJuan">Juan Regla</name>.<ref target="#note9" xml:id="reference9">9</ref>  Y si sobraren algunos vazíos, hínchase de hilo, papel de <name type="place">Francaforte</name>, y algunas otras bugerías<ref target="#note10" xml:id="reference10">10</ref> que agraden a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, y aun demás desto holgaría que viniesse una pipa de velas de sebo hechas a posta aý o <supplied>e</supplied>n <name type="place">Brujas</name>, que en mi tiempo de allí<ref target="#note11" xml:id="reference11">11</ref>  eran las mejores, aunque por ruynes que sean valdrán más que las de cera de <subst><del>aquí</del> <add place="above">acá</add></subst>, y ande en todo buena q<expan><ex>uent</ex></expan>a y no parezca blanca. </p>
+            <p>[<hi rend="bold">8</hi>] Muriósenos en día y m<expan><ex>edi</ex></expan>o el <rs type="person" ref="#ZuñigaGasparde">cardenal de Sevilla</rs><ref target="#note12" xml:id="reference12">12</ref>  en <name type="place">Jaén</name>, de la hijada y cólica,<ref target="#note13" xml:id="reference13">13</ref>  que ha sido un buen sermón; y el s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#AlvarezdeToledoFadrique">Fadrique</name><ref target="#note14" xml:id="reference14">14</ref>  queda harto peligroso. Dios sea con él y con todos, amén.</p>
+            <closer>[<hi rend="bold">9</hi>] De <name type="place">Madrid</name>, <date when="1571-01-24">a <app><lem wit="#B #E2">XXIIII</lem> <rdg wit="#E1">24</rdg></app> de enero 1571</date>.</closer>
+         </div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Estas cartas de BAM a Zayas, del 28 y 29 de diciembre de 1570, no han podido ser localizadas.  </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> Ya en su carga del 9 de octubre de 1570 BAM expresaba brevemente su descontento por la decisión de relevar al duque de Alba como gobernador de los Países. Del párrafo que acabamos de leer deducimos que el 28 de diciembre de ese mismo año, el capellán real debió de trazar un análisis más prolijo de la situación de los Países Bajos y un argumentario más completo para que Alba permaneciera algún tiempo más. Al monarca español le complacían estos avisos de BAM desde Flandes por su agudeza y profundidad de análisis; hasta tal punto esto es así que por estas fechas Felipe II solicita a su capellán que escriba de forma extensa sobre el conflicto flamenco (cf. 1571 02 05). En todo caso, la decisión de relevar a Alba parece que no era negociable desde la corte española.   </note> 
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Se comenzará a preparar con estas instrucciones el primer breviario «ad usum Hispaniae», que Plantino produjo para Felipe II en una edición en 8º de 1572. Su título completo reza así: <title>Breuiarium Romanum, ex decreto Sacrosancti Concilii Tridentini restitutum, Pii V. Pont. Max. iussu editum. Eiusque permissu, festis et officiis Sanctorum, maxime Hispanorum, in fine auctum</title> (Antuerpiae: ex oficina Christophori Plantini. M. D. LXXII); véase descripción bibliográfica en <title>PP</title>, I, 456-457, nº 812. Las instrucciones españolas para la impresión de los breviarios debieron llegar la casa plantiniana en febrero de 1571, pues en marzo de este mismo año Plantino comunica al monarca en una carta latina consideraciones técnicas sobre la impresión (en <title>CP</title>, II, 196-201, nº 265). En total se enviaron a Epaña 2069 ejemplares de esta edición por un valor de 1949 florines (MPM Arch. 22 y 24).  </note>  
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Esta carta en francés, archivada en forma de borrador en los archivos plantinianos, lleva fecha del 4 de noviembre de 1570 en el encabezado, pero anota ya la fecha del 6 de diciembre al final de la misma. Véase el documento en <title>CP</title>, II, 172-177, nº 251.  </note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Efectivamente, un ejemplar de las doce copias de la Biblia en pergamino encargadas por Felipe II para su uso personal (finalemente fueron trece ejemplares, pues se ensamblo un ejemplar más con cuadernos sobrantes) fue ofrecido al Papa Gregorio XIII el 16 de junio de 1572, ejemplar que se encuentra todavía en la Biblioteca del Vaticano con la signatura actual Membr.S.1-9(1-5), antigua signatura Arm. 341.5-13 - I.R.42-50. Se conservan solo cinco tomos encuadernados en diez volúmenes, mientras que faltan los tomos del VI al VIII correspondientes al <title>Apparatus sacer</title>. </note> 
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> El 4 de noviembre de 1572 recibió el duque de Alba su ejemplar de la Biblia en pergamino (encuadernado en diez volúmenes), que hoy pertenece al British Museum con la signatura C.17.d.1-13. Los tomos I al V, correspondientes al texto bíblico, más el tomo VII, están impresos en pergamino. </note>     
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> El envió de ocho ejemplares de la Políglota en pergamino hacia España (ya habían sido entregados previamente cuatro al papa, al duque de Alba, al duque de Saboya y a la Universidad de Lovaina) se produjo entre los años 1572 y 1573, y se destinaron a El Escorial, donde se conservan todavía tres de estos ejemplares (signaturas 1-III-1-11, 86-V-1-11 y 87-V-1-8). En la Biblioteca Nacional de España pueden consultarse otros dos ejemplares (signaturas R/16304-R/16316 y R/8892-8904), ambos con sello de procedencia de la Biblioteca Real. Los otros tres ejemplares pasaron a manos privadas hacia el final del siglo XVIII, aunque han acabado finalmente en instituciones culturales públicas: uno en el fondo antiguo de la Biblioteca de Castilla-La Mancha, en Toledo (signatura 1-7331 - 1-7343); otro en la Biblioteca Real (signatura VIII/1425-1437) y un tercero en la Phoebus Foundation de Bélgica, adquirido el 11 de julio de 2018 en la casa londinense de subastas Christie's por un precio final de 488 750 libras.    </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> Podría tratarse, como en una referencia anterior (<ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-12-23-z/">1569 12 23 Z</ref>) de Martín de Bertendona (1530-1604), natural de Bilbao, hijo de Martín Jiménez de Bertendona, que trasladó al príncipe Felipe II a Inglaterra en 1554 para contraer matrimonio con María Tudor. Bertendona sirvió en las campañas de Flandes durante los gobiernos de Alba y Requesens, siendo nombrado general de la Armada tras la capitulación de Amberes de 1585. A partir de 1587 tomó parte activa en los preparativos de la Armada Invencible. Formó también parte de la expedición de las Azores en 1591, donde fue derrotada la flota británica, campaña tras la que quedó al mando de las escuadras ligeras del Atlántico para mantener el paso abierto entre Calais y el Cantábrico. Cf.  Juan E. Delmas, <title>Diccionario Biográfico de Claros Varones de Vizcaya</title> (Bilbao 1970). </note>
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Fray Juan Regla (1500-1574); véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-12-23-z/">1569 12 23 Z</ref>.   </note>
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> «Bujería», según el diccionario de la RAE, significa «mercadería de estaño, hierro, vidrio, etc., de poco valor y precio».    </note>
+               <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref> Formando parte de la oficina de Gonzalo Pérez, Zayas había acompañado al príncipe Felipe en su viaje a Flandes de 1556.   </note>
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> Gaspar de Zúñiga y Avellaneda (1507-1571), cardenal y arzobispo de Sevilla entre 1569 y 1571. Hijo de los condes de Miranda del Castañar, y sobrino de Ínigo López de Mendoza. Estudió en la Universidad de Salamanca. En 1550 fue consagrado obispo de Segovia y participó en las últimas dos sesiones del último período del Concilio de Trento. Fue promocionado a la sede metropolitana de Santiago de Compostela el 21 de octubre de 1558. El 22 de julio de 1569 fue destinado a la sede de Sevilla, cargo que no llegó a ocupar. Murió en Jaén el 3 de enero de 1571. Cf. Lorenzo Cardella, <title>Memorie storiche de' cardinali della Santa Romana Chiesa</title> (Roma, 1793), V, 123-124; Alfonso Chacón, <title>Vitae et res gestae Pontificum Romanorum et S. R. E. Cardinalium ab initio nascentis Ecclesiae usque ad Vrbanum VIII. Pont. Max</title>, 2 vols. (Roma, 1630), II, col. 1707; Vidal Guitarte Izquierdo, <title>Episcopologio Español (1500-1699). Españoles obispos en España, América, Filipinas y otros países</title> (Roma, 1994) (Publicaciones del Instituto Español de Historia Eclesiástica; Subsidia; 34), p. 63; A. Sáez, «Zúñiga y Avellaneda, Gaspar», <title>Diccionario de historia eclesiástica de España</title>, Quintín Aldea Vaquero, Tomás Marín Martínez, José Vives Gatell (dirs.) (Madrid, 1972-1975), IV, 2817.  </note>
+               <note type="footnote" xml:id="note13">
+                  <ref target="#reference13">13</ref> Sobre la enfermedad que padecía el cardenal versa la obra de urología titulada <title>Cura de la piedra y dolor de la ijada o/y cólica renal</title> (Toledo, 1492).</note>
+               <note type="footnote" xml:id="note14">
+                  <ref target="#reference14">14</ref> Don Fadrique Enríquez de Ribera, miembro de la casa de los marqueses de Tarifa. Cf. nota bibliográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-09/">1568 11 09</ref>. BAM recibe la triste noticia del fallecimiento de don Fadrique en febrero de 1572. El disgusto le ocasionó una enfermedad de veintidós días (cf. 1572 03 13).  </note>
+            </div>
+      </back>
+   </text>
+</TEI>
