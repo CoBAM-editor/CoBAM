@@ -1,0 +1,174 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700517">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Maximiliano Morillon (Bruselas) a Benito Arias Montano (Amberes) - 17 de mayo de 1570 </title>
+            <author>Maximiliano Morillon</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 17</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Morillon admits that he lacks the necessary expertise to revise BAM’s preface. Nevertheless, he has read it several times and submits a few observations to avoid being deemed negligent. Pighius has not dared to amend anything.                 
+            </note>
+            <note type="incipit">Falleris, falleris, idque plurimum, uir incomparabilis,...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, ff. 112r-113v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 214-215, nº 41.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 492-495.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 214-215; </bibl><bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia</title>, I, 492-495.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MorillonMaximiliano">
+                  <note>Maximiliano Morillon (1516/7-27 de marzo 1586), político, dignatario eclesiástico, después obispo de Tournai. Fue protegido por Granvela y Viglio, y gracias a ellos hizo una brillante carrera política y religiosa. Cuando en 1545 Antonio Perrenot se convierte en obispo de Arras, se lleva a Maximiliano hacia su círculo asegurándole las canonjías en Arras, Malinas y Bruselas, a lo que Felipe II añadió la prebostía en Aire. Cuando en 1561 Granvela se convierte en arzobispo de Malinas, nombró a Morillon arcediano y vicario general, erigiéndole en la principal autoridad de la diócesis tras la marcha del arzobispo en 1564. En 1580 Granvela le propone ante Felipe II como obispo de Tournai, nombramiento que la hostilidad de Juan Fonck y la ocupación de la ciudad por las tropas de los Estados retarda más de dos años. Fue consagrado el 23 de octubre de 1583. Cf. BNB, XV (1899), cols. 267-273; BIB, III, 994.</note>
+               </person>
+               <person xml:id="PighiusStephanus">
+                  <note>Stephanus Winandus (o Vinandus) Pighius (Kampen, 1520 - Xanten, 16 de octubre de 1604) fue un humanista y anticuario holandés. Pighius se convirtió en secretario y bibliotecario del cardenal Antoine Perrenot de Granvelle en Bruselas, cargos que ocupó hasta 1571, aunque el propio Granvelle tuvo que abandonar Bruselas en 1564. Durante este tiempo publicó una edición de Valerius Maximus (Amberes: Plantino 1567).   </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Maxiiliano Morillon</persName>
+               <settlement>Bruselas</settlement>
+               <date when="1570-05-17">17 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05-11">11 de mayo de 1570</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Carta autógrafa de Maximiliano Morillon</handNote>
+         </handNotes>
+         <handNotes>
+            <handNote>Anotación de Benito Arias Montano</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-02-12">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/KBS-Ms-A-902-f.-112r.jpg" xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/KBS-Ms-A-902-f.-112v.jpg" xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/KBS-Ms-A-902-f.-113v.jpg" xml:id="foto3"/>
+   </facsimile>
+   <text> 
+      <group>
+      <text type="source">
+         <front>
+         <p> El tono que domina esta carta de respuesta llama poderosamente la atención cuando se contrasta este documento con el parecer que Morillon remite al cardenal Granvela sobre Montano el 8 de febrero de 1574: «Nunca he confiado en Arias Montano que siempre me ha parecido un auténtico buscavidas y que tiene un no sé qué, que sugiere más el Antiguo Testamento que el Nuevo [...]». Véase sobre este particular Clair, <title>Cristóbal Plantino</title>, p. 131.</p>
+            <p>El folio 113r del original de esta carta está en blanco. </p>
+         </front>
+         <body> 
+            <pb n="f. 113v" ed="O" facs="#foto3"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> R<expan><ex>eueren</ex></expan>do et clariss<expan><ex>imo</ex></expan> <app><lem wit="#O #E2">d<expan><ex>omi</ex></expan>no</lem><rdg wit="#E2"><hi rend="italic">omisit</hi></rdg></app>  domino <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name>, domino suo obseruando. <name type="place">Antuerpiae</name>. 
+               </ab>
+            </div> 
+            <div type="annotation2">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> <name type="place">Brusselis</name>. <app><lem wit="#O #E2"><name type="person" ref="#MorillonMaximiliano">Morelloni</name></lem> <rdg wit="#E1">Morilloni</rdg></app> <date when="1570-05-17">16 Cal<expan><ex>endas</ex></expan> Iunii</date>. De praefatione.
+               </ab>
+            </div> 
+            <div type="main_content">
+               <pb n="f. 112r" ed="O" facs="#foto1"/>
+               <head>[Añadido por BAM en el centro del margen superior de la hoja:] <add><app><lem wit="#O #E2"><name type="person" ref="#MorillonMaximiliano">Morelloni</name></lem> <rdg wit="#E1">Morilloni</rdg></app>, praepositi archiepiscopatus Mecliniensis et gubernatoris.</add></head>
+               <p>[<hi rend="bold">1</hi>] Falleris, falleris, idque plurimum, uir incomparabilis, si eam mihi esse doctrinam, si hoc ingenii acumen existimas ut ego de tanti uiri lucubrationibus iudicium mihi assumere possim. Noui enim quam mihi sit domi <app><lem wit="#O #E2">curta</lem> <rdg wit="#E1">carta</rdg></app> supellex. Proinde agnosco tui in me amoris ac beneuolentiae affectum, cum amplius mihi tribuis quam ego reuera sustinere uel praestare queam. [<hi rend="bold">2</hi>] Ne tamen uidear tuo desiderio refragari, annotaui aliqua pari promptitudine ac animi candore quo uideo hoc te a me <app><lem wit="#O #E2">postulare</lem><rdg wit="#E1"><hi rend="italic">post</hi> postulare <hi rend="italic">imum punctum posuit</hi></rdg></app> lecta ter quaterque elegantissima illa praefatione tua, quae, ita me Deus amet!, in tantam tui me admirationem abripuit ut uix apud me fuerim, dum rem longe maximam tanta dignitate, ui ingenii, spiritus ardore ac dicendi copia et ubertate tractatam atque dispositam cerno, ut excitandis piis animis atque in Dei et Sacrarum L<expan><ex>ite</ex></expan>rarum uenerationem cultumque rapiendis appositius aliquid uel doctius dici uel conscribi posse non existimem. </p>
+               <p>[<hi rend="bold">3</hi>] Quid ergo ab h<expan><ex>omi</ex></expan>ne parum instructo o<expan><ex>mn</ex></expan>ibusque iis praesidiis, quae ad bene iudicandum requiruntur, destituto dici <app><lem wit="#O #E1">potuit?</lem> <rdg wit="#E2">potuit,</rdg></app> Et in ea re quae captum meum et uires excedit? <app><lem wit="#O #E2">Sed</lem><rdg wit="#E1">Istud</rdg></app> fatebor ingenue, malui  <pb n="f. 112v" ed="O" facs="#foto2"/> temeritatis notam subire quam tanto amico et d<expan><ex>omi</ex></expan>no morem non gerere. Quicquid ergo peccatum est, tibi ipsi imputes necesse est; cum ut peccarem autor esse uoluisti. [<hi rend="bold">3</hi>] Prudentius egit d<expan><ex>ominus</ex></expan> <name type="person" ref="#PighiusStephanus">Pigius</name>, qui noluit docere Mineruam,  tuamque d<expan><ex>ominationem</ex></expan> plurimum salutat, quam rogo ut libertatem nostram boni consulat.</p>
+               <closer><salute>[<hi rend="bold">4</hi>] Bene uale, uir eruditis<expan><ex>sime</ex></expan> et eruditorum optime</salute>.
+               <dateline><name type="place">Bruxellae</name>, <date when="1570-05-17">XVI Cal<expan><ex>endas</ex></expan> Iunii 1570</date>.</dateline>
+             R<expan><ex>euerendae</ex></expan> d<expan><ex>ominationi</ex></expan> u<expan><ex>estrae</ex></expan> addictiss<expan><ex>imus</ex></expan> seruitor, 
+             <signed><name type="person" ref="#MorillonMaximiliano">Max<expan><ex>imilianus</ex></expan> Morillonus</name>.</signed></closer> </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <pb n="f. 113v" ed="O" facs="#foto3"/>
+            <div type="address">
+               <head>[Sobrescrito:]</head>
+               <ab> Al reverendo y muy insigne señor don Benito Arias Montano, con el debido respeto. Amberes. 
+               </ab>
+            </div> 
+            <div type="annotation2">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab> Bruselas. De Morillon, a 17 de mayo. Acerca del prefacio.
+               </ab>
+            </div> 
+            <div type="main_content">
+               <pb n="f. 112r" ed="O" facs="#foto1"/>
+               <head>[Añadido por BAM en el centro del margen superior de la hoja:] <add>De Morillon, vicario general y administrador de la diócesis de Malinas.</add></head>
+               <p>[<hi rend="bold">1</hi>] Se equivoca vuestra merced, se equivoca, y no poco, varón incomparable, si cree que es tanta mi sabiduría, si piensa que es tal la agudeza de mi ingenio como para poder asumir el juicio de las lucubraciones de tan insigne varón. Y de hecho, soy consciente de cuán corto es el menaje en mi casa.<ref target="#note1" xml:id="reference1">1</ref> Por consiguiente, me doy cuenta de la inclinación del amor y benevolencia de vuestra merced hacia mi persona, dado que me atribuye más de lo que realmente yo puedo soportar u ofrecer. [<hi rend="bold">2</hi>] Sin embargo, para no dar la impresión de que me opongo al deseo de vuestra merced, he hecho algunas anotaciones con una presteza y sencillez similar a esta con que veo que me lo ha pedido, después de haber leído una y otra vez aquel elegantísimo prefacio suyo, el cual, ¡que Dios me ayude!, me arrastró a una admiración tan grande hacia vuestra merced, que apenas estoy en mí mientras veo este asunto, con mucho el más importante, tratado con tanta dignidad, ingenio, entusiasmo, facilidad y riqueza de expresión, que no creo que se pueda escribir nada más docto ni más apropiado para estimular a los espíritus piadosos y arrastrarlos a la veneración y al culto de Dios y de las Sagradas Escrituras. </p>
+               <p>[<hi rend="bold">3</hi>] ¿Pues qué puede decir un hombre poco instruido y desprovisto de todos estos recursos que se requieren para emitir un juicio apropiado? ¿Y especialmente en un asunto que desborda mis conocimientos y mi capacidad? Pero voy a declararlo a vuestra merced con toda ingenuidad, he preferido dar la imagen  <pb n="f. 112v" ed="O" facs="#foto2"/> de temerario antes que disgustar a tan gran amigo y señor. Por tanto, cualquier yerro que se haya cometido, es necesario que se lo atribuya vuestra merced, dado que me ha inducido a errar. [<hi rend="bold">3</hi>] El señor Pighio ha procedido de un modo más prudente, puesto que no ha querido dar clases a Minerva,<ref target="#note2" xml:id="reference2">2</ref> y envía muchos saludos a su señoría, a quien suplico que no tome a mal nuestra libertad.</p>
+               <closer>[<hi rend="bold">4</hi>] Adiós, varón eruditísimo y el mejor de todos los eruditos.
+                  <dateline>En Bruselas, a 17 de mayo de 1570.</dateline>
+                  De su reverenda señoría afectísimo servidor,   
+                  <signed>Maximiliano Morillon.</signed></closer>
+            </div>
+         </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> PERS. 4, 52: «Tecum habita, et noris quam sit tibi curta supellex»; en esta sátira Persio recominenda al joven Alcibíades el conocimiento de sí mismo y de sus propias limitaciones, reprochándole que ejerza la actividad política sin estar cualificado para ello. </note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> «Minervam sus docet» (un cerdo enseña a Minerva), la conocida expresión que se utiliza para denotar que un necio pretende enseñar a alguien mucho más clarividente.</note>
+            </div>
+      </back>
+      </text>
+   </group>
+   </text>
+</TEI>
