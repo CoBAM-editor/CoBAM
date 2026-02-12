@@ -1,0 +1,161 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700513J">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a"> Cornelio Jansenio (Gante) a Benito Arias Montano (Amberes) - 13 de mayo de 1570 </title>
+            <author>Cornelio Jansenio</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 13 J</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">After reading the prologue of the Bible sent by BAM, Cornelius Jansenius deems it to be on par with the quality of the Polyglot Bible itself. Furthermore, he prays for God to grant BAM good health to bring the Polyglot to completion.</note>
+            <note type="incipit">Eximie atque doctissime domine magister noster, legimus et legi curauimus prologum...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 116.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 210-211, nº 39.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 480-484.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 210-211; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 480-484.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="JansenCornelius">
+                  <note>Cornelius Jansen (1510-1576), obispo de Gante.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Cornelio Jansenio</persName>
+               <settlement>Gante</settlement>
+               <date when="1570-05-13">13 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05">Mayo de 1570</date>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Cornelio Jansenio</handNote>
+            <handNote>Los añadidos al principio de la carta y en el sobrescrito son de Benito Arias Montano</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-12-12">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/12/KBS-Ms.-A-902-f.-116r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2024/12/KBS-Ms.-A-902-f.-116v.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+        <text>
+      <group>
+   <text type="source">
+          <front>
+             <p> Cornelio Jansenio, obispo de Gante, cuya opinión sobre el prefacio de la Biblia había sido requerida por BAM, como vimos en la carta 1570 05 00 T, le devuelve la copia de dicho prefacio junto con este breve escrito de aprobación. Debemos advertir, asimismo, que no conservamos la respuesta ni del obispo de Tournai ni del arzobispo de Cambray, cuyos pareceres habrían sido igualmente requeridos según la minuta recogida en el mencionado documento 1570 05 00 T. </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. 116v" ed="O" facs="#foto2"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Docto eximioque uiro d<expan><ex>omino</ex></expan> <app><lem wit="#O #E2">m<expan><ex>agistro</ex></expan> n<expan><ex>ostro</ex></expan></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> <name type="person" ref="#AriasMontanoBenito">Arie Montano</name> d<expan><ex>omino</ex></expan> suo obseruando. <app><lem wit="#O #E1"><name type="place">Antuerpiae</name></lem> <rdg wit="#E2">Antoberpiae</rdg></app>.</ab>
+         </div>
+         <div type="anotation">
+            <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+            <ab><name type="place">Gandauio</name> <date when="1570">1570</date>. <name type="person" ref="#JansenCornelius">Cornelii Iansenii</name>, episcopi Gandauensis, <date when="1570-05-13">13 Maii</date>. De <app><lem wit="#O #E2">praefacione</lem> <rdg wit="#E1">prefatione</rdg></app>.</ab>
+         </div>
+         <div type="main_content">
+            <pb n="f. 116r" ed="O" facs="#foto1"/>
+            <head>[Añadido por BAM:] <add>Episcopi Gandauensis</add> </head>
+            <opener>Eximie atque doctissime d<expan><ex>omine</ex></expan> <app><lem wit="#O #E2">m<expan><ex>agister</ex></expan> n<expan><ex>oster</ex></expan></lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>:</opener>
+            <p>[<hi rend="bold">1</hi>] Legimus et legi curauimus prologum in Biblia ad nos missum, et deprehendimus dignum esse operi quod toti orbi paratur et auide a nobis expectatur. [<hi rend="bold">2</hi>] Opus sane uere regium et tua doctrina dignum, quod ut quam citissime nobis totique mundo communicetur diligentiam tuam rogamus, Deum orantes ut ad operis perfectionem sanum te seruet et incolumem. </p>
+            <p>[<hi rend="bold">3</hi>] Raptim, <name type="place">Gandaui</name>, <date when="1570-05-13">XIII Maii 1570</date>.</p>
+            <closer>Reuerendae t<expan><ex>uae</ex></expan> d<expan><ex>ominationi</ex></expan> deditissimus, <name type="person" ref="#JansenCornelius">Cornelius Iansenius</name>, ep<expan><ex>iscopus</ex></expan> Gandauen<expan><ex>sis</ex></expan>.</closer>
+         </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>
+            <div type="address">
+               <pb n="f. 116v" ed="O" facs="#foto2"/>
+               <head>[Sobrescrito:]</head>
+               <ab>Al docto y eximio varón maestro nuestro el señor Arias Montano, con el debido respeto. Amberes.</ab>
+            </div>
+            <div type="anotation">
+               <head>[Anotado por BAM, en el margen, con escritura transversal:]</head>
+               <ab>Gante 1570. De Cornelio Jansenio,<ref target="#note1" xml:id="reference1">1</ref> obispo de Gante, 13 de mayo. Acerca del prefacio.</ab>
+            </div>
+            <div type="main_content">
+               <pb n="f. 116r" ed="O" facs="#foto1"/>
+               <head>[Añadido por BAM:] <add>Del obispo de Gante</add> </head>
+               <opener>Eximio y doctísimo señor, maestro nuestro:</opener>
+               <p>[<hi rend="bold">1</hi>] Hemos leído, y hemos procurado que lo lean otros, el prólogo de la Biblia que me envió vuestra merced,<ref target="#note2" xml:id="reference2">2</ref> y hemos visto que está a la altura de esta obra que se está preparando para todo el orbe y que nosotros esperamos con impaciencia. [<hi rend="bold">2</hi>] La obra es en verdad regia y digna de la sabiduría de vuestra merced, la cual le suplicamos que nos la de a conocer lo antes posible a nosotros y a todo el mundo, y le pedimos a Dios que dé salud a vuestra merced para concluirla.</p>
+               <p>[<hi rend="bold">3</hi>] Apresuradamente, en Gante, a 13 de mayo de 1570.</p>
+               <closer>Afectuosamente suyo, Cornelio Jansenio, obispo de Gante.</closer>
+            </div>
+         </body>
+                <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Sobre Conelio Jansenio véase nota biográfica en carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-t/">1570 05 00 T</ref>.  </note>
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> La carta de Jansenio responde a la que BAM le envió, con una copia del prefacio de la Biblia Regia, en su carta <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-t/">1570 05 00 T</ref>. Recordemos que para la datación de dicha carta sin fecha de BAM, dirigida también a los obispos de Cambray y Tournai, el presente documento del obispo de Gante, en el que responde apresuradamente a dicha carta, sirve como <foreign>terminus post quem non</foreign>. </note> 
+            </div>
+          </back>
+   </text>
+      </group>
+   </text>
+</TEI>
