@@ -1,0 +1,142 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15701110">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Hadrianus Iunius (Haarlem) a Benito Arias Montano [Amberes] - 10 de noviembre de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 11 10</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Junius expresses his gratitude to BAM for his kindness in helping him clear his name. Although he was not guilty of any wrongdoing, a letter from Plantin had caused him an unease that only BAM was able to dispel. Now at peace and safely returned home, he writes to renew his thanks and once again entrust his reputation to him. </note>
+            <note type="incipit">Postquam singulari tua benignitate et incomparabili candore uti frui mihi licuit...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Países Bajos</country>
+                        <settlement>Utrecht</settlement>
+                        <msName>Universiteitsbibliotheek Utrecht</msName>
+                        <altIdentifier>
+                           <idno>(C) UBU, Ms. 829, ff. 39v-40r.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> <title>Hadr. Junii epistolae, quibus accedit eiusdem uita et oratio de artium liberalium dignitate</title> (Dordrecht, 1652), pp. 252-253; </witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 614-619.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Iunii epistolae</title>, pp. 252-253; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 408-417.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="IuniusHadrianus">
+                  <note>Adriaen de Jonghe (1511-1575), médico holandés, humanista, poeta.</note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="PerrenotAntonio">
+                  <note>Antonio Perrenot, cardenal de Granvela (Omans, Francia, 20 de agosto de 1517-Madrid, 21 de septiembre 1586).</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Hadrianus Iunius</persName>
+               <settlement>Haarlem</settlement>
+               <date when="1570-11-10">10 de noviembre de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano </persName>
+            </correspAction>
+                    </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>La copia es obra de Petrus Junius, hijo de Hadrianus Junius.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-10-21">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/10/UBU-Ms.-892-f.-39v.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/10/UBU-Ms.-892-f.-40r.jpg"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>Según C. Heesakers y D. Van Miert, autores de «An inventory of the Correspondence of Hadrianus Junius (1511-1575)», <title>Lias</title>, 37/2 (2010), 109-268 (pp. 206-207), esta carta, que ocupa el lugar nº XLVI de la primera centuria, podría ser de 1570. Rekers 1972 la fecha el 9 de noviembre de 1572. En la carta solo consta la siguiente fecha: IIII Id. Nov. El año de 1570 es plausible porque el contenido de la misiva parece continuación de la de Junius a BAM del 1 de mayo de 1570 (sobre el índice de libros prohibidos que se elaboraba en Amberes en 1570). </p>
+         <p>La copia manuscrita conservada en Utrecht, obra del Petrus Iunius, hijo de Hadrianus, presenta algunas variantes con respecto a la edición de 1652. En nuestra edición tomamos como punto de partida el testimonio manuscrito, mucho más cercano cronológicamente y desde el punto de vista de la originalidad que la versión impresa de la edición de 1652, cuyas variantes han sido consignadas en el aparato crítico. Junto a los mencionados testimonios, registramos también aquí la transcripción incluida por B. Rekers en  «Benito Arias Montano, 1527-1598. Studie over een groep spiritualistische humanisten in Spanje en de Nederlanden, op grond van hun briefwisseling», (Tesis Doctoral, Univ. Groningen 1961), pp. 276-277.</p>
+      </front>
+      <body> 
+         <div type="main_content">
+            <pb n="f. 39v" ed="C" facs="#foto1"/>
+            <opener><name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name> <app><lem wit="#C #E2">theologo</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app>.</opener>
+            <p>[<hi rend="bold">1</hi>] Postquam singulari tua benignitate et incomparabili candore <app><lem wit="#C #E2">uti mihi licuit</lem> <rdg wit="#E1">uti frui mihi licuit</rdg></app> in instituenda iusta mei <app><lem wit="#C #E2">excusatione</lem> <rdg wit="#E1">purgatione</rdg></app>, <name type="person" ref="#AriasMontanoBenito">Benedicte</name>, <app><lem wit="#C #E2">ornamentum theologiae et lumen unicum</lem> <rdg wit="#E1">literarum decus unicum</rdg></app>, mirum quam <app><lem wit="#C #E2">discesserim a te</lem> <rdg wit="#E1">a te discesserim</rdg></app> confirmatior erectiorque, non <pb n="f. 40r" ed="C" facs="#foto2"/> ob id quod aut <del>fl</del> flagitii compertus aut commissi fuerim mihi conscius, sed quod omnia etiam tuta timenti, euocatio mei, per epistolam a <name type="person" ref="#PlantinoCristobal">Plantino</name> <app><lem wit="#C #E2">scriptam</lem> <rdg wit="#E1">facta</rdg></app>, scrupuli nescio quid animo <app><lem wit="#C #E2">impresser<del>it</del></lem> <rdg wit="#E1">injecerat</rdg></app> meo, quod inde reuelli nequiuit ante quam tu (<app><lem wit="#C #E2">ut Homericus ille Mercurius salutare pharmacum <choice><sic>Molii</sic> <corr>Moly</corr></choice> contra ueneficia <name type="person">Vlyssi</name> prorrexit, aut ut <name type="person">Helena</name> nepenthes suum, quo tristitia aboleretur, poculo miscuit</lem> <rdg wit="#E1">ad exemplum Homerici Mercurii, qui salutare pharmacum Moly contra ueneficia Vlyssi prorrexerat, aut uti Helena, quae Nepeunthes suum abolendae tristitiae comparatum, poculo diluit</rdg></app>) <app><lem wit="#C #E2">bono animo</lem> <rdg wit="#E1">bono me animo</rdg></app> esse iussisti <app><lem wit="#C #E2">et</lem> <rdg wit="#E1">ac</rdg></app> rationem obliterandae delendaeque <app><lem wit="#C #E2">sinistrae suspitionis commostrasti</lem> <rdg wit="#E1">suspitionis sinistrae commostrati</rdg></app>. [<hi rend="bold">2</hi>] Qua ueluti coelesti uoce respirare coepi ac recreari: <app><lem wit="#C #E2">sic</lem> <rdg wit="#E1">ita</rdg></app> pristina <app><lem wit="#C #E2">tandem rediit</lem> <rdg wit="#E1">rediit tandem</rdg></app> in praecordia uirtus. <app><lem wit="#C #E2">Itaque tui consilii praescripto inhaerens scripsi et <del>ad sacrorum regem n<expan><ex>ostrum</ex></expan> Pont<expan><ex>ificem</ex></expan> et ad <name type="person" ref="#PerrenotAntonio">Granvellanum</name> card<expan><ex>inalem</ex></expan></del></lem> <rdg wit="#E1">Itaque tui consilio fretus scripsi ad quos iusseras</rdg></app>. [<hi rend="bold">3</hi>] Nunc <app><lem wit="#C #E2">etiam</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> postquam iactatus <app><lem wit="#C #E2">tempestate</lem> <rdg wit="#E1">enormi tempestate</rdg></app> a discessu a uobis meo et <app><lem wit="#C #E2">ad Penates meos reuersus</lem> <rdg wit="#E1">ad penates reuersus incolumis meos</rdg></app>, cum Musis in gratiam redire incipio, <app><lem wit="#C #E2">nihil antiquius mihi fuit</lem> <rdg wit="#E1">dum immortalis beneficii memoriam mecum recolo, nihil mihi antiquius fuit aut prius</rdg></app> quam te, huius aeui <app><lem wit="#C #E2">decus</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> et literarum ornamentum, literis salutare ac nominis mei curam, quam <app><lem wit="#C #E2">ultro a te</lem> <rdg wit="#E1">a te ultro</rdg></app>recepisti, iterum atque iterum tibi commendare. </p>
+            <closer>[<hi rend="bold">4</hi>] Vale, <app><lem wit="#C #E2">literarum patrone</lem> <rdg wit="#E1"> <hi rend="italic">omisit</hi></rdg></app>. <name type="place">Harlemo</name> <date when="1570-11-10">IIII Id<expan><ex>us</ex></expan> Nouembr<expan><ex>es</ex></expan></date>.</closer>
+         </div>
+      </body></text>
+         <text type="translation">
+            <body>  
+               <div type="main_content">
+                  <pb n="f. 39v" ed="C" facs="#foto1"/>
+                  <opener>Al teólogo Benito Arias Montano.</opener>
+                  <p>[<hi rend="bold">1</hi>] Después de haber tenido la dicha de gozar de tu singular benevolencia y de tu incomparable afabilidad, oh Benito, ornamento de la teología y luz única de nuestro tiempo, en el momento de exponer con justicia mi disculpa, salí de tu presencia -¡cosa admirable!- mucho más firme y alentado, no <pb n="f. 40r" ed="C" facs="#foto2"/> porque me sintiera hallado culpable de algún delito ni consciente de haber cometido falta alguna, sino porque, aun temiendo por lo que era seguro, la carta de convocatoria que Plantino me había escrito había dejado en mi ánimo cierta inquietud que no logré arrancar de mí hasta que tú (como aquel Mercurio homérico que ofreció a Ulises el salutífero antídoto del moly<ref target="#note1" xml:id="reference1">1</ref> contra los venenos, o como Helena que mezcló en su copa el nepenthes<ref target="#note2" xml:id="reference2">2</ref> para borrar la tristeza) me mandaste recobrar el ánimo y me mostraste el modo de disipar y borrar toda sospecha injusta.<ref target="#note3" xml:id="reference3">3</ref> [<hi rend="bold">2</hi>] Con aquella voz, casi celestial, comencé a respirar de nuevo y a recobrar el aliento: así volvió por fin a mi pecho la antigua fortaleza. Por ello, siguiendo el consejo que me diste, escribí tanto al rey de las cosas sagradas, nuestro Pontífice, como al cardenal de Granvela.<ref target="#note4" xml:id="reference4">4</ref> [<hi rend="bold">3</hi>] Ahora también, después de haber sido agitado por la tempestad tras mi partida de entre vosotros y una vez regresado a mis lares, empiezo a reconciliarme de nuevo con las Musas; y nada me ha parecido más urgente que saludarte por carta, a ti, gloria de este siglo y ornamento de las letras, y recomendarte una y otra vez el cuidado de mi nombre, que espontáneamente te dignaste asumir.  </p>
+                  <closer>[<hi rend="bold">4</hi>] Adiós, protector de las letras. Harlem, a 10 de noviembre</closer>
+               </div>
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Hierba mágica, de raíz negra y flor blanca, que Hermes entregó a Ulises como antídoto para protegerse de las pócimas de la hecichera Circe (en Hom. <title>Οd.</title>, 10, 302-306). </note>
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> El nepenthes es un género de planta carnívora cuyo significado etimológico es «que disipa el dolor». En Hom. <title>Od.</title>4, 221, Helena vierte en el vino que estaban bebiendo esta droga, que hacía olvidar todos los males.  
+                  </note>
+                  <note type="footnote" xml:id="note3"> 
+                     <ref target="#reference3">3</ref> La sospecha injusta a la que se refiere Junius es la aparición de su nombre en el <title>Index librorum prohibitorum cum regulis confectis per patres a Tridentina synodo delectos, autoritate Sanctiss. D.N. Pij. IIII. Pont.Max. comprobatus […] Cum appendice in Belgio ex mandato Regiae Cathol. Maiestatis confecta</title> (Antuerpiae: ex officina Christophori Plantini, 1570), cuya primera parte reeditaba el índice de Trento de 1564, que incluía a Junius entre los «auctores primae classis». Esto suponía la prohición de todas sus obras. Como demuestra esta carta, Plantino y BAM trabajaron duro para ayudar a Junius en este trance.
+                      </note>
+                  <note type="footnote" xml:id="note4">
+                     <ref target="#reference4">4</ref> Como consignamos en la edición crítica del texto, en la copia conservada en Utrecht aparece tachada la referencia a estas dos personas. Dicha referencia también es omitida en la edición de Dordrecht de 1652. La correspondencia de Junius conserva la carta dirigida a Granvela sobre este mismo asunto (en <title>Iunii epistolae</title>, pp. 469-471); en esa misma carta, Junius declara haber escrito ya al papa en relación con esta cuestión. 
+                  </note>
+               </div>
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
