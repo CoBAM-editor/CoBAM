@@ -1,0 +1,144 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15710114">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Albornoz (Bruselas) - 14 de enero de 1571 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1571 01 14</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">
+               BAM urges Albornoz to send him a commentary needed for a certain work that Becanus has undertaken to complete. He asks him to send a letter to Spain for Zayas and informs him about some books and a pair of globes he has prepared for dispatch.               
+            </note>
+            <note type="incipit">Becano está detenido en su casa preso con una cadena al pie...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Archivo de la Casa de los Duques de Alba</msName>
+                        <altIdentifier>
+                           <idno>(O) ADA, ca. 28/172.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>  
+               <witness xml:id="E"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo II (1571-1572)</title> (Madrid: Ediciones Clásicas, 2022), pp. 23-25.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint"> (E) Domínguez, <title>Correspondencia</title>, II, 23-25.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="AlbornozJuande">
+                  <note>Juan de Albornoz, originario de Cuenca y protegido de Gabriel de Zayas, secretario del duque de Alba desde 1565.  </note></person>
+               <person xml:id="AlvarezdeToledoFernando">
+                  <note>Fernando Álvarez de Toledo (1507-1582), tercer duque de Alba, llegó a Bruselas con la misión de sofocar la revuelta de Flandes. Los seis años y medio que el nuevo gobernador permaneció en aquellos Estados se dividen en tres períodos principales: represión violenta y primera guerra contra los Orangistas (1567-1568); tregua (1569-1572); y segunda guerra contra los Orangistas (1572-1573). Al iniciar su estancia en Amberes, la relación entre BAM y Alba se acerca a la amistad. BAM, como el resto de los españoles, apreció la eficacia de Alba, cuya destreza militar había detenido el progreso del Protestantismo en los Países Bajos con una clara victoria sobre los rebeldes en 1568. Desde 1568, fecha en que Alba acabó con la primera revuelta, hasta 1572, cuando estalló la segunda, BAM colaboró estrechamente con la política religiosa del gobernador: con objeto de defender el Catolicismo por todos los medios vio la luz el <title>Index expurgatorius librorum qui hoc saeculo prodierunt</title> (Amberes, 1571), ordenado por Alba y ejecutado por BAM. En su primer informe como consejero en febrero de 1571, BAM defendió la severidad de la represión de Alba, que él consideraba necesaria para detener toda clase de herejía. Cuando el duque pidió permiso para retirarse en el verano de 1571, BAM fue una de las voces que más claramente se opusieron a esa decisión (cf. Arias Montano a Zayas, 1571 02 05). A partir de 1572 la percepción que BAM tiene de la mano dura de Alba cambia de forma sustancial. Tras un evidente fracaso bélico y político, en 1573 Alba fue reemplazado en su cargo por Luis de Requesens. </note></person>
+               <person xml:id="ZayasGabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="GoropiusBecanusIohannes">
+                  <note>Juan Goropio Becano (1518-1572), médico, filólogo, humanista y lingüista.  </note></person>
+               <person xml:id="VanderBroeckCrispino">
+                  <note>Crispino van der Broeck (1524/1530-1591), pintor, diseñador y arquitecto discípulo del Francisco Flores.   </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1571-01-14">14 de enero de 1571</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Albornoz</persName>
+               <settlement>Bruselas</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Benito Arias Montano</handNote>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-11-12">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/11/ADA-ca.-28-172-f-1r.jpg" xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/11/ADA-ca.-28-172-f-2v.jpg" xml:id="foto2"/> </facsimile>
+   <text>
+      <front>
+         <p>BAM confió esta carta al conocido artista Crispino van der Broeck, quien la entregó en mano a Albornoz. Nuestro humanista sugiere que el propio Crispino sea quien se traiga el texto que se pide para Becano a vuelta de correo, aunque sabemos que esto no fue así. BAM recurre a Albornoz para enviar desde Bruselas sus correos a España; a su vez, le ofrece sus servicios para la adquisición y compra a precios ventajosos de libros e instrumentos científicos en Amberes.  </p>
+      </front>
+      <body>
+         <div type="address">
+            <pb n="f. [2v]" ed="O" facs="#foto2"/>
+            <head>[Sobrescrito:]</head>
+            <ab>Al muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or mi s<expan><ex>eñ</ex></expan>or <name type="person" ref="#AlbornozJuande">Ju<expan><ex>an</ex></expan> de Albornoz</name>, secretario de Su Exc<expan><ex>elenci</ex></expan>a. <name type="place"> Brusselas</name>.
+            </ab>
+         </div> 
+         <div type="anotation">
+            <head>[Anotado en el margen por otra mano, con escritura transversal:]</head>
+            <ab> <date when="1571-01-14">14 enero 1571</date>. Del d<expan><ex>octo</ex></expan>r <name type="person" ref="#AriasMontanoBenito">Arias Montano</name>.</ab>
+         </div>            
+         <div type="main_content">
+            <pb n="f. [1r]" ed="O" facs="#foto1"/>
+            <opener>Muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or: </opener>
+            <p>[<hi rend="bold">1</hi>] <name type="person" ref="#GoropiusBecanusIohannes">Beccano</name> está detenido en su casa preso con una cadena al pie, que este mes de enero le ha mandado echar con sus humidades. Espera que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> le embíe alguna parte de aquello para occuparse en este ocio.<ref target="#note1" xml:id="reference1">1</ref> [<hi rend="bold">2</hi>] V<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me la haga de embiarlo con <name type="person" ref="#VanderBroeckCrispino">Crispino</name><ref target="#note2" xml:id="reference2">2</ref> que estas lleva o con quien fuere más servido, porque ya él querría haver hecho esto y acabarlo antes de la ausencia de Su Exc<expan><ex>elenci</ex></expan>a. </p>
+            <p>[<hi rend="bold">3</hi>] Ansimismo supp<expan><ex>li</ex></expan>co a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> mande metter en su paquete las que con esta van para el s<expan><ex>eñ</ex></expan>or <name type="name" ref="#ZayasGabrielde">Çayas</name>.<ref target="#note3" xml:id="reference3">3</ref> </p>
+            <p>[<hi rend="bold">4</hi>] Los libros de leyes y theología están en casa de los enquadernadores y presto estarán hechos,<ref target="#note4" xml:id="reference4">4</ref> de que daré aviso a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. [<hi rend="bold">5</hi>] En la mía tengo los dos globos estremados, que valdrán tres tanto de lo que acá cuestan quando sean en <name type="place">España</name>. Están ya empacados como deven yr.<ref target="#note5" xml:id="reference5">5</ref> </p>
+            <closer>[<hi rend="bold">6</hi>] <salute>N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or prospere la muy mag<expan><ex>nífi</ex></expan>ca pers<expan><ex>on</ex></expan>a de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en su servi<expan><ex>ci</ex></expan>o.</salute> En <name type="place">Anvers</name>, <date when="1571-01-14">14 de enero 1571</date>.  
+               Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor affecionadíssimo, 
+               <signed><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enito</ex></expan> Arias Montano</name> تلميد </signed>
+            </closer>
+         </div>    
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Desconocemos los detalles de este trabajo que iba asumir Becano para la casa de Alba, aunque parece que consistía en una traducción a la lengua latina de un texto que no hemos logrado identificar. Véase sobre este particular la carta de Montano a Juan de Albornoz del 24 de noviembre de 1571 (ADA ca. 28/177), 1571 11 24: «Beccano está esperando por horas el commentario que v. m. le promettió embiarme para hazer su obra, para la qual está tan desembaraçado como v. m. declaró; v. m. si fuere servido me la embíe con pers<hi rend="sup">a</hi> de reccado porque no perdamos tiempo, ni se dexe de hazer en lengua latina una cosa tan a honor de Su Exc<hi rend="sup">a</hi> de cuya salud supp<hi rend="sup">co</hi> a v. m. me avise».      </note> 
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Crispino van der Broeck (1524/1530-1591), pintor, diseñador y arquitecto discípulo de Francisco Flores. Entre sus obras cabe citar los grabados de los <title>Humanae Salutis Monumenta</title> (1571) de Benito Arias Montano (cf. <title>PP</title>, I, 183, nº 588 y <title>PP</title>, I, 187, nº 590) y los <title>Sacrarum antiquitatum monumenta</title> de Luis Hillesheim (1567) y el frontispicio de la <title>Descrittione di tutti i Paesi Bassi, altrimenti detti Germania inferiore</title> (1567), de Luis Gicciardini. En la correspondencia de Plantino y BAM se informa, a mediados de 1572, de una operación de compra de cuadros a Crispino, que se abonaron en cuatro partidas de pagos registradas en la contabilidad plantiniana (<title>Gran libro 1568-1573</title>, MPM Arch. 16).</note>  
+               <note type="footnote" xml:id="note3">
+                  <ref target="#reference3">3</ref> Estas cartas no se han conservado o, al menos, no han podido ser localizadas. El 17 de enero de 1571 Zayas recibió dos cartas de BAM fechadas el 28 y 29 de diciembre de 1570. La nueva misiva a la que se refiere BAM en esta carta debió ser escrita poco antes del 14 de enero y llegar a Madrid a mediados de febrero. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> La vaguedad de esta referencia dificulta la tarea de identificar a qué libros alude aquí Montano.   </note>   
+            <note type="footnote" xml:id="note5">
+               <ref target="#reference5">5</ref> En el registro de contabilidad de la imprenta plantiniana (MPM, Arch. 165) se puede leer el asiento con fecha de 12 de enero de 1571 relativo a dos globos de Gerardo Mercator para Albornoz (cf. Bécares, <title>Arias Montano y Plantino</title>, p. 184). Mercator venía produciendo los globos terrestres más perfectos de su tiempo desde 1541, aunque su mayor contribución científica radica en la solución que aportó para la represesentación en papel de la redondez de la tierra con su <title>Atlas siue cosmographicae meditationes de fabrica mundi et fabricati figura</title>: los grandes mapas de entonces hacían la conformación de las tierras inexacta, lo que causaba problemas a la navegación; Mercator inventó su proyección cilíndrica en la que todos los meridianos son líneas rectas, perpendiculares al ecuador, y todos los paralelos, líneas horizontales paralelas al ecuador.   </note>
+            </div>
+      </back>
+   </text>
+</TEI>
