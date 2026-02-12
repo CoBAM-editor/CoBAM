@@ -1,0 +1,163 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700905">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Ovando Madrid) - 5 de septiembre de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 09 05</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">In this letter, BAM informs Ovando that three boxes have been dispatched to him, containing books, maps, globes, and paintings. </note>
+            <note type="incipit">Esta servirá solamente de aviso cómo yo cargo en Gelanda...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(O) IVDJ, Envío 78/9 f. 131r-[131v-bis].</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+                 <witness xml:id="E1"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 210-211.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 563-565.</witness>
+               <witness xml:id="F"> M. Jiménez de la Espada, «Correspondencia del Dr. Benito Arias Montano con el licenciado Juan de Ovando», Boletín de la Real Academia de la Historia, 19 (1891), p. 479.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>Correspondencia con Ovando</title>, pp. 194-197; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 328-331;</bibl>
+            <bibl type="fragment">(F) Jiménez de la Espada, «Correspondencia con Ovando», 479.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187. </note></person>
+               <person xml:id="CordobaMariana">
+                  <note>Mariana Dávila y Córdoba, (fl. 1560), esposa de Fadrique Enríquez de Ribera, I Marqués de Villanueva del Río</note></person>
+               <person xml:id="ManriquedeLaraLuis">
+                  <note>Luis Manrique de Lara (fallecido en 1583), limosnero y capellán mayor de Felipe II.  </note></person>
+               <person xml:id="LuzonAndres">
+                  <note>Andrés Luzón, religioso de la orden de Santiago y capellán de Felipe II.  </note></person>
+               <person xml:id="MartinezdeRecaldeJuan">
+                  <note>Juan Martínez de Recalde, almirante bilbaíno (1588), quien también recibió por sus méritos marineros el mando supremo de la Flota de Laredo</note></person>
+               <person xml:id="PuertaPedrode">
+                  <note>Pedro de Puerta, comisario del Santo Oficio en Laredo.  </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-09-05">5 de septiembre de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1570-09-25">25 de septiembre de 1570</date>
+               </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-05-13">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/05/IVDJ-Envio-78-no-9-f.-131r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/05/IVDJ-Envio-78-no-9-f.-132v-scaled.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <front>
+         <p> Pese al deseo de BAM de mandar esta mercancía, sin embargo la flota no se hará a la mar hasta el 24 de septiembre; pues sabemos por carta de Pedro de Puerta, comisario del santo Oficio en Laredo, fechada a 8 de noviembre de 1570 (cf. Macías, <title>Correspondencia con Ovando</title>, pp. 340-341), que esas cajas llegaron en la flota de la armada que escoltó a la reina doña Ana de Austria, hija del emperador Maximiliano II y sobrina de Felipe II. La armada, al mando del conde de Bossu, su almirante, estaba preparada para el pasaje de la reina desde los Países Bajos hasta España; pero hacía tres meses que soplaban vientos contrarios para la navegación y hubo que retrasar el viaje seis semanas, lapso que la reina empleó para visitar Amberes. La situación llegó a ser realmente preocupante para el duque de Alba, consciente del disgusto que supondría para su rey el tener que aplazar la travesía hasta la primavera siguiente, además del gasto de la armada y el embarazo de que la reina quedase a su cargo por tanto tiempo. Finalmente abonanzó el tiempo, como habían anunciado los marineros consultados por el duque, y la flota pudo hacerse a la vela el 24 de septiembre en el puerto de Flesinga (Vlissingen), arribando a las costas de Santander el 3 de octubre (cf. Cabrera de Córdoba, <title>Historia de Felipe II,</title> II, 80).</p>
+         <p>Jiménez de la Espada, p. 479, transmite el fragmento del post scriptum que va desde «En la 1ª[una] van libros» hasta «no le diga dél a su señoría [sic]». </p>
+         <p>El sobrescrito de la carta aparece anotado en el vuelto de un folio sin numerar, que nosotros hemos identificado con el número [131v-bis]. La carta fue recibida el 25 de septiembre. </p>
+      </front>
+      <body>
+         <pb n="f. [131v-bis]" ed="O" facs="#foto2"/>
+         <div type="address">
+            <head>[Sobrescrito:]</head>
+            <ab> Al ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or mi s<expan><ex>eñ</ex></expan>or <name type="person">Juan de Ovando</name>, del Consejo Real de la Inquisición. En corte.            </ab>
+            <div type="annotation">
+               <head>[Anotado por otra mano, con escritura transversal:]</head>
+               <ab> El doctor <name type="person">Benito Arias Montano</name>, en <name type="place">Anveres</name>, <date when="1570-09-05">5 de 7<hi rend="sup">e</hi> 1570</date>. R<expan><ex>ecibi</ex></expan>da en <date when="1570-09-05">25 del mesmo</date>. </ab></div>
+            <div type="annotation">
+                  <head>[Anotado por una tercera mano, por encima del sobrescrito:<ref target="#note1" xml:id="reference1">1</ref>]</head>
+                  <ab> <name type="person" ref="#AriasMontanoBenito">Benito Arias Montano</name>. Por la horden del señor l<expan><ex>icencia</ex></expan>do <name type="person" ref="#OvandoJuande">Ju<expan><ex>an</ex></expan> de Ovando</name>. </ab>
+            </div>  
+            <div type="main_content">
+            <pb n="f. 131r" ed="O" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or: </opener>
+            <p>[<hi rend="bold">1</hi>] Esta servirá solamente de aviso cómo yo cargo en <name type="place">Gelanda</name><ref target="#note2" xml:id="reference2">2</ref> tres cofres para v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, en los quales van las cosas nombradas en la lista que será con esta. [<hi rend="bold">2</hi>] Van encaminadas a <name type="person" ref="#MartinezdeRecaldeJuan">Ju<expan><ex>an</ex></expan> Martínez de Recalde</name>,<ref target="#note3" xml:id="reference3">3</ref> que está en <name type="place">Bilbao</name>, y a <name type="person">Pedro de Puerta</name>,<ref target="#note4" xml:id="reference4">4</ref>  comissario del S<expan><ex>an</ex></expan>to Offi<expan><ex>ci</ex></expan>o, que está en <name type="place">Laredo</name>, para que ellos los reciban con otros para los s<expan><ex>eñore</ex></expan>s don <name type="person" ref="#ManriquedeLaraLuis">Luis Manrique</name> y dottor <name type="person" ref="#LuzonAndres">Luzón</name>,<ref target="#note5" xml:id="reference5">5</ref> y no los dexen abrir ni desempacar, porque no se <app><lem wit="#O #E2">estraguen,</lem> <rdg wit="#E1"><hi rend="italic">imum punctum posuit</hi></rdg></app> y den aviso a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> dello, para que los mande llevar a corte.  </p>
+            <closer>[<hi rend="bold">3</hi>] Plega a Dios guiar esta flota con bien y <salute>prosperar la ill<expan><ex>ustr</ex></expan>e pers<expan><ex>on</ex></expan>a de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> en su servi<expan><ex>ci</ex></expan>o</salute>. En <name type="place">Anvers</name>, <date when="1570-09-05">5 de setti<expan><ex>embr</ex></expan>e 1570</date>.
+               Besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor,   <signed>B<expan><ex>enito</ex></expan> Arias Montano <foreign>تلميد</foreign></signed>
+            </closer>
+            <postscript>
+               <head>[Posdata:]</head>
+               <p>[<hi rend="bold">4</hi>] Las caxas que van para v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> son escrittas en su nombre. Número 1/ 2/ 3 con esta señal . No sé si podrá yr con esta la cuenta dellas, embiarla he presto.</p>
+               <p>[<hi rend="bold">5</hi>] En la una van libros.<ref target="#note6" xml:id="reference6">6</ref></p>
+               <p>[<hi rend="bold">6</hi>] En la segunda, dos globos y mapas o descriptiones.</p>
+               <p>[<hi rend="bold">7</hi>] En la tercera, pinturas, dos retablos para v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> y uno para mi s<expan><ex>eñor</ex></expan>a d<expan><ex>oñ</ex></expan>a <name type="person" ref="#CordobaMariana">Mariana</name> antiguo. Si le aggradare a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>, sea también para su servi<expan><ex>ci</ex></expan>o y no le diga dél a su s<expan><ex>eñor</ex></expan>a.</p>
+            </postscript>
+            </div>
+         </div>
+      </body>
+      <back>
+         <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Al lado y de la misma mano aparece una especie de ensayo caligráfico con diferentes tipos de letra en el que se repite tres veces el nombre «Benito Arias Montano».  </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Zelanda, región costera de los Países Bajos comunicada con Amberes a través del Escalda y con un importante puerto en la ciudad de Flesinga (Vlissingen), que era la llave para entrar en Flandes, y donde embarcó la reina doña Ana para su traslado a la península.  </note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Juan Martínez de Recalde, armador y proveedor de la flota en Bilbao, había sido el encargado de procurarle a BAM el avituallamiento necesario y un pasaje para su viaje a Flandes.  </note> 
+            <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Véase la correspondencia de Pedro de Puerta con Juan de Ovando en Macías, <title>Correspondencia con Ovando</title>, pp. 339-344.  </note>  
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Andrés Luzón, religioso de la orden de Santiago y capellán de Felipe II. El 12 de marzo de 1579, en Sevilla, ante el escribano público Diego de la Barrera Farfán, BAM otorga un poder para cobrar sus rentas en favor de don Luis Manrique de Lara, el doctor Andrés Luzón y Francisco de Mena (cf. Gil, <title>Arias Montano en su entorno</title>, pp. 191-192). Cuatro cofres de libros fueron enviados por Plantino a Andrés Luzón el 9 de febrero de 1570 (cf. Bécares, <title>Arias Montano y Plantino</title>, pp. 266-267).  </note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Esos libros, que son los primeros que solicita Ovando, aparecen asentados en la contabilidad de Plantino el 19 de mayo de 1570: «Una caja de libros para el Dr. Juan de Ovando» (cf. Bécares, <title>Arias Montano y Plantino</title>, p. 181).
+            </note>  
+         </div>
+      </back>
+   </text>
+</TEI>
