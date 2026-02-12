@@ -1,0 +1,126 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700701">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Andrés Masio (Zevenaar) a Benito Arias Montano [Amberes] - 1 de julio de 1570</title>
+            <author>Andrés Masio</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 07 01</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Andreas Masius responds to BAM regarding his request for a Syriac vocabulary for Plantinus’ Polyglot Bible. Although he initially hesitated due to the unfinished state of his work, he recognized its importance for King Philip II and its usefulness in interpreting Hebrew. In the end, he agrees to share his notes, unrevised and unordered, asking for understanding of their imperfections and assuring his desire to help.   </note>
+            <note type="incipit">Cum nuper tua singulari postulatione induci me passus fuissem...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="E1"> <title>Biblia Sacra</title>, VII, en <title>Syrorum peculium</title>, p. 2.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 528-533.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Biblia Sacra</title>, en <title>Syrorum peculium</title>, t. VII, p. 2; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 528-533.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="MasioAndres">
+                  <note>Andrés Maes, Masius (Lennick, 30 noviembre 1514-17 abril 1573), estudió en el Collegium Trilingue de Lovaina y cultivó en sus inicios la poesía. A partir de 1561 Masio reside en Zevenaar, desde donde ejerció de consejero del duque de Cléveris, prosiguiendo además sus estudios orientales: publica la traducción del siríaco <title>De Paradiso</title> con comentarios en la imprenta de Plantino en 1569 y colabora con BAM en la Biblia Políglota con una <title>Grammatica linguae Siriacae</title> (Amberes, 1571), tercer tratado del volumen sexto de la Políglota y un Syrorum Peculium (1571), segundo tratado del tomo sexto de la Políglota Su muerte le impidió ver muchos de sus trabajos listos para imprenta.</note></person>
+                 <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Andrés Masio</persName>
+               <settlement>Zevenaar</settlement>
+               <date when="1570-07-01">1 de julio de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote></handNote>
+            <handNote></handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-03-26">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/03/Biblia-Sacra-VII-2-p.-3-scaled.jpg"
+         xml:id="foto1"/>
+   </facsimile>
+        <text>
+      <group>
+   <text type="source">
+          <front>
+             <p> La carta de Andrés Masio a BAM es un valioso testimonio del proceso de elaboración del vocabulario siríaco incluido en la Biblia Regia. En ella destaca la preocupación del hebraísta belga por la escasez de fuentes siríacas y su intención de contribuir a una mejor comprensión de ciertos términos hebreos. </p>
+             <p>Curiosamente, no se conserva ningún testimonio manuscrito de esta carta, a pesar de que tuvo que pasar, ya fuera como copia o incluso en su versión original, por los talleres de Plantino para su incorporación en la Biblia Regia. Esto sugiere que el documento pudo perderse en el proceso editorial o en el trasiego de la correspondencia entre los humanistas implicados en la empresa políglota.</p>
+      </front>
+      <body>
+         <div type="main_content">
+            <pb n="p. 2" ed="E" facs="#foto1"/>
+            <opener>D<expan><ex>omino</ex></expan> <name type="person" ref="#AriasMontanoBenito">Benedicto Ariae Montano</name> theologo u<expan><ex>iro</ex></expan> doctiss<expan><ex>imo</ex></expan> s<expan><ex>alutem</ex></expan> d<expan><ex>icit</ex></expan> <name type="person" ref="#MasioAndres">Andreas Masius</name>.</opener>
+            <p>[<hi rend="bold">1</hi>] Cum nuper tua singulari postulatione induci me passus fuissem, doctissime <name type="person" ref="#AriasMontanoBenito">Aria</name>, ut de Syricarum literarum cognitione praecepta quaedam, princeps ex omnibus nostris hominibus (absit a uerbo inuidia) inchoare auderem eaque ego mox ad te dedissem, properantius sane quam oportuit, quia ita opus esse dicebas propter librarias operas, tu porro continuo uel uehementius etiam flagitare a me coepisses, ut Vocabularium quoque (sic enim nunc loquimur) mitterem, eorum uocabulorum, quae Syri peculiariter usurpant; cum in uulgus Targumistarum aut ignota sint aut certe minus peruulgata (audieras enim a <name type="person" ref="#PlantinoCristobal">Plantino</name> nostro ea me mihi priuatim annotauisse), submolesta quidem (dicam enim ut res est, mi <name type="person" ref="#AriasMontanoBenito">Aria</name>) accidebat mihi noua illa tua petitio, non quod aliquid eorum, quae meis studiis essem consecutus, non libenter tecum et cum studiosis omnibus communicarem, sed quia, pro paucitate Syricorum librorum quos mihi uidere contigerat, scirem nimis mancum et uix bene a me inchoatum id opus uideri posse.</p>
+            <p>[<hi rend="bold">2</hi>] Verum tamen cum audirem et ipsum regem <name type="person" ref="#FelipeII">Philippum</name> et eius Ma<expan><ex>iesta</ex></expan>tis sapiens consilium censere πολύγλωσσον (ut sic uocem) opus illud Sacrorum Librorum, sane pulcherrimum, quod te regis nomine procurante, <name type="person" ref="#PlantinoCristobal">Plantinus</name> noster nunc arte atque industria admirabili excudit, non sine illiusmodi Syricorum uocabulorum explicatione in lucem emitti debere, et simul meminissem nihil, ne ab ipsa quidem rerum natura, nedum ab hominibus artificibus, repente totum perfectumque profundi uno nisu, sed paullatim, ut omnia, ita praesertim uocabularia crescere solere; ad haec existimarem ista mea, quantulacumque sunt, utilia tamen fore ad nonnullarum dictionum Hebraicarum ueram significationem intelligendam, quas nobis adhuc Iudaei non recte sunt interpretari: denique sperare etiam posse me putarem, in summa Syricorum librorum apud nostram gentem raritate, ueniam datum iri a lectoribus operi quantumuis imperfecto, in quo tamen, quoad eius a me fieri potuisset, nullum uerbum praetermisissem non explicatum, eorum uerborum quibus est usus interpres Syrus in Nouo Testamento, quod unum nunc a uobis Syrice editur: quaeque alioqui in Targumistarum uocabulariis, aut prorsus non, aut certe parum dilucide exposita inueniuntur (nam quae ex illis peti plane possunt, cum sint Syris cum Targumistis communia, ea annotare superuacanneum mihi esse putaueram); haec, inquam, cum intelligerem, mecumque attentius reputarem et simul <name type="person" ref="#PlantinoCristobal">Plantinus</name> ipse ad me profectus multis me modis praesens rogasset, concessi tandem uobis quod tantopere a me contendebatis. [<hi rend="bold">3</hi>] Itaque mitto tibi nunc, mi <name type="person" ref="#AriasMontanoBenito">Aria</name>, etiam illa uocabula quae ipse priuatim mihi inter legendum scriptores Syricos collegeram, sed nec digesta antehac satis accurate nec ulla in parte limata aut polita, quippe quae eo consilio congesseram et in chartulis meis, ut quaeque sese obtulerunt, propere inscripseram, ut inclusa perpetuo solus haberem meamque ipsis hebetem memoriam subinde iuuarem, neque uero etiam nunc retractata uel leuissime, quod tempus ad hoc faciendum nullum habuerim. Quare est quod boni consulas putesque me gratificando tibi impudentem, quam tergiuersando inofficiosum uideri maluisse.</p>
+            <closer>[<hi rend="bold">4</hi>] <salute>Vale</salute>. Ex amoenissimis hortis meis <choice><sic>Zeuerianis</sic> <corr>Zeuenerianis</corr></choice>, <date when="1570-07-01">Calendis Quinctilibus, M. D. LXX</date>.  </closer>
+         </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body>
+            <div type="main_content">
+               <pb n="p. 2" ed="E" facs="#foto1"/>
+               <opener>Al señor Benito Arias Montano, teólogo, varón muy erudito, le saluda Andrés Masio.</opener>
+               <p>[<hi rend="bold">1</hi>] Como recientemente, por especial petición de vuestra merced, me dejé persuadir, sapientísimo Arias, para atreverme a iniciar ciertas normas sobre el conocimiento de la lengua siríaca,<ref target="#note1" xml:id="reference1">1</ref> siendo yo el principal entre todos nuestros eruditos (sin que esto, Dios me libre, suene a adulación), y habiéndoselas enviado en seguida, con más premura de la debida, porque decía vuestra merced que era necesario para los trabajos de imprenta, como quiera que comenzara vuestra merced inmediatamente, y con aún mayor insistencia, a exigirme que le enviara también un vocabulario (pues así lo llamamos ahora) de aquellas palabras que los siríacos emplean de manera peculiar, ya que o bien son desconocidas para los intérpretes targumistas o, en todo caso, menos difundidas<ref target="#note2" xml:id="reference2">2</ref> (pues vuestra merced había oído de nuestro Plantino que yo las había anotado para mí en privado), en verdad esta nueva petición me resultaba un tanto molesta (pues hablaré con franqueza, mi querido Arias) no porque no quisiera compartir gustosamente con vuestra merced y con todos los estudiosos los frutos de mis investigaciones, sino porque, dada la escasez de libros siríacos que había tenido la oportunidad de consultar, sabía que esta obra podría parecer demasiado incompleta y apenas bien iniciada por mí.</p>
+               <p>[<hi rend="bold">2</hi>] Sin embargo, al saber que el propio rey Felipe y su sabio consejo consideraban que aquella obra políglota de los Libros Sagrados –verdaderamente magnífica– que nuestro Plantino, con arte e industria admirables, estaba imprimiendo bajo la supervisión de vuestra merced en nombre del rey, no debía publicarse sin incluir una explicación de tales vocablos siríacos, y recordando asimismo que nada, ni siquiera en la misma naturaleza de las cosas, y mucho menos en el trabajo humano, surge de repente de manera completa y perfecta en un solo intento, sino que, como todo, los vocabularios en particular suelen crecer gradualmente; considerando, además, que, por escasas que fueran mis aportaciones, serían útiles para comprender el verdadero significado de ciertas palabras hebreas que los judíos aún no interpretan correctamente para nosotros; y finalmente, pensando que yo podría esperar también que, dada la extrema rareza de los libros siríacos entre nuestra gente, los lectores concederían indulgencia a una obra, por muy imperfecta que fuera, en la que, en la medida de lo posible, no habría omitido la explicación de ninguna palabra utilizada por el traductor siríaco del Nuevo Testamento, que ahora vuestras mercedes publicáis en siríaco, y que, por otro lado, estas palabras en los vocabularios de los targumistas o no se encuentran en absoluto, o al menos están explicadas de manera muy deficiente (pues yo había considerado superfluo anotar aquellas palabras que, al ser comunes entre los siríacos y los targumistas, podían extraerse directamente de estos últimos); conociendo, como digo, estas cosas, y reconsiderándolas más detenidamente conmigo mismo, y al mismo tiempo habiéndomelo pedido Plantino presencialmente de muchas maneras, finalmente cedí a vuestras mercedes lo que tanto me solicitaban. [<hi rend="bold">3</hi>] Por lo tanto, le envío ahora, mi querido Aria, también aquellas palabras que yo mismo había recogido de manera privada entre los escritores sirios mientras los leía, pero quevni estaban bien organizadas hasta entonces, ni limadas o pulidas en ninguna parte, pues las había reunido con tal propósito, y en mis hojas, conforme se iban presentando, las había anotado rápidamente, para tenerlas siempre conmigo, y así ir ayudando mi memoria algo torpe, y de hecho tampoco las he revisado, ni siquiera de manera mínima, porque no he tenido tiempo para hacerlo. Por lo tanto, es algo que vuestra merced debe considerar con cuidado, y podría pensar que he preferido parecer imprudente al complacerle, antes que parecer insincero al recurrir a evasivas</p>
+               <p>[<hi rend="bold">4</hi>] Adiós. Desde mis muy agradables jardines de Zevenaar, a primero de julio, 1570.  </p>
+            </div>
+         </body>
+                <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> <title>Grammatica linguae syricae, inuentore atque auctore Andrea Masio. Opus nouum et a nostris hominibus adhuc non tractatum, quod laboriosa animaduersione atque notatione uocalium, aliorumque punctorum Syricorum, quibusque dictionibus in optimis emendatissimisque libris appositorum ille nuper composuit</title>, publicada en el tomo VII de la Políglota. Puede verse ejemplar digitalizado en <ref target="https://bdh.bne.es/bnesearch/detalle/bdh0000095065">Biblioteca Digital Hispánica</ref>. </note>   
+            <note type="footnote" xml:id="note2">
+               <ref target="#reference2">2</ref> El título completo de la contribución lexicográfica de Masio, al frente de la cual se publicó esta carta dentro del tomo VII de la Biblia Regia, fue el siguiente: <title>Syrorum peculium. Hoc est vocabula apud syros scriptores passim usurpata, targumistis uero aut prorsus incognita aut in ipsorum uocabulariis adhuc non satis explicata. Andreas Masius sibi, suae memoriae iuuandae caussa colligebat</title>. Puede accederse a un ejemplar digitalizado del tratado en <ref target="https://digibug.ugr.es/handle/10481/4209?show=full">DIGIBUG</ref>.  </note>
+            </div>
+          </back>
+   </text>
+      </group>
+   </text>
+</TEI>
