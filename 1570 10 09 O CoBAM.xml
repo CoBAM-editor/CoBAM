@@ -1,0 +1,186 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15701009O">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Juan de Ovando Madrid) - 9 de octubre de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 10 09 O</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM provides a summary of his correspondence with Juan de Ovando from March to the present. He reminds Ovando that, should he wish to order books from the Low Countries, he must send a list of the desired titles. The Polyglot Bible is progressing well and will include tools for the study of the Hebrew language. The court of Brussels is currently residing in Antwerp, where Roda is now his neighbor. BAM inquires whether Ovando has received the catalogue of prohibited books. He is presently engaged in another useful task and, together with this letter, encloses a list of newly published books from the Frankfurt fair. </note>
+            <note type="incipit">Por el mes de mayo recibí una de v. m. de 31 de março...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>España</country>
+                        <settlement>Madrid</settlement>
+                        <msName>Instituto de Valencia de Don Juan </msName>
+                        <altIdentifier>
+                           <idno>(O) IVDJ, Envío 78/10 f. 132r-133v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+                 <witness xml:id="E1"> B. Macías Rosendo, <title>La correspondencia de Benito Arias Montano con el presidente de Indias Juan de Ovando</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 2008), pp. 212-216.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 578-582.</witness>
+               <witness xml:id="F"> M. Jiménez de la Espada, «Correspondencia del Dr. Benito Arias Montano con el licenciado Juan de Ovando», Boletín de la Real Academia de la Historia, 19 (1891), p. 480.</witness>
+              </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>Correspondencia con Ovando</title>, pp. 212-216; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 578-582;</bibl>
+            <bibl type="fragment">(F) Jiménez de la Espada, «Correspondencia con Ovando», 480.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+                <person xml:id="OvandoJuande">
+                  <note>Juan de Ovando (ca. 1514-1575), descendiente ilegítimo de una familia de la nobleza rural cacereña, se licencia en derecho civil en Salamanca hacia 1551, donde imparte clases. En 1556 fue nombrado provisor general de arzobispado de Sevilla que ocupaba Fernando de Valdés. En 1564 afrontó un nuevo puesto como reformador de la Universidad de Alcalá. En diciembre de 1566 pasó a ser miembro del Consejo Superior y General de la Inquisición. El 28 de agosto de 1571 Felipe II lo nombra presidente del Consejo de Indias, cargo que compagina a partir de1574 con la presidencia del Consejo de Hacienda. Véase para más información biográfica el extenso capítulo de Macías, <title>Correspondencia con Ovando</title>, pp. 25-68. Con fecha de 4 de agosto de 1569, Juan de Ovando envía por carta una memoria de «instrumentos, descripciones, pinturas y libros que me ha de mandar de Flandes el s[eñ]or Benito Arias Montano». Entre otros objetos de astronomía, Ovando solicita a Montano «Dos globos, celeste y terrestre, los mejores que se hallaren, cumplidos de sus instrumentos y con el varniz que suelen traer por el polvo, con peannas y encaxes muy galanes, y los autores que huvieren scripto del uso d’ellos en un cuerpo»; cf. Macías, <title>Correspondencia con Ovando</title>, p. 187.  </note></person>
+               <person xml:id="PlantinoCristobal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros, en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. Plantino fallece el primero de julio de 1589. </note></person>
+               <person xml:id="ZayasGrabrielde">
+                  <note>Gabriel de Zayas, secretario de Estado, nació en 1526 en Écija. Estudió en Alcalá de Henares, donde es posible que conociera a BAM. Entró muy joven al servicio de Gonzalo Pérez, formando parte de su oficina cuando el secretario acompañó al príncipe Felipe en diversos viajes (Monzón en 1552, Inglaterra en 1554, Flandes en 1556). A esa estancia en Flandes se remonta su amistad con Cristóbal Plantino, quien gracias a la influencia de Zayas se convertirá en una pieza clave para el proyecto de impresión de la Políglota y el negocio de los libros litúrgicos. Tras la muerte de Gonzalo Pérez, ocurrida el 12 de abril de 1566, la Secretaría de Estado se escindió en dos, quedándose Zayas encargado de «todos los negocios de Estado tocantes a las dichas embajadas de la Corte del Emperador e Reynos de Francia e Inglaterra y los que más se ofrecieren, concernientes y dependientes de aquellas partes», según consta en su título de Secretario de Estado, fechado a 8 de diciembre de 1567. Por su parte, Antonio Pérez se hizo cargo de «todos los negocios de Estado que se ofrecieren tocantes a todo lo de Italia«». En 1579 Pérez consiguió quedarse al frente de toda la Secretaría de Estado y Zayas pasó a desempeñar la secretaría del Consejo de Italia (juró el 20 de octubre de 1579), cargo que ocupó hasta su muerte. El 13 de julio de 1593 le sobrevino la muerte y fue enterrado en Alcalá de Henares.</note></person>
+               <person xml:id="PioV">
+                  <note>Pío V, 1504-1572, papa.</note></person>
+               <person xml:id="RodaGerónimode">
+                  <note>Gerónimo de Roda (fl. 1567-1576). Consejero en los Países Bajos españoles; secretario del Consejo de Turbas, 1567.</note></person>
+               <person xml:id="ManriquedeLaraLuis">
+                  <note>Luis Manrique de Lara (fallecido en 1583), limosnero y capellán mayor de Felipe II.  </note></person>
+               <person xml:id="MartinezdeRecaldeJuan">
+                  <note>Juan Martínez de Recalde, almirante bilbaíno (1588), quien también recibió por sus méritos marineros el mando supremo de la Flota de Laredo</note></person>
+               <person xml:id="PuertaPedrode">
+                  <note>Pedro de Puerta, comisario del Santo Oficio en Laredo.  </note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-10-09">5 de septiembre de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Juan de Ovando</persName>
+               <settlement>Madrid</settlement>
+               <date when="1570-09-25">29 de octubre de 1570</date>
+               </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="es" ana="source">Español</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Autógrafo de BAM</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2024-05-27">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/05/IVDJ-Envio-78-no-9-f.-132r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/05/IVDJ-Envio-78-no-9-f.-132v-1-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/05/IVDJ-Envio-78-no-9-f.-133v-scaled.jpg"
+         xml:id="foto3"/>
+   </facsimile>
+   <text>
+      <front>
+         <p> En esta carta queda patente una vez más la dificultad de los caminos, objeto de quejas frecuentes, en los que por culpa de las guerras y los salteadores muchas veces desaparecían las cartas y las remesas. Entre la que Ovando le escribe a 31 de marzo y esta otra, BAM le ha enviado varias cartas que no llegan a su destinatario. Con los mismos genoveses que le llevaron a Amberes la de 31 de marzo, le responde BAM en mayo sin éxito. Después ha recibido una de Ovando fechada a primero de junio, que no se nos ha conservado. Con posterioridad a esa fecha BAM afirma haberle escrito tres veces; sin embargo la única que ha llegado hasta nosotros, y que Ovando registra en su relación, es la de 5 de septiembre de 1570.</p>
+         <p>Al tiempo que escribe esta, BAM se haya inmerso en la preparación del índice expurgatorio, que Plantino publicará en 1571. De acuerdo con las recomendaciones hechas por la comisión que se había encargado de elaborar el Catálogo de libros prohibidos de 1570, el duque de Alba se había dirigido a las autoridades eclesiásticas, así como a las universidades de Lovaina y de Douai, para pedirles que procedieran al examen de las obras requisadas y se anotaran los pasajes sospechosos. Una vez recibidos los informes de los expertos, el duque nombró una nueva comisión, presidida por BAM y por Francisco Sonnio, el obispo de Amberes, encargada de examinar todas las censuras recibidas y proceder a la elaboración del índice. Aunque BAM no le declara abiertamente a Ovando esa actividad: «Agora entendemos en otra cosa, que será de grande utilidad sacándola Dios a luz»; se despejan todas las dudas en la carta que le había dirigido al rey, fechada en Amberes a 9 de mayo de 1570 (cf. nº 1570 05 09).  </p>
+         <p>Jiménez de la Espada, p. 480, transcribe los siguientes fragmentos de esta carta: desde «con admiración…» hasta «hebrea y otras»; y desde «El Sr. Zayas mostrará…» hasta «por prototipógrafo real». </p>
+      </front>
+      <body>
+         <pb n="f. [133v]" ed="O" facs="#foto3"/>
+         <div type="address">
+            <head>[Sobrescrito:]</head>
+            <ab> Al ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or, mi s<expan><ex>eñ</ex></expan>or, <name type="person" ref="#OvandoJuande">Juan de Ovan<supplied reason="paper_damaged">do</supplied></name>, del Consejo Real de la S<expan><ex>an</ex></expan>ta Inquisición. En corte.            </ab>
+            <div type="annotation1">
+               <head>[Anotado por otra mano, con escritura transversal:]</head>
+               <ab> <name type="person" ref="#AriasMontanoBenito">Montano</name>. <name type="place">Anvers</name>, <date when="1570-10-09">8<hi rend="sup">e</hi> 9 1570</date>. R<expan><ex>ecibida</ex></expan> <date when="1570-10-29">29</date>. </ab></div>
+            <div type="annotation2">
+                  <head>[Anotado por una tercera mano, debajo de la línea anterior:]</head>
+                  <ab> Vanse recibiendo y poniendo aquí cartas de <name type="person" ref="#AriasMontanoBenito">Arias Montano</name> y copias de respuestas a él y cartas sobrel traer de las caxas.<ref target="#note1" xml:id="reference1">1</ref> </ab>
+            </div>
+            <div type="main_content">
+            <pb n="f. 132r" ed="O" facs="#foto1"/>
+            <opener>Ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or: </opener>
+            <p>[<hi rend="b">1</hi>] Por el mes de mayo recibí una de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> de <date when="1570-03-31">31 de março</date>, que vino por vía de unos genoveses, mis conocidos, que biven aquí, los quales me pidieron con instancia respondiesse por su misma vía, y ansí lo hize. Y temo que sus pliegos se perdieron con otros míos que se perdieron en la <name type="place">Rochela</name><ref target="#note2" xml:id="reference2">2</ref> por el mes de mayo, pues por una de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> fecha a <date when="1570-06-01">primero de junio</date>, la qual recibí aquí en <name type="place">Anvers</name> <date when="1570-09-01"> primero de setti<expan><ex>embr</ex></expan>e</date>, entendí que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> no havía recibido mi respuesta. [<hi rend="b">2</hi>] Después he escritto tres vezes a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> y últimamente con la flota le he embiado tres caxas, la una con pinturas, y la otra con los globos y cartas geográphicas, y la tercera con los libros que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> me ha mandado le embíe. Todo esto yva encaminado a <name type="person" ref="#MartinezdeRecaldeJuan">Juan Martínez de Recalde</name>, en <name type="place">Bilbao</name>, y al comissario del S<expan><ex>an</ex></expan>to Offi<expan><ex>ci</ex></expan>o de <name type="place">Laredo</name>, que se dize <name type="person" ref="#PuertaPedrode">Pedro de Puerta</name>.  No fue assegurado porque, como fue tanta la cargazón que de aquí salió con la flota, muy pocos assiguraron, y se tuvo por mejor acuerdo encomendarlo todo a Dios, que lo guíe por la mar, yendo al presente la flota segura de cossarios;<ref target="#note3" xml:id="reference3">3</ref> y porque, si se perdía, se sabía no era possible pagarse los siguros, porque van más de quatro millones de hazienda, y no assigurados los <app><lem wit="#O #E1">dos.</lem> <rdg wit="#E2"><hi rend="italic">non distinxit</hi></rdg></app> Tuvimos por buen acuerdo repartir las caxas por navíos,<ref target="#note4" xml:id="reference4">4</ref> y del repartimiento embié la copia al s<expan><ex>eñ</ex></expan>or don <name type="person" ref="#ManriquedeLaraLuis">Luis Manrique</name>, el qual havrá dado a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> el tanto de su parte. [<hi rend="b">3</hi>] Confío en Dios havrá llegado todo con bien, porque la flota partió con tiempo próspero, que duró seis días.<ref target="#note5" xml:id="reference5">5</ref> Desseo tener aviso del buen successo. </p>
+            <p>[<hi rend="b">4</hi>] En aquella carta que escriví por mayo avisava a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> que, si fuesse servido le comprasse aquí libros, me embiasse con tiempo el aviso y lista dellos, porque procuraría servirle en todo lo a mí possible como desseo. [<hi rend="b">5</hi>] También de la Biblia <pb n="f. 132v" ed="O" facs="#foto2"/> universal<ref target="#note6" xml:id="reference6">6</ref>  que Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan>d manda aquí imprimir, que espero en Dios terná buen fin y presto, porque hasta aquí va muy bien y con admiración de quantos la veen, y que no solamente no terná las tachas que en <name type="place">Alcalá</name> le quieren poner, empero muchos y muy necessarios ornamentos como al effetto se verá. Y en ella havrá todo lo que v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> dessea para saber la lengua hebrea y otras.<ref target="#note7" xml:id="reference7">7</ref>  </p>
+            <p>[<hi rend="b">6</hi>] La corte está aquí agora,<ref target="#note8" xml:id="reference8">8</ref> e yo bien occupado en ella, allende de mis occupaciones ordinarias. El s<expan><ex>eñ</ex></expan>or <name type="person" ref="#RodaGerónimode">Gerónymo de Roda</name><ref target="#note9" xml:id="reference9">9</ref> es mi vezino, y paguéle las encomiendas que me traxo de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> con aposentarlo en la mejor posada que creo yo se puede hallar de aquí a <name type="place">Madrid</name>, y con grandíssimo contento dél y de sus <app><lem wit="#O #E2">huéspedes,</lem> <rdg wit="#E1"><hi rend="italic">imum puncutm posuit</hi></rdg></app> y también con ser corredor de amistad estrecha entre él y <name type="person" ref="#PlantinoCristobal">Plantino</name>, que es digno de que todos los de buen ánimo le sean amicíssimos. </p>
+            <p>[<hi rend="b">7</hi>] No tengo noticia si ha v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> recibido el catálogo de los libros prohibidos<ref target="#note10" xml:id="reference10">10</ref> que aquí hezimos, porque ha sido muy acertado y muy observado aquí, y loado en <name type="place">Italia</name>. El s<expan><ex>eñ</ex></expan>or <name type="person" ref="#ZayasGrabrielde">Çayas</name> mostrará a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> la orden que se a dado acerca de las impressiones y librerías,<ref target="#note11" xml:id="reference11">11</ref>  que es cosa importantíssima. Está muy contento el Summo Pontífice desta orden, que se le embió en latín. Y muy contento también de la elección de <name type="person" ref="#PlantinoCristobal">Plantino</name> por prototypógrapho real.<ref target="#note12" xml:id="reference12">12</ref> [<hi rend="b">8</hi>] Agora entendemos en otra cosa, que será de grande utilidad sacándola Dios a luz, al qual doy muchas gracias por la m<expan><ex>erce</ex></expan>d que me haze de emplearme en semejantes ministerios en servi<expan><ex>ci</ex></expan>o de su Iglesia Cathólica, la qual Él por su misericordia prospere y a la ill<expan><ex>ustr</ex></expan>e pers<expan><ex>on</ex></expan>a y casa de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> dé aquello que yo le desseo. </p>
+            <closer> [<hi rend="b">9</hi>] En <name type="place">Anvers</name>, <date when="1570-10-09">9 de ottubre 1570</date>.  Ill<expan><ex>ustr</ex></expan>e s<expan><ex>eñ</ex></expan>or, besa las manos de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor,  <signed>B<expan><ex>enito</ex></expan> Arias Montano <foreign>تلميد</foreign></signed>
+            </closer>
+               <postscript>
+               <head>[Posdata:]</head>
+               <p>[<hi rend="bold">10</hi>] Con esta va el catálogo de los libros que han salido de nuevo en esta feria. </p>  
+               </postscript>
+            </div></div>
+      </body>
+      <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Referencia a la relación de cartas que hizo Ovando y que se recoge en Macías, <title>Correspondencia con Ovando</title>, Apéndice, documento nº 6.  </note>  
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> Esta región francesa desde 1566 está bajo el control de autoridades calvinistas. </note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Se habían tomado todas las medidas de seguridad pertinentes dado que en esa flota de la armada iba la prometida del rey, su sobrina Ana de Austria, que viajaba a España para convertirse en la nueva reina. Con la armada se había embarcado la coronelía de Mondragón y además la reina Isabel de Inglaterra había enviado su almirante con diez naves para acompañarla, ofrecerle sus puertos y todo en lo que pudiera servirla.  </note> 
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> Esa decisión de repartir las cajas en diferentes barcos, para prevenir que se perdiese toda la mercancía en caso de sufrir algún contratiempo, sumada al hecho de que la flota tuvo que atracar en varios puertos debido al elevado número de embarcaciones, explica la razón por la que dos de las tres cajas para Juan de Ovando llegaron a Laredo y la tercera arribó a Santander. </note>  
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> La flota se hizo a la mar el 24 de septiembre y arribó a las costas de Santander el 3 de octubre.  </note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Felipe II había proyectado la edición de una Biblia Políglota para provecho de toda la cristiandad y cuyo texto sirviera de base a las liturgias de las Iglesias de Oriente y Occidente.
+            </note>  
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> La Políglota Regia incluyó en el tomo sexto los siguientes diccionarios y gramáticas: <title>Lexicon Graecum et institutiones linguae Graecae; Syrorum peculium</title>; <title>Grammatica linguae Syricae; Dictionarium Syro-Chaldaicum</title>; y el <title>Thesauri Hebraicae linguae olim a Sante Pagnino lucensi conscripti epitome, cui accessit grammatices libellus ex optimis quibusque grammaticis collectus</title>.
+               </note> 
+               <note type="footnote" xml:id="note8">
+                  <ref target="#reference8">8</ref> La corte residía habitualmente en Bruselas, aunque el desarrollo de los acontecimientos bélicos hace que con frecuencia cambie de emplazamiento.
+               </note> 
+               <note type="footnote" xml:id="note9">
+                  <ref target="#reference9">9</ref> Jerónimo de Roda, natural de Murcia, fue destinado a los Países Bajos en 1570 para trabajar a las órdenes de Alba en el Consejo de Tumultos. Durante el gobierno de Luis de Requesens va a desempeñar un destacado papel como asesor político en el Consejo de Estado de los Países Bajos, llegando a gozar de una influencia equiparable a la que ejerció Juan de Vargas durante el mandato del duque de Alba, hecho que terminará desatando las iras de la nobleza flamenca. Para recogerlo en palabras de Cabrera de Córdoba, «era insufrible a los Grandes, de coraçones y ánimos dañados, que el gobernador comunicase con Roda solamente las cosas de la hacienda, justicia, estado, guerra, paz, y crecía el odio contra el rey y contra los españoles» (Cabrera de Córdoba, <title>Historia de Felipe II</title>, II, 218). En opinión de G. Parker «Roda era un excelente administrador y no un mal político; pero por su condición de español carecía de partidarios entre los neerlandeses» (Parker, <title>España y la rebelión de Flandes</title>, p. 168). En 1577 es llamado desde Flandes a Granada para sustituir a Pedro de Deza como presidente de la chancillería.
+               </note>  
+               <note type="footnote" xml:id="note10">
+                  <ref target="#reference10">10</ref> En la carta de 31 de marzo de 1570 Ovando afirmaba haberlo recibido de mano de Francisco de Palma. 
+               </note>  
+               <note type="footnote" xml:id="note11">
+                  <ref target="#reference11">11</ref> El 19 de mayo de 1570, poco después del Catálogo de libros prohibidos, aparecía una nueva ordenanza que regulaba una vez más las profesiones de impresor y de librero. En el artículo primero de ese decreto Felipe II instituía el cargo de prototipógrafo o impresor mayor para los Países Bajos. El titular de esta nueva función estaba investido con la autoridad real para examinar y aprobar todo lo relativo al negocio editorial y para librar a los impresores certificados acreditativos de su idoneidad profesional (cf. Clair, <title>Cristóbal Plantino</title>, p. 160).
+               </note>
+               <note type="footnote" xml:id="note12">
+                  <ref target="#reference12">12</ref> El 10 de junio de 1570 Cristóbal Plantino era nombrado prototipógrafo real para los Países Bajos, cargo por el que se le confiaba el control general de la profesionalidad y ortodoxia de los impresores y libreros establecidos en aquellos territorios. El duque de Alba, a instancias de BAM, había propuesto a Felipe II en octubre de 1569 que confiara a Plantino la vigilancia de las habilidades técnicas y de la ortodoxia de los impresores flamencos: «Que haya un prototipógrafo de parte de Vuestra Majestad, el cual sea diestro, de buenas costumbres y fidelidad. Y como parece que concurren todas las partes en el Plantino, que este los examine». Plantino, quien no acogió de buen grado este nombramiento honorífico, con más cargas que beneficios, alegó que no era natural del país y que tenía un conocimiento muy imperfecto del flamenco, además del mucho trabajo derivado de la impresión de la Biblia Políglota, no obstante se vio obligado a aceptar el nombramiento; y tras prestar juramento ante el Presidente del Consejo Privado de Su Majestad, el 18 de junio de 1570 asumió estas nuevas funciones que desempeñó hasta que las revueltas de 1576 entregaron el poder de los Países Bajos a los Estados Generales y la dignidad de prototipógrafo fue desechada. Una vez recuperadas las provincias meridionales por la corona española, no se renovó el edicto de nombramiento, por lo que se supuso la abrogación del cargo, cuyo título honorífico conservaron Plantino y sus sucesores (cf. Clair, <title>Cristóbal Plantino</title>, pp. 160-162).
+               </note>
+            </div>
+      </back>
+   </text>
+</TEI>
