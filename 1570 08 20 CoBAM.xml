@@ -1,0 +1,182 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700820">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Agustín Huneo y Cornelio Goudano (Lovaina) a Benito Arias Montano [Amberes] - 20 de agosto de 1570</title>
+            <author>Agustín Huneo</author>
+            <author>Cornelio Goudano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 08 20</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">Agustinus Hunaeus and Cornelius Reyneri Goudanus once again correspond with BAM to address two points of disagreement with the project’s supervisor. First, the length of the main prologue intended to precede the work, and second, the inclusion of the treatise <title>De arcano sermone</title>. Regarding the first issue, they argue that a prologue as lengthy as the one drafted by BAM could be off-putting to readers embarking on such a voluminous work. Concerning <title>De arcano sermone</title>, the censors are unequivocal in stating that all who have reviewed the work strongly advise against its inclusion.</note>
+            <note type="incipit">Vir doctissime, literae tuae ipso Assumptionis Beatae Virginis...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(O) KBS, Ms. A 902, f. 164r-165v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 228-233, nº 45.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 546-553.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 228-233; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 546-553.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="HuneoAgustín">
+                  <note>Agustín Huneo (1521-1578), profesor de Teología de la Universidad de Lovaina, censor de la Biblia Políglota de Amberes.</note></person>
+               <person xml:id="GoudanoCornelio">
+                  <note>Cornelio Reyniers (Reyneri) (1525-1609), nacido en 1525 en Gouda, de donde Goudanus. En 1568 es nombrado canónigo y alcanza el doctorado en Teología en la Universidad de Lovaina. Colaboró como censor de la Biblia Políglota de Amberes.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Agustín Huneo </persName>
+               <persName>Cornelio Goudano </persName>
+               <settlement>Lovaina</settlement>
+               <date when="1570-07-22">22 de julio de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+            </correspAction>
+            <correspAction type="answeredby">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-08-23">23 de agosto de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Texto de la carta a cargo de copista desconocido</handNote>
+            <handNote>Firmas autógrafas al final de la carta de Huneo y Goudano</handNote>
+            <handNote>Sobrescrito a cargo de otra mano desconocida</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-04-22">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-164r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-164v.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-165r.jpg"
+         xml:id="foto3"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-165v.jpg"
+         xml:id="foto4"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>Esta carta, cuyas réplicas recogemos en los documentos nº 1570 08 23 y 1570 08 29, constituye una muestra más de la activa colaboración que la Universidad de Lovaina prestó en el proyecto de la Políglota por medio de los teólogos comisionados para tal fin. Y a medida que la obra va llegando a su término, vemos que la comunicación entre Amberes y Lovaina se va haciendo más asidua. Los recelos lovanienses ante el tratado <title>De arcano sermone</title> estaban justificados, pues si los fieles llegaran a saber que una traducción literal del hebreo es solo una de las posibles, debido a que esa lengua carece de vocales y a que una misma palabra puede sugerir diversos significados, entonces quedaría maltrecha la autoridad de la Vulgata. Pese a todo, BAM opta por incluirla en el volumen octavo junto a otros tratados suyos de erudición bíblica; de modo que más tarde, cuando la obra sea presentada en Roma para solicitar la aprobación de Su Santidad, este tratado será una de las objeciones más serias que se le plantee a la Biblia Regia.</p>
+         <p>El cuerpo de la carta está escrito por la mano de un copista. Huneo y Goudano solo estampan su firma original.</p>
+         <p>Rekers (<title>Arias Montano</title>, p. 188) transcribió un fragmento de esta carta que va desde «Quod ad Arcani» hasta «quam nobis est notius».</p>
+      </front>
+            <body> 
+               <pb n="f. 165v" ed="O" facs="#foto4"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab>Clarissimo doctissimoque uiro, m<expan><ex>agistro</ex></expan> n<expan><ex>ostro</ex></expan>, doctori <name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedicto</ex></expan> Ariae Montano</name> in recensendis Bibliis Regiis <name type="person" ref="#FelipeII">Philippi</name> Catholici Regis legato. <name type="place">Antuerpiam</name>.
+                  </ab>
+               </div>       
+               <div type="anotation">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> <date when="1570">1570</date> <name type="place">Louanio</name>. Censorum Louaniensium de praefatione et <title>sacro sermone</title>. <date when="1570-08-20">13 Cal<expan><ex>endas</ex></expan> Septemb<expan><ex>ris</ex></expan></date>.</ab>
+               </div> 
+               <div type="main_content">
+                  <pb n="f. 164r" ed="O" facs="#foto1"/>
+                  <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>. 
+                  </opener>
+                  <p>[<hi rend="bold">1</hi>] Vir doct<expan><ex>is</ex></expan>sime, literae tuae ipso Assumptionis B<expan><ex>eatae</ex></expan> Virginis scriptae secundo ab hoc die nobis redditae sunt; quibus lectis, cognouimus te cogitare praefationis (quam ex tua collegeramus) exemplar in <name type="place">Hispaniam</name> mittere. Atqui nos eo consilio istud ad te misimus, et omne (ut nobis uidetur) prolixioris scripti argumentum in hoc compendium redegimus, ut reliqua ad di<del>n</del>gnitatem et utilitatem operis regii facientia commode uel huius fini adiici, uel in alteram etiam praefationem, quam te meditari intellexeramus, reseruari possent; idque cum minori lectoris ad ipsum opus properantis fastidio. [<hi rend="bold">2</hi>] Si quidem existimamus operi huiusmodi, quod tanta uoluminum et partium mole atque elegantia constat, breuissimam esse praefigendam praefationem, quae lectori statim totius operis argumentum, c<expan><ex>aus</ex></expan>as et utilitatem proponat nec sua prolixitate in ipso limine lectorem offendat aut remoretur, cui longa restat uia, si totum opus reuoluere cupiat. Et quia opus per se elegans est, non eget multa commendatione; nam uino uendibili (ut aiunt) non opus est suspensa hedera.  Atque hinc factum esse <choice><sic>arbitramr</sic> <corr>arbitramur</corr></choice> ut antiquis Bibliis Complutensibus, <name type="person">Leoni Decimo</name> Pontifici Maximo dedicatis, aut nulla aut exigua admodum prooemia sint praefixa. [<hi rend="bold">3</hi>] Sed quandoquidem scribis regem eiusque consiliarios longissimam et libri modum aequantem (quod omnes hic miramur) desiderare praefationem, rogamus ut quicquid ad operis commendationem (ut erant ea capita quae de utilitate linguae primaeuae ad te misimus) facere putabis adiicias, aut secundam ep<expan><ex>istu</ex></expan>lam addas ut tandem absolutum aliquod prooemium et co<expan><ex>mmun</ex></expan>i consilio doctorumque uirorum (quos Louanium plurimos habet) iudicio approbatum in <name type="place">Hispaniam</name> mittatur, et non prius. Nostra enim sententia nunquam fuit ut ita ieiunum cum dictione tum argumento prooemium in <name type="place">Hispaniam</name> mitteretur, aut etiam ab <name type="place">Hispania</name> approbatum operi  <pb n="f. 164v" ed="O" facs="#foto2"/> praefigeretur, cum hoc saeculum adeo doctum et in iudicando acutum in tali opere ciceronianam plane requirat praefationem, quae et dictionis elegantia lectoris animum afficiat et argumenti <app><lem wit="#O #E2">faecunditate</lem> <rdg wit="#E1">facunditate</rdg></app>, citra prolixitatem t<expan><ex>ame</ex></expan>n, ad opus legendum expeditum paratumque reddat. [<hi rend="bold">4</hi>] <app><lem wit="#O #E2">Quapropter</lem> <rdg wit="#E1">Quampropter</rdg></app> rogamus magnopere ut eam quam misimus uel auctam (si uidetur) uel alterius ep<expan><ex>istu</ex></expan>lae accessione completam ad nos cum titulis et epigraphis per te iam addendis remittas, antequam in <name type="place">Hispaniam</name> mittat<supplied>ur</supplied>, ut aliquod prooemium paretur; quod non poterunt non probare omnes qui aliquid ea de re siue hic siue in <name type="place">Hispania</name> aut <name type="place">Italia</name> nouerint iudicare.	</p>
+                  <p>[<hi rend="bold">5</hi>] Quod ad <title>Arcani sermonis librum</title> attinet, eum post ultimas nostras ad te literas accuratius multo quam antea examinauimus, uariisque et doctissim<supplied>is</supplied> uiris legendum dedimus. Nec ullus omnino fuit qui eum operi Complutensi addendum putaret.  Nam docti cum tanta interpretum copia et <app><lem wit="#O #E2">text<supplied>us</supplied></lem> <rdg wit="#E1">texti</rdg></app> uarietate, si habeant Patrum commentarios, facile eo libro carebun<supplied>t</supplied>. Indocti uero parum illius lectione ad intellegendum Sacras Literas ut<supplied>e</supplied>rentur. [<hi rend="bold">6</hi>] Omittimus quod res adeo obscure hic tractetur, ut uix sit hactenus inuentus ullus qui potuerit explicare quorsum ista tenderent aut quam utilitatem adferrent; nam prooemium quod primo capiti praefigitur, in ipso totius operis argumento explicando, propter sententiarum et phraseos nouitatem obscurissimum est adeo ut quo spectet et quid sibi uelit <del>nesciatur</del> uix a quoquam intelligi potuerit. Existimant etiam nonnulli futuros multos qui eadem facilitate, qua haec affirmantur omnia reiicient, cum nullius scriptoris auctoritate et testimonio uocum significationes quae hic recensentur comprobari uiderint. Nam ex uariis Scripturae locis inter se collatis non posse semper certo de uocum significatione statui tibi quam nobis est notius.</p> 
+                  <p>[<hi rend="bold">7</hi>] Haec eo candore animi accipias petimus, uir humanissime atque doctissime, quo a nobis, tui amantissimis tuique no<expan><ex>min</ex></expan>is et honoris <choice><sic>studiossimis</sic><corr>studiosissimis</corr></choice>,  <pb n="f. 165r" ed="O" facs="#foto3"/> profecta sunt. [<hi rend="bold">8</hi>] Quod si nostrum tibi non satisfacit iudicium, rogamus ut aliis uiris doctis, candidis t<expan><ex>ame</ex></expan>n et ab omni assentatione alienis eadem perlegenda tradas eorumque sententiae acquiescas. Quod quidem te facturum ita esse, facile nobis propter innatam tuam humanitatem persuademus. </p>
+               
+                  <closer>[<hi rend="bold">9</hi>]<salute> Vale et tui amantes perge redamare. </salute> <name type="place">Louanio</name>, <date when="1570-08-20">13 Cal<expan><ex>endas</ex></expan> Septembris anno D<expan><ex>omi</ex></expan>ni 1570</date>.
+                                         <signed><name type="person" ref="#HuneoAgustín">Augustinus Hunnaeus</name>,</signed> <signed><name type="person" ref="#GoudanoCornelio">Cornelius Reyneri Goudanus</name>.</signed></closer>
+               </div>   
+            </body>
+         </text>
+         <text type="translation">
+            <body> 
+               <pb n="f. 165v" ed="O" facs="#foto4"/>
+               <div type="address">
+                  <head>[Sobrescrito:]</head>
+                  <ab>Al muy distinguido y docto varón el doctor Benito Arias Montano, maestro nuestro, legado del rey católico Felipe para la supervisión de la Biblia Regia. Amberes. </ab>
+               </div>       
+               <div type="anotation">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> 1570. De Lovaina. De los censores de Lovaina acerca del prefacio y sobre el lenguaje sagrado. 20 de agosto.</ab>
+               </div>    
+               <div type="main_content">
+                  <pb n="f. 164r" ed="O" facs="#foto1"/>
+                  <opener>Un cordial saludo. 
+                  </opener>
+                  <p>[<hi rend="bold">1</hi>] Doctísimo varón, la carta que nos escribió vuestra merced el mismo día de la Asunción de la Santa Virgen, nos llegó al día siguiente; y una vez leída, entendimos que tenía en mente enviar a España una copia del prefacio que habíamos sacado del de vuestra merced. Sin embargo, nosotros lo enviamos a vuestra merced con ese propósito, y recogimos en este compendio (según nuestro criterio) todo el argumento del otro escrito más extenso, para que todo lo demás que hace referencia a la dignidad y utilidad de esta obra regia pueda añadirse cómodamente al final de este mismo o reservarse para el otro prefacio que entendimos que planeaba vuestra merced; reduciéndole así la molestia al lector que se apresura hacia la obra misma. [<hi rend="bold">2</hi>] Pues tenemos en cuenta que a una obra de esta índole, que consta de tan gran número de volúmenes y partes, y con tanta elegancia, se le debe poner un prefacio lo más breve posible, que le dé a entender al lector enseguida el argumento de toda la obra, las causas a que responde y su utilidad, y que no desagrade o entretenga en el comienzo mismo a este a quien le queda por delante un largo camino si desea ver la obra completa. Y dado que la obra es elegante por sí misma, no necesitará mucha recomendación; pues el vino que se vende bien (según dicen) no necesita la yedra colgada.<ref target="#note1" xml:id="reference1">1</ref> Y por ello, creemos que a la antigua Biblia Complutense, dedicada al Papa León X, no se les puso ningún proemio, o era muy breve. [<hi rend="bold">3</hi>] Pero teniendo en cuenta que el rey mismo y sus consejeros, según vuestra merced nos escribe, quieren un prefacio extenso y de las dimensiones de un libro (lo cual nos ha dejado aquí a todos sorprendidos), rogamos a vuestra merced que añada cualquier cosa que piense poner para recomendación de la obra (como eran estos capítulos que le enviamos acerca de la utilidad de la lengua originaria), o agregue una segunda epístola, para que por fin se envíe a España algún proemio acabado y aprobado por decisión común y por el criterio de hombres doctos (de los cuales hay muchos en Lovaina), y no antes. Pues nuestro criterio nunca ha sido que se enviara a España un proemio tan escuálido, tanto en el contenido como en la expresión; ni tampoco que una vez aprobado en España <pb n="f. 164v" ed="O" facs="#foto2"/> se pusiera en la obra sin más, puesto que nuestra generación, tan docta y tan perspicaz a la hora de juzgar, exige en una obra de este tenor un prefacio plenamente ciceroniano, el cual no solo capte la benevolencia del lector con la elegancia del discurso, sino que con la elocuencia del argumento, sin hacerse prolijo, lo deje preparado y dispuesto para leer la obra. [<hi rend="bold">4</hi>] Por lo que rogamos a vuestra merced encarecidamente que la epístola que le enviamos, nos la devuelva aumentada (si así le parece) o rematada con la adición de una segunda epístola junto con los títulos y los epígrafes por vuestra merced ya añadidos, antes de que se mande a España, para que se prepare otro proemio; lo cual no podrán dejar de aprobar todos los que aquí o en España o en Italia sepan apreciar algo de esto.	</p>
+                  <p>[<hi rend="bold">5</hi>] Por lo que respecta al tratado <title>Del lenguaje arcano</title>, después de la última carta que enviamos a vuestra merced, lo hemos examinado con mucho más detenimiento que antes, y se lo dimos a diversos varones muy doctos para que lo leyeran. Y no hubo ni siquiera uno que pensara que este tratado se debía añadir a la obra complutense.<ref target="#note2" xml:id="reference2">2</ref> Pues los hombres doctos, con tan gran abundancia de intérpretes y variedad de textos, si tienen los comentarios de los Padres, fácilmente prescindirán de este tratado. Y por su parte, la gente corriente se va a servir poco de su lectura para comprender las Sagradas Escrituras. [<hi rend="bold">6</hi>] Y eso dejando aparte el hecho de que su contenido se trata aquí con tanta oscuridad, que apenas hemos podido encontrar todavía alguien que haya sido capaz de explicar cuál es la finalidad de esto o qué utilidad aporta; pues el proemio que está al frente del primer capítulo, para explicar en él todo el contenido de la obra, a causa de lo inusual de las ideas y de las frases, es tan intrincado, que apenas nadie ha podido entender cuál es su finalidad o qué pretende. Incluso algunos consideran que habrá muchos que con esta misma facilidad con que se hacen estas afirmaciones, las rechazarán todas, cuando vean que el significado de las palabras que aquí se examinan no está respaldado por la autoridad ni por el testimonio de ningún autor. Pues a partir de la comparación de varios pasajes de las Escrituras, no se puede siempre establecer con seguridad el significado de los vocablos, lo cual vuestra merced lo sabe mejor que nosotros. </p> 
+                  <p>[<hi rend="bold">7</hi>] Pedimos a vuestra merced, varón humanísimo y doctísimo, que reciba esto con el mismo candor con el que lo hemos expresado nosotros, que somos muy afectos suyos y muy celosos de su nombre y de su honra.  <pb n="f. 165r" ed="O" facs="#foto3"/>  [<hi rend="bold">8</hi>] Y si no satisface a vuestra merced nuestro juicio, le pedimos que se lo entregue a otros hombres eruditos, pero eso sí, sencillos e imparciales, para que lo lean y se contente vuestra merced con su juicio. Lo cual estamos seguros de que lo hará vuestra merced dada su innata humanidad. </p>
+                  <closer>[<hi rend="bold">9</hi>] Adiós y mantenga en la amistad de vuestra merced a los que le son afectos.
+                     Desde Lovaina, a 20 de agosto del año del Señor de 1570.  <signed>Agustín Huneo,</signed> <signed>Cornelio Reyneri de Gouda.</signed></closer>
+               </div>   
+            </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref>  Erasm. <title>Adag</title> II, 6, 20: «Vino uendibili suspensa hedera nihil opus. Id est uera uirtus non eget alienis praeconiis. Aut res praeclarae per se placent neque desiderant exoticam commendationem. Sumptum apparet a cauponum more, qui uinariis tabernis signum hederaceum solent praetendere» («Al vino que se vende bien no le hace falta una hiedra colgada. Es decir, la verdadera virtud no necesita elogios ajenos. Las cosas excelentes agradan por sí mismas y no requieren una recomendación exótica. Parece tomado de la costumbre de los taberneros, que suelen colgar una señal con forma de hiedra en las tabernas de vino»).</note> 
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> Obsérvese el juicio desfavorable que los teólogos de Lovaina recogen sobre el tratado <title>De arcano sermone</title>. Esta obra se convertirá más tarde en Roma en uno de los puntos de ataque contra la Políglota.</note> 
+               </div> 
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
