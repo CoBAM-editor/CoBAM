@@ -1,0 +1,159 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700523">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Daniel Van Bomberghen (Lovaina) - 23 de mayo de 1570 </title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Antonio Dávila Pérez </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 05 23</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM is aware that Daniel Van Bomberghen’s father possessed two copies of the Syriac New Testament. As the supervisor of the Polyglot Bible, he considers these handwritten copies to be of critical importance for the edition of the Syriac text. For this reason, he implores Daniel Van Bomberghen to lend these manuscripts, should they still be in his possession, or to make every effort to locate them.  </note>
+            <note type="incipit">Cum anno quinquagesimo nono Venetiis essem...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="O">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Bélgica</country>
+                        <settlement>Amberes</settlement>
+                        <msName>Museum Plantin-Moretus</msName>
+                        <altIdentifier>
+                           <idno>(O) MPM Arch. 76, ff. 94r-95v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"><title>Biblia Sacra Hebraice, Chaldaice, Graece, et Latine, Philippi II Reg[is] Cathol[ici] pietate et studio ad Sacrosanctae Ecclesiae usum</title> (Antuerpiae, 1569-1573), t. I, [fº ❧ 7r]</witness>
+               <witness xml:id="E2">J. F. Domínguez Domínguez, «Apuntes sobre la estancia de Arias Montano en Venecia (1559) y sobre el Nuevo Testamento siríaco: Carta a Daniel van Bomberghen (1570)», en Marqués de la Encomienda y otros (eds.), <title>El Humanismo extremeño. II Jornadas. Trujillo 1997</title> (Trujillo, 1998), pp. 67-87.</witness>
+               <witness xml:id="E3">A. Dávila Pérez, <title>Benito Arias Montano. Correspondencia de Arias Montano conservada en el Museo Plantin-Moretus de Amberes</title> (Alcañiz-Madrid: Instituto de Estudios Humanísticos - Consejo Superior de Investigaciones Científicas, 2002), vol. I, pp. 25-28.</witness>
+               <witness xml:id="E4">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title>(Madrid: Ediciones Clásicas, 2017), pp. 504-511.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) <title>Biblia Sacra</title>, t. I, [fº ❧ 7r]; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, «Apuntes sobre la estancia de Arias Montano en Venecia», pp. 67-87; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Dávila, <title>Correspondencia conservada en el Museo Plantin-Moretus</title>, I, pp. 25-28; </bibl>
+            <bibl type="inextenso" n="thirdPrint">(E3) Domínguez, <title>Correspondencia.</title>, I, 504-511.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI	P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="BomberghenDanielIII">
+                  <note>Daniel III Van Bomberghen (fl. 1570) hijo del famoso impresor de Venecia; editor e impresor en Colonia y Amberes. </note>
+               </person>
+               <person xml:id="BomberghenDanielII">
+                  <note>Daniel II Van Bombergen (1483-1549),afamado impresor de libros hebreos en Venecia. </note>
+                                 </person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-05-23">23 de mayo de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Daniel Van Bomberghen</persName>
+               <settlement>Lovaina</settlement>
+            </correspAction>
+         </correspDesc>
+                  <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Valedictio, firma y sobrescrito autógrafos de Benito Arias Montano</handNote>
+            <handNote>Cuerpo de la carta de otra mano.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-02-26">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/MPM-Arch.-76-f.-94r-scaled.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/MPM-Arch.-76-f.-95v-scaled.jpg"
+         xml:id="foto2"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/02/Biblia-Sacra-I.jpg"
+         xml:id="foto3"/>
+   </facsimile>
+   <text>  
+      <group>
+      <text type="source">
+         <front>
+         <p> Entre los legajos del Museo Plantin-Moretus se encuentra el manuscrito de una carta enviada por BAM a Daniel Van Bomberghen. El cuerpo del texto no es autógrafo, aunque sí son de puño y letra de BAM el encabezado, la firma y el sobrescrito. De esta comunicación se conserva también la edición publicada en el primer tomo de la Biblia Políglota, junto al resto de licencias, documentos oficiales y dedicatorias. BAM habría planeado publicar este documento en la Políglota como prueba de la diligencia empleada en la adquisición de manuscritos valiosos para la edición del texto sagrado, y por esta razón creemos que la carta original acabó preservada en los archivos de la imprenta plantiniana. El texto que finalmente se publicó en la Biblia Regia refleja un estado más pulido de la carta. Dado que el estudio de las variantes entre el testimonio manuscrito y la edición de la Políglota puede ser de interés para profundizar en los procesos de limae labor que BAM aplicaba a sus escritos, en nuestra edición seguimos como testimonio base el impreso de la Políglota, que refleja un estado más pulido de la carta; en el aparato crítico recogemos las variantes entre el manuscrito original y la edición impresa pulida por el propio autor, para que el lector interesado pueda tener acceso a los dos estados de la carta. En aras de una mayor claridad, no incluimos en el aparato crítico las pequeñas variantes de las ediciones modernas del texto de esta carta.    </p>
+         <p>En este documento BAM solicita el préstamo de unos manuscritos. Para el texto sirio del Nuevo Testamento, la Peschitto, los editores de la Políglota de Amberes usaron la edición de J. A. Widmanstadius, <title>Liber sacrosancti euangelii, characteribus et lingua Syra, Iesu Christo uernacula</title> (Viena, 1555). Además, y aquí es donde entra en escena la misiva que editamos, se colacionó un manuscrito del siglo XII propiedad de los herederos de Daniel Van Bomberghen, promotor e impresor de las dos ediciones venecianas de la Biblia Hebrea: <title>Biblia Hebraica cum Masora et Targum</title> (Venecia, 1518); y <title>Biblia Hebraica Rabbinica cum utraque Masora, Targum, studio R. Iacob F. Haiim</title> (Venecia, 1526). </p>
+      </front>
+         <body> 
+            <div type="main_content">
+               <pb n="Biblia Sacra, I" ed="E" facs="#foto3"/>
+               <opener><app><lem wit="#E1"><name type="person" ref="#BomberghenDanielIII">Danieli Bombergo</name> I<expan><ex>uris</ex></expan> V<expan><ex>triusque</ex></expan> doctori <name type="person" ref="#AriasMontanoBenito">Bened<expan><ex>ictus</ex></expan> Arias Montanus</name> s<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>icit</ex></expan>.</lem> <rdg wit="#O">Benedictus Arias Montanus Catholici Regis in sacra causa legatus Danieli Bombergo uiro honestiss<expan><ex>imo</ex></expan> regisque sui colentissimo s<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan>.</rdg></app>         </opener>
+               <p>[<hi rend="bold">1</hi>] Cum <app><lem wit="#E1"><date when="1559">anno quinquagesimo nono</date></lem> <rdg wit="#O"><hi rend="italic">omisit</hi></rdg></app> <app><lem wit="#E1"><name type="place">Venetiis</name> essem</lem> <rdg wit="#O">essem Venetiis</rdg></app>, certis auctoribus accepi duo Noui Testamenti <app><lem wit="#E1">Syrici</lem> <rdg wit="#O">Syrice</rdg></app> manuscripta exemplaria patrem tuum <name type="person" ref="#BomberghenDanielII">Danielem habuisse</name>, uenerandae uetustatis et magnae auctoritatis uolumina. [<hi rend="bold">2</hi>] <app><lem wit="#E1">Ea</lem> <rdg wit="#O">Quae</rdg></app> cum nobis hoc tempore ad Sacrorum Librorum (quos ex Catholici Regis consilio et auctoritate excudimus) expeditionem utilissima imo necessaria existimarem, omni diligentia inuestiganda curaui, nec aliam commodiorem reperiendi rationem hactenus cognoui, quam ut te, <app><lem wit="#E1">qui ut</lem> <rdg wit="#O">qui <del>e</del>ut</rdg></app> generis et nominis, ita etiam eruditionis haeres patri tuo successisti, de ea re nobis curanda adirem.</p>
+               <p>[<hi rend="bold">3</hi>] Cum <app><lem wit="#E1">uero</lem> <rdg wit="#O"><hi rend="italic">omisit</hi></rdg></app> uero propter assiduas occupationes praesentem alloqui non possem, epistola compellare constitui atque ea quidem breui et tumultuaria (propter <app><lem wit="#E1">negotia quibus</lem> <rdg wit="#O">negotium quo</rdg></app> distineor perpetuo), sed tamen quam tantum <app><lem wit="#E1">apud te perinde</lem> <rdg wit="#O">tantum apud te</rdg></app> ualere cupiam <app><lem wit="#E1">atque</lem> <rdg wit="#O">quantum</rdg></app> ipse ego si praesens agerem. Scis quantum totius Christianae reipub<expan><ex>licae</ex></expan> et studiosorum omnium intersit ut <app><lem wit="#E1">Biblia haec</lem> <rdg wit="#O">haec Biblia</rdg></app> omnibus auxiliis, subsidiis aucta apparatuque instructa omni quam optime et quam citissime absoluantur. Perfecimus iam ferme <app><lem wit="#E1">totum</lem> <rdg wit="#O"><hi rend="italic">omisit</hi></rdg></app> Vetus Instrumentum atque Nouum propediem inchoare paramus. [<hi rend="bold">4</hi>] Et quoniam in Syricis non habemus manuscripta exemplaria, quibus utamur ad collationem et correctionem <app><lem wit="#E1">impressorum</lem><rdg wit="#O"><hi rend="italic">omisit</hi></rdg></app>, praeter unum Hebraicis litteris <app><lem wit="#E1">exaratum, illis</lem> <rdg wit="#O">exaratum, idque recens admodum, illis</rdg></app> patris tui quaerendis operam damus; quorum (si tu uel alterum uel utrumque habes) copiam nobis <app><lem wit="#E1">facias oro.</lem> <rdg wit="#O">fiero exopto.</rdg></app> Sin uero non habes, ubi autem illa <app><lem wit="#E1">sunt</lem> <rdg wit="#O">sint</rdg></app> nosti, et publicae ecclesiasticaeque rei causa et regii nominis auctoritate postulo ut omni diligentia adhibita undecunque illa perquisita nobis <app><lem wit="#E1">accommodes</lem> <rdg wit="#O">commodes</rdg></app>, tibi aut cui tu uolueris post usum nostrum <app><lem wit="#E1">integra</lem> <rdg wit="#O">bona</rdg></app> fide reddenda. </p>
+               <p><hi rend="bold">5</hi>] Fuere qui mihi affirmarent illa <name type="place">Coloniae</name> esse (nam <name type="place">Francofurti</name> ipse inquirenda curaueram). Non autem existimo graue me tibi onus impositurum <app><lem wit="#E1">si, ubicumque ea sint, ad nos afferendi causa, cum opus fuerit, eo usque excurras.</lem> <rdg wit="#O">si illic ea sint et, ut ad nos adferantur, necesse fuerit eo usque excurrere.</rdg></app> Omnino enim carere nollemus huiusmodi exemplaribus, etiam si <name type="place">Venetias</name> usque aut longius tibi esset excurrendum. [<hi rend="bold">6</hi>] Officium igitur et pietate tua dignum et Regi nostro gratissimum facies, si quod postulo quam maturrime et diligentissime curaueris, atque in ea efficienda re omnem tuam operam posueris. </p> <closer>[<hi rend="bold">7</hi>] <salute>Vale</salute>. <name type="place">Antuerpiae</name>, <date when="1570-05-23">10 <app><lem wit="#E1">Calen<expan><ex>das</ex></expan></lem> <rdg wit="#O">Cal<expan><ex>endas</ex></expan></rdg></app> Iunias, <app><lem wit="#E1">1570.</lem> <rdg wit="#O"> 1570. Tuorum commodorum cupientissimus B. Arias Montanus تلميد. [<hi rend="italic">a tergo, Montani manu</hi>:] Honestissimo et eruditissimo uiro d<expan><ex>omini</ex></expan> Danieli Bombergo. Louanium. [<hi rend="italic">a tergo, altera manu</hi>:] 10 Cal. Iunias 1570. D<expan><ex>omini</ex></expan> Ariae Montani.  </rdg></app> </date>  </closer>
+            </div>
+      </body>
+      </text>
+      <text type="translation">
+         <body> 
+            <div type="main_content">
+               <pb n="Biblia Sacra, I" ed="E" facs="#foto3"/>
+               <opener>Benito Arias Montano saluda afectuosamente a Daniel Van Borberguen,<ref target="#note1" xml:id="reference1">1</ref> doctor en ambos derechos.         </opener>
+               <p>[<hi rend="bold">1</hi>] Estando yo en Venecia<ref target="#note2" xml:id="reference2">2</ref> en el año cintuenta y nueve, supe de buen mano que su padre Daniel<ref target="#note3" xml:id="reference3">3</ref> había tenido dos manuscritos del Nuevo Testamento siríaco, volúmenes de venerable antigüedad y de gran autoridad. [<hi rend="bold">2</hi>] Como quiera que los consideramos muy útiles para nosotros, y es más, necesarios, en este tiempo para la conclusión de la Biblia Sagrada (que estamos imprimiendo por consejo y orden del Rey católico), me encargué con toda diligencia de que se buscasen, y hasta ahora no he pensado otra forma más fácil de encontrarlos que dirigirme para tramitar este asunto a vuestra merced, que ha sucedido a su padre como heredero tanto de linaje y fama como también de erudición. </p>
+               <p>[<hi rend="bold">3</hi>] Y habida cuenta de que a causa de las continuas ocupaciones no puedo hablarle en persona, decidí dirigirme a vuestra merced por carta, y esta en verdad breve y precipitada (a causa de los negocios que me retienen continuamente), aunque desearía que esta le sirviera como si yo mismo le hablara en persona. Sabe cuánto importa a la totalidad de la república cristiana y a todos los estudiosos que esta Biblia se termine apoyada en todos los auxilios, subsidios y pertrechada de todo aparato con la mayor escrupulosidad y presteza. Ya casi hemos terminado todo el Antiguo Testamento<ref target="#note4" xml:id="reference4">4</ref> y en breve nos disponemos a empezar el Nuevo.<ref target="#note5" xml:id="reference5">1</ref> [<hi rend="bold">5</hi>] Y puesto que en siriaco no tenemos manuscritos que usar para el cotejo y corrección de los impresos excepto uno solo escrito con letras hebreas, estamos empeñados en buscar los de su padre;  deseo que vuestra merced ponga estos a nuestra disposición (si tiene uno o ambos). Pero si no los tiene vuestra merced y sabe dónde están, tanto por la utilidad pública y la de la Iglesia como por la autoridad del nombre del Rey, pido que emplee toda su diligencia y tras buscarlos por todos lados nos proporcione en préstamo vuestra merced esos manuscritos, que se le han de devolver después de usarlos nosotros con plena fidelidad a vuestra merced o a quien vuestra merced quiera. </p>
+               <p>[<hi rend="bold">5</hi>] Hubo quienes me aseguraron que los manuscritos se encontraban en Colonia (pues yo mismo me había encargado de hacer pesquisas en Fráncfort). En efecto, no creo que le impondría una pesada carga, si donde quiera que estén los manuscritos, en caso de que fuera necesario, vaya vuestra merced con urgencia hasta ese lugar para que se nos traigan. Y es que no estaríamos dispuestos en absoluto a carecer de unos ejemplares de esta clase, aunque tuviera vuestra merced que ir con presteza a Venecia o más lejos. [<hi rend="bold">6</hi>] Así que realizará un servicio digno de su piedad y agradabilísimo para nuestro Rey, si se encarga de lo que pido con la máxima rapidez y diligencia, y pone todo su empeño en cumplir esta misión.<ref target="#note6" xml:id="reference6">6</ref>   </p> <closer>[<hi rend="bold">7</hi>] Adiós. Amberes, 23 de mayo de 1570.<ref target="#note7" xml:id="reference7">7</ref></closer>
+            </div>
+         </body>
+         <back>
+            <div type="notes">
+               <note type="footnote" xml:id="note1">
+                  <ref target="#reference1">1</ref> Daniel III van Bomberghen, hijo del famoso impresor de Venecia, cursó los dos derechos en la Universidad de Leiden. Había trabajado como editor e impresor en Colonia desde 1568 hasta 1570; el año siguiente marchó a Bélgica, donde permaneció hasta 1584. Su hermano Carlos había formado sociedad con Plantino para ampliar el capital de la editorial. Merced a un contrato fechado el 26 de noviembre de 1563 crearon una «compagnie d’imprimerie» Cristóbal Plantino, Carlos y Cornelio van Bomberghen (que eran primos), Juan Goropio y Jacobo de Schotti. La sociedad duró cuatro años. Cf. F. Van Ortroy, «Les Van Bomberghen d’Anvers, imprimeurs, libraires et éditeurs», <title>GP</title>, 2 (1924), pp. 141-144.     </note>   
+               <note type="footnote" xml:id="note2">
+                  <ref target="#reference2">2</ref> BAM visitó la península transalpina en dos ocasiones antes de 1570: durante su viaje de 1559, año que se anota en la versión impresa de esta carta, recorrió varias ciudades e hizo acopio de volúmenes impresos y manuscritos, por uno de los cuales parece que fue interrogado en Sevilla por la Inquisición (Ms. Archivo Municipal de Sevilla, colección Aguilar, t. VII, nº 4; citado por A. Holgado, «El humanismo en la Baja Extremadura», en <title>Historia de la Baja Extremadura</title> (Badajoz, 1986), p. 332); la segunda visita a Italia tuvo lugar entre abril de 1562 y la segunda mitad del 1563, con motivo de su participación en el Concilio de Trento.  </note>   
+            <note type="footnote" xml:id="note3">
+               <ref target="#reference3">3</ref> Daniel II van Bomberghen, hijo de Cornelio I, nace en Amberes después de 1483 y fallece en 1553. Fue un afamado impresor de libros en hebreo y dueño de un floreciente taller en Venecia entre 1515 y 1549. Sin embargo tuvo que abandonar la ciudad por la hostilidad de la nobleza veneciana y los decretos inquisitoriales. Cf. Van Ortroy, «Les Van Bomberghen d’Anvers», pp. 133-140. </note>
+               <note type="footnote" xml:id="note4">
+                  <ref target="#reference4">4</ref> El uso de <foreign>Instrumentum</foreign> como sinónimo de Testamento procede del latín tardío (Hoven, <title>Lexique</title>, p. 189) </note>
+               <note type="footnote" xml:id="note5">
+                  <ref target="#reference5">5</ref> Por estas fechas se habían terminado de imprimir los textos del primer volumen (12 de marzo de 1569), exceptuando la parte introductoria, el segundo volumen (acabado a mediados de octubre del mismo año), y estaba a punto de finalizarse el tercer volumen (julio de 1570). </note>
+               <note type="footnote" xml:id="note6">
+                  <ref target="#reference6">6</ref> Los manuscritos fueron finalmente prestados, aunque con la oposición del hermano de Daniel, Carlos, quien temía que aquella joya familiar fuese robada o confiscada en el trayecto de Colonia a Amberes (cf. Clair, <title>Cristóbal Plantino</title>, p. 122). Se tuvo que firmar, incluso, un acuerdo para proteger esta propiedad indivisible: el 14 de junio de 1570, ante el magistrado de Colonia y con la presencia de Carlos, Daniel y sus representantes, se establece por contrato que Daniel reciba los dos preciosos volúmenes a condición de que dejase un depósito en metálico, dinero que sería recogido a los seis meses, cuando se devolvieran los manuscritos (cf. Van Ortroy, «Les Van Bomberghen d’Anvers», p. 143). La perspectiva personal de Plantino sobre todo este difícil proceso queda reflejada en una de sus cartas a Andrés Masio, del 1 de agosto de 1570 (en <title>CP</title>, III, 64, nº 393).  </note>
+               <note type="footnote" xml:id="note7">
+                  <ref target="#reference7">7</ref> Ofrecemos aquí la traducción castellana de las palabras de despedida y sobrescrito que, como se anotan en el aparato crítico, se leen en el testimonio manuscrito de la carta, pero no así en la edición impresa. Fórmula de despedida: «Deseándole vivamente toda la prosperidad, Benito Arias Montano, discípulo»; sobrescrito, de mano de BAM: «Al muy honesto y erudito señor don Daniel Van Bomberghen. Lovaina»; anotado por otra mano en el sobrescrito: «23 de mayo 1570. Del señor Arias Montano».  </note>
+            </div>
+         </back>
+      </text>
+   </group>
+   </text>
+</TEI>
