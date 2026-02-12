@@ -1,0 +1,171 @@
+﻿<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15700823">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+            <title level="a">Benito Arias Montano (Amberes) a Agustín Huneo y Cornelio Goudano (Lovaina) - 23 de agosto de 1570</title>
+            <author>Benito Arias Montano</author>
+            <editor>Antonio Dávila Pérez</editor>
+            <respStmt>
+               <resp>Edición crítica, traducción y notas</resp>
+               <name>Baldomero Macías Rosendo</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Universidad de Cádiz</distributor>
+            <address>
+               <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+            </address>
+            <idno type="CoBAM">1570 08 23</idno>
+         </publicationStmt>
+         <notesStmt>
+            <note type="abstract">BAM informs the censors in Leuven of his intention to send to Spain a copy of the Bible’s preface, accompanied by the various censures and evaluations he has collected from different parts of Europe. In doing so, he aims to delegate to the King and his advisers the final decision regarding this aspect of the Polyglot. Concerning the treatise <title>De arcano sermone</title>, after being dissuaded from including it in the Bible by Augustine Huneus and Cornelius Reyneri, BAM consults them further to ascertain whether there are doctrinal reasons underpinning their position. Additionally, he expresses his intention to submit the work to the judgment of other scholars.</note>
+            <note type="incipit">Doctissimi uiri, literas hodie a uobis accepi ad 13 Calendas Septembris datas...</note>
+         </notesStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>Suecia</country>
+                        <settlement>Estocolmo</settlement>
+                        <msName>Kungliga Biblioteket</msName>
+                        <altIdentifier>
+                           <idno>(C) KBS, Ms. A 902, f. 192r-192v.</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="E1"> B. Macías Rosendo, <title>La Biblia Políglota de Amberes en la correspondencia de Benito Arias Montano (MS. Estoc. A 902)</title> (Huelva: Servicio de Publicaciones de la Universidad de Huelva, 1998), pp. 234-237, nº 46.</witness>
+               <witness xml:id="E2"> J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title> (Madrid: Ediciones Clásicas, 2017), pp. 554-561.</witness>
+            </listWit>
+            <bibl type="inextenso" n="firstPrint">(E1) Macías, <title>La Biblia Políglota de Amberes</title>, pp. 234-237; </bibl>
+            <bibl type="inextenso" n="secondPrint">(E2) Domínguez, <title>Correspondencia</title>, I, 554-561.</bibl>
+         </sourceDesc>
+      </fileDesc>
+       <encodingDesc>
+         <projectDesc>
+            <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+            <p>Dirigido por Antonio Dávila Pérez.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+						P5</ref></p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="AriasMontanoBenito">
+                  <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+               </person>
+               <person xml:id="HuneoAgustín">
+                  <note>Agustín Huneo (1521-1578), profesor de Teología de la Universidad de Lovaina, censor de la Biblia Políglota de Amberes.</note></person>
+               <person xml:id="GoudanoCornelio">
+                  <note>Cornelio Reyniers (Reyneri) (1525-1609), nacido en 1525 en Gouda, de donde Goudanus. En 1568 es nombrado canónigo y alcanza el doctorado en Teología en la Universidad de Lovaina. Colaboró como censor de la Biblia Políglota de Amberes.</note></person>
+               <person xml:id="FelipeII">
+                  <note>Felipe II, «El Prudente» (21 de mayo de 1527-13 de septiembre de 1528), en el trono desde 1556 hasta 1598.</note></person>
+               <person xml:id="PlantinoCristóbal">
+                  <note>Cristóbal Plantino nació hacia 1520 en Saint-Avertin, población cercana a Tours, en el seno de una familia humilde. Era todavía un niño cuando perdió a su madre a causa de la peste, y fue recogido en casa de un  canónigo de Lyon, Claude Porret, en cuyo servicio estuvo muchos años empleado el padre de Plantino. Se casó en Caen en 1545 ó 1546 con Juana Rivière, matrimonio del que le nacerían cinco hijas. El joven matrimonio se estableció en París, donde Plantino se dio a conocer como encuadernador. En 1549 marchó a Amberes, donde trabajó como encuadernador y fabricante de cofres en cuero. Se labró gran reputación en su oficio, y el negocio comenzó a prosperar. Sin embargo, una tarde cuando salía para llevarle a Gabriel de Zayas, el secretario de Felipe II, un cofrecillo que le había encargado para enviarle una joya de gran valor a la reina, Plantino recibió una estocada destinada a otro. Esta herida recibida, que puso su vida en peligro, lo incapacitó para su trabajo manual, y se vio forzado a cambiarlo por el de impresor, el cual había ejercido en Caen. En 1555 imprimió su primer libro; en 1557 se trasladó a la Kammerstrate, donde estableció la imprenta del Unicornio de oro, a la que le cambió el nombre en 1561 por el de Compás de oro. A partir de esta etapa su vida es bien conocida por su abundante correspondencia, editada por Max Rooses y J. Denucé. A finales de 1566 entra en negociaciones con el monarca español para llevar a cabo la reimpresión de la agotada Biblia Políglota de Cisneros; en la que trabajará hasta 1573. El 10 de junio de 1570, Felipe II lo nombra impresor prototipógrafo de los Países Bajos, y comienza un período de esplendor que se verá en parte truncado con las guerras de religión y el sitio de Amberes. En 1583, movido por el desarrollo de los acontecimientos bélicos, Plantino decide instalarse en Leiden, donde permanecerá hasta la recuperación de Amberes por las tropas de Alejandro Farnesio en agosto de 1585. A su regreso de Leiden, Plantino vivió aún en Amberes cuatro años durante los que se afana por acercarse de nuevo a la Corona española mediante renovados elogios a los vencedores. En medio de la decadencia de la ciudad, acentuada por el largo sitio que hubo de sufrir, el Compás de oro había quedado reducido, lejos de la mano del maestro, a una mera sombra de su pasado. El primero de julio de 1589, rodeado de su familia y amigos, fallecía el “príncipe de los impresores”, cuya vida estuvo marcada por los conflictos religiosos y políticos de su tiempo. Sobre la tipografía plantiniana, biografía de sus fundadores, Cristóbal Plantino (ca. 1520-1 de julio de 1589) y Juan Moreto (c. 1543-1610), y actividades principales véase L. Voet, <title>The Golden Compasses. A History and Evaluation of the Printing and Publishing Activities of the Officina Plantiniana at Antwerp</title>, 2 vols. (Amsterdam-London-New York, Vangendt and Co.-Routledge and Kegan Paul-Abner Schram, 1969-1972). Del mismo autor es el repertorio bibliográfico de la producción del «Compás de Oro« en vida de Plantino, Amsterdam, Van Hoeve, 1980-1983.</note></person>
+            </listPerson>
+         </particDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Benito Arias Montano</persName>
+               <settlement>Amberes</settlement>
+               <date when="1570-08-23">23 de agosto de 1570</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Agustín Huneo </persName>
+               <persName>Cornelio Goudano </persName>
+               <settlement>Lovaina</settlement>
+            </correspAction>
+            <correspAction type="answerto">
+               <persName>Agustín Huneo</persName>
+               <persName>Cornelio Goudano</persName>
+               <settlement>Lovaina</settlement>
+               <date when="1570-08-20">20 de agosto de 1570</date>
+            </correspAction>
+            <correspAction type="answeredby">
+               <persName>Agustín Huneo</persName>
+               <persName>Cornelio Goudano</persName>
+               <settlement>Lovaina</settlement>
+               <date when="1570-08-29">29 de agosto de 1570</date>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="la" ana="source">Latín</language>
+         </langUsage>
+         <handNotes>
+            <handNote>Texto de la carta a cargo de copista desconocido</handNote>
+            <handNote>Anotaciones autógrafas de BAM en el dorso del folio.</handNote>
+         </handNotes>
+         </profileDesc>
+      <revisionDesc status="approved">
+         <change who="ADP" when="2025-04-28">Etiquetado inicial; con encabezado</change>
+        </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-192r.jpg"
+         xml:id="foto1"/>
+      <graphic
+         url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2025/04/KBS-A-902-f-192v.jpg"
+         xml:id="foto2"/>
+   </facsimile>
+   <text>
+      <group>
+         <text type="source">
+      <front>
+         <p>Recuérdese que BAM había consultado a un elevado número de intelectuales y personas de Iglesia en relación con el prefacio de la Biblia. Algunas de esas respuestas las hemos recogido en esta correspondencia, otras no las conservamos.</p>
+         <p>De esta carta solo conservamos una copia no autógrafa, que quedó en poder de BAM a modo de copia de oficina. El original no se ha podido localizar. Son autógrafos de BAM un breve añadido al margen (señalado en color verde dentro del texto, § 5) y la anotación al dorso de la copia manuscrita.</p>
+      </front>
+            <body> 
+               <pb n="f. 192v" ed="C" facs="#foto2"/>
+               <div type="anotation">
+                  <head>[Anotado en el margen por BAM, con escritura transversal:]</head>
+                  <ab> <name type="place">Louanium</name> <date when="1570">1570</date>. Ad censores de praefatione, etc.  </ab>
+               </div> 
+               <div type="main_content">
+                  <pb n="f. 192r" ed="C" facs="#foto1"/>
+                  <opener>S<expan><ex>alutem</ex></expan> p<expan><ex>lurimam</ex></expan> d<expan><ex>icit</ex></expan>. 
+                  </opener>
+                  <p>[<hi rend="bold">1</hi>] Doctissimi uiri, literas hodie a uobis accepi ad <date when="1570-08-20">13 Cal<expan><ex>endas</ex></expan> Sept<expan><ex>embris</ex></expan></date> datas, ad quas statim respondere decreui, idque quam breuissime, quod prolixius per negotiorum frequentiam non possim. [<hi rend="bold">2</hi>] Scripseram uobis me in <name type="place">Hispaniam</name> missurum exemplum praefationis in Biblia per uos iudicatae cum capite etiam epistolae uestrae, in quo ea de re uestram sententiam exponitis, hoc est, in quo breuitatem praefationis prolixitati <app><lem wit="#C #E2">antefertis,</lem> <rdg wit="#E1"><hi rend="italic">imum punctum posuit</hi></rdg></app> eiusque rei exemplum mihi proponebatis totius illius a me conscriptae praefationis argumentorum summam decenti oratione, ut uolebatis et iubebatis, ornandam. [<hi rend="bold">3</hi>] Id enim et ipse satis aperte intellexi et eodem, quo a me, modo ab Hispanis accipiendum certo scio; quibus non solum uestram hac de re sententiam, sed duodecim etiam epistolarum quae ad me de eodem argumento missae sunt, partim <del>partim</del> ex <name type="place">Italia</name> et <name type="place">Roma</name>, partim ex Superiori <name type="place">Germania</name>, partim etiam a uiris in hac nostra regione doctissimis et pientissimis, una cum uariis eiusdem praefationis censuris et uariis de breuitate, prolixitate, stylo et materia iudiciis, ut ex uestra, aliorum et sua etiam collata ratione, quae mihi potissimum ineunda uia esset a rege ipso illiusque consiliariis tandem <choice><sic>statueretur.</sic> <corr>statueretur,</corr></choice> quandoquidem praefationis conficiendae <choice><sic>autoritas</sic> <corr>auctoritas</corr></choice> mihi, tanquam regis procuratori et legato, iudicium uero regi ipsi regiisque consiliariis asscribi oportuit.  [<hi rend="bold">4</hi>] Video autem tantam de hac praefatione sententiarum <app><lem wit="#E1 #E2">uarietatem</lem> <rdg wit="#C">ueritatem</rdg></app>, ut quamquam integrum mihi id meo iure sit, tamen quid statuam incertissimum <app><lem wit="#C #E2">habeam,</lem> <rdg wit="#E1"><hi rend="italic">imum punctum posuit</hi></rdg></app> alias monstrum aliquod editurus, si uniuscuiusque ingenio <choice><sic>optemperare</sic> <corr>obtemperare</corr></choice> parem.</p> 
+                  <p>[<hi rend="bold">5</hi>] Itaque praefationem ipsam ita ut <add hand="#AriasMontanoBenito" place="margin">ex typographia habui rudem et expeditam mitto in <name type="place">Hispaniam</name>, alteram etiam </add> annotatis in margine omnibus omnium censuris et omnia epistolarum capita, quaecumque ad me eadem de re uel ex <name type="place">Hispania</name> uel <name type="place">Italia</name>, <name type="place">Germania</name> Superiori et Inferiori missae sunt. Quae omnia a consiliariis ipsis secreto (ut fieri solet) perlecta et ad regem relata, tandem quid agendum sit <app><lem wit="#C #E1">indicabunt</lem> <rdg wit="#E2">iudicabunt</rdg></app>. [<hi rend="bold">6</hi>] Itaque nihil opus esse arbitror ut uel noua a me praefatio instituatur uel is a uobis <choice><sic>subiatur</sic> <corr>subeatur</corr></choice> labor, donec quid agendum mihi sit ipsum, cuius proprium ius est, regem audiam. 	</p>
+                  <p>[<hi rend="bold">7</hi>] <title>Arcani sermonis</title> partem quam uobis minus placere intelligo, mihi relatam cupio, aliorum etiam doctorum uirorum, ut uos censetis, <choice><sic>iuditium</sic> <corr>iudicium</corr></choice> subituram. <hi rend="bold">8</hi>] Simul autem scire cupio an illius lectio aliqua ex parte legentium quempiam offenderit, quatenus religionis catholicae puritatem spectat, hoc enim ne fiat cura mihi in primis est. Quoniam uero alio illius exemplari prorsus careo, uelim non nisi certissimo nuntio, qui ad <name type="person" ref="#PlantinoCristóbal">Plantinum</name> deferat, commissam. </p>
+                  <closer>[<hi rend="bold">9</hi>] <salute>Valete</salute> et me, quod pro uestra humanitate facitis, amate. 
+                     <name type="place">Antuerpiae</name>, <date when="1570-08-23">10 Calend<expan><ex>as</ex></expan> Sept<expan><ex>embris</ex></expan> 1570</date>.
+                  </closer>
+               </div>  
+            </body>
+         </text>
+         <text type="translation">
+            <body> 
+               <pb n="f. 192v" ed="C" facs="#foto2"/>
+               
+               <div type="anotation">
+                  <head>[Anotado en el margen, escritura de BAM, con escritura transversal:]</head>
+                  <ab> A Lovaina 1570. A los censores acerca del prefacio, etc. </ab>
+               </div>
+               <div type="main_content">
+                  <pb n="f. 192r" ed="C" facs="#foto1"/>
+                  <opener>Un cordial saludo.</opener>   
+                  <p>[<hi rend="bold">1</hi>] Doctísimos varones, hoy he recibido la carta de vuestras mercedes con fecha del 20 de agosto,<ref target="#note1" xml:id="reference1">1</ref> a la que he decidido contestar inmediatamente, aunque sea con brevedad, ya que el cúmulo de ocupaciones me impiden enviarles una respuesta más detallada. [<hi rend="bold">2</hi>] Ya les había escrito sobre mi propósito de enviar a España una copia del prefacio de la Biblia, juzgado por vuestras mercedes, junto con un capítulo de la carta en el que vuestras mercedes expresan su juicio sobre este particular, es decir, en el que anteponen la brevedad del prefacio a tanta prolijidad, y de esto me ofrecían vuestras mercedes, a modo de ejemplo, el resumen del argumento de todo aquel prefacio que yo redacté, que se debe adornar con un estilo apropiado, como pretendían y ordenaban vuestras mercedes. [<hi rend="bold">3</hi>] Pues esto, yo mismo lo entendí claramente, y tengo asumido que lo debo aceptar junto con lo que me llegó hace poco de los censores de España; a estos envié no solo la opinión de vuestras mercedes sobre ello, sino también la de doce de las cartas que he recibido sobre este asunto, en parte desde Italia y Roma, en parte desde la Germania Superior, y en parte de hombres muy doctos y piadosos de esta región en que estamos, juntamente con varias censuras de este prefacio y diversos juicios sobre la brevedad, la prolijidad, el estilo y el contenido, para que el rey mismo y sus consejeros, tras sacar una conclusión a partir de la de vuestras mercedes, la de los demás y la suya propia, determinen de una vez qué camino debo emprender, ya que pareció conveniente que la autoridad de rematar el prefacio recayera en mí, como agente y legado del rey, pero que la decisión del contenido recayera en el rey mismo y en sus consejeros. [<hi rend="bold">4</hi>] Sin embargo, veo que es tan grande la diversidad de opiniones sobre este prefacio, que aunque conserve intacta esta atribución en virtud de mi derecho, con todo, no sabría qué decidir, estando por otra parte a punto de engendrar una monstruosidad si trato de amoldarme al ingenio de cada uno.  	</p>
+                  <p>[<hi rend="bold">5</hi>] Así pues, envío a España el prefacio en bruto y sin adornos, tal y como ha salido de las prensas, junto con otra copia en la que van anotadas en el margen todas las censuras y todos los capítulos de cartas que sobre este tema me han enviado desde España o Italia, la Germania Superior y la Inferior.<ref target="#note2" xml:id="reference2">2</ref> Todo lo cual, una vez que los consejeros los examinen en secreto (como suele hacerse) e informen al rey, indicarán por fin lo que se debe hacer. [<hi rend="bold">6</hi>] Y de este modo, considero que no hay ninguna necesidad de que yo redacte un nuevo prefacio, ni de que vuestras mercedes se tomen este trabajo, hasta que el rey mismo, cuya competencia es, me diga cómo debo proceder.</p>
+                  <p>[<hi rend="bold">7</hi>] Respecto a la parte del tratado <title>Sobre el lenguaje arcano</title> que entiendo que agrada menos a vuestras mercedes, deseo que me la devuelvan vuestras mercedes para someterla al juicio de otros varones doctos, como vuestras mercedes me aconsejan. [<hi rend="bold">8</hi>] Y también quiero que me digan vuestras mercedes si la lectura de aquel tratado, en alguna de sus partes, ha disgustado a alguno de los que lo han leído en lo que a la pureza de la religión católica se refiere, pues yo tengo especial cuidado en que esto no suceda. Y habida cuenta de que no tengo ninguna otra copa de ese tratado, me gustaría que se lo entregaran a un mensajero de confianza para que se lo lleve a Plantino.  </p>
+                  <closer>[<hi rend="bold">9</hi>] Adiós, y manténganme en la amistad de vuestras mercedes, lo que sin duda hacen, como corresponde a su humanidad.
+                     En Amberes, a 23 de agosto de 1570.  </closer>  </div>    </body>
+            <back>
+               <div type="notes">
+                  <note type="footnote" xml:id="note1">
+                     <ref target="#reference1">1</ref> Cf. carta nº <ref target="https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-08-20/">1570 08 20</ref>. </note> 
+                  <note type="footnote" xml:id="note2">
+                     <ref target="#reference2">2</ref> La provincia romana llamada Germania Inferior comprendía los territorios de los actuales Países Bajos, parte de Bélgica y el noroeste de Alemania, territorios todos a la orilla occidental del río Rin, que hacía de frontera con la Germania Superior.  </note>  
+               </div> 
+            </back>
+         </text>
+      </group>
+   </text>
+</TEI>
