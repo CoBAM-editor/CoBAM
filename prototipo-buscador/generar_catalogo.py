@@ -47,26 +47,55 @@ def unique(values: list[str]) -> list[str]:
     return result
 
 
-def get_years(date_el: ET.Element | None, title: str, filename: str) -> tuple[int | None, int | None]:
-    candidates: list[str] = []
-    if date_el is not None:
-        # Gather all available date attributes before deriving the interval:
-        # TEI often stores start/end in separate from/to values.
-        for attr in ("from", "notBefore", "when", "to", "notAfter", "until"):
-            value = date_el.get(attr)
-            if value:
-                candidates.append(value)
-    explicit = [
-        int(year)
-        for value in candidates
-        for year in re.findall(r"\b(?:15|16)\d{2}\b", value)
+def date_attribute_years(date_el: ET.Element | None) -> list[int]:
+    if date_el is None:
+        return []
+    values = [
+        date_el.get(attr, "")
+        for attr in ("from", "notBefore", "when", "to", "notAfter", "until")
+        if date_el.get(attr)
     ]
-    if explicit:
-        return min(explicit), max(explicit)
+    return [int(year) for value in values for year in re.findall(r"\b(?:15|16)\d{2}\b", value)]
+
+
+def visible_date_years(date_el: ET.Element | None, title: str, filename: str) -> list[int]:
+    # Prefer the human-readable date/title before the filename convention.
     for source in (text_of(date_el), title, filename):
         years = [int(y) for y in re.findall(r"\b(?:15|16)\d{2}\b", source)]
         if years:
-            return min(years), max(years)
+            return years
+    return []
+
+
+def date_warning(date_el: ET.Element | None, title: str, filename: str) -> str:
+    explicit = date_attribute_years(date_el)
+    visible = visible_date_years(date_el, title, filename)
+    if explicit and visible and not set(explicit).intersection(visible):
+        attrs = ", ".join(
+            f"{name}={date_el.get(name)}"
+            for name in ("from", "notBefore", "when", "to", "notAfter", "until")
+            if date_el is not None and date_el.get(name)
+        )
+        visible_years = ", ".join(map(str, sorted(set(visible))))
+        return (
+            f"El año normalizado en TEI ({attrs}) no coincide con la fecha legible "
+            f"en el título o el identificador ({visible_years}). Conviene revisar el XML."
+        )
+    return ""
+
+
+def get_years(date_el: ET.Element | None, title: str, filename: str) -> tuple[int | None, int | None]:
+    explicit = date_attribute_years(date_el)
+    visible = visible_date_years(date_el, title, filename)
+    # If the encoded date contradicts the published human-readable date, use the
+    # latter for the prototype's year facets, but preserve and flag the conflict.
+    if explicit and visible:
+        if not set(explicit).intersection(visible):
+            return min(visible), max(visible)
+        return min(explicit), max(explicit)
+    values = explicit or visible
+    if values:
+        return min(values), max(values)
     return None, None
 
 
@@ -423,6 +452,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     xml_id = root.get(f"{{{XML_NS}}}id", "")
     letter_code = first_text(root, ".//tei:publicationStmt/tei:idno[@type='CoBAM']")
     start_year, end_year = get_years(date_el, title, path.name)
+    chronology_warning = date_warning(date_el, title, path.name)
 
     source_el = root.find(".//tei:text[@type='source']", NS)
     if source_el is None:
@@ -526,6 +556,8 @@ def make_record(path: Path, root: ET.Element) -> dict:
     hand_notes = unique([text_of(el) for el in root.findall(".//tei:handNotes/tei:handNote", NS)])
     editor = first_text(root, ".//tei:fileDesc/tei:titleStmt/tei:editor")
     authors = unique([text_of(el) for el in root.findall(".//tei:fileDesc/tei:titleStmt/tei:author", NS)])
+    editorial_responsibility = first_text(root, ".//tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp")
+    responsible_person = first_text(root, ".//tei:fileDesc/tei:titleStmt/tei:respStmt/tei:name")
     revision = root.find(".//tei:revisionDesc", NS)
     edition_status = revision.get("status", "") if revision is not None else ""
     changes = root.findall(".//tei:revisionDesc/tei:change", NS)
@@ -552,6 +584,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "date_from": date_from,
         "date_to": date_to,
         "date_certainty": date_certainty,
+        "date_warning": chronology_warning,
         "start_year": start_year,
         "end_year": end_year,
         "sender": sender,
@@ -592,6 +625,8 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "hand_notes": hand_notes,
         "editor": editor,
         "authors": authors,
+        "editorial_responsibility": editorial_responsibility,
+        "responsible_person": responsible_person,
         "edition_status": edition_status,
         "revision_date": revision_date,
         "revision_who": revision_who,
