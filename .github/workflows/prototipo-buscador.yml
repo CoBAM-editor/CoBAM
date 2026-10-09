@@ -71,9 +71,11 @@ jobs:
               "id", "tei_id", "letter_code", "title", "date", "start_year", "end_year",
               "sender", "recipient", "origin", "destination", "language",
               "transcription", "translation", "annotations", "critical_apparatus",
-              "repositories", "archive_countries", "archive_cities", "shelfmarks",
-              "witnesses", "bibliography", "facsimiles", "has_images",
-              "has_transcription", "has_translation", "file", "url",
+              "commentary", "commentary_html", "source_marked_html", "source_clean_html",
+              "translation_html", "apparatus", "footnotes", "facsimile_items",
+              "has_apparatus", "has_footnotes", "repositories", "archive_countries",
+              "archive_cities", "shelfmarks", "witnesses", "bibliography", "facsimiles",
+              "has_images", "has_transcription", "has_translation", "file", "url", "published_url",
           }
           missing = [r.get("file", "(archivo sin nombre)") for r in records if not required.issubset(r)]
           assert not missing, f"Faltan campos en: {missing[:5]}"
@@ -84,7 +86,20 @@ jobs:
               if start is not None and end is not None:
                   assert start <= end, f"Intervalo cronológico invertido: {record['file']}"
               assert record["url"].startswith("https://"), f"URL de XML inesperada: {record['file']}"
-          print(f"Catálogo válido: {len(records)} cartas, identificadores únicos e intervalos comprobados.")
+              for key in ("source_marked_html", "source_clean_html", "translation_html", "commentary_html"):
+                  assert "<script" not in record[key].lower(), f"Marcado inesperado en {key}: {record['file']}"
+          sample = next((r for r in records if r["letter_code"].strip() == "1568 08 29"), None)
+          assert sample, "No se encuentra la carta de prueba 1568 08 29"
+          assert sample["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/"
+          assert sample["commentary_html"], "Falta el comentario de la carta de prueba"
+          assert sample["source_marked_html"] and sample["source_clean_html"], "Falta una de las vistas de la transcripción"
+          assert "tei-sic" in sample["source_marked_html"] and "tei-corr" in sample["source_marked_html"], "No se representan sic/corr en la vista marcada"
+          assert "tei-sic" not in sample["source_clean_html"], "La vista limpia no debe duplicar la lectura sic"
+          assert sample["translation_html"], "Falta la traducción de la carta de prueba"
+          assert sample["apparatus"], "No se ha extraído el aparato crítico"
+          assert sample["footnotes"], "No se han extraído las notas"
+          assert len(sample["facsimile_items"]) >= 2, "No se han enlazado los folios del documento"
+          print(f"Catálogo válido: {len(records)} cartas; vistas TEI, notas, aparato y facsímiles comprobados.")
           PY
 
       - name: Preparar catálogo embebido para la vista previa
