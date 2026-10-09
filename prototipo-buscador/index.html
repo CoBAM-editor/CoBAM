@@ -210,7 +210,7 @@ function haystackFor(r){
  if(scope==="abstract")return r.abstract||"";
  if(scope==="incipit")return r.incipit||"";
  if(scope==="annotations")return [r.annotations,r.critical_apparatus,(r.bibliography||[]).join(" "), (r.witnesses||[]).map(w=>w.description).join(" ")].join(" ");
- const metadata=[r.id,r.letter_code,r.title,r.date,r.sender,r.recipient,r.origin,r.destination,r.language,r.abstract,r.incipit,r.editor,(r.authors||[]).join(" "),(r.named_people||[]).join(" "),(r.named_places||[]).join(" "),(r.repositories||[]).join(" "),(r.archive_countries||[]).join(" "),(r.archive_cities||[]).join(" "),(r.shelfmarks||[]).join(" "),(r.organizations||[]).join(" "),(r.languages||[]).join(" "),(r.bibliography||[]).join(" ")].join(" ");
+ const metadata=[r.id,r.tei_id,r.letter_code,r.title,r.date,r.sender,r.recipient,r.origin,r.destination,r.language,r.abstract,r.incipit,r.editor,(r.authors||[]).join(" "),(r.named_people||[]).join(" "),(r.named_places||[]).join(" "),(r.repositories||[]).join(" "),(r.archive_countries||[]).join(" "),(r.archive_cities||[]).join(" "),(r.shelfmarks||[]).join(" "),(r.organizations||[]).join(" "),(r.languages||[]).join(" "),(r.bibliography||[]).join(" ")].join(" ");
  if(scope==="metadata")return metadata;
  return [metadata,r.text,r.transcription,r.translation,r.annotations,(r.bibliography||[]).join(" ")].join(" ");
 }
@@ -571,7 +571,7 @@ function csvCell(value){
 function exportFilteredCSV(){
  const records=sortRecords(LETTERS.filter(r=>matchesFilters(r)));
  const columns=[
-  ["Identificador",r=>r.id],["Código CoBAM",r=>r.letter_code],["Título",r=>r.title],["Fecha",r=>r.date],
+  ["ID del catálogo",r=>r.id],["Identificador XML-TEI",r=>r.tei_id],["Código CoBAM",r=>r.letter_code],["Título",r=>r.title],["Fecha",r=>r.date],
   ["Año inicial",r=>r.start_year],["Año final",r=>r.end_year],["Remitente",r=>r.sender],["Destinatario",r=>r.recipient],
   ["Lugar de origen",r=>r.origin],["Lugar de destino",r=>r.destination],["Idioma",r=>(r.languages||[r.language]).filter(Boolean)],
   ["Resumen",r=>r.abstract],["Incipit",r=>r.incipit],["Archivo",r=>(r.repositories||[])],
