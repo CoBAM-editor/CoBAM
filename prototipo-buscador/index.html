@@ -450,11 +450,97 @@ function renderActiveFilters(){
   b.type="button";b.title="Quitar filtro";b.addEventListener("click",()=>{x.set.delete(x.value);currentPage=1;renderAll()});chip.append(b);activeArea.append(chip);
  }
 }
+function renderCollectionStats(){
+ const years=LETTERS.flatMap(r=>[r.start_year,r.end_year]).filter(y=>Number.isFinite(y));
+ const min=years.length?Math.min(...years):null;
+ const max=years.length?Math.max(...years):null;
+ byId("stat-letters").textContent=LETTERS.length.toLocaleString("es-ES");
+ byId("stat-period").textContent=min===null?"—":(min===max?String(min):min+"–"+max);
+ byId("stat-images").textContent=LETTERS.filter(r=>r.has_images).length.toLocaleString("es-ES");
+ byId("stat-translations").textContent=LETTERS.filter(r=>r.has_translation).length.toLocaleString("es-ES");
+}
+function renderMiniChart(targetId,entries,emptyMessage="No hay datos para representar"){
+ const target=byId(targetId);target.replaceChildren();
+ const rows=entries.filter(x=>x.count>0);
+ if(!rows.length){target.append(el("div","chart-empty",emptyMessage));return}
+ const max=Math.max(...rows.map(x=>x.count),1);
+ for(const item of rows){
+  const row=el("div","chart-row");
+  const label=el("span","chart-label",item.label);label.title=item.label;
+  const track=el("div","chart-track");
+  const fill=el("div","chart-fill");fill.style.width=Math.max(2,item.count/max*100)+"%";fill.setAttribute("aria-label",item.count+" cartas");track.append(fill);
+  row.append(label,track,el("span","chart-count",String(item.count)));target.append(row);
+ }
+}
+function countRecords(values,limit=8){
+ const counts=new Map();
+ for(const value of values){
+  const label=(value||"").trim();
+  if(!label)continue;
+  const key=norm(label);
+  const old=counts.get(key)||{label,count:0};
+  old.count++;counts.set(key,old);
+ }
+ return [...counts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,"es")).slice(0,limit);
+}
+function renderAnalytics(records){
+ const yearCounts=new Map();
+ for(const r of records){
+  const start=Number.isFinite(r.start_year)?r.start_year:null;
+  const end=Number.isFinite(r.end_year)?r.end_year:start;
+  if(start===null&&end===null)continue;
+  const low=Math.min(start??end,end??start),high=Math.max(start??end,end??start);
+  // Count an uncertain multi-year letter once in every year it may cover.
+  // Cap malformed spans to avoid runaway chart expansion from bad metadata.
+  if(high-low>100)continue;
+  for(let year=low;year<=high;year++)yearCounts.set(year,(yearCounts.get(year)||0)+1);
+ }
+ const years=[...yearCounts.entries()].map(([year,count])=>({label:String(year),count}))
+  .sort((a,b)=>b.count-a.count||Number(a.label)-Number(b.label)).slice(0,12)
+  .sort((a,b)=>Number(a.label)-Number(b.label));
+ renderMiniChart("year-chart",years,"No hay años normalizados en estos resultados");
+ renderMiniChart("place-chart",countRecords(records.flatMap(r=>unique([r.origin,r.destination])),8),"No hay lugares de origen o destino");
+ renderMiniChart("people-chart",countRecords(records.flatMap(r=>unique([r.sender,r.recipient])),8),"No hay corresponsales identificados");
+ renderMiniChart("resource-chart",[
+  {label:"Con facsímil",count:records.filter(r=>r.has_images).length},
+  {label:"Con transcripción",count:records.filter(r=>r.has_transcription).length},
+  {label:"Con traducción",count:records.filter(r=>r.has_translation).length},
+  {label:"Con aparato/notas",count:records.filter(r=>Boolean(r.annotations||r.critical_apparatus)).length},
+  {label:"Con edición impresa",count:records.filter(r=>(r.bibliography||[]).length>0).length}
+ ],"No hay datos sobre los recursos");
+}
+function csvCell(value){
+ let textValue=Array.isArray(value)?value.join(" | "):(value??"").toString();
+ // Avoid spreadsheet formula execution in exported CSV files.
+ if(/^\\s*[=+@]/.test(textValue)||/^\\s*-\\d/.test(textValue))textValue="'"+textValue;
+ return '"'+textValue.replace(/"/g,'""').replace(/\\r?\\n/g," ")+'"';
+}
+function exportFilteredCSV(){
+ const records=sortRecords(LETTERS.filter(r=>matchesFilters(r)));
+ const columns=[
+  ["Identificador",r=>r.id],["Código CoBAM",r=>r.letter_code],["Título",r=>r.title],["Fecha",r=>r.date],
+  ["Año inicial",r=>r.start_year],["Año final",r=>r.end_year],["Remitente",r=>r.sender],["Destinatario",r=>r.recipient],
+  ["Lugar de origen",r=>r.origin],["Lugar de destino",r=>r.destination],["Idioma",r=>(r.languages||[r.language]).filter(Boolean)],
+  ["Resumen",r=>r.abstract],["Incipit",r=>r.incipit],["Archivo",r=>(r.repositories||[])],
+  ["Signatura",r=>(r.shelfmarks||[])],["Personas mencionadas",r=>(r.named_people||[])],["Lugares mencionados",r=>(r.named_places||[])],
+  ["Organizaciones",r=>(r.organizations||[])],["Estado editorial",r=>r.edition_status],["Con transcripción",r=>r.has_transcription?"Sí":"No"],
+  ["Con traducción",r=>r.has_translation?"Sí":"No"],["Con facsímil",r=>r.has_images?"Sí":"No"],["URL del XML",r=>r.url],
+  ["URL de facsímiles",r=>(r.facsimiles||[])]
+ ];
+ const rows=[columns.map(c=>c[0]).map(csvCell).join(";")];
+ for(const r of records)rows.push(columns.map(c=>csvCell(c[1](r))).join(";"));
+ const blob=new Blob(["\\uFEFF"+rows.join("\\r\\n")],{type:"text/csv;charset=utf-8"});
+ const url=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=url;a.download="CoBAM-resultados-"+new Date().toISOString().slice(0,10)+".csv";
+ document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+ byId("load-status").textContent="CSV descargado: "+records.length+" registros con los filtros actuales.";
+}
 function renderResults(){
  const filtered=sortRecords(LETTERS.filter(r=>matchesFilters(r)));
  const pages=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
  if(currentPage>pages)currentPage=pages;
  const pageItems=filtered.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
+ if(!byId("analytics").hidden)renderAnalytics(filtered);
  byId("result-count").textContent=filtered.length+" "+(filtered.length===1?"carta":"cartas");
  byId("result-subtitle").textContent="de "+LETTERS.length+" registros · Página "+currentPage+" de "+pages;
  resultsArea.replaceChildren();
@@ -474,6 +560,15 @@ byId("combine-people").addEventListener("change",()=>{currentPage=1;renderAll()}
 byId("year-from").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("year-to").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("sort").addEventListener("change",()=>{currentPage=1;renderResults()});
+byId("scope").addEventListener("change",()=>{currentPage=1;renderAll()});
+byId("toggle-analytics").addEventListener("click",()=>{
+ const panel=byId("analytics"),button=byId("toggle-analytics");
+ panel.hidden=!panel.hidden;
+ button.setAttribute("aria-pressed",String(!panel.hidden));
+ button.textContent=panel.hidden?"Visualizar resultados":"Ocultar visualizaciones";
+ if(!panel.hidden)renderAnalytics(sortRecords(LETTERS.filter(r=>matchesFilters(r))));
+});
+byId("export-results").addEventListener("click",exportFilteredCSV);
 byId("clear-filters").addEventListener("click",()=>{
  appliedQuery="";byId("q").value="";byId("year-from").value="";byId("year-to").value="";
  for(const set of Object.values(selected))set.clear();
@@ -481,7 +576,7 @@ byId("clear-filters").addEventListener("click",()=>{
  for(const key of Object.keys(facetSearches))delete facetSearches[key];
  showAllFacets.clear();currentPage=1;renderAll();
 });
-buildFacets();renderResults();
+renderCollectionStats();buildFacets();renderResults();
 if(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length){
  status.textContent="Catálogo completo cargado: "+LETTERS.length+" cartas.";
 }else{
