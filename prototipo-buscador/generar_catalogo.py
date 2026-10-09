@@ -184,7 +184,7 @@ def tei_inline_html(
             "number": str(number),
             "lemma": lemma_text,
             "lemma_witness": witness.replace("#", "").strip(),
-            "readings": json.dumps(readings, ensure_ascii=False),
+            "readings": readings,
         })
         return f'<span class="tei-app-lemma">{lemma_html}<sup><a href="#apparatus-{number}" aria-label="Variante {number}">[{number}]</a></sup></span>'
 
@@ -207,16 +207,16 @@ def tei_inline_html(
     if kind == "ref":
         target = element.get("target", "")
         label = children(element)
+        xml_id = element.get(f"{{{XML_NS}}}id", "")
+        anchor = f' id="ref-{html_escape(xml_id)}"' if xml_id else ""
         if target.startswith("#"):
             target_id = target[1:]
             if target_id.startswith("note"):
-                return f'<sup class="tei-note-ref"><a href="#note-{html_escape(target_id)}">{label}</a></sup>'
+                return f'<sup class="tei-note-ref"{anchor}><a href="#note-{html_escape(target_id)}">{label}</a></sup>'
             if target_id.startswith("reference"):
-                return f'<a class="tei-note-backlink" href="#ref-{html_escape(target_id)}">{label}</a>'
+                return f'<a class="tei-note-backlink"{anchor} href="#ref-{html_escape(target_id)}">{label}</a>'
         if target.startswith(("https://", "http://")):
-            return f'<a href="{html_escape(target)}" target="_blank" rel="noopener noreferrer">{label}</a>'
-        xml_id = element.get(f"{{{XML_NS}}}id", "")
-        anchor = f' id="ref-{html_escape(xml_id)}"' if xml_id else ""
+            return f'<a{anchor} href="{html_escape(target)}" target="_blank" rel="noopener noreferrer">{label}</a>'
         return f'<span{anchor}>{label}</span>'
 
     if kind == "expan":
@@ -225,7 +225,7 @@ def tei_inline_html(
     if kind == "ex":
         return f'<span class="tei-ex">{children(element)}</span>'
     if kind == "sic":
-        return f'<span class="tei-sic">{children(element)}</span>' if mode != "clean" else ""
+        return f'<span class="tei-sic">{children(element)}</span>'
     if kind == "corr":
         return f'<span class="tei-corr">{children(element)}</span>'
     if kind == "orig":
@@ -293,6 +293,64 @@ def tei_inline_html(
     if kind in {"body", "front", "back", "text", "group", "listWit", "witness"}:
         return children(element)
     return children(element)
+
+
+
+def tei_contents_html(
+    element: ET.Element,
+    *,
+    mode: str,
+    facsimile_map: dict[str, str],
+    apparatus: list[dict],
+) -> str:
+    """Render an element's children without treating its own tag as a wrapper."""
+    result = html_escape(element.text)
+    for child in list(element):
+        result += tei_inline_html(child, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus)
+        result += html_escape(child.tail)
+    return result
+
+
+def source_details(root: ET.Element, source_el: ET.Element | None, translation_el: ET.Element | None) -> dict:
+    graphics: dict[str, str] = {}
+    for graphic in root.findall(".//tei:facsimile/tei:graphic", NS):
+        xml_id = graphic.get(f"{{{XML_NS}}}id", "")
+        url = clean(graphic.get("url", ""))
+        if xml_id and url.startswith(("https://", "http://")):
+            graphics[xml_id] = url
+
+    source_body = source_el.find("tei:body", NS) if source_el is not None else None
+    translation_body = translation_el.find("tei:body", NS) if translation_el is not None else None
+    source_front = source_el.find("tei:front", NS) if source_el is not None else None
+
+    commentary_html, _ = render_tei_fragment(source_front, root, "clean")
+    commentary = clean(" ".join(plain_tei_text(p) for p in source_front.findall(".//tei:p", NS))) if source_front is not None else ""
+    source_marked_html, apparatus = render_tei_fragment(source_body, root, "marked")
+    source_clean_html, _ = render_tei_fragment(source_body, root, "clean")
+    translation_html, _ = render_tei_fragment(translation_body, root, "clean")
+
+    footnotes = []
+    for note in root.findall(".//tei:back//tei:note[@type='footnote']", NS):
+        note_id = note.get(f"{{{XML_NS}}}id", "")
+        footnotes.append({
+            "id": note_id,
+            "text": plain_tei_text(note),
+            "html": tei_contents_html(note, mode="clean", facsimile_map=graphics, apparatus=[]),
+        })
+
+    facsimile_items = extract_facsimile_items(root, graphics)
+    return {
+        "commentary": commentary,
+        "commentary_html": commentary_html,
+        "source_marked_html": source_marked_html,
+        "source_clean_html": source_clean_html,
+        "translation_html": translation_html,
+        "apparatus": apparatus,
+        "footnotes": footnotes,
+        "facsimile_items": facsimile_items,
+        "has_apparatus": bool(apparatus),
+        "has_footnotes": bool(footnotes),
+    }
 
 
 def extract_facsimile_items(root: ET.Element, facsimile_map: dict[str, str]) -> list[dict[str, str]]:
@@ -366,12 +424,14 @@ def make_record(path: Path, root: ET.Element) -> dict:
     transcription = body_text(source_el)
     translation_el = root.find(".//tei:text[@type='translation']", NS)
     translation = body_text(translation_el)
-    # Notes embedded in the edited text are treated as annotation/searchable notes,
-    # kept separate from the header abstract and incipit.
+    reader_details = source_details(root, source_el, translation_el)
+    # Index editorial notes and variants for the free-text search as well as for
+    # the dedicated reader view.
     notes_in_text = unique([text_of(n) for n in root.findall(".//tei:text//tei:note", NS)])
     apparatus_entries = unique([text_of(a) for a in root.findall(".//tei:text//tei:app", NS)])
     critical_apparatus = " ".join(apparatus_entries)
     annotations = " ".join(notes_in_text + apparatus_entries)
+    commentary = reader_details["commentary"]
 
     def entity_values(paths: list[str]) -> list[str]:
         return unique([text_of(el) for xpath in paths for el in root.findall(xpath, NS)])
@@ -468,6 +528,12 @@ def make_record(path: Path, root: ET.Element) -> dict:
     revision_who = last_change.get("who", "") if last_change is not None else ""
 
     url = "https://github.com/CoBAM-editor/CoBAM/blob/main/" + quote(path.name, safe="")
+    clean_letter_code = letter_code.strip(" []").strip()
+    published_url = ""
+    simple_date = re.fullmatch(r"(\\d{4})\\s+(\\d{2})\\s+(\\d{2}[a-z]?)", clean_letter_code, re.I)
+    if simple_date:
+        slug = "-".join(simple_date.groups()).lower()
+        published_url = "https://lacorrespondenciadebenitoariasmontano.online/es_es/" + slug + "/"
     record = {
         # Use the source filename as a unique catalogue key. Preserve xml:id
         # separately: legacy TEI identifiers can repeat across related files.
@@ -491,12 +557,22 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "language_code": language_code,
         "language_codes": language_codes,
         "abstract": abstract,
+        "commentary": commentary,
+        "commentary_html": reader_details["commentary_html"],
         "incipit": incipit,
         "transcription": transcription,
         "translation": translation,
+        "source_marked_html": reader_details["source_marked_html"],
+        "source_clean_html": reader_details["source_clean_html"],
+        "translation_html": reader_details["translation_html"],
+        "apparatus": reader_details["apparatus"],
+        "footnotes": reader_details["footnotes"],
+        "facsimile_items": reader_details["facsimile_items"],
+        "has_apparatus": reader_details["has_apparatus"],
+        "has_footnotes": reader_details["has_footnotes"],
         "annotations": annotations,
         "critical_apparatus": critical_apparatus,
-        "text": " ".join(x for x in (transcription, translation, abstract, incipit, annotations, critical_apparatus) if x),
+        "text": " ".join(x for x in (transcription, translation, abstract, commentary, incipit, annotations, critical_apparatus) if x),
         "named_people": named_people,
         "named_places": all_places,
         "organizations": organizations,
@@ -519,6 +595,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "has_translation": len(translation.strip()) > 0,
         "file": path.name,
         "url": url,
+        "published_url": published_url,
     }
     record["archive_labels"] = unique(repositories + archive_countries + archive_cities)
     record["shelfmark_labels"] = unique(shelfmarks)
