@@ -62,7 +62,7 @@ jobs:
           records = json.loads(path.read_text(encoding="utf-8"))
           assert records, "El catálogo está vacío"
           required = {
-              "id", "letter_code", "title", "date", "start_year", "end_year",
+              "id", "tei_id", "letter_code", "title", "date", "start_year", "end_year",
               "sender", "recipient", "origin", "destination", "language",
               "transcription", "translation", "annotations", "critical_apparatus",
               "repositories", "archive_countries", "archive_cities", "shelfmarks",
