@@ -90,9 +90,16 @@ def body_text(text_el: ET.Element | None) -> str:
     body = text_el.find("tei:body", NS)
     if body is None:
         return plain_tei_text(text_el)
-    # Include addresses, marginal annotations, openers, closers and all body
-    # paragraphs in the searchable plain-text layer.
-    return clean(plain_tei_text(body))
+    # Index all textual blocks, including address/marginal material, openers
+    # and closers, without duplicating critical readings.
+    block_tags = {"p", "ab", "opener", "closer", "salute", "signed", "dateline"}
+    blocks = [
+        clean(plain_tei_text(node))
+        for node in body.iter()
+        if local_name(node) in block_tags
+    ]
+    blocks = [block for block in blocks if block]
+    return "\n\n".join(blocks) if blocks else clean(plain_tei_text(body))
 
 
 
