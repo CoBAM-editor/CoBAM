@@ -12,14 +12,17 @@ Buscador experimental de la correspondencia de Benito Arias Montano, inspirado e
 - Rango cronológico por año, conservando los intervalos de fecha cuando constan en el XML.
 - Facetas con recuentos dinámicos: remitente, destinatario, corresponsales (combinados), lugares de origen/destino, idioma, país y localidad del archivo, institución, signatura, personas y lugares mencionados, organizaciones y referencias impresas.
 - Disponibilidad documental: cartas con facsímil, con transcripción, con traducción, con aparato/notas y con edición impresa citada.
-- Resultados ordenables y paginados, con resumen e incipit; un lector desplegable presenta transcripción, traducción, notas/aparato crítico y facsímiles cuando están codificados.
+- Resultados ordenables y paginados, con resumen e incipit, enlace a la edición crítica interna, acceso al XML y enlace a la edición publicada cuando hay un identificador simple de fecha.
+- Vista de lectura separada, basada en la página WordPress de ejemplo: metadatos y testimonios, resumen del catálogo, comentario editorial, galería ordenada de facsímiles y tres paneles para texto marcado TEI/aparato, texto limpio y traducción/notas.
+- El renderizador respeta correcciones `sic/corr`, variantes `app/lem/rdg`, expansiones editoriales, saltos de folio, notas y enlaces externos seguros. El marcado se convierte desde TEI a un subconjunto controlado de HTML; no se ejecuta HTML arbitrario de los XML.
+- Aviso de revisión cuando la fecha normalizada en los atributos TEI discrepa de la fecha legible, sin alterar el XML fuente.
 - Panel de visualización de los resultados (años, lugares, corresponsales y recursos digitales), red interactiva de relaciones entre corresponsales —con filtrado al pulsar en una persona— y exportación CSV del conjunto filtrado.
 - Indicadores del catálogo, filtros combinables, chips para retirar filtros, panel de metadatos ampliados y diseño adaptable a móvil.
 - Enlaces al XML original y a los facsímiles disponibles.
 
 ## Campos derivados de TEI-XML
 
-El generador usa el nombre del archivo como clave interna única del catálogo y conserva el valor original `xml:id` en un campo separado, sin modificar el XML fuente. Lee los encabezados TEI y las capas textuales que ya están codificadas: `correspAction` (remitente, destinatario, lugares y fecha), `langUsage`, notas `abstract` e `incipit`, cuerpos `text[@type='source']` y `text[@type='translation']`, nombres y lugares mencionados, testimonios manuscritos, signaturas, bibliografía, `facsimile/graphic`, estado editorial y fecha de revisión.
+El generador usa el nombre del archivo como clave interna única del catálogo y conserva el valor original `xml:id` en un campo separado, sin modificar el XML fuente. Lee los encabezados TEI y las capas textuales que ya están codificadas: `correspAction` (remitente, destinatario, lugares y fecha), `langUsage`, notas `abstract` e `incipit`, `front` (comentario editorial), cuerpos `text[@type='source']` y `text[@type='translation']`, nombres y lugares mencionados, testimonios manuscritos, signaturas, bibliografía, `facsimile/graphic`, aparato `app/lem/rdg`, notas `back/note`, estado editorial y datos de responsabilidad.
 
 No se inventan metadatos que no estén disponibles; los campos ausentes quedan vacíos. El buscador usa la fecha como intervalo de años cuando los datos permiten recuperarlo. Las fechas incompletas requieren revisión editorial para poder filtrar con mayor precisión.
 
@@ -31,7 +34,7 @@ Requiere Python 3, sin instalar dependencias. Desde la raíz del repositorio:
 python prototipo-buscador/generar_catalogo.py
 ```
 
-El programa escribe `prototipo-buscador/catalogo.json` y muestra cuántas cartas tienen transcripción, traducción y facsímil. Lee los XML de la raíz del repositorio sin modificarlos.
+El programa escribe `prototipo-buscador/catalogo.json` y muestra cuántas cartas tienen transcripción, traducción y facsímil. Lee los XML de la raíz del repositorio sin modificarlos. La clave interna del catálogo es el nombre base del fichero, mientras que `xml:id` se conserva por separado porque hay registros históricos con identificadores repetidos.
 
 La acción de GitHub genera un `catalog-data.js` para que GitHub Pages pueda cargar el catálogo completo sin depender de llamadas `fetch` bloqueadas cuando la página se abre como sitio estático.
 
@@ -48,7 +51,7 @@ Abre `http://localhost:8000`.
 
 ## Validación e integración
 
-GitHub Actions comprueba la sintaxis del generador, prueba el cálculo de intervalos y la conservación de párrafos, genera y valida el catálogo, comprueba la sintaxis JavaScript y publica la vista previa de Pages en la rama de pruebas. El ZIP de prueba se conserva como artefacto de Actions.
+GitHub Actions comprueba la sintaxis del generador y JavaScript, prueba fechas y párrafos, genera el catálogo, valida las capas TEI de la carta 1568 08 29 (texto marcado/limpio, traducción, aparato, notas y folios) y publica la vista previa de Pages en la rama de pruebas. El ZIP de prueba se conserva como artefacto de Actions.
 
 Antes de integrar en WordPress:
 1. Revisar una muestra de resultados con criterios históricos y filológicos.
