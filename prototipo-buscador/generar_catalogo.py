@@ -50,14 +50,14 @@ def get_years(date_el: ET.Element | None, title: str, filename: str) -> tuple[in
                 candidates.append(value)
     # Prefer explicit date attributes; otherwise use human-readable date/title,
     # then the date convention used in CoBAM filenames.
-    explicit = [int(m.group(1)) for value in candidates for m in [re.search(r"\\b(15\\d{2}|16\\d{2})\\b", value)] if m]
+    explicit = [int(m.group(1)) for value in candidates for m in [re.search(r"\b(15\d{2}|16\d{2})\b", value)] if m]
     if explicit:
         start = explicit[0]
         end = explicit[1] if len(explicit) > 1 else start
         return min(start, end), max(start, end)
 
     for source in (text_of(date_el), title, filename):
-        years = [int(y) for y in re.findall(r"\\b(?:15|16)\\d{2}\\b", source)]
+        years = [int(y) for y in re.findall(r"\b(?:15|16)\d{2}\b", source)]
         if years:
             return min(years), max(years)
     return None, None
