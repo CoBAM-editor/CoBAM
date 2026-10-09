@@ -10,6 +10,8 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-catalog:
@@ -62,7 +64,24 @@ jobs:
           cp -r prototipo-buscador build-prototipo/
           cd build-prototipo && zip -r ../prototipo-buscador-CoBAM.zip prototipo-buscador
 
-      - name: Publicar paquete como artefacto de la ejecución
+      - name: Configurar GitHub Pages para la vista previa
+        if: github.event_name == 'push'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Preparar sitio de vista previa
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: prototipo-buscador
+
+      - name: Publicar vista previa independiente
+        if: github.event_name == 'push'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Publicar paquete ZIP descargable
         uses: actions/upload-artifact@v4
         with:
           name: prototipo-buscador-CoBAM
