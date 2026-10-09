@@ -512,8 +512,8 @@ function renderAnalytics(records){
 function csvCell(value){
  let textValue=Array.isArray(value)?value.join(" | "):(value??"").toString();
  // Avoid spreadsheet formula execution in exported CSV files.
- if(/^\\s*[=+@]/.test(textValue)||/^\\s*-\\d/.test(textValue))textValue="'"+textValue;
- return '"'+textValue.replace(/"/g,'""').replace(/\\r?\\n/g," ")+'"';
+ if(/^\s*[=+\-@]/.test(textValue))textValue="'"+textValue;
+ return '"'+textValue.replace(/"/g,'""').replace(/\r?\n/g," ")+'"';
 }
 function exportFilteredCSV(){
  const records=sortRecords(LETTERS.filter(r=>matchesFilters(r)));
@@ -529,10 +529,10 @@ function exportFilteredCSV(){
  ];
  const rows=[columns.map(c=>c[0]).map(csvCell).join(";")];
  for(const r of records)rows.push(columns.map(c=>csvCell(c[1](r))).join(";"));
- const blob=new Blob(["\\uFEFF"+rows.join("\\r\\n")],{type:"text/csv;charset=utf-8"});
+ const blob=new Blob(["\uFEFF"+rows.join("\r\n")],{type:"text/csv;charset=utf-8"});
  const url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="CoBAM-resultados-"+new Date().toISOString().slice(0,10)+".csv";
- document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+ document.body.append(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),1000);
  byId("load-status").textContent="CSV descargado: "+records.length+" registros con los filtros actuales.";
 }
 function renderResults(){
