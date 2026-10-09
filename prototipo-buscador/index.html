@@ -146,6 +146,118 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
 @media(max-width:930px){.search-layout{grid-template-columns:minmax(240px,290px) minmax(0,1fr)}.top-inner,main{padding-left:18px;padding-right:18px}.result-meta{grid-template-columns:1fr}}
 @media(max-width:720px){.top-inner{align-items:flex-start}.edition-tag{display:none}.search-layout{grid-template-columns:1fr}.sidebar{order:0}.content-panel{order:1}.facet-options{max-height:220px}.results-list{padding:0 14px}.results-header,.active-filters{padding-left:14px;padding-right:14px}.detail-grid{grid-template-columns:1fr}}
 @media(max-width:420px){.top-inner{padding:16px 13px}.brand-mark{width:37px;height:37px}main{padding:0 10px;margin-top:18px}.query-row{flex-direction:column}.query-row .primary{width:100%}.result-controls{width:100%;justify-content:space-between}}
+/* Lectura editorial integrada: diseño adaptable y lectura por capas */
+[hidden]{display:none!important}
+:root{--reader-text-scale:1}
+body:has(#letter-view:not([hidden])){background:#f2f1ed}
+.letter-view{max-width:1320px;padding:0 30px 54px}
+.reader-topbar{position:sticky;top:0;z-index:15;margin:0 -30px 24px;padding:13px 30px;background:rgba(248,248,245,.94);border-bottom:1px solid rgba(205,211,209,.85);backdrop-filter:blur(14px)}
+.reader-topbar>span{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:750;color:#68757b}
+.reader-back{border-radius:999px;padding:9px 15px;display:inline-flex;gap:7px;align-items:center;transition:background .16s,border-color .16s}
+.reader-back:hover{background:#f0e8e5;border-color:#cbb2ac}
+.letter-hero{position:relative;overflow:hidden;padding:clamp(24px,4vw,44px);border:1px solid #dddcd6;border-radius:16px;background:linear-gradient(120deg,#fff 0%,#fff 63%,#f7f1eb 100%);box-shadow:0 8px 30px rgba(33,46,53,.035)}
+.letter-hero:after{content:"";position:absolute;width:8px;inset:0 auto 0 0;background:var(--accent)}
+.letter-kicker{letter-spacing:.15em}
+.letter-hero h2{max-width:950px;font-size:clamp(1.8rem,3.5vw,3rem);letter-spacing:-.025em}
+.letter-date{font-size:1.05rem}
+.letter-hero-meta{gap:10px 22px}
+.letter-hero-meta>span{background:#f4f5f2;border:1px solid #e3e5e0;border-radius:999px;padding:6px 10px;font-size:.78rem;color:#4b5c65}
+.reader-action{border-radius:999px;padding:10px 15px;transition:transform .15s,background .15s}
+.reader-action:hover{transform:translateY(-1px);text-decoration:none}
+.reader-action.primary{box-shadow:0 3px 9px rgba(132,63,52,.14)}
+.reader-intro-grid{grid-template-columns:minmax(245px,.72fr) minmax(0,1.8fr);gap:16px;margin-bottom:18px}
+.reader-card{border-radius:12px;border-color:#e0e1db;box-shadow:0 4px 15px rgba(33,46,53,.025)}
+.reader-card-head{background:#f4f4ef;padding:13px 17px;letter-spacing:.07em}
+.reader-card-body{padding:18px}
+.reader-metadata{gap:13px}
+.metadata-item{font-size:.83rem;line-height:1.5}
+.metadata-item strong{letter-spacing:.07em}
+.reader-commentary p{font-size:.95rem;line-height:1.8;text-align:left}
+.reader-images{padding:20px;border:1px solid #e0e1db;border-radius:12px;margin-bottom:25px;background:#fff;box-shadow:0 4px 15px rgba(33,46,53,.025)}
+.reader-section-title{font-size:1.35rem;letter-spacing:-.015em}
+.reader-image-grid{grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}
+.reader-image{border:1px solid #e3e3dc;border-radius:9px;padding:8px;background:#fbfbf8;transition:transform .18s,box-shadow .18s}
+.reader-image:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(33,46,53,.09)}
+.reader-image a{height:220px;border-radius:5px;cursor:zoom-in;background:#f0eee8}
+.reader-image img{object-fit:contain}
+.reader-image figcaption{font-size:.76rem;padding:9px 3px 3px}
+.reader-edition{margin-top:24px;scroll-margin-top:74px}
+.reader-edition-head{align-items:center;margin-bottom:15px}
+.reader-edition-head h3{font-size:clamp(1.4rem,2vw,1.8rem);letter-spacing:-.02em}
+.reader-edition-head>div:first-child>p:last-child{font-size:.83rem;color:var(--muted);margin:6px 0 0;max-width:660px}
+.reader-font-tools{display:flex;align-items:center;gap:5px;color:var(--muted);font-size:.74rem;white-space:nowrap}
+.reader-font-tools>span{margin-right:5px}
+.reader-tool-button{height:35px;min-width:35px;padding:0 9px;border:1px solid #d6dad6;border-radius:8px;background:#fff;color:var(--ink);font-weight:750;cursor:pointer}
+.reader-tool-button:hover{background:#f0e7e4;border-color:#c7aaa3}
+.edition-tabs{display:flex;gap:5px;padding:5px;background:#e9e9e3;border:1px solid #dfe0d8;border-radius:12px 12px 0 0;overflow-x:auto}
+.edition-tab{display:flex;align-items:center;gap:10px;justify-content:center;flex:1;min-width:max-content;padding:12px 16px;background:transparent;border:1px solid transparent;border-radius:8px;color:#5d696d;font-weight:750;font-size:.84rem;cursor:pointer;transition:background .16s,color .16s,box-shadow .16s}
+.edition-tab span{font-size:.66rem;letter-spacing:.05em;opacity:.65}
+.edition-tab[aria-selected="true"]{background:#fff;border-color:#e2e2dc;color:var(--accent-dark);box-shadow:0 2px 5px rgba(33,46,53,.055)}
+.edition-columns{display:block}
+.edition-pane{border:1px solid #dedfd9;border-top:0;border-radius:0 0 12px 12px;box-shadow:0 6px 24px rgba(33,46,53,.035);overflow:visible}
+.edition-pane-intro{display:flex;gap:20px;align-items:flex-end;justify-content:space-between;padding:18px 25px;background:#fcfcf9;border-bottom:1px solid #e6e5df}
+.edition-pane-intro h4{font:600 1.12rem Georgia,serif;margin:4px 0 0;letter-spacing:-.01em}
+.edition-pane-intro p{font-size:.76rem;line-height:1.55;color:var(--muted);max-width:420px;margin:0}
+.edition-pane-kicker{display:block;font-size:.64rem;font-weight:800;letter-spacing:.14em;color:var(--accent)}
+.edition-content{padding:clamp(22px,4vw,48px);font-size:calc(.98rem * var(--reader-text-scale));line-height:1.9;max-height:none;overflow-wrap:break-word}
+.edition-content p{margin:0 0 1.12em;text-align:left}
+.edition-content .tei-pagebreak{margin:24px 0}
+.edition-content .tei-pagebreak a{display:inline-flex;align-items:center;gap:7px;padding:5px 11px;border-radius:999px;background:#f4f4ef;border-color:#e1e2db;font-size:.72rem;font-weight:750;cursor:zoom-in}
+.edition-content .tei-block-address,.edition-content .tei-block-anotation{border-radius:8px;padding:14px 16px;margin-bottom:20px}
+.edition-content .tei-opener{margin-bottom:20px}
+.edition-content .tei-sic{border-radius:3px;padding:0 2px}
+.edition-content .tei-corr{border-radius:3px;padding:0 2px}
+.edition-content .tei-expansion{border-bottom-style:dotted}
+.edition-content .tei-entity{cursor:help;border-bottom:1px dotted #abb8ba}
+.edition-content .tei-app-lemma{border-bottom:1px dotted #ad857d}
+.edition-content .tei-app-lemma sup a{display:inline-block;padding:0 4px;border-radius:4px;background:#f6e9e6;font-size:.68rem}
+.edition-content .tei-app-lemma sup a:hover{background:#e9d0c9;text-decoration:none}
+.reader-apparatus,.reader-footnotes{margin:0;padding:24px clamp(22px,4vw,48px);border-top:1px solid #e3e3dc;background:#f8f7f2;border-radius:0 0 12px 12px}
+.reader-apparatus h5,.reader-footnotes h5{font-size:.72rem;letter-spacing:.13em}
+.apparatus-item,.footnote-item{padding:13px 0;font-size:.84rem;line-height:1.65}
+.apparatus-item .lemma{color:#293d4c}
+.apparatus-item:target,.apparatus-item.is-current,.footnote-item:target{background:#fff6de;outline:2px solid #e5c67d;outline-offset:5px;border-radius:3px}
+.tei-note-ref a,.tei-note-backlink{display:inline-block;padding:0 3px;border-radius:4px;background:#f1e9e4;text-decoration:none!important;font-weight:750}
+.reader-backlinks{justify-content:space-between;padding:14px 3px;border-top:1px solid #dedfd9;margin-top:13px}
+.facsimile-lightbox{width:min(1180px,96vw);max-width:96vw;max-height:94vh;padding:18px 20px 15px;border:1px solid #ddd;border-radius:14px;background:#fff;color:var(--ink);box-shadow:0 20px 80px rgba(0,0,0,.32)}
+.facsimile-lightbox::backdrop{background:rgba(16,25,30,.78);backdrop-filter:blur(3px)}
+.lightbox-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #e5e5df;padding-bottom:10px}
+.lightbox-caption{margin:4px 0 0;font:600 1rem Georgia,serif}
+.lightbox-close{height:38px;width:38px;border-radius:50%;font-size:1rem}
+.lightbox-image-area{display:grid;grid-template-columns:46px minmax(0,1fr) 46px;gap:13px;align-items:center;min-height:140px;padding:14px 0}
+.lightbox-image-area img{display:block;max-width:100%;max-height:76vh;width:auto;height:auto;object-fit:contain;justify-self:center;border-radius:4px}
+.lightbox-nav{width:44px;height:44px;border:1px solid #d8ddd9;border-radius:50%;background:#f6f7f3;font-size:1.3rem;cursor:pointer;color:var(--ink)}
+.lightbox-nav:disabled{opacity:.25;cursor:default}
+.lightbox-hint{text-align:center;color:var(--muted);font-size:.73rem;margin:0}
+.apparatus-preview{position:fixed;z-index:40;max-width:min(370px,calc(100vw - 24px));max-height:45vh;overflow:auto;padding:13px 15px;border:1px solid #d4d4cc;border-radius:9px;background:#fffdf7;color:var(--ink);box-shadow:0 12px 36px rgba(24,36,41,.2);font-size:.79rem;line-height:1.55;pointer-events:none}
+.apparatus-preview strong{display:block;color:var(--accent-dark);font:600 .95rem Georgia,serif;margin-bottom:5px}
+.apparatus-preview .preview-reading{margin-top:4px}
+@media(max-width:800px){
+ .letter-view{padding:0 16px 38px}
+ .reader-topbar{margin:0 -16px 16px;padding:12px 16px}
+ .reader-intro-grid{grid-template-columns:1fr}
+ .edition-pane-intro{display:block;padding:17px 20px}
+ .edition-pane-intro p{max-width:none;margin-top:9px}
+ .edition-content{padding:23px 21px}
+ .reader-apparatus,.reader-footnotes{padding:22px 21px}
+ .reader-image-grid{grid-template-columns:repeat(auto-fit,minmax(125px,1fr))}
+ .reader-image a{height:170px}
+}
+@media(max-width:560px){
+ .reader-topbar>span{font-size:.63rem;max-width:42%;text-align:right}
+ .letter-hero-meta{display:grid;grid-template-columns:1fr}
+ .reader-edition-head{align-items:flex-start}
+ .reader-font-tools{margin-top:13px}
+ .edition-tabs{border-radius:10px 10px 0 0}
+ .edition-tab{padding:10px 12px;font-size:.77rem}
+ .edition-tab span{display:none}
+ .edition-content{font-size:calc(.94rem * var(--reader-text-scale));line-height:1.78;padding:20px 17px}
+ .lightbox-image-area{grid-template-columns:32px minmax(0,1fr) 32px;gap:5px}
+ .lightbox-nav{height:32px;width:32px;font-size:1rem}
+ .facsimile-lightbox{padding:13px 10px 12px}
+ .lightbox-image-area img{max-height:72vh}
+}
+
 </style>
 </head>
 <body>
@@ -263,32 +375,68 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
     </section>
     <section class="reader-edition" id="edicion">
       <div class="reader-edition-head">
-        <h3>Texto y traducción</h3>
-        <p>Vista basada en las capas y el marcado presentes en el XML-TEI.</p>
+        <div>
+          <p class="reader-subheading">LECTURA Y ANÁLISIS</p>
+          <h3>La carta, en una sola lectura</h3>
+          <p>Alterna entre el texto con intervención editorial, la lectura limpia y la traducción con sus notas.</p>
+        </div>
+        <div class="reader-font-tools" aria-label="Tamaño del texto">
+          <span>Lectura</span>
+          <button type="button" id="reader-font-smaller" class="reader-tool-button" aria-label="Reducir tamaño del texto" title="Reducir texto">A−</button>
+          <button type="button" id="reader-font-reset" class="reader-tool-button" aria-label="Restablecer tamaño del texto" title="Tamaño normal">A</button>
+          <button type="button" id="reader-font-larger" class="reader-tool-button" aria-label="Aumentar tamaño del texto" title="Aumentar texto">A+</button>
+        </div>
       </div>
-      <div class="edition-columns">
-        <article class="edition-pane">
-          <h4>Texto y aparato crítico (visualización TEI)</h4>
+      <div class="edition-tabs" role="tablist" aria-label="Vistas de la edición">
+        <button type="button" class="edition-tab" id="tab-marked" role="tab" data-edition-tab="marked" aria-controls="pane-marked" aria-selected="true">Texto crítico <span>01</span></button>
+        <button type="button" class="edition-tab" id="tab-clean" role="tab" data-edition-tab="clean" aria-controls="pane-clean" aria-selected="false" tabindex="-1">Texto limpio <span>02</span></button>
+        <button type="button" class="edition-tab" id="tab-translation" role="tab" data-edition-tab="translation" aria-controls="pane-translation" aria-selected="false" tabindex="-1">Traducción y notas <span>03</span></button>
+      </div>
+      <div class="edition-columns" id="edition-panels">
+        <article class="edition-pane" id="pane-marked" data-edition-pane="marked" role="tabpanel" aria-labelledby="tab-marked">
+          <div class="edition-pane-intro">
+            <div><span class="edition-pane-kicker">CAPA EDITORIAL</span><h4>Texto y aparato crítico</h4></div>
+            <p>Las correcciones, expansiones y variantes se distinguen tipográficamente. Pulsa una llamada del aparato para consultar las lecturas.</p>
+          </div>
           <div id="reader-marked" class="edition-content"></div>
           <div id="reader-apparatus" class="edition-content reader-apparatus"></div>
         </article>
-        <article class="edition-pane">
-          <h4>Texto sin visualización del marcado TEI</h4>
+        <article class="edition-pane" id="pane-clean" data-edition-pane="clean" role="tabpanel" aria-labelledby="tab-clean" hidden>
+          <div class="edition-pane-intro">
+            <div><span class="edition-pane-kicker">LECTURA CONTINUA</span><h4>Texto sin marcas editoriales</h4></div>
+            <p>Una lectura seguida que conserva el texto, sin mostrar las señales visuales del marcado TEI.</p>
+          </div>
           <div id="reader-clean" class="edition-content"></div>
         </article>
-        <article class="edition-pane">
-          <h4>Traducción al español y notas</h4>
+        <article class="edition-pane" id="pane-translation" data-edition-pane="translation" role="tabpanel" aria-labelledby="tab-translation" hidden>
+          <div class="edition-pane-intro">
+            <div><span class="edition-pane-kicker">TRADUCCIÓN</span><h4>Traducción al español y notas</h4></div>
+            <p>Las llamadas enlazan con las notas editoriales; desde cada nota se puede volver al pasaje correspondiente.</p>
+          </div>
           <div id="reader-translation" class="edition-content"></div>
           <div id="reader-footnotes" class="edition-content reader-footnotes"></div>
         </article>
       </div>
       <div class="reader-backlinks">
-        <a id="reader-xml-bottom" href="#" target="_blank" rel="noopener noreferrer">Descargar / consultar XML original ↗</a>
-        <a id="reader-wordpress-bottom" href="#" target="_blank" rel="noopener noreferrer" hidden>Consultar edición publicada ↗</a>
+        <a id="reader-xml-bottom" href="#" target="_blank" rel="noopener noreferrer">Consultar XML-TEI original ↗</a>
+        <a id="reader-wordpress-bottom" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver esta carta en la edición publicada ↗</a>
       </div>
     </section>
   </section>
 </main>
+<dialog id="facsimile-lightbox" class="facsimile-lightbox" aria-label="Vista ampliada del facsímil">
+  <div class="lightbox-toolbar">
+    <div><span class="edition-pane-kicker">FAC SÍMIL</span><p id="lightbox-caption" class="lightbox-caption">Vista ampliada del documento</p></div>
+    <button type="button" id="lightbox-close" class="reader-tool-button lightbox-close" aria-label="Cerrar imagen ampliada">✕</button>
+  </div>
+  <div class="lightbox-image-area">
+    <button type="button" id="lightbox-prev" class="lightbox-nav" aria-label="Facsímil anterior">←</button>
+    <img id="lightbox-image" alt="Facsímil ampliado de la carta">
+    <button type="button" id="lightbox-next" class="lightbox-nav" aria-label="Facsímil siguiente">→</button>
+  </div>
+  <p class="lightbox-hint">Usa las flechas para recorrer los folios; pulsa Esc para cerrar.</p>
+</dialog>
+<div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
 <script src="catalog-data.js"></script>
 <script>
