@@ -246,7 +246,10 @@ def make_record(path: Path, root: ET.Element) -> dict:
 
     url = "https://github.com/CoBAM-editor/CoBAM/blob/main/" + quote(path.name, safe="")
     record = {
-        "id": xml_id or path.stem,
+        # Use the source filename as a unique catalogue key. Preserve xml:id
+        # separately: legacy TEI identifiers can repeat across related files.
+        "id": path.stem,
+        "tei_id": xml_id,
         "letter_code": letter_code.strip(" []") or xml_id or path.stem,
         "title": title,
         "date": date_label or letter_code or path.stem,
