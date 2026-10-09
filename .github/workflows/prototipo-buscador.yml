@@ -98,11 +98,13 @@ jobs:
           assert sample["source_marked_html"] and sample["source_clean_html"], "Falta una de las vistas de la transcripción"
           assert "tei-sic" in sample["source_marked_html"] and "tei-corr" in sample["source_marked_html"], "No se representan sic/corr en la vista marcada"
           assert "tei-sic" not in sample["source_clean_html"], "La vista limpia no debe duplicar la lectura sic"
+          assert "tei-corr" not in sample["source_clean_html"] and "tei-expansion" not in sample["source_clean_html"], "La vista limpia no debe mostrar marcado editorial"
           assert sample["translation_html"], "Falta la traducción de la carta de prueba"
           assert sample["apparatus"], "No se ha extraído el aparato crítico"
           assert sample["footnotes"], "No se han extraído las notas"
           assert len(sample["facsimile_items"]) >= 2, "No se han enlazado los folios del documento"
-          print(f"Catálogo válido: {len(records)} cartas; vistas TEI, notas, aparato y facsímiles comprobados.")
+          assert [x["label"] for x in sample["facsimile_items"][:3]] == ["f. 17r", "f. 17v", "f. 28v"], "El orden de la galería no coincide con el orden de facsímiles del TEI"
+          print(f"Catálogo válido: {len(records)} cartas; vistas TEI, notas, aparato y galería comprobados.")
           PY
 
       - name: Preparar catálogo embebido para la vista previa
@@ -117,6 +119,21 @@ jobs:
               encoding="utf-8",
           )
           print(f"Catálogo de navegador preparado: {len(records)} cartas.")
+          PY
+
+      - name: Comprobar estructura de la vista de edición
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("prototipo-buscador/index.html").read_text(encoding="utf-8")
+          required = [
+              'id="search-view"', 'id="letter-view"', 'id="reader-marked"',
+              'id="reader-clean"', 'id="reader-translation"', 'id="reader-footnotes"',
+              'function renderLetterPage(r)', 'encodeURIComponent(r.id)',
+          ]
+          missing = [fragment for fragment in required if fragment not in html]
+          assert not missing, f"Faltan piezas de la vista de lectura: {missing}"
+          print("Vista navegable de edición crítica: estructura presente.")
           PY
 
       - name: Comprobar sintaxis JavaScript de la interfaz
