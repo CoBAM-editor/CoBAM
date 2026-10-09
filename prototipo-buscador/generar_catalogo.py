@@ -59,7 +59,7 @@ def get_years(date_el: ET.Element | None, title: str, filename: str) -> tuple[in
         if explicit:
             return min(explicit), max(explicit)
     for source in (text_of(date_el), title, filename):
-        years = [int(y) for y in re.findall(r"\\b(?:15|16)\\d{2}\\b", source)]
+        years = [int(y) for y in re.findall(r"\b(?:15|16)\d{2}\b", source)]
         if years:
             return min(years), max(years)
     return None, None
