@@ -50,7 +50,7 @@ jobs:
           from pathlib import Path
           import re
           html = Path("prototipo-buscador/index.html").read_text(encoding="utf-8")
-          match = re.search(r"<script>([\\s\\S]*?)</script>", html)
+          match = re.search(r"<script>(.*?)</script>", html, re.S)
           assert match, "No se encontró el script de la interfaz"
           Path("/tmp/cobam-prototipo.js").write_text(match.group(1), encoding="utf-8")
           PY
