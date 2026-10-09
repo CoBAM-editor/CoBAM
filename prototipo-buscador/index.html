@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prototipo de búsqueda · CoBAM</title>
+<style>
+:root{--ink:#243447;--muted:#5e6b78;--accent:#7c342c;--line:#d9dee4;--paper:#fff;--wash:#f4f2ee}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+header{background:#fff;border-bottom:4px solid var(--accent);padding:30px 20px}
+.wrap{max-width:1100px;margin:auto}h1{margin:0 0 8px;font-family:Georgia,serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem)}header p{margin:0;color:var(--muted)}
+main{max-width:1100px;margin:28px auto;padding:0 20px}.panel,.result{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px}
+.panel h2{margin:0 0 16px;font-size:1.15rem}.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}.wide{grid-column:span 2}label{font-size:.9rem;font-weight:650}
+input,select{width:100%;min-width:0;border:1px solid #aeb8c2;border-radius:7px;padding:10px;font:inherit;background:white;color:inherit}
+.actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}button{border:0;border-radius:7px;padding:10px 15px;font:inherit;font-weight:650;cursor:pointer}
+.primary{background:var(--accent);color:#fff}.secondary{background:#e8ebef;color:var(--ink)}
+.meta{color:var(--muted);font-size:.9rem}.summary{margin:.5rem 0}.result-list{display:grid;gap:12px;margin-top:18px}.result h3{font:600 1.1rem Georgia,serif;margin:0 0 8px}.result a{color:var(--accent);font-weight:700}.pill{display:inline-block;background:#f0e7e4;color:#6b2923;padding:2px 8px;border-radius:20px;font-size:.8rem}
+.status{margin:16px 0 0;color:var(--muted)}.notice{border-left:4px solid #b78a50;padding:10px 14px;background:#fff9ed;margin-top:18px;color:#57452d}
+@media(max-width:800px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.filters{grid-template-columns:1fr}.wide{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>La correspondencia de Benito Arias Montano</h1><p>Prototipo experimental de búsqueda documental · CoBAM</p></div></header>
+<main>
+<section class="panel" aria-labelledby="filters-title">
+<h2 id="filters-title">Buscar cartas</h2>
+<form id="search-form"><div class="filters">
+<div class="field wide"><label for="q">Texto libre</label><input id="q" type="search" placeholder="Palabras del resumen, incipit o contenido"></div>
+<div class="field"><label for="sender">Remitente</label><input id="sender" list="senders" placeholder="Nombre del remitente"><datalist id="senders"></datalist></div>
+<div class="field"><label for="recipient">Destinatario</label><input id="recipient" list="recipients" placeholder="Nombre del destinatario"><datalist id="recipients"></datalist></div>
+<div class="field"><label for="from">Desde el año</label><input id="from" type="number" min="1500" max="1700" placeholder="1560"></div>
+<div class="field"><label for="to">Hasta el año</label><input id="to" type="number" min="1500" max="1700" placeholder="1580"></div>
+<div class="field"><label for="place">Lugar</label><input id="place" list="places" placeholder="León, Amberes…"><datalist id="places"></datalist></div>
+<div class="field"><label for="lang">Idioma</label><select id="lang"><option value="">Todos</option><option value="Latín">Latín</option><option value="Español">Español</option><option value="Francés">Francés</option><option value="Italiano">Italiano</option><option value="Griego">Griego</option><option value="Hebreo">Hebreo</option></select></div>
+</div><div class="actions"><button class="primary" type="submit">Buscar</button><button class="secondary" id="reset" type="reset">Limpiar filtros</button></div></form>
+<p class="status" id="status" role="status">Preparando catálogo de prueba…</p>
+</section>
+<div class="notice"><strong>Prototipo:</strong> esta página es independiente y no modifica la web pública. El catálogo inicial contiene una carta de ejemplo; falta generar el índice completo automáticamente a partir de todos los XML-TEI.</div>
+<section id="results" class="result-list" aria-live="polite"></section>
+</main>
+<script>
+const sample=[{
+id:"CoBAM15600201",title:"Benito Arias Montano a fray Luis de León",date:"Entre el 1 de febrero y el 5 de mayo de 1560",start:1560,end:1560,
+sender:"Benito Arias Montano",recipient:"Fray Luis de León",origin:"León",destination:"Salamanca",language:"Latín",
+abstract:"BAM finalmente logró ingresar en la Orden de Santiago. Solicita a fray Luis de León ayuda para su proyecto de estudio, notas sobre doctrina cristiana y filosofía natural, recomendaciones en Salamanca y el envío del Apparatus Latinae locutionis.",
+incipit:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam...",
+file:"1560 02 01-60 05 05 CoBAM.xml",
+url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
+}];
+const norm=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
+const form=document.querySelector("#search-form"),results=document.querySelector("#results"),status=document.querySelector("#status");
+function render(items){results.replaceChildren();for(const x of items){const article=document.createElement("article");article.className="result";const h=document.createElement("h3");h.textContent=x.title||x.file;const pill=document.createElement("span");pill.className="pill";pill.textContent=x.language||"Idioma no indicado";const meta=document.createElement("p");meta.className="meta";meta.textContent=[x.date,x.sender&&"De: "+x.sender,x.recipient&&"Para: "+x.recipient,[x.origin,x.destination].filter(Boolean).join(" → ")].filter(Boolean).join(" · ");const summary=document.createElement("p");summary.className="summary";summary.textContent=x.abstract||"Sin resumen disponible.";const inc=document.createElement("p");inc.className="meta";inc.textContent=x.incipit?"Incipit: "+x.incipit:"";const link=document.createElement("a");link.href=x.url;link.target="_blank";link.rel="noopener noreferrer";link.textContent="Consultar XML en GitHub ↗";article.append(h,pill,meta,summary,inc,link);results.append(article)}status.textContent=items.length+" resultado(s)";}
+function search(){const q=norm(document.querySelector("#q").value),sender=norm(document.querySelector("#sender").value),recipient=norm(document.querySelector("#recipient").value),place=norm(document.querySelector("#place").value),lang=document.querySelector("#lang").value,from=Number(document.querySelector("#from").value)||0,to=Number(document.querySelector("#to").value)||9999;const found=sample.filter(x=>{const hay=norm([x.title,x.abstract,x.incipit,x.file].join(" "));return(!q||hay.includes(q))&&(!sender||norm(x.sender).includes(sender))&&(!recipient||norm(x.recipient).includes(recipient))&&(!place||norm([x.origin,x.destination].join(" ")).includes(place))&&(!lang||x.language===lang)&&x.start<=to&&x.end>=from});render(found);if(!found.length)status.textContent="No se han encontrado cartas con esos criterios."}
+form.addEventListener("submit",e=>{e.preventDefault();search()});form.addEventListener("reset",()=>setTimeout(search,0));render(sample);
+</script></body></html>
