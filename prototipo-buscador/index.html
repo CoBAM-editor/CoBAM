@@ -170,7 +170,7 @@ const PAGE_SIZE=20;
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
 const byId=id=>document.getElementById(id);
-const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),organizations:new Set(),editions:new Set(),availability:new Set()};
+const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),organizations:new Set(),editions:new Set(),editionStatus:new Set(),availability:new Set()};
 const facetSearches={};
 const showAllFacets=new Set();
 let appliedQuery="";
@@ -189,14 +189,18 @@ const FACETS=[
  {key:"mentionedPeople",title:"Personas mencionadas",values:r=>(r.named_people||[])},
  {key:"mentionedPlaces",title:"Otros lugares mencionados",values:r=>(r.named_places||[]).filter(p=>norm(p)!==norm(r.origin)&&norm(p)!==norm(r.destination))},
  {key:"organizations",title:"Organizaciones mencionadas",values:r=>(r.organizations||[])},
- {key:"editions",title:"Ediciones impresas citadas",values:r=>(r.bibliography||[])}
+ {key:"editions",title:"Ediciones impresas citadas",values:r=>(r.bibliography||[])},
+ {key:"editionStatus",title:"Estado editorial",values:r=>[r.edition_status].filter(Boolean)}
 ];
 const AVAILABILITY=[
  {value:"images",label:"Con imágenes de facsímil",test:r=>Boolean(r.has_images)},
  {value:"transcription",label:"Con transcripción",test:r=>Boolean(r.has_transcription)},
  {value:"translation",label:"Con traducción",test:r=>Boolean(r.has_translation)},
  {value:"printed",label:"Con edición impresa citada",test:r=>(r.bibliography||[]).length>0},
- {value:"annotations",label:"Con notas o aparato crítico",test:r=>Boolean(r.annotations||r.critical_apparatus)}
+ {value:"annotations",label:"Con notas o aparato crítico",test:r=>Boolean(r.annotations||r.critical_apparatus)},
+ {value:"noImages",label:"Sin facsímil",test:r=>!Boolean(r.has_images)},
+ {value:"noTranslation",label:"Sin traducción",test:r=>!Boolean(r.has_translation)},
+ {value:"noTranscription",label:"Sin transcripción",test:r=>!Boolean(r.has_transcription)}
 ];
 function getByFacet(r,key){
  const f=FACETS.find(x=>x.key===key);
@@ -214,7 +218,7 @@ function haystackFor(r){
  if(scope==="abstract")return r.abstract||"";
  if(scope==="incipit")return r.incipit||"";
  if(scope==="annotations")return [r.annotations,r.critical_apparatus,(r.bibliography||[]).join(" "), (r.witnesses||[]).map(w=>w.description).join(" ")].join(" ");
- const metadata=[r.id,r.tei_id,r.letter_code,r.title,r.date,r.sender,r.recipient,r.origin,r.destination,r.language,r.abstract,r.incipit,r.editor,(r.authors||[]).join(" "),(r.named_people||[]).join(" "),(r.named_places||[]).join(" "),(r.repositories||[]).join(" "),(r.archive_countries||[]).join(" "),(r.archive_cities||[]).join(" "),(r.shelfmarks||[]).join(" "),(r.organizations||[]).join(" "),(r.languages||[]).join(" "),(r.bibliography||[]).join(" ")].join(" ");
+ const metadata=[r.id,r.tei_id,r.letter_code,r.title,r.date,r.sender,r.recipient,r.origin,r.destination,r.language,r.abstract,r.incipit,r.editor,(r.authors||[]).join(" "),(r.named_people||[]).join(" "),(r.named_places||[]).join(" "),(r.repositories||[]).join(" "),(r.archive_countries||[]).join(" "),(r.archive_cities||[]).join(" "),(r.shelfmarks||[]).join(" "),(r.organizations||[]).join(" "),(r.languages||[]).join(" "),(r.bibliography||[]).join(" "),(r.mentioned_entities||[]).map(e=>[e.type,e.label,e.ref,e.key].join(" ")).join(" ")].join(" ");
  if(scope==="metadata")return metadata;
  return [metadata,r.text,r.transcription,r.translation,r.annotations,(r.bibliography||[]).join(" ")].join(" ");
 }
@@ -305,7 +309,7 @@ function matchesFilters(r,excludeFacet=null){
   if(excludeFacet!=="senders"&&selected.senders.size&&!getByFacet(r,"senders").some(v=>hasSelected(selected.senders,v)))return false;
   if(excludeFacet!=="recipients"&&selected.recipients.size&&!getByFacet(r,"recipients").some(v=>hasSelected(selected.recipients,v)))return false;
  }
- for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions"]){
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","editionStatus"]){
   if(key!==excludeFacet&&selected[key].size&&!getByFacet(r,key).some(v=>hasSelected(selected[key],v)))return false;
  }
  if(excludeFacet!=="availability"&&selected.availability.size){
@@ -476,6 +480,7 @@ function makeResult(r){
   makeDetail("Personas mencionadas",(r.named_people||[]).slice(0,20)),
   makeDetail("Lugares mencionados",(r.named_places||[]).slice(0,20)),
   makeDetail("Organizaciones mencionadas",r.organizations||[]),
+  makeDetail("Entidades TEI enlazadas",(r.mentioned_entities||[]).slice(0,40).map(e=>[e.label,e.ref&&("ref "+e.ref),e.key&&("key "+e.key)].filter(Boolean).join(" · "))),
   makeDetail("Fecha normalizada",[r.date_when,r.date_from&&("Desde: "+r.date_from),r.date_to&&("Hasta: "+r.date_to),r.date_certainty&&("Certeza: "+r.date_certainty)]),
   makeDetail("Aparato crítico",r.critical_apparatus?[r.critical_apparatus.slice(0,1200)]:[]),
   makeDetail("Mano / escritura",r.hand_notes||[]),
@@ -491,10 +496,10 @@ function getActiveLabels(){
  const add=(name,set)=>set.forEach(value=>labels.push({name,value,set}));
  if(byId("combine-people").checked)add("people",selected.people);
  else {add("senders",selected.senders);add("recipients",selected.recipients)}
- for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","availability"])add(key,selected[key]);
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","editionStatus","availability"])add(key,selected[key]);
  return labels;
 }
-const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",mentionedPeople:"Persona",mentionedPlaces:"Lugar mencionado",organizations:"Organización",editions:"Edición impresa",availability:"Disponibilidad"};
+const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",mentionedPeople:"Persona",mentionedPlaces:"Lugar mencionado",organizations:"Organización",editions:"Edición impresa",editionStatus:"Estado editorial",availability:"Disponibilidad"};
 function renderActiveFilters(){
  activeArea.replaceChildren();
  const active=getActiveLabels();
@@ -643,7 +648,7 @@ function exportFilteredCSV(){
   ["Lugar de origen",r=>r.origin],["Lugar de destino",r=>r.destination],["Idioma",r=>(r.languages||[r.language]).filter(Boolean)],
   ["Resumen",r=>r.abstract],["Incipit",r=>r.incipit],["Archivo",r=>(r.repositories||[])],
   ["Signatura",r=>(r.shelfmarks||[])],["Personas mencionadas",r=>(r.named_people||[])],["Lugares mencionados",r=>(r.named_places||[])],
-  ["Organizaciones",r=>(r.organizations||[])],["Estado editorial",r=>r.edition_status],["Con transcripción",r=>r.has_transcription?"Sí":"No"],
+  ["Organizaciones",r=>(r.organizations||[])],["Entidades TEI",r=>(r.mentioned_entities||[]).map(e=>[e.label,e.ref,e.key].filter(Boolean).join(" · "))],["Estado editorial",r=>r.edition_status],["Con transcripción",r=>r.has_transcription?"Sí":"No"],
   ["Con traducción",r=>r.has_translation?"Sí":"No"],["Con facsímil",r=>r.has_images?"Sí":"No"],["URL del XML",r=>r.url],
   ["URL de facsímiles",r=>(r.facsimiles||[])]
  ];
