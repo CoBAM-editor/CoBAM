@@ -97,7 +97,7 @@ def body_text(text_el: ET.Element | None) -> str:
         for paragraph in body.findall(".//tei:p", NS)
     ]
     paragraphs = [paragraph for paragraph in paragraphs if paragraph]
-    return "\\n\\n".join(paragraphs) if paragraphs else text_of(body)
+    return "\n\n".join(paragraphs) if paragraphs else text_of(body)
 
 
 def make_record(path: Path, root: ET.Element) -> dict:
