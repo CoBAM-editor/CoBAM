@@ -45,7 +45,7 @@ jobs:
           tei = ET.fromstring(
               '<text xmlns="http://www.tei-c.org/ns/1.0"><body><p>Primer párrafo.</p><p>Segundo párrafo.</p></body></text>'
           )
-          assert module.body_text(tei) == "Primer párrafo.\\n\\nSegundo párrafo.", "No conserva la separación de párrafos"
+          assert module.body_text(tei) == "Primer párrafo.\n\nSegundo párrafo.", "No conserva la separación de párrafos"
           print("Pruebas de intervalos cronológicos y párrafos: correctas.")
           PY
 
