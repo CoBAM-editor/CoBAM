@@ -3,116 +3,455 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prototipo de búsqueda · CoBAM</title>
+<meta name="description" content="Buscador experimental de la correspondencia de Benito Arias Montano.">
+<title>Buscar cartas · CoBAM</title>
 <style>
-:root{--ink:#243447;--muted:#5e6b78;--accent:#7c342c;--line:#d9dee4;--paper:#fff;--wash:#f4f2ee}
-*{box-sizing:border-box}body{margin:0;background:var(--wash);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
-header{background:#fff;border-bottom:4px solid var(--accent);padding:30px 20px}
-.wrap{max-width:1100px;margin:auto}h1{margin:0 0 8px;font-family:Georgia,serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem)}header p{margin:0;color:var(--muted)}
-main{max-width:1100px;margin:28px auto;padding:0 20px}.panel,.result{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px}
-.panel h2{margin:0 0 16px;font-size:1.15rem}.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.field{display:flex;flex-direction:column;gap:6px}.wide{grid-column:span 2}label{font-size:.9rem;font-weight:650}
-input,select{width:100%;min-width:0;border:1px solid #aeb8c2;border-radius:7px;padding:10px;font:inherit;background:white;color:inherit}
-.actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}button{border:0;border-radius:7px;padding:10px 15px;font:inherit;font-weight:650;cursor:pointer}
-.primary{background:var(--accent);color:#fff}.secondary{background:#e8ebef;color:var(--ink)}
-.meta{color:var(--muted);font-size:.9rem}.summary{margin:.5rem 0}.result-list{display:grid;gap:12px;margin-top:18px}.result h3{font:600 1.1rem Georgia,serif;margin:0 0 8px}.result a{color:var(--accent);font-weight:700}.pill{display:inline-block;background:#f0e7e4;color:#6b2923;padding:2px 8px;border-radius:20px;font-size:.8rem}
-.status{margin:16px 0 0;color:var(--muted)}.notice{border-left:4px solid #b78a50;padding:10px 14px;background:#fff9ed;margin-top:18px;color:#57452d}
-@media(max-width:800px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.filters{grid-template-columns:1fr}.wide{grid-column:auto}}
+:root{--ink:#263744;--muted:#63727d;--accent:#843f34;--accent-dark:#612d26;--line:#d9e0e3;--paper:#fff;--wash:#f3f4f1;--pale:#f7f6f1;--blue:#e8eef1;--green:#eaf2ec}
+*{box-sizing:border-box}
+body{margin:0;background:var(--wash);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent-dark);text-decoration:none}a:hover{text-decoration:underline}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.top{background:var(--paper);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1420px;margin:auto;padding:22px 28px;display:flex;gap:24px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:14px;align-items:center}.brand-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:white;font:700 19px Georgia,serif;letter-spacing:-1px}
+.brand h1{font:600 clamp(1.2rem,2.2vw,1.75rem)/1.16 Georgia,"Times New Roman",serif;margin:0}.brand p{color:var(--muted);font-size:.82rem;margin:5px 0 0}
+.edition-tag{font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:6px 10px;white-space:nowrap}
+main{max-width:1420px;margin:26px auto 50px;padding:0 28px}
+.intro{margin:0 0 20px}.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--accent)}.intro h2{font:600 clamp(1.5rem,2.6vw,2.15rem)/1.2 Georgia,serif;margin:5px 0}.intro p{max-width:800px;color:var(--muted);margin:7px 0 0}
+.search-layout{display:grid;grid-template-columns:minmax(270px,330px) minmax(0,1fr);gap:20px;align-items:start}
+.sidebar,.content-panel{background:var(--paper);border:1px solid var(--line);border-radius:7px}
+.sidebar{overflow:hidden}.sidebar-head{padding:16px 18px;background:#edf0ed;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.sidebar-head h3{font-size:1rem;margin:0}.link-button{background:none;border:0;color:var(--accent-dark);padding:3px;font-size:.8rem;text-decoration:underline}
+.query-section{padding:16px 18px 18px;border-bottom:1px solid var(--line)}.label{display:block;font-weight:700;font-size:.82rem;margin-bottom:6px}
+input[type="search"],input[type="text"],input[type="number"],select{background:#fff;border:1px solid #b9c4c9;border-radius:4px;width:100%;min-width:0;padding:9px 10px;color:var(--ink);outline-offset:2px}
+input:focus,select:focus,button:focus-visible{outline:2px solid #9f6d65;outline-offset:2px}
+.query-row{display:flex;gap:7px}.query-row input{flex:1}.primary{background:var(--accent);border:1px solid var(--accent);color:#fff;padding:9px 13px;border-radius:4px;font-weight:700}.primary:hover{background:var(--accent-dark)}
+.secondary{background:#fff;border:1px solid #b9c4c9;color:var(--ink);padding:8px 11px;border-radius:4px}.helper{font-size:.75rem;color:var(--muted);margin:7px 0 0}
+.date-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
+.facet{border-bottom:1px solid var(--line)}.facet summary{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;cursor:pointer;list-style:none;font-weight:700;font-size:.88rem}.facet summary::-webkit-details-marker{display:none}.facet summary:after{content:"+";font-size:1.1rem;font-weight:400;color:var(--muted)}.facet[open] summary:after{content:"−"}
+.facet-total{color:var(--muted);font-weight:500;font-size:.75rem;margin-left:auto;margin-right:9px}
+.facet-body{padding:0 18px 14px}.facet-search{margin:0 0 7px}.facet-search input{padding:7px 9px;font-size:.81rem}.facet-options{display:grid;gap:1px;max-height:280px;overflow:auto}
+.facet-option{display:grid;grid-template-columns:15px minmax(0,1fr) auto;align-items:start;gap:8px;padding:5px 1px;font-size:.82rem;cursor:pointer}.facet-option input{margin:3px 0 0;accent-color:var(--accent)}.facet-option .value{overflow-wrap:anywhere}.facet-option .count{color:#73818a;font-size:.74rem;font-variant-numeric:tabular-nums}
+.show-more{margin-top:6px;background:none;border:0;color:var(--accent-dark);padding:5px 0;font-size:.8rem;text-decoration:underline}
+.facet-empty{color:var(--muted);font-size:.78rem;padding:7px 0}.combine-row{display:flex;gap:8px;align-items:flex-start;font-size:.8rem;color:var(--muted);margin-top:12px}.combine-row input{margin-top:4px;accent-color:var(--accent)}
+.filters-foot{padding:12px 18px;background:#fafbf9;color:var(--muted);font-size:.76rem}
+.content-panel{overflow:hidden}.results-header{padding:15px 19px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#fbfcfa}.results-count strong{font-size:1.05rem}.results-count span{display:block;color:var(--muted);font-size:.78rem}.result-controls{display:flex;gap:8px;align-items:center}.result-controls label{font-size:.78rem;color:var(--muted)}.result-controls select{width:auto;padding:6px 8px;font-size:.8rem}
+.active-filters{display:flex;flex-wrap:wrap;gap:6px;padding:10px 19px;border-bottom:1px solid var(--line)}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #d8c6c2;background:#fbf6f4;color:#63352e;padding:4px 8px;border-radius:3px;font-size:.75rem}.chip button{border:0;background:transparent;color:inherit;padding:0;font-weight:800}
+.results-list{padding:0 19px}.result{padding:18px 0;border-bottom:1px solid var(--line)}.result:last-child{border-bottom:0}
+.result-title{font:600 1.15rem/1.3 Georgia,"Times New Roman",serif;margin:0 0 6px}.result-title a{color:#293d4c}.result-code{font-size:.73rem;font-weight:750;letter-spacing:.04em;color:var(--accent);margin-right:8px}.result-date{color:var(--muted);font-size:.82rem;margin-bottom:9px}
+.result-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 16px;margin:8px 0 10px}.meta-item{font-size:.82rem;min-width:0;overflow-wrap:anywhere}.meta-label{color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.03em;display:block}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}.badge{display:inline-block;padding:3px 7px;border-radius:3px;font-size:.7rem;background:var(--blue);color:#3e5967}.badge.available{background:var(--green);color:#355e44}
+.abstract{font-size:.88rem;margin:9px 0 5px;max-width:940px}.incipit{color:#586a76;font:italic .84rem/1.5 Georgia,serif;margin:7px 0}
+.result-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:.79rem;font-weight:700}.result details{margin-top:9px}.result details summary{cursor:pointer;color:var(--accent-dark);font-size:.8rem}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:10px 0;padding:13px;background:#f8f9f7;border:1px solid var(--line);border-radius:4px}.detail-block strong{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.035em;color:var(--muted);margin-bottom:4px}.detail-block p{font-size:.8rem;margin:0 0 6px;overflow-wrap:anywhere}
+.pagination{display:flex;justify-content:center;align-items:center;gap:6px;border-top:1px solid var(--line);padding:14px;flex-wrap:wrap}.pagination button{background:#fff;border:1px solid var(--line);border-radius:4px;padding:6px 10px}.pagination button[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:#fff}.pagination button:disabled{opacity:.4;cursor:default}
+.empty{padding:42px 22px;text-align:center;color:var(--muted)}.empty strong{display:block;color:var(--ink);margin-bottom:5px}.loading-note{margin-top:18px;font-size:.78rem;color:var(--muted)}.site-note{margin:16px 0 0;border-left:3px solid #b68a55;background:#fbf7f0;color:#614d34;padding:10px 13px;font-size:.78rem}
+footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-size:.75rem}
+@media(max-width:930px){.search-layout{grid-template-columns:minmax(240px,290px) minmax(0,1fr)}.top-inner,main{padding-left:18px;padding-right:18px}.result-meta{grid-template-columns:1fr}}
+@media(max-width:720px){.top-inner{align-items:flex-start}.edition-tag{display:none}.search-layout{grid-template-columns:1fr}.sidebar{order:0}.content-panel{order:1}.facet-options{max-height:220px}.results-list{padding:0 14px}.results-header,.active-filters{padding-left:14px;padding-right:14px}.detail-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.top-inner{padding:16px 13px}.brand-mark{width:37px;height:37px}main{padding:0 10px;margin-top:18px}.query-row{flex-direction:column}.query-row .primary{width:100%}.result-controls{width:100%;justify-content:space-between}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>La correspondencia de Benito Arias Montano</h1><p>Prototipo experimental de búsqueda documental · CoBAM</p></div></header>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">Co</div>
+      <div><h1>La correspondencia de Benito Arias Montano</h1><p>Edición crítica digital · Buscador experimental</p></div>
+    </div>
+    <div class="edition-tag">Búsqueda avanzada · XML-TEI</div>
+  </div>
+</header>
 <main>
-<section class="panel" aria-labelledby="filters-title">
-<h2 id="filters-title">Buscar cartas</h2>
-<form id="search-form"><div class="filters">
-<div class="field wide"><label for="q">Texto libre</label><input id="q" type="search" placeholder="Palabras del resumen, incipit o contenido"></div>
-<div class="field"><label for="sender">Remitente</label><input id="sender" list="senders" placeholder="Nombre del remitente"><datalist id="senders"></datalist></div>
-<div class="field"><label for="recipient">Destinatario</label><input id="recipient" list="recipients" placeholder="Nombre del destinatario"><datalist id="recipients"></datalist></div>
-<div class="field"><label for="from">Desde el año</label><input id="from" type="number" min="1500" max="1700" placeholder="1560"></div>
-<div class="field"><label for="to">Hasta el año</label><input id="to" type="number" min="1500" max="1700" placeholder="1580"></div>
-<div class="field"><label for="place">Lugar</label><input id="place" list="places" placeholder="León, Amberes…"><datalist id="places"></datalist></div>
-<div class="field"><label for="lang">Idioma</label><select id="lang"><option value="">Todos</option><option value="Latín">Latín</option><option value="Español">Español</option><option value="Francés">Francés</option><option value="Italiano">Italiano</option><option value="Griego">Griego</option><option value="Hebreo">Hebreo</option></select></div>
-</div><div class="actions"><button class="primary" type="submit">Buscar</button><button class="secondary" id="reset" type="reset">Limpiar filtros</button></div></form>
-<p class="status" id="status" role="status">Preparando catálogo de prueba…</p>
-</section>
-<div class="notice"><strong>Prototipo:</strong> esta página es independiente y no modifica la web pública. El catálogo inicial contiene una carta de ejemplo; falta generar el índice completo automáticamente a partir de todos los XML-TEI.</div>
-<section id="results" class="result-list" aria-live="polite"></section>
+  <section class="intro">
+    <div class="eyebrow">Explorar la colección</div>
+    <h2>Buscar cartas</h2>
+    <p>Combina una búsqueda en el texto con facetas de remitente, destinatario, lugar, fecha, idioma y testimonios. Selecciona varios valores para acotar o ampliar los resultados.</p>
+  </section>
+  <div class="search-layout">
+    <aside class="sidebar" aria-label="Filtros de búsqueda">
+      <div class="sidebar-head"><h3>Refinar resultados</h3><button class="link-button" id="clear-filters" type="button">Limpiar filtros</button></div>
+      <form id="search-form">
+        <section class="query-section">
+          <label class="label" for="q">Búsqueda de texto</label>
+          <div class="query-row"><input id="q" type="search" placeholder="Palabras, frase, * comodín…" autocomplete="off"><button class="primary" type="submit">Buscar</button></div>
+          <p class="helper">Admite frases entre comillas, AND, OR, NOT y comodines * y ?.</p>
+          <label class="label" for="scope" style="margin-top:13px">Buscar en</label>
+          <select id="scope">
+            <option value="all">Todos los campos y textos</option>
+            <option value="transcription">Transcripción</option>
+            <option value="translation">Traducción</option>
+            <option value="abstract">Resumen</option>
+            <option value="incipit">Incipit</option>
+            <option value="annotations">Notas del texto y aparato</option>
+            <option value="metadata">Solo metadatos</option>
+          </select>
+          <div class="date-grid">
+            <div><label class="label" for="year-from">Año desde</label><input id="year-from" type="number" min="1500" max="1700" placeholder="1560"></div>
+            <div><label class="label" for="year-to">Año hasta</label><input id="year-to" type="number" min="1500" max="1700" placeholder="1580"></div>
+          </div>
+          <label class="combine-row"><input id="combine-people" type="checkbox"><span>Combinar remitentes y destinatarios en una sola faceta de corresponsales</span></label>
+        </section>
+        <div id="facets"></div>
+      </form>
+      <div class="filters-foot">Las facetas se construyen a partir de los metadatos estructurados de los XML-TEI. Los recuentos reflejan los filtros activos.</div>
+    </aside>
+    <section class="content-panel" aria-label="Resultados de la búsqueda">
+      <div class="results-header">
+        <div class="results-count"><strong id="result-count">Preparando catálogo…</strong><span id="result-subtitle">Lectura de los metadatos de CoBAM</span></div>
+        <div class="result-controls"><label for="sort">Ordenar por</label><select id="sort"><option value="date-asc">Fecha: más antiguas</option><option value="date-desc">Fecha: más recientes</option><option value="sender">Remitente</option><option value="recipient">Destinatario</option><option value="title">Título</option></select></div>
+      </div>
+      <div id="active-filters" class="active-filters" hidden></div>
+      <div id="results" class="results-list" aria-live="polite"></div>
+      <nav id="pagination" class="pagination" aria-label="Paginación de resultados"></nav>
+    </section>
+  </div>
+  <p id="load-status" class="loading-note" role="status">Cargando el catálogo de cartas…</p>
+  <div class="site-note"><strong>Prototipo de investigación:</strong> buscador independiente para revisar campos y comportamiento. No sustituye aún la búsqueda de la web pública de CoBAM.</div>
 </main>
+<footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
 <script src="catalog-data.js"></script>
 <script>
-const sample=[{
-id:"CoBAM15600201",title:"Benito Arias Montano (León) a fray Luis de León (Salamanca)",
-date:"Entre el 1 de febrero y el 5 de mayo de 1560",start_year:1560,end_year:1560,
-sender:"Benito Arias Montano",recipient:"Fray Luis de León",origin:"León",destination:"Salamanca",language:"Latín",
-abstract:"BAM finalmente logró ingresar en la Orden de Santiago. Solicita a fray Luis de León ayuda para su proyecto de estudio, notas sobre doctrina cristiana y filosofía natural, recomendaciones en Salamanca y el envío del Apparatus Latinae locutionis.",
-incipit:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam...",
-text:"Dedimus tandem mi Leo dedimus ultro nomen in hanc militiam. Arias Montano escribe a fray Luis de León sobre sus estudios, la Orden de Santiago y sus proyectos intelectuales.",
-file:"1560 02 01-60 05 05 CoBAM.xml",
-url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
+"use strict";
+const SAMPLE=[{
+ id:"CoBAM15600201",letter_code:"1560 02 01-1560 05 05",title:"Benito Arias Montano (León) a fray Luis de León [Salamanca]",date:"Entre el 1 de febrero y el 5 de mayo de 1560",start_year:1560,end_year:1560,
+ sender:"Benito Arias Montano",recipient:"Fray Luis de León",origin:"León",destination:"Salamanca",language:"Latín",language_code:"la",
+ abstract:"Arias Montano comunica su ingreso en la Orden de Santiago y solicita a fray Luis de León ayuda para su proyecto de estudio, notas sobre doctrina cristiana y filosofía natural y recomendaciones en Salamanca.",
+ incipit:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam...",
+ transcription:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam. BAM pide ayuda para sus estudios de doctrina cristiana y filosofía natural.",
+ translation:"",annotations:"",text:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam. Orden de Santiago, Salamanca, filosofía natural.",
+ named_people:["Fray Luis de León"],named_places:["León","Salamanca"],repositories:["Biblioteca Nacional de España"],archive_countries:["España"],archive_cities:["Madrid"],shelfmarks:["(B) BNE, Ms. 8588, ff.129r-131v."],archive_labels:["Biblioteca Nacional de España","España","Madrid"],shelfmark_labels:["(B) BNE, Ms. 8588, ff.129r-131v."],
+ bibliography:[],witnesses:[],hand_notes:["Mano de Benito Arias Montano"],editor:"Antonio Dávila Pérez",authors:["Benito Arias Montano"],edition_status:"approved",revision_date:"2023-02-14",revision_who:"#Davila",facsimiles:[],has_images:true,has_transcription:true,has_translation:false,file:"1560 02 01-60 05 05 CoBAM.xml",url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
 }];
-let letters=Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:sample;
-const norm=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
-const form=document.querySelector("#search-form"),results=document.querySelector("#results"),status=document.querySelector("#status");
-const uniqueSorted=values=>[...new Set(values.map(x=>(x||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
-function fillDatalist(id,values){const list=document.querySelector(id);list.replaceChildren();for(const value of uniqueSorted(values)){const option=document.createElement("option");option.value=value;list.append(option)}}
-function populateFilters(){
- fillDatalist("#senders",letters.map(x=>x.sender));
- fillDatalist("#recipients",letters.map(x=>x.recipient));
- fillDatalist("#places",letters.flatMap(x=>[x.origin,x.destination]));
- const select=document.querySelector("#lang"),selected=select.value;
- select.replaceChildren(new Option("Todos",""));
- for(const value of uniqueSorted(letters.map(x=>x.language)))select.add(new Option(value,value));
- select.value=selected;
+const LETTERS=Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE;
+const PAGE_SIZE=20;
+const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
+const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+const byId=id=>document.getElementById(id);
+const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),availability:new Set()};
+const facetSearches={};
+const showAllFacets=new Set();
+let appliedQuery="";
+let currentPage=1;
+const facetArea=byId("facets"),resultsArea=byId("results"),activeArea=byId("active-filters"),status=byId("load-status");
+const FACETS=[
+ {key:"senders",title:"Remitentes",values:r=>[r.sender].filter(Boolean)},
+ {key:"recipients",title:"Destinatarios",values:r=>[r.recipient].filter(Boolean)},
+ {key:"senderPlaces",title:"Lugares de origen",values:r=>[r.origin].filter(Boolean)},
+ {key:"recipientPlaces",title:"Lugares de destino",values:r=>[r.destination].filter(Boolean)},
+ {key:"languages",title:"Idioma de la carta",values:r=>[r.language].filter(Boolean)},
+ {key:"repositories",title:"Archivos e instituciones",values:r=>r.repositories||[]},
+ {key:"shelfmarks",title:"Signaturas y localizadores",values:r=>r.shelfmark_labels||r.shelfmarks||[]},
+ {key:"mentionedPeople",title:"Personas mencionadas",values:r=>(r.named_people||[])},
+ {key:"mentionedPlaces",title:"Otros lugares mencionados",values:r=>(r.named_places||[]).filter(p=>norm(p)!==norm(r.origin)&&norm(p)!==norm(r.destination))}
+];
+const AVAILABILITY=[
+ {value:"images",label:"Con imágenes de facsímil",test:r=>Boolean(r.has_images)},
+ {value:"transcription",label:"Con transcripción",test:r=>Boolean(r.has_transcription)},
+ {value:"translation",label:"Con traducción",test:r=>Boolean(r.has_translation)}
+];
+function getByFacet(r,key){
+ const f=FACETS.find(x=>x.key===key);
+ if(f)return f.values(r);
+ if(key==="people")return unique([r.sender,r.recipient]);
+ if(key==="availability")return AVAILABILITY.filter(x=>x.test(r)).map(x=>x.value);
+ return [];
 }
-function render(items){
- results.replaceChildren();
- for(const x of items){
-  const article=document.createElement("article");article.className="result";
-  const h=document.createElement("h3");h.textContent=x.title||x.file||"Carta sin título";
-  const pill=document.createElement("span");pill.className="pill";pill.textContent=x.language||"Idioma no indicado";
-  const meta=document.createElement("p");meta.className="meta";
-  meta.textContent=[x.date,x.sender&&"De: "+x.sender,x.recipient&&"Para: "+x.recipient,[x.origin,x.destination].filter(Boolean).join(" → ")].filter(Boolean).join(" · ");
-  const summary=document.createElement("p");summary.className="summary";summary.textContent=x.abstract||"Sin resumen disponible.";
-  const inc=document.createElement("p");inc.className="meta";inc.textContent=x.incipit?"Incipit: "+x.incipit:"";
-  const link=document.createElement("a");link.href=x.url;link.target="_blank";link.rel="noopener noreferrer";link.textContent="Consultar XML en GitHub ↗";
-  article.append(h,pill,meta,summary,inc,link);results.append(article);
+function haystackFor(r){
+ const scope=byId("scope").value;
+ if(scope==="transcription")return r.transcription||"";
+ if(scope==="translation")return r.translation||"";
+ if(scope==="abstract")return r.abstract||"";
+ if(scope==="incipit")return r.incipit||"";
+ if(scope==="annotations")return [r.annotations,(r.bibliography||[]).join(" "), (r.witnesses||[]).map(w=>w.description).join(" ")].join(" ");
+ const metadata=[r.id,r.letter_code,r.title,r.date,r.sender,r.recipient,r.origin,r.destination,r.language,r.abstract,r.incipit,r.editor,(r.authors||[]).join(" "),(r.named_people||[]).join(" "),(r.named_places||[]).join(" "),(r.repositories||[]).join(" "),(r.archive_countries||[]).join(" "),(r.archive_cities||[]).join(" "),(r.shelfmarks||[]).join(" ")].join(" ");
+ if(scope==="metadata")return metadata;
+ return [metadata,r.text,r.transcription,r.translation,r.annotations,(r.bibliography||[]).join(" ")].join(" ");
+}
+function makeMatcher(term){
+ const quoted=term.startsWith('"')&&term.endsWith('"');
+ const raw=quoted?term.slice(1,-1):term;
+ let pattern="";
+ for(const char of norm(raw)){
+  if(char==="*")pattern+=".*";
+  else if(char==="?")pattern+=".";
+  else if("\\^$+-.{}[]()|".includes(char))pattern+="\\"+char;
+  else if(/\s/.test(char))pattern+="\\s+";
+  else pattern+=char;
  }
- status.textContent=items.length+" resultado(s) de "+letters.length+" cartas indexadas.";
+ try{return new RegExp(pattern,"i")}catch{return /$a/}
 }
-function search(){
- const q=norm(document.querySelector("#q").value),sender=norm(document.querySelector("#sender").value),recipient=norm(document.querySelector("#recipient").value),place=norm(document.querySelector("#place").value),lang=document.querySelector("#lang").value;
- const fromValue=document.querySelector("#from").value,toValue=document.querySelector("#to").value;
- const from=fromValue?Number(fromValue):null,to=toValue?Number(toValue):null;
- const found=letters.filter(x=>{
-  const hay=norm([x.title,x.abstract,x.incipit,x.text,x.file].join(" "));
-  const textOk=!q||hay.includes(q);
-  const senderOk=!sender||norm(x.sender).includes(sender);
-  const recipientOk=!recipient||norm(x.recipient).includes(recipient);
-  const placeOk=!place||norm([x.origin,x.destination].join(" ")).includes(place);
-  const langOk=!lang||x.language===lang;
-  const datesUnknown=x.start_year==null||x.end_year==null;
-  const dateOk=(from===null&&to===null)||(!datesUnknown&&(from===null||x.end_year>=from)&&(to===null||x.start_year<=to));
-  return textOk&&senderOk&&recipientOk&&placeOk&&langOk&&dateOk;
- });
- render(found);
- if(!found.length)status.textContent="No se han encontrado cartas con esos criterios.";
+function tokenizeQuery(query){
+ let tokens=query.match(/"[^"]*"|\(|\)|\bAND\b|\bOR\b|\bNOT\b|[^\s()]+/gi)||[];
+ tokens=tokens.map(t=>/^\b(?:AND|OR|NOT)\b$/i.test(t)?t.toUpperCase():t);
+ const out=[];
+ const isTerm=t=>t&&!["AND","OR","NOT","(",")"].includes(t);
+ const ends=t=>isTerm(t)||t===")";
+ const starts=t=>isTerm(t)||t==="("||t==="NOT";
+ for(const token of tokens){
+  const prev=out[out.length-1];
+  if(ends(prev)&&starts(token))out.push("AND");
+  out.push(token);
+ }
+ return out;
 }
-form.addEventListener("submit",e=>{e.preventDefault();search()});
-form.addEventListener("reset",()=>setTimeout(search,0));
-async function loadCatalog(){
- if(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length){populateFilters();search();status.textContent="Catálogo completo cargado: "+letters.length+" cartas.";return;}
+function queryMatches(query,text){
+ if(!query.trim())return true;
+ const tokens=tokenizeQuery(query);
+ let index=0;
+ function primary(){
+  const token=tokens[index++];
+  if(token==="("){
+   const node=orExpr();
+   if(tokens[index]!==")")throw Error("Paréntesis sin cerrar");
+   index++;return node;
+  }
+  if(!token||["AND","OR",")"].includes(token))throw Error("Consulta incompleta");
+  if(token==="NOT")return {type:"not",child:primary()};
+  return {type:"term",match:makeMatcher(token)};
+ }
+ function andExpr(){
+  const nodes=[primary()];
+  while(tokens[index]==="AND"){index++;nodes.push(primary())}
+  return nodes.length===1?nodes[0]:{type:"and",nodes};
+ }
+ function orExpr(){
+  const nodes=[andExpr()];
+  while(tokens[index]==="OR"){index++;nodes.push(andExpr())}
+  return nodes.length===1?nodes[0]:{type:"or",nodes};
+ }
  try{
-  const response=await fetch("catalogo.json",{cache:"no-store"});
-  if(!response.ok)throw new Error("No hay catálogo generado todavía.");
-  const data=await response.json();
-  if(!Array.isArray(data)||!data.length)throw new Error("El catálogo está vacío.");
-  letters=data;populateFilters();search();
-  status.textContent="Catálogo cargado: "+letters.length+" cartas. Puedes combinar los filtros.";
- }catch(error){
-  populateFilters();search();
-  status.textContent="Modo de demostración: 1 carta de ejemplo. Genera catalogo.json para activar la búsqueda completa.";
+  const tree=orExpr();
+  if(index!==tokens.length)return norm(text).includes(norm(query));
+  const ntext=norm(text);
+  function evaluate(node){
+   if(node.type==="term")return node.match.test(ntext);
+   if(node.type==="not")return !evaluate(node.child);
+   if(node.type==="and")return node.nodes.every(evaluate);
+   if(node.type==="or")return node.nodes.some(evaluate);
+   return false;
+  }
+  return evaluate(tree);
+ }catch{
+  // If an expression is malformed, fall back to a plain all-terms search.
+  const terms=query.match(/"[^"]*"|[^\s]+/g)||[];
+  return terms.filter(t=>!/^(AND|OR|NOT)$/i.test(t)).every(t=>makeMatcher(t).test(norm(text)));
  }
 }
-populateFilters();render(letters);loadCatalog();
-</script></body></html>
+function yearMatches(r){
+ const from=byId("year-from").value?Number(byId("year-from").value):null;
+ const to=byId("year-to").value?Number(byId("year-to").value):null;
+ if(from===null&&to===null)return true;
+ if(r.start_year==null||r.end_year==null)return false;
+ return (from===null||r.end_year>=from)&&(to===null||r.start_year<=to);
+}
+function matchesFilters(r,excludeFacet=null){
+ if(!queryMatches(appliedQuery,haystackFor(r)))return false;
+ if(!yearMatches(r))return false;
+ const combine=byId("combine-people").checked;
+ if(combine){
+  if(excludeFacet!=="people"&&selected.people.size&&!getByFacet(r,"people").some(v=>hasSelected(selected.people,v)))return false;
+ }else{
+  if(excludeFacet!=="senders"&&selected.senders.size&&!getByFacet(r,"senders").some(v=>hasSelected(selected.senders,v)))return false;
+  if(excludeFacet!=="recipients"&&selected.recipients.size&&!getByFacet(r,"recipients").some(v=>hasSelected(selected.recipients,v)))return false;
+ }
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","shelfmarks","mentionedPeople","mentionedPlaces"]){
+  if(key!==excludeFacet&&selected[key].size&&!getByFacet(r,key).some(v=>hasSelected(selected[key],v)))return false;
+ }
+ if(excludeFacet!=="availability"&&selected.availability.size){
+  for(const value of selected.availability){
+   const option=AVAILABILITY.find(a=>a.value===value);
+   if(option&&!option.test(r))return false;
+  }
+ }
+ return true;
+}
+function hasSelected(set,value){return [...set].some(x=>norm(x)===norm(value))}
+function countInFacet(key,value){
+ return LETTERS.filter(r=>matchesFilters(r,key)).filter(r=>getByFacet(r,key).some(v=>norm(v)===norm(value))).length;
+}
+function countAvailability(value){
+ const option=AVAILABILITY.find(a=>a.value===value);
+ if(!option)return 0;
+ return LETTERS.filter(r=>matchesFilters(r,"availability")&&option.test(r)).length;
+}
+function el(tag,cls,text){
+ const node=document.createElement(tag);
+ if(cls)node.className=cls;
+ if(text!==undefined&&text!==null)node.textContent=text;
+ return node;
+}
+function makeFacet(config){
+ const details=el("details","facet");details.open=["senders","recipients","people","languages"].includes(config.key);
+ const summary=el("summary","",config.title);
+ summary.append(el("span","facet-total",""));
+ const body=el("div","facet-body"),valueArea=el("div","facet-options");
+ if(config.searchable!==false){
+  const box=el("div","facet-search"),input=document.createElement("input");
+  input.type="search";input.placeholder="Buscar en esta faceta…";input.setAttribute("aria-label","Buscar: "+config.title);
+  input.value=facetSearches[config.key]||"";
+  input.addEventListener("input",()=>{facetSearches[config.key]=input.value;renderFacetValues(config,valueArea,details.querySelector(".facet-total"))});
+  box.append(input);body.append(box);
+ }
+ body.append(valueArea);details.append(summary,body);
+ renderFacetValues(config,valueArea,details.querySelector(".facet-total"));
+ return details;
+}
+function renderFacetValues(config,valueArea,totalEl){
+ valueArea.replaceChildren();
+ const values= config.key==="availability"
+  ? AVAILABILITY.map(a=>({value:a.value,label:a.label,count:countAvailability(a.value)}))
+  : unique(LETTERS.flatMap(r=>getByFacet(r,config.key))).map(value=>({value,label:value,count:countInFacet(config.key,value)}));
+ const selectedSet=selected[config.key]||new Set();
+ const search=norm(facetSearches[config.key]||"");
+ const filtered=values.filter(x=>(x.count>0||hasSelected(selectedSet,x.value))&&(!search||norm(x.label).includes(search)));
+ filtered.sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,"es"));
+ totalEl.textContent=selectedSet.size?selectedSet.size+" seleccionados":String(filtered.length);
+ const showAll=showAllFacets.has(config.key);
+ const visible=showAll?filtered:filtered.slice(0,8);
+ if(!visible.length){valueArea.append(el("div","facet-empty","No hay valores que coincidan."));return}
+ for(const item of visible){
+  const label=el("label","facet-option"),checkbox=document.createElement("input");
+  checkbox.type="checkbox";checkbox.checked=hasSelected(selectedSet,item.value);
+  checkbox.addEventListener("change",()=>{
+   const found=[...selectedSet].find(x=>norm(x)===norm(item.value));
+   if(checkbox.checked)selectedSet.add(item.value);else if(found!==undefined)selectedSet.delete(found);
+   currentPage=1;renderAll();
+  });
+  label.append(checkbox,el("span","value",item.label),el("span","count",String(item.count)));valueArea.append(label);
+ }
+ if(filtered.length>8){
+  const more=el("button","show-more",showAll?"Mostrar menos":"Mostrar todos ("+filtered.length+")");
+  more.type="button";more.addEventListener("click",()=>{if(showAll)showAllFacets.delete(config.key);else showAllFacets.add(config.key);renderFacetValues(config,valueArea,totalEl)});valueArea.append(more);
+ }
+}
+function buildFacets(){
+ facetArea.replaceChildren();
+ const configs=byId("combine-people").checked
+  ? [{key:"people",title:"Corresponsales (remitente o destinatario)"} ,...FACETS.filter(x=>!["senders","recipients"].includes(x.key))]
+  : FACETS;
+ for(const config of configs)facetArea.append(makeFacet(config));
+ facetArea.append(makeFacet({key:"availability",title:"Disponibilidad",searchable:false}));
+}
+function sortRecords(records){
+ const mode=byId("sort").value;
+ const copy=[...records];
+ const str=k=>(a,b)=>(a[k]||"").localeCompare(b[k]||"","es",{sensitivity:"base"});
+ if(mode==="sender")copy.sort(str("sender"));
+ else if(mode==="recipient")copy.sort(str("recipient"));
+ else if(mode==="title")copy.sort(str("title"));
+ else copy.sort((a,b)=>{
+  const ay=a.start_year??9999,by=b.start_year??9999;
+  const ax=mode==="date-desc"?by-ay:ay-by;
+  return ax||((a.title||"").localeCompare(b.title||"","es"));
+ });
+ return copy;
+}
+function makeDetail(title,paragraphs){
+ const block=el("div","detail-block"),strong=el("strong","",title);
+ block.append(strong);
+ for(const text of paragraphs.filter(Boolean))block.append(el("p","",text));
+ return block;
+}
+function makeResult(r){
+ const article=el("article","result");
+ const h=el("h3","result-title");
+ h.append(el("span","result-code",r.letter_code||r.id||"CoBAM"));
+ const titleLink=el("a","",r.title||r.file||"Carta sin título");
+ titleLink.href=r.url||"#";titleLink.target="_blank";titleLink.rel="noopener noreferrer";h.append(titleLink);article.append(h);
+ article.append(el("div","result-date",r.date||"Fecha no indicada"));
+ const meta=el("div","result-meta");
+ const item=(label,value)=>{const b=el("div","meta-item");b.append(el("span","meta-label",label),el("span","",value||"No indicado"));return b};
+ meta.append(item("Remitente",r.sender),item("Destinatario",r.recipient),item("Lugar de origen",r.origin),item("Lugar de destino",r.destination));
+ article.append(meta);
+ const badges=el("div","badges");
+ if(r.language)badges.append(el("span","badge",r.language));
+ if(r.has_images)badges.append(el("span","badge available","Con facsímil"));
+ if(r.has_transcription)badges.append(el("span","badge available","Con transcripción"));
+ if(r.has_translation)badges.append(el("span","badge available","Con traducción"));
+ if(r.edition_status)badges.append(el("span","badge","Estado editorial: "+r.edition_status));
+ article.append(badges);
+ if(r.abstract)article.append(el("p","abstract",r.abstract));
+ if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
+ const links=el("div","result-actions");
+ const xml=el("a","", "Ver registro XML ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
+ if((r.facsimiles||[]).length){
+  const fac=el("a","","Ver facsímil ("+r.facsimiles.length+") ↗");fac.href=r.facsimiles[0];fac.target="_blank";fac.rel="noopener noreferrer";links.append(fac);
+ }
+ article.append(links);
+ const details=document.createElement("details"),sum=el("summary","","Más metadatos y testimonios");
+ const grid=el("div","detail-grid");
+ grid.append(
+  makeDetail("Archivo e institución",r.repositories||[]),
+  makeDetail("Signatura",r.shelfmarks||[]),
+  makeDetail("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])])),
+  makeDetail("Personas mencionadas",(r.named_people||[]).slice(0,20)),
+  makeDetail("Lugares mencionados",(r.named_places||[]).slice(0,20)),
+  makeDetail("Mano / escritura",r.hand_notes||[]),
+  makeDetail("Edición y revisión",[r.editor,r.revision_date&&("Última revisión: "+r.revision_date),r.revision_who&&("Responsable: "+r.revision_who)]),
+  makeDetail("Referencias impresas",r.bibliography||[]),
+  makeDetail("Otros testimonios",(r.witnesses||[]).map(w=>[w.id,w.description].filter(Boolean).join(": ")))
+ );
+ details.append(sum,grid);article.append(details);
+ return article;
+}
+function getActiveLabels(){
+ const labels=[];
+ const add=(name,set)=>set.forEach(value=>labels.push({name,value,set}));
+ if(byId("combine-people").checked)add("people",selected.people);
+ else {add("senders",selected.senders);add("recipients",selected.recipients)}
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","shelfmarks","mentionedPeople","mentionedPlaces","availability"])add(key,selected[key]);
+ return labels;
+}
+const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",shelfmarks:"Signatura",mentionedPeople:"Persona",mentionedPlaces:"Lugar mencionado",availability:"Disponibilidad"};
+function renderActiveFilters(){
+ activeArea.replaceChildren();
+ const active=getActiveLabels();
+ if(!activeQuery&&!byId("year-from").value&&!byId("year-to").value&&!active.length){activeArea.hidden=true;return}
+ activeArea.hidden=false;
+ if(activeQuery){const chip=el("span","chip","Texto: "+appliedQuery);const b=el("button","","×");b.type="button";b.title="Quitar búsqueda de texto";b.onclick=()=>{appliedQuery="";byId("q").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
+ if(byId("year-from").value||byId("year-to").value){const label=(byId("year-from").value||"…")+"–"+(byId("year-to").value||"…");const chip=el("span","chip","Años: "+label);const b=el("button","","×");b.onclick=()=>{byId("year-from").value="";byId("year-to").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
+ for(const x of active){
+  const chip=el("span","chip",(facetTitles[x.name]||x.name)+": "+x.value),b=el("button","","×");
+  b.type="button";b.title="Quitar filtro";b.addEventListener("click",()=>{x.set.delete(x.value);currentPage=1;renderAll()});chip.append(b);activeArea.append(chip);
+ }
+}
+function renderResults(){
+ const filtered=sortRecords(LETTERS.filter(r=>matchesFilters(r)));
+ const pages=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
+ if(currentPage>pages)currentPage=pages;
+ const pageItems=filtered.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
+ byId("result-count").textContent=filtered.length+" "+(filtered.length===1?"carta":"cartas");
+ byId("result-subtitle").textContent="de "+LETTERS.length+" registros · Página "+currentPage+" de "+pages;
+ resultsArea.replaceChildren();
+ if(!filtered.length){
+  const blank=el("div","empty");blank.append(el("strong","","No se han encontrado cartas"),el("span","","Prueba a quitar algún filtro o a utilizar otros términos."));resultsArea.append(blank);
+ }else for(const r of pageItems)resultsArea.append(makeResult(r));
+ const pagination=byId("pagination");pagination.replaceChildren();
+ const prev=el("button","","‹ Anterior");prev.disabled=currentPage===1;prev.onclick=()=>{currentPage--;renderResults();window.scrollTo({top:0,behavior:"smooth"})};pagination.append(prev);
+ const start=Math.max(1,currentPage-2),end=Math.min(pages,currentPage+2);
+ for(let p=start;p<=end;p++){const b=el("button","",String(p));if(p===currentPage)b.setAttribute("aria-current","page");b.onclick=()=>{currentPage=p;renderResults();window.scrollTo({top:0,behavior:"smooth"})};pagination.append(b)}
+ const next=el("button","","Siguiente ›");next.disabled=currentPage===pages;next.onclick=()=>{currentPage++;renderResults();window.scrollTo({top:0,behavior:"smooth"})};pagination.append(next);
+ renderActiveFilters();
+}
+function renderAll(){buildFacets();renderResults()}
+byId("search-form").addEventListener("submit",event=>{event.preventDefault();appliedQuery=byId("q").value.trim();currentPage=1;renderAll()});
+byId("combine-people").addEventListener("change",()=>{currentPage=1;renderAll()});
+byId("year-from").addEventListener("change",()=>{currentPage=1;renderAll()});
+byId("year-to").addEventListener("change",()=>{currentPage=1;renderAll()});
+byId("sort").addEventListener("change",()=>{currentPage=1;renderResults()});
+byId("clear-filters").addEventListener("click",()=>{
+ appliedQuery="";byId("q").value="";byId("year-from").value="";byId("year-to").value="";
+ for(const set of Object.values(selected))set.clear();
+ byId("combine-people").checked=false;byId("scope").value="all";byId("sort").value="date-asc";
+ for(const key of Object.keys(facetSearches))delete facetSearches[key];
+ showAllFacets.clear();currentPage=1;renderAll();
+});
+buildFacets();renderResults();
+if(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length){
+ status.textContent="Catálogo completo cargado: "+LETTERS.length+" cartas.";
+}else{
+ status.textContent="Modo de demostración: una carta de ejemplo. El catálogo completo se genera al publicar mediante GitHub Actions.";
+}
+</script>
+</body>
+</html>
