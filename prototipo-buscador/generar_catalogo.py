@@ -18,7 +18,7 @@ OUTPUT = HERE / "catalogo.json"
 
 
 def clean(value: str | None) -> str:
-    return re.sub(r"\\s+", " ", value or "").strip()
+    return re.sub(r"\s+", " ", value or "").strip()
 
 
 def text_of(element: ET.Element | None) -> str:
@@ -55,7 +55,7 @@ def get_years(date_el: ET.Element | None, title: str, filename: str) -> tuple[in
             if value:
                 candidates.append(value)
     for value in candidates:
-        explicit = [int(y) for y in re.findall(r"\\b(?:15|16)\\d{2}\\b", value)]
+        explicit = [int(y) for y in re.findall(r"\b(?:15|16)\d{2}\b", value)]
         if explicit:
             return min(explicit), max(explicit)
     for source in (text_of(date_el), title, filename):
