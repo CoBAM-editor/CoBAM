@@ -72,7 +72,8 @@ jobs:
               "sender", "recipient", "origin", "destination", "language",
               "transcription", "translation", "annotations", "critical_apparatus",
               "commentary", "commentary_html", "source_marked_html", "source_clean_html",
-              "translation_html", "apparatus", "footnotes", "facsimile_items",
+              "translation_html", "apparatus", "footnotes", "facsimile_items", "date_warning",
+              "editorial_responsibility", "responsible_person",
               "has_apparatus", "has_footnotes", "repositories", "archive_countries",
               "archive_cities", "shelfmarks", "witnesses", "bibliography", "facsimiles",
               "has_images", "has_transcription", "has_translation", "file", "url", "published_url",
@@ -91,6 +92,8 @@ jobs:
           sample = next((r for r in records if r["letter_code"].strip() == "1568 08 29"), None)
           assert sample, "No se encuentra la carta de prueba 1568 08 29"
           assert sample["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/"
+          assert sample["start_year"] == 1568, "El filtro por año debería seguir la fecha legible de la carta de prueba"
+          assert sample["date_warning"], "Debe advertirse el desacuerdo entre @when y la fecha legible de la carta de prueba"
           assert sample["commentary_html"], "Falta el comentario de la carta de prueba"
           assert sample["source_marked_html"] and sample["source_clean_html"], "Falta una de las vistas de la transcripción"
           assert "tei-sic" in sample["source_marked_html"] and "tei-corr" in sample["source_marked_html"], "No se representan sic/corr en la vista marcada"
