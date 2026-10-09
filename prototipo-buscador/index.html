@@ -582,7 +582,9 @@ function makeResult(r){
  const h=el("h3","result-title");
  h.append(el("span","result-code",r.letter_code||r.id||"CoBAM"));
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
- titleLink.href=r.url||"#";titleLink.target="_blank";titleLink.rel="noopener noreferrer";h.append(titleLink);article.append(h);
+ titleLink.href=window.location.pathname+"?carta="+encodeURIComponent(r.id)+"#edicion";
+ titleLink.title="Abrir la vista de edición crítica";
+ h.append(titleLink);article.append(h);
  article.append(el("div","result-date",r.date||"Fecha no indicada"));
  const meta=el("div","result-meta");
  const item=(label,value)=>{const b=el("div","meta-item");b.append(el("span","meta-label",label),el("span","",value||"No indicado"));return b};
@@ -598,12 +600,17 @@ function makeResult(r){
  if(r.abstract)article.append(el("p","abstract",r.abstract));
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
- const xml=el("a","", "Ver registro XML ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
- if((r.facsimiles||[]).length){
-  const fac=el("a","","Ver facsímil ("+r.facsimiles.length+") ↗");fac.href=r.facsimiles[0];fac.target="_blank";fac.rel="noopener noreferrer";links.append(fac);
+ const reader=el("a","","Abrir edición crítica →");
+ reader.href=window.location.pathname+"?carta="+encodeURIComponent(r.id)+"#edicion";
+ links.append(reader);
+ if(r.published_url){
+  const published=el("a","","Edición publicada ↗");published.href=r.published_url;published.target="_blank";published.rel="noopener noreferrer";links.append(published);
+ }
+ const xml=el("a","", "Ver XML-TEI ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
+ if((r.facsimile_items||r.facsimiles||[]).length){
+  const fac=el("a","","Facsímiles ↗");fac.href=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.target="_blank";fac.rel="noopener noreferrer";links.append(fac);
  }
  article.append(links);
- article.append(makeLetterReader(r));
  const details=document.createElement("details"),sum=el("summary","","Más metadatos y testimonios");
  const grid=el("div","detail-grid");
  grid.append(
@@ -793,6 +800,103 @@ function exportFilteredCSV(){
  document.body.append(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),1000);
  byId("load-status").textContent="CSV descargado: "+records.length+" registros con los filtros actuales.";
 }
+
+function renderReaderMetadata(r){
+ const target=byId("reader-metadata");target.replaceChildren();
+ const items=[
+  ["Identificador",r.letter_code||r.tei_id||r.id],
+  ["Idioma de la carta",(r.languages||[r.language]).filter(Boolean).join(", ")],
+  ["Testimonio manuscrito",(r.repositories||[]).join("; ")],
+  ["Signatura",(r.shelfmarks||[]).join("; ")],
+  ["País y localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join(", ")],
+  ["Ediciones impresas",(r.bibliography||[]).join(" ")],
+  ["Edición crítica, traducción y notas",unique([...(r.authors||[]),r.editor]).filter(Boolean).join("; ")],
+  ["Estado editorial",[r.edition_status,r.revision_date&&("revisión "+r.revision_date)].filter(Boolean).join(" · ")]
+ ];
+ for(const [label,value] of items){
+  if(!value)continue;
+  const item=el("div","metadata-item"),strong=el("strong","",label),span=el("span","",value);
+  item.append(strong,span);target.append(item);
+ }
+}
+function renderReaderFacsimiles(r){
+ const target=byId("reader-image-grid");target.replaceChildren();
+ const images=Array.isArray(r.facsimile_items)?r.facsimile_items:[];
+ const fallback=images.length?images:(r.facsimiles||[]).map((url,i)=>({url,label:"Imagen "+(i+1)}));
+ if(!fallback.length){target.append(el("p","reader-missing","Este XML no contiene enlaces a facsímiles."));return}
+ for(const item of fallback){
+  if(!item.url||!/^https?:\/\//i.test(item.url))continue;
+  const figure=el("figure","reader-image"),anchor=document.createElement("a");
+  anchor.href=item.url;anchor.target="_blank";anchor.rel="noopener noreferrer";
+  const img=document.createElement("img");img.src=item.url;img.alt=(r.letter_code||r.title||"Carta")+" · "+(item.label||"facsímil");
+  img.loading="lazy";img.decoding="async";anchor.append(img);
+  const caption=el("figcaption","",[(r.repositories||[])[0],item.label].filter(Boolean).join(" · ")||"Facsímil");
+  figure.append(anchor,caption);target.append(figure);
+ }
+ if(!target.children.length)target.append(el("p","reader-missing","No hay imágenes con URL válida para mostrar."));
+}
+function renderReaderApparatus(r){
+ const target=byId("reader-apparatus");target.replaceChildren();
+ const entries=Array.isArray(r.apparatus)?r.apparatus:[];
+ if(!entries.length)return;
+ target.append(el("h5","","Aparato crítico"));
+ for(const item of entries){
+  const row=el("div","apparatus-item");row.id=item.id||("apparatus-"+item.number);
+  const lemma=el("span","lemma",item.lemma||"Lectura");
+  row.append(lemma);
+  if(item.lemma_witness)row.append(document.createTextNode(" · "),el("span","witness",item.lemma_witness));
+  for(const reading of item.readings||[]){
+   const readingLine=el("div","");readingLine.append(document.createTextNode("Variante: "),el("span","",reading.text||""));
+   if(reading.witness)readingLine.append(document.createTextNode(" · "),el("span","witness",reading.witness));
+   row.append(readingLine);
+  }
+  target.append(row);
+ }
+}
+function renderReaderFootnotes(r){
+ const target=byId("reader-footnotes");target.replaceChildren();
+ const notes=Array.isArray(r.footnotes)?r.footnotes:[];
+ if(!notes.length)return;
+ target.append(el("h5","","Notas"));
+ for(const note of notes){
+  const item=el("section","footnote-item");item.id="note-"+(note.id||"note");
+  const contentBox=el("div","");
+  // This HTML is a small, escaped fragment generated by the TEI converter, not
+  // markup supplied by a user at runtime.
+  contentBox.innerHTML=note.html||(" "+(note.text||""));
+  item.append(contentBox);target.append(item);
+ }
+}
+function renderLetterPage(r){
+ byId("search-view").hidden=true;byId("letter-view").hidden=false;
+ document.title=(r.letter_code||"Carta")+" · CoBAM";
+ byId("letter-code").textContent=r.letter_code||r.tei_id||r.id;
+ byId("letter-language").textContent=(r.languages||[r.language]).filter(Boolean).join(", ")||"Idioma no indicado";
+ byId("letter-title").textContent=r.title||r.file||"Carta sin título";
+ byId("letter-date").textContent=r.date||"Fecha no indicada";
+ byId("letter-route").replaceChildren();
+ const routeText=[
+  r.sender&&("De: "+r.sender+(r.origin?" ("+r.origin+")":"")),
+  r.recipient&&("Para: "+r.recipient+(r.destination?" ("+r.destination+")":""))
+ ].filter(Boolean);
+ for(const value of routeText)byId("letter-route").append(el("span","",value));
+ const published=byId("published-edition"),wpBottom=byId("reader-wordpress-bottom");
+ if(r.published_url){
+  published.href=r.published_url;published.hidden=false;
+  wpBottom.href=r.published_url;wpBottom.hidden=false;
+ }else{published.hidden=true;wpBottom.hidden=true}
+ byId("xml-source").href=r.url||"#";byId("reader-xml-bottom").href=r.url||"#";
+ renderReaderMetadata(r);
+ byId("reader-summary").textContent=r.abstract||"El XML no incluye un resumen para esta carta.";
+ byId("reader-commentary").innerHTML=r.commentary_html||'<p class="reader-missing">No hay comentario editorial codificado en la sección front del XML.</p>';
+ byId("reader-marked").innerHTML=r.source_marked_html||'<p class="reader-missing">No hay transcripción textual en el XML.</p>';
+ byId("reader-clean").innerHTML=r.source_clean_html||'<p class="reader-missing">No hay versión limpia de la transcripción.</p>';
+ byId("reader-translation").innerHTML=r.translation_html||'<p class="reader-missing">Esta carta no contiene una capa de traducción codificada en el XML.</p>';
+ renderReaderFacsimiles(r);renderReaderApparatus(r);renderReaderFootnotes(r);
+ if(location.hash==="#edicion")window.setTimeout(()=>byId("edicion").scrollIntoView({block:"start"}),80);
+ else window.scrollTo({top:0,behavior:"auto"});
+}
+
 function renderResults(){
  const filtered=sortRecords(LETTERS.filter(r=>matchesFilters(r)));
  const pages=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
@@ -814,6 +918,10 @@ function renderResults(){
 }
 function renderAll(){buildFacets();renderResults()}
 byId("search-form").addEventListener("submit",event=>{event.preventDefault();appliedQuery=byId("q").value.trim();currentPage=1;renderAll()});
+byId("back-to-search").addEventListener("click",()=>{
+ if(window.history.length>1)window.history.back();
+ else window.location.href=window.location.pathname;
+});
 byId("combine-people").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("year-from").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("year-to").addEventListener("change",()=>{currentPage=1;renderAll()});
@@ -834,10 +942,21 @@ byId("clear-filters").addEventListener("click",()=>{
  for(const key of Object.keys(facetSearches))delete facetSearches[key];
  showAllFacets.clear();currentPage=1;renderAll();
 });
-renderCollectionStats();buildFacets();renderResults();
+renderCollectionStats();
+const requestedLetter=new URLSearchParams(window.location.search).get("carta");
+if(requestedLetter){
+ const selectedLetter=LETTERS.find(r=>r.id===requestedLetter||r.tei_id===requestedLetter||r.file===requestedLetter||r.letter_code===requestedLetter);
+ if(selectedLetter)renderLetterPage(selectedLetter);
+ else{
+  buildFacets();renderResults();
+  status.textContent="No se encontró la carta solicitada en el catálogo. Puedes volver a la búsqueda.";
+ }
+}else{
+ buildFacets();renderResults();
+}
 if(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length){
  status.textContent="Catálogo completo cargado: "+LETTERS.length+" cartas.";
-}else{
+}else if(!requestedLetter){
  status.textContent="Modo de demostración: una carta de ejemplo. El catálogo completo se genera al publicar mediante GitHub Actions.";
 }
 </script>
