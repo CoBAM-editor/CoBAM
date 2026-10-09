@@ -89,16 +89,239 @@ def body_text(text_el: ET.Element | None) -> str:
         return ""
     body = text_el.find("tei:body", NS)
     if body is None:
-        return text_of(text_el)
-    # Keep paragraph boundaries for readable on-screen editions while reducing
-    # indentation noise from the XML source. Inline editorial markup remains text.
+        return plain_tei_text(text_el)
     paragraphs = [
-        clean(" ".join(paragraph.itertext()))
+        clean(plain_tei_text(paragraph))
         for paragraph in body.findall(".//tei:p", NS)
     ]
     paragraphs = [paragraph for paragraph in paragraphs if paragraph]
-    return "\n\n".join(paragraphs) if paragraphs else text_of(body)
+    return "\n\n".join(paragraphs) if paragraphs else clean(plain_tei_text(body))
 
+
+
+def local_name(element: ET.Element) -> str:
+    return element.tag.rsplit("}", 1)[-1]
+
+
+def plain_tei_text(element: ET.Element | None, mode: str = "clean") -> str:
+    """Extract reading text without duplicating alternative readings."""
+    if element is None:
+        return ""
+    kind = local_name(element)
+    if kind == "app":
+        choice = element.find("tei:lem", NS)
+        return plain_tei_text(choice if choice is not None else next(iter(element), None), mode)
+    if kind == "choice":
+        priority = ("corr", "reg", "expan", "orig", "sic") if mode == "clean" else ("sic", "orig", "corr", "reg", "expan")
+        selected = next((element.find(f"tei:{name}", NS) for name in priority if element.find(f"tei:{name}", NS) is not None), None)
+        return plain_tei_text(selected if selected is not None else next(iter(element), None), mode)
+    if kind == "pb":
+        return ""
+    parts = [element.text or ""]
+    for child in list(element):
+        parts.append(plain_tei_text(child, mode))
+        parts.append(child.tail or "")
+    return clean("".join(parts))
+
+
+def html_escape(value: str | None) -> str:
+    from html import escape
+    return escape(value or "", quote=True)
+
+
+def tei_inline_html(
+    element: ET.Element | None,
+    *,
+    mode: str,
+    facsimile_map: dict[str, str],
+    apparatus: list[dict[str, str]],
+    allow_page_links: bool = True,
+) -> str:
+    """Render a safe, deliberately small TEI subset as HTML for the reader view.
+
+    The HTML is generated here from known TEI tags; source text and attributes are
+    escaped, and only HTTP(S) targets from the catalogue are emitted as links.
+    """
+    if element is None:
+        return ""
+    kind = local_name(element)
+
+    def children(el: ET.Element) -> str:
+        result = html_escape(el.text)
+        for child in list(el):
+            result += tei_inline_html(
+                child, mode=mode, facsimile_map=facsimile_map,
+                apparatus=apparatus, allow_page_links=allow_page_links,
+            )
+            result += html_escape(child.tail)
+        return result
+
+    if kind == "pb":
+        label = element.get("n", "Salto de página")
+        target = element.get("facs", "").lstrip("#")
+        url = facsimile_map.get(target, "")
+        if allow_page_links and url.startswith(("https://", "http://")):
+            href = html_escape(url)
+            return f'<span class="tei-pagebreak"><a href="{href}" target="_blank" rel="noopener noreferrer">{html_escape("[" + label + "]")}</a></span>'
+        return f'<span class="tei-pagebreak">{html_escape("[" + label + "]")}</span>'
+
+    if kind == "app":
+        lem = element.find("tei:lem", NS)
+        lemma_html = tei_inline_html(lem, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus) if lem is not None else children(element)
+        lemma_text = plain_tei_text(lem) if lem is not None else plain_tei_text(element)
+        readings = []
+        for rdg in element.findall("tei:rdg", NS):
+            readings.append({
+                "text": plain_tei_text(rdg),
+                "witness": rdg.get("wit", "").replace("#", "").strip(),
+            })
+        witness = lem.get("wit", "") if lem is not None else ""
+        if mode == "clean":
+            return lemma_html
+        number = len(apparatus) + 1
+        apparatus.append({
+            "id": f"app-{number}",
+            "number": str(number),
+            "lemma": lemma_text,
+            "lemma_witness": witness.replace("#", "").strip(),
+            "readings": json.dumps(readings, ensure_ascii=False),
+        })
+        return f'<span class="tei-app-lemma">{lemma_html}<sup><a href="#apparatus-{number}" aria-label="Variante {number}">[{number}]</a></sup></span>'
+
+    if kind == "choice":
+        if mode == "clean":
+            priority = ("corr", "reg", "expan", "orig", "sic")
+            selected = next((element.find(f"tei:{n}", NS) for n in priority if element.find(f"tei:{n}", NS) is not None), None)
+            return tei_inline_html(selected, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus) if selected is not None else children(element)
+        sic = element.find("tei:sic", NS)
+        corr = element.find("tei:corr", NS)
+        orig = element.find("tei:orig", NS)
+        reg = element.find("tei:reg", NS)
+        if sic is not None or corr is not None:
+            left = tei_inline_html(sic, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus) if sic is not None else ""
+            right = tei_inline_html(corr, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus) if corr is not None else ""
+            return f'<span class="tei-choice">{left}{right}</span>'
+        selected = orig if orig is not None else reg
+        return tei_inline_html(selected, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus) if selected is not None else children(element)
+
+    if kind == "ref":
+        target = element.get("target", "")
+        label = children(element)
+        if target.startswith("#"):
+            target_id = target[1:]
+            if target_id.startswith("note"):
+                return f'<sup class="tei-note-ref"><a href="#note-{html_escape(target_id)}">{label}</a></sup>'
+            if target_id.startswith("reference"):
+                return f'<a class="tei-note-backlink" href="#ref-{html_escape(target_id)}">{label}</a>'
+        if target.startswith(("https://", "http://")):
+            return f'<a href="{html_escape(target)}" target="_blank" rel="noopener noreferrer">{label}</a>'
+        xml_id = element.get(f"{{{XML_NS}}}id", "")
+        anchor = f' id="ref-{html_escape(xml_id)}"' if xml_id else ""
+        return f'<span{anchor}>{label}</span>'
+
+    if kind == "expan":
+        content = children(element)
+        return f'<span class="tei-expansion" title="Expansión editorial">{content}</span>'
+    if kind == "ex":
+        return f'<span class="tei-ex">{children(element)}</span>'
+    if kind == "sic":
+        return f'<span class="tei-sic">{children(element)}</span>' if mode != "clean" else ""
+    if kind == "corr":
+        return f'<span class="tei-corr">{children(element)}</span>'
+    if kind == "orig":
+        return f'<span class="tei-orig">{children(element)}</span>'
+    if kind == "reg":
+        return f'<span class="tei-reg">{children(element)}</span>'
+    if kind == "supplied":
+        return f'<span class="tei-supplied" title="Texto suplido editorialmente">⟨{children(element)}⟩</span>'
+    if kind == "del":
+        return f'<del>{children(element)}</del>'
+    if kind == "add":
+        return f'<ins class="tei-add">{children(element)}</ins>'
+    if kind == "unclear":
+        return f'<span class="tei-unclear" title="Lectura dudosa">{children(element)}</span>'
+    if kind == "gap":
+        reason = element.get("reason", "ilegible")
+        return f'<span class="tei-gap" title="Laguna textual">[{html_escape(reason)}]</span>'
+    if kind == "name":
+        entity_type = element.get("type", "entidad")
+        return f'<span class="tei-entity tei-entity-{html_escape(entity_type)}" title="{html_escape(entity_type)}">{children(element)}</span>'
+    if kind == "date":
+        when = element.get("when", "")
+        title = f' title="{html_escape(when)}"' if when else ""
+        return f'<span class="tei-date"{title}>{children(element)}</span>'
+    if kind == "hi":
+        rend = element.get("rend", "")
+        if "bold" in rend.lower():
+            return f'<strong>{children(element)}</strong>'
+        if "italic" in rend.lower():
+            return f'<em>{children(element)}</em>'
+        if "underline" in rend.lower():
+            return f'<span class="tei-hi-underline">{children(element)}</span>'
+        return f'<span class="tei-hi">{children(element)}</span>'
+    if kind in {"title", "foreign", "mentioned"}:
+        return f'<em>{children(element)}</em>' if kind == "title" else children(element)
+    if kind in {"p", "ab"}:
+        return f'<p>{children(element)}</p>'
+    if kind in {"opener", "closer", "salute", "signed", "dateline"}:
+        return f'<div class="tei-{kind}">{children(element)}</div>'
+    if kind == "head":
+        content = plain_tei_text(element)
+        if not content:
+            return ""
+        return f'<h4>{children(element)}</h4>'
+    if kind == "lb":
+        return "<br/>"
+    if kind == "note":
+        if element.get("type") == "footnote":
+            return ""
+        return f'<span class="tei-inline-note">{children(element)}</span>'
+    if kind == "div":
+        div_type = element.get("type", "")
+        head = element.find("tei:head", NS)
+        label = tei_inline_html(head, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus) if head is not None else ""
+        inner = html_escape(element.text)
+        for child in list(element):
+            if child is head:
+                inner += html_escape(child.tail)
+                continue
+            inner += tei_inline_html(child, mode=mode, facsimile_map=facsimile_map, apparatus=apparatus)
+            inner += html_escape(child.tail)
+        cls = f"tei-block tei-block-{div_type}" if div_type else "tei-block"
+        heading = f'<h3>{label}</h3>' if label else ""
+        return f'<section class="{html_escape(cls)}">{heading}{inner}</section>'
+    if kind in {"body", "front", "back", "text", "group", "listWit", "witness"}:
+        return children(element)
+    return children(element)
+
+
+def extract_facsimile_items(root: ET.Element, facsimile_map: dict[str, str]) -> list[dict[str, str]]:
+    items: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for page in root.findall(".//tei:text//tei:pb[@facs]", NS):
+        target = page.get("facs", "").lstrip("#")
+        url = facsimile_map.get(target, "")
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        items.append({"id": target, "url": url, "label": page.get("n", target)})
+    for graphic_id, url in facsimile_map.items():
+        if url and url not in seen:
+            seen.add(url)
+            items.append({"id": graphic_id, "url": url, "label": f"Imagen {len(items)+1}"})
+    return items
+
+
+def render_tei_fragment(element: ET.Element | None, root: ET.Element, mode: str) -> tuple[str, list[dict[str, str]]]:
+    graphics: dict[str, str] = {}
+    for graphic in root.findall(".//tei:facsimile/tei:graphic", NS):
+        xml_id = graphic.get(f"{{{XML_NS}}}id", "")
+        url = graphic.get("url", "")
+        if xml_id and url.startswith(("https://", "http://")):
+            graphics[xml_id] = url
+    apparatus: list[dict[str, str]] = []
+    rendered = tei_inline_html(element, mode=mode, facsimile_map=graphics, apparatus=apparatus)
+    return rendered, apparatus
 
 def make_record(path: Path, root: ET.Element) -> dict:
     title = first_nonempty(
