@@ -88,7 +88,16 @@ def body_text(text_el: ET.Element | None) -> str:
     if text_el is None:
         return ""
     body = text_el.find("tei:body", NS)
-    return text_of(body if body is not None else text_el)
+    if body is None:
+        return text_of(text_el)
+    # Keep paragraph boundaries for readable on-screen editions while reducing
+    # indentation noise from the XML source. Inline editorial markup remains text.
+    paragraphs = [
+        clean(" ".join(paragraph.itertext()))
+        for paragraph in body.findall(".//tei:p", NS)
+    ]
+    paragraphs = [paragraph for paragraph in paragraphs if paragraph]
+    return "\\n\\n".join(paragraphs) if paragraphs else text_of(body)
 
 
 def make_record(path: Path, root: ET.Element) -> dict:
