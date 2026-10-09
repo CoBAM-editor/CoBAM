@@ -130,6 +130,9 @@ jobs:
               'id="search-view"', 'id="letter-view"', 'id="reader-marked"',
               'id="reader-clean"', 'id="reader-translation"', 'id="reader-footnotes"',
               'function renderLetterPage(r)', 'encodeURIComponent(r.id)',
+              'titleLink.href=r.published_url||prototypeReaderUrl;',
+              'reader.href=r.published_url||prototypeReaderUrl;',
+              'Leer carta editada →',
           ]
           missing = [fragment for fragment in required if fragment not in html]
           assert not missing, f"Faltan piezas de la vista de lectura: {missing}"
