@@ -39,6 +39,7 @@ input,select{width:100%;min-width:0;border:1px solid #aeb8c2;border-radius:7px;p
 <div class="notice"><strong>Prototipo:</strong> esta página es independiente y no modifica la web pública. El catálogo inicial contiene una carta de ejemplo; falta generar el índice completo automáticamente a partir de todos los XML-TEI.</div>
 <section id="results" class="result-list" aria-live="polite"></section>
 </main>
+<script src="catalog-data.js"></script>
 <script>
 const sample=[{
 id:"CoBAM15600201",title:"Benito Arias Montano (León) a fray Luis de León (Salamanca)",
@@ -50,7 +51,7 @@ text:"Dedimus tandem mi Leo dedimus ultro nomen in hanc militiam. Arias Montano 
 file:"1560 02 01-60 05 05 CoBAM.xml",
 url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
 }];
-let letters=sample;
+let letters=Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:sample;
 const norm=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
 const form=document.querySelector("#search-form"),results=document.querySelector("#results"),status=document.querySelector("#status");
 const uniqueSorted=values=>[...new Set(values.map(x=>(x||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
@@ -100,6 +101,7 @@ function search(){
 form.addEventListener("submit",e=>{e.preventDefault();search()});
 form.addEventListener("reset",()=>setTimeout(search,0));
 async function loadCatalog(){
+ if(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length){populateFilters();search();status.textContent="Catálogo completo cargado: "+letters.length+" cartas.";return;}
  try{
   const response=await fetch("catalogo.json",{cache:"no-store"});
   if(!response.ok)throw new Error("No hay catálogo generado todavía.");
