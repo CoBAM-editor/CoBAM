@@ -8,6 +8,12 @@ on:
     branches:
       - prototipo-buscador
 
+# Only the newest push should publish the preview; older builds must not
+# race and overwrite a newer version of the prototype.
+concurrency:
+  group: cobam-prototype-pages
+  cancel-in-progress: true
+
 permissions:
   contents: read
   pages: write
