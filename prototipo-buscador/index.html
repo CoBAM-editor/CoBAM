@@ -112,7 +112,18 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
       <div class="results-header">
         <div class="results-count"><strong id="result-count">Preparando catálogo…</strong><span id="result-subtitle">Lectura de los metadatos de CoBAM</span></div>
         <div class="result-controls"><label for="sort">Ordenar por</label><select id="sort"><option value="date-asc">Fecha: más antiguas</option><option value="date-desc">Fecha: más recientes</option><option value="sender">Remitente</option><option value="recipient">Destinatario</option><option value="title">Título</option></select></div>
+        <div class="toolbar-actions"><button class="toolbar-button" id="toggle-analytics" type="button" aria-pressed="false">Visualizar resultados</button><button class="toolbar-button" id="export-results" type="button">Descargar CSV</button></div>
       </div>
+      <section id="analytics" class="analytics" hidden aria-label="Visualizaciones de resultados">
+        <h3>Explorar los resultados</h3>
+        <p class="analytics-intro">Las visualizaciones se actualizan con los filtros activos. Los intervalos de fecha se cuentan en cada año cubierto; no equivalen a una fecha exacta de envío.</p>
+        <div class="analytics-grid">
+          <div class="chart-card"><h4>Cartas por año</h4><p class="chart-subtitle">Distribución cronológica del conjunto filtrado</p><div id="year-chart" class="chart-rows"></div></div>
+          <div class="chart-card"><h4>Lugares de origen y destino</h4><p class="chart-subtitle">Top de localidades mencionadas en la correspondencia</p><div id="place-chart" class="chart-rows"></div></div>
+          <div class="chart-card"><h4>Corresponsales más frecuentes</h4><p class="chart-subtitle">Remitentes y destinatarios en los resultados</p><div id="people-chart" class="chart-rows"></div></div>
+          <div class="chart-card"><h4>Acceso y edición</h4><p class="chart-subtitle">Disponibilidad de recursos digitales en los resultados</p><div id="resource-chart" class="chart-rows"></div></div>
+        </div>
+      </section>
       <div id="active-filters" class="active-filters" hidden></div>
       <div id="results" class="results-list" aria-live="polite"></div>
       <nav id="pagination" class="pagination" aria-label="Paginación de resultados"></nav>
