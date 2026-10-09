@@ -50,14 +50,19 @@ def unique(values: list[str]) -> list[str]:
 def get_years(date_el: ET.Element | None, title: str, filename: str) -> tuple[int | None, int | None]:
     candidates: list[str] = []
     if date_el is not None:
+        # Gather all available date attributes before deriving the interval:
+        # TEI often stores start/end in separate from/to values.
         for attr in ("from", "notBefore", "when", "to", "notAfter", "until"):
             value = date_el.get(attr)
             if value:
                 candidates.append(value)
-    for value in candidates:
-        explicit = [int(y) for y in re.findall(r"\b(?:15|16)\d{2}\b", value)]
-        if explicit:
-            return min(explicit), max(explicit)
+    explicit = [
+        int(year)
+        for value in candidates
+        for year in re.findall(r"\b(?:15|16)\d{2}\b", value)
+    ]
+    if explicit:
+        return min(explicit), max(explicit)
     for source in (text_of(date_el), title, filename):
         years = [int(y) for y in re.findall(r"\b(?:15|16)\d{2}\b", source)]
         if years:
