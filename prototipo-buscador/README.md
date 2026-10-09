@@ -10,9 +10,11 @@ Buscador experimental de la correspondencia de Benito Arias Montano, inspirado e
 - Búsqueda de texto en todos los campos, transcripción, traducción, resumen, incipit, notas/aparato o solo metadatos.
 - Consultas con AND, OR, NOT, frases entre comillas y comodines `*` y `?`.
 - Rango cronológico por año, conservando los intervalos de fecha cuando constan en el XML.
-- Facetas con recuentos dinámicos: remitente, destinatario, corresponsales (combinados), lugares de origen/destino, idioma, personas y lugares mencionados, archivos/instituciones y signaturas.
-- Disponibilidad documental: cartas con facsímil, con transcripción y con traducción.
-- Ordenación y paginación; los resultados muestran el resumen, incipit, disponibilidad y metadatos bibliográficos/manuscritos desplegables.
+- Facetas con recuentos dinámicos: remitente, destinatario, corresponsales (combinados), lugares de origen/destino, idioma, país y localidad del archivo, institución, signatura, personas y lugares mencionados, organizaciones y referencias impresas.
+- Disponibilidad documental: cartas con facsímil, con transcripción, con traducción, con aparato/notas y con edición impresa citada.
+- Resultados ordenables y paginados, con resumen e incipit; un lector desplegable presenta transcripción, traducción, notas/aparato crítico y facsímiles cuando están codificados.
+- Panel de visualización de los resultados (años, lugares, corresponsales y recursos digitales) y exportación CSV del conjunto filtrado.
+- Indicadores del catálogo, filtros combinables, chips para retirar filtros, panel de metadatos ampliados y diseño adaptable a móvil.
 - Enlaces al XML original y a los facsímiles disponibles.
 
 ## Campos derivados de TEI-XML
@@ -46,7 +48,7 @@ Abre `http://localhost:8000`.
 
 ## Validación e integración
 
-GitHub Actions comprueba la sintaxis del generador, genera y valida el catálogo, comprueba la sintaxis JavaScript y publica la vista previa de Pages en la rama de pruebas. El ZIP de prueba se conserva como artefacto de Actions.
+GitHub Actions comprueba la sintaxis del generador, prueba el cálculo de intervalos y la conservación de párrafos, genera y valida el catálogo, comprueba la sintaxis JavaScript y publica la vista previa de Pages en la rama de pruebas. El ZIP de prueba se conserva como artefacto de Actions.
 
 Antes de integrar en WordPress:
 1. Revisar una muestra de resultados con criterios históricos y filológicos.
