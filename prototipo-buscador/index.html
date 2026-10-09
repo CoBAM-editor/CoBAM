@@ -71,6 +71,75 @@ input:focus,select:focus,button:focus-visible{outline:2px solid #9f6d65;outline-
 @media(max-width:930px){.collection-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar-actions{width:100%}}
 @media(max-width:650px){.analytics-grid{grid-template-columns:1fr}.collection-stats{gap:7px}.stat-card{padding:10px 11px}.stat-value{font-size:1.25rem}}
 footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-size:.75rem}
+.letter-view{max-width:1420px;margin:0 auto;padding:0 28px 42px}
+.reader-topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 20px;padding:5px 0 12px;border-bottom:1px solid var(--line);font-size:.78rem;color:var(--muted)}
+.reader-back{background:white;border:1px solid var(--line);border-radius:4px;padding:8px 12px;color:var(--ink);cursor:pointer;font:inherit;font-weight:700}
+.letter-hero{padding:26px 28px;background:#fff;border:1px solid var(--line);border-radius:7px;margin-bottom:18px}
+.letter-kicker{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:750;margin:0 0 8px}
+.letter-hero h2{font:600 clamp(1.6rem,3vw,2.35rem)/1.2 Georgia,serif;margin:5px 0 10px;color:var(--ink)}
+.letter-id{display:inline-block;color:var(--accent);font-size:.8rem;font-weight:750;letter-spacing:.04em;margin-right:10px}
+.letter-date{font:italic 1.1rem Georgia,serif;color:var(--muted);margin:10px 0 16px}
+.letter-hero-meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:.85rem}
+.reader-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}
+.reader-action{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;border:1px solid #b9c4c9;border-radius:4px;background:#fff;color:var(--ink);font-size:.8rem;font-weight:700;text-decoration:none}
+.reader-action.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.reader-action[hidden]{display:none!important}
+.reader-intro-grid{display:grid;grid-template-columns:minmax(240px,.75fr) minmax(0,2fr);gap:16px;align-items:start;margin:0 0 19px}
+.reader-card{background:white;border:1px solid var(--line);border-radius:6px;overflow:hidden;min-width:0}
+.reader-card-head{padding:12px 16px;background:#edf0ed;border-bottom:1px solid var(--line);font-weight:750;font-size:.82rem;letter-spacing:.04em}
+.reader-card-body{padding:15px 17px}
+.reader-metadata{display:grid;gap:11px}.metadata-item{font-size:.83rem;overflow-wrap:anywhere}.metadata-item strong{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.reader-summary{font-size:.88rem;margin:0 0 16px;line-height:1.65}
+.reader-commentary h4{font-size:.78rem;color:var(--accent);letter-spacing:.055em;margin:17px 0 7px;text-transform:uppercase}
+.reader-commentary p{font: .91rem/1.7 Georgia,"Times New Roman",serif;margin:0 0 10px;text-align:justify}
+.reader-images{background:#fff;border:1px solid var(--line);border-radius:6px;padding:15px 17px;margin:0 0 21px}
+.reader-section-title{font:600 1.3rem Georgia,serif;margin:0 0 12px}
+.reader-image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}
+.reader-image{padding:7px;border:1px solid var(--line);border-radius:4px;background:#fbfcfa;margin:0;min-width:0}
+.reader-image a{display:flex;align-items:center;justify-content:center;height:205px;background:#f2f0eb;border-radius:3px}
+.reader-image img{display:block;max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}
+.reader-image figcaption{text-align:center;font-size:.75rem;color:var(--muted);padding:7px 2px 2px;overflow-wrap:anywhere}
+.reader-edition{margin-top:14px}
+.reader-edition-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin:0 0 12px}
+.reader-edition-head h3{font:600 1.5rem Georgia,serif;margin:0}
+.reader-edition-head p{color:var(--muted);font-size:.78rem;margin:0}
+.edition-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:13px;align-items:start}
+.edition-pane{background:#fff;border:1px solid var(--line);border-radius:6px;min-width:0;overflow:hidden}
+.edition-pane>h4{font-size:.76rem;line-height:1.4;letter-spacing:.045em;text-transform:uppercase;background:#edf0ed;margin:0;padding:13px 15px;border-bottom:1px solid var(--line)}
+.edition-content{padding:17px 18px;font: .87rem/1.72 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
+.edition-content p{margin:0 0 1em;text-align:justify}
+.edition-content h4{font:700 .83rem system-ui,sans-serif;margin:15px 0 8px}
+.edition-content a{color:var(--accent-dark);text-decoration:underline;text-underline-offset:2px}
+.edition-content .tei-pagebreak{display:block;font:.75rem/1.4 system-ui,sans-serif;text-align:right;margin:12px 0}
+.edition-content .tei-pagebreak a{padding:3px 7px;border:1px solid #d7dddf;border-radius:3px;background:#f7f8f6;text-decoration:none}
+.edition-content .tei-block{margin:0 0 14px}
+.edition-content .tei-block-address,.edition-content .tei-block-anotation{border:1px solid #e2e5e4;border-left:3px solid #a5aead;background:#fafbf9;padding:9px 11px;margin-bottom:14px}
+.edition-content .tei-block-address h3,.edition-content .tei-block-anotation h3{font:italic .8rem system-ui,sans-serif;color:var(--muted);margin:0 0 5px}
+.edition-content .tei-opener{font-style:italic;margin-bottom:14px}
+.edition-content .tei-closer,.edition-content .tei-signed{margin-top:14px;font-style:italic}
+.edition-content .tei-expansion{color:#6f4942;border-bottom:1px dotted #a98982}
+.edition-content .tei-ex{font-size:.77em;vertical-align:baseline}
+.edition-content .tei-choice{white-space:normal}
+.edition-content .tei-sic{background:#faeeee;color:#842e2e;text-decoration:underline dotted;text-underline-offset:3px}
+.edition-content .tei-corr{background:#eaf4ec;color:#2d6240;margin-left:2px}
+.edition-content .tei-sic:after{content:" ";white-space:pre}
+.edition-content .tei-add{border-bottom:1px solid #7e9a78}
+.edition-content .tei-supplied{color:#715a99}
+.edition-content .tei-unclear{border-bottom:1px dotted #9375aa}
+.edition-content .tei-entity{border-bottom:1px dotted #a2adb4}
+.edition-content .tei-note-ref,.edition-content .tei-app-lemma sup{font:700 .71em system-ui,sans-serif;vertical-align:super;margin-left:2px}
+.edition-content .tei-app-lemma sup a{color:#8b3027;text-decoration:none}
+.reader-apparatus,.reader-footnotes{border-top:1px solid var(--line);margin-top:17px;padding-top:12px}
+.reader-apparatus h5,.reader-footnotes h5{font:750 .75rem system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 9px}
+.apparatus-item,.footnote-item{padding:8px 0;border-bottom:1px solid #eaedeb;font-size:.79rem;line-height:1.5;overflow-wrap:anywhere}
+.apparatus-item:last-child,.footnote-item:last-child{border-bottom:0}
+.apparatus-item .lemma{font-weight:750}.apparatus-item .witness{color:var(--muted);font-size:.74rem}
+.apparatus-item a{scroll-margin-top:20px}
+.reader-backlinks{margin-top:24px;display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem}
+.reader-missing{font:italic .82rem/1.5 system-ui,sans-serif;color:var(--muted)}
+@media(max-width:1050px){.edition-columns{grid-template-columns:repeat(2,minmax(0,1fr))}.reader-intro-grid{grid-template-columns:minmax(220px,.8fr) minmax(0,2fr)}}
+@media(max-width:740px){.letter-view{padding:0 14px 30px}.letter-hero{padding:20px 17px}.reader-intro-grid{grid-template-columns:1fr}.edition-columns{grid-template-columns:1fr}.reader-image-grid{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}.reader-image a{height:170px}.reader-topbar{align-items:flex-start}.reader-edition-head{align-items:start;flex-direction:column}}
+
 @media(max-width:930px){.search-layout{grid-template-columns:minmax(240px,290px) minmax(0,1fr)}.top-inner,main{padding-left:18px;padding-right:18px}.result-meta{grid-template-columns:1fr}}
 @media(max-width:720px){.top-inner{align-items:flex-start}.edition-tag{display:none}.search-layout{grid-template-columns:1fr}.sidebar{order:0}.content-panel{order:1}.facet-options{max-height:220px}.results-list{padding:0 14px}.results-header,.active-filters{padding-left:14px;padding-right:14px}.detail-grid{grid-template-columns:1fr}}
 @media(max-width:420px){.top-inner{padding:16px 13px}.brand-mark{width:37px;height:37px}main{padding:0 10px;margin-top:18px}.query-row{flex-direction:column}.query-row .primary{width:100%}.result-controls{width:100%;justify-content:space-between}}
@@ -87,6 +156,7 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
   </div>
 </header>
 <main>
+  <div id="search-view">
   <section class="intro">
     <div class="eyebrow">Explorar la colección</div>
     <h2>Buscar cartas</h2>
@@ -150,6 +220,69 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
   </div>
   <p id="load-status" class="loading-note" role="status">Cargando el catálogo de cartas…</p>
   <div class="site-note"><strong>Prototipo de investigación:</strong> buscador independiente para revisar campos y comportamiento. No sustituye aún la búsqueda de la web pública de CoBAM.</div>
+
+  </div>
+  <section id="letter-view" class="letter-view" hidden>
+    <div class="reader-topbar">
+      <button type="button" id="back-to-search" class="reader-back">← Volver al buscador</button>
+      <span>CoBAM · Edición crítica digital</span>
+    </div>
+    <header class="letter-hero">
+      <p class="letter-kicker">Edición crítica digital de la correspondencia</p>
+      <div><span id="letter-code" class="letter-id"></span><span class="badge" id="letter-language"></span></div>
+      <h2 id="letter-title"></h2>
+      <p id="letter-date" class="letter-date"></p>
+      <div class="letter-hero-meta" id="letter-route"></div>
+      <div class="reader-actions">
+        <a id="published-edition" class="reader-action primary" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver edición en WordPress ↗</a>
+        <a id="xml-source" class="reader-action" href="#" target="_blank" rel="noopener noreferrer">Consultar XML-TEI ↗</a>
+      </div>
+    </header>
+    <section class="reader-intro-grid">
+      <aside class="reader-card">
+        <div class="reader-card-head">METADATOS Y TESTIMONIOS</div>
+        <div id="reader-metadata" class="reader-card-body reader-metadata"></div>
+      </aside>
+      <section class="reader-card">
+        <div class="reader-card-head">RESUMEN Y COMENTARIO EDITORIAL</div>
+        <div class="reader-card-body">
+          <p id="reader-summary" class="reader-summary"></p>
+          <div id="reader-commentary" class="reader-commentary"></div>
+        </div>
+      </section>
+    </section>
+    <section class="reader-images">
+      <h3 class="reader-section-title">Facsímiles del documento</h3>
+      <p class="helper">Pulsa una imagen para verla a mayor tamaño. Las referencias a folios en la transcripción enlazan con estas imágenes.</p>
+      <div id="reader-image-grid" class="reader-image-grid"></div>
+    </section>
+    <section class="reader-edition" id="edicion">
+      <div class="reader-edition-head">
+        <h3>Texto y traducción</h3>
+        <p>Vista basada en las capas y el marcado presentes en el XML-TEI.</p>
+      </div>
+      <div class="edition-columns">
+        <article class="edition-pane">
+          <h4>Texto y aparato crítico (visualización TEI)</h4>
+          <div id="reader-marked" class="edition-content"></div>
+          <div id="reader-apparatus" class="edition-content reader-apparatus"></div>
+        </article>
+        <article class="edition-pane">
+          <h4>Texto sin visualización del marcado TEI</h4>
+          <div id="reader-clean" class="edition-content"></div>
+        </article>
+        <article class="edition-pane">
+          <h4>Traducción al español y notas</h4>
+          <div id="reader-translation" class="edition-content"></div>
+          <div id="reader-footnotes" class="edition-content reader-footnotes"></div>
+        </article>
+      </div>
+      <div class="reader-backlinks">
+        <a id="reader-xml-bottom" href="#" target="_blank" rel="noopener noreferrer">Descargar / consultar XML original ↗</a>
+        <a id="reader-wordpress-bottom" href="#" target="_blank" rel="noopener noreferrer" hidden>Consultar edición publicada ↗</a>
+      </div>
+    </section>
+  </section>
 </main>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
 <script src="catalog-data.js"></script>
