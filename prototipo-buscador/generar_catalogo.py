@@ -387,20 +387,22 @@ def source_details(root: ET.Element, source_el: ET.Element | None, translation_e
 
 
 def extract_facsimile_items(root: ET.Element, facsimile_map: dict[str, str]) -> list[dict[str, str]]:
-    items: list[dict[str, str]] = []
-    seen: set[str] = set()
+    # Use the order of <facsimile>/<graphic> as the default gallery sequence,
+    # while resolving each item's folio label through <pb facs="#..."/>.
+    labels: dict[str, str] = {}
     for page in root.findall(".//tei:text//tei:pb[@facs]", NS):
         target = page.get("facs", "").lstrip("#")
-        url = facsimile_map.get(target, "")
-        if not url or url in seen:
-            continue
-        seen.add(url)
-        items.append({"id": target, "url": url, "label": page.get("n", target)})
-    for graphic_id, url in facsimile_map.items():
-        if url and url not in seen:
-            seen.add(url)
-            items.append({"id": graphic_id, "url": url, "label": f"Imagen {len(items)+1}"})
-    return items
+        if target and target not in labels:
+            labels[target] = page.get("n", target)
+    return [
+        {
+            "id": graphic_id,
+            "url": url,
+            "label": labels.get(graphic_id, f"Imagen {index+1}"),
+        }
+        for index, (graphic_id, url) in enumerate(facsimile_map.items())
+        if url
+    ]
 
 
 def render_tei_fragment(element: ET.Element | None, root: ET.Element, mode: str) -> tuple[str, list[dict[str, str]]]:
