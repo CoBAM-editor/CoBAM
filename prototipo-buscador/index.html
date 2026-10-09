@@ -125,7 +125,7 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
 .edition-content .tei-choice{white-space:normal}
 .edition-content .tei-sic{background:#faeeee;color:#842e2e;text-decoration:underline dotted;text-underline-offset:3px}
 .edition-content .tei-corr{background:#eaf4ec;color:#2d6240;margin-left:2px}
-.edition-content .tei-sic:after{content:" ";white-space:pre}
+.edition-content .tei-choice .tei-sic:after{content:" → ";white-space:pre;color:var(--muted);background:transparent;text-decoration:none}
 .edition-content .tei-add{border-bottom:1px solid #7e9a78}
 .edition-content .tei-supplied{color:#715a99}
 .edition-content .tei-unclear{border-bottom:1px dotted #9375aa}
@@ -810,6 +810,7 @@ function renderReaderMetadata(r){
  const target=byId("reader-metadata");target.replaceChildren();
  const items=[
   ["Identificador",r.letter_code||r.tei_id||r.id],
+  ["Íncipit",r.incipit],
   ["Idioma de la carta",(r.languages||[r.language]).filter(Boolean).join(", ")],
   ["Testimonio manuscrito",(r.repositories||[]).join("; ")],
   ["Signatura",(r.shelfmarks||[]).join("; ")],
@@ -930,7 +931,9 @@ function renderResults(){
 function renderAll(){buildFacets();renderResults()}
 byId("search-form").addEventListener("submit",event=>{event.preventDefault();appliedQuery=byId("q").value.trim();currentPage=1;renderAll()});
 byId("back-to-search").addEventListener("click",()=>{
- if(window.history.length>1)window.history.back();
+ let cameFromThisSite=false;
+ try{cameFromThisSite=Boolean(document.referrer)&&new URL(document.referrer).origin===window.location.origin}catch{}
+ if(cameFromThisSite&&window.history.length>1)window.history.back();
  else window.location.href=window.location.pathname;
 });
 byId("combine-people").addEventListener("change",()=>{currentPage=1;renderAll()});
