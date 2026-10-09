@@ -151,7 +151,7 @@ const PAGE_SIZE=20;
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
 const byId=id=>document.getElementById(id);
-const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),organizations:new Set(),editions:new Set(),availability:new Set()};
+const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),organizations:new Set(),editions:new Set(),availability:new Set()};
 const facetSearches={};
 const showAllFacets=new Set();
 let appliedQuery="";
@@ -164,6 +164,8 @@ const FACETS=[
  {key:"recipientPlaces",title:"Lugares de destino",values:r=>[r.destination].filter(Boolean)},
  {key:"languages",title:"Idioma de la carta",values:r=>r.languages&&r.languages.length?r.languages:[r.language].filter(Boolean)},
  {key:"repositories",title:"Archivos e instituciones",values:r=>r.repositories||[]},
+ {key:"archiveCountries",title:"País del archivo",values:r=>r.archive_countries||[]},
+ {key:"archiveCities",title:"Localidad del archivo",values:r=>r.archive_cities||[]},
  {key:"shelfmarks",title:"Signaturas y localizadores",values:r=>r.shelfmark_labels||r.shelfmarks||[]},
  {key:"mentionedPeople",title:"Personas mencionadas",values:r=>(r.named_people||[])},
  {key:"mentionedPlaces",title:"Otros lugares mencionados",values:r=>(r.named_places||[]).filter(p=>norm(p)!==norm(r.origin)&&norm(p)!==norm(r.destination))},
@@ -284,7 +286,7 @@ function matchesFilters(r,excludeFacet=null){
   if(excludeFacet!=="senders"&&selected.senders.size&&!getByFacet(r,"senders").some(v=>hasSelected(selected.senders,v)))return false;
   if(excludeFacet!=="recipients"&&selected.recipients.size&&!getByFacet(r,"recipients").some(v=>hasSelected(selected.recipients,v)))return false;
  }
- for(const key of ["senderPlaces","recipientPlaces","languages","repositories","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions"]){
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions"]){
   if(key!==excludeFacet&&selected[key].size&&!getByFacet(r,key).some(v=>hasSelected(selected[key],v)))return false;
  }
  if(excludeFacet!=="availability"&&selected.availability.size){
@@ -432,10 +434,10 @@ function getActiveLabels(){
  const add=(name,set)=>set.forEach(value=>labels.push({name,value,set}));
  if(byId("combine-people").checked)add("people",selected.people);
  else {add("senders",selected.senders);add("recipients",selected.recipients)}
- for(const key of ["senderPlaces","recipientPlaces","languages","repositories","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","availability"])add(key,selected[key]);
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","availability"])add(key,selected[key]);
  return labels;
 }
-const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",shelfmarks:"Signatura",mentionedPeople:"Persona",mentionedPlaces:"Lugar mencionado",organizations:"Organización",editions:"Edición impresa",availability:"Disponibilidad"};
+const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",mentionedPeople:"Persona",mentionedPlaces:"Lugar mencionado",organizations:"Organización",editions:"Edición impresa",availability:"Disponibilidad"};
 function renderActiveFilters(){
  activeArea.replaceChildren();
  const active=getActiveLabels();
