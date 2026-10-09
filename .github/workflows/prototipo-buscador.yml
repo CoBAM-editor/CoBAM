@@ -28,6 +28,27 @@ jobs:
       - name: Comprobar sintaxis del generador
         run: python -m py_compile prototipo-buscador/generar_catalogo.py
 
+      - name: Probar extracción de fechas y párrafos TEI
+        run: |
+          python - <<'PY'
+          import importlib.util
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          source = Path("prototipo-buscador/generar_catalogo.py")
+          spec = importlib.util.spec_from_file_location("cobam_catalog", source)
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          date = ET.fromstring('<date from="1560-02-01" to="1565-03-04"/>')
+          assert module.get_years(date, "", "") == (1560, 1565), "No conserva el intervalo from/to"
+          tei = ET.fromstring(
+              '<text xmlns="http://www.tei-c.org/ns/1.0"><body><p>Primer párrafo.</p><p>Segundo párrafo.</p></body></text>'
+          )
+          assert module.body_text(tei) == "Primer párrafo.\\n\\nSegundo párrafo.", "No conserva la separación de párrafos"
+          print("Pruebas de intervalos cronológicos y párrafos: correctas.")
+          PY
+
       - name: Generar catálogo desde los XML-TEI
         run: python prototipo-buscador/generar_catalogo.py
 
@@ -40,10 +61,24 @@ jobs:
           path = Path("prototipo-buscador/catalogo.json")
           records = json.loads(path.read_text(encoding="utf-8"))
           assert records, "El catálogo está vacío"
-          required = {"id", "title", "date", "sender", "recipient", "language", "file", "url"}
+          required = {
+              "id", "letter_code", "title", "date", "start_year", "end_year",
+              "sender", "recipient", "origin", "destination", "language",
+              "transcription", "translation", "annotations", "critical_apparatus",
+              "repositories", "archive_countries", "archive_cities", "shelfmarks",
+              "witnesses", "bibliography", "facsimiles", "has_images",
+              "has_transcription", "has_translation", "file", "url",
+          }
           missing = [r.get("file", "(archivo sin nombre)") for r in records if not required.issubset(r)]
           assert not missing, f"Faltan campos en: {missing[:5]}"
-          print(f"Catálogo válido: {len(records)} cartas.")
+          ids = [r["id"] for r in records]
+          assert len(ids) == len(set(ids)), "Hay identificadores TEI duplicados"
+          for record in records:
+              start, end = record["start_year"], record["end_year"]
+              if start is not None and end is not None:
+                  assert start <= end, f"Intervalo cronológico invertido: {record['file']}"
+              assert record["url"].startswith("https://"), f"URL de XML inesperada: {record['file']}"
+          print(f"Catálogo válido: {len(records)} cartas, identificadores únicos e intervalos comprobados.")
           PY
 
       - name: Preparar catálogo embebido para la vista previa
