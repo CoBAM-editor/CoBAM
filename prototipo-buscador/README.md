@@ -1,6 +1,8 @@
 # Prototipo de buscador CoBAM
 
-Buscador experimental de la correspondencia de Benito Arias Montano, inspirado en los patrones de búsqueda facetada de la edición digital de Clusius y en prácticas habituales para correspondencias digitales. Se mantiene separado de WordPress y de `main`.
+Buscador experimental de la correspondencia de Benito Arias Montano, inspirado en la búsqueda facetada de Clusius Correspondence, la búsqueda avanzada y navegación por entidades de EMLO y las prácticas de interoperabilidad de correspSearch. Se mantiene separado de WordPress y de `main`.
+
+**La búsqueda actual de WordPress basada en Zotero está activa y debe seguir funcionando.** Este prototipo es una vía paralela de evaluación: no desactiva, sustituye ni modifica Zotero. Cualquier futura integración se decidirá después de validar los resultados y la interfaz.
 
 ## Interfaz
 
