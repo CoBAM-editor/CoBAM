@@ -254,34 +254,44 @@ def tei_inline_html(
 
     if kind == "expan":
         content = children(element)
-        return f'<span class="tei-expansion" title="Expansión editorial">{content}</span>'
+        return content if mode == "clean" else f'<span class="tei-expansion" title="Expansión editorial">{content}</span>'
     if kind == "ex":
-        return f'<span class="tei-ex">{children(element)}</span>'
+        content = children(element)
+        return content if mode == "clean" else f'<span class="tei-ex">{content}</span>'
     if kind == "sic":
         return f'<span class="tei-sic">{children(element)}</span>'
     if kind == "corr":
-        return f'<span class="tei-corr">{children(element)}</span>'
+        content = children(element)
+        return content if mode == "clean" else f'<span class="tei-corr">{content}</span>'
     if kind == "orig":
-        return f'<span class="tei-orig">{children(element)}</span>'
+        content = children(element)
+        return content if mode == "clean" else f'<span class="tei-orig">{content}</span>'
     if kind == "reg":
-        return f'<span class="tei-reg">{children(element)}</span>'
+        content = children(element)
+        return content if mode == "clean" else f'<span class="tei-reg">{content}</span>'
     if kind == "supplied":
-        return f'<span class="tei-supplied" title="Texto suplido editorialmente">⟨{children(element)}⟩</span>'
+        content = children(element)
+        return content if mode == "clean" else f'<span class="tei-supplied" title="Texto suplido editorialmente">⟨{content}⟩</span>'
     if kind == "del":
-        return f'<del>{children(element)}</del>'
+        return "" if mode == "clean" else f'<del>{children(element)}</del>'
     if kind == "add":
-        return f'<ins class="tei-add">{children(element)}</ins>'
+        content = children(element)
+        return content if mode == "clean" else f'<ins class="tei-add">{content}</ins>'
     if kind == "unclear":
-        return f'<span class="tei-unclear" title="Lectura dudosa">{children(element)}</span>'
+        content = children(element)
+        return content if mode == "clean" else f'<span class="tei-unclear" title="Lectura dudosa">{content}</span>'
     if kind == "gap":
         reason = element.get("reason", "ilegible")
         return f'<span class="tei-gap" title="Laguna textual">[{html_escape(reason)}]</span>'
     if kind == "name":
+        content = children(element)
+        if mode == "clean":
+            return content
         entity_type = element.get("type", "entidad")
-        return f'<span class="tei-entity tei-entity-{html_escape(entity_type)}" title="{html_escape(entity_type)}">{children(element)}</span>'
+        return f'<span class="tei-entity tei-entity-{html_escape(entity_type)}" title="{html_escape(entity_type)}">{content}</span>'
     if kind == "date":
         when = element.get("when", "")
-        title = f' title="{html_escape(when)}"' if when else ""
+        title = f' title="{html_escape(when)}"' if when and mode != "clean" else ""
         return f'<span class="tei-date"{title}>{children(element)}</span>'
     if kind == "hi":
         rend = element.get("rend", "")
