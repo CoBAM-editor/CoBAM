@@ -421,7 +421,7 @@ function makeLetterReader(r){
  const facsimiles=unique(r.facsimiles||[]);
  if(facsimiles.length){
   facsimiles.forEach((source,index)=>{
-   if(!/^https?:\\/\\//i.test(source))return;
+   if(!/^https?:\/\//i.test(source))return;
    const figure=el("figure","facsimile-card"),anchor=document.createElement("a");
    anchor.href=source;anchor.target="_blank";anchor.rel="noopener noreferrer";
    const img=document.createElement("img");img.src=source;img.loading="lazy";img.decoding="async";
