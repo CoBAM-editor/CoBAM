@@ -99,9 +99,26 @@ def make_record(path: Path, root: ET.Element) -> dict:
     recipient, destination = action_info(root, "received")
     abstract = first_text(root, ".//tei:note[@type='abstract']")
     incipit = first_text(root, ".//tei:note[@type='incipit']")
-    language_el = root.find(".//tei:langUsage/tei:language", NS)
-    language = text_of(language_el)
-    language_code = language_el.get("ident", "") if language_el is not None else ""
+    language_elements = root.findall(".//tei:langUsage/tei:language", NS)
+    languages = unique([text_of(el) for el in language_elements])
+    language_codes = unique([el.get("ident", "") for el in language_elements if el.get("ident")])
+    language = languages[0] if languages else ""
+    language_code = language_codes[0] if language_codes else ""
+    date_when = date_el.get("when", "") if date_el is not None else ""
+    date_from = first_nonempty(
+        date_el.get("from", "") if date_el is not None else "",
+        date_el.get("notBefore", "") if date_el is not None else "",
+        date_when,
+    )
+    date_to = first_nonempty(
+        date_el.get("to", "") if date_el is not None else "",
+        date_el.get("notAfter", "") if date_el is not None else "",
+        date_when,
+    )
+    date_certainty = first_nonempty(
+        date_el.get("cert", "") if date_el is not None else "",
+        date_el.get("precision", "") if date_el is not None else "",
+    )
     xml_id = root.get(f"{{{XML_NS}}}id", "")
     letter_code = first_text(root, ".//tei:publicationStmt/tei:idno[@type='CoBAM']")
     start_year, end_year = get_years(date_el, title, path.name)
@@ -115,19 +132,55 @@ def make_record(path: Path, root: ET.Element) -> dict:
     # Notes embedded in the edited text are treated as annotation/searchable notes,
     # kept separate from the header abstract and incipit.
     notes_in_text = unique([text_of(n) for n in root.findall(".//tei:text//tei:note", NS)])
-    annotations = " ".join(notes_in_text)
+    apparatus_entries = unique([text_of(a) for a in root.findall(".//tei:text//tei:app", NS)])
+    critical_apparatus = " ".join(apparatus_entries)
+    annotations = " ".join(notes_in_text + apparatus_entries)
+
+    def entity_values(paths: list[str]) -> list[str]:
+        return unique([text_of(el) for xpath in paths for el in root.findall(xpath, NS)])
 
     sender_places = [origin] if origin else []
     recipient_places = [destination] if destination else []
-    all_places = unique(sender_places + recipient_places + [
-        text_of(el) for el in root.findall(".//tei:text//tei:placeName", NS)
-    ] + [
-        text_of(el) for el in root.findall(".//tei:text//tei:name[@type='place']", NS)
+    all_places = unique(sender_places + recipient_places + entity_values([
+        ".//tei:text//tei:placeName",
+        ".//tei:text//tei:name[@type='place']",
+        ".//tei:text//tei:rs[@type='place']",
+        ".//tei:text//tei:name[@type='county']",
+    ]))
+    named_people = entity_values([
+        ".//tei:text//tei:name[@type='person']",
+        ".//tei:text//tei:persName",
+        ".//tei:text//tei:rs[@type='person']",
     ])
-    named_people = unique(
-        [text_of(el) for el in root.findall(".//tei:text//tei:name[@type='person']", NS)]
-        + [text_of(el) for el in root.findall(".//tei:text//tei:persName", NS)]
-    )
+    organizations = entity_values([
+        ".//tei:text//tei:orgName",
+        ".//tei:text//tei:name[@type='organization']",
+        ".//tei:text//tei:rs[@type='organization']",
+    ])
+    mentioned_entities: list[dict[str, str]] = []
+    seen_entities: set[tuple[str, str, str, str]] = set()
+    entity_specs = [
+        (".//tei:text//tei:name", "name"),
+        (".//tei:text//tei:rs", "rs"),
+        (".//tei:text//tei:persName", "person"),
+        (".//tei:text//tei:placeName", "place"),
+        (".//tei:text//tei:orgName", "organization"),
+    ]
+    for xpath, element_kind in entity_specs:
+        for entity_el in root.findall(xpath, NS):
+            label = text_of(entity_el)
+            if not label:
+                continue
+            kind = entity_el.get("type", "")
+            if not kind:
+                kind = element_kind
+            ref = entity_el.get("ref", "")
+            key = entity_el.get("key", "")
+            signature = (kind, label, ref, key)
+            if signature in seen_entities:
+                continue
+            seen_entities.add(signature)
+            mentioned_entities.append({"type": kind, "label": label, "ref": ref, "key": key})
 
     repositories: list[str] = []
     archive_countries: list[str] = []
@@ -183,6 +236,10 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "letter_code": letter_code.strip(" []") or xml_id or path.stem,
         "title": title,
         "date": date_label or letter_code or path.stem,
+        "date_when": date_when,
+        "date_from": date_from,
+        "date_to": date_to,
+        "date_certainty": date_certainty,
         "start_year": start_year,
         "end_year": end_year,
         "sender": sender,
@@ -190,15 +247,20 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "origin": origin,
         "destination": destination,
         "language": language,
+        "languages": languages,
         "language_code": language_code,
+        "language_codes": language_codes,
         "abstract": abstract,
         "incipit": incipit,
         "transcription": transcription,
         "translation": translation,
         "annotations": annotations,
-        "text": " ".join(x for x in (transcription, translation, abstract, incipit, annotations) if x),
+        "critical_apparatus": critical_apparatus,
+        "text": " ".join(x for x in (transcription, translation, abstract, incipit, annotations, critical_apparatus) if x),
         "named_people": named_people,
         "named_places": all_places,
+        "organizations": organizations,
+        "mentioned_entities": mentioned_entities,
         "repositories": unique(repositories),
         "archive_countries": unique(archive_countries),
         "archive_cities": unique(archive_cities),
