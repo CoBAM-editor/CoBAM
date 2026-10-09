@@ -41,16 +41,76 @@ input,select{width:100%;min-width:0;border:1px solid #aeb8c2;border-radius:7px;p
 </main>
 <script>
 const sample=[{
-id:"CoBAM15600201",title:"Benito Arias Montano a fray Luis de León",date:"Entre el 1 de febrero y el 5 de mayo de 1560",start:1560,end:1560,
+id:"CoBAM15600201",title:"Benito Arias Montano (León) a fray Luis de León (Salamanca)",
+date:"Entre el 1 de febrero y el 5 de mayo de 1560",start_year:1560,end_year:1560,
 sender:"Benito Arias Montano",recipient:"Fray Luis de León",origin:"León",destination:"Salamanca",language:"Latín",
 abstract:"BAM finalmente logró ingresar en la Orden de Santiago. Solicita a fray Luis de León ayuda para su proyecto de estudio, notas sobre doctrina cristiana y filosofía natural, recomendaciones en Salamanca y el envío del Apparatus Latinae locutionis.",
 incipit:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam...",
+text:"Dedimus tandem mi Leo dedimus ultro nomen in hanc militiam. Arias Montano escribe a fray Luis de León sobre sus estudios, la Orden de Santiago y sus proyectos intelectuales.",
 file:"1560 02 01-60 05 05 CoBAM.xml",
 url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
 }];
+let letters=sample;
 const norm=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
 const form=document.querySelector("#search-form"),results=document.querySelector("#results"),status=document.querySelector("#status");
-function render(items){results.replaceChildren();for(const x of items){const article=document.createElement("article");article.className="result";const h=document.createElement("h3");h.textContent=x.title||x.file;const pill=document.createElement("span");pill.className="pill";pill.textContent=x.language||"Idioma no indicado";const meta=document.createElement("p");meta.className="meta";meta.textContent=[x.date,x.sender&&"De: "+x.sender,x.recipient&&"Para: "+x.recipient,[x.origin,x.destination].filter(Boolean).join(" → ")].filter(Boolean).join(" · ");const summary=document.createElement("p");summary.className="summary";summary.textContent=x.abstract||"Sin resumen disponible.";const inc=document.createElement("p");inc.className="meta";inc.textContent=x.incipit?"Incipit: "+x.incipit:"";const link=document.createElement("a");link.href=x.url;link.target="_blank";link.rel="noopener noreferrer";link.textContent="Consultar XML en GitHub ↗";article.append(h,pill,meta,summary,inc,link);results.append(article)}status.textContent=items.length+" resultado(s)";}
-function search(){const q=norm(document.querySelector("#q").value),sender=norm(document.querySelector("#sender").value),recipient=norm(document.querySelector("#recipient").value),place=norm(document.querySelector("#place").value),lang=document.querySelector("#lang").value,from=Number(document.querySelector("#from").value)||0,to=Number(document.querySelector("#to").value)||9999;const found=sample.filter(x=>{const hay=norm([x.title,x.abstract,x.incipit,x.file].join(" "));return(!q||hay.includes(q))&&(!sender||norm(x.sender).includes(sender))&&(!recipient||norm(x.recipient).includes(recipient))&&(!place||norm([x.origin,x.destination].join(" ")).includes(place))&&(!lang||x.language===lang)&&x.start<=to&&x.end>=from});render(found);if(!found.length)status.textContent="No se han encontrado cartas con esos criterios."}
-form.addEventListener("submit",e=>{e.preventDefault();search()});form.addEventListener("reset",()=>setTimeout(search,0));render(sample);
+const uniqueSorted=values=>[...new Set(values.map(x=>(x||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+function fillDatalist(id,values){const list=document.querySelector(id);list.replaceChildren();for(const value of uniqueSorted(values)){const option=document.createElement("option");option.value=value;list.append(option)}}
+function populateFilters(){
+ fillDatalist("#senders",letters.map(x=>x.sender));
+ fillDatalist("#recipients",letters.map(x=>x.recipient));
+ fillDatalist("#places",letters.flatMap(x=>[x.origin,x.destination]));
+ const select=document.querySelector("#lang"),selected=select.value;
+ select.replaceChildren(new Option("Todos",""));
+ for(const value of uniqueSorted(letters.map(x=>x.language)))select.add(new Option(value,value));
+ select.value=selected;
+}
+function render(items){
+ results.replaceChildren();
+ for(const x of items){
+  const article=document.createElement("article");article.className="result";
+  const h=document.createElement("h3");h.textContent=x.title||x.file||"Carta sin título";
+  const pill=document.createElement("span");pill.className="pill";pill.textContent=x.language||"Idioma no indicado";
+  const meta=document.createElement("p");meta.className="meta";
+  meta.textContent=[x.date,x.sender&&"De: "+x.sender,x.recipient&&"Para: "+x.recipient,[x.origin,x.destination].filter(Boolean).join(" → ")].filter(Boolean).join(" · ");
+  const summary=document.createElement("p");summary.className="summary";summary.textContent=x.abstract||"Sin resumen disponible.";
+  const inc=document.createElement("p");inc.className="meta";inc.textContent=x.incipit?"Incipit: "+x.incipit:"";
+  const link=document.createElement("a");link.href=x.url;link.target="_blank";link.rel="noopener noreferrer";link.textContent="Consultar XML en GitHub ↗";
+  article.append(h,pill,meta,summary,inc,link);results.append(article);
+ }
+ status.textContent=items.length+" resultado(s) de "+letters.length+" cartas indexadas.";
+}
+function search(){
+ const q=norm(document.querySelector("#q").value),sender=norm(document.querySelector("#sender").value),recipient=norm(document.querySelector("#recipient").value),place=norm(document.querySelector("#place").value),lang=document.querySelector("#lang").value;
+ const fromValue=document.querySelector("#from").value,toValue=document.querySelector("#to").value;
+ const from=fromValue?Number(fromValue):null,to=toValue?Number(toValue):null;
+ const found=letters.filter(x=>{
+  const hay=norm([x.title,x.abstract,x.incipit,x.text,x.file].join(" "));
+  const textOk=!q||hay.includes(q);
+  const senderOk=!sender||norm(x.sender).includes(sender);
+  const recipientOk=!recipient||norm(x.recipient).includes(recipient);
+  const placeOk=!place||norm([x.origin,x.destination].join(" ")).includes(place);
+  const langOk=!lang||x.language===lang;
+  const datesUnknown=x.start_year==null||x.end_year==null;
+  const dateOk=(from===null&&to===null)||(!datesUnknown&&(from===null||x.end_year>=from)&&(to===null||x.start_year<=to));
+  return textOk&&senderOk&&recipientOk&&placeOk&&langOk&&dateOk;
+ });
+ render(found);
+ if(!found.length)status.textContent="No se han encontrado cartas con esos criterios.";
+}
+form.addEventListener("submit",e=>{e.preventDefault();search()});
+form.addEventListener("reset",()=>setTimeout(search,0));
+async function loadCatalog(){
+ try{
+  const response=await fetch("catalogo.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("No hay catálogo generado todavía.");
+  const data=await response.json();
+  if(!Array.isArray(data)||!data.length)throw new Error("El catálogo está vacío.");
+  letters=data;populateFilters();search();
+  status.textContent="Catálogo cargado: "+letters.length+" cartas. Puedes combinar los filtros.";
+ }catch(error){
+  populateFilters();search();
+  status.textContent="Modo de demostración: 1 carta de ejemplo. Genera catalogo.json para activar la búsqueda completa.";
+ }
+}
+populateFilters();render(letters);loadCatalog();
 </script></body></html>
