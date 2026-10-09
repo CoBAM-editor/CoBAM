@@ -65,6 +65,9 @@ input:focus,select:focus,button:focus-visible{outline:2px solid #9f6d65;outline-
 .facsimile-card figcaption{font-size:.7rem;color:var(--muted);padding-top:5px;overflow-wrap:anywhere}
 @media(max-width:650px){.letter-panels{grid-template-columns:1fr}.letter-body{max-height:360px}.facsimile-card img{height:140px}}
 
+.chart-wide{grid-column:1/-1}
+.network-chart{width:100%;min-width:0}.network-chart svg{display:block;width:100%;height:auto;max-height:450px;overflow:visible}.network-empty{font-size:.78rem;color:var(--muted);padding:9px 0}
+.network-link{stroke:#a9b8bd;stroke-opacity:.78}.network-node{cursor:pointer;outline:none}.network-node circle{fill:#85483d;stroke:#fff;stroke-width:2}.network-node text{fill:#263744;font:11px system-ui,sans-serif;text-anchor:middle}.network-node:focus circle{stroke:#182f3e;stroke-width:4}.network-node:hover circle{fill:#b0786d}
 @media(max-width:930px){.collection-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar-actions{width:100%}}
 @media(max-width:650px){.analytics-grid{grid-template-columns:1fr}.collection-stats{gap:7px}.stat-card{padding:10px 11px}.stat-value{font-size:1.25rem}}
 footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-size:.75rem}
@@ -137,6 +140,7 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
           <div class="chart-card"><h4>Lugares de origen y destino</h4><p class="chart-subtitle">Top de localidades mencionadas en la correspondencia</p><div id="place-chart" class="chart-rows"></div></div>
           <div class="chart-card"><h4>Corresponsales más frecuentes</h4><p class="chart-subtitle">Remitentes y destinatarios en los resultados</p><div id="people-chart" class="chart-rows"></div></div>
           <div class="chart-card"><h4>Acceso y edición</h4><p class="chart-subtitle">Disponibilidad de recursos digitales en los resultados</p><div id="resource-chart" class="chart-rows"></div></div>
+          <div class="chart-card chart-wide"><h4>Red de corresponsales</h4><p class="chart-subtitle">Cada enlace representa cartas entre dos personas, en cualquiera de las direcciones. Pulsa un nombre para filtrar por ese corresponsal.</p><div id="network-chart" class="network-chart" role="img" aria-label="Red de relaciones entre corresponsales"></div></div>
         </div>
       </section>
       <div id="active-filters" class="active-filters" hidden></div>
@@ -561,6 +565,69 @@ function renderAnalytics(records){
   {label:"Con aparato/notas",count:records.filter(r=>Boolean(r.annotations||r.critical_apparatus)).length},
   {label:"Con edición impresa",count:records.filter(r=>(r.bibliography||[]).length>0).length}
  ],"No hay datos sobre los recursos");
+ renderNetwork(records);
+}
+function renderNetwork(records){
+ const target=byId("network-chart");target.replaceChildren();
+ const personMap=new Map(),pairMap=new Map();
+ function addPerson(label){
+  const cleaned=(label||"").trim();if(!cleaned)return null;
+  const key=norm(cleaned);
+  const current=personMap.get(key)||{key,label:cleaned,count:0};
+  current.count++;personMap.set(key,current);return key;
+ }
+ for(const r of records){
+  const sender=(r.sender||"").trim(),recipient=(r.recipient||"").trim();
+  const from=addPerson(sender),to=addPerson(recipient);
+  if(!from||!to||from===to)continue;
+  const [a,b]=[from,to].sort();
+  const pairKey=a+"|||"+b,current=pairMap.get(pairKey)||{a,b,count:0};
+  current.count++;pairMap.set(pairKey,current);
+ }
+ const people=[...personMap.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,"es")).slice(0,10);
+ const chosen=new Set(people.map(p=>p.key));
+ const edges=[...pairMap.values()].filter(e=>chosen.has(e.a)&&chosen.has(e.b));
+ if(!people.length||!edges.length){
+  target.append(el("div","network-empty","No hay suficientes pares de corresponsales para construir una red con estos filtros."));
+  return;
+ }
+ const NS_SVG="http://www.w3.org/2000/svg",width=900,height=390,cx=width/2,cy=height/2,radius=142;
+ const svg=document.createElementNS(NS_SVG,"svg");
+ svg.setAttribute("viewBox","0 0 "+width+" "+height);svg.setAttribute("role","img");
+ svg.setAttribute("aria-label","Red de "+people.length+" corresponsales y "+edges.length+" relaciones de correspondencia");
+ const positions=new Map();
+ people.forEach((p,i)=>{
+  const angle=-Math.PI/2+(2*Math.PI*i/people.length);
+  positions.set(p.key,{x:cx+radius*Math.cos(angle),y:cy+radius*Math.sin(angle)});
+ });
+ const maxEdge=Math.max(...edges.map(e=>e.count),1);
+ for(const edge of edges){
+  const a=positions.get(edge.a),b=positions.get(edge.b);
+  const line=document.createElementNS(NS_SVG,"line");
+  line.setAttribute("x1",a.x);line.setAttribute("y1",a.y);line.setAttribute("x2",b.x);line.setAttribute("y2",b.y);
+  line.setAttribute("stroke-width",String(1+4*edge.count/maxEdge));line.setAttribute("class","network-link");
+  const title=document.createElementNS(NS_SVG,"title");
+  const aName=personMap.get(edge.a).label,bName=personMap.get(edge.b).label;
+  title.textContent=aName+" ↔ "+bName+": "+edge.count+" carta(s)";line.append(title);svg.append(line);
+ }
+ for(const person of people){
+  const pos=positions.get(person.key),group=document.createElementNS(NS_SVG,"g");
+  group.setAttribute("class","network-node");group.setAttribute("role","button");group.setAttribute("tabindex","0");
+  group.setAttribute("aria-label","Filtrar cartas por "+person.label+" ("+person.count+" apariciones)");
+  const circle=document.createElementNS(NS_SVG,"circle");circle.setAttribute("cx",pos.x);circle.setAttribute("cy",pos.y);circle.setAttribute("r","8");group.append(circle);
+  const label=document.createElementNS(NS_SVG,"text");label.setAttribute("x",pos.x);label.setAttribute("y",pos.y+24);
+  const short=person.label.length>22?person.label.slice(0,20)+"…":person.label;
+  label.textContent=short;group.append(label);
+  const title=document.createElementNS(NS_SVG,"title");title.textContent=person.label+" · "+person.count+" apariciones. Pulsa para filtrar.";group.append(title);
+  const selectPerson=()=>{
+   selected.people.clear();selected.people.add(person.label);byId("combine-people").checked=true;currentPage=1;renderAll();
+   byId("results").scrollIntoView({behavior:"smooth",block:"start"});
+  };
+  group.addEventListener("click",selectPerson);
+  group.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();selectPerson()}});
+  svg.append(group);
+ }
+ target.append(svg);
 }
 function csvCell(value){
  let textValue=Array.isArray(value)?value.join(" | "):(value??"").toString();
