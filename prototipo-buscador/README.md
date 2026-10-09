@@ -13,7 +13,7 @@ Buscador experimental de la correspondencia de Benito Arias Montano, inspirado e
 - Facetas con recuentos dinámicos: remitente, destinatario, corresponsales (combinados), lugares de origen/destino, idioma, país y localidad del archivo, institución, signatura, personas y lugares mencionados, organizaciones y referencias impresas.
 - Disponibilidad documental: cartas con facsímil, con transcripción, con traducción, con aparato/notas y con edición impresa citada.
 - Resultados ordenables y paginados, con resumen e incipit; un lector desplegable presenta transcripción, traducción, notas/aparato crítico y facsímiles cuando están codificados.
-- Panel de visualización de los resultados (años, lugares, corresponsales y recursos digitales) y exportación CSV del conjunto filtrado.
+- Panel de visualización de los resultados (años, lugares, corresponsales y recursos digitales), red interactiva de relaciones entre corresponsales —con filtrado al pulsar en una persona— y exportación CSV del conjunto filtrado.
 - Indicadores del catálogo, filtros combinables, chips para retirar filtros, panel de metadatos ampliados y diseño adaptable a móvil.
 - Enlaces al XML original y a los facsímiles disponibles.
 
