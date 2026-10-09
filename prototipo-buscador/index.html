@@ -79,6 +79,9 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
 .letter-hero h2{font:600 clamp(1.6rem,3vw,2.35rem)/1.2 Georgia,serif;margin:5px 0 10px;color:var(--ink)}
 .letter-id{display:inline-block;color:var(--accent);font-size:.8rem;font-weight:750;letter-spacing:.04em;margin-right:10px}
 .letter-date{font:italic 1.1rem Georgia,serif;color:var(--muted);margin:10px 0 16px}
+.reader-warning{border-left:3px solid #b78a50;background:#fbf7f0;color:#614d34;padding:9px 12px;margin:0 0 15px;font-size:.78rem;line-height:1.5}
+.reader-subheading{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:0 0 8px}
+
 .letter-hero-meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:.85rem}
 .reader-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}
 .reader-action{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;border:1px solid #b9c4c9;border-radius:4px;background:#fff;color:var(--ink);font-size:.8rem;font-weight:700;text-decoration:none}
@@ -232,6 +235,7 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
       <div><span id="letter-code" class="letter-id"></span><span class="badge" id="letter-language"></span></div>
       <h2 id="letter-title"></h2>
       <p id="letter-date" class="letter-date"></p>
+      <p id="reader-date-warning" class="reader-warning" hidden></p>
       <div class="letter-hero-meta" id="letter-route"></div>
       <div class="reader-actions">
         <a id="published-edition" class="reader-action primary" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver edición en WordPress ↗</a>
@@ -246,6 +250,7 @@ footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-
       <section class="reader-card">
         <div class="reader-card-head">RESUMEN Y COMENTARIO EDITORIAL</div>
         <div class="reader-card-body">
+          <h4 class="reader-subheading">Resumen del catálogo (metadato del XML)</h4>
           <p id="reader-summary" class="reader-summary"></p>
           <div id="reader-commentary" class="reader-commentary"></div>
         </div>
@@ -810,7 +815,10 @@ function renderReaderMetadata(r){
   ["Signatura",(r.shelfmarks||[]).join("; ")],
   ["País y localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join(", ")],
   ["Ediciones impresas",(r.bibliography||[]).join(" ")],
-  ["Edición crítica, traducción y notas",unique([...(r.authors||[]),r.editor]).filter(Boolean).join("; ")],
+  ["Autor de la carta",(r.authors||[]).join("; ")],
+  ["Edición crítica, traducción y notas",[r.editorial_responsibility,r.responsible_person].filter(Boolean).join(": ")],
+  ["Codificación y edición digital",r.editor],
+  ["Fecha normalizada en TEI",[r.date_when,r.date_from&&("desde "+r.date_from),r.date_to&&("hasta "+r.date_to)].filter(Boolean).join(" · ")],
   ["Estado editorial",[r.edition_status,r.revision_date&&("revisión "+r.revision_date)].filter(Boolean).join(" · ")]
  ];
  for(const [label,value] of items){
@@ -874,6 +882,9 @@ function renderLetterPage(r){
  byId("letter-language").textContent=(r.languages||[r.language]).filter(Boolean).join(", ")||"Idioma no indicado";
  byId("letter-title").textContent=r.title||r.file||"Carta sin título";
  byId("letter-date").textContent=r.date||"Fecha no indicada";
+ const dateWarning=byId("reader-date-warning");
+ if(r.date_warning){dateWarning.textContent="Aviso de revisión de metadatos: "+r.date_warning;dateWarning.hidden=false;}
+ else{dateWarning.textContent="";dateWarning.hidden=true;}
  byId("letter-route").replaceChildren();
  const routeText=[
   r.sender&&("De: "+r.sender+(r.origin?" ("+r.origin+")":"")),
