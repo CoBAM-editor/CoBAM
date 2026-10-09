@@ -19,7 +19,7 @@ Buscador experimental de la correspondencia de Benito Arias Montano, inspirado e
 
 ## Campos derivados de TEI-XML
 
-El generador lee los encabezados TEI y las capas textuales que ya están codificadas: `correspAction` (remitente, destinatario, lugares y fecha), `langUsage`, notas `abstract` e `incipit`, cuerpos `text[@type='source']` y `text[@type='translation']`, nombres y lugares mencionados, testimonios manuscritos, signaturas, bibliografía, `facsimile/graphic`, estado editorial y fecha de revisión.
+El generador usa el nombre del archivo como clave interna única del catálogo y conserva el valor original `xml:id` en un campo separado, sin modificar el XML fuente. Lee los encabezados TEI y las capas textuales que ya están codificadas: `correspAction` (remitente, destinatario, lugares y fecha), `langUsage`, notas `abstract` e `incipit`, cuerpos `text[@type='source']` y `text[@type='translation']`, nombres y lugares mencionados, testimonios manuscritos, signaturas, bibliografía, `facsimile/graphic`, estado editorial y fecha de revisión.
 
 No se inventan metadatos que no estén disponibles; los campos ausentes quedan vacíos. El buscador usa la fecha como intervalo de años cuando los datos permiten recuperarlo. Las fechas incompletas requieren revisión editorial para poder filtrar con mayor precisión.
 
