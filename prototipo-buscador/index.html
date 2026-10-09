@@ -587,8 +587,9 @@ function makeResult(r){
  const h=el("h3","result-title");
  h.append(el("span","result-code",r.letter_code||r.id||"CoBAM"));
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
- titleLink.href=window.location.pathname+"?carta="+encodeURIComponent(r.id)+"#edicion";
- titleLink.title="Abrir la vista de edición crítica";
+ const prototypeReaderUrl=window.location.pathname+"?carta="+encodeURIComponent(r.id)+"#edicion";
+ titleLink.href=r.published_url||prototypeReaderUrl;
+ titleLink.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo";
  h.append(titleLink);article.append(h);
  article.append(el("div","result-date",r.date||"Fecha no indicada"));
  const meta=el("div","result-meta");
@@ -605,11 +606,12 @@ function makeResult(r){
  if(r.abstract)article.append(el("p","abstract",r.abstract));
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
- const reader=el("a","","Abrir edición crítica →");
- reader.href=window.location.pathname+"?carta="+encodeURIComponent(r.id)+"#edicion";
+ const reader=el("a","",r.published_url?"Leer carta editada →":"Abrir lectura del prototipo →");
+ reader.href=r.published_url||prototypeReaderUrl;
+ reader.title=r.published_url?"Abrir la edición ya publicada en WordPress":"Abrir la lectura generada a partir del XML-TEI";
  links.append(reader);
  if(r.published_url){
-  const published=el("a","","Edición publicada ↗");published.href=r.published_url;published.target="_blank";published.rel="noopener noreferrer";links.append(published);
+  const preview=el("a","","Vista de lectura del prototipo");preview.href=prototypeReaderUrl;preview.title="Comparar con la lectura generada a partir del XML-TEI";links.append(preview);
  }
  const xml=el("a","", "Ver XML-TEI ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
  if((r.facsimile_items||r.facsimiles||[]).length){
