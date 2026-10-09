@@ -90,12 +90,9 @@ def body_text(text_el: ET.Element | None) -> str:
     body = text_el.find("tei:body", NS)
     if body is None:
         return plain_tei_text(text_el)
-    paragraphs = [
-        clean(plain_tei_text(paragraph))
-        for paragraph in body.findall(".//tei:p", NS)
-    ]
-    paragraphs = [paragraph for paragraph in paragraphs if paragraph]
-    return "\n\n".join(paragraphs) if paragraphs else clean(plain_tei_text(body))
+    # Include addresses, marginal annotations, openers, closers and all body
+    # paragraphs in the searchable plain-text layer.
+    return clean(plain_tei_text(body))
 
 
 
@@ -375,6 +372,8 @@ def render_tei_fragment(element: ET.Element | None, root: ET.Element, mode: str)
     for graphic in root.findall(".//tei:facsimile/tei:graphic", NS):
         xml_id = graphic.get(f"{{{XML_NS}}}id", "")
         url = graphic.get("url", "")
+        if url.startswith("http://lacorrespondenciadebenitoariasmontano.online/"):
+            url = url.replace("http://", "https://", 1)
         if xml_id and url.startswith(("https://", "http://")):
             graphics[xml_id] = url
     apparatus: list[dict[str, str]] = []
@@ -511,7 +510,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
             })
 
     graphic_urls = unique([
-        clean(el.get("url")) for el in root.findall(".//tei:facsimile/tei:graphic", NS)
+        clean(el.get("url")).replace("http://lacorrespondenciadebenitoariasmontano.online/", "https://lacorrespondenciadebenitoariasmontano.online/", 1) for el in root.findall(".//tei:facsimile/tei:graphic", NS)
         if el.get("url")
     ])
     bibliography = unique([
@@ -530,7 +529,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     url = "https://github.com/CoBAM-editor/CoBAM/blob/main/" + quote(path.name, safe="")
     clean_letter_code = letter_code.strip(" []").strip()
     published_url = ""
-    simple_date = re.fullmatch(r"(\\d{4})\\s+(\\d{2})\\s+(\\d{2}[a-z]?)", clean_letter_code, re.I)
+    simple_date = re.fullmatch(r"(\d{4})\s+(\d{2})\s+(\d{2}[a-z]?)", clean_letter_code, re.I)
     if simple_date:
         slug = "-".join(simple_date.groups()).lower()
         published_url = "https://lacorrespondenciadebenitoariasmontano.online/es_es/" + slug + "/"
