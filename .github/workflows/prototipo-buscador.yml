@@ -1,0 +1,71 @@
+name: Validar prototipo del buscador CoBAM
+
+on:
+  push:
+    branches:
+      - prototipo-buscador
+  pull_request:
+    branches:
+      - prototipo-buscador
+
+permissions:
+  contents: read
+
+jobs:
+  build-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Comprobar sintaxis del generador
+        run: python -m py_compile prototipo-buscador/generar_catalogo.py
+
+      - name: Generar catálogo desde los XML-TEI
+        run: python prototipo-buscador/generar_catalogo.py
+
+      - name: Validar catálogo generado
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("prototipo-buscador/catalogo.json")
+          records = json.loads(path.read_text(encoding="utf-8"))
+          assert records, "El catálogo está vacío"
+          required = {"id", "title", "date", "sender", "recipient", "language", "file", "url"}
+          missing = [r.get("file", "(archivo sin nombre)") for r in records if not required.issubset(r)]
+          assert not missing, f"Faltan campos en: {missing[:5]}"
+          print(f"Catálogo válido: {len(records)} cartas.")
+          PY
+
+      - name: Comprobar sintaxis JavaScript de la interfaz
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path("prototipo-buscador/index.html").read_text(encoding="utf-8")
+          match = re.search(r"<script>([\\s\\S]*?)</script>", html)
+          assert match, "No se encontró el script de la interfaz"
+          Path("/tmp/cobam-prototipo.js").write_text(match.group(1), encoding="utf-8")
+          PY
+          node --check /tmp/cobam-prototipo.js
+
+      - name: Preparar paquete descargable de prueba
+        run: |
+          mkdir -p build-prototipo
+          cp prototipo-buscador/index.html prototipo-buscador/README.md prototipo-buscador/catalogo.json build-prototipo/
+          cd build-prototipo && zip -r ../prototipo-buscador-CoBAM.zip .
+
+      - name: Publicar paquete como artefacto de la ejecución
+        uses: actions/upload-artifact@v4
+        with:
+          name: prototipo-buscador-CoBAM
+          path: prototipo-buscador-CoBAM.zip
+          if-no-files-found: error
+          retention-days: 14
