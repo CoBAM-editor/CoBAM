@@ -54,7 +54,7 @@ jobs:
           records = json.loads(Path("prototipo-buscador/catalogo.json").read_text(encoding="utf-8"))
           output = Path("prototipo-buscador/catalog-data.js")
           output.write_text(
-              "window.COBAM_CATALOG = " + json.dumps(records, ensure_ascii=False, separators=(",", ":")) + ";\\n",
+              "window.COBAM_CATALOG = " + json.dumps(records, ensure_ascii=False, separators=(",", ":")) + ";\n",
               encoding="utf-8",
           )
           print(f"Catálogo de navegador preparado: {len(records)} cartas.")
