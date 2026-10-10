@@ -37,6 +37,15 @@ def normalize_origin_label(value: str | None) -> str:
     return label
 
 
+def normalize_person_label(value: str | None) -> str:
+    """Normalize known typographical variants of correspondent names."""
+    label = clean(value)
+    key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
+    if key in {"maxiiliano morillon", "maximiiano morillon"}:
+        return "Maximiliano Morillon"
+    return label
+
+
 def text_of(element: ET.Element | None) -> str:
     if element is None:
         return ""
@@ -454,8 +463,10 @@ def make_record(path: Path, root: ET.Element) -> dict:
     date_el = sent.find("tei:date", NS) if sent is not None else root.find(".//tei:correspAction/tei:date", NS)
     date_label = text_of(date_el)
     sender, origin = action_info(root, "sent")
+    sender = normalize_person_label(sender)
     origin = normalize_origin_label(origin)
     recipient, destination = action_info(root, "received")
+    recipient = normalize_person_label(recipient)
     abstract = first_text(root, ".//tei:note[@type='abstract']")
     incipit = first_text(root, ".//tei:note[@type='incipit']")
     language_elements = root.findall(".//tei:langUsage/tei:language", NS)
