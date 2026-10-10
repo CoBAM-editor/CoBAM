@@ -650,6 +650,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     # Add entries only after checking the live published edition page.
     published_url_overrides = {
         "1560 02 01-60 05 05 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1560-02-01-1560-05-05/",
+        "1567 00 00 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1567-2/",
         "1568 07 22 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1568-07-20/",
         "1568 08 07 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/15680807-2/",
         "1568 08 29 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/",
