@@ -462,6 +462,10 @@ const LETTERS=Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?w
 const PAGE_SIZE=20;
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+const displayLanguage=value=>{
+ const label=(value??"").toString().trim();
+ return label?label.charAt(0).toLocaleUpperCase("es")+label.slice(1):"";
+};
 const byId=id=>document.getElementById(id);
 function populateDecadeOptions(){
  const select=byId("decade");
@@ -498,7 +502,7 @@ const FACETS=[
  {key:"recipients",title:"Destinatarios",values:r=>[r.recipient].filter(Boolean)},
  {key:"senderPlaces",title:"Lugares de origen",values:r=>[r.origin].filter(Boolean)},
  {key:"recipientPlaces",title:"Lugares de destino",values:r=>[r.destination].filter(Boolean)},
- {key:"languages",title:"Idioma de la carta",values:r=>r.languages&&r.languages.length?r.languages:[r.language].filter(Boolean)},
+ {key:"languages",title:"Idioma de la carta",values:r=>(r.languages&&r.languages.length?r.languages:[r.language].filter(Boolean)).map(displayLanguage)},
  {key:"repositories",title:"Archivos e instituciones",values:r=>r.repositories||[]},
  {key:"archiveCountries",title:"País del archivo",values:r=>r.archive_countries||[]},
  {key:"archiveCities",title:"Localidad del archivo",values:r=>r.archive_cities||[]},
