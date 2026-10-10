@@ -63,6 +63,8 @@ jobs:
           assert module.normalize_repository_label("Biblioteca Nacional de España") == "Biblioteca Nacional de España", "Ha alterado otro archivo"
           assert module.normalize_archive_country_label("Belgium") == "Bélgica", "No normaliza Belgium como Bélgica"
           assert module.normalize_archive_country_label("Bélgica") == "Bélgica", "No conserva Bélgica como forma preferida"
+          assert module.normalize_archive_country_label("Netherlands") == "Países Bajos", "No normaliza Netherlands como Países Bajos"
+          assert module.normalize_archive_country_label("Países Bajos") == "Países Bajos", "No conserva Países Bajos como forma preferida"
           assert module.normalize_archive_country_label("Francia") == "Francia", "Ha alterado otro país"
           tei_ns = {"tei": "http://www.tei-c.org/ns/1.0"}
           for filename in ["1570 05 01 CoBAM.xml", "1570 05 13 V  CoBAM.xml", "1570 05 15  CoBAM.xml", "1570 05 25  CoBAM.xml", "1570 05 27  CoBAM.xml"]:
@@ -118,6 +120,8 @@ jobs:
           archive_country_labels = {label.strip().casefold() for record in records for label in (record.get("archive_countries") or [])}
           assert "bélgica" in archive_country_labels, "Falta el país de archivo Bélgica"
           assert "belgium" not in archive_country_labels, "Sigue apareciendo el filtro duplicado Belgium"
+          assert "países bajos" in archive_country_labels, "Falta el país de archivo Países Bajos"
+          assert "netherlands" not in archive_country_labels, "Sigue apareciendo el filtro duplicado Netherlands"
           preferred_archive = "Archives Générales du Royaume/Algemeen Rijksarchief".casefold()
           assert preferred_archive in archive_labels, "Falta la etiqueta bilingüe preferida del archivo"
           assert "algemeen rijksarchief" not in archive_labels, "Sigue apareciendo el filtro duplicado Algemeen Rijksarchief"
