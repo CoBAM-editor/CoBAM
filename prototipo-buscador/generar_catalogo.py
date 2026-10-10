@@ -50,6 +50,14 @@ def normalize_repository_label(value: str | None) -> str:
         return "Archives Générales du Royaume/Algemeen Rijksarchief"
     return label
 
+def normalize_archive_country_label(value: str | None) -> str:
+    """Use the preferred Spanish country name in archive-country facets."""
+    label = clean(value)
+    key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
+    if key in {"belgium", "belgica"}:
+        return "Bélgica"
+    return label
+
 def normalize_person_label(value: str | None) -> str:
     """Normalize known correspondent-name variants, preserving hypothetical brackets."""
     label = clean(value)
@@ -582,7 +590,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         ms_identifier = witness.find(".//tei:msIdentifier", NS)
         repository = normalize_repository_label(text_of(ms_identifier.find("tei:msName", NS))) if ms_identifier is not None else ""
         city = text_of(ms_identifier.find("tei:settlement", NS)) if ms_identifier is not None else ""
-        country = text_of(ms_identifier.find("tei:country", NS)) if ms_identifier is not None else ""
+        country = normalize_archive_country_label(text_of(ms_identifier.find("tei:country", NS))) if ms_identifier is not None else ""
         mark = text_of(ms_identifier.find(".//tei:altIdentifier/tei:idno", NS)) if ms_identifier is not None else ""
         if repository:
             repositories.append(repository)
