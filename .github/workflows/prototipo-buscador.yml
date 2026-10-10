@@ -166,7 +166,7 @@ jobs:
           const fs = require("fs");
           const assert = require("assert");
           const source = fs.readFileSync("/tmp/cobam-prototipo.js", "utf8");
-          const match = source.match(/function decadeMatches\\(r\\)\\{([\\s\\S]*?)\\n\\}/);
+          const match = source.match(/function decadeMatches\(r\)\{([\s\S]*?)\n\}/);
           assert(match, "No se encontró decadeMatches");
           function matcher(selectedDecade) {
             const byId = () => ({ value: selectedDecade });
