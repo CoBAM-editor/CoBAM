@@ -87,6 +87,14 @@ jobs:
               if start is not None and end is not None:
                   assert start <= end, f"Intervalo cronológico invertido: {record['file']}"
               assert record["url"].startswith("https://"), f"URL de XML inesperada: {record['file']}"
+              labels = record.get("languages") or []
+              assert all(label and label[0] == label[0].upper() for label in labels), f"Etiqueta de idioma sin mayúscula inicial: {record['file']}: {labels}"
+              assert len({label.casefold() for label in labels}) == len(labels), f"Idiomas duplicados por mayúsculas/minúsculas: {record['file']}: {labels}"
+              assert not record.get("language") or record["language"][0] == record["language"][0].upper(), f"Idioma principal sin mayúscula inicial: {record['file']}"
+          latin_book = next((r for r in records if r["file"] == "1568 06 14 Libros.xml"), None)
+          spanish_book = next((r for r in records if r["file"] == "1569 04 06 Libros.xml"), None)
+          assert latin_book and latin_book["languages"] == ["Latín"], "La etiqueta del libro de 1568 debe ser Latín"
+          assert spanish_book and spanish_book["languages"] == ["Español"] and spanish_book.get("language_code") == "es", "La etiqueta y el código de idioma del libro de 1569 deben ser Español/es"
               for key in ("source_marked_html", "source_clean_html", "translation_html", "commentary_html"):
                   assert "<script" not in record[key].lower(), f"Marcado inesperado en {key}: {record['file']}"
           sample = next((r for r in records if r["letter_code"].strip() == "1568 08 29"), None)
