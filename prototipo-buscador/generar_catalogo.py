@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import unicodedata
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import quote
@@ -25,6 +26,15 @@ def normalize_language_label(value: str | None) -> str:
     """Normalize the display label of a language without changing its spelling."""
     label = clean(value)
     return label[:1].upper() + label[1:] if label else ""
+
+
+def normalize_origin_label(value: str | None) -> str:
+    """Use one preferred Spanish form for Cleves/Kleve in origin filters."""
+    label = clean(value)
+    key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
+    if key in {"cleves", "cleveris"}:
+        return "Cléveris"
+    return label
 
 
 def text_of(element: ET.Element | None) -> str:
@@ -444,6 +454,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     date_el = sent.find("tei:date", NS) if sent is not None else root.find(".//tei:correspAction/tei:date", NS)
     date_label = text_of(date_el)
     sender, origin = action_info(root, "sent")
+    origin = normalize_origin_label(origin)
     recipient, destination = action_info(root, "received")
     abstract = first_text(root, ".//tei:note[@type='abstract']")
     incipit = first_text(root, ".//tei:note[@type='incipit']")
