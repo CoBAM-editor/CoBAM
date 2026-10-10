@@ -467,7 +467,8 @@ function normalizePersonLabel(value){
  const label=(value??"").toString().trim();
  const key=label.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g," ").toLocaleLowerCase("es");
  if(["maxiiliano morillon","maximiiano morillon"].includes(key))return "Maximiliano Morillon";
- if(["cornelio gema","cornelio gemma"].includes(key))return "Cornelio Gemma Frisio";
+  if(["[cornelio gema frisio]","[cornelio gemma frisio]"].includes(key))return "[Cornelio Gema Frisio]";
+  if(["cornelio gema","cornelio gemma","cornelio gema frisio","cornelio gemma frisio"].includes(key))return "Cornelio Gema Frisio";
  return label;
 }
 const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).map(r=>({...r,sender:normalizePersonLabel(r.sender),recipient:normalizePersonLabel(r.recipient),origin:normalizeOriginLabel(r.origin)}));
