@@ -66,7 +66,7 @@ input:focus,select:focus,button:focus-visible{outline:2px solid #9f6d65;outline-
 @media(max-width:650px){.letter-panels{grid-template-columns:1fr}.letter-body{max-height:360px}.facsimile-card img{height:140px}}
 
 .chart-wide{grid-column:1/-1}
-.network-chart,.timeline-chart,.map-chart{width:100%;min-width:0}.network-chart svg,.timeline-chart svg,.map-chart svg{display:block;width:100%;height:auto;max-height:490px;overflow:visible}.network-empty,.timeline-empty,.map-empty{font-size:.78rem;color:var(--muted);padding:9px 0}.timeline-point,.map-city{cursor:pointer;outline:none}.timeline-point:focus circle,.map-city:focus circle{stroke:#182f3e;stroke-width:3}.timeline-point circle{fill:#85483d;stroke:#fff;stroke-width:1.5}.timeline-point:hover circle,.map-city:hover circle{fill:#b0786d}.timeline-label{font:11px system-ui,sans-serif;fill:#263744}.timeline-axis{stroke:#cbd4d7;stroke-width:1}.timeline-grid{stroke:#e7ecec;stroke-width:1;stroke-dasharray:3 4}.map-land{fill:#eef0e8;stroke:#c8d0c9;stroke-width:1.2}.map-grid{stroke:#dce3e0;stroke-width:.8;stroke-dasharray:3 5}.map-route{stroke:#85483d;stroke-opacity:.35;stroke-width:1.4;fill:none}.map-city circle{fill:#85483d;stroke:#fff;stroke-width:1.6}.map-city text{font:10px system-ui,sans-serif;fill:#263744;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}.map-note{font-size:.68rem;color:var(--muted);margin:5px 0 0}
+.network-chart,.timeline-chart,.map-chart{width:100%;min-width:0}.network-chart svg,.timeline-chart svg,.map-chart svg{display:block;width:100%;height:auto;max-height:490px;overflow:visible}.network-empty,.timeline-empty,.map-empty{font-size:.78rem;color:var(--muted);padding:9px 0}.timeline-point,.timeline-point:focus circle,.map-city:focus circle{stroke:#182f3e;stroke-width:3}.timeline-point circle{fill:#85483d;stroke:#fff;stroke-width:1.5}.timeline-point:hover circle,.map-city:hover circle{fill:#b0786d}.timeline-label{font:11px system-ui,sans-serif;fill:#263744}.timeline-axis{stroke:#cbd4d7;stroke-width:1}.timeline-grid{stroke:#e7ecec;stroke-width:1;stroke-dasharray:3 4}.map-city circle{fill:#85483d;stroke:#fff;stroke-width:1.6}
 .network-link{stroke:#a9b8bd;stroke-opacity:.78}.network-node{cursor:pointer;outline:none}.network-node circle{fill:#85483d;stroke:#fff;stroke-width:2}.network-node text{fill:#263744;font:11px system-ui,sans-serif;text-anchor:middle}.network-node:focus circle{stroke:#182f3e;stroke-width:4}.network-node:hover circle{fill:#b0786d}
 @media(max-width:930px){.collection-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar-actions{width:100%}}
 @media(max-width:650px){.analytics-grid{grid-template-columns:1fr}.collection-stats{gap:7px}.stat-card{padding:10px 11px}.stat-value{font-size:1.25rem}}
@@ -329,7 +329,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
         <p class="analytics-intro">Las visualizaciones se actualizan con los filtros activos. Los intervalos de fecha se cuentan en cada año cubierto; no equivalen a una fecha exacta de envío.</p>
         <div class="analytics-grid">
           <div class="chart-card chart-wide"><h4>Cronología de la correspondencia</h4><p class="chart-subtitle">Cada punto representa un año con cartas fechadas. Pulsa un año para filtrar los resultados.</p><div id="timeline-chart" class="timeline-chart"></div></div>
-          <div class="chart-card chart-wide"><h4>Mapa de la correspondencia</h4><p class="chart-subtitle">Lugares de origen y destino identificados geográficamente. Pulsa una ciudad para ver las cartas asociadas.</p><div id="map-chart" class="map-chart"></div><p class="map-note">Mapa esquemático de Europa occidental; solo se representan localidades reconocidas con coordenadas aproximadas.</p></div>
+          
           <div class="chart-card"><h4>Cartas por año</h4><p class="chart-subtitle">Distribución cronológica del conjunto filtrado</p><div id="year-chart" class="chart-rows"></div></div>
           <div class="chart-card"><h4>Lugares de origen y destino</h4><p class="chart-subtitle">Top de localidades mencionadas en la correspondencia</p><div id="place-chart" class="chart-rows"></div></div>
           <div class="chart-card"><h4>Corresponsales más frecuentes</h4><p class="chart-subtitle">Remitentes y destinatarios en los resultados</p><div id="people-chart" class="chart-rows"></div></div>
@@ -862,40 +862,6 @@ function countRecords(values,limit=8){
  }
  return [...counts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,"es")).slice(0,limit);
 }
-const CITY_COORDS=[
- {name:"Sevilla",aliases:["sevilla","seville"],lat:37.39,lon:-5.99},
- {name:"Lisboa",aliases:["lisboa","lisbon"],lat:38.72,lon:-9.14},
- {name:"Madrid",aliases:["madrid"],lat:40.42,lon:-3.70},
- {name:"Toledo",aliases:["toledo"],lat:39.86,lon:-4.02},
- {name:"Valladolid",aliases:["valladolid"],lat:41.65,lon:-4.73},
- {name:"Salamanca",aliases:["salamanca"],lat:40.97,lon:-5.66},
- {name:"Granada",aliases:["granada"],lat:37.18,lon:-3.60},
- {name:"Amberes",aliases:["amberes","antwerp","antwerpen","anvers"],lat:51.22,lon:4.40},
- {name:"Bruselas",aliases:["bruselas","brussels","bruxelles"],lat:50.85,lon:4.35},
- {name:"Malinas",aliases:["malinas","mechelen"],lat:51.03,lon:4.48},
- {name:"Lovaina",aliases:["lovaina","leuven"],lat:50.88,lon:4.70},
- {name:"Gante",aliases:["gante","ghent","gent"],lat:51.05,lon:3.72},
- {name:"Namur",aliases:["namur"],lat:50.47,lon:4.87},
- {name:"Ámsterdam",aliases:["amsterdam"],lat:52.37,lon:4.90},
- {name:"Leiden",aliases:["leiden"],lat:52.16,lon:4.49},
- {name:"Utrecht",aliases:["utrecht"],lat:52.09,lon:5.12},
- {name:"Colonia",aliases:["colonia","cologne","koln","köln"],lat:50.94,lon:6.96},
- {name:"Cleves",aliases:["cleves","kleve","cleveris","cléveris"],lat:51.79,lon:6.14},
- {name:"París",aliases:["paris","parís"],lat:48.86,lon:2.35},
- {name:"Londres",aliases:["londres","london"],lat:51.51,lon:-0.13},
- {name:"Roma",aliases:["roma","rome"],lat:41.90,lon:12.50},
- {name:"Venecia",aliases:["venecia","venice","venezia"],lat:45.44,lon:12.32},
- {name:"Milán",aliases:["milan","milano","milán"],lat:45.46,lon:9.19},
- {name:"Heidelberg",aliases:["heidelberg"],lat:49.40,lon:8.69},
- {name:"Fráncfort",aliases:["frankfurt","francfort","fráncfort"],lat:50.11,lon:8.68},
- {name:"Zaragoza",aliases:["zaragoza"],lat:41.65,lon:-0.89},
- {name:"Alcalá de Henares",aliases:["alcala de henares","alcalá de henares","alcala"],lat:40.48,lon:-3.36},
- {name:"Amberes",aliases:["antwerp"],lat:51.22,lon:4.40}
-];
-function cityFor(value){
- const key=norm(value);
- return CITY_COORDS.find(c=>c.aliases.some(a=>norm(a)===key))||null;
-}
 function renderTimeline(records){
  const target=byId("timeline-chart");target.replaceChildren();
  const counts=new Map();
@@ -926,46 +892,8 @@ function renderTimeline(records){
  const yTitle=document.createElementNS(NS,"text");yTitle.setAttribute("x",pad.l);yTitle.setAttribute("y",13);yTitle.setAttribute("class","timeline-label");yTitle.textContent="Cartas por año";svg.append(yTitle);
  target.append(svg);
 }
-function renderMap(records){
- const target=byId("map-chart");target.replaceChildren();
- const places=new Map();
- for(const r of records){
-  for(const [kind,value] of [["origin",r.origin],["destination",r.destination]]){
-   const city=cityFor(value);if(!city)continue;
-   const key=city.name;
-   const item=places.get(key)||{city,origins:0,destinations:0,labels:new Set()};
-   item[kind==="origin"?"origins":"destinations"]++;item.labels.add(value);places.set(key,item);
-  }
- }
- const used=[...places.values()];
- if(!used.length){target.append(el("div","map-empty","No se reconocen en los resultados localidades con coordenadas en el mapa esquemático. Prueba a quitar filtros o ampliar los resultados."));return}
- const NS="http://www.w3.org/2000/svg",w=900,h=465;
- const svg=document.createElementNS(NS,"svg");svg.setAttribute("viewBox",`0 0 ${w} ${h}`);svg.setAttribute("role","img");svg.setAttribute("aria-label","Mapa esquemático de lugares de origen y destino de las cartas");
- const project=c=>({x:55+(c.lon+12)/45*790,y:25+(70-c.lat)/37*405});
- for(let lon=-10;lon<=30;lon+=5){const x=55+(lon+12)/45*790;const l=document.createElementNS(NS,"line");l.setAttribute("x1",x);l.setAttribute("x2",x);l.setAttribute("y1",25);l.setAttribute("y2",430);l.setAttribute("class","map-grid");svg.append(l)}
- for(let lat=35;lat<=70;lat+=5){const y=25+(70-lat)/37*405;const l=document.createElementNS(NS,"line");l.setAttribute("x1",55);l.setAttribute("x2",845);l.setAttribute("y1",y);l.setAttribute("y2",y);l.setAttribute("class","map-grid");svg.append(l)}
- const land=document.createElementNS(NS,"path");land.setAttribute("class","map-land");
- land.setAttribute("d","M100 330 L75 280 L100 230 L135 195 L170 170 L190 135 L235 105 L280 115 L300 75 L355 60 L395 80 L430 65 L470 95 L500 85 L530 120 L565 125 L585 155 L630 155 L660 180 L700 190 L720 225 L760 240 L780 275 L745 300 L700 290 L665 325 L625 335 L590 315 L550 340 L515 320 L480 345 L445 330 L410 350 L370 335 L335 360 L290 345 L255 365 L220 345 L180 350 L145 330 Z");svg.insertBefore(land,svg.firstChild);
- const routes=new Map();
- for(const r of records){const a=cityFor(r.origin),b=cityFor(r.destination);if(!a||!b||a.name===b.name)continue;const key=[a.name,b.name].sort().join("|");routes.set(key,{a,b,count:(routes.get(key)?.count||0)+1})}
- const maxRoute=Math.max(1,...[...routes.values()].map(r=>r.count));
- for(const route of routes.values()){const a=project(route.a),b=project(route.b),line=document.createElementNS(NS,"line");line.setAttribute("x1",a.x);line.setAttribute("y1",a.y);line.setAttribute("x2",b.x);line.setAttribute("y2",b.y);line.setAttribute("class","map-route");line.setAttribute("stroke-width",String(1+2*route.count/maxRoute));const t=document.createElementNS(NS,"title");t.textContent=`${route.a.name} – ${route.b.name}: ${route.count} carta(s)`;line.append(t);svg.append(line)}
- for(const item of used){const p=project(item.city),g=document.createElementNS(NS,"g");g.setAttribute("class","map-city");g.setAttribute("tabindex","0");g.setAttribute("role","button");g.setAttribute("aria-label",`Filtrar cartas relacionadas con ${item.city.name}`);
-  const c=document.createElementNS(NS,"circle");c.setAttribute("cx",p.x);c.setAttribute("cy",p.y);c.setAttribute("r",String(4+Math.min(5,item.origins+item.destinations)));g.append(c);
-  const textNode=document.createElementNS(NS,"text");textNode.setAttribute("x",p.x+7);textNode.setAttribute("y",p.y-7);textNode.textContent=item.city.name;g.append(textNode);
-  const title=document.createElementNS(NS,"title");title.textContent=`${item.city.name}: ${item.origins} origen(es), ${item.destinations} destino(s). Pulsa para filtrar.`;g.append(title);
-  const activate=()=>{const origins=used.filter(x=>x.city.name===item.city.name&&x.origins).flatMap(x=>[...x.labels]);const sourceValues=[...new Set(records.filter(r=>cityFor(r.origin)?.name===item.city.name).map(r=>r.origin).filter(Boolean))];const destValues=[...new Set(records.filter(r=>cityFor(r.destination)?.name===item.city.name).map(r=>r.destination).filter(Boolean))];
-   selected.senderPlaces.clear();selected.recipientPlaces.clear();
-   if(sourceValues.length>=destValues.length&&sourceValues.length)sourceValues.forEach(v=>selected.senderPlaces.add(v));else destValues.forEach(v=>selected.recipientPlaces.add(v));
-   currentPage=1;renderAll();byId("results").scrollIntoView({behavior:"smooth",block:"start"});
-  };
-  g.addEventListener("click",activate);g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();activate()}});svg.append(g)
- }
- target.append(svg);
-}
 function renderAnalytics(records){
  renderTimeline(records);
- renderMap(records);
  const yearCounts=new Map();
  for(const r of records){
   const start=Number.isFinite(r.start_year)?r.start_year:null;
