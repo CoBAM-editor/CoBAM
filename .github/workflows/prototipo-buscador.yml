@@ -217,25 +217,25 @@ jobs:
           PY
           node --check /tmp/cobam-prototipo.js
 
-      - name: Probar filtro de décadas
+      - name: Probar filtro por año
         run: |
           node <<'JS'
           const fs = require("fs");
           const assert = require("assert");
           const source = fs.readFileSync("/tmp/cobam-prototipo.js", "utf8");
-          const match = source.match(/function decadeMatches\(r\)\{([\s\S]*?)\n\}/);
-          assert(match, "No se encontró decadeMatches");
-          function matcher(selectedDecade) {
-            const byId = () => ({ value: selectedDecade });
-            return Function("byId", match[0] + "; return decadeMatches;")(byId);
+          const match = source.match(/function selectedYearMatches\(r\)\{([\s\S]*?)\n\}/);
+          assert(match, "No se encontró selectedYearMatches");
+          function matcher(selectedYear) {
+            const byId = () => ({ value: selectedYear });
+            return Function("byId", match[0] + "; return selectedYearMatches;")(byId);
           }
-          assert.strictEqual(matcher("1560")({start_year:1568,end_year:1568}), true, "Una carta de 1568 debe entrar en la década de 1560");
-          assert.strictEqual(matcher("1560")({start_year:1559,end_year:1561}), true, "Una datación que abarca 1560 debe entrar en esa década");
-          assert.strictEqual(matcher("1570")({start_year:1568,end_year:1572}), true, "Una datación que abarca dos décadas debe entrar en ambas");
-          assert.strictEqual(matcher("1570")({start_year:1568,end_year:1569}), false, "Una carta de 1568-1569 no debe entrar en la década de 1570");
-          assert.strictEqual(matcher("1560")({start_year:null,end_year:null}), false, "Una carta sin año no debe entrar al filtrar por década");
-          assert.strictEqual(matcher("")({start_year:null,end_year:null}), true, "Sin década seleccionada no se deben excluir cartas sin fecha");
-          console.log("Filtro por décadas: coincidencia exacta, intervalos y ausencia de fecha comprobados.");
+          assert.strictEqual(matcher("1568")({start_year:1568,end_year:1568}), true, "Una carta de 1568 debe coincidir con el año 1568");
+          assert.strictEqual(matcher("1560")({start_year:1559,end_year:1561}), true, "Una datación que abarca 1560 debe coincidir con 1560");
+          assert.strictEqual(matcher("1570")({start_year:1568,end_year:1572}), true, "Una datación que abarca 1570 debe coincidir con 1570");
+          assert.strictEqual(matcher("1570")({start_year:1568,end_year:1569}), false, "Una carta de 1568-1569 no debe coincidir con 1570");
+          assert.strictEqual(matcher("1560")({start_year:null,end_year:null}), false, "Una carta sin año no debe entrar al filtrar por año");
+          assert.strictEqual(matcher("")({start_year:null,end_year:null}), true, "Sin año seleccionado no se deben excluir cartas sin fecha");
+          console.log("Filtro por año: coincidencia exacta, intervalos y ausencia de fecha comprobados.");
           JS
 
       - name: Preparar paquete descargable de prueba
