@@ -50,6 +50,15 @@ def normalize_repository_label(value: str | None) -> str:
         return "Archives Générales du Royaume/Algemeen Rijksarchief"
     return label
 
+def normalize_archive_city_label(value: str | None) -> str:
+    """Use the preferred Spanish name for archive localities in facets."""
+    label = clean(value)
+    key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
+    if key in {"brussels", "bruselas"}:
+        return "Bruselas"
+    return label
+
+
 def normalize_archive_country_label(value: str | None) -> str:
     """Use the preferred Spanish country name in archive-country facets."""
     label = clean(value)
@@ -591,7 +600,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         witness_id = witness.get(f"{{{XML_NS}}}id", "")
         ms_identifier = witness.find(".//tei:msIdentifier", NS)
         repository = normalize_repository_label(text_of(ms_identifier.find("tei:msName", NS))) if ms_identifier is not None else ""
-        city = text_of(ms_identifier.find("tei:settlement", NS)) if ms_identifier is not None else ""
+        city = normalize_archive_city_label(text_of(ms_identifier.find("tei:settlement", NS))) if ms_identifier is not None else ""
         country = normalize_archive_country_label(text_of(ms_identifier.find("tei:country", NS))) if ms_identifier is not None else ""
         mark = text_of(ms_identifier.find(".//tei:altIdentifier/tei:idno", NS)) if ms_identifier is not None else ""
         if repository:
