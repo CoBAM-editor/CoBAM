@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-ver-facsimil"></script>
+<script src="catalog-data.js?v=20261010-normaliza-comas-bibliografia"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -777,7 +777,7 @@ function makeResult(r){
  article.append(heading);
  const meta=el("div","result-meta");
  const item=(label,value)=>{const b=el("div","meta-item");b.append(el("span","meta-label",label),el("span","",value||"No indicado"));return b};
- meta.append(item("Archivo e institución",(r.repositories||[]).join("; ")),item("Signatura",(r.shelfmarks||[]).join("; ")),item("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join("; ")),item("Referencias impresas",(r.bibliography||[]).map(v=>String(v).trim().replace(/[;；]+\s*$/,"")).filter(Boolean).join("; ")));
+ meta.append(item("Archivo e institución",(r.repositories||[]).join("; ")),item("Signatura",(r.shelfmarks||[]).join("; ")),item("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join("; ")),item("Referencias impresas",(r.bibliography||[]).map(v=>String(v).trim().replace(/\s+,/g,",").replace(/[;；]+\s*$/,"")).filter(Boolean).join("; ")));
  article.append(meta);
  const badges=el("div","badges");
  if(r.language)badges.append(el("span","badge",r.language));
@@ -999,7 +999,7 @@ function renderReaderMetadata(r){
   ["Testimonio manuscrito",(r.repositories||[]).join("; ")],
   ["Signatura",(r.shelfmarks||[]).join("; ")],
   ["País y localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join(", ")],
-  ["Ediciones impresas",(r.bibliography||[]).join(" ")],
+  ["Ediciones impresas",(r.bibliography||[]).map(v=>String(v).replace(/\s+,/g,",")).join(" ")],
   ["Autor de la carta",(r.authors||[]).join("; ")],
   ["Edición crítica, traducción y notas",[r.editorial_responsibility,r.responsible_person].filter(Boolean).join(": ")],
   ["Codificación y edición digital",r.editor],
