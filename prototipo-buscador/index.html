@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-sin-estado-carta-v2-v2"></script>
+<script src="catalog-data.js?v=20261010-resultados-sin-resumen-v2"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -785,7 +785,7 @@ function makeResult(r){
  if(r.has_transcription)badges.append(el("span","badge available","Con transcripción"));
  if(r.has_translation)badges.append(el("span","badge available","Con traducción"));
  if(badges.childElementCount)article.append(badges);
- if(r.abstract)article.append(el("p","abstract",r.abstract));
+
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
  const reader=el("a","result-primary","Leer carta editada →");
