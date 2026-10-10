@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js"></script>
+<script src="catalog-data.js?v=20261010-archive-normalization"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -466,7 +466,7 @@ function normalizeOriginLabel(value){
 function normalizeRepositoryLabel(value){
  const label=(value??"").toString().trim().replace(/\\s+/g," ");
  const key=label.normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLocaleLowerCase("es");
- return ["algemeen rijksarchief","archives generales du royaume/algemeen rijksarchief"].includes(key)
+ return ["algemeen rijksarchief","algemeen rijgsarchief","archives generales du royaume/algemeen rijksarchief"].includes(key)
   ?"Archives Générales du Royaume/Algemeen Rijksarchief":label;
 }
 function normalizePersonLabel(value){

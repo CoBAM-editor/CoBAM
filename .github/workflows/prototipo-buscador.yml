@@ -57,6 +57,7 @@ jobs:
           assert module.normalize_origin_label("Cleves") == "Cléveris", "No normaliza la variante Cleves"
           assert module.normalize_origin_label("Amberes") == "Amberes", "Ha alterado un origen no relacionado"
           assert module.normalize_repository_label("Algemeen Rijksarchief") == "Archives Générales du Royaume/Algemeen Rijksarchief", "No unifica la etiqueta del archivo"
+          assert module.normalize_repository_label("Algemeen Rijgsarchief") == "Archives Générales du Royaume/Algemeen Rijksarchief", "No corrige la variante errónea del archivo"
           assert module.normalize_repository_label("Archives Générales du Royaume/Algemeen Rijksarchief") == "Archives Générales du Royaume/Algemeen Rijksarchief", "Altera la etiqueta bilingüe preferida"
           assert module.normalize_repository_label("Biblioteca Nacional de España") == "Biblioteca Nacional de España", "Ha alterado otro archivo"
           tei_ns = {"tei": "http://www.tei-c.org/ns/1.0"}
@@ -109,6 +110,11 @@ jobs:
           assert not missing, f"Faltan campos en: {missing[:5]}"
           ids = [r["id"] for r in records]
           assert len(ids) == len(set(ids)), "Hay identificadores TEI duplicados"
+          archive_labels = {label.strip().casefold() for record in records for label in (record.get("repositories") or [])}
+          preferred_archive = "Archives Générales du Royaume/Algemeen Rijksarchief".casefold()
+          assert preferred_archive in archive_labels, "Falta la etiqueta bilingüe preferida del archivo"
+          assert "algemeen rijksarchief" not in archive_labels, "Sigue apareciendo el filtro duplicado Algemeen Rijksarchief"
+          assert "algemeen rijgsarchief" not in archive_labels, "Sigue apareciendo la variante errónea Algemeen Rijgsarchief"
           for record in records:
               start, end = record["start_year"], record["end_year"]
               if start is not None and end is not None:

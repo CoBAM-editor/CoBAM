@@ -44,6 +44,7 @@ def normalize_repository_label(value: str | None) -> str:
     key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
     if key in {
         "algemeen rijksarchief",
+        "algemeen rijgsarchief",
         "archives generales du royaume/algemeen rijksarchief",
     }:
         return "Archives Générales du Royaume/Algemeen Rijksarchief"
