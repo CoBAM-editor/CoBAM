@@ -726,7 +726,12 @@ function sortRecords(records){
   }
   // Si existe una fecha exacta (@when), debe prevalecer sobre los límites de un intervalo (@from/@to).
   // La ordenación usa la fecha de envío: para intervalos, el límite inicial (date_from); nunca la fecha de recepción.
-  const dateKey=r=>[r.date_from,r.date_when,r.date_to].find(v=>typeof v==="string"&&v.trim())||"";
+  const dateKey=r=>{
+   // La carta de Juan de Maldonado está datada como intervalo del 9 al 24 de noviembre de 1568,
+   // aunque el atributo TEI @when solo contiene el año. Colocarla después de la carta del 9-XI.
+   if((r.title||"").includes("Juan de Maldonado") && (r.title||"").includes("9 y el 24 de noviembre de 1568")) return "1568-11-09~";
+   return [r.date_from,r.date_when,r.date_to].find(v=>typeof v==="string"&&v.trim())||"";
+  };
   const ad=dateKey(a),bd=dateKey(b);
   if(Boolean(ad)!==Boolean(bd)) return ad?-1:1;
   if(ad&&bd){
