@@ -799,23 +799,9 @@ function makeResult(r){
   const fac=el("a","result-secondary","Ver facsímil ↗");fac.href=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.title="Abrir el facsímil disponible";fac.target="_blank";fac.rel="noopener noreferrer";links.append(fac);
  }
  article.append(links);
- const details=document.createElement("details"),sum=el("summary","","Más metadatos y testimonios");
- const grid=el("div","detail-grid");
- grid.append(
-  makeDetail("Archivo e institución",r.repositories||[]),
-  makeDetail("Signatura",r.shelfmarks||[]),
-  makeDetail("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])])),
-  makeDetail("Personas mencionadas",(r.named_people||[]).slice(0,20)),
-  makeDetail("Lugares mencionados",(r.named_places||[]).slice(0,20)),
-  makeDetail("Organizaciones mencionadas",r.organizations||[]),
-  makeDetail("Entidades TEI enlazadas",(r.mentioned_entities||[]).slice(0,40).map(e=>[e.label,e.ref&&("ref "+e.ref),e.key&&("key "+e.key)].filter(Boolean).join(" · "))),
-  makeDetail("Fecha normalizada",[r.date_when,r.date_from&&("Desde: "+r.date_from),r.date_to&&("Hasta: "+r.date_to),r.date_certainty&&("Certeza: "+r.date_certainty)]),
-  makeDetail("Aparato crítico",r.critical_apparatus?[r.critical_apparatus.slice(0,1200)]:[]),
-  makeDetail("Mano / escritura",r.hand_notes||[]),
-  makeDetail("Referencias impresas",r.bibliography||[]),
-  makeDetail("Otros testimonios",(r.witnesses||[]).map(w=>[w.id,w.description].filter(Boolean).join(": ")))
- );
- details.append(sum,grid);article.append(details);
+ const details=document.createElement("details"),sum=el("summary","","Resumen en inglés");
+ const summary=el("p","abstract",r.abstract||"No hay un resumen en inglés disponible para esta carta.");
+ details.append(sum,summary);article.append(details);
  return article;
 }
 function getActiveLabels(){
