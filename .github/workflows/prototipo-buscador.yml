@@ -62,7 +62,7 @@ jobs:
           tei_ns = {"tei": "http://www.tei-c.org/ns/1.0"}
           for filename in ["1570 05 01 CoBAM.xml", "1570 05 13 V  CoBAM.xml", "1570 05 15  CoBAM.xml", "1570 05 25  CoBAM.xml", "1570 05 27  CoBAM.xml"]:
               root = ET.parse(filename).getroot()
-              names = [module.text_of(el) for el in root.findall(".//tei:sourceDesc/tei:listWit/tei:witness/tei:msIdentifier/tei:msName", tei_ns)]
+              names = [module.text_of(el) for el in root.findall(".//tei:msIdentifier/tei:msName", tei_ns)]
               assert "Archives Générales du Royaume/Algemeen Rijksarchief" in names, f"No se ha regularizado el archivo en {filename}"
           assert module.normalize_person_label("Maximiliano Morillon") == "Maximiliano Morillon", "No conserva el nombre correcto"
           assert module.normalize_person_label("Maxiiliano Morillon") == "Maximiliano Morillon", "No corrige la errata del XML"
