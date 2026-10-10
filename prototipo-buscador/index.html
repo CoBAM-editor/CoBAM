@@ -464,8 +464,8 @@ function normalizeOriginLabel(value){
  return ["cleveris","cleves"].includes(key)?"Cléveris":label;
 }
 function normalizeRepositoryLabel(value){
- const label=(value??"").toString().trim().replace(/\\s+/g," ");
- const key=label.normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLocaleLowerCase("es");
+ const label=(value??"").toString().trim().replace(/\s+/g," ");
+ const key=label.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
  return ["algemeen rijksarchief","algemeen rijgsarchief","archives generales du royaume/algemeen rijksarchief"].includes(key)
   ?"Archives Générales du Royaume/Algemeen Rijksarchief":label;
 }
