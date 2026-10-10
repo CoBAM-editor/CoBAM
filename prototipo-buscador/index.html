@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-sin-estado-carta-v2"></script>
+<script src="catalog-data.js?v=20261010-sin-estado-carta-v2-v2"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -814,7 +814,6 @@ function makeResult(r){
   makeDetail("Fecha normalizada",[r.date_when,r.date_from&&("Desde: "+r.date_from),r.date_to&&("Hasta: "+r.date_to),r.date_certainty&&("Certeza: "+r.date_certainty)]),
   makeDetail("Aparato crítico",r.critical_apparatus?[r.critical_apparatus.slice(0,1200)]:[]),
   makeDetail("Mano / escritura",r.hand_notes||[]),
-  makeDetail("Edición y revisión",[r.editor,r.revision_date&&("Última revisión: "+r.revision_date),r.revision_who&&("Responsable: "+r.revision_who)]),
   makeDetail("Referencias impresas",r.bibliography||[]),
   makeDetail("Otros testimonios",(r.witnesses||[]).map(w=>[w.id,w.description].filter(Boolean).join(": ")))
  );
