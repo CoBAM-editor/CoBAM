@@ -777,7 +777,7 @@ function makeResult(r){
  article.append(heading);
  const meta=el("div","result-meta");
  const item=(label,value)=>{const b=el("div","meta-item");b.append(el("span","meta-label",label),el("span","",value||"No indicado"));return b};
- meta.append(item("Remitente",r.sender),item("Destinatario",r.recipient),item("Origen",r.origin),item("Destino",r.destination));
+ meta.append(item("Archivo e institución",(r.repositories||[]).join("; ")),item("Signatura",(r.shelfmarks||[]).join("; ")),item("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join("; ")),item("Referencias impresas",(r.bibliography||[]).join("; ")));
  article.append(meta);
  const badges=el("div","badges");
  if(r.language)badges.append(el("span","badge",r.language));
