@@ -21,6 +21,12 @@ def clean(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def normalize_language_label(value: str | None) -> str:
+    """Normalize the display label of a language without changing its spelling."""
+    label = clean(value)
+    return label[:1].upper() + label[1:] if label else ""
+
+
 def text_of(element: ET.Element | None) -> str:
     if element is None:
         return ""
@@ -442,7 +448,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     abstract = first_text(root, ".//tei:note[@type='abstract']")
     incipit = first_text(root, ".//tei:note[@type='incipit']")
     language_elements = root.findall(".//tei:langUsage/tei:language", NS)
-    languages = unique([text_of(el) for el in language_elements])
+    languages = unique([normalize_language_label(text_of(el)) for el in language_elements])
     language_codes = unique([el.get("ident", "") for el in language_elements if el.get("ident")])
     language = languages[0] if languages else ""
     language_code = language_codes[0] if language_codes else ""
