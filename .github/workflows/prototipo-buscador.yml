@@ -52,7 +52,11 @@ jobs:
               '<text xmlns="http://www.tei-c.org/ns/1.0"><body><p>Primer párrafo.</p><p>Segundo párrafo.</p></body></text>'
           )
           assert module.body_text(tei) == "Primer párrafo.\n\nSegundo párrafo.", "No conserva la separación de párrafos"
-          print("Pruebas de intervalos cronológicos y párrafos: correctas.")
+          assert module.normalize_origin_label("Cléveris") == "Cléveris", "No conserva la forma preferida Cléveris"
+          assert module.normalize_origin_label("Cléves") == "Cléveris", "No normaliza la variante Cléves"
+          assert module.normalize_origin_label("Cleves") == "Cléveris", "No normaliza la variante Cleves"
+          assert module.normalize_origin_label("Amberes") == "Amberes", "Ha alterado un origen no relacionado"
+          print("Pruebas de intervalos, párrafos y normalización toponímica: correctas.")
           PY
 
       - name: Generar catálogo desde los XML-TEI
@@ -97,6 +101,10 @@ jobs:
           spanish_book = next((r for r in records if r["file"] == "1569 04 06 Libros.xml"), None)
           assert latin_book and latin_book["languages"] == ["Latín"], "La etiqueta del libro de 1568 debe ser Latín"
           assert spanish_book and spanish_book["languages"] == ["Español"] and spanish_book.get("language_code") == "es", "La etiqueta y el código de idioma del libro de 1569 deben ser Español/es"
+          cleveris_1568 = next((r for r in records if r.get("file") == "1568 10 10 CoBAM.xml"), None)
+          cleves_1570 = next((r for r in records if r.get("file") == "1570 03 15 CoBAM.xml"), None)
+          assert cleveris_1568 and cleveris_1568["origin"] == "Cléveris", "El origen de la carta de 1568 debe mostrarse como Cléveris"
+          assert cleves_1570 and cleves_1570["origin"] == "Cléveris", "El origen de la carta de 1570 debe normalizarse a Cléveris"
           sample = next((r for r in records if r["letter_code"].strip() == "1568 08 29"), None)
           assert sample, "No se encuentra la carta de prueba 1568 08 29"
           assert sample["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/"
