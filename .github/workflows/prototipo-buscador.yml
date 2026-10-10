@@ -216,7 +216,7 @@ jobs:
               'row.id="apparatus-"+item.number;',
               'titleLink.href=r.published_url||prototypeReaderUrl;',
               'reader.href=r.published_url||prototypeReaderUrl;',
-              'Leer carta editada →',
+              'Leer edición en WordPress ↗',
           ]
           missing = [fragment for fragment in required if fragment not in html]
           assert not missing, f"Faltan piezas de la vista de lectura: {missing}"
