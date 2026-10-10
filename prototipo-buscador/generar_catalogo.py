@@ -38,11 +38,13 @@ def normalize_origin_label(value: str | None) -> str:
 
 
 def normalize_person_label(value: str | None) -> str:
-    """Normalize known typographical variants of correspondent names."""
+    """Normalize known correspondent-name variants, preserving hypothetical brackets."""
     label = clean(value)
     key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
     if key in {"maxiiliano morillon", "maximiiano morillon"}:
         return "Maximiliano Morillon"
+    if key in {"cornelio gema", "cornelio gemma"}:
+        return "Cornelio Gemma Frisio"
     return label
 
 
