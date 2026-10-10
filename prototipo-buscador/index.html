@@ -541,7 +541,6 @@ function getByFacet(r,key){
  const f=FACETS.find(x=>x.key===key);
  if(f)return f.values(r);
  if(key==="people")return unique([r.sender,r.recipient]);
- if(key==="organizations")return r.organizations||[];
  if(key==="editions")return r.bibliography||[];
  if(key==="availability")return AVAILABILITY.filter(x=>x.test(r)).map(x=>x.value);
  return [];
@@ -853,7 +852,7 @@ function getActiveLabels(){
  for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","editionStatus","availability"])add(key,selected[key]);
  return labels;
 }
-const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",mentionedPeople:"Persona",mentionedPlaces:"Lugar mencionado",organizations:"Organización",editions:"Edición impresa",editionStatus:"Estado editorial",availability:"Disponibilidad"};
+const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",editions:"Edición impresa",availability:"Disponibilidad"};
 function renderActiveFilters(){
  activeArea.replaceChildren();
  const active=getActiveLabels();
