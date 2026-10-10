@@ -1228,7 +1228,33 @@ byId("letter-view").addEventListener("click",event=>{
  event.preventDefault();openFacsimile(image.url,image.label||anchor.textContent.trim());
 });
 
+let cobamDetailsPromise=null;
 function renderLetterPage(r){
+ if(window.COBAM_DETAILS){
+  renderLetterPageReady({...r,...(window.COBAM_DETAILS[r.id]||{})});
+  return;
+ }
+ byId("letter-view").hidden=false;
+ byId("search-view").hidden=true;
+ byId("letter-title").textContent=r.title||r.file||"Carta";
+ byId("letter-date").textContent=r.date||"Fecha no indicada";
+ byId("reader-summary").textContent="Cargando el contenido editorial de esta carta…";
+ if(!cobamDetailsPromise){
+  cobamDetailsPromise=new Promise((resolve,reject)=>{
+   const script=document.createElement("script");
+   script.src="catalog-details.js?v=20261011-carga-bajo-demanda";
+   script.onload=resolve;
+   script.onerror=()=>{cobamDetailsPromise=null;reject(new Error("No se pudo cargar el contenido editorial."));};
+   document.head.append(script);
+  });
+ }
+ cobamDetailsPromise.then(()=>{
+  renderLetterPageReady({...r,...(window.COBAM_DETAILS[r.id]||{})});
+ }).catch(()=>{
+  byId("reader-summary").textContent="No se ha podido cargar el contenido editorial. Recarga la página e inténtalo de nuevo.";
+ });
+}
+function renderLetterPageReady(r){
   currentReaderLetter=r;
   setEditionTab("marked");
   hideApparatusPreview();
