@@ -460,7 +460,7 @@ const SAMPLE=[{
 }];
 function normalizeOriginLabel(value){
  const label=(value??"").toString().trim();
- const key=label.normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLocaleLowerCase("es");
+ const key=label.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
  return ["cleveris","cleves"].includes(key)?"Cléveris":label;
 }
 const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).map(r=>({...r,origin:normalizeOriginLabel(r.origin)}));
