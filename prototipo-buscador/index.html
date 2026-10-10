@@ -775,7 +775,7 @@ function makeResult(r){
  titleLink.href=r.published_url||prototypeReaderUrl;
  titleLink.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo";
  h.append(titleLink);
- heading.append(h,el("div","result-date",r.date||"Fecha no indicada"));
+ heading.append(h);
  article.append(heading);
  const meta=el("div","result-meta");
  const item=(label,value)=>{const b=el("div","meta-item");b.append(el("span","meta-label",label),el("span","",value||"No indicado"));return b};
