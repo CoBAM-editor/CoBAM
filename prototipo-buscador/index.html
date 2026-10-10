@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-resultados-sin-resumen-v2"></script>
+<script src="catalog-data.js?v=20261010-sin-enlace-vista-prototipo-v2"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -793,9 +793,7 @@ function makeResult(r){
  reader.title=r.published_url?"Abrir la edición crítica ya publicada en WordPress":"Abrir la lectura de la carta en el prototipo";
  if(r.published_url){reader.target="_blank";reader.rel="noopener noreferrer"}
  links.append(reader);
- if(r.published_url){
-  const preview=el("a","result-secondary","Vista de lectura del prototipo");preview.href=prototypeReaderUrl;preview.title="Comparar con la lectura generada a partir del XML-TEI";links.append(preview);
- }
+
  const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
  if((r.facsimile_items||r.facsimiles||[]).length){
   const fac=el("a","result-secondary","Facsímiles ↗");fac.href=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.target="_blank";fac.rel="noopener noreferrer";links.append(fac);
