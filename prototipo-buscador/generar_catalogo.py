@@ -43,8 +43,10 @@ def normalize_person_label(value: str | None) -> str:
     key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
     if key in {"maxiiliano morillon", "maximiiano morillon"}:
         return "Maximiliano Morillon"
-    if key in {"cornelio gema", "cornelio gemma"}:
-        return "Cornelio Gemma Frisio"
+    if key in {"[cornelio gema frisio]", "[cornelio gemma frisio]"}:
+        return "[Cornelio Gema Frisio]"
+    if key in {"cornelio gema", "cornelio gemma", "cornelio gema frisio", "cornelio gemma frisio"}:
+        return "Cornelio Gema Frisio"
     return label
 
 
