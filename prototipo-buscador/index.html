@@ -789,7 +789,7 @@ function makeResult(r){
  if(r.abstract)article.append(el("p","abstract",r.abstract));
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
- const reader=el("a",r.published_url?"result-primary":"result-primary",r.published_url?"Edición crítica en WordPress ↗":"Abrir lectura del prototipo →");
+ const reader=el("a",r.published_url?"result-primary":"result-primary",r.published_url?"Leer carta editada →":"Abrir lectura del prototipo →");
  reader.href=r.published_url||prototypeReaderUrl;
  reader.title=r.published_url?"Abrir la edición crítica ya publicada en WordPress":"Abrir la lectura generada a partir del XML-TEI";
  if(r.published_url){reader.target="_blank";reader.rel="noopener noreferrer"}
