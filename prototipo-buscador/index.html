@@ -463,7 +463,12 @@ function normalizeOriginLabel(value){
  const key=label.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
  return ["cleveris","cleves"].includes(key)?"Cléveris":label;
 }
-const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).map(r=>({...r,origin:normalizeOriginLabel(r.origin)}));
+function normalizePersonLabel(value){
+ const label=(value??"").toString().trim();
+ const key=label.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\\s+/g," ").toLocaleLowerCase("es");
+ return ["maxiiliano morillon","maximiiano morillon"].includes(key)?"Maximiliano Morillon":label;
+}
+const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).map(r=>({...r,sender:normalizePersonLabel(r.sender),recipient:normalizePersonLabel(r.recipient),origin:normalizeOriginLabel(r.origin)}));
 const PAGE_SIZE=20;
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
