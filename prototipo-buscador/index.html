@@ -716,19 +716,22 @@ function sortRecords(records){
  else if(mode==="recipient")copy.sort(str("recipient"));
  else if(mode==="title")copy.sort(str("title"));
  else copy.sort((a,b)=>{
-  // Orden cronológico por fecha completa, no solo por año.
-  // Las fechas ISO (AAAA-MM-DD) se comparan correctamente como texto.
+  // Primero se compara el año de datación: así ninguna carta de 1570
+  // puede adelantarse a las de 1568 por tener una fecha incompleta.
+  // Las cartas sin año/fecha quedan al final en ambos sentidos.
+  const hasYear=r=>Number.isFinite(r.start_year);
+  if(hasYear(a)!==hasYear(b)) return hasYear(a)?-1:1;
+  if(hasYear(a)&&a.start_year!==b.start_year){
+   return mode==="date-desc"?b.start_year-a.start_year:a.start_year-b.start_year;
+  }
   const dateKey=r=>[r.date_from,r.date_when,r.date_to].find(v=>typeof v==="string"&&v.trim())||"";
   const ad=dateKey(a),bd=dateKey(b);
-  const ay=Number.isFinite(a.start_year)?a.start_year:9999;
-  const by=Number.isFinite(b.start_year)?b.start_year:9999;
-  let cmp;
-  if(ad&&bd) cmp=ad.localeCompare(bd);
-  else if(ad) cmp=-1;
-  else if(bd) cmp=1;
-  else cmp=ay-by;
-  if(mode==="date-desc") cmp=-cmp;
-  return cmp||((a.title||"").localeCompare(b.title||"","es"));
+  if(Boolean(ad)!==Boolean(bd)) return ad?-1:1;
+  if(ad&&bd){
+   const cmp=ad.localeCompare(bd);
+   if(cmp) return mode==="date-desc"?-cmp:cmp;
+  }
+  return (a.title||"").localeCompare(b.title||"","es");
  });
  return copy;
 }
