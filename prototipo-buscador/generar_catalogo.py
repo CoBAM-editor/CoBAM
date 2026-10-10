@@ -658,6 +658,11 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "1570 05 00 Z CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-z/",
     }
     published_url = published_url_overrides.get(path.name, "")
+    # Si no se ha verificado la URL permanente, buscar por identificador en WordPress.
+    wordpress_search_url = (
+        "https://lacorrespondenciadebenitoariasmontano.online/es_es/?s="
+        + quote(clean_letter_code or path.stem, safe="")
+    )
     record = {
         # Use the source filename as a unique catalogue key. Preserve xml:id
         # separately: legacy TEI identifiers can repeat across related files.
@@ -723,6 +728,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "file": path.name,
         "url": url,
         "published_url": published_url,
+        "wordpress_search_url": wordpress_search_url,
     }
     record["archive_labels"] = unique(repositories + archive_countries + archive_cities)
     record["shelfmark_labels"] = unique(shelfmarks)
