@@ -10,9 +10,10 @@ on:
 
 # Only the newest push should publish the preview; older builds must not
 # race and overwrite a newer version of the prototype.
+# Queue the latest preview build instead of cancelling an in-progress validation.
 concurrency:
   group: cobam-prototype-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
