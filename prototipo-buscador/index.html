@@ -773,7 +773,7 @@ function makeResult(r){
  h.append(el("span","result-code",r.letter_code||r.id||"CoBAM"));
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
  titleLink.href=r.published_url||prototypeReaderUrl;
- titleLink.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo";
+ titleLink.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo (enlace WordPress pendiente de verificar)";
  h.append(titleLink);
  heading.append(h);
  article.append(heading);
@@ -790,9 +790,9 @@ function makeResult(r){
 
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
- const reader=el("a","result-primary","Leer carta editada →");
+ const reader=el("a","result-primary",r.published_url?"Leer edición en WordPress ↗":"Leer en el prototipo (WordPress pendiente) →");
  reader.href=r.published_url||prototypeReaderUrl;
- reader.title=r.published_url?"Abrir la edición crítica ya publicada en WordPress":"Abrir la lectura de la carta en el prototipo";
+ reader.title=r.published_url?"Abrir la edición crítica ya publicada en WordPress":"Esta carta aún no tiene una URL de WordPress verificada; abre solo la lectura del prototipo.";
  if(r.published_url){reader.target="_blank";reader.rel="noopener noreferrer"}
  links.append(reader);
 
