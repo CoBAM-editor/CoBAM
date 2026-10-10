@@ -643,18 +643,13 @@ def make_record(path: Path, root: ET.Element) -> dict:
 
     url = "https://github.com/CoBAM-editor/CoBAM/blob/main/" + quote(path.name, safe="")
     clean_letter_code = letter_code.strip(" []").strip()
-    # Some published WordPress slugs do not match the letter's encoded date.
-    # Keep known exceptions explicit; do not infer a permalink from the date alone.
+    # Only emit a published permalink when it has been explicitly verified.
+    # WordPress slugs are not reliably derivable from the date in the TEI.
     published_url_overrides = {
         "1568 07 22": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1568-07-20/",
         "1568 08 07": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/15680807-2/",
     }
     published_url = published_url_overrides.get(clean_letter_code, "")
-    if not published_url:
-        simple_date = re.fullmatch(r"(\d{4})\s+(\d{2})\s+(\d{2}[a-z]?)", clean_letter_code, re.I)
-        if simple_date:
-            slug = "-".join(simple_date.groups()).lower()
-            published_url = "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/" + slug + "/"
     record = {
         # Use the source filename as a unique catalogue key. Preserve xml:id
         # separately: legacy TEI identifiers can repeat across related files.
