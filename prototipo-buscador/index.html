@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-bruselas"></script>
+<script src="catalog-data.js?v=20261010-poda-filtros"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -509,7 +509,7 @@ function populateYearOptions(){
  if([...select.options].some(option=>option.value===previous))select.value=previous;
 }
 populateYearOptions();
-const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),organizations:new Set(),editions:new Set(),editionStatus:new Set(),availability:new Set()};
+const selected={senders:new Set(),recipients:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),editions:new Set(),availability:new Set()};
 const facetSearches={};
 const showAllFacets=new Set();
 let appliedQuery="";
@@ -525,11 +525,7 @@ const FACETS=[
  {key:"archiveCountries",title:"País del archivo",values:r=>r.archive_countries||[]},
  {key:"archiveCities",title:"Localidad del archivo",values:r=>r.archive_cities||[]},
  {key:"shelfmarks",title:"Signaturas y localizadores",values:r=>r.shelfmark_labels||r.shelfmarks||[]},
- {key:"mentionedPeople",title:"Personas mencionadas",values:r=>(r.named_people||[])},
- {key:"mentionedPlaces",title:"Otros lugares mencionados",values:r=>(r.named_places||[]).filter(p=>norm(p)!==norm(r.origin)&&norm(p)!==norm(r.destination))},
- {key:"organizations",title:"Organizaciones mencionadas",values:r=>(r.organizations||[])},
  {key:"editions",title:"Ediciones impresas citadas",values:r=>(r.bibliography||[])},
- {key:"editionStatus",title:"Estado editorial",values:r=>[r.edition_status].filter(Boolean)}
 ];
 const AVAILABILITY=[
  {value:"images",label:"Con imágenes de facsímil",test:r=>Boolean(r.has_images)},
