@@ -37,6 +37,18 @@ def normalize_origin_label(value: str | None) -> str:
     return label
 
 
+
+def normalize_repository_label(value: str | None) -> str:
+    """Unify the bilingual archive name used by CoBAM repository filters."""
+    label = clean(value)
+    key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
+    if key in {
+        "algemeen rijksarchief",
+        "archives generales du royaume/algemeen rijksarchief",
+    }:
+        return "Archives Générales du Royaume/Algemeen Rijksarchief"
+    return label
+
 def normalize_person_label(value: str | None) -> str:
     """Normalize known correspondent-name variants, preserving hypothetical brackets."""
     label = clean(value)
@@ -567,7 +579,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     for witness in root.findall(".//tei:sourceDesc/tei:listWit/tei:witness", NS):
         witness_id = witness.get(f"{{{XML_NS}}}id", "")
         ms_identifier = witness.find(".//tei:msIdentifier", NS)
-        repository = text_of(ms_identifier.find("tei:msName", NS)) if ms_identifier is not None else ""
+        repository = normalize_repository_label(text_of(ms_identifier.find("tei:msName", NS))) if ms_identifier is not None else ""
         city = text_of(ms_identifier.find("tei:settlement", NS)) if ms_identifier is not None else ""
         country = text_of(ms_identifier.find("tei:country", NS)) if ms_identifier is not None else ""
         mark = text_of(ms_identifier.find(".//tei:altIdentifier/tei:idno", NS)) if ms_identifier is not None else ""
