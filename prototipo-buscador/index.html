@@ -458,7 +458,12 @@ const SAMPLE=[{
  named_people:["Fray Luis de León"],named_places:["León","Salamanca"],repositories:["Biblioteca Nacional de España"],archive_countries:["España"],archive_cities:["Madrid"],shelfmarks:["(B) BNE, Ms. 8588, ff.129r-131v."],archive_labels:["Biblioteca Nacional de España","España","Madrid"],shelfmark_labels:["(B) BNE, Ms. 8588, ff.129r-131v."],
  bibliography:[],witnesses:[],hand_notes:["Mano de Benito Arias Montano"],editor:"Antonio Dávila Pérez",authors:["Benito Arias Montano"],edition_status:"approved",revision_date:"2023-02-14",revision_who:"#Davila",facsimiles:[],has_images:true,has_transcription:true,has_translation:false,file:"1560 02 01-60 05 05 CoBAM.xml",url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
 }];
-const LETTERS=Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE;
+function normalizeOriginLabel(value){
+ const label=(value??"").toString().trim();
+ const key=label.normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLocaleLowerCase("es");
+ return ["cleveris","cleves"].includes(key)?"Cléveris":label;
+}
+const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).map(r=>({...r,origin:normalizeOriginLabel(r.origin)}));
 const PAGE_SIZE=20;
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
