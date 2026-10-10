@@ -725,7 +725,7 @@ function sortRecords(records){
    return mode==="date-desc"?b.start_year-a.start_year:a.start_year-b.start_year;
   }
   // Si existe una fecha exacta (@when), debe prevalecer sobre los límites de un intervalo (@from/@to).
-  const dateKey=r=>[r.date_when,r.date_from,r.date_to].find(v=>typeof v==="string"&&v.trim())||"";
+  // La ordenación usa la fecha de envío: para intervalos, el límite inicial (date_from); nunca la fecha de recepción.\n  const dateKey=r=>[r.date_from,r.date_when,r.date_to].find(v=>typeof v==="string"&&v.trim())||"";
   const ad=dateKey(a),bd=dateKey(b);
   if(Boolean(ad)!==Boolean(bd)) return ad?-1:1;
   if(ad&&bd){
