@@ -56,10 +56,15 @@ jobs:
           assert module.normalize_origin_label("Cléves") == "Cléveris", "No normaliza la variante Cléves"
           assert module.normalize_origin_label("Cleves") == "Cléveris", "No normaliza la variante Cleves"
           assert module.normalize_origin_label("Amberes") == "Amberes", "Ha alterado un origen no relacionado"
+          assert module.normalize_person_label("Maximiliano Morillon") == "Maximiliano Morillon", "No conserva el nombre correcto"
+          assert module.normalize_person_label("Maxiiliano Morillon") == "Maximiliano Morillon", "No corrige la errata del XML"
+          assert module.normalize_person_label("Maximiiano Morillon") == "Maximiliano Morillon", "No corrige la variante duplicada en el catálogo"
           interface = Path("prototipo-buscador/index.html").read_text(encoding="utf-8")
           assert "function normalizeOriginLabel(value)" in interface, "Falta la normalización de origen en la interfaz"
+          assert "function normalizePersonLabel(value)" in interface, "Falta la normalización de nombres en la interfaz"
+          assert "sender:normalizePersonLabel(r.sender)" in interface, "La interfaz no normaliza los remitentes"
           assert "origin:normalizeOriginLabel(r.origin)" in interface, "La interfaz no normaliza los orígenes de los registros"
-          print("Pruebas de intervalos, párrafos y normalización toponímica: correctas.")
+          print("Pruebas de intervalos, párrafos y normalización toponímica y de corresponsales: correctas.")
           PY
 
       - name: Generar catálogo desde los XML-TEI
@@ -108,6 +113,9 @@ jobs:
           cleves_1570 = next((r for r in records if r.get("file") == "1570 03 15 CoBAM.xml"), None)
           assert cleveris_1568 and cleveris_1568["origin"] == "Cléveris", "El origen de la carta de 1568 debe mostrarse como Cléveris"
           assert cleves_1570 and cleves_1570["origin"] == "Cléveris", "El origen de la carta de 1570 debe normalizarse a Cléveris"
+          morillon_1570 = next((r for r in records if r.get("file") == "1570 05 17 CoBAM.xml"), None)
+          assert morillon_1570 and morillon_1570["sender"] == "Maximiliano Morillon", "El remitente de la carta de mayo de 1570 debe mostrarse como Maximiliano Morillon"
+          assert not any(r.get("sender") == "Maximiiano Morillon" for r in records), "Queda una variante errónea de Morillon en los remitentes"
           sample = next((r for r in records if r["letter_code"].strip() == "1568 08 29"), None)
           assert sample, "No se encuentra la carta de prueba 1568 08 29"
           assert sample["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/"
