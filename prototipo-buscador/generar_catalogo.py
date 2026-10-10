@@ -56,6 +56,8 @@ def normalize_archive_country_label(value: str | None) -> str:
     key = unicodedata.normalize("NFD", label).encode("ascii", "ignore").decode("ascii").casefold()
     if key in {"belgium", "belgica"}:
         return "Bélgica"
+    if key in {"netherlands", "paises bajos"}:
+        return "Países Bajos"
     return label
 
 def normalize_person_label(value: str | None) -> str:
