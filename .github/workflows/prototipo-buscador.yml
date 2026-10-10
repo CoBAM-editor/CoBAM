@@ -187,12 +187,27 @@ jobs:
           import json
           from pathlib import Path
           records = json.loads(Path("prototipo-buscador/catalogo.json").read_text(encoding="utf-8"))
-          output = Path("prototipo-buscador/catalog-data.js")
-          output.write_text(
-              "window.COBAM_CATALOG = " + json.dumps(records, ensure_ascii=False, separators=(",", ":")) + ";\n",
+          directory = Path("prototipo-buscador")
+          detail_fields = {
+              "transcription", "translation", "commentary_html", "source_marked_html",
+              "source_clean_html", "translation_html", "apparatus", "footnotes",
+              "facsimile_items"
+          }
+          details = {}
+          metadata = []
+          for record in records:
+              row = dict(record)
+              details[row["id"]] = {key: row.pop(key) for key in list(row) if key in detail_fields}
+              metadata.append(row)
+          (directory / "catalog-data.js").write_text(
+              "window.COBAM_CATALOG = " + json.dumps(metadata, ensure_ascii=False, separators=(",", ":")) + ";\n",
               encoding="utf-8",
           )
-          print(f"Catálogo de navegador preparado: {len(records)} cartas.")
+          (directory / "catalog-details.js").write_text(
+              "window.COBAM_DETAILS = " + json.dumps(details, ensure_ascii=False, separators=(",", ":")) + ";\n",
+              encoding="utf-8",
+          )
+          print(f"Catálogo ligero preparado: {len(metadata)} cartas; contenidos editoriales separados para carga bajo demanda.")
           PY
 
       - name: Comprobar estructura de la vista de edición
