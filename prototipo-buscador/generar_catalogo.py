@@ -645,11 +645,15 @@ def make_record(path: Path, root: ET.Element) -> dict:
     clean_letter_code = letter_code.strip(" []").strip()
     # Only emit a published permalink when it has been explicitly verified.
     # WordPress slugs are not reliably derivable from the date in the TEI.
+    # Map by exact source filename, not just date/letter code: supplementary
+    # XML files (e.g. "Libros") can share the same CoBAM identifier.
+    # Add entries only after checking the live published edition page.
     published_url_overrides = {
-        "1568 07 22": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1568-07-20/",
-        "1568 08 07": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/15680807-2/",
+        "1568 07 22 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1568-07-20/",
+        "1568 08 07 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/15680807-2/",
+        "1569 04 06 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06/",
     }
-    published_url = published_url_overrides.get(clean_letter_code, "")
+    published_url = published_url_overrides.get(path.name, "")
     record = {
         # Use the source filename as a unique catalogue key. Preserve xml:id
         # separately: legacy TEI identifiers can repeat across related files.
