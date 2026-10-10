@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-sin-estado-carta"></script>
+<script src="catalog-data.js?v=20261010-sin-estado-carta-v2"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -456,7 +456,7 @@ const SAMPLE=[{
  transcription:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam. BAM pide ayuda para sus estudios de doctrina cristiana y filosofía natural.",
  translation:"",annotations:"",text:"Dedimus tandem, mi Leo, dedimus ultro nomen in hanc militiam. Orden de Santiago, Salamanca, filosofía natural.",
  named_people:["Fray Luis de León"],named_places:["León","Salamanca"],repositories:["Biblioteca Nacional de España"],archive_countries:["España"],archive_cities:["Madrid"],shelfmarks:["(B) BNE, Ms. 8588, ff.129r-131v."],archive_labels:["Biblioteca Nacional de España","España","Madrid"],shelfmark_labels:["(B) BNE, Ms. 8588, ff.129r-131v."],
- bibliography:[],witnesses:[],hand_notes:["Mano de Benito Arias Montano"],editor:"Antonio Dávila Pérez",authors:["Benito Arias Montano"],edition_status:"approved",revision_date:"2023-02-14",revision_who:"#Davila",facsimiles:[],has_images:true,has_transcription:true,has_translation:false,file:"1560 02 01-60 05 05 CoBAM.xml",url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
+ bibliography:[],witnesses:[],hand_notes:["Mano de Benito Arias Montano"],authors:["Benito Arias Montano"],facsimiles:[],has_images:true,has_transcription:true,has_translation:false,file:"1560 02 01-60 05 05 CoBAM.xml",url:"https://github.com/CoBAM-editor/CoBAM/blob/main/1560%2002%2001-60%2005%2005%20CoBAM.xml"
 }];
 function normalizeOriginLabel(value){
  const label=(value??"").toString().trim();
@@ -980,7 +980,7 @@ function exportFilteredCSV(){
   ["Lugar de origen",r=>r.origin],["Lugar de destino",r=>r.destination],["Idioma",r=>(r.languages||[r.language]).filter(Boolean)],
   ["Resumen",r=>r.abstract],["Incipit",r=>r.incipit],["Archivo",r=>(r.repositories||[])],
   ["Signatura",r=>(r.shelfmarks||[])],["Personas mencionadas",r=>(r.named_people||[])],["Lugares mencionados",r=>(r.named_places||[])],
-  ["Organizaciones",r=>(r.organizations||[])],["Entidades TEI",r=>(r.mentioned_entities||[]).map(e=>[e.label,e.ref,e.key].filter(Boolean).join(" · "))],["Estado editorial",r=>r.edition_status],["Con transcripción",r=>r.has_transcription?"Sí":"No"],
+  ["Organizaciones",r=>(r.organizations||[])],["Entidades TEI",r=>(r.mentioned_entities||[]).map(e=>[e.label,e.ref,e.key].filter(Boolean).join(" · "))],["Con transcripción",r=>r.has_transcription?"Sí":"No"],
   ["Con traducción",r=>r.has_translation?"Sí":"No"],["Con facsímil",r=>r.has_images?"Sí":"No"],["URL del XML",r=>r.url],
   ["URL de facsímiles",r=>(r.facsimiles||[])]
  ];
