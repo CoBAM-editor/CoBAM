@@ -652,6 +652,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "1568 07 22 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1568-07-20/",
         "1568 08 07 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/15680807-2/",
         "1569 04 06 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06/",
+        "1570 05 00 Z CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-z/",
     }
     published_url = published_url_overrides.get(path.name, "")
     record = {
