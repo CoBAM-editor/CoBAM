@@ -5,8 +5,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
-            <title level="a">[Cornelio Gemma Frisio] [Lovaina] a [Benito Arias Montano] [Amberes] - Antes del 31 de enero de 1569 </title>
-            <author>[Cornelio Gemma Frisio]</author>
+            <title level="a">[Cornelio Gema Frisio] [Lovaina] a [Benito Arias Montano] [Amberes] - Antes del 31 de enero de 1569 </title>
+            <author>[Cornelio Gema Frisio]</author>
             <editor>Antonio Dávila Pérez</editor>
             <respStmt>
                <resp>Edición crítica, traducción y notas</resp>
@@ -72,7 +72,7 @@
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
-               <persName>[Cornelio Gemma Frisio]</persName>
+               <persName>[Cornelio Gema Frisio]</persName>
                <settlement>Venecia</settlement>
                <date when="1569">Antes del 31 de enero de 1569</date>
             </correspAction>
