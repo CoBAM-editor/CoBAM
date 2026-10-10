@@ -301,6 +301,13 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
             <option value="annotations">Notas del texto y aparato</option>
             <option value="metadata">Solo metadatos</option>
           </select>
+          <div class="decade-filter">
+            <label class="label" for="decade" style="margin-top:14px">Década de la carta</label>
+            <select id="decade" aria-describedby="decade-help">
+              <option value="">Todas las décadas</option>
+            </select>
+            <p class="helper" id="decade-help">Incluye las cartas cuya datación toca algún año de esa década.</p>
+          </div>
           <div class="date-grid">
             <div><label class="label" for="year-from">Año desde</label><input id="year-from" type="number" min="1500" max="1700" placeholder="1560"></div>
             <div><label class="label" for="year-to">Año hasta</label><input id="year-to" type="number" min="1500" max="1700" placeholder="1580"></div>
@@ -456,6 +463,30 @@ const PAGE_SIZE=20;
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
 const byId=id=>document.getElementById(id);
+function populateDecadeOptions(){
+ const select=byId("decade");
+ if(!select)return;
+ const previous=select.value;
+ const decades=new Set();
+ for(const record of LETTERS){
+  const start=Number.isFinite(record.start_year)?record.start_year:(Number.isFinite(record.end_year)?record.end_year:null);
+  const end=Number.isFinite(record.end_year)?record.end_year:start;
+  if(start===null||end===null)continue;
+  const first=Math.floor(Math.min(start,end)/10)*10;
+  const last=Math.floor(Math.max(start,end)/10)*10;
+  if(last-first>300)continue;
+  for(let decade=first;decade<=last;decade+=10)decades.add(decade);
+ }
+ const all=document.createElement("option");
+ all.value="";all.textContent="Todas las décadas";select.replaceChildren(all);
+ for(const decade of [...decades].sort((a,b)=>a-b)){
+  const option=document.createElement("option");
+  option.value=String(decade);option.textContent=decade+"–"+(decade+9);
+  select.append(option);
+ }
+ if([...select.options].some(option=>option.value===previous))select.value=previous;
+}
+populateDecadeOptions();
 const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),mentionedPeople:new Set(),mentionedPlaces:new Set(),organizations:new Set(),editions:new Set(),editionStatus:new Set(),availability:new Set()};
 const facetSearches={};
 const showAllFacets=new Set();
@@ -585,9 +616,17 @@ function yearMatches(r){
  if(r.start_year==null||r.end_year==null)return false;
  return (from===null||r.end_year>=from)&&(to===null||r.start_year<=to);
 }
+function decadeMatches(r){
+ const value=byId("decade").value;
+ if(value==="")return true;
+ const decade=Number(value);
+ if(!Number.isFinite(decade)||!Number.isFinite(r.start_year)||!Number.isFinite(r.end_year))return false;
+ const start=Math.min(r.start_year,r.end_year),end=Math.max(r.start_year,r.end_year);
+ return end>=decade&&start<=decade+9;
+}
 function matchesFilters(r,excludeFacet=null){
  if(!queryMatches(appliedQuery,haystackFor(r)))return false;
- if(!yearMatches(r))return false;
+ if(!yearMatches(r)||!decadeMatches(r))return false;
  const combine=byId("combine-people").checked;
  if(combine){
   if(excludeFacet!=="people"&&selected.people.size&&!getByFacet(r,"people").some(v=>hasSelected(selected.people,v)))return false;
@@ -798,10 +837,12 @@ const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresp
 function renderActiveFilters(){
  activeArea.replaceChildren();
  const active=getActiveLabels();
- if(!activeQuery&&!byId("year-from").value&&!byId("year-to").value&&!active.length){activeArea.hidden=true;return}
+ const decadeValue=byId("decade").value;
+  if(!appliedQuery&&!decadeValue&&!byId("year-from").value&&!byId("year-to").value&&!active.length){activeArea.hidden=true;return}
  activeArea.hidden=false;
- if(activeQuery){const chip=el("span","chip","Texto: "+appliedQuery);const b=el("button","","×");b.type="button";b.title="Quitar búsqueda de texto";b.onclick=()=>{appliedQuery="";byId("q").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
- if(byId("year-from").value||byId("year-to").value){const label=(byId("year-from").value||"…")+"–"+(byId("year-to").value||"…");const chip=el("span","chip","Años: "+label);const b=el("button","","×");b.onclick=()=>{byId("year-from").value="";byId("year-to").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
+ if(appliedQuery){const chip=el("span","chip","Texto: "+appliedQuery);const b=el("button","","×");b.type="button";b.title="Quitar búsqueda de texto";b.onclick=()=>{appliedQuery="";byId("q").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
+ if(decadeValue){const decade=Number(decadeValue);const chip=el("span","chip","Década: "+decade+"–"+(decade+9));const b=el("button","","×");b.type="button";b.title="Quitar filtro de década";b.onclick=()=>{byId("decade").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
+  if(byId("year-from").value||byId("year-to").value){const label=(byId("year-from").value||"…")+"–"+(byId("year-to").value||"…");const chip=el("span","chip","Años: "+label);const b=el("button","","×");b.onclick=()=>{byId("year-from").value="";byId("year-to").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
  for(const x of active){
   const chip=el("span","chip",(facetTitles[x.name]||x.name)+": "+x.value),b=el("button","","×");
   b.type="button";b.title="Quitar filtro";b.addEventListener("click",()=>{x.set.delete(x.value);currentPage=1;renderAll()});chip.append(b);activeArea.append(chip);
@@ -1226,6 +1267,7 @@ byId("back-to-search").addEventListener("click",()=>{
  else window.location.href=window.location.pathname;
 });
 byId("combine-people").addEventListener("change",()=>{currentPage=1;renderAll()});
+byId("decade").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("year-from").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("year-to").addEventListener("change",()=>{currentPage=1;renderAll()});
 byId("sort").addEventListener("change",()=>{currentPage=1;renderResults()});
@@ -1239,7 +1281,7 @@ byId("toggle-analytics").addEventListener("click",()=>{
 });
 byId("export-results").addEventListener("click",exportFilteredCSV);
 byId("clear-filters").addEventListener("click",()=>{
- appliedQuery="";byId("q").value="";byId("year-from").value="";byId("year-to").value="";
+ appliedQuery="";byId("q").value="";byId("decade").value="";byId("year-from").value="";byId("year-to").value="";
  for(const set of Object.values(selected))set.clear();
  byId("combine-people").checked=false;byId("scope").value="all";byId("sort").value="date-asc";
  for(const key of Object.keys(facetSearches))delete facetSearches[key];
