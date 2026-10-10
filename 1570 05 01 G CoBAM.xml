@@ -5,8 +5,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
-            <title level="a"> Cornelio Gemma (Lovaina) a Benito Arias Montano (Amberes) - 1 de mayo de 1570 </title>
-            <author>Cornelio Gemma</author>
+            <title level="a"> Cornelio Gemma Frisio (Lovaina) a Benito Arias Montano (Amberes) - 1 de mayo de 1570 </title>
+            <author>Cornelio Gemma Frisio</author>
             <editor>Antonio Dávila Pérez</editor>
             <respStmt>
                <resp>Edición crítica, traducción y notas</resp>
@@ -74,7 +74,7 @@
          </particDesc>
          <correspDesc>
             <correspAction type="sent">
-               <persName>Cornelio Gemma</persName>
+               <persName>Cornelio Gemma Frisio</persName>
                <settlement>Lovaina</settlement>
                <date when="1570-05-01">1 de mayo de 1570</date>
             </correspAction>
@@ -87,7 +87,7 @@
             <language ident="la" ana="source">Latín</language>
          </langUsage>
          <handNotes>
-            <handNote>Cornelio Gemma</handNote>
+            <handNote>Cornelio Gemma Frisio</handNote>
             <handNote>El añadido en el margen del sobrescrito es de Benito Arias Montano</handNote>
          </handNotes>
          </profileDesc>
