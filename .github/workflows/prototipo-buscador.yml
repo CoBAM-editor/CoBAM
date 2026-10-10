@@ -59,6 +59,9 @@ jobs:
           assert module.normalize_person_label("Maximiliano Morillon") == "Maximiliano Morillon", "No conserva el nombre correcto"
           assert module.normalize_person_label("Maxiiliano Morillon") == "Maximiliano Morillon", "No corrige la errata del XML"
           assert module.normalize_person_label("Maximiiano Morillon") == "Maximiliano Morillon", "No corrige la variante duplicada en el catálogo"
+          assert module.normalize_person_label("Cornelio Gemma") == "Cornelio Gemma Frisio", "No completa el nombre de Cornelio Gemma"
+          assert module.normalize_person_label("Cornelio Gema") == "Cornelio Gemma Frisio", "No corrige la variante Cornelio Gema"
+          assert module.normalize_person_label("[Cornelio Gemma Frisio]") == "[Cornelio Gemma Frisio]", "No conserva la identidad hipotética entre corchetes"
           interface = Path("prototipo-buscador/index.html").read_text(encoding="utf-8")
           assert "function normalizeOriginLabel(value)" in interface, "Falta la normalización de origen en la interfaz"
           assert "function normalizePersonLabel(value)" in interface, "Falta la normalización de nombres en la interfaz"
@@ -116,6 +119,10 @@ jobs:
           morillon_1570 = next((r for r in records if r.get("file") == "1570 05 17 CoBAM.xml"), None)
           assert morillon_1570 and morillon_1570["sender"] == "Maximiliano Morillon", "El remitente de la carta de mayo de 1570 debe mostrarse como Maximiliano Morillon"
           assert not any(r.get("sender") == "Maximiiano Morillon" for r in records), "Queda una variante errónea de Morillon en los remitentes"
+          gemma_confirmed = next((r for r in records if r.get("file") == "1570 05 01 G CoBAM.xml"), None)
+          gemma_hypothetical = next((r for r in records if r.get("file") == "1569 00 00 - 1569 01 31 CoBAM.xml"), None)
+          assert gemma_confirmed and gemma_confirmed["sender"] == "Cornelio Gemma Frisio", "La carta confirmada debe mostrar el nombre completo de Cornelio Gemma Frisio"
+          assert gemma_hypothetical and gemma_hypothetical["sender"] == "[Cornelio Gemma Frisio]", "La carta hipotética debe conservar los corchetes"
           sample = next((r for r in records if r["letter_code"].strip() == "1568 08 29"), None)
           assert sample, "No se encuentra la carta de prueba 1568 08 29"
           assert sample["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/"
