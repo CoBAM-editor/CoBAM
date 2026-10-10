@@ -445,7 +445,7 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261010-poda-filtros"></script>
+<script src="catalog-data.js?v=20261010-poda-filtros-disponibilidad"></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -509,7 +509,7 @@ function populateYearOptions(){
  if([...select.options].some(option=>option.value===previous))select.value=previous;
 }
 populateYearOptions();
-const selected={senders:new Set(),recipients:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),editions:new Set(),availability:new Set()};
+const selected={senders:new Set(),recipients:new Set(),people:new Set(),senderPlaces:new Set(),recipientPlaces:new Set(),languages:new Set(),repositories:new Set(),archiveCountries:new Set(),archiveCities:new Set(),shelfmarks:new Set(),editions:new Set()};
 const facetSearches={};
 const showAllFacets=new Set();
 let appliedQuery="";
@@ -525,24 +525,13 @@ const FACETS=[
  {key:"archiveCountries",title:"País del archivo",values:r=>r.archive_countries||[]},
  {key:"archiveCities",title:"Localidad del archivo",values:r=>r.archive_cities||[]},
  {key:"shelfmarks",title:"Signaturas y localizadores",values:r=>r.shelfmark_labels||r.shelfmarks||[]},
- {key:"editions",title:"Ediciones impresas citadas",values:r=>(r.bibliography||[])},
-];
-const AVAILABILITY=[
- {value:"images",label:"Con imágenes de facsímil",test:r=>Boolean(r.has_images)},
- {value:"transcription",label:"Con transcripción",test:r=>Boolean(r.has_transcription)},
- {value:"translation",label:"Con traducción",test:r=>Boolean(r.has_translation)},
- {value:"printed",label:"Con edición impresa citada",test:r=>(r.bibliography||[]).length>0},
- {value:"annotations",label:"Con notas o aparato crítico",test:r=>Boolean(r.annotations||r.critical_apparatus)},
- {value:"noImages",label:"Sin facsímil",test:r=>!Boolean(r.has_images)},
- {value:"noTranslation",label:"Sin traducción",test:r=>!Boolean(r.has_translation)},
- {value:"noTranscription",label:"Sin transcripción",test:r=>!Boolean(r.has_transcription)}
+ {key:"editions",title:"Ediciones impresas citadas",values:r=>(r.bibliography||[])}
 ];
 function getByFacet(r,key){
  const f=FACETS.find(x=>x.key===key);
  if(f)return f.values(r);
  if(key==="people")return unique([r.sender,r.recipient]);
  if(key==="editions")return r.bibliography||[];
- if(key==="availability")return AVAILABILITY.filter(x=>x.test(r)).map(x=>x.value);
  return [];
 }
 function haystackFor(r){
@@ -653,25 +642,14 @@ function matchesFilters(r,excludeFacet=null){
   if(excludeFacet!=="senders"&&selected.senders.size&&!getByFacet(r,"senders").some(v=>hasSelected(selected.senders,v)))return false;
   if(excludeFacet!=="recipients"&&selected.recipients.size&&!getByFacet(r,"recipients").some(v=>hasSelected(selected.recipients,v)))return false;
  }
- for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","editionStatus"]){
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","editions"]){
   if(key!==excludeFacet&&selected[key].size&&!getByFacet(r,key).some(v=>hasSelected(selected[key],v)))return false;
- }
- if(excludeFacet!=="availability"&&selected.availability.size){
-  for(const value of selected.availability){
-   const option=AVAILABILITY.find(a=>a.value===value);
-   if(option&&!option.test(r))return false;
-  }
  }
  return true;
 }
 function hasSelected(set,value){return [...set].some(x=>norm(x)===norm(value))}
 function countInFacet(key,value){
  return LETTERS.filter(r=>matchesFilters(r,key)).filter(r=>getByFacet(r,key).some(v=>norm(v)===norm(value))).length;
-}
-function countAvailability(value){
- const option=AVAILABILITY.find(a=>a.value===value);
- if(!option)return 0;
- return LETTERS.filter(r=>matchesFilters(r,"availability")&&option.test(r)).length;
 }
 function el(tag,cls,text){
  const node=document.createElement(tag);
@@ -697,9 +675,7 @@ function makeFacet(config){
 }
 function renderFacetValues(config,valueArea,totalEl){
  valueArea.replaceChildren();
- const values= config.key==="availability"
-  ? AVAILABILITY.map(a=>({value:a.value,label:a.label,count:countAvailability(a.value)}))
-  : unique(LETTERS.flatMap(r=>getByFacet(r,config.key))).map(value=>({value,label:value,count:countInFacet(config.key,value)}));
+ const values=unique(LETTERS.flatMap(r=>getByFacet(r,config.key))).map(value=>({value,label:value,count:countInFacet(config.key,value)}));
  const selectedSet=selected[config.key]||new Set();
  const search=norm(facetSearches[config.key]||"");
  const filtered=values.filter(x=>(x.count>0||hasSelected(selectedSet,x.value))&&(!search||norm(x.label).includes(search)));
@@ -729,7 +705,6 @@ function buildFacets(){
   ? [{key:"people",title:"Corresponsales (remitente o destinatario)"} ,...FACETS.filter(x=>!["senders","recipients"].includes(x.key))]
   : FACETS;
  for(const config of configs)facetArea.append(makeFacet(config));
- facetArea.append(makeFacet({key:"availability",title:"Disponibilidad",searchable:false}));
 }
 function sortRecords(records){
  const mode=byId("sort").value;
@@ -849,10 +824,10 @@ function getActiveLabels(){
  const add=(name,set)=>set.forEach(value=>labels.push({name,value,set}));
  if(byId("combine-people").checked)add("people",selected.people);
  else {add("senders",selected.senders);add("recipients",selected.recipients)}
- for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","mentionedPeople","mentionedPlaces","organizations","editions","editionStatus","availability"])add(key,selected[key]);
+ for(const key of ["senderPlaces","recipientPlaces","languages","repositories","archiveCountries","archiveCities","shelfmarks","editions"])add(key,selected[key]);
  return labels;
 }
-const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",editions:"Edición impresa",availability:"Disponibilidad"};
+const facetTitles={senders:"Remitente",recipients:"Destinatario",people:"Corresponsal",senderPlaces:"Origen",recipientPlaces:"Destino",languages:"Idioma",repositories:"Archivo",archiveCountries:"País del archivo",archiveCities:"Localidad del archivo",shelfmarks:"Signatura",editions:"Edición impresa"};
 function renderActiveFilters(){
  activeArea.replaceChildren();
  const active=getActiveLabels();
