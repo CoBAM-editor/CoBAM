@@ -380,7 +380,27 @@ input[type="search"],input[type="text"],input[type="number"],select{border-color
 .map-legend-line{display:inline-block;width:22px;border-top:2px dashed #9b5b4c}
 @media(max-width:650px){.map-preview-heading{gap:7px}.map-preview-tag{font-size:.56rem}.map-preview svg{min-width:520px}.map-preview{overflow-x:auto}.map-legend{display:grid;gap:7px}}
 
+
+/* Mapa interactivo de correspondencia, con cartografía base y paleta CoBAM */
+.map-live-card{overflow:hidden}
+.map-live-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.map-live-heading h4{font-size:.95rem;margin:0 0 5px}
+.map-live-heading .chart-subtitle{margin:0 0 12px;max-width:760px}
+.map-live{width:100%;height:470px;border:1px solid #e2d6c2;border-radius:4px;background:#f7f3e9;z-index:0}
+.map-live .leaflet-popup-content-wrapper,.map-live .leaflet-popup-tip{background:#fffdf8;color:#333b40}
+.map-live .leaflet-popup-content{font:13px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif}
+.map-live .leaflet-popup-content strong{color:#85483d}
+.map-live .leaflet-popup-content button{display:inline-block;margin-top:6px;background:#b68a35;border:1px solid #b68a35;border-radius:3px;color:white;padding:5px 8px;font:700 12px "Helvetica Neue",Helvetica,Arial,sans-serif;cursor:pointer}
+.map-live .leaflet-control-attribution{font-size:10px}
+.map-status{font-size:.74rem;color:var(--muted);padding:8px 1px 0}
+.map-legend{display:flex;gap:10px 18px;align-items:center;flex-wrap:wrap;padding:10px 1px 0;color:var(--muted);font-size:.72rem}
+.map-legend span{display:inline-flex;align-items:center;gap:6px}
+.map-legend-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#85483d;border:2px solid #ead7b7}
+.map-legend-line{display:inline-block;width:22px;border-top:2px dashed #9b5b4c}
+@media(max-width:650px){.map-live{height:390px}.map-live-heading{display:block}.map-live-heading .map-preview-tag{display:inline-block;margin:0 0 9px}}
+
 </style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
 <header class="top">
@@ -456,33 +476,14 @@ input[type="search"],input[type="text"],input[type="number"],select{border-color
           <div class="chart-card"><h4>Lugares de origen y destino</h4><p class="chart-subtitle">Top de localidades mencionadas en la correspondencia</p><div id="place-chart" class="chart-rows"></div></div>
           <div class="chart-card"><h4>Corresponsales más frecuentes</h4><p class="chart-subtitle">Remitentes y destinatarios en los resultados</p><div id="people-chart" class="chart-rows"></div></div>
           <div class="chart-card"><h4>Acceso y edición</h4><p class="chart-subtitle">Disponibilidad de recursos digitales en los resultados</p><div id="resource-chart" class="chart-rows"></div></div>
-          <div class="chart-card chart-wide map-preview-card">
-            <div class="map-preview-heading"><div><h4>Mapa geográfico de la correspondencia</h4><p class="chart-subtitle">Propuesta visual: ciudades y conexiones como ejemplo de diseño, no como recuento real de cartas.</p></div><span class="map-preview-tag">MAQUETA</span></div>
-            <div class="map-preview">
-              <svg viewBox="0 0 900 430" role="img" aria-label="Maqueta esquemática de un mapa de Europa con Amberes, Madrid y Roma unidos por líneas ilustrativas">
-                <defs><pattern id="map-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M 36 0 L 0 0 0 36" fill="none" stroke="#e9e1d3" stroke-width="1"/></pattern></defs>
-                <rect x="0" y="0" width="900" height="430" rx="5" fill="#fbf8f1"/>
-                <rect x="0" y="0" width="900" height="430" rx="5" fill="url(#map-grid)"/>
-                <path class="map-land" d="M140 90 L183 60 220 70 250 52 290 69 312 92 349 85 370 109 407 102 429 127 458 124 476 148 509 151 529 176 557 184 566 211 595 222 612 250 594 273 572 279 558 304 529 310 512 337 481 326 464 299 441 290 420 270 394 271 376 245 349 250 328 226 300 229 279 211 255 219 237 199 209 200 194 178 166 173 154 147 127 136 Z"/>
-                <path class="map-land" d="M270 220 L293 228 308 251 304 282 321 309 311 340 290 365 270 351 263 325 246 305 249 280 232 262 239 240 Z"/>
-                <path class="map-land" d="M408 103 L423 80 445 75 462 91 456 111 436 121 Z"/>
-                <path class="map-land" d="M520 178 L545 166 570 174 582 195 565 211 543 205 Z"/>
-                <path class="map-land" d="M566 210 L592 208 610 227 603 247 582 245 Z"/>
-                <path class="map-land" d="M610 249 L632 245 649 263 638 279 619 273 Z"/>
-                <path class="map-land" d="M650 265 L672 267 687 285 674 300 653 290 Z"/>
-                <path class="map-land" d="M690 285 L716 290 733 310 718 324 696 313 Z"/>
-                <path class="map-land" d="M447 288 L462 307 468 332 455 355 444 338 439 314 Z"/>
-                <path class="map-route" d="M304 282 Q365 155 446 150"/>
-                <path class="map-route map-route-secondary" d="M304 282 Q410 315 501 266"/>
-                <path class="map-route map-route-secondary" d="M446 150 Q492 198 501 266"/>
-                <g class="map-city" transform="translate(446 150)"><circle r="8"/><circle class="map-halo" r="15"/><text x="14" y="-13">Amberes</text></g>
-                <g class="map-city" transform="translate(304 282)"><circle r="9"/><circle class="map-halo" r="17"/><text x="-14" y="27" text-anchor="end">Madrid</text></g>
-                <g class="map-city" transform="translate(501 266)"><circle r="8"/><circle class="map-halo" r="15"/><text x="13" y="23">Roma</text></g>
-                <text x="28" y="30" class="map-small-label">EUROPA · SIGLO XVI</text>
-                <text x="28" y="405" class="map-footnote">Conexiones ilustrativas · pendiente de vincular con lugares y cartas verificados</text>
-              </svg>
+          <div class="chart-card chart-wide map-live-card">
+            <div class="map-live-heading">
+              <div><h4>Mapa de la correspondencia</h4><p class="chart-subtitle">Localidades de origen y destino; las líneas conectan ciudades registradas en una misma carta. Selecciona una localidad para consultar sus cartas.</p></div>
+              <span class="map-preview-tag">MAPA INTERACTIVO</span>
             </div>
-            <div class="map-legend"><span><i class="map-legend-dot"></i> Localidad documentada (ejemplo)</span><span><i class="map-legend-line"></i> Conexión ilustrativa</span><span>La versión final podrá filtrar por década y abrir las cartas asociadas.</span></div>
+            <div id="map-chart" class="map-live" role="region" aria-label="Mapa interactivo de localidades de la correspondencia"></div>
+            <div id="map-status" class="map-status">El mapa mostrará las localidades para las que se hayan podido asignar coordenadas con seguridad.</div>
+            <div class="map-legend"><span><i class="map-legend-dot"></i> Localidad</span><span><i class="map-legend-line"></i> Origen y destino en una carta</span><span>Los números indican cartas en los resultados actuales.</span></div>
           </div>
           <div class="chart-card chart-wide"><h4>Red de corresponsales</h4><p class="chart-subtitle">Cada enlace representa cartas entre dos personas, en cualquiera de las direcciones. Pulsa un nombre para filtrar por ese corresponsal.</p><div id="network-chart" class="network-chart" role="img" aria-label="Red de relaciones entre corresponsales"></div></div>
         </div>
@@ -598,6 +599,7 @@ input[type="search"],input[type="text"],input[type="number"],select{border-color
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
 <script src="catalog-data.js?v=20261011-excluir-listado-libros"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 "use strict";
 const SAMPLE=[{
@@ -631,6 +633,107 @@ function normalizePersonLabel(value){
 }
 const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).filter(r=>r.file!=="1568 06 14 Libros.xml").map(r=>({...r,sender:normalizePersonLabel(r.sender),recipient:normalizePersonLabel(r.recipient),origin:normalizeOriginLabel(r.origin),repositories:(r.repositories||[]).map(normalizeRepositoryLabel),archive_labels:(r.archive_labels||[]).map(normalizeRepositoryLabel)}));
 const PAGE_SIZE=20;
+
+let selectedMapPlace="";
+let cobamLeafletMap=null;
+let cobamMapLayers=null;
+const MAP_LOCATIONS={
+ "amberes":[51.2194,4.4025],"antwerp":[51.2194,4.4025],"antwerpen":[51.2194,4.4025],
+ "bruselas":[50.8503,4.3517],"brussels":[50.8503,4.3517],"bruxelles":[50.8503,4.3517],
+ "madrid":[40.4168,-3.7038],"sevilla":[37.3891,-5.9845],"seville":[37.3891,-5.9845],
+ "roma":[41.9028,12.4964],"rome":[41.9028,12.4964],"paris":[48.8566,2.3522],
+ "londres":[51.5072,-0.1276],"london":[51.5072,-0.1276],"lisboa":[38.7223,-9.1393],"lisbon":[38.7223,-9.1393],
+ "cleveris":[51.787,6.138],"cleves":[51.787,6.138],"kleve":[51.787,6.138],"cleve":[51.787,6.138],
+ "leon":[42.5987,-5.5671],"salamanca":[40.9701,-5.6635],"valladolid":[41.6523,-4.7245],"alcala de henares":[40.4818,-3.3635],
+ "toledo":[39.8628,-4.0273],"granada":[37.1773,-3.5986],"valencia":[39.4699,-0.3763],"barcelona":[41.3874,2.1686],
+ "zaragoza":[41.6488,-0.8891],"burgos":[42.344,-3.6969],"cordoba":[37.8882,-4.7794],"malaga":[36.7213,-4.4214],
+ "amsterdam":[52.3676,4.9041],"leyden":[52.1601,4.497],"leiden":[52.1601,4.497],"la haya":[52.0705,4.3007],"the hague":[52.0705,4.3007],
+ "utrecht":[52.0907,5.1214],"gante":[51.0543,3.7174],"ghent":[51.0543,3.7174],"brujas":[51.2093,3.2247],"bruges":[51.2093,3.2247],
+ "lovaina":[50.8798,4.7005],"leuven":[50.8798,4.7005],"malinas":[51.0259,4.4776],"mechelen":[51.0259,4.4776],
+ "colonia":[50.9375,6.9603],"cologne":[50.9375,6.9603],"lieja":[50.6326,5.5797],"liege":[50.6326,5.5797],
+ "maastricht":[50.8514,5.691],"luxemburgo":[49.6116,6.1319],"luxembourg":[49.6116,6.1319],"trier":[49.7499,6.6371],
+ "mainz":[49.9929,8.2473],"francfort":[50.1109,8.6821],"frankfurt":[50.1109,8.6821],"worms":[49.6341,8.3507],
+ "estraburgo":[48.5734,7.7521],"strasbourg":[48.5734,7.7521],"basilea":[47.5596,7.5886],"basel":[47.5596,7.5886],
+ "zurich":[47.3769,8.5417],"ginebra":[46.2044,6.1432],"geneva":[46.2044,6.1432],"milan":[45.4642,9.19],"milan":[45.4642,9.19],
+ "venecia":[45.4408,12.3155],"venice":[45.4408,12.3155],"florencia":[43.7696,11.2558],"florence":[43.7696,11.2558],
+ "napoles":[40.8518,14.2681],"naples":[40.8518,14.2681],"augsburgo":[48.3705,10.8978],"augsburg":[48.3705,10.8978],
+ "nuremberg":[49.4521,11.0767],"nuremberg":[49.4521,11.0767],"praga":[50.0755,14.4378],"prague":[50.0755,14.4378],
+ "viena":[48.2082,16.3738],"vienna":[48.2082,16.3738],"wittenberg":[51.8661,12.6484],"leipzig":[51.3397,12.3731],
+ "heildelberg":[49.3988,8.6724],"heidelberg":[49.3988,8.6724],"lille":[50.6292,3.0573],"douai":[50.3704,3.0809],
+ "cambrai":[50.1767,3.2347],"namur":[50.4674,4.8718],"tournai":[50.6056,3.3882],"marseille":[43.2965,5.3698],
+ "lyon":[45.764,4.8357],"orleans":[47.9029,1.9093],"rouen":[49.4431,1.0993],"burgos":[42.344,-3.6969]
+};
+function mapCoordinates(place){
+ const key=norm(place).replace(/[’']/g,"").replace(/\s+/g," ");
+ return MAP_LOCATIONS[key]||null;
+}
+function mapFilterPlace(place){
+ selectedMapPlace=place;
+ currentPage=1;
+ renderAll();
+ const target=byId("map-chart");
+ if(target)target.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function renderMap(records){
+ const target=byId("map-chart"),status=byId("map-status");
+ if(!target||!status)return;
+ if(typeof L==="undefined"){
+  target.innerHTML='<div class="map-fallback">No se ha podido cargar la cartografía externa. Comprueba la conexión y vuelve a abrir el prototipo.</div>';
+  status.textContent="No se ha cargado Leaflet.";
+  return;
+ }
+ if(!cobamLeafletMap){
+  cobamLeafletMap=L.map(target,{scrollWheelZoom:false,preferCanvas:true}).setView([48,5],4);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
+   maxZoom:13,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
+  }).addTo(cobamLeafletMap);
+  cobamMapLayers=L.layerGroup().addTo(cobamLeafletMap);
+ }
+ cobamMapLayers.clearLayers();
+ const places=new Map(),routes=new Map();
+ for(const r of records){
+  const origin=(r.origin||"").trim(),destination=(r.destination||"").trim();
+  const from=mapCoordinates(origin),to=mapCoordinates(destination);
+  if(from){const k=norm(origin),v=places.get(k)||{label:origin,coords:from,count:0,letters:[]};v.count++;v.letters.push(r);places.set(k,v)}
+  if(to){const k=norm(destination),v=places.get(k)||{label:destination,coords:to,count:0,letters:[]};v.count++;v.letters.push(r);places.set(k,v)}
+  if(from&&to&&norm(origin)!==norm(destination)){
+   const key=[norm(origin),norm(destination)].sort().join("|||");
+   const route=routes.get(key)||{from,to,count:0,origin,destination};
+   route.count++;routes.set(key,route);
+  }
+ }
+ const bounds=[];
+ for(const route of routes.values()){
+  const line=L.polyline([route.from,route.to],{color:"#9b5b4c",weight:Math.min(5,1.5+Math.log2(route.count)),opacity:.62,dashArray:"5 6"}).addTo(cobamMapLayers);
+  line.bindPopup("<strong>"+escapeHtml(route.origin)+" ↔ "+escapeHtml(route.destination)+"</strong><br>"+route.count+" "+(route.count===1?"carta":"cartas"));
+  bounds.push(route.from,route.to);
+ }
+ for(const place of places.values()){
+  const marker=L.circleMarker(place.coords,{radius:Math.min(13,5+Math.sqrt(place.count)),color:"#fffdf8",weight:2,fillColor:"#85483d",fillOpacity:.92}).addTo(cobamMapLayers);
+  marker.bindPopup("<strong>"+escapeHtml(place.label)+"</strong><br>"+place.count+" "+(place.count===1?"mención en cartas":"menciones en cartas")+"<br><button type=\"button\" data-map-place=\""+escapeHtml(place.label).replace(/"/g,"&quot;")+"\">Ver cartas de esta localidad</button>");
+  marker.on("popupopen",event=>{
+   const button=event.popup.getElement()?.querySelector("[data-map-place]");
+   if(button)button.addEventListener("click",()=>mapFilterPlace(place.label),{once:true});
+  });
+  bounds.push(place.coords);
+ }
+ if(bounds.length){
+  if(bounds.length===1)cobamLeafletMap.setView(bounds[0],6);
+  else cobamLeafletMap.fitBounds(bounds,{padding:[28,28],maxZoom:6});
+  status.textContent=places.size+" localidades reconocidas y "+[...routes.values()].reduce((n,r)=>n+r.count,0)+" cartas con origen y destino reconocidos en el conjunto visible. El mapa solo sitúa topónimos identificados con seguridad.";
+ }else{
+  cobamLeafletMap.setView([48,5],4);
+  status.textContent="No hay localidades de origen/destino reconocibles por ahora en los resultados visibles. Amplía la búsqueda o revisa los topónimos pendientes de georreferenciación.";
+ }
+ if(selectedMapPlace){
+  status.textContent+=" Filtro de localidad activo: "+selectedMapPlace+".";
+ }
+ setTimeout(()=>cobamLeafletMap.invalidateSize(),80);
+}
+function escapeHtml(value){
+ return (value||"").toString().replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+
 const norm=s=>(s??"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
 const unique=arr=>[...new Set((arr||[]).map(x=>(x??"").toString().trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
 const displayLanguage=value=>{
@@ -786,6 +889,7 @@ function selectedYearMatches(r){
 }
 function matchesFilters(r,excludeFacet=null){
  if(!queryMatches(appliedQuery,haystackFor(r)))return false;
+ if(selectedMapPlace&&norm(r.origin)!==norm(selectedMapPlace)&&norm(r.destination)!==norm(selectedMapPlace))return false;
  if(!yearMatches(r)||!selectedYearMatches(r))return false;
  const combine=byId("combine-people").checked;
  if(combine){
@@ -995,8 +1099,9 @@ function renderActiveFilters(){
  activeArea.replaceChildren();
  const active=getActiveLabels();
  const selectedYear=byId("year-select").value;
-  if(!appliedQuery&&!selectedYear&&!byId("year-from").value&&!byId("year-to").value&&!active.length){activeArea.hidden=true;return}
+  if(!appliedQuery&&!selectedYear&&!byId("year-from").value&&!byId("year-to").value&&!active.length&&!selectedMapPlace){activeArea.hidden=true;return}
  activeArea.hidden=false;
+ if(selectedMapPlace){const chip=el("span","chip","Localidad: "+selectedMapPlace);const b=el("button","","×");b.type="button";b.title="Quitar filtro de localidad";b.onclick=()=>{selectedMapPlace="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
  if(appliedQuery){const chip=el("span","chip","Texto: "+appliedQuery);const b=el("button","","×");b.type="button";b.title="Quitar búsqueda de texto";b.onclick=()=>{appliedQuery="";byId("q").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
  if(selectedYear){const chip=el("span","chip","Año: "+selectedYear);const b=el("button","","×");b.type="button";b.title="Quitar filtro de año";b.onclick=()=>{byId("year-select").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
   if(byId("year-from").value||byId("year-to").value){const label=(byId("year-from").value||"…")+"–"+(byId("year-to").value||"…");const chip=el("span","chip","Años: "+label);const b=el("button","","×");b.onclick=()=>{byId("year-from").value="";byId("year-to").value="";currentPage=1;renderAll()};chip.append(b);activeArea.append(chip)}
@@ -1069,6 +1174,7 @@ function renderTimeline(records){
  target.append(svg);
 }
 function renderAnalytics(records){
+ renderMap(records);
  renderTimeline(records);
  const yearCounts=new Map();
  for(const r of records){
@@ -1468,7 +1574,7 @@ byId("toggle-analytics").addEventListener("click",()=>{
 });
 byId("export-results").addEventListener("click",exportFilteredCSV);
 byId("clear-filters").addEventListener("click",()=>{
- appliedQuery="";byId("q").value="";byId("year-select").value="";byId("year-from").value="";byId("year-to").value="";
+ appliedQuery="";selectedMapPlace="";byId("q").value="";byId("year-select").value="";byId("year-from").value="";byId("year-to").value="";
  for(const set of Object.values(selected))set.clear();
  byId("combine-people").checked=false;byId("scope").value="all";byId("sort").value="date-asc";
  for(const key of Object.keys(facetSearches))delete facetSearches[key];
