@@ -792,8 +792,8 @@ function makeResult(r){
  const h=el("h3","result-title");
  h.append(el("span","result-code",r.letter_code||r.id||"CoBAM"));
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
- const directPublishedUrl=r.file==="1568 03 25a CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/":r.published_url;
- titleLink.href=directPublishedUrl||r.wordpress_search_url||prototypeReaderUrl;
+ const directPublishedUrl=r.file==="1568 03 25a CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/":r.file==="1568 03 25b CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a/":r.published_url;
+ titleLink.href=directPublishedUrl||prototypeReaderUrl;
  titleLink.title=directPublishedUrl?"Abrir la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  h.append(titleLink);
