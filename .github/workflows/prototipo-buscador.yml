@@ -143,9 +143,8 @@ jobs:
               assert not record.get("language") or record["language"][0] == record["language"][0].upper(), f"Idioma principal sin mayúscula inicial: {record['file']}"
               for key in ("source_marked_html", "source_clean_html", "translation_html", "commentary_html"):
                   assert "<script" not in record[key].lower(), f"Marcado inesperado en {key}: {record['file']}"
-          latin_book = next((r for r in records if r["file"] == "1568 06 14 Libros.xml"), None)
           spanish_book = next((r for r in records if r["file"] == "1569 04 06 Libros.xml"), None)
-          assert latin_book and latin_book["languages"] == ["Latín"], "La etiqueta del libro de 1568 debe ser Latín"
+          assert not any(r.get("file") == "1568 06 14 Libros.xml" for r in records), "El listado de libros de 1568 debe excluirse porque depende de la carta con el mismo identificador"
           assert spanish_book and spanish_book["languages"] == ["Español"] and spanish_book.get("language_code") == "es", "La etiqueta y el código de idioma del libro de 1569 deben ser Español/es"
           cleveris_1568 = next((r for r in records if r.get("file") == "1568 10 10 CoBAM.xml"), None)
           cleves_1570 = next((r for r in records if r.get("file") == "1570 03 15 CoBAM.xml"), None)
