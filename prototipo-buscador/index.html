@@ -278,6 +278,16 @@ footer{padding:0 15px 28px}
 .badge,.badge.available{background:#f5eee1;color:#755a2b;border:1px solid #e2d2b6}
 .site-note,.reader-warning{border-left-color:var(--link-ochre);background:#fbf7f0;color:#614d34}
 @media(max-width:650px){.top-inner{align-items:flex-start;padding:15px}.edition-tag{display:none}main{padding:0 12px}.letter-view{padding:0 12px 28px}}
+
+/* Acabado final: controles discretos y estados de foco en ocre */
+input:focus,select:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--link-ochre);outline-offset:2px}
+input[type="search"],input[type="text"],input[type="number"],select{border-color:#d2c6b0;border-radius:3px}
+.primary,.secondary,.toolbar-button,.reader-action,.reader-back,.pagination button{border-radius:3px}
+.sidebar-head,.reader-card-head,.edition-pane>h4{border-bottom-color:#e6dfd2}
+.result-meta{border-left-color:#c9ad78}
+.result-date{background:#f7f3eb;border-color:#e8dfcf}
+.facet-option:hover,.toolbar-button:hover,.pagination button:not(:disabled):hover{background:#f8f3e8}
+.badge{background:#f5eee1;color:#755a2b;border:1px solid #e2d2b6}
 </style>
 </head>
 <body>
