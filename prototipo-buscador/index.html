@@ -6,18 +6,18 @@
 <meta name="description" content="Buscador experimental de la correspondencia de Benito Arias Montano.">
 <title>Buscar cartas · CoBAM</title>
 <style>
-:root{--ink:#333b40;--muted:#69747b;--accent:#0088cc;--accent-dark:#006699;--link-ochre:#b68a35;--link-ochre-dark:#8b6427;--line:#e2e5e7;--paper:#fff;--wash:#f7f3eb;--pale:#fbf8f1;--blue:#f5eee1;--green:#f1f2e8}
+:root{--ink:#333b40;--muted:#69747b;--accent:#b68a35;--accent-dark:#8b6427;--link-ochre:#b68a35;--link-ochre-dark:#8b6427;--line:#e2e5e7;--paper:#fff;--wash:#f7f6f2;--pale:#fbf8f1;--blue:#f5eee1;--green:#f1f2e8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--wash);color:var(--ink);font:15px/1.55 "Helvetica Neue",Helvetica,Arial,sans-serif}
 a{color:var(--link-ochre);text-decoration:none;transition:color .15s ease}a:hover{color:var(--link-ochre-dark);text-decoration:underline}
 button,input,select{font:inherit}
 button{cursor:pointer}
 .top{background:var(--paper);border-bottom:1px solid var(--line)}
-.top-inner{max-width:1420px;margin:auto;padding:22px 28px;display:flex;gap:24px;align-items:center;justify-content:space-between}
-.brand{display:flex;gap:14px;align-items:center}.brand-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:white;font:700 19px Georgia,serif;letter-spacing:-1px}
+.top-inner{max-width:1170px;margin:auto;padding:22px 28px;display:flex;gap:24px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:14px;align-items:center}.brand-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--link-ochre);color:white;font:700 19px Georgia,serif;letter-spacing:-1px}
 .brand h1{font:600 clamp(1.2rem,2.2vw,1.75rem)/1.16 "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0}.brand p{color:var(--muted);font-size:.82rem;margin:5px 0 0}
 .edition-tag{font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:6px 10px;white-space:nowrap}
-main{max-width:1420px;margin:26px auto 50px;padding:0 28px}
+main{max-width:1170px;margin:26px auto 50px;padding:0 28px}
 .intro{margin:0 0 20px}.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--accent)}.intro h2{font:600 clamp(1.5rem,2.6vw,2.15rem)/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;margin:5px 0}.intro p{max-width:800px;color:var(--muted);margin:7px 0 0}
 .search-layout{display:grid;grid-template-columns:minmax(270px,330px) minmax(0,1fr);gap:20px;align-items:start}
 .sidebar,.content-panel{background:var(--paper);border:1px solid var(--line);border-radius:7px}
@@ -70,8 +70,8 @@ input:focus,select:focus,button:focus-visible{outline:2px solid #9f6d65;outline-
 .network-link{stroke:#c4ad83;stroke-opacity:.78}.network-node{cursor:pointer;outline:none}.network-node circle{fill:#85483d;stroke:#fff;stroke-width:2}.network-node text{fill:#263744;font:11px system-ui,sans-serif;text-anchor:middle}.network-node:focus circle{stroke:#182f3e;stroke-width:4}.network-node:hover circle{fill:#b0786d}
 @media(max-width:930px){.collection-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar-actions{width:100%}}
 @media(max-width:650px){.analytics-grid{grid-template-columns:1fr}.collection-stats{gap:7px}.stat-card{padding:10px 11px}.stat-value{font-size:1.25rem}}
-footer{max-width:1420px;padding:0 28px 30px;margin:auto;color:var(--muted);font-size:.75rem}
-.letter-view{max-width:1420px;margin:0 auto;padding:0 28px 42px}
+footer{max-width:1170px;padding:0 28px 30px;margin:auto;color:var(--muted);font-size:.75rem}
+.letter-view{max-width:1170px;margin:0 auto;padding:0 28px 42px}
 .reader-topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 20px;padding:5px 0 12px;border-bottom:1px solid var(--line);font-size:.78rem;color:var(--muted)}
 .reader-back{background:white;border:1px solid var(--line);border-radius:4px;padding:8px 12px;color:var(--ink);cursor:pointer;font:inherit;font-weight:700}
 .letter-hero{padding:26px 28px;background:#fff;border:1px solid var(--line);border-radius:7px;margin-bottom:18px}
@@ -258,6 +258,26 @@ body:has(#letter-view:not([hidden])){background:#f2f1ed}
  .lightbox-image-area img{max-height:72vh}
 }
 
+
+/* Ajustes de integración con la plantilla WordPress de CoBAM */
+:root{--ink:#333b40;--muted:#69747b;--line:#e1dfd7;--paper:#fff;--wash:#f7f6f2;--pale:#fbf8f1}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+.top-inner,main,footer,.letter-view{max-width:1170px}
+.top-inner{padding:18px 15px;gap:18px}
+main{margin-top:22px;padding:0 15px}
+footer{padding:0 15px 28px}
+.letter-view{padding:0 15px 36px}
+.brand-mark{background:var(--link-ochre)}
+.sidebar,.content-panel,.reader-card,.reader-images,.edition-pane{border-radius:3px;box-shadow:none}
+.sidebar-head,.reader-card-head,.edition-pane>h4{background:#f3f0e8}
+.results-header,.analytics{background:#faf9f5}
+.result-meta,.detail-grid,.letter-panel{background:#fbfaf6}
+.facet-option input,.combine-row input{accent-color:var(--link-ochre)}
+.pagination button[aria-current="page"],.toolbar-button[aria-pressed="true"]{background:var(--link-ochre);border-color:var(--link-ochre)}
+.result-code{color:#222}
+.badge,.badge.available{background:#f5eee1;color:#755a2b;border:1px solid #e2d2b6}
+.site-note,.reader-warning{border-left-color:var(--link-ochre);background:#fbf7f0;color:#614d34}
+@media(max-width:650px){.top-inner{align-items:flex-start;padding:15px}.edition-tag{display:none}main{padding:0 12px}.letter-view{padding:0 12px 28px}}
 </style>
 </head>
 <body>
