@@ -16,6 +16,7 @@ NS = {"tei": TEI_NS}
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 OUTPUT = HERE / "catalogo.json"
+EXCLUDED_CATALOG_FILES = {"1568 06 14 Libros.xml"}  # Material complementario dependiente de la carta del mismo identificador.
 
 
 def clean(value: str | None) -> str:
@@ -754,6 +755,9 @@ def main() -> int:
     records: list[dict] = []
     errors: list[str] = []
     for path in sorted(REPO_ROOT.glob("*.xml"), key=lambda p: p.name.casefold()):
+        if path.name in EXCLUDED_CATALOG_FILES:
+            print(f"Excluido del catálogo por ser material complementario: {path.name}")
+            continue
         try:
             root = ET.parse(path).getroot()
         except (ET.ParseError, OSError) as exc:
