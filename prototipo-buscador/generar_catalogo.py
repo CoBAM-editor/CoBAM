@@ -674,6 +674,21 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "1570 05 00 Z CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-z/",
     }
     published_url = published_url_overrides.get(path.name, "")
+    # Enlaces WordPress provisionales por fecha desde 1569-01-01; el usuario los revisara.
+    if not published_url and "Libros" not in path.stem and "Memoria" not in path.stem:
+        match = re.match(r"^(\d{4}) (\d{2}) (\d{2})(.*)$", path.stem)
+        if match:
+            year, month, day, remainder = match.groups()
+            if (year, month, day) >= ("1569", "01", "01") and month != "00" and day != "00":
+                slug = f"{year}-{month}-{day}"
+                suffix = remainder.strip()
+                if suffix:
+                    letter = re.match(r"^([A-Za-z])", suffix)
+                    if letter:
+                        slug += f"-{ord(letter.group(1).upper()) - ord('A') + 2}"
+                    else:
+                        slug += "-2"
+                published_url = f"https://lacorrespondenciadebenitoariasmontano.online/es_es/{slug}/"
     # Si no se ha verificado la URL permanente, buscar por identificador en WordPress.
     wordpress_search_url = (
         "https://lacorrespondenciadebenitoariasmontano.online/es_es/?s="
