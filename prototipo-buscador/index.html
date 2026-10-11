@@ -6,19 +6,19 @@
 <meta name="description" content="Buscador experimental de la correspondencia de Benito Arias Montano.">
 <title>Buscar cartas · CoBAM</title>
 <style>
-:root{--ink:#263744;--muted:#63727d;--accent:#843f34;--accent-dark:#612d26;--line:#d9e0e3;--paper:#fff;--wash:#f3f4f1;--pale:#f7f6f1;--blue:#e8eef1;--green:#eaf2ec}
+:root{--ink:#333b40;--muted:#69747b;--accent:#0088cc;--accent-dark:#006699;--line:#e2e5e7;--paper:#fff;--wash:#f5f6f7;--pale:#f8f9fa;--blue:#eaf3f8;--green:#edf5ef}
 *{box-sizing:border-box}
-body{margin:0;background:var(--wash);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",sans-serif}
-a{color:var(--accent-dark);text-decoration:none}a:hover{text-decoration:underline}
+body{margin:0;background:var(--wash);color:var(--ink);font:15px/1.55 "Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none;transition:color .15s ease}a:hover{color:var(--accent-dark);text-decoration:underline}
 button,input,select{font:inherit}
 button{cursor:pointer}
 .top{background:var(--paper);border-bottom:1px solid var(--line)}
 .top-inner{max-width:1420px;margin:auto;padding:22px 28px;display:flex;gap:24px;align-items:center;justify-content:space-between}
 .brand{display:flex;gap:14px;align-items:center}.brand-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:white;font:700 19px Georgia,serif;letter-spacing:-1px}
-.brand h1{font:600 clamp(1.2rem,2.2vw,1.75rem)/1.16 Georgia,"Times New Roman",serif;margin:0}.brand p{color:var(--muted);font-size:.82rem;margin:5px 0 0}
+.brand h1{font:600 clamp(1.2rem,2.2vw,1.75rem)/1.16 "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0}.brand p{color:var(--muted);font-size:.82rem;margin:5px 0 0}
 .edition-tag{font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:6px 10px;white-space:nowrap}
 main{max-width:1420px;margin:26px auto 50px;padding:0 28px}
-.intro{margin:0 0 20px}.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--accent)}.intro h2{font:600 clamp(1.5rem,2.6vw,2.15rem)/1.2 Georgia,serif;margin:5px 0}.intro p{max-width:800px;color:var(--muted);margin:7px 0 0}
+.intro{margin:0 0 20px}.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--accent)}.intro h2{font:600 clamp(1.5rem,2.6vw,2.15rem)/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;margin:5px 0}.intro p{max-width:800px;color:var(--muted);margin:7px 0 0}
 .search-layout{display:grid;grid-template-columns:minmax(270px,330px) minmax(0,1fr);gap:20px;align-items:start}
 .sidebar,.content-panel{background:var(--paper);border:1px solid var(--line);border-radius:7px}
 .sidebar{overflow:hidden}.sidebar-head{padding:16px 18px;background:#edf0ed;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.sidebar-head h3{font-size:1rem;margin:0}.link-button{background:none;border:0;color:var(--accent-dark);padding:3px;font-size:.8rem;text-decoration:underline}
@@ -38,7 +38,7 @@ input:focus,select:focus,button:focus-visible{outline:2px solid #9f6d65;outline-
 .content-panel{overflow:hidden}.results-header{padding:15px 19px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#fbfcfa}.results-count strong{font-size:1.05rem}.results-count span{display:block;color:var(--muted);font-size:.78rem}.result-controls{display:flex;gap:8px;align-items:center}.result-controls label{font-size:.78rem;color:var(--muted)}.result-controls select{width:auto;padding:6px 8px;font-size:.8rem}
 .active-filters{display:flex;flex-wrap:wrap;gap:6px;padding:10px 19px;border-bottom:1px solid var(--line)}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #d8c6c2;background:#fbf6f4;color:#63352e;padding:4px 8px;border-radius:3px;font-size:.75rem}.chip button{border:0;background:transparent;color:inherit;padding:0;font-weight:800}
 .results-list{padding:0 19px}.result{padding:14px 0 15px;border-bottom:1px solid var(--line)}.result:last-child{border-bottom:0}
-.result-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 8px}.result-title{font:600 1.08rem/1.32 Georgia,"Times New Roman",serif;margin:0;min-width:0}.result-title a{color:#293d4c;text-decoration-thickness:1px;text-underline-offset:3px}.result-title a:hover{color:var(--accent-dark)}.result-code{display:inline-block;font:750 .7rem/1.4 system-ui,sans-serif;letter-spacing:.04em;color:var(--accent);background:transparent;border:0;border-radius:0;padding:0;margin:0 7px 3px 0;vertical-align:2px}.result-date{flex:0 0 auto;color:var(--muted);font-size:.76rem;line-height:1.4;background:#f4f6f4;border:1px solid #e4e8e5;border-radius:3px;padding:4px 7px;white-space:nowrap}
+.result-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 8px}.result-title{font:600 1.08rem/1.32 "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;min-width:0}.result-title a{color:var(--accent-dark);text-decoration-thickness:1px;text-underline-offset:3px}.result-title a:hover{color:var(--accent)}.result-code{display:inline-block;font:750 .7rem/1.4 system-ui,sans-serif;letter-spacing:.04em;color:var(--accent);background:transparent;border:0;border-radius:0;padding:0;margin:0 7px 3px 0;vertical-align:2px}.result-date{flex:0 0 auto;color:var(--muted);font-size:.76rem;line-height:1.4;background:#f4f6f4;border:1px solid #e4e8e5;border-radius:3px;padding:4px 7px;white-space:nowrap}
 .result-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 18px;margin:7px 0 8px;padding:9px 11px;background:#fafbf9;border-left:2px solid #d9c1bb}.meta-item{font-size:.8rem;line-height:1.4;min-width:0;overflow-wrap:anywhere}.meta-label{color:var(--muted);font-size:.67rem;text-transform:uppercase;letter-spacing:.045em;display:inline;margin-right:5px}.meta-label:after{content:":"}
 .badges{display:flex;gap:5px;flex-wrap:wrap;margin:7px 0}.badge{display:inline-block;padding:2px 6px;border-radius:3px;font-size:.67rem;background:var(--blue);color:#3e5967}.badge.available{background:var(--green);color:#355e44}
 .abstract{font-size:.83rem;line-height:1.5;margin:7px 0 4px;max-width:940px}.incipit{color:#586a76;font:italic .81rem/1.45 Georgia,serif;margin:6px 0}
