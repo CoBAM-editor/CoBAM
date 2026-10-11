@@ -727,6 +727,10 @@ function sortRecords(records){
   // Si existe una fecha exacta (@when), debe prevalecer sobre los límites de un intervalo (@from/@to).
   // La ordenación usa la fecha de envío: para intervalos, el límite inicial (date_from); nunca la fecha de recepción.
   const dateKey=r=>{
+   // Algunas fechas @when del XML contienen un año discordante con la datación editorial del título.
+   // Para esta carta se conserva provisionalmente 1568, como indica el título y la fecha de envío
+   // transcrita, aunque el @when del encabezado dice 1569.
+   if((r.title||"").includes("Daniel Barbaro") && (r.title||"").includes("29 de agosto de 1568")) return "1568-08-29";
    // La carta de Juan de Maldonado está datada como intervalo del 9 al 24 de noviembre de 1568,
    // aunque el atributo TEI @when solo contiene el año. Colocarla después de la carta del 9-XI.
    if((r.title||"").includes("Juan de Maldonado") && (r.title||"").includes("9 y el 24 de noviembre de 1568")) return "1568-11-09~";
