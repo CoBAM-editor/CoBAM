@@ -794,7 +794,7 @@ function makeResult(r){
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
  titleLink.href=r.published_url||r.wordpress_search_url||prototypeReaderUrl;
  titleLink.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
- if(r.published_url||r.wordpress_search_url){titleLink.target="_blank";titleLink.rel="noopener noreferrer"}
+ // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  h.append(titleLink);
  heading.append(h);
  article.append(heading);
@@ -814,7 +814,7 @@ function makeResult(r){
  const reader=el("a","result-primary","Leer carta editada ↗");
  reader.href=r.published_url||r.wordpress_search_url||prototypeReaderUrl;
  reader.title=r.published_url?"Leer la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar en WordPress por el identificador de esta carta; si no aparece, revisar el enlace directo":"Esta carta aún no tiene enlace a WordPress.";
- if(r.published_url||r.wordpress_search_url){reader.target="_blank";reader.rel="noopener noreferrer"}
+ // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
  const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
