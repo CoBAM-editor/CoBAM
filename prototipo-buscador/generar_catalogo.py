@@ -651,6 +651,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
     published_url_overrides = {
         "1568 02 14 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-02-14-cristobal-plantino-amberes-a-benito-arias-montano-madrid-14-de-febrero-de-1568/",
         "1568 03 18CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-18/",
+        "1568 03 25a CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/",
         "1560 02 01-60 05 05 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1560-02-01-1560-05-05/",
         "1567 00 00 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1567-2/",
         "1568 07 22 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/1568-07-20/",
