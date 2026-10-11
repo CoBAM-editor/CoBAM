@@ -217,8 +217,8 @@ jobs:
               'byId("year-select").value="";byId("year-from").value=""',
               'Año de la carta',
               'row.id="apparatus-"+item.number;',
-              'titleLink.href=r.published_url||r.wordpress_search_url||prototypeReaderUrl;',
-              'reader.href=r.published_url||prototypeReaderUrl;',
+              'titleLink.href=directPublishedUrl||r.wordpress_search_url||prototypeReaderUrl;',
+              'reader.href=directPublishedUrl||prototypeReaderUrl;',
               'Leer carta editada ↗',
           ]
           missing = [fragment for fragment in required if fragment not in html]
