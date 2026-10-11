@@ -792,8 +792,9 @@ function makeResult(r){
  const h=el("h3","result-title");
  h.append(el("span","result-code",r.letter_code||r.id||"CoBAM"));
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
- titleLink.href=r.published_url||r.wordpress_search_url||prototypeReaderUrl;
- titleLink.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
+ const directPublishedUrl=r.file==="1568 03 25a CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/":r.published_url;
+ titleLink.href=directPublishedUrl||r.wordpress_search_url||prototypeReaderUrl;
+ titleLink.title=directPublishedUrl?"Abrir la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  h.append(titleLink);
  heading.append(h);
@@ -812,8 +813,8 @@ function makeResult(r){
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
  const reader=el("a","result-primary","Leer carta editada ↗");
- reader.href=r.published_url||prototypeReaderUrl;
- reader.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo; enlace directo a WordPress pendiente de verificar.";
+ reader.href=directPublishedUrl||prototypeReaderUrl;
+ reader.title=directPublishedUrl?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo; enlace directo a WordPress pendiente de verificar.";
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
