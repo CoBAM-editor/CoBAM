@@ -527,7 +527,7 @@ def wordpress_published_urls() -> set[str]:
 
 def automatic_wordpress_url(path: Path, published_urls: set[str]) -> str:
     """Return a URL only for an exact, unambiguous date/letter slug in the sitemap."""
-    match = re.fullmatch(r"(\\d{4}) (\\d{2}) (\\d{2})([a-z]?) CoBAM", path.stem, re.IGNORECASE)
+    match = re.fullmatch(r"(\d{4}) (\d{2}) (\d{2})([a-z]?) CoBAM", path.stem, re.IGNORECASE)
     if not match:
         return ""
     year, month, day, suffix = match.groups()
