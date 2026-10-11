@@ -811,7 +811,7 @@ function makeResult(r){
 
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
- const reader=el("a","result-primary",r.published_url?"Leer edición en WordPress ↗":r.wordpress_search_url?"Localizar carta en WordPress ↗":"Leer en el prototipo →");
+ const reader=el("a","result-primary",r.published_url?"Leer edición en WordPress ↗":r.wordpress_search_url?"Leer la carta en WordPress ↗":"Leer en el prototipo →");
  reader.href=r.published_url||r.wordpress_search_url||prototypeReaderUrl;
  reader.title=r.published_url?"Abrir la edición crítica ya publicada en WordPress":r.wordpress_search_url?"Buscar en WordPress por el identificador de esta carta; si no aparece, revisar el enlace directo":"Esta carta aún no tiene enlace a WordPress.";
  if(r.published_url||r.wordpress_search_url){reader.target="_blank";reader.rel="noopener noreferrer"}
