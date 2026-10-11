@@ -6,9 +6,11 @@ import json
 import re
 import sys
 import unicodedata
+import urllib.error
+import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 TEI_NS = "http://www.tei-c.org/ns/1.0"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
@@ -490,6 +492,55 @@ def render_tei_fragment(element: ET.Element | None, root: ET.Element, mode: str)
     rendered = tei_inline_html(element, mode=mode, facsimile_map=graphics, apparatus=apparatus)
     return rendered, apparatus
 
+def wordpress_published_urls() -> set[str]:
+    """Read WordPress sitemaps and return public page URLs when reachable."""
+    base = "https://lacorrespondenciadebenitoariasmontano.online"
+    pending = [f"{base}/wp-sitemap.xml", f"{base}/sitemap_index.xml", f"{base}/sitemap.xml"]
+    visited: set[str] = set()
+    pages: set[str] = set()
+    while pending and len(visited) < 30:
+        sitemap_url = pending.pop(0)
+        if sitemap_url in visited:
+            continue
+        visited.add(sitemap_url)
+        try:
+            request = urllib.request.Request(
+                sitemap_url,
+                headers={"User-Agent": "CoBAM-search-prototype/1.0"},
+            )
+            with urllib.request.urlopen(request, timeout=8) as response:
+                payload = response.read(5_000_000)
+            root = ET.fromstring(payload)
+        except (OSError, urllib.error.URLError, ET.ParseError, TimeoutError):
+            continue
+        for loc in root.iter():
+            if loc.tag.rsplit("}", 1)[-1] != "loc" or not loc.text:
+                continue
+            url = loc.text.strip()
+            if url.endswith(".xml") and urlparse(url).netloc == urlparse(base).netloc:
+                if url not in visited:
+                    pending.append(url)
+            elif urlparse(url).netloc == urlparse(base).netloc and "/es_es/" in urlparse(url).path:
+                pages.add(url.rstrip("/") + "/")
+    return pages
+
+
+def automatic_wordpress_url(path: Path, published_urls: set[str]) -> str:
+    """Return a URL only for an exact, unambiguous date/letter slug in the sitemap."""
+    match = re.fullmatch(r"(\\d{4}) (\\d{2}) (\\d{2})([a-z]?) CoBAM", path.stem, re.IGNORECASE)
+    if not match:
+        return ""
+    year, month, day, suffix = match.groups()
+    if month == "00" or day == "00":
+        return ""
+    expected_slug = f"{year}-{month}-{day}{suffix.lower()}"
+    matches = {
+        url for url in published_urls
+        if urlparse(url).path.rstrip("/").rsplit("/", 1)[-1].casefold() == expected_slug.casefold()
+    }
+    return next(iter(matches)) if len(matches) == 1 else ""
+
+
 def make_record(path: Path, root: ET.Element) -> dict:
     title = first_nonempty(
         first_text(root, ".//tei:fileDesc/tei:titleStmt/tei:title[@level='a']"),
@@ -683,21 +734,8 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "1570 05 00 Z CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-z/",
     }
     published_url = published_url_overrides.get(path.name, "")
-    # Enlaces WordPress provisionales por fecha desde 1569-01-01; el usuario los revisara.
-    if not published_url and "Libros" not in path.stem and "Memoria" not in path.stem:
-        match = re.match(r"^(\d{4}) (\d{2}) (\d{2})(.*)$", path.stem)
-        if match:
-            year, month, day, remainder = match.groups()
-            if (year, month, day) >= ("1569", "01", "01") and month != "00" and day != "00":
-                slug = f"{year}-{month}-{day}"
-                suffix = remainder.strip()
-                if suffix:
-                    letter = re.match(r"^([A-Za-z])", suffix)
-                    if letter:
-                        slug += f"-{ord(letter.group(1).upper()) - ord('A') + 2}"
-                    else:
-                        slug += "-2"
-                published_url = f"https://lacorrespondenciadebenitoariasmontano.online/es_es/{slug}/"
+    if not published_url:
+        published_url = automatic_wordpress_url(path, WORDPRESS_PUBLISHED_URLS)
     # Si no se ha verificado la URL permanente, buscar por identificador en WordPress.
     wordpress_search_url = (
         "https://lacorrespondenciadebenitoariasmontano.online/es_es/?s="
@@ -776,6 +814,9 @@ def make_record(path: Path, root: ET.Element) -> dict:
 
 
 def main() -> int:
+    global WORDPRESS_PUBLISHED_URLS
+    WORDPRESS_PUBLISHED_URLS = wordpress_published_urls()
+    print(f"URLs recuperadas del sitemap de WordPress: {len(WORDPRESS_PUBLISHED_URLS)}")
     records: list[dict] = []
     errors: list[str] = []
     for path in sorted(REPO_ROOT.glob("*.xml"), key=lambda p: p.name.casefold()):
