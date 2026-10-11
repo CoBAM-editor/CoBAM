@@ -667,6 +667,8 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "1569 02 12 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-12/",
         "1569 02 14 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-14/",
         "1569 02 28a CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-28a/",
+        "1569 02 28b CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-02-28b/",
+        "1569 03 01 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-03-01/",
         "1568 06 14 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-06-14/",
         "1568 07 06 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-07-06/",
         "1568 08 16 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-16/",
