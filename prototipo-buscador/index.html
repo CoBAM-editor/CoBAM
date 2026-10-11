@@ -812,8 +812,8 @@ function makeResult(r){
  if(r.incipit)article.append(el("p","incipit","Incipit: "+r.incipit));
  const links=el("div","result-actions");
  const reader=el("a","result-primary","Leer carta editada ↗");
- reader.href=r.published_url||r.wordpress_search_url||prototypeReaderUrl;
- reader.title=r.published_url?"Leer la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar en WordPress por el identificador de esta carta; si no aparece, revisar el enlace directo":"Esta carta aún no tiene enlace a WordPress.";
+ reader.href=r.published_url||prototypeReaderUrl;
+ reader.title=r.published_url?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo; enlace directo a WordPress pendiente de verificar.";
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
