@@ -169,6 +169,9 @@ jobs:
           letter_1568_03_25a = next((r for r in records if r.get("file") == "1568 03 25a CoBAM.xml"), None)
           assert letter_1568_03_25a, "No se encuentra la carta 1568 03 25a"
           assert letter_1568_03_25a["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/", "El enlace publicado de la carta 1568 03 25a debe ser el permalink verificado"
+          letter_1568_03_25b = next((r for r in records if r.get("file") == "1568 03 25b CoBAM.xml"), None)
+          assert letter_1568_03_25b, "No se encuentra la carta 1568 03 25b"
+          assert letter_1568_03_25b["published_url"] == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a/", "El enlace publicado de la carta 1568 03 25b debe ser el permalink facilitado"
           assert sample["start_year"] == 1568, "El filtro por año debería seguir la fecha legible de la carta de prueba"
           assert sample["date_warning"], "Debe advertirse el desacuerdo entre @when y la fecha legible de la carta de prueba"
           assert sample["commentary_html"], "Falta el comentario de la carta de prueba"
@@ -217,7 +220,8 @@ jobs:
               'byId("year-select").value="";byId("year-from").value=""',
               'Año de la carta',
               'row.id="apparatus-"+item.number;',
-              'titleLink.href=directPublishedUrl||r.wordpress_search_url||prototypeReaderUrl;',
+              'titleLink.href=directPublishedUrl||prototypeReaderUrl;',
+              'r.file==="1568 03 25b CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a/":r.published_url;',
               'reader.href=directPublishedUrl||prototypeReaderUrl;',
               'Leer carta editada ↗',
           ]
