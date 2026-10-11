@@ -658,6 +658,17 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "1568 08 07 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/correspondencia/15680807-2/",
         "1568 08 29 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-29/",
         "1569 04 06 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1569-04-06/",
+        "1568 06 14 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-06-14/",
+        "1568 07 06 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-07-06/",
+        "1568 08 16 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-16/",
+        "1568 08 31 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-08-31/",
+        "1568 09 30 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-09-30/",
+        "1568 10 10 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-10-10/",
+        "1568 10 29 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-10-29/",
+        "1568 11 09 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-09/",
+        "1568 11 14 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-14/",
+        "1568 11 24 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-11-24/",
+        "1568 12 18 CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-12-18/",
         "1570 05 00 Z CoBAM.xml": "https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-00-z/",
     }
     published_url = published_url_overrides.get(path.name, "")
