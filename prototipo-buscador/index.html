@@ -627,7 +627,7 @@ body.embed-mode .intro{margin-top:0}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261012-title-1568-02-14"></script>
+<script src="catalog-data.js?v=20261012-open-editions-outside-iframe"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 "use strict";
@@ -1082,7 +1082,8 @@ function makeResult(r){
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
  const directPublishedUrl=r.file==="1568 03 25a CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/":r.file==="1568 03 25b CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a/":r.published_url;
  titleLink.href=directPublishedUrl||prototypeReaderUrl;
- titleLink.title=directPublishedUrl?"Abrir la carta editada en el sitio de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
+ titleLink.title=directPublishedUrl?"Abrir la carta editada en la página completa de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
+ if(directPublishedUrl){titleLink.target="_top";titleLink.rel="noopener";}
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  h.append(titleLink);
  heading.append(h);
@@ -1102,7 +1103,8 @@ function makeResult(r){
  const links=el("div","result-actions");
  const reader=el("a","result-primary","Leer carta editada ↗");
  reader.href=directPublishedUrl||prototypeReaderUrl;
- reader.title=directPublishedUrl?"Abrir la carta editada en el sitio de CoBAM":"Abrir la vista de lectura del prototipo; enlace directo a WordPress pendiente de verificar.";
+ reader.title=directPublishedUrl?"Abrir la carta editada en la página completa de CoBAM":"Abrir la vista de lectura del prototipo; enlace directo a WordPress pendiente de verificar.";
+ if(directPublishedUrl){reader.target="_top";reader.rel="noopener";}
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
