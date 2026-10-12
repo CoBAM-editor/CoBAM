@@ -547,6 +547,9 @@ def make_record(path: Path, root: ET.Element) -> dict:
         first_text(root, ".//tei:fileDesc/tei:titleStmt/tei:title"),
         path.stem,
     )
+    # Preserve a visible space before bracketed place names in the 14 Feb 1568 Plantino letter.
+    if path.name == "1568 02 14 CoBAM.xml":
+        title = title.replace("Cristóbal Plantino[", "Cristóbal Plantino [")
     sent = root.find(".//tei:correspAction[@type='sent']", NS)
     date_el = sent.find("tei:date", NS) if sent is not None else root.find(".//tei:correspAction/tei:date", NS)
     date_label = text_of(date_el)
