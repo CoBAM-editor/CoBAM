@@ -617,7 +617,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261012-excluir-libros-1569"></script>
+<script src="catalog-data.js?v=20261012-ocultar-lista-libros-1569"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 "use strict";
@@ -650,7 +650,7 @@ function normalizePersonLabel(value){
   if(["cornelio gema","cornelio gemma","cornelio gema frisio","cornelio gemma frisio"].includes(key))return "Cornelio Gema Frisio";
  return label;
 }
-const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).filter(r=>r.file!=="1568 06 14 Libros.xml").map(r=>({...r,sender:normalizePersonLabel(r.sender),recipient:normalizePersonLabel(r.recipient),origin:normalizeOriginLabel(r.origin),repositories:(r.repositories||[]).map(normalizeRepositoryLabel),archive_labels:(r.archive_labels||[]).map(normalizeRepositoryLabel)}));
+const LETTERS=(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length?window.COBAM_CATALOG:SAMPLE).filter(r=>!["1568 06 14 Libros.xml","1569 04 06 Libros.xml"].includes(r.file)).map(r=>({...r,sender:normalizePersonLabel(r.sender),recipient:normalizePersonLabel(r.recipient),origin:normalizeOriginLabel(r.origin),repositories:(r.repositories||[]).map(normalizeRepositoryLabel),archive_labels:(r.archive_labels||[]).map(normalizeRepositoryLabel)}));
 const PAGE_SIZE=20;
 
 let selectedMapPlace="";
