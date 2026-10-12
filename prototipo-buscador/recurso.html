@@ -54,14 +54,13 @@ img{display:block;max-width:100%;max-height:calc(100vh - 150px);height:auto;obje
        }
      }
    } catch(e) {}
-   const frame=document.createElement("iframe");
-   frame.title=label;
-   frame.src=displayUrl;
-   content.replaceChildren(frame);
+   // Navegación directa al XML en bruto para evitar el bloqueo CORS del iframe.
+   // La URL actual del visor queda antes en el historial para que se pueda volver atrás.
    const p=document.createElement("p");p.className="notice fallback-link";
-   p.textContent="Si el XML no se muestra dentro del visor, puedes abrir el archivo original en esta misma pestaña: ";
-   const a=document.createElement("a");a.href=displayUrl;a.textContent="consultar XML-TEI original";p.append(a);
-   content.append(p);
+   p.textContent="Abriendo el XML original… Si no se abre automáticamente, utiliza este enlace: ";
+   const a=document.createElement("a");a.href=displayUrl;a.textContent="abrir XML-TEI";p.append(a);
+   content.replaceChildren(p);
+   window.location.href=displayUrl;
  }
 })();
 </script>
