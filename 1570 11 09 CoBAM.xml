@@ -5,7 +5,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
-            <title level="a">Benito Arias Montano (Amberes) a Karel van Tisnacq - antes del 9 de noviembre de 1570</title>
+            <title level="a">Benito Arias Montano (Amberes) a Karel van Tisnacq - 9 de noviembre de 1570</title>
             <author>Benito Arias Montano</author>
             <editor>Antonio Dávila Pérez</editor>
             <respStmt>
@@ -74,7 +74,7 @@
             <correspAction type="enviada">
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
-               <date notAfter-iso="1568-11-09">no después del 9 de noviembre de 1570</date>
+               <date when="1570-11-09">9 de noviembre de 1570</date>
             </correspAction>
             <correspAction type="recibida">
                <persName>Karel van Tisnacq</persName>
@@ -90,6 +90,7 @@
       </profileDesc>
       <revisionDesc status="aprobada">
          <change who="#Dávila" when="2025-08-12">Etiquetado inicial; con encabezado</change>
+         <change who="#Dávila" when="2026-10-12">Normalización de la fecha de la carta al 9 de noviembre de 1570</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -118,7 +119,7 @@
             <p><name type="person" ref="#AriasMontanoBenito">B<expan><ex>enedictus</ex></expan> Arias Montanus</name> تلميد </p> 
             <div type="annotation">
                <head>[Añadido por otra mano, arriba en la esquina izquierda:] </head>
-            <p>[<hi rend="bold">4</hi>] <add hand="unknown" place="top">Vu le livre icy mentionné, il est <app><lem wit="#O #E2">tauxé</lem> <rdg wit="#E1">taxé</rdg></app> a trois florins douze patars. <app><lem wit="#O #E2">Faict</lem> <rdg wit="#E1">Icy</rdg></app> en <name type="place">Anvers</name> le <date when="1570-11-11">IX<hi rend="sup">e</hi> Novemb<expan><ex>re</ex></expan> 1570</date>.</add></p>
+            <p>[<hi rend="bold">4</hi>] <add hand="unknown" place="top">Vu le livre icy mentionné, il est <app><lem wit="#O #E2">tauxé</lem> <rdg wit="#E1">taxé</rdg></app> a trois florins douze patars. <app><lem wit="#O #E2">Faict</lem> <rdg wit="#E1">Icy</rdg></app> en <name type="place">Anvers</name> le <date when="1570-11-09">IX<hi rend="sup">e</hi> Novemb<expan><ex>re</ex></expan> 1570</date>.</add></p>
                <closer><signed><name><app><lem wit="#O #E1">J<expan><ex>acques</ex></expan></lem> <rdg wit="#E2"><hi rend="italic">omisit</hi></rdg> </app> de la Torre.</name></signed><ref target="#note3" xml:id="reference3">3</ref></closer></div>
          </div></body>
             <back>  
