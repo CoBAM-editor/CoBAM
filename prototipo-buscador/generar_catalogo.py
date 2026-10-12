@@ -18,7 +18,7 @@ NS = {"tei": TEI_NS}
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 OUTPUT = HERE / "catalogo.json"
-EXCLUDED_CATALOG_FILES = {"1568 06 14 Libros.xml"}  # Material complementario dependiente de la carta del mismo identificador.
+EXCLUDED_CATALOG_FILES = {"1568 06 14 Libros.xml", "1569 04 06 Libros.xml"}  # Material complementario dependiente de cartas ya catalogadas.
 
 
 def clean(value: str | None) -> str:
