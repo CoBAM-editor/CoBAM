@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recurso · CoBAM</title>
+<style>
+:root{color-scheme:light;--ink:#333b40;--muted:#69747b;--accent:#b68a35;--line:#e2e5e7;--paper:#fff;--wash:#f7f6f2}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:15px/1.55 Arial,Helvetica,sans-serif}
+header{background:var(--paper);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+a{color:#8b6427}button{font:inherit;cursor:pointer;border:1px solid #cbbda4;background:white;border-radius:4px;padding:8px 12px;color:var(--ink)}
+h1{font-size:1.1rem;margin:0}#resource-label{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}
+main{max-width:1200px;margin:20px auto;padding:0 18px}
+#resource-content{background:white;border:1px solid var(--line);border-radius:6px;padding:16px;min-height:60vh}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.55 ui-monospace,Consolas,monospace;margin:0}
+img{display:block;max-width:100%;max-height:calc(100vh - 150px);height:auto;object-fit:contain;margin:auto}
+.notice{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+<button id="back" type="button">← Volver</button>
+<h1>CoBAM · Recurso documental</h1>
+<span id="resource-label"></span>
+</header>
+<main><section id="resource-content"><p class="notice">Cargando recurso…</p></section></main>
+<script>
+(function(){
+ const params=new URLSearchParams(location.search);
+ const url=params.get("url"),type=params.get("type")||"xml",label=params.get("label")||"Recurso documental";
+ const content=document.getElementById("resource-content");
+ document.getElementById("resource-label").textContent=label;
+ document.title=label+" · CoBAM";
+ document.getElementById("back").addEventListener("click",function(){
+   if(history.length>1)history.back();else location.href="./index.html";
+ });
+ if(!url||!/^https?:\/\//i.test(url)){
+   content.textContent="No se ha indicado una dirección válida para este recurso.";return;
+ }
+ if(type==="image"){
+   const img=document.createElement("img");img.alt=label;img.src=url;
+   img.addEventListener("error",()=>{content.replaceChildren();const p=document.createElement("p");p.className="notice";p.textContent="No se ha podido mostrar la imagen aquí. Puedes abrir el recurso original: ";const a=document.createElement("a");a.href=url;a.textContent="abrir facsímil";a.target="_blank";a.rel="noopener noreferrer";p.append(a);content.append(p)});
+   content.replaceChildren(img);
+ }else{
+   fetch(url).then(response=>{if(!response.ok)throw new Error("HTTP "+response.status);return response.text()}).then(source=>{
+     const pre=document.createElement("pre");pre.textContent=source;content.replaceChildren(pre);
+   }).catch(()=>{
+     const p=document.createElement("p");p.className="notice";p.textContent="No se ha podido cargar el XML dentro de esta página. Puedes abrir el archivo original con este enlace: ";
+     const a=document.createElement("a");a.href=url;a.textContent="consultar XML-TEI original";a.target="_blank";a.rel="noopener noreferrer";p.append(a);content.replaceChildren(p);
+   });
+ }
+})();
+</script>
+</body>
+</html>
