@@ -76,7 +76,7 @@
             <correspAction type="sent">
                <persName>Cardenal Granvela</persName>
                <settlement>Roma</settlement>
-               <date when="1567">20 de julio de 1570</date>
+               <date when="1570-07-20">20 de julio de 1570</date>
             </correspAction>
             <correspAction type="received">
                <persName>Benito Arias Montano</persName>
@@ -126,7 +126,7 @@
          </div>  
          <div type="anotation"> 
             <head>[Anotado en el margen por BAM, con escritura transversal:]</head>
-            <ab><date when="1570-08-20">20 de julio</date>. <name type="place">Roma 1570</name>. Del car<expan><ex>dena</ex></expan>l <name type="person">Granvela</name><ref target="#note1"
+            <ab><date when="1570-07-20">20 de julio</date>. <name type="place">Roma 1570</name>. Del car<expan><ex>dena</ex></expan>l <name type="person">Granvela</name><ref target="#note1"
                xml:id="reference1">1</ref> <foreign>de praefatione et de <name type="person" ref=" #IuniusHadrianus">Had<expan><ex>riano</ex></expan> Iunio</name></foreign>.</ab>
             </div>
          <div type="main_content">
