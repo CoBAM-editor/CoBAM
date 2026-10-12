@@ -539,8 +539,8 @@ body.embed-mode .intro{margin-top:0}
       <p id="reader-date-warning" class="reader-warning" hidden></p>
       <div class="letter-hero-meta" id="letter-route"></div>
       <div class="reader-actions">
-        <a id="published-edition" class="reader-action primary" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver edición en WordPress ↗</a>
-        <a id="xml-source" class="reader-action" href="#" target="_blank" rel="noopener noreferrer">Consultar XML-TEI ↗</a>
+        <a id="published-edition" class="reader-action primary" href="#" hidden>Ver edición en WordPress ↗</a>
+        <a id="xml-source" class="reader-action" href="#">Consultar XML-TEI ↗</a>
       </div>
     </header>
     <section class="reader-intro-grid">
@@ -607,8 +607,8 @@ body.embed-mode .intro{margin-top:0}
         </article>
       </div>
       <div class="reader-backlinks">
-        <a id="reader-xml-bottom" href="#" target="_blank" rel="noopener noreferrer">Consultar XML-TEI original ↗</a>
-        <a id="reader-wordpress-bottom" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver esta carta en la edición publicada ↗</a>
+        <a id="reader-xml-bottom" href="#">Consultar XML-TEI original ↗</a>
+        <a id="reader-wordpress-bottom" href="#" hidden>Ver esta carta en la edición publicada ↗</a>
       </div>
     </section>
   </section>
@@ -1060,7 +1060,7 @@ function makeLetterReader(r){
   facsimiles.forEach((source,index)=>{
    if(!/^https?:\/\//i.test(source))return;
    const figure=el("figure","facsimile-card"),anchor=document.createElement("a");
-   anchor.href=source;anchor.target="_blank";anchor.rel="noopener noreferrer";
+   anchor.href=source;
    const img=document.createElement("img");img.src=source;img.loading="lazy";img.decoding="async";
    img.alt="Facsímil "+(index+1)+" de "+(r.letter_code||r.title||"la carta");
    anchor.append(img);figure.append(anchor,el("figcaption","", "Imagen "+(index+1)+" · abrir a tamaño completo"));
@@ -1108,9 +1108,9 @@ function makeResult(r){
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
- const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url||"#";xml.target="_blank";xml.rel="noopener noreferrer";links.append(xml);
+ const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url||"#";links.append(xml);
  if((r.facsimile_items||r.facsimiles||[]).length){
-  const fac=el("a","result-secondary","Ver facsímil ↗");fac.href=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.title="Abrir el facsímil disponible";fac.target="_blank";fac.rel="noopener noreferrer";links.append(fac);
+  const fac=el("a","result-secondary","Ver facsímil ↗");fac.href=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.title="Abrir el facsímil disponible";links.append(fac);
  }
  article.append(links);
  const details=document.createElement("details"),sum=el("summary","","Resumen en inglés");
@@ -1352,7 +1352,7 @@ function renderReaderFacsimiles(r){
  for(const item of fallback){
   if(!item.url||!/^https?:\/\//i.test(item.url))continue;
   const figure=el("figure","reader-image"),anchor=document.createElement("a");
-  anchor.href=item.url;anchor.target="_blank";anchor.rel="noopener noreferrer";
+  anchor.href=item.url;
   const img=document.createElement("img");img.src=item.url;img.alt=(r.letter_code||r.title||"Carta")+" · "+(item.label||"facsímil");
   img.loading="lazy";img.decoding="async";anchor.append(img);
   const caption=el("figcaption","",[(r.repositories||[])[0],item.label].filter(Boolean).join(" · ")||"Facsímil");
