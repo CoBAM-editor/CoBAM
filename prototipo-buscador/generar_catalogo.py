@@ -681,8 +681,11 @@ def make_record(path: Path, root: ET.Element) -> dict:
         clean(el.get("url")).replace("http://lacorrespondenciadebenitoariasmontano.online/", "https://lacorrespondenciadebenitoariasmontano.online/", 1) for el in root.findall(".//tei:facsimile/tei:graphic", NS)
         if el.get("url")
     ])
-    bibliography = unique([
-        text_of(el) for el in root.findall(".//tei:sourceDesc/tei:bibl[@type='inextenso']", NS)
+    bibliography_elements = root.findall(".//tei:sourceDesc/tei:bibl[@type='inextenso']", NS)
+    bibliography = unique([text_of(el) for el in bibliography_elements])
+    bibliography_html = unique([
+        tei_inline_html(el, mode="clean", facsimile_map={}, apparatus=[])
+        for el in bibliography_elements
     ])
     hand_notes = unique([text_of(el) for el in root.findall(".//tei:handNotes/tei:handNote", NS)])
     editor = first_text(root, ".//tei:fileDesc/tei:titleStmt/tei:editor")
@@ -817,6 +820,7 @@ def make_record(path: Path, root: ET.Element) -> dict:
         "shelfmarks": unique(shelfmarks),
         "witnesses": witnesses,
         "bibliography": bibliography,
+        "bibliography_html": bibliography_html,
         "hand_notes": hand_notes,
         "editor": editor,
         "authors": authors,
