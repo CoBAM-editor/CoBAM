@@ -1119,8 +1119,10 @@ function makeResult(r){
  links.append(reader);
 
  const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url;xml.target=resourceTarget();xml.rel="noopener";xml.title="Abrir el archivo XML-TEI directamente en GitHub";links.append(xml);
- if((r.facsimile_items||r.facsimiles||[]).length){
-  const fac=el("a","result-secondary","Ver facsímil ↗");const facUrl=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.href=resourceViewerUrl(facUrl,"image","Facsímil · "+(r.letter_code||r.title||r.file||"Carta"));fac.target=resourceTarget();fac.title="Abrir el facsímil disponible";links.append(fac);
+ const facsimileItems=Array.isArray(r.facsimile_items)?r.facsimile_items:[];
+ const facsimileUrls=Array.isArray(r.facsimiles)?r.facsimiles:[];
+ if(facsimileItems.length||facsimileUrls.length){
+  const fac=el("a","result-secondary","Ver facsímil ↗");const facUrl=(facsimileItems[0]?.url)||facsimileUrls[0];fac.href=resourceViewerUrl(facUrl,"image","Facsímil · "+(r.letter_code||r.title||r.file||"Carta"));fac.target=resourceTarget();fac.title="Abrir el facsímil disponible";links.append(fac);
  }
  article.append(links);
  const details=document.createElement("details"),sum=el("summary","","Resumen en inglés");
