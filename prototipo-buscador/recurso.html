@@ -13,7 +13,7 @@ h1{font-size:1.1rem;margin:0}#resource-label{color:var(--muted);font-size:.85rem
 main{max-width:1200px;margin:20px auto;padding:0 18px}
 #resource-content{background:white;border:1px solid var(--line);border-radius:6px;padding:16px;min-height:60vh}
 pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.55 ui-monospace,Consolas,monospace;margin:0}
-img{display:block;max-width:100%;max-height:calc(100vh - 150px);height:auto;object-fit:contain;margin:auto}
+img{display:block;max-width:100%;max-height:calc(100vh - 150px);height:auto;object-fit:contain;margin:auto}\niframe{display:block;width:100%;height:calc(100vh - 190px);min-height:60vh;border:0;background:white}\n.fallback-link{margin:12px 0 0}
 .notice{color:var(--muted);font-size:.9rem}
 </style>
 </head>
@@ -45,8 +45,17 @@ img{display:block;max-width:100%;max-height:calc(100vh - 150px);height:auto;obje
    fetch(url).then(response=>{if(!response.ok)throw new Error("HTTP "+response.status);return response.text()}).then(source=>{
      const pre=document.createElement("pre");pre.textContent=source;content.replaceChildren(pre);
    }).catch(()=>{
-     const p=document.createElement("p");p.className="notice";p.textContent="No se ha podido cargar el XML dentro de esta página. Puedes abrir el archivo original con este enlace: ";
-     const a=document.createElement("a");a.href=url;a.textContent="consultar XML-TEI original";a.target="_blank";a.rel="noopener noreferrer";p.append(a);content.replaceChildren(p);
+     // Si el servidor no permite fetch por CORS, intentar mostrar el recurso como navegación.
+     // La navegación queda dentro del visor, de modo que Atrás sigue regresando al buscador.
+     content.replaceChildren();
+     const frame=document.createElement("iframe");
+     frame.title=label;
+     frame.src=url;
+     content.append(frame);
+     const p=document.createElement("p");p.className="notice fallback-link";
+     p.textContent="Si el XML no se muestra en el visor, puedes abrirlo en esta misma pestaña: ";
+     const a=document.createElement("a");a.href=url;a.textContent="consultar XML-TEI original";p.append(a);
+     content.append(p);
    });
  }
 })();
