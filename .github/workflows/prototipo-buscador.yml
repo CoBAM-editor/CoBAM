@@ -119,6 +119,9 @@ jobs:
           assert not missing, f"Faltan campos en: {missing[:5]}"
           ids = [r["id"] for r in records]
           assert len(ids) == len(set(ids)), "Hay identificadores TEI duplicados"
+          letter_1570_v = [r for r in records if r.get("file") == "1570 05 13 V  CoBAM.xml"]
+          assert len(letter_1570_v) == 1, "La carta 1570 05 13 V no aparece exactamente una vez en el catálogo"
+          assert letter_1570_v[0].get("published_url") == "https://lacorrespondenciadebenitoariasmontano.online/es_es/1570-05-13-v/", "La carta 1570 05 13 V no tiene el enlace publicado esperado"
           archive_labels = {label.strip().casefold() for record in records for label in (record.get("repositories") or [])}
           archive_country_labels = {label.strip().casefold() for record in records for label in (record.get("archive_countries") or [])}
           archive_city_labels = {label.strip().casefold() for record in records for label in (record.get("archive_cities") or [])}
