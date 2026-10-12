@@ -73,7 +73,7 @@
             <correspAction type="sent">
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
-               <date when="1570-05">6 mayo de 1570</date>
+               <date when="1570-05-06">6 mayo de 1570</date>
             </correspAction>
             <correspAction type="received">
                <persName>Iohannes Sambucus </persName>
