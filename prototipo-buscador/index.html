@@ -1118,7 +1118,7 @@ function makeResult(r){
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
- const xml=el("a","result-secondary","XML-TEI ↗");xml.href=resourceViewerUrl(r.url,"xml","XML-TEI · "+(r.letter_code||r.title||r.file||"Carta"));xml.target=resourceTarget();links.append(xml);
+ const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url;xml.target=resourceTarget();xml.rel="noopener";xml.title="Abrir el archivo XML-TEI directamente en GitHub";links.append(xml);
  if((r.facsimile_items||r.facsimiles||[]).length){
   const fac=el("a","result-secondary","Ver facsímil ↗");const facUrl=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.href=resourceViewerUrl(facUrl,"image","Facsímil · "+(r.letter_code||r.title||r.file||"Carta"));fac.target=resourceTarget();fac.title="Abrir el facsímil disponible";links.append(fac);
  }
@@ -1562,7 +1562,7 @@ function renderLetterPage(r){
   published.href=r.published_url;published.hidden=false;
   wpBottom.href=r.published_url;wpBottom.hidden=false;
  }else{published.hidden=true;wpBottom.hidden=true}
- byId("xml-source").href=resourceViewerUrl(r.url,"xml","XML-TEI · "+(r.letter_code||r.title||r.file||"Carta"));byId("xml-source").target=resourceTarget();byId("reader-xml-bottom").href=resourceViewerUrl(r.url,"xml","XML-TEI · "+(r.letter_code||r.title||r.file||"Carta"));byId("reader-xml-bottom").target=resourceTarget();
+ byId("xml-source").href=r.url;byId("xml-source").target=resourceTarget();byId("xml-source").rel="noopener";byId("xml-source").title="Abrir el archivo XML-TEI directamente en GitHub";byId("reader-xml-bottom").href=r.url;byId("reader-xml-bottom").target=resourceTarget();byId("reader-xml-bottom").rel="noopener";byId("reader-xml-bottom").title="Abrir el archivo XML-TEI directamente en GitHub";
  renderReaderMetadata(r);
  byId("reader-summary").textContent=r.abstract||"El XML no incluye un resumen para esta carta.";
  byId("reader-commentary").innerHTML=r.commentary_html||'<p class="reader-missing">No hay comentario editorial codificado en la sección front del XML.</p>';
