@@ -1073,6 +1073,16 @@ function makeLetterReader(r){
  details.append(panels);
  return details;
 }
+function resourceViewerUrl(url,type,label){
+ const viewer=new URL("recurso.html",window.location.href);
+ viewer.searchParams.set("url",url||"");
+ viewer.searchParams.set("type",type||"xml");
+ viewer.searchParams.set("label",label||"Recurso documental");
+ return viewer.pathname+viewer.search;
+}
+function resourceTarget(){
+ return new URLSearchParams(window.location.search).has("embed")?"_top":"_self";
+}
 function makeResult(r){
  const article=el("article","result");
  const prototypeReaderUrl=window.location.pathname+"?carta="+encodeURIComponent(r.id)+"#edicion";
@@ -1108,9 +1118,9 @@ function makeResult(r){
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
 
- const xml=el("a","result-secondary","XML-TEI ↗");xml.href=r.url||"#";links.append(xml);
+ const xml=el("a","result-secondary","XML-TEI ↗");xml.href=resourceViewerUrl(r.url,"xml","XML-TEI · "+(r.letter_code||r.title||r.file||"Carta"));xml.target=resourceTarget();links.append(xml);
  if((r.facsimile_items||r.facsimiles||[]).length){
-  const fac=el("a","result-secondary","Ver facsímil ↗");fac.href=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.title="Abrir el facsímil disponible";links.append(fac);
+  const fac=el("a","result-secondary","Ver facsímil ↗");const facUrl=(r.facsimile_items?.[0]?.url)||(r.facsimiles||[])[0];fac.href=resourceViewerUrl(facUrl,"image","Facsímil · "+(r.letter_code||r.title||r.file||"Carta"));fac.target=resourceTarget();fac.title="Abrir el facsímil disponible";links.append(fac);
  }
  article.append(links);
  const details=document.createElement("details"),sum=el("summary","","Resumen en inglés");
@@ -1352,7 +1362,7 @@ function renderReaderFacsimiles(r){
  for(const item of fallback){
   if(!item.url||!/^https?:\/\//i.test(item.url))continue;
   const figure=el("figure","reader-image"),anchor=document.createElement("a");
-  anchor.href=item.url;
+  anchor.href=resourceViewerUrl(item.url,"image","Facsímil · "+(r.letter_code||r.title||"Carta")+" · "+(item.label||"imagen"));anchor.target=resourceTarget();
   const img=document.createElement("img");img.src=item.url;img.alt=(r.letter_code||r.title||"Carta")+" · "+(item.label||"facsímil");
   img.loading="lazy";img.decoding="async";anchor.append(img);
   const caption=el("figcaption","",[(r.repositories||[])[0],item.label].filter(Boolean).join(" · ")||"Facsímil");
@@ -1552,7 +1562,7 @@ function renderLetterPage(r){
   published.href=r.published_url;published.hidden=false;
   wpBottom.href=r.published_url;wpBottom.hidden=false;
  }else{published.hidden=true;wpBottom.hidden=true}
- byId("xml-source").href=r.url||"#";byId("reader-xml-bottom").href=r.url||"#";
+ byId("xml-source").href=resourceViewerUrl(r.url,"xml","XML-TEI · "+(r.letter_code||r.title||r.file||"Carta"));byId("xml-source").target=resourceTarget();byId("reader-xml-bottom").href=resourceViewerUrl(r.url,"xml","XML-TEI · "+(r.letter_code||r.title||r.file||"Carta"));byId("reader-xml-bottom").target=resourceTarget();
  renderReaderMetadata(r);
  byId("reader-summary").textContent=r.abstract||"El XML no incluye un resumen para esta carta.";
  byId("reader-commentary").innerHTML=r.commentary_html||'<p class="reader-missing">No hay comentario editorial codificado en la sección front del XML.</p>';
