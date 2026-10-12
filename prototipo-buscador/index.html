@@ -523,7 +523,6 @@ body.embed-mode .intro{margin-top:0}
     </section>
   </div>
   <p id="load-status" class="loading-note" role="status">Cargando el catálogo de cartas…</p>
-  <div class="site-note"><strong>Prototipo de investigación:</strong> buscador independiente para revisar campos y comportamiento. No sustituye aún la búsqueda de la web pública de CoBAM.</div>
 
   </div>
   <section id="letter-view" class="letter-view" hidden>
@@ -626,7 +625,7 @@ body.embed-mode .intro{margin-top:0}
   <p class="lightbox-hint">Usa las flechas para recorrer los folios; pulsa Esc para cerrar.</p>
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
-<footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
+<footer>CoBAM · La correspondencia de Benito Arias Montano · Buscador de cartas</footer>
 <script src="catalog-data.js?v=20261012-open-editions-outside-iframe"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
@@ -707,7 +706,7 @@ function renderMap(records){
  const target=byId("map-chart"),status=byId("map-status");
  if(!target||!status)return;
  if(typeof L==="undefined"){
-  target.innerHTML='<div class="map-fallback">No se ha podido cargar la cartografía externa. Comprueba la conexión y vuelve a abrir el prototipo.</div>';
+  target.innerHTML='<div class="map-fallback">No se ha podido cargar la cartografía externa. Comprueba la conexión e inténtalo de nuevo.</div>';
   status.textContent="No se ha cargado Leaflet.";
   return;
  }
@@ -1092,7 +1091,7 @@ function makeResult(r){
  const titleLink=el("a","",r.title||r.file||"Carta sin título");
  const directPublishedUrl=r.file==="1568 03 25a CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a-2/":r.file==="1568 03 25b CoBAM.xml"?"https://lacorrespondenciadebenitoariasmontano.online/es_es/1568-03-25a/":r.published_url;
  titleLink.href=directPublishedUrl||prototypeReaderUrl;
- titleLink.title=directPublishedUrl?"Abrir la carta editada en la página completa de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress (enlace directo pendiente de verificar)":"Abrir la vista de lectura del prototipo";
+ titleLink.title=directPublishedUrl?"Abrir la carta editada en la página completa de CoBAM":r.wordpress_search_url?"Buscar esta carta por su identificador en WordPress":"Abrir la vista de lectura de la carta";
  if(directPublishedUrl){titleLink.target="_top";titleLink.rel="noopener";}
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  h.append(titleLink);
@@ -1113,7 +1112,7 @@ function makeResult(r){
  const links=el("div","result-actions");
  const reader=el("a","result-primary","Leer carta editada ↗");
  reader.href=directPublishedUrl||prototypeReaderUrl;
- reader.title=directPublishedUrl?"Abrir la carta editada en la página completa de CoBAM":"Abrir la vista de lectura del prototipo; enlace directo a WordPress pendiente de verificar.";
+ reader.title=directPublishedUrl?"Abrir la carta editada en la página completa de CoBAM":"Abrir la vista de lectura de la carta.";
  if(directPublishedUrl){reader.target="_top";reader.rel="noopener";}
  // Navegación en la misma pestaña: la flecha Atrás devuelve al buscador.
  links.append(reader);
