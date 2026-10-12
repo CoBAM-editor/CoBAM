@@ -418,6 +418,14 @@ button,input,select,textarea,
 }
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 
+
+/* Modo de inserción en WordPress: elimina la cabecera propia y adapta los márgenes. */
+body.embed-mode{background:#fff}
+body.embed-mode .top{display:none}
+body.embed-mode main{margin:14px auto 28px;padding:0 14px}
+body.embed-mode a{color:#1769aa}
+body.embed-mode a:hover{color:#0b4f87}
+body.embed-mode .intro{margin-top:0}
 </style>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
@@ -617,7 +625,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261012-url-1571-02-01"></script>
+<script src="catalog-data.js?v=20261012-wp-embed-bridge"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 "use strict";
@@ -1617,6 +1625,29 @@ if(Array.isArray(window.COBAM_CATALOG)&&window.COBAM_CATALOG.length){
 }else if(!requestedLetter){
  status.textContent="Modo de demostración: una carta de ejemplo. El catálogo completo se genera al publicar mediante GitHub Actions.";
 }
+</script>
+
+<script>
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  if (!params.has('embed')) return;
+  document.body.classList.add('embed-mode');
+  const targetOrigin = 'https://lacorrespondenciadebenitoariasmontano.online';
+  let lastHeight = 0;
+  const sendHeight = () => {
+    const height = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+    if (Math.abs(height - lastHeight) < 8) return;
+    lastHeight = height;
+    window.parent.postMessage({type:'cobam-embed-resize',height}, targetOrigin);
+  };
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  if ('ResizeObserver' in window) new ResizeObserver(sendHeight).observe(document.body);
+  const observer = new MutationObserver(sendHeight);
+  observer.observe(document.body, {subtree:true,childList:true,attributes:true,characterData:true});
+  setTimeout(sendHeight, 300);
+  setTimeout(sendHeight, 1000);
+})();
 </script>
 </body>
 </html>
