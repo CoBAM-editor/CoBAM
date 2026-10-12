@@ -1099,7 +1099,9 @@ function makeResult(r){
  article.append(heading);
  const meta=el("div","result-meta");
  const item=(label,value)=>{const b=el("div","meta-item");b.append(el("span","meta-label",label),el("span","",value||"No indicado"));return b};
- meta.append(item("Archivo e institución",(r.repositories||[]).join("; ")),item("Signatura",(r.shelfmarks||[]).map(v=>String(v).trim().replace(/[;；]+\s*/g,"; ").replace(/(?:;\s*)+$/,"")).filter(Boolean).join("; ")),item("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join("; ")),item("Referencias impresas",(r.bibliography||[]).map(v=>String(v).trim().replace(/\s+,/g,",").replace(/[;；]+\s*$/,"")).filter(Boolean).join("; ")));
+ const printedRefs=item("Referencias impresas",(r.bibliography||[]).map(v=>String(v).trim().replace(/\s+,/g,",").replace(/[;；]+\s*$/,"")).filter(Boolean).join("; "));
+ if(Array.isArray(r.bibliography_html)&&r.bibliography_html.length)printedRefs.lastChild.innerHTML=r.bibliography_html.join("; ");
+ meta.append(item("Archivo e institución",(r.repositories||[]).join("; ")),item("Signatura",(r.shelfmarks||[]).map(v=>String(v).trim().replace(/[;；]+\s*/g,"; ").replace(/(?:;\s*)+$/,"")).filter(Boolean).join("; ")),item("País / localidad del archivo",unique([...(r.archive_countries||[]),...(r.archive_cities||[])]).join("; ")),printedRefs);
  article.append(meta);
  const badges=el("div","badges");
  if(r.language)badges.append(el("span","badge",r.language));
@@ -1352,6 +1354,7 @@ function renderReaderMetadata(r){
  for(const [label,value] of items){
   if(!value)continue;
   const item=el("div","metadata-item"),strong=el("strong","",label),span=el("span","",value);
+  if(label==="Ediciones impresas"&&Array.isArray(r.bibliography_html)&&r.bibliography_html.length)span.innerHTML=r.bibliography_html.join("; ");
   item.append(strong,span);target.append(item);
  }
 }
