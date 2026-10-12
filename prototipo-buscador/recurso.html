@@ -42,15 +42,25 @@ img{display:block;max-width:100%;max-height:calc(100vh - 150px);height:auto;obje
    img.addEventListener("error",()=>{content.replaceChildren();const p=document.createElement("p");p.className="notice";p.textContent="No se ha podido mostrar la imagen aquí. Puedes abrir el recurso original: ";const a=document.createElement("a");a.href=url;a.textContent="abrir facsímil";a.target="_blank";a.rel="noopener noreferrer";p.append(a);content.append(p)});
    content.replaceChildren(img);
  }else{
-   // Mostrar el archivo XML por navegación directa dentro de un iframe.
-   // Así evitamos las restricciones CORS de fetch; la página del visor permanece en el historial.
+   // Intentar cargar el XML desde raw.githubusercontent.com si procede de GitHub.
+   // Los enlaces /blob/ muestran la página web de GitHub, no el XML puro.
+   let displayUrl=url;
+   try {
+     const parsed=new URL(url);
+     if(parsed.hostname==="github.com"){
+       const match=parsed.pathname.match(/^\/([^/]+)\/([^/]+)\/blob\/([^/]+)\/(.+)$/);
+       if(match){
+         displayUrl="https://raw.githubusercontent.com/"+match[1]+"/"+match[2]+"/"+match[3]+"/"+match[4];
+       }
+     }
+   } catch(e) {}
    const frame=document.createElement("iframe");
    frame.title=label;
-   frame.src=url;
+   frame.src=displayUrl;
    content.replaceChildren(frame);
    const p=document.createElement("p");p.className="notice fallback-link";
-   p.textContent="Si el servidor impide mostrar el XML dentro del visor, puedes abrirlo en esta misma pestaña: ";
-   const a=document.createElement("a");a.href=url;a.textContent="consultar XML-TEI original";p.append(a);
+   p.textContent="Si el XML no se muestra dentro del visor, puedes abrir el archivo original en esta misma pestaña: ";
+   const a=document.createElement("a");a.href=displayUrl;a.textContent="consultar XML-TEI original";p.append(a);
    content.append(p);
  }
 })();
