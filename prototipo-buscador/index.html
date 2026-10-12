@@ -399,6 +399,25 @@ input[type="search"],input[type="text"],input[type="number"],select{border-color
 .map-legend-line{display:inline-block;width:22px;border-top:2px dashed #9b5b4c}
 @media(max-width:650px){.map-live{height:390px}.map-live-heading{display:block}.map-live-heading .map-preview-tag{display:inline-block;margin:0 0 9px}}
 
+
+/* Afinado tipográfico: interfaz sans serif coherente; texto de la edición conserva sus serifas. */
+body,
+button,input,select,textarea,
+.brand h1,.intro h2,.sidebar-head h3,.facet summary,
+.result-title,.results-count,.result-controls,
+.result-code,.result-date,.result-meta,.meta-item,
+.result-actions,.result details summary,
+.toolbar-button,.stat-label,.stat-note,
+.reader-topbar,.reader-back,.letter-kicker,.letter-id,
+.reader-subheading,.reader-card-head,.reader-metadata,
+.reader-summary,.reader-commentary h4,.reader-actions,
+.reader-action,.reader-edition-head p,.edition-pane>h4,
+.edition-content h4,.edition-content .tei-pagebreak,
+.letter-panel h4,.facsimile-card figcaption {
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+
 </style>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
@@ -598,7 +617,7 @@ input[type="search"],input[type="text"],input[type="number"],select{border-color
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Prototipo de búsqueda basado en XML-TEI</footer>
-<script src="catalog-data.js?v=20261012-tipografia-wordpress"></script>
+<script src="catalog-data.js?v=20261012-tipografia-ajuste2"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 "use strict";
