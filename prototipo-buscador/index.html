@@ -625,7 +625,7 @@ body.embed-mode .intro{margin-top:0}
 </dialog>
 <div id="apparatus-preview" class="apparatus-preview" role="tooltip" hidden></div>
 <footer>CoBAM · La correspondencia de Benito Arias Montano · Buscador de cartas</footer>
-<script src="catalog-data.js?v=20261013-bibliography-semicolon-fix"></script>
+<script src="catalog-data.js?v=20261013-fix-1571-01-24-chronology"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 "use strict";
@@ -1012,6 +1012,9 @@ function sortRecords(records){
    // Para esta carta se conserva provisionalmente 1568, como indica el título y la fecha de envío
    // transcrita, aunque el @when del encabezado dice 1569.
    if((r.title||"").includes("Daniel Barbaro") && (r.title||"").includes("29 de agosto de 1568")) return "1568-08-29";
+   // La carta de Gabriel de Zayas está titulada y catalogada como 24 de enero de 1571,
+   // pero el @when del XML dice 1571-02-24. Para ordenar cronológicamente se sigue la fecha editorial.
+   if((r.letter_code||"").trim()==="1571 01 24" || ((r.title||"").includes("Gabriel de Zayas") && (r.title||"").includes("24 de enero de 1571"))) return "1571-01-24";
    // La carta de Juan de Maldonado está datada como intervalo del 9 al 24 de noviembre de 1568,
    // aunque el atributo TEI @when solo contiene el año. Colocarla después de la carta del 9-XI.
    if((r.title||"").includes("Juan de Maldonado") && (r.title||"").includes("9 y el 24 de noviembre de 1568")) return "1568-11-09~";
