@@ -682,9 +682,18 @@ def make_record(path: Path, root: ET.Element) -> dict:
         if el.get("url")
     ])
     bibliography_elements = root.findall(".//tei:sourceDesc/tei:bibl[@type='inextenso']", NS)
-    bibliography = unique([text_of(el) for el in bibliography_elements])
+    # The TEI bibliography entries sometimes end in a semicolon themselves.
+    # Remove that terminal punctuation before joining entries for display.
+    bibliography = unique([
+        re.sub(r"[;；]+\s*$", "", text_of(el)).strip()
+        for el in bibliography_elements
+    ])
     bibliography_html = unique([
-        tei_inline_html(el, mode="clean", facsimile_map={}, apparatus=[])
+        re.sub(
+            r"[;；]+(?=(?:\s*</[^>]+>)*\s*$)",
+            "",
+            tei_inline_html(el, mode="clean", facsimile_map={}, apparatus=[]),
+        ).strip()
         for el in bibliography_elements
     ])
     hand_notes = unique([text_of(el) for el in root.findall(".//tei:handNotes/tei:handNote", NS)])
