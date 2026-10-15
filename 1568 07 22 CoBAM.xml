@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
-            <title level="a">Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 20 de julio de 1568 </title>
+            <title level="a">Benito Arias Montano (Amberes) a Gabriel de Zayas (Madrid) - 22 de julio de 1568 </title>
             <author>Benito Arias Montano</author>
             <editor>Antonio Dávila Pérez</editor>
             <respStmt>
@@ -84,7 +84,7 @@
             <correspAction type="sent">
                <persName>Benito Arias Montano</persName>
                <settlement>Amberes</settlement>
-               <date when="1568-07-20">22 de julio de 1568</date>
+               <date when="1568-07-22">22 de julio de 1568</date>
             </correspAction>
             <correspAction type="received">
                <persName>Gabriel de Zayas</persName>
