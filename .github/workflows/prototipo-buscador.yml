@@ -1,6 +1,7 @@
 name: Validar prototipo del buscador CoBAM
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - prototipo-buscador
