@@ -1015,6 +1015,8 @@ function sortRecords(records){
    // La carta de Gabriel de Zayas está titulada y catalogada como 24 de enero de 1571,
    // pero el @when del XML dice 1571-02-24. Para ordenar cronológicamente se sigue la fecha editorial.
    if((r.letter_code||"").trim()==="1571 01 24" || ((r.title||"").includes("Gabriel de Zayas") && (r.title||"").includes("24 de enero de 1571"))) return "1571-01-24";
+   // La carta de Maximiliano Morillon a Arias Montano lleva fecha editorial de 24 de octubre de 1569; prevalece sobre cualquier fecha antigua que quede en un catálogo almacenado en caché.
+   if((r.letter_code||"").trim()==="1569 10 24" || ((r.title||"").includes("Maximiliano Morillon") && (r.title||"").includes("24 de octubre de 1569"))) return "1569-10-24";
    // La carta de Juan de Maldonado está datada como intervalo del 9 al 24 de noviembre de 1568,
    // aunque el atributo TEI @when solo contiene el año. Colocarla después de la carta del 9-XI.
    if((r.title||"").includes("Juan de Maldonado") && (r.title||"").includes("9 y el 24 de noviembre de 1568")) return "1568-11-09~";
