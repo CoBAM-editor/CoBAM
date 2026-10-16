@@ -273,19 +273,19 @@ jobs:
           cd build-prototipo && zip -r ../prototipo-buscador-CoBAM.zip prototipo-buscador
 
       - name: Configurar GitHub Pages para la vista previa
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
       - name: Preparar sitio de vista previa
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: actions/upload-pages-artifact@v3
         with:
           path: prototipo-buscador
 
       - name: Publicar vista previa independiente
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         id: deployment
         uses: actions/deploy-pages@v4
 
