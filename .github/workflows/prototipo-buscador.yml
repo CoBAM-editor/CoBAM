@@ -204,6 +204,27 @@ jobs:
           print(f"Catálogo de navegador preparado: {len(records)} cartas.")
           PY
 
+      - name: Invalidar automáticamente la caché del catálogo
+        env:
+          BUILD_VERSION: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          html_path = Path("prototipo-buscador/index.html")
+          html = html_path.read_text(encoding="utf-8")
+          version = os.environ["BUILD_VERSION"]
+          pattern = r'<script src="catalog-data\\.js(?:\\?v=[^"]*)?"></script>'
+          replacement = f'<script src="catalog-data.js?v={version}"></script>'
+          updated, count = re.subn(pattern, replacement, html, count=1)
+          if count != 1:
+              raise SystemExit("No se encontró una única referencia al catálogo para actualizar su versión.")
+          html_path.write_text(updated, encoding="utf-8")
+          print(f"Versión del catálogo fijada al commit de este despliegue: {version}")
+          PY
+
       - name: Comprobar estructura de la vista de edición
         run: |
           python - <<'PY'
