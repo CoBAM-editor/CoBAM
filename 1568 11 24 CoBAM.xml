@@ -80,7 +80,7 @@
             <correspAction type="sent">
                <persName>Juan de Maldonado</persName>
                <settlement>París</settlement>
-               <date when="1568">Entre el 9 y el 24 de noviembre de 1568</date>
+               <date from="1568-11-09" to="1568-11-24">Entre el 9 y el 24 de noviembre de 1568</date>
             </correspAction>
             <correspAction type="received">
                <persName>Benito Arias Montano</persName>
