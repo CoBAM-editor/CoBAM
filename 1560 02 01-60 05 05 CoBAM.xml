@@ -71,7 +71,7 @@
             <correspAction type="sent">
                <persName>Benito Arias Montano</persName>
                <settlement>León</settlement>
-               <date when="1560">Entre el 1 de febrero y el 5 de mayo de 1560</date>
+               <date from="1560-02-01" to="1560-05-05">del 1 de febrero al 5 de mayo de 1560</date>
             </correspAction>
             <correspAction type="received">
                <persName>Fray Luis de León</persName>
