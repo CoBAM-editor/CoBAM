@@ -84,7 +84,7 @@
             <correspAction type="sent">
                <persName>Guy Le Fèvre de la Boderie</persName>
                <settlement>Amberes</settlement>
-               <date when="1569-11">Entre el 16 de noviembre de 1569 y enero de 1570</date>
+               <date from="1569-11-16" to="1570 01 31">Entre el 16 de noviembre de 1569 y enero de 1570</date>
             </correspAction>
             <correspAction type="received">
                <persName>Benito Arias Montano</persName>
