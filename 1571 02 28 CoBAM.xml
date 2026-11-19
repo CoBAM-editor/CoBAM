@@ -27,12 +27,14 @@
       <sourceDesc>
         <listWit>
           <witness xml:id="O">
-            <msDesc>
+             <msDesc>
               <msIdentifier>
                 <country>Bélgica</country>
                 <settlement>Amberes</settlement>
-                <repository>Museum Plantin-Moretus</repository>
+                <msName>Museum Plantin-Moretus</msName>
+                <altIdentifier>
                 <idno>(O) MPM, Arch. 122, pp. 261-264</idno>
+                </altIdentifier>
               </msIdentifier>
             </msDesc>
           </witness>
