@@ -103,8 +103,7 @@
       xml:id="foto3"/>
     <graphic
       url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2026/11/MPM-Arch.-122-pp.-264.jpg"
-      xml:id="foto4"/>
-    
+      xml:id="foto4"/> 
   </facsimile>
   <text>
     <front>
@@ -142,7 +141,6 @@
           <p>[<hi rend="bold">13</hi>] En ninguna manera se impriman para esta provincia de <name type="place">España</name> diurnales de la letra francesa, de la que eran los pequeños que acá vinieron con los mill breviarios, que no ay quien los quiera; ni aquellos se an podido vender, sino que se pierden, que ni aun gratis no los quieren.</p>
         </postscript>
         <pb n="p. 263" ed="O" facs="#foto3"/> 
-       
       </div>
     </body>
     <back>
@@ -159,7 +157,6 @@
           <ref target="#reference5">5</ref> La festividad de la Purificación de María se celebra el 2 de febrero, cuarenta días después de la Navidad.</note>
         <note type="footnote" xml:id="note6"> 
           <ref target="#reference6">6</ref> No existe copia conocida de esta edición de las <title>Horae Beatissimae Virginis Mariae</title> (en 32º) publicada por Plantino en 1570; el MPM solo conserva la portada, según recoge <title>PP</title>, III, 1157 (nº 1369). En torno a las impresiones de horas llevadas a cabo por Plantino véase el trabajo de K. Lee Bowen titulado <title>Christopher Plantin's Books of Hours: Illustration and Production</title> (Nieuwkoop, 1997); una obra más general y menos reciente es la de H. Bohatta, <title>Bibliographie der Livres d'Heures (Horae B. M. V.), Officia, Hortuli Animae, Coronae B. M. V., Rosaria et Cursus B. M. V des 15 und 16 Jahrhunderts</title> (Viena, 1924).</note>
-        
         <note type="footnote" xml:id="note7"> 
           <ref target="#reference7">7</ref> El 18 de enero se celebrara la fiesta de la cátedra de san Pedro en Roma.</note>
         <note type="footnote" xml:id="note8"> 
@@ -171,9 +168,7 @@
         <note type="footnote" xml:id="note11"> 
           <ref target="#reference11">11</ref> García Álvarez de Arellano, miembro de la Orden de Santiago, capellán real y amigo de BAM; su nombre es recogido en J. Pérez Balsera, <title>Los caballeros de Santiago</title> (Madrid: E. Maestre, 1932), pp. 128-352</note>
         <note type="footnote" xml:id="note12"> 
-          <ref target="#reference12">12</ref> La orden militar de Santiago, a la que pertenecía Arias Montano desde 1560. Los documentos referentes al proceso de pureza de sangre, requisito para ser admitido en esta orden, fueron publicados por Carvajal, «Elogio histórico», p. 30 y doc. nº 1 (pp. 123-130).</note>
-       
-       
+          <ref target="#reference12">12</ref> La orden militar de Santiago, a la que pertenecía Arias Montano desde 1560. Los documentos referentes al proceso de pureza de sangre, requisito para ser admitido en esta orden, fueron publicados por Carvajal, «Elogio histórico», p. 30 y doc. nº 1 (pp. 123-130).</note>    
       </div>
     </back>
   </text>
