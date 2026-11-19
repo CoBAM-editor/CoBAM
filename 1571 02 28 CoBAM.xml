@@ -1,0 +1,180 @@
+<?xml-stylesheet type="text/xsl" href="CBAMmetadatos.xsl"?>
+<?xml-model href="PersonalizacionCoBAM.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CoBAM15710228">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="s">La correspondencia de Benito Arias Montano: edición crítica digital</title>
+        <title level="a">Francisco de Villalba (Madrid) a Benito Arias Montano (Amberes) - 28 de febrero de 1571</title>
+        <author>Francisco de Villalba</author>
+        <editor>Antonio Dávila Pérez</editor>
+        <respStmt>
+          <resp>Edición crítica y notas</resp>
+          <name>Antonio Dávila Pérez</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>Universidad de Cádiz</distributor>
+        <address>
+          <addrLine>Avda/ Doctor Gómez Ulla, s/n, Cádiz, 11003, España</addrLine>
+        </address>
+        <idno type="CoBAM">71 02 28</idno>
+      </publicationStmt>
+      <notesStmt>
+        <note type="abstract">Villalba sends BAM some instructions on the printing of breviaries for Spain: the breviaries must be printed in a volume, not in two; they have to be more rigorous as to the annotation of the keys to find out the dates of the movable feasts; a few words must be added in certain passages; other passages must be rearranged. Villalba informs BAM about chaplain Arellanos’ death.</note>
+        <note type="incipit">Como cada día se offrezcan cosas nuevas...</note>
+      </notesStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="O">
+            <msDesc>
+              <msIdentifier>
+                <country>Bélgica</country>
+                <settlement>Amberes</settlement>
+                <repository>Museum Plantin-Moretus</repository>
+                <idno>(O) MPM, Arch. 122, pp. 261-264</idno>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="E1">A. Dávila Pérez, <title>Benito Arias Montano. Correspondencia de Arias Montano conservada en el Museo Plantin-Moretus de Amberes</title> (Alcañiz-Madrid: Instituto de Estudios Humanísticos - Consejo Superior de Investigaciones Científicas, 2002), vol. I, pp. 33-36.</witness>
+          <witness xml:id="E2">J. F. Domínguez Domínguez (ed.), <title>Benito Arias Montano. Correspondencia. Tomo I (1560-1570)</title>(Madrid: Ediciones Clásicas, 2017), pp. 74-83.</witness>
+                          </listWit>
+        <bibl type="inextenso" n="firstPrint">(E1) Dávila, I, 33-36;</bibl>
+        <bibl type="inextenso" n="secondPrint"> (E2) Domínguez, <title>Correspondencia.</title>, I, 74-83.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La correspondencia de Benito Arias Montano: edición crítica digital</p>
+        <p>Dirigido por Antonio Dávila Pérez.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Documento XML codificado conforme al estándar <ref type="url" target="http://www.tei-c.org/release/doc/tei-p5-doc/es/html/index.html">TEI
+          P5</ref></p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="VillalbaFranciscode">
+            <note>Francisco de Villaba († 14 de abril de 1574), teólogo, fraile Jerónimo, predicador real. </note></person>
+          <person xml:id="AriasMontanoBenito">
+            <note>Benito Arias Montano nació en Fregenal de la Sierra (Badajoz, España) en algún momento entre 1525 y 1527. Estudió en las universidades de Sevilla y Alcalá, donde terminó sus estudios teológicos en 1552. Ingresó en la aristocrática Orden de Santiago en 1560 y dos años más tarde fue seleccionado por el obispo de Segovia, Martín Pérez de Ayala, para formar parte de la delegación española en el Concilio de Trento. La consecuencia de su brillante participación le trajo el nombramiento como capellán de Felipe II. Sin duda, el logro más importante de BAM fue la dirección de la Biblia Regia (también conocida como la Políglota de Amberes) encargada por Felipe II al impresor Cristóbal Plantino. En 1568 se trasladó a los Países Bajos donde se dedicó principalmente a la edición y supervisión de esta colosal obra. En julio de 1576 BAM regresa a España y en marzo del año siguiente llega a El Escorial para organizar y catalogar la Real Biblioteca. Esta tarea se prolongó hasta 1592 y supuso cuatro estancias en el monasterio interrumpidas por períodos en los que se retiró a la Peña de Aracena, así como por trabajos en varios encargos oficiales. En 1592 volvió a Sevilla y permaneció en Andalucía hasta su muerte el 6 de julio de 1598.</note>
+          </person>
+          <person xml:id="Arellano">
+            <note>Francisco de Villaba († 1571), capellán de Felipe II, amigo de Benito Arias Montano, miembro de la Orden de Santiago. </note></person>
+          <person xml:id="PioV">
+            <note>Pío V, 1504-1572, papa.</note></person>
+        </listPerson>
+      </particDesc>
+      <correspDesc>
+        <correspAction type="sent">
+          <persName ref="#VillalbaFrancisco">Francisco de Villalba</persName>
+          <settlement>Madrid</settlement>
+          <date when="1571-02-28">28 de febrero de 1571</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName ref="#AriasMontanoBenito">Benito Arias Montano</persName>
+          <settlement>Amberes</settlement>
+          <date when="1571-04-15">15 de abril de 1571</date>
+        </correspAction>
+      </correspDesc>
+      <langUsage>
+        <language ident="es" ana="source">Español</language>
+        <language ident="la" ana="source">Latín</language>
+      </langUsage>
+      <handNotes>
+        <handNote>Autógrafa de Francisco de Villalba</handNote>
+      </handNotes>
+    </profileDesc>
+    <revisionDesc status="aprobada">
+      <change who="#Dávila" when="2026-11-13">Codificación inicial a partir del documento Word.</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic
+      url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2026/11/MPM-Arch.-122-pp.-261.jpg"
+      xml:id="foto1"/>
+    <graphic
+      url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2026/11/MPM-Arch.-122-pp.-262.jpg"
+      xml:id="foto2"/>
+    <graphic
+      url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2026/11/MPM-Arch.-122-pp.-263.jpg"
+      xml:id="foto3"/>
+    <graphic
+      url="https://lacorrespondenciadebenitoariasmontano.online/wp-content/uploads/2026/11/MPM-Arch.-122-pp.-264.jpg"
+      xml:id="foto4"/>
+    
+  </facsimile>
+  <text>
+    <front>
+      <p>Se inicia aquí una serie de cuatro cartas del padre Francisco Villalba a Arias Montano, todas ellas en torno a la edición y publicación de los libros litúrgicos que se comenzaron a estampar en los talleres de Plantino para el Reino de España. El impresor de Amberes había conseguido del Papa el monopolio para imprimir los breviarios en los Países Bajos en 1569 y los misales en 1570. Publica su primer breviario en 1569 y acaba la primera edición del misal el 24 de julio de 1571. Los años siguientes prepara regularmente nuevas ediciones, vendiendo 52.000 obras de este género a España por un valor de 97.317 florines. A sugerencia del propio Arias Montano, el Rey decidió que se encomendase a otro capellán la supervisión de las impresiones de todos los libros litúrgicos destinados a España. Francisco Villalba, confesor de Felipe II, fue el elegido. Las correcciones y advertimientos llegan desde Madrid a un ritmo frenético a partir de primeros de febrero de 1571. El padre Villalba dirige todo el proceso, aunque es el propio Felipe II quien lo supervisa e incluso redacta sus propias observaciones (cf. AGS E, 583/166 en una carpeta titulada «Advertimientos de mano de S[u] M[ajestad] sobre los que había hecho el padre Villalba para la impresión de los breviarios, diurnales y misales romanos nuevos.-Hízolos en Madrid a primero de hebrero de 1571»).</p>
+      <p>El original que editamos a continuación es en su totalidad autógrafo de Francisco de Villalba. Junto al sobrescrito se conservan restos de la cera roja empleada para pegar la tira de papel a través del que se imprimía el sello y que servía para cerrar la carta. Este trozo de papel alargado, de forma cuasi rectangular, ha sido recortado de la parte inferior del segundo folio del pliego.</p>
+    </front>
+    <body>
+      <div type="address">
+        <pb n="p. 264" ed="O" facs="#foto4"/>
+        <head>[Sobrescrito:]</head>
+        <ab>Al muy mag<expan><ex>nífi</ex></expan>co y muy r<expan><ex>everen</ex></expan>do señor <name type="person" ref="#AriasMontanoBenito">Benito Arias Montano</name>, capellán de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> etc. Anvers.</ab>     
+      </div>      
+      <div type="anotation">
+        <head>[Anotado por BAM, en el margen superior izquierdo, con escritura transversal hacia arriba:]</head>
+        <ab><name type="place">Madrid</name>, <date when="1571">1571</date>. Fray <name type="person" ref="#VillalbaFranciscode">Fran<expan><ex>cis</ex></expan>co de Villalva</name>.<ref target="#note1" xml:id="reference1">1</ref> <date when="1571-02-28">28 de febr<expan><ex>er</ex></expan>o</date>. R<expan><ex>ecibida</ex></expan> <date when="1571-04-15">15 de abril</date>.</ab>
+      </div>
+      <div type="main_content">
+        <pb n="p. 261" ed="O" facs="#foto1"/>
+        <opener>Muy r<expan><ex>everen</ex></expan>do y muy mag<expan><ex>nífi</ex></expan>co s<expan><ex>eñ</ex></expan>or:</opener>
+        <p>[<hi rend="bold">1</hi>] Como cada día se offrezcan cosas nuevas, no puedo dexar de multiplicar cartas. Poco a escrebí a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan><ref target="#note2" xml:id="reference2">2</ref> avisando dos cosas que se offrecían acerca de la impressión de los breviarios para esta provincia, ultra de las que avían ydo <app><lem wit="#O #E2">en</lem> <rdg wit="#E1"><hi rend="italic">omisit</hi></rdg></app> los advertimientos generales, las quales agora aquí repitiré con otra de importancia que de nuevo a occurrido y son las <app><lem wit="#O #E2">seguientes</lem> <rdg wit="#E1">siguientes</rdg></app>:</p>
+        <p>[<hi rend="bold">2</hi>] Que en esta primera impressión que se a de hazer no se impriman breviarios algunos en dos thomos, parte hyemal y parte estival, sino que toda la impressión sea de breviarios en un thomo, según las formas que fueron en los advertimi<expan><ex>ent</ex></expan>os de la impressión, porque acá no ay quien los quiera en dos thomos, y aun estos pocos que venieron con la reyna n<expan><ex>uest</ex></expan>ra s<expan><ex>eñor</ex></expan>a apenas se an podido vender, que todos, clérigos y frayles, los quieren en un thomo.<ref target="#note3" xml:id="reference3">3</ref></p>
+        <p>[<hi rend="bold">3</hi>] Que se tenga gran cuenta en que el áureo número venga muy fixo en los días de los meses del calendario y muy señalado, porque en algunos breviarios de los que an venido ay gran defecto en esto.<ref target="#note4" xml:id="reference4">4</ref></p>
+        <p>[<hi rend="bold">4</hi>] Que en el officio parvo de N<expan><ex>uest</ex></expan>ra S<expan><ex>eñor</ex></expan>a que se dize después de la Natividad de <app><lem wit="#O #E2">Ch<expan><ex>rist</ex></expan>o</lem> <rdg wit="#E1">Jesuchristo</rdg></app> hasta la <app><lem wit="#O #E2">Purification</lem> <rdg wit="#E1">purificación</rdg></app>,<ref target="#note5" xml:id="reference5">5</ref> la rúbrica que está antes de las antíphonas de las vísperas y laudes que comiençan «O admirabile comercium», la qual rúbrica dize así: «Post <app><lem wit="#O #E2">Natiuitatem</lem> <rdg wit="#E1">Natiuitate</rdg></app> officium Beatae Mariae», etc., esta rúbrica está falta; a de dezir de esta manera: «post Natiuitatem usque ad Purificationem officium Beatae Mariae» etc. de manera que se a de añadir esta palabra «usque ad Purificationem» que falta allí, etc.<ref target="#note3" xml:id="reference6">6</ref></p>
+        <p>[<hi rend="bold">5</hi>] Que en la fiesta de la cáthedra de S<expan><ex>an</ex></expan> Pedro de Antiochía, que es a 22 de hebrero, las lectiones del tercero nocturno, que es el Evangelio con su homilía, se pongan enteras con sus responsos en fin de las lectiones aquí en esta fiesta de hebrero, y en ninguna manera se remittan a la fiesta de enero;<ref target="#note1" xml:id="reference7">7</ref> porque allí la nona lectión es de Sancta Prisca y no lo puede ser en la cáthedra de hebrero, ni menos se remittan las tales lectiones a la fiesta de S<expan><ex>an</ex></expan> Pedro de junio, sino que, en todo caso, en esta fiesta de hebrero, como están enteras las tres lectiones del segundo nocturno, se pongan, digo, se pongan luego después de ellas enteras sin <foreign>require</foreign> las tres lectiones del tercero nocturno, que son el Evangelio con su homilía, y los responsos séptimo y <app><lem wit="#O #E1">octavo</lem> <rdg wit="#E2">ottavo</rdg></app> se pongan enteros sin <foreign>require</foreign> en fin de sus lectiones, etc.</p>
+        <p>[<hi rend="bold">6</hi>] En todo esto y en todo lo demás suplico a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> se tenga particular cuydado que se haga como de acá se escrive, porque así cumple.</p>
+        <p>[<hi rend="bold">7</hi>] En la declaración de la tabla de las fiestas movibles que está en los breviarios, la qual comiença deesta manera «Ad maiorem commoditatem inueniendi festa mobilia posita est sequens tabula» etc., y acaba «in festo Sancti Mathiae» <pb n="p. 262" ed="O" facs="#foto2"/> después de estas palabras «in festo S<expan><ex>ancti</ex></expan> Mathiae», luego inmediatamente se a de añadir todo lo que aquí se sigue, como lo <app><lem wit="#O #E2">añade</lem> <rdg wit="#E1">manda</rdg></app> Su Sanctidad<ref target="#note8" xml:id="reference8">8</ref> en el nuevo missal:</p>
+        <p><foreign>Si autem numerus dierum Septuagessimae et aliorum festorum mobilium ad rectam lineam aurei numeri anni currentis in secunda littera assignatus superet numerum dierum huiusmodi ad rectam lineam eiusdem aurei numeri in primam litteram assignatum, tunc reliqua festa mobilia post Septuagessimam non erunt <app><lem wit="#O #E2">sumenda</lem> <rdg wit="#E1">summenda</rdg></app> ad rectam lineam aurei numeri currentis in secunda littera, sed ad rectam lineam Septuagessimae quae unius diei numero minus in secunda littera signatur; ut si in littera <hi rend="italic">d</hi> Septuagessima signatur 15 Februarii, Cineres et reliqua festa mobilia sumuntur ad rectam lineam Septuagessimae quae in secunda littera <hi rend="italic">c</hi> ponitur 14 Februarii et in huiusmodi aliis similiter, quia numerus dierum in secunda littera signatus uno die semper in anno bisextili minuitur a numero dierum primae litterae.</foreign><ref target="#note9" xml:id="reference9">9</ref></p>
+        <p>[<hi rend="bold">8</hi>] Si allá ay algún misal de los nuevos de Su <app><lem wit="#O #E2">Sanctidad</lem> <rdg wit="#E1">Santidad</rdg></app>, en <app><lem wit="#O #E2">él</lem> <rdg wit="#E1">que</rdg></app> se <app><lem wit="#O #E2">hallará</lem> <rdg wit="#E1">hallara</rdg></app> toda esta declaración de la tabla entera como aquí va. [<hi rend="bold">9</hi>] Y téngase especial cuydado en que los números del áureo número que se ponen en estas tablas de las fiestas movibles sean muy verdaderos, pues de ellos depende la verdad de las fiestas movibles, y algunos números se an hallado errados.</p>
+        <p>[<hi rend="bold">10</hi>] N<expan><ex>uest</ex></expan>ro S<expan><ex>eñ</ex></expan>or la muy r<expan><ex>everen</ex></expan>da y muy mag<expan><ex>nífi</ex></expan>ca persona de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> prospere en su servi<expan><ex>ci</ex></expan>o. En <name type="person">Madrid</name>, <date when="1571-02-28">28 de hebrero 1571</date>.</p>
+        <p>[<hi rend="bold">11</hi>] El día de sant Mathías<ref target="#note1" xml:id="reference10">10</ref> en la tarde enterramos al señor <name type="person" ref="#Arellano">Arellano</name>,<ref target="#note11" xml:id="reference11">11</ref> capellán de Su Mag<expan><ex>es</ex></expan>t<expan><ex>ad</ex></expan> y de la orden de v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan>. <foreign>Requiescat in pace, amen</foreign>. V<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> tenga memoria de su ánima, pues allende de ser de su Orden,<ref target="#note12" xml:id="reference12">12</ref> le era muy afficionado etc.</p>
+        <closer>[<hi rend="bold">12</hi>] Besa las manos a v<expan><ex>uestra</ex></expan> m<expan><ex>erced</ex></expan> su servidor,
+          <signed>Franc<expan><ex>is</ex></expan>co de Villalba.</signed></closer>
+        <postscript>
+          <head>[Posdata:]</head>
+          <p>[<hi rend="bold">13</hi>] En ninguna manera se impriman para esta provincia de <name type="place">España</name> diurnales de la letra francesa, de la que eran los pequeños que acá vinieron con los mill breviarios, que no ay quien los quiera; ni aquellos se an podido vender, sino que se pierden, que ni aun gratis no los quieren.</p>
+        </postscript>
+        <pb n="p. 263" ed="O" facs="#foto3"/> 
+       
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <note type="footnote" xml:id="note1"> 
+          <ref target="#reference1">1</ref> Francisco de Villalba (Villalba de Lampreana, Zamora-El Escorial 1575), predicador real, profesó en el monasterio de Montamarta (Zamora) y amplió estudios en el colegio de Sigüenza. Participó en la segunda convocatoria del Concilio de Trento, donde tuvo dos intervenciones en 1551. Fue predicador de Carlos V durante su estancia en Yuste y, más tarde, de Felipe II. Cf. <title>DHEE</title>, IV, 2760; <title>IBEPI</title>, IV, 1385.</note>
+        <note type="footnote" xml:id="note2"> 
+          <ref target="#reference2">2</ref> Carta de Villalba a BAM no localizada.</note>
+        <note type="footnote" xml:id="note3"> 
+          <ref target="#reference3">3</ref> <title>Breuiarium Romanum ex decreto sacrosancti Concilii Tridentini restitutum, Pii V Pont[ificis] Max[imi] iussu editum. Pars Aestiualis</title> (Antuerpiae: ex officina Christophori Plantini. M. D. LXX), el primer tomo; y <title>Breuiarium Romanum [...] Pars Hyemalis</title>, el segundo. Dos volúmenes en 8º (180 x 115). Cf. <title>PP</title>, I, 452-453 (nº 811).</note>
+        <note type="footnote" xml:id="note4"> 
+          <ref target="#reference4">4</ref> En las hojas * 6r a * 8r del Breviario en 8º editado por Plantino en 1570  se encuentran los siguientes apartados: «Aurei numeri et Paschae inueniendi ratio», «Tabulla litterarum dominicalium, incipientium ab eodem anno M. D. LXVIII» seguidos de una tabla general donde se aplican las claves explicadas en las páginas precedentes con el fin de hallar el día exacto en que se celebraron y celebrarán las fiestas móviles del calendario católico. El lector debía obtener de dos tablas distintas un número áureo y una letra dominical para el año en que buscaba la fiesta móvil: la tabla de los números constituía un ciclo de 19 años; la de las letras era una serie de 28, de las cuales 7 eran dobles (para los años bisiestos). Por ejemplo, al año 1568 se le asignaba el 11 de áureo número y DC de letra dominical; con estas coordenadas se debía pasar a la última tabla para localizar la fiesta móvil en cuestión.</note>
+        <note type="footnote" xml:id="note5"> 
+          <ref target="#reference5">5</ref> La festividad de la Purificación de María se celebra el 2 de febrero, cuarenta días después de la Navidad.</note>
+        <note type="footnote" xml:id="note6"> 
+          <ref target="#reference6">6</ref> No existe copia conocida de esta edición de las <title>Horae Beatissimae Virginis Mariae</title> (en 32º) publicada por Plantino en 1570; el MPM solo conserva la portada, según recoge <title>PP</title>, III, 1157 (nº 1369). En torno a las impresiones de horas llevadas a cabo por Plantino véase el trabajo de K. Lee Bowen titulado <title>Christopher Plantin's Books of Hours: Illustration and Production</title> (Nieuwkoop, 1997); una obra más general y menos reciente es la de H. Bohatta, <title>Bibliographie der Livres d'Heures (Horae B. M. V.), Officia, Hortuli Animae, Coronae B. M. V., Rosaria et Cursus B. M. V des 15 und 16 Jahrhunderts</title> (Viena, 1924).</note>
+        
+        <note type="footnote" xml:id="note7"> 
+          <ref target="#reference7">7</ref> El 18 de enero se celebrara la fiesta de la cátedra de san Pedro en Roma.</note>
+        <note type="footnote" xml:id="note8"> 
+          <ref target="#reference8">8</ref> Pío V (7 enero 1566-1 mayo 1572); Michele Ghislieri nace en Bosco, cerca de Alessandria, el 17 de enero de 1504. Bajo la protección del cardenal Giampietro Caraffa realizó una meteórica carrera como obispo de Nepi y Sutri (1556), cardenal (1557) y, finalmente, inquisidor general (1558). Tras su nombramiento papal, trató de llevar a efecto los decretos del Concilio de Trento en todas las esferas, desde las órdenes monásticas hasta la edición de libros litúrgicos. Fue un perseguidor implacable de la herejía, pero en su política internacional se caracterizó por chocar con casi todas las potencias europeas. Su más exitosa empresa fue la asociación con Venecia y España para formar la Liga Santa contra los Turcos. Cf. <title>ODP</title>, pp. 268-269.</note>
+        <note type="footnote" xml:id="note9"> 
+          <ref target="#reference9">9</ref> En el <title>Breuiarium Romanum</title> en 8º de 1571 aún no está añadido este lugar sobre los años bisiestos (cf. folio * 5) que, sin embargo, sí hemos visto en ediciones posteriores como la de 1577 en 8º, (cf. folio * 5). Proponemos la siguiente traducción, que debe ser acompañada de las mismas tablas para una completa comprensión: «Y si el número de los días de la Septuagésima y de las demás fiestas móviles asignado en línea recta a la segunda letra del número áureo del año corriente supera el número de los días tales asignado en línea recta a la primera letra del mismo áureo número, entonces las restantes fiestas móviles después de la Septuagésima no habrán de ser tomadas en línea recta de la segunda letra del áureo número corriente, sino en línea recta de la Septuagésima que se asigna a la segunda letra con el número de un día menos, de manera que si en la letra d la Septuagésima se asigna en 15 de febrero, las Cenizas y las demás fiestas móviles se toman en línea recta de la Septuagésima que se pone el 14 de febrero en la segunda letra c y así en los demás, puesto que el número de los días asignado a la segunda letra siempre disminuye en el año bisiesto un día del número de días de la primera letra».</note>
+        <note type="footnote" xml:id="note10"> 
+          <ref target="#reference10">10</ref> Celebrado el 24 de febrero en el calendario litúrgico tradicional anterior a la reforma de 1969. Actualmente se celebra el 14 de mayo en el calendario romano.</note>
+        <note type="footnote" xml:id="note11"> 
+          <ref target="#reference11">11</ref> García Álvarez de Arellano, miembro de la Orden de Santiago, capellán real y amigo de BAM; su nombre es recogido en J. Pérez Balsera, <title>Los caballeros de Santiago</title> (Madrid: E. Maestre, 1932), pp. 128-352</note>
+        <note type="footnote" xml:id="note12"> 
+          <ref target="#reference12">12</ref> La orden militar de Santiago, a la que pertenecía Arias Montano desde 1560. Los documentos referentes al proceso de pureza de sangre, requisito para ser admitido en esta orden, fueron publicados por Carvajal, «Elogio histórico», p. 30 y doc. nº 1 (pp. 123-130).</note>
+       
+       
+      </div>
+    </back>
+  </text>
+</TEI>
